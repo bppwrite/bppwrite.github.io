@@ -1,0 +1,6 @@
++++
+director = ""
+playwright = ""
+showtimes = []
+image = ""
++++
