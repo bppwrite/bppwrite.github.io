@@ -31,3 +31,4 @@ deploy:
         token: $GIT_TOKEN
         domain: bppwrite.github.io
         basedir: public
+        repo: bppwrite/bppwrite.github.io
