@@ -1,0 +1,23 @@
+{{ partial "head.html" . }}
+{{ partial "nav.html" . }}
+
+<h2>Home</h2>
+
+<h4>Pages</p4>
+
+{{ range .Data.Pages.GroupBy "Section" }}
+<h5>{{ .Key }}</h5>
+<ul>
+    {{ range .Pages }}
+    <li>
+      <span>{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+      <p>
+        {{ printf "%#v" . }}
+      </p>
+    </li>
+    {{ end }}
+</ul>
+{{ end }}
+
+{{ partial "foot.html" . }}

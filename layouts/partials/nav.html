@@ -1,0 +1,57 @@
+<h2>nav</h2>
+
+<!-- nav start-->
+<ul>
+  {{ $currentNode := . }}
+  {{ range .Site.Menus.main }}
+    {{ if .HasChildren }}
+      <li class="{{if $currentNode.HasMenuCurrent "main" . }}active{{end}}">
+        <a href="javascript:;" class="">
+          {{ .Pre }}
+          <span>{{ .Name }}</span>
+          {{ .Post }}
+          <span>&gt;</span>
+        </a>
+        <ul>
+          {{ range .Children }}
+          <li class="{{if $currentNode.IsMenuCurrent "main" . }}active{{end}}">
+            <a href="{{.URL}}"> {{ .Name }} </a>
+          </li>
+          {{ end }}
+        </ul>
+      </li>
+    {{else}}
+      <li>
+        <a class="" href="{{.URL}}">
+          {{ .Pre }}
+          <span>{{ .Name }}</span>
+        </a>
+      </li>
+    {{end}}
+  {{end}}
+</ul>
+<!-- nav end-->
+
+<h3>Taxonomies</h3>
+
+<ul>
+  {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
+    <li>
+      <a href="/{{ $taxonomyname | urlize }}">
+        {{ $taxonomyname }}
+      </a>
+      <ul>
+        {{ range $key, $value := $taxonomy }}
+        <li> {{ $key }} </li>
+        <ul>
+        {{ range $value.Pages }}
+          <li hugo-nav="{{ .RelPermalink}}">
+            <a href="{{ .Permalink}}"> {{ .LinkTitle }} </a>
+          </li>
+        {{ end }}
+        </ul>
+        {{ end }}
+      </ul>
+    </li>
+  {{ end }}
+</ul>

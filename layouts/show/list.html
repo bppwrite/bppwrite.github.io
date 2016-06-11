@@ -1,0 +1,15 @@
+{{ partial "head.html" . }}
+{{ partial "nav.html" . }}
+
+<h2>{{ .Title }}</h2>
+
+<ul>
+    {{ range .Data.Pages }}
+    <li>
+      <span>{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </li>
+    {{ end }}
+</ul>
+
+{{ partial "foot.html" . }}

@@ -1,3 +1,28 @@
-baseurl = "http://bppwrite.github.io"
+baseurl = "/"
 languageCode = "en-us"
 title = "Bloomington Playwrights Project"
+
+[[menu.main]]
+  name = "Shows"
+  pre = "<i class='fa fa-download'></i>"
+  url = "/shows"
+  weight = -200
+[[menu.main]]
+  name = "Tickets"
+  pre = "<i class='fa fa-cubes'></i>"
+  url = "/tickets"
+  identifier = "tickets"
+  weight = -180
+[[menu.main]]
+  name = "OvationTix"
+  parent = "tickets"
+  pre = "<i class='fa fa-cubes'></i>"
+  url = "https://web.ovationtix.com/trs/dept/1090"
+  weight = -180
+
+[taxonomies]
+  genre = "genres" # drama, musical, etc
+  series = "series" # a run of plays; a year
+  actor = "actors"
+  playwright = "playwrights"
+  director = "directors"

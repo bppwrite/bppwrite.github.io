@@ -1,0 +1,26 @@
+{{ partial "head.html" . }}
+{{ partial "nav.html" . }}
+
+<h2>Single</h2>
+
+<h3>Context</h3>
+
+<h4>Page type</h4>
+
+<p>
+  {{ printf "%T" . }}
+</p>
+
+<h4>.Site variables</h4>
+
+<p>
+  {{ printf "%#v" $.Site }}
+</p>
+
+<h4>Variables in the current context</h4>
+
+<p>
+  {{ printf "%#v" . }}
+</p>
+
+{{ partial "foot.html" . }}
