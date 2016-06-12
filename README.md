@@ -1,5 +1,7 @@
 # bppwrite.github.io
 
+[![wercker status](https://app.wercker.com/status/7bb2f92e2850c8a12642df5fe5daef52/m "wercker status")](https://app.wercker.com/project/bykey/7bb2f92e2850c8a12642df5fe5daef52)
+
 ## SETUP
 
 ### INSTALL
