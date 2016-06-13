@@ -1,9 +1,11 @@
 {{ partial "head.html" . }}
 {{ partial "nav.html" . }}
 
-<h2>{{ .Title }} by {{ .Params.playwright }}</h2>
+<h2>{{ .Title }} <small>{{ .Params.subtitle }}</small> by {{ .Params.playwright }}</h2>
 
 Director: {{ .Params.director }}
+
+<img src="{{ .Params.poster_image }}" />
 
 {{ .Content }}
 
