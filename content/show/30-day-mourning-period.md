@@ -9,6 +9,7 @@ showtimes = [
   "2016-09-23T19:30:10-04:00",
   "2016-09-24T19:30:00-04:00",
   "2016-09-25T19:30:00-04:00",
+  "2016-09-30T19:30:00-04:00",
 ]
 title = "30 Day Mourning Period"
 subtitle = "(or the Revolution that Occurred When Mr. Clybourne Killed Himself and Thus Was Unable to Come in to Work Thursday Morning)"
