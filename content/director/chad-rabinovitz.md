@@ -5,4 +5,4 @@ title = "Chad Rabinovitz"
 
 +++
 
-<h2>{{ .Title }}</h2>
+## {{ .Title }}

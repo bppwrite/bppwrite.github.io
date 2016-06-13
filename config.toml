@@ -3,9 +3,14 @@ languageCode = "en-us"
 title = "Bloomington Playwrights Project"
 
 [[menu.main]]
+  name = "Home"
+  pre = "<i class='fa fa-download'></i>"
+  url = "/"
+  weight = -200
+[[menu.main]]
   name = "Shows"
   pre = "<i class='fa fa-download'></i>"
-  url = "/shows"
+  url = "/show"
   weight = -200
 [[menu.main]]
   name = "Tickets"

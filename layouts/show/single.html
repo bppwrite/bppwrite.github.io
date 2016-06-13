@@ -5,4 +5,25 @@
 
 Director: {{ .Params.director }}
 
+{{ .Content }}
+
+Run starts on {{ dateFormat "Mon, Jan 2, 2006" .Params.start }} and ends on {{ dateFormat "Mon, Jan 2, 2006" .Params.end }}
+
+<h3>Showtimes</h3>
+
+<ul>
+  {{ range .Params.showtimes }}
+    <li>{{ dateFormat "Mon, Jan 2, 2006 at 3:04PM" . }}</li>
+  {{ end }}
+</ul>
+
+<div>
+  {{ if .Prev }}
+    Previous: <a class="previous" href="{{.Prev.Permalink}}"> {{.Prev.Title}}</a> <br/>
+  {{ end }}
+  {{ if .Next }}
+    Next: <a class="next" href="{{.Next.Permalink}}"> {{.Next.Title}}</a>
+  {{ end }}
+</div>
+
 {{ partial "foot.html" . }}
