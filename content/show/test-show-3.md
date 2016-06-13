@@ -3,7 +3,6 @@ date = "2016-05-14T22:06:30Z"
 director = ""
 image = ""
 playwright = ""
-showtimes = []
 title = "test show 3"
 start = "2016-09-23"
 end = "2016-10-08"
