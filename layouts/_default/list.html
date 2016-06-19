@@ -3,4 +3,13 @@
 
 <h2>List</h2>
 
+<section id="main">
+  <div>
+   <h1 id="title">{{ .Title }}</h1>
+    {{ range .Data.Pages }}
+        {{ .Summary }}
+    {{ end }}
+  </div>
+</section>
+
 {{ partial "foot.html" . }}
