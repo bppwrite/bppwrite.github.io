@@ -33,3 +33,4 @@ deploy:
         basedir: public
         repo: bppwrite/bppwrite.github.io
         branch: master
+        clean_removed_files: true
