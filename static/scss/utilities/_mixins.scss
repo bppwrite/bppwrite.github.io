@@ -1,0 +1,29 @@
+// ---- Mixins ----
+
+// Clearfix
+
+@mixin clearfix {
+  &::before {
+    display: table;
+    content: "";
+  }
+
+  &::after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+}
+
+// Fontface
+
+@mixin font-face($path, $file) {
+  @font-face {
+    font-family: '#{$file}';
+    src: url('#{$font-path}#{$file}'); /* IE9 Compat Modes */
+    src: url('#{$font-path}#{$file}.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('#{$font-path}#{$file}.woff') format('woff'), /* Pretty Modern Browsers */
+         url('#{$font-path}#{$file}.otf')  format('truetype'), /* Safari, Android, iOS */
+         url('#{$font-path}#{$file}.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
+}

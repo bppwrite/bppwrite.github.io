@@ -1,0 +1,30 @@
+// ---- Variables ----
+
+// layout
+
+$container-width: 980px !default;
+$grid-gutter:     10px !default;
+
+// colors
+
+// palette
+$radical-red: #FE4F6F;
+$cornflower: #95CEF5;
+
+// in use
+$color-primary:  $cornflower;
+$color-accent:   $radical-red;
+
+// Fonts
+$font-path: '../fonts/';
+$font-file-bold: 'CooperHewitt-Heavy';
+$font-file-med: 'CooperHewitt';
+@include font-face($font-path, $font-file-bold);
+@include font-face($font-path, $font-file-med);
+
+// font stacks
+$font-stack-header: CooperHewitt-Heavy, Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif;
+$font-stack-meta: CooperHewitt, Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif;
+$font-stack-body: 'Source Sans Pro', sans-serif;;
+// The base body size
+$body-font-size: 16px;
