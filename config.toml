@@ -3,11 +3,6 @@ languageCode = "en-us"
 title = "Bloomington Playwrights Project"
 
 [[menu.main]]
-  name = "Home"
-  pre = "<i class='fa fa-download'></i>"
-  url = "/"
-  weight = -200
-[[menu.main]]
   name = "Shows"
   pre = "<i class='fa fa-download'></i>"
   url = "/show"
@@ -24,6 +19,26 @@ title = "Bloomington Playwrights Project"
   pre = "<i class='fa fa-cubes'></i>"
   url = "https://web.ovationtix.com/trs/dept/1090"
   weight = -180
+[[menu.main]]
+  name = "Support"
+  pre = "<i class='fa fa-download'></i>"
+  url = "/support"
+  weight = -200
+[[menu.main]]
+  name = "Join"
+  pre = "<i class='fa fa-download'></i>"
+  url = "/join"
+  weight = -200
+[[menu.main]]
+  name = "About"
+  pre = "<i class='fa fa-download'></i>"
+  url = "/about"
+  weight = -200
+[[menu.main]]
+  name = "Contact"
+  pre = "<i class='fa fa-download'></i>"
+  url = "/contact"
+  weight = -200
 
 preserveTaxonomyNames = true
 
