@@ -1,1 +1,8 @@
+# the build dir #
+###########
 /public
+
+# Sass #
+###########
+.sass-cache/
+*.css.map
