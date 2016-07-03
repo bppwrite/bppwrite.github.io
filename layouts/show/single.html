@@ -1,10 +1,27 @@
 {{ partial "head.html" . }}
 {{ partial "nav.html" . }}
 
-<h2>{{ .Title }} <small>{{ .Params.subtitle }}</small> by {{ .Params.playwright }}</h2>
+{{/* show starts on the first date in the showtimes array */}}
+{{ $start := (index .Params.showtimes 0) }}
+{{/* show ends on the last date in the showtimes array */}}
+{{ $end := (index .Params.showtimes (sub (len .Params.showtimes) 1) ) }}
 
-Director: {{ .Params.director }}
+<h2>
+  {{ .Title }}
 
+  {{/* only show the subtitle if it exists */}}
+  {{if .Params.subtitle}}
+    <small>{{ .Params.subtitle }}</small>
+  {{end}}
+
+  {{if .Params.playwrights}}
+    by {{ .Params.playwrights }}
+  {{end}}
+</h2>
+
+Director: {{ .Params.directors }}
+
+<!-- Responsive youtube embed -->
 <style>
 .video-container {
     position: relative;
@@ -22,17 +39,17 @@ Director: {{ .Params.director }}
     height: 100%;
 }
 </style>
-<div class="video-container">
-  <iframe width="560" height="315"
-    src="https://www.youtube.com/embed/{{ .Params.Dates.youtube_id }}"
-    frameborder="0" allowfullscreen></iframe>
-</div>
+{{if .Params.youtube_id}}
+  <div class="video-container">
+    <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/{{ .Params.Dates.youtube_id }}"
+      frameborder="0" allowfullscreen></iframe>
+  </div>
+{{end}}
 
-<img src="{{ .Params.poster_image }}" />
+<img src="poster.jpg" />
 
 {{ .Content }}
-
-Run starts on {{ dateFormat "Mon, Jan 2, 2006" .Params.start }} and ends on {{ dateFormat "Mon, Jan 2, 2006" .Params.end }}
 
 <h3>Showtimes</h3>
 
@@ -41,6 +58,11 @@ Run starts on {{ dateFormat "Mon, Jan 2, 2006" .Params.start }} and ends on {{ d
     <li>{{ dateFormat "Mon, Jan 2, 2006 at 3:04PM" . }}</li>
   {{ end }}
 </ul>
+
+Run starts on
+  {{ dateFormat "Mon, Jan 2, 2006" $start }}
+and ends on
+  {{ dateFormat "Mon, Jan 2, 2006" $end }}
 
 <div>
   {{ if .Prev }}
