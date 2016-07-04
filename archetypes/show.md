@@ -16,6 +16,7 @@ showtimes = [
   "2016-01-02T19:30:00-04:00",
   "2016-01-03T19:30:00-04:00",
 ]
+showtimes_human = ""
 
 genres = []
 directors = []
@@ -23,6 +24,11 @@ playwrights = []
 musicians = []
 choreographers = []
 lyricists = []
+"set designers" = []
+"lighting designers" = []
+"sound designers" = []
+"costume designers" = []
+"stage managers" = []
 actors = []
 awards = []
 

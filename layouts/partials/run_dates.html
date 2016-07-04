@@ -1,0 +1,24 @@
+{{/* only do this if there are showtimes */}}
+{{ if .Params.showtimes }}
+
+  {{ $.Scratch.Add "month" nil }}
+  {{ $.Scratch.Add "day_of_month" nil }}
+  {{ $.Scratch.Add "delimiter" "" }}
+
+  {{/* foreach showtime sorted with default sort options */}}
+  {{ range sort .Params.showtimes }}
+    <span>{{- ($.Scratch.Get "delimiter") -}}</span>
+
+    {{/* if this month is different than the previous month, print it */}}
+    {{ if ne ($.Scratch.Get "month") (dateFormat "January" . ) }}
+      {{ $.Scratch.Set "month" (dateFormat "January" . ) }}
+      <span>{{ $.Scratch.Get "month" }}</span>
+    {{ end }}
+
+    {{/* print this day of the month */}}
+    <span>{{- (dateFormat "2" .) -}}</span>
+
+    {{ $.Scratch.Set "delimiter" "," }}
+  {{ end }}
+
+{{ end }}

@@ -15,7 +15,7 @@
   <h4>Variables in the current context</h4>
 
   <p>
-    {{ printf "%#v" . }}
+    {{ . | jsonify }}
   </p>
 
   </body>
