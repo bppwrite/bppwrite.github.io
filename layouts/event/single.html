@@ -1,9 +1,9 @@
 {{ partial "head.html" . }}
 {{ partial "nav.html" . }}
 
-{{/* show starts on the first date in the showtimes array */}}
+{{/* event starts on the first date in the showtimes array */}}
 {{ $start := (index .Params.showtimes 0) }}
-{{/* show ends on the last date in the showtimes array */}}
+{{/* event ends on the last date in the showtimes array */}}
 {{ $end := (index .Params.showtimes (sub (len .Params.showtimes) 1) ) }}
 
 <h2>
@@ -13,13 +13,7 @@
   {{if .Params.subtitle}}
     <small>{{ .Params.subtitle }}</small>
   {{end}}
-
-  {{if .Params.playwrights}}
-    by {{ delimit .Params.playwrights  ", " " & " | html }}
-  {{end}}
 </h2>
-
-Director: {{ delimit .Params.directors ", " " & " | html }}
 
 {{ partial "youtube.html" . }}
 
@@ -35,15 +29,10 @@ Director: {{ delimit .Params.directors ", " " & " | html }}
   {{ end }}
 </ul>
 
-<p>
-  Run starts on
-    {{ dateFormat "Mon, Jan 2, 2006" $start }}
-  and ends on
-    {{ dateFormat "Mon, Jan 2, 2006" $end }}
-</p>
-<p>
-  {{ .Params.showtimes_human }}
-</p>
+Run starts on
+  {{ dateFormat "Mon, Jan 2, 2006" $start }}
+and ends on
+  {{ dateFormat "Mon, Jan 2, 2006" $end }}
 
 <div>
   {{ if .Prev }}
