@@ -18,5 +18,34 @@
     {{ . | jsonify }}
   </p>
 
+  <h3>Taxonomies</h3>
+
+  <ul>
+    <!-- for each taxonomy -->
+    {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
+      <li>
+        <!-- link to taxonomy list page -->
+        <a href="/{{ $taxonomyname | urlize }}">
+          {{ $taxonomyname }}
+        </a>
+        <ul>
+          <!-- display each taxonomy term and link to term single page -->
+          {{ range $key, $value := $taxonomy }}
+          <li> {{ $key }} </li>
+          <!-- <li>{{ printf "%#v" $value }}</li> -->
+          <ul>
+            <!-- display each taxonomy term's related pages -->
+            {{ range $value.Pages }}
+              <li hugo-nav="{{ .RelPermalink}}">
+                <a href="{{ .Permalink}}"> {{ .LinkTitle }} </a>
+              </li>
+            {{ end }}
+          </ul>
+          {{ end }}
+        </ul>
+      </li>
+    {{ end }}
+  </ul>
+
   </body>
 </html>
