@@ -44,9 +44,17 @@ preserveTaxonomyNames = true
 
 [taxonomies]
 genre = "genres" # drama, musical, etc
-series = "series" # a run of plays; year1-year2
+series = "series" # a run of plays; formatted as year1-year2
 actor = "actors"
 playwright = "playwrights"
 director = "directors"
 musician = "musicians"
 lyricist = "lyricists"
+choreographer = "choreographers"
+"stage manager" = "stage managers"
+"lighting designer" = "lighting designers"
+"set designer" = "set designers"
+"costume designer" = "costume designers"
+"sound designer" = "sound designers"
+award = "awards"
+venue = "venues"
