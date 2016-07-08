@@ -407,8 +407,13 @@ h6 {
   font-size: 0.75em; }
 
 body {
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Source Sans Pro", sans-serif; }
+
+.container-nav {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1200px; }
 
 header {
   display: -webkit-box;
@@ -422,7 +427,7 @@ header {
   -ms-justify-content: space-between;
   justify-content: space-between; }
   header a {
-    color: #000000; }
+    color: #222222; }
 
 .menu {
   display: -webkit-box;
@@ -445,12 +450,12 @@ header {
   -webkit-flex: 0 0 25%;
   -ms-flex: 0 0 25%;
   flex: 0 0 25%;
-  border-top: 1px solid #000000;
+  border-top: 1px solid #222222;
   margin-left: 0.5em;
   padding-top: 0.25em; }
 
 .site-name {
-  font-size: 1em;
+  font-size: 1.333em;
   width: 10%; }
 
 .dropdown {
@@ -466,7 +471,7 @@ header {
   list-style: none; }
 
 .dropdown-menu-item {
-  border-top: 1px solid #000000; }
+  border-top: 1px solid #222222; }
 
 .dropdown:hover > .dropdown-menu {
   display: block; }

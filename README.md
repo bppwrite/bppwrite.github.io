@@ -31,3 +31,7 @@ hugo server
 ```
 
 Now hugo is running and serving your site locally.
+
+## Contribute changes
+
+See the [CONTRIBUTING](CONTRIBUTING.md) document
