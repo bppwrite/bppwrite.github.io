@@ -1,0 +1,26 @@
+{{ partial "head.html" . }}
+{{ partial "nav.html" . }}
+
+<h2>
+  {{ .Title }}
+
+  {{/* only show the subtitle if it exists */}}
+  {{if .Params.subtitle}}
+    <small>{{ .Params.subtitle }}</small>
+  {{end}}
+</h2>
+
+<img src="logo.jpg" />
+
+{{ .Content }}
+
+<div>
+  {{ if .Prev }}
+    Previous: <a class="previous" href="{{.Prev.Permalink}}"> {{.Prev.Title}}</a> <br/>
+  {{ end }}
+  {{ if .Next }}
+    Next: <a class="next" href="{{.Next.Permalink}}"> {{.Next.Title}}</a>
+  {{ end }}
+</div>
+
+{{ partial "foot.html" . }}
