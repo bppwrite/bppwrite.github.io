@@ -2,8 +2,7 @@
 
 // layout
 
-$container-width: 980px !default;
-$grid-gutter:     10px !default;
+$container-width-max: 1200px;
 
 // colors
 
@@ -15,7 +14,7 @@ $cornflower: #95CEF5;
 $color-primary:  $cornflower;
 $color-accent:   $radical-red;
 $white:          #ffffff;
-$black:          #000000;
+$black:          #222222;
 
 // Fonts
 $font-path: '../fonts/';
@@ -29,4 +28,4 @@ $font-stack-header: CooperHewitt-Heavy, Helvetica, arial, nimbussansl, liberatio
 $font-stack-meta: CooperHewitt, Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif;
 $font-stack-body: 'Source Sans Pro', sans-serif;;
 // The base body size
-$body-font-size: 16px;
+$body-font-size: 18px;
