@@ -6,7 +6,9 @@ choreographers = []
 "costume designers" = []
 date = "2017-01-27T19:30:00-04:00"
 directors = []
-genres = []
+genres = [
+  "comedy"
+]
 intermission_count = "0"
 "lighting designers" = []
 lyricists = []
@@ -36,4 +38,4 @@ youtube_id = ""
 
 +++
 
-Historical accuracy is paramount to Cal and Tom, two hardcore Civil War re-enactors, fresh off their latest Gettysburg battle. But their accuracy is compromised when they’re joined by a soldier with a less than authentic confederate uniform…and the wrong gender. Straddling 1863 and today, ROW AFTER ROW is a dark comedy about choosing your cause and finding your courage.
+Historical accuracy is paramount to Cal and Tom, two hardcore Civil War re-enactors, fresh off their latest Gettysburg battle. But their accuracy is compromised when they’re joined by a soldier with a less than authentic confederate uniform... and the wrong gender. Straddling 1863 and today, ROW AFTER ROW is a dark comedy about choosing your cause and finding your courage.
