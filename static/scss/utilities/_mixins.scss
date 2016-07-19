@@ -28,6 +28,22 @@
   }
 }
 
+@mixin font-face-ttf($path, $file) {
+  @font-face {
+    font-family: '#{$file}';
+    src: url('#{$font-path}#{$file}'); /* IE9 Compat Modes */
+    src: url('#{$font-path}#{$file}.ttf')  format('truetype'); /* Safari, Android, iOS */
+  }
+}
+
+@mixin font-face-otf($path, $file) {
+  @font-face {
+    font-family: '#{$file}';
+    src: url('#{$font-path}#{$file}'); /* IE9 Compat Modes */
+    src: url('#{$font-path}#{$file}.otf')  format('truetype'); /* Safari, Android, iOS */
+  }
+}
+
 // flexbox
 
 @mixin flexbox() {

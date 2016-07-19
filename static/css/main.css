@@ -365,50 +365,86 @@ textarea {
   /* 2 */ }
 
 @font-face {
-  font-family: "CooperHewitt-Heavy";
-  src: url("../fonts/CooperHewitt-Heavy");
+  font-family: "TrendSansOne";
+  src: url("../fonts/TrendSansOne");
   /* IE9 Compat Modes */
-  src: url("../fonts/CooperHewitt-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/CooperHewitt-Heavy.woff") format("woff"), url("../fonts/CooperHewitt-Heavy.otf") format("truetype"), url("../fonts/CooperHewitt-Heavy.svg#svgFontName") format("svg");
-  /* Legacy iOS */ }
+  src: url("../fonts/TrendSansOne.otf") format("truetype");
+  /* Safari, Android, iOS */ }
 @font-face {
-  font-family: "CooperHewitt";
-  src: url("../fonts/CooperHewitt");
+  font-family: "TrendSansThree";
+  src: url("../fonts/TrendSansThree");
   /* IE9 Compat Modes */
-  src: url("../fonts/CooperHewitt.eot?#iefix") format("embedded-opentype"), url("../fonts/CooperHewitt.woff") format("woff"), url("../fonts/CooperHewitt.otf") format("truetype"), url("../fonts/CooperHewitt.svg#svgFontName") format("svg");
-  /* Legacy iOS */ }
+  src: url("../fonts/TrendSansThree.otf") format("truetype");
+  /* Safari, Android, iOS */ }
+@font-face {
+  font-family: "Interstate-LightCondensed";
+  src: url("../fonts/Interstate-LightCondensed");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Interstate-LightCondensed.ttf") format("truetype");
+  /* Safari, Android, iOS */ }
+@font-face {
+  font-family: "Interstate-RegularCondensed";
+  src: url("../fonts/Interstate-RegularCondensed");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Interstate-RegularCondensed.ttf") format("truetype");
+  /* Safari, Android, iOS */ }
+@font-face {
+  font-family: "Interstate-BoldCondensed";
+  src: url("../fonts/Interstate-BoldCondensed");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Interstate-BoldCondensed.ttf") format("truetype");
+  /* Safari, Android, iOS */ }
+@font-face {
+  font-family: "Interstate-Black";
+  src: url("../fonts/Interstate-Black");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Interstate-Black.ttf") format("truetype");
+  /* Safari, Android, iOS */ }
+@font-face {
+  font-family: "TwentytwelveSlab-Regular";
+  src: url("../fonts/TwentytwelveSlab-Regular");
+  /* IE9 Compat Modes */
+  src: url("../fonts/TwentytwelveSlab-Regular.ttf") format("truetype");
+  /* Safari, Android, iOS */ }
 * {
   box-sizing: border-box; }
 
 a {
   text-decoration: none; }
 
-h1, h2, h3, h4 {
-  font-family: CooperHewitt-Heavy, Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif; }
-
-h5, h6 {
-  font-family: CooperHewitt, Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif; }
+h1, h2, h3, h4, h5, h6 {
+  font-family: Interstate-BoldCondensed, sans-serif; }
 
 h1 {
-  font-size: 3.157em; }
+  font-size: 2em; }
 
 h2 {
-  font-size: 2.369em; }
+  font-size: 1em; }
 
 h3 {
-  font-size: 1.777em; }
+  font-size: 1em; }
 
 h4 {
-  font-size: 1.333em; }
+  font-size: 1em; }
 
 h5 {
   font-size: 1em; }
 
 h6 {
-  font-size: 0.75em; }
+  font-size: 1em; }
 
 body {
   font-size: 18px;
-  font-family: "Source Sans Pro", sans-serif; }
+  font-family: Interstate-RegularCondensed, sans-serif; }
+
+.show-title {
+  font-family: TwentytwelveSlab-Regular, sans-serif; }
+
+.show-dates {
+  font-family: TrendSansOne, sans-serif; }
+
+.show-meta {
+  font-family: Interstate-LightCondensed, sans-serif; }
 
 .container-nav {
   width: 95%;
@@ -440,7 +476,7 @@ header {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  font-family: CooperHewitt-Heavy, Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif;
+  font-family: Interstate-BoldCondensed, sans-serif;
   list-style: none;
   width: 17.5em; }
 
