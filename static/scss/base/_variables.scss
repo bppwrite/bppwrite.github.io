@@ -9,23 +9,39 @@ $container-width-max: 1200px;
 // palette
 $radical-red: #FE4F6F;
 $cornflower: #95CEF5;
+$royal: #260036;
+$flat-gold: #f9a025;
 
 // in use
-$color-primary:  $cornflower;
-$color-accent:   $radical-red;
+$color-primary:  $royal;
+$color-accent:   $flat-gold;
 $white:          #ffffff;
 $black:          #222222;
 
 // Fonts
 $font-path: '../fonts/';
-$font-file-bold: 'CooperHewitt-Heavy';
-$font-file-med: 'CooperHewitt';
-@include font-face($font-path, $font-file-bold);
-@include font-face($font-path, $font-file-med);
+$font-file-int-lig: 'Interstate-LightCondensed';
+$font-file-int-reg: 'Interstate-RegularCondensed';
+$font-file-int-bol: 'Interstate-BoldCondensed';
+$font-file-int-bla: 'Interstate-Black';
+$font-file-trend: 'TrendSansOne';
+$font-file-trend-three: 'TrendSansThree';
+$font-file-twenty: 'TwentytwelveSlab-Regular';
+@include font-face-otf($font-path, $font-file-trend);
+@include font-face-otf($font-path, $font-file-trend-three);
+@include font-face-ttf($font-path, $font-file-int-lig);
+@include font-face-ttf($font-path, $font-file-int-reg);
+@include font-face-ttf($font-path, $font-file-int-bol);
+@include font-face-ttf($font-path, $font-file-int-bla);
+@include font-face-ttf($font-path, $font-file-twenty);
 
 // font stacks
-$font-stack-header: CooperHewitt-Heavy, Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif;
-$font-stack-meta: CooperHewitt, Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif;
-$font-stack-body: 'Source Sans Pro', sans-serif;;
+$font-stack-header: Interstate-BoldCondensed, sans-serif;
+$font-stack-show: TwentytwelveSlab-Regular, sans-serif;
+$font-stack-meta: Interstate-LightCondensed, sans-serif;
+$font-stack-body: Interstate-RegularCondensed, sans-serif;
+$font-stack-pull-quotes: Interstate-BoldCondensed, sans-serif;
+$font-stack-show-dates: TrendSansOne, sans-serif;
+$font-stack-show-dates-shadow: 'Latinotype - TrendSansThree', sans-serif;
 // The base body size
 $body-font-size: 18px;
