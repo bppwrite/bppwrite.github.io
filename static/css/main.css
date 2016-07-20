@@ -495,7 +495,7 @@ header {
   align-items: flex-end;
   font-family: Interstate-BoldCondensed, sans-serif;
   list-style: none;
-  width: 50%; }
+  width: 85%; }
 
 .menu-item {
   -webkit-box-flex: 0 0 auto;
@@ -521,5 +521,12 @@ header {
 
 .dropdown:hover > .dropdown-menu {
   display: block; }
+
+@media (min-width: 601px) {
+  .menu {
+    width: 80%; } }
+@media (min-width: 1001px) {
+  .menu {
+    width: 50%; } }
 
 /*# sourceMappingURL=main.css.map */
