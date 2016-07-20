@@ -452,6 +452,11 @@ body {
   max-width: 1200px; }
 
 header {
+  background-color: #231f20; }
+  header a {
+    color: #ffffff; }
+
+.container-nav {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -462,8 +467,10 @@ header {
   -webkit-justify-content: space-between;
   -ms-justify-content: space-between;
   justify-content: space-between; }
-  header a {
-    color: #222222; }
+
+.logo {
+  height: auto;
+  width: 4em; }
 
 .menu {
   display: -webkit-box;
@@ -476,28 +483,34 @@ header {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-justify-content: space-between;
+  -moz-box-justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-align-items: flex-end;
+  -moz-box-align-items: flex-end;
+  -webkit-align-items: flex-end;
+  -ms-align-items: flex-end;
+  align-items: flex-end;
   font-family: Interstate-BoldCondensed, sans-serif;
   list-style: none;
-  width: 17.5em; }
+  width: 50%; }
 
 .menu-item {
-  -webkit-box-flex: 0 0 25%;
-  -moz-box-flex: 0 0 25%;
-  -webkit-flex: 0 0 25%;
-  -ms-flex: 0 0 25%;
-  flex: 0 0 25%;
-  border-top: 1px solid #222222;
+  -webkit-box-flex: 0 0 auto;
+  -moz-box-flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   margin-left: 0.5em;
   padding-top: 0.25em; }
-
-.site-name {
-  font-size: 1.333em;
-  width: 10%; }
 
 .dropdown {
   position: relative; }
 
 .dropdown:after {
+  color: #ffffff;
   content: "\25BC";
   font-size: 0.5em; }
 
@@ -505,9 +518,6 @@ header {
   position: absolute;
   display: none;
   list-style: none; }
-
-.dropdown-menu-item {
-  border-top: 1px solid #222222; }
 
 .dropdown:hover > .dropdown-menu {
   display: block; }

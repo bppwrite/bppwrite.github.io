@@ -12,33 +12,33 @@ title = "Bloomington Playwrights Project"
   pre = "<i class='fa fa-cubes'></i>"
   url = "/tickets"
   identifier = "tickets"
-  weight = -180
+  weight = -210
 [[menu.main]]
   name = "OvationTix"
   parent = "tickets"
   pre = "<i class='fa fa-cubes'></i>"
   url = "https://web.ovationtix.com/trs/dept/1090"
-  weight = -180
+  weight = -210
 [[menu.main]]
   name = "Support"
   pre = "<i class='fa fa-download'></i>"
   url = "/support"
-  weight = -200
+  weight = -180
 [[menu.main]]
   name = "Join"
   pre = "<i class='fa fa-download'></i>"
   url = "/join"
-  weight = -200
+  weight = -190
 [[menu.main]]
   name = "About"
   pre = "<i class='fa fa-download'></i>"
   url = "/about"
-  weight = -200
+  weight = -160
 [[menu.main]]
-  name = "Contact"
+  name = "Blog"
   pre = "<i class='fa fa-download'></i>"
   url = "/contact"
-  weight = -200
+  weight = -170
 
 preserveTaxonomyNames = true
 

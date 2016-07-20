@@ -1,29 +1,34 @@
 header {
+  a {
+    color: $white;
+  }
+  background-color: $black;
+}
+
+.container-nav {
   @include flexbox();
   @include flex-prop-prefixes(justify-content, space-between);
-  a {
-    color: $black;
-  }
+}
+
+.logo {
+  height: auto;
+  width: 4em;
 }
 
 .menu {
   @include flexbox();
   @include flex-prop-prefixes(flex-wrap, wrap);
+  @include flex-prop-prefixes(justify-content, space-between);
+  @include flex-prop-prefixes(align-items, flex-end);
   font-family: $font-stack-header;
   list-style: none;
-  width: 17.5em;
+  width: 50%;
 }
 
 .menu-item {
-  @include flex(0 0 25%);
-  border-top: 1px solid $black;
+  @include flex(0 0 auto);
   margin-left: 0.5em;
   padding-top: 0.25em;
-}
-
-.site-name {
-  font-size: 1.333em;
-  width: 10%;
 }
 
 .dropdown {
@@ -31,6 +36,7 @@ header {
 }
 
 .dropdown:after {
+  color: $white;
   content: "\25BC";
   font-size: 0.5em;
 }
@@ -42,7 +48,6 @@ header {
 }
 
 .dropdown-menu-item {
-  border-top: 1px solid $black;
 }
 .dropdown:hover > .dropdown-menu {
   display: block;
