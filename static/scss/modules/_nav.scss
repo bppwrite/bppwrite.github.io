@@ -22,7 +22,7 @@ header {
   @include flex-prop-prefixes(align-items, flex-end);
   font-family: $font-stack-header;
   list-style: none;
-  width: 50%;
+  width: 85%;
 }
 
 .menu-item {
@@ -51,4 +51,15 @@ header {
 }
 .dropdown:hover > .dropdown-menu {
   display: block;
+}
+
+@media (min-width: $start-tablet) {
+  .menu {
+    width: 80%;
+  }
+}
+@media (min-width: $start-laptop) {
+  .menu {
+    width: 50%;
+  }
 }
