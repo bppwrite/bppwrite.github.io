@@ -1,6 +1,14 @@
 // ---- Layout ----
 
 .container-nav {
+  @include clearfix;
+  width: 95%;
+  margin: 0 auto;
+  max-width: $container-width-max;
+}
+
+.container {
+  @include clearfix;
   width: 95%;
   margin: 0 auto;
   max-width: $container-width-max;
