@@ -1,0 +1,32 @@
+// ---- grid ----
+.row {
+  @include clearfix;
+}
+
+@for $i from 1 through $column-count {
+  .col-sm-#{$i} {
+    width: $i / $column-count * 100%;
+    float: left;
+    @if $i < $column-count { padding-right: $column-padding; }
+  }
+}
+
+@media (min-width: $start-tablet) {
+  @for $i from 1 through $column-count {
+    .col-md-#{$i} {
+      width: $i / $column-count * 100%;
+      float: left;
+      @if $i < $column-count { padding-right: $column-padding; }
+    }
+  }
+}
+
+@media (min-width: $start-laptop) {
+  @for $i from 1 through $column-count {
+    .col-lg-#{$i} {
+      width: $i / $column-count * 100%;
+      float: left;
+      @if $i < $column-count { padding-right: $column-padding; }
+    }
+  }
+}
