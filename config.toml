@@ -43,7 +43,6 @@ title = "Bloomington Playwrights Project"
 preserveTaxonomyNames = true
 
 [taxonomies]
-sponsor = "sponsors"
 genre = "genres" # drama, musical, etc
 series = "series" # a run of plays; formatted as year1-year2
 actor = "actors"
