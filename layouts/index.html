@@ -3,21 +3,18 @@
 
 <h2>Home</h2>
 
-<h4>Pages</p4>
+<h3>Pages by Section</h3>
 
-{{ range .Data.Pages.GroupBy "Section" }}
-<h5>{{ .Key }}</h5>
-<ul>
-    {{ range .Pages }}
-    <li>
-      <span>{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
-      <p>
-        {{ printf "%#v" . }}
-      </p>
-    </li>
-    {{ end }}
-</ul>
+{{ range $index, $section := .Data.Pages.GroupBy "Section" }}
+  <h4>Section: {{ .Key }}</h4>
+  <ul>
+      {{ range .Pages }}
+      <li>
+        <span>{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+      </li>
+      {{ end }}
+  </ul>
 {{ end }}
 
 {{ partial "foot.html" . }}
