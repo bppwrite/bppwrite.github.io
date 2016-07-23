@@ -1,7 +1,9 @@
 <!-- nav start-->
 <header>
   <div class="container-nav">
-    <a href="{{ .Site.BaseURL }}"><img src="{{ .Site.BaseURL }}img/bpp-logo.svg" class="logo"></a>
+    <div class="logo">
+      <a href="{{ .Site.BaseURL }}"><img src="{{ .Site.BaseURL }}img/bpp-logo.svg"></a>
+    </div>
     <ul class="menu">
       {{ $currentNode := . }}
       {{ range .Site.Menus.main }}

@@ -635,13 +635,6 @@ body {
   width: 95%;
   margin: 0 auto;
   max-width: 1200px; }
-  .container-nav::before {
-    display: table;
-    content: ""; }
-  .container-nav::after {
-    display: table;
-    clear: both;
-    content: ""; }
 
 .container {
   width: 95%;
@@ -670,7 +663,17 @@ header {
   -moz-box-justify-content: space-between;
   -webkit-justify-content: space-between;
   -ms-justify-content: space-between;
-  justify-content: space-between; }
+  justify-content: space-between;
+  -webkit-box-align-items: center;
+  -moz-box-align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-box-flex-direction: column;
+  -moz-box-flex-direction: column;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
 
 .logo {
   height: auto;
@@ -699,16 +702,14 @@ header {
   align-items: flex-end;
   font-family: Interstate-BoldCondensed, sans-serif;
   list-style: none;
-  width: 85%; }
+  width: 100%; }
 
 .menu-item {
-  -webkit-box-flex: 0 0 auto;
-  -moz-box-flex: 0 0 auto;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  margin-left: 0.5em;
-  padding-top: 0.25em; }
+  -webkit-box-flex: 1 1 auto;
+  -moz-box-flex: 1 1 auto;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto; }
 
 .dropdown {
   position: relative; }
@@ -727,6 +728,23 @@ header {
   display: block; }
 
 @media (min-width: 601px) {
+  .container-nav {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-justify-content: space-between;
+    -moz-box-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-box-flex-direction: row;
+    -moz-box-flex-direction: row;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+
   .menu {
     width: 80%; } }
 @media (min-width: 1001px) {

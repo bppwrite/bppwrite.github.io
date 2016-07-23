@@ -8,6 +8,8 @@ header {
 .container-nav {
   @include flexbox();
   @include flex-prop-prefixes(justify-content, space-between);
+  @include flex-prop-prefixes(align-items, center);
+  @include flex-prop-prefixes(flex-direction, column);
 }
 
 .logo {
@@ -22,13 +24,11 @@ header {
   @include flex-prop-prefixes(align-items, flex-end);
   font-family: $font-stack-header;
   list-style: none;
-  width: 85%;
+  width: 100%;
 }
 
 .menu-item {
-  @include flex(0 0 auto);
-  margin-left: 0.5em;
-  padding-top: 0.25em;
+  @include flex(1 1 auto);
 }
 
 .dropdown {
@@ -54,6 +54,12 @@ header {
 }
 
 @media (min-width: $start-tablet) {
+  .container-nav {
+    @include flexbox();
+    @include flex-prop-prefixes(justify-content, space-between);
+    @include flex-prop-prefixes(flex-direction, row);
+  }
+
   .menu {
     width: 80%;
   }
