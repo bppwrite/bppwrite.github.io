@@ -750,5 +750,9 @@ header {
 @media (min-width: 1001px) {
   .menu {
     width: 50%; } }
+footer {
+  background-color: #231f20; }
+  footer a {
+    color: #ffffff; }
 
 /*# sourceMappingURL=main.css.map */
