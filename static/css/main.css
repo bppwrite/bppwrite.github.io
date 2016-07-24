@@ -419,19 +419,19 @@ h1 {
   font-size: 2em; }
 
 h2 {
-  font-size: 1em; }
+  font-size: 1.83333em; }
 
 h3 {
-  font-size: 1em; }
+  font-size: 1.66667em; }
 
 h4 {
-  font-size: 1em; }
+  font-size: 1.5em; }
 
 h5 {
-  font-size: 1em; }
+  font-size: 1.33333em; }
 
 h6 {
-  font-size: 1em; }
+  font-size: 1.16667em; }
 
 body {
   font-size: 18px;
@@ -631,11 +631,6 @@ body {
   .col-lg-12 {
     width: 100%;
     float: left; } }
-.container-nav {
-  width: 95%;
-  margin: 0 auto;
-  max-width: 1200px; }
-
 .container {
   width: 95%;
   margin: 0 auto;
@@ -647,6 +642,11 @@ body {
     display: table;
     clear: both;
     content: ""; }
+
+.container-footer, .container-nav, .container-sponsor-season, .container-sponsor-lead, .container-footer-info {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1200px; }
 
 header {
   background-color: #231f20; }
@@ -751,8 +751,39 @@ header {
   .menu {
     width: 50%; } }
 footer {
-  background-color: #231f20; }
-  footer a {
-    color: #ffffff; }
+  background-color: #231f20;
+  color: #ffffff; }
+
+.background-footer-sponsor {
+  background-color: #f4f2f5;
+  color: #231f20;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em; }
+
+.container-sponsor-lead, .container-sponsor-season {
+  text-align: center; }
+
+.container-sponsor-lead img {
+  height: 75px;
+  width: auto; }
+
+.sponsor-season-list {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-flex-direction: row;
+  -moz-box-flex-direction: row;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-justify-content: center;
+  -moz-box-justify-content: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0; }
 
 /*# sourceMappingURL=main.css.map */

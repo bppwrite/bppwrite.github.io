@@ -1,76 +1,82 @@
 <footer>
-  <h3>Footer</h3>
 
-  <h4>Sponsors</h4>
+  <div class="background-footer-sponsor">
+    <div class="container-sponsor-lead">
+      <h5>Lead Sponsor</h5>
 
-  <h5>Lead Sponsor</h5>
+      {{ range where (where .Site.Pages "Section" "sponsor") ".Params.is_lead" "==" true }}
+        <p>
+          <a href="{{ .Params.website }}">
+            <img src="{{ .RelPermalink }}/logo.jpg" alt="{{ .Title }} Logo" />
+          </a>
+        </p>
+      {{ end }}
+    </div>
+    <div class="container-sponsor-season">
+      <h5>Season Sponsors</h5>
+      <ul class="sponsor-season-list">
+        {{ range where (where .Site.Pages "Section" "sponsor") ".Params.is_lead" "!=" true }}
+          <li>
+            <a href="{{ .Params.website }}">
+              <img src="{{ .RelPermalink }}/logo.jpg" alt="{{ .Title }} Logo" />
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
 
-  {{ range where (where .Site.Pages "Section" "sponsor") ".Params.is_lead" "==" true }}
-    <p>
-      <a href="{{ .Params.website }}">
-        <img src="{{ .RelPermalink }}/logo.jpg" alt="{{ .Title }} Logo" />
-      </a>
-    </p>
-  {{ end }}
+  <div class="background-footer-info">
+    <div class="container-footer-info">
+      <h3>Page type</h3>
 
-  <h5>Season Sponsors</h5>
+      <p>
+        {{ printf "%T" . }}
+      </p>
 
-  <ul>
-    {{ range where (where .Site.Pages "Section" "sponsor") ".Params.is_lead" "!=" true }}
-      <li>
-        <a href="{{ .Params.website }}">
-          <img src="{{ .RelPermalink }}/logo.jpg" alt="{{ .Title }} Logo" />
-        </a>
-      </li>
-    {{ end }}
-  </ul>
+      <h3>Taxonomies</h3>
 
-  <h3>Page type</h3>
+      <ul>
+        <!-- for each taxonomy -->
+        {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
+          <li>
+            <!-- link to taxonomy list page -->
+            <a href="/{{ $taxonomyname | urlize }}">
+              {{ $taxonomyname }}
+            </a>
+            <ul>
+              <!-- display each taxonomy term and link to term single page -->
+              {{ range $key, $value := $taxonomy }}
+              <li> {{ $key }} </li>
+              <!-- <li>{{ printf "%#v" $value }}</li> -->
+              <ul>
+                <!-- display each taxonomy term's related pages -->
+                {{ range $value.Pages }}
+                  <li hugo-nav="{{ .RelPermalink }}">
+                    <a href="{{ .Permalink }}"> {{ .LinkTitle }} </a>
+                  </li>
+                {{ end }}
+              </ul>
+              {{ end }}
+            </ul>
+          </li>
+        {{ end }}
+      </ul>
 
-  <p>
-    {{ printf "%T" . }}
-  </p>
+      <h4>Variables in the current context</h4>
 
-  <h3>Taxonomies</h3>
+      <p>
+        {{ printf "%#v" . }}
+      </p>
 
-  <ul>
-    <!-- for each taxonomy -->
-    {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
-      <li>
-        <!-- link to taxonomy list page -->
-        <a href="/{{ $taxonomyname | urlize }}">
-          {{ $taxonomyname }}
-        </a>
-        <ul>
-          <!-- display each taxonomy term and link to term single page -->
-          {{ range $key, $value := $taxonomy }}
-          <li> {{ $key }} </li>
-          <!-- <li>{{ printf "%#v" $value }}</li> -->
-          <ul>
-            <!-- display each taxonomy term's related pages -->
-            {{ range $value.Pages }}
-              <li hugo-nav="{{ .RelPermalink }}">
-                <a href="{{ .Permalink }}"> {{ .LinkTitle }} </a>
-              </li>
-            {{ end }}
-          </ul>
-          {{ end }}
-        </ul>
-      </li>
-    {{ end }}
-  </ul>
+      <h4>.Site variables</h4>
 
-  <h4>Variables in the current context</h4>
+      <p>
+        {{ printf "%#v" $.Site }}
+      </p>
+    </div>
+  </div>
 
-  <p>
-    {{ printf "%#v" . }}
-  </p>
-
-  <h4>.Site variables</h4>
-
-  <p>
-    {{ printf "%#v" $.Site }}
-  </p>
 </footer>
 
   </body>
