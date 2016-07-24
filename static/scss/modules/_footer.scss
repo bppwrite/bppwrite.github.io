@@ -20,7 +20,12 @@ footer {
   }
 }
 
-.container-sponsor-season {}
+.container-sponsor-season {
+  img {
+    height: 50px;
+    width: auto;
+  }
+}
 
 .sponsor-season-list {
   @include flexbox();
