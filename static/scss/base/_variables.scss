@@ -21,6 +21,7 @@ $color-primary:  $royal;
 $color-accent:   $flat-gold;
 $white:          #ffffff;
 $black:          #231f20;
+$light-grey: mix($white, $royal, 95%);
 
 // Fonts
 $font-path: '../fonts/';

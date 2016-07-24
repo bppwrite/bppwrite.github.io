@@ -1,20 +1,24 @@
 {{ partial "head.html" . }}
 {{ partial "nav.html" . }}
 
-<h2>Home</h2>
+<div class="container">
 
-<h3>Pages by Section</h3>
+  <h2>Home</h2>
 
-{{ range $index, $section := .Data.Pages.GroupBy "Section" }}
-  <h4>Section: {{ .Key }}</h4>
-  <ul>
-      {{ range .Pages }}
-      <li>
-        <span>{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
-        <a href="{{ .Permalink }}">{{ .Title }}</a>
-      </li>
-      {{ end }}
-  </ul>
-{{ end }}
+  <h3>Pages by Section</h3>
+
+  {{ range $index, $section := .Data.Pages.GroupBy "Section" }}
+    <h4>Section: {{ .Key }}</h4>
+    <ul>
+        {{ range .Pages }}
+        <li>
+          <span>{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </li>
+        {{ end }}
+    </ul>
+  {{ end }}
+
+</div>
 
 {{ partial "foot.html" . }}

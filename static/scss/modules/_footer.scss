@@ -1,10 +1,31 @@
 footer {
-  a {
-    color: $white;
-  }
   background-color: $black;
+  color: $white;
 }
 
-.container-footer {
+.background-footer-sponsor {
+  background-color: $light-grey;
+  color: $black;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+}
 
+.container-sponsor-lead, .container-sponsor-season {
+  text-align: center;
+}
+.container-sponsor-lead {
+  img {
+    height: 75px;
+    width: auto;
+  }
+}
+
+.container-sponsor-season {}
+
+.sponsor-season-list {
+  @include flexbox();
+  @include flex-prop-prefixes(flex-direction, row);
+  @include flex-prop-prefixes(justify-content, center);
+  list-style: none;
+  padding-left: 0;
 }

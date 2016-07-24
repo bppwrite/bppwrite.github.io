@@ -1,13 +1,13 @@
 // ---- Layout ----
 
-.container-nav {
+.container {
+  @include clearfix;
   width: 95%;
   margin: 0 auto;
   max-width: $container-width-max;
 }
 
-.container {
-  @include clearfix;
+.container-footer, .container-nav, .container-sponsor-season, .container-sponsor-lead, .container-footer-info {
   width: 95%;
   margin: 0 auto;
   max-width: $container-width-max;
