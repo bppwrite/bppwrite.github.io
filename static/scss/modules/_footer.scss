@@ -12,11 +12,15 @@ footer {
 
 .container-sponsor-lead, .container-sponsor-season {
   text-align: center;
+  color: $dark-grey;
 }
+$filter-factor: 95%;
 .container-sponsor-lead {
   img {
     height: 75px;
     width: auto;
+    filter: grayscale($filter-factor);
+    -webkit-filter: grayscale($filter-factor);
   }
 }
 
@@ -24,6 +28,8 @@ footer {
   img {
     height: 50px;
     width: auto;
+    filter: grayscale($filter-factor);
+    -webkit-filter: grayscale($filter-factor);
   }
 }
 
