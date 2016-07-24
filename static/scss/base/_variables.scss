@@ -11,17 +11,17 @@ $start-laptop: 1001px;
 // Colors
 
 // palette
-$radical-red: #FE4F6F;
-$cornflower: #95CEF5;
-$royal: #260036;
-$flat-gold: #f9a025;
+$radical-red:   #FE4F6F;
+$cornflower:    #95CEF5;
+$royal:         #260036;
+$flat-gold:     #f9a025;
 
 // in use
 $color-primary:  $royal;
 $color-accent:   $flat-gold;
 $white:          #ffffff;
 $black:          #231f20;
-$light-grey: mix($white, $royal, 95%);
+$light-grey:     mix($white, $royal, 95%);
 
 // Fonts
 $font-path: '../fonts/';
