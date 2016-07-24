@@ -767,15 +767,20 @@ footer {
   padding-bottom: 0.25em; }
 
 .container-sponsor-lead, .container-sponsor-season {
-  text-align: center; }
+  text-align: center;
+  color: #615464; }
 
 .container-sponsor-lead img {
   height: 75px;
-  width: auto; }
+  width: auto;
+  filter: grayscale(95%);
+  -webkit-filter: grayscale(95%); }
 
 .container-sponsor-season img {
   height: 50px;
-  width: auto; }
+  width: auto;
+  filter: grayscale(95%);
+  -webkit-filter: grayscale(95%); }
 
 .sponsor-season-list {
   display: -webkit-box;
