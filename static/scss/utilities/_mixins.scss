@@ -40,7 +40,9 @@
   @font-face {
     font-family: '#{$file}';
     src: url('#{$font-path}#{$file}'); /* IE9 Compat Modes */
-    src: url('#{$font-path}#{$file}.otf')  format('truetype'); /* Safari, Android, iOS */
+		src: url('#{$font-path}#{$file}.woff2') format('woff2'),
+				 url('#{$font-path}#{$file}.woff') format('woff'),
+     		url('#{$font-path}#{$file}.otf')  format('opentype'); /* Safari, Android, iOS */
   }
 }
 

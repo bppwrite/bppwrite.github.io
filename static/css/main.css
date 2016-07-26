@@ -368,13 +368,7 @@ textarea {
   font-family: "TrendSansOne";
   src: url("../fonts/TrendSansOne");
   /* IE9 Compat Modes */
-  src: url("../fonts/TrendSansOne.otf") format("truetype");
-  /* Safari, Android, iOS */ }
-@font-face {
-  font-family: "TrendSansThree";
-  src: url("../fonts/TrendSansThree");
-  /* IE9 Compat Modes */
-  src: url("../fonts/TrendSansThree.otf") format("truetype");
+  src: url("../fonts/TrendSansOne.woff2") format("woff2"), url("../fonts/TrendSansOne.woff") format("woff"), url("../fonts/TrendSansOne.otf") format("opentype");
   /* Safari, Android, iOS */ }
 @font-face {
   font-family: "Interstate-LightCondensed";
@@ -447,7 +441,7 @@ body {
   font-family: TwentytwelveSlab-Regular, sans-serif; }
 
 .show-dates {
-  font-family: TrendSansOne, sans-serif; }
+  font-family: "TrendSansOne", sans-serif; }
 
 .show-meta {
   font-family: Interstate-LightCondensed, sans-serif; }
@@ -800,5 +794,12 @@ footer {
   justify-content: center;
   list-style: none;
   padding-left: 0; }
+
+.show-title {
+  font-family: TwentytwelveSlab-Regular, sans-serif;
+  text-transform: uppercase; }
+
+.showtimes-title, .showtimes-dates {
+  font-family: "TrendSansOne", sans-serif; }
 
 /*# sourceMappingURL=main.css.map */
