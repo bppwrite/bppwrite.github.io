@@ -45,6 +45,30 @@ Director: {{ delimit .Params.directors ", " " & " | html }}
   {{ .Params.showtimes_human }}
 </p>
 
+<h4 class="showtimes-title">Showtimes Styled</h4>
+
+{{ $.Scratch.Add "months" (slice (dateFormat "January" $start)) }}
+{{ range $index, $showtime := .Params.showtimes }}
+  {{ $.Scratch.Set "hasMonth" false }}
+  {{ range $i, $month := ($.Scratch.Get "months") }}
+    {{ if eq $month (dateFormat "January" $showtime) }}
+      {{ $.Scratch.Set "hasMonth" true }}
+    {{ end }}
+  {{ end }}
+  {{ if eq ($.Scratch.Get "hasMonth") false }}
+    {{ $.Scratch.Add "months" (dateFormat "January" $showtime) }}
+  {{ end }}
+  {{ $.Scratch.Add "days" (slice (dateFormat "2" $showtime)) }}
+{{ end }}
+
+<h5>{{ delimit ($.Scratch.Get "months") ", " " & " }}</h5>
+
+<p>
+  {{ range $i, $day := ($.Scratch.Get "days") }}
+    <span>{{ $day }}</span>
+  {{ end }}
+</p>
+
 <div>
   {{ if .Prev }}
     Previous: <a class="previous" href="{{.Prev.Permalink}}"> {{.Prev.Title}}</a> <br/>
