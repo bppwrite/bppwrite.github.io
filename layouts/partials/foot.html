@@ -28,52 +28,51 @@
 
   <div class="background-footer-info">
     <div class="container-footer-info">
-      <h3>Page type</h3>
-
-      <p>
-        {{ printf "%T" . }}
-      </p>
-
-      <h3>Taxonomies</h3>
-
-      <ul>
-        <!-- for each taxonomy -->
-        {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
-          <li>
-            <!-- link to taxonomy list page -->
-            <a href="/{{ $taxonomyname | urlize }}">
-              {{ $taxonomyname }}
-            </a>
-            <ul>
-              <!-- display each taxonomy term and link to term single page -->
-              {{ range $key, $value := $taxonomy }}
-              <li> {{ $key }} </li>
-              <!-- <li>{{ printf "%#v" $value }}</li> -->
-              <ul>
-                <!-- display each taxonomy term's related pages -->
-                {{ range $value.Pages }}
-                  <li hugo-nav="{{ .RelPermalink }}">
-                    <a href="{{ .Permalink }}"> {{ .LinkTitle }} </a>
-                  </li>
-                {{ end }}
-              </ul>
-              {{ end }}
-            </ul>
-          </li>
-        {{ end }}
-      </ul>
-
-      <h4>Variables in the current context</h4>
-
-      <p>
-        {{ printf "%#v" . }}
-      </p>
-
-      <h4>.Site variables</h4>
-
-      <p>
-        {{ printf "%#v" $.Site }}
-      </p>
+			<div class="row">
+				<div class="col-md-3 col-sm-12">
+					<h5 class="footer-site-title">Bloomington<br>Playwrights<br>Project</h5>
+				</div>
+				<div class="col-md-9 col-sm-12">
+					<ul class="footer-menu">
+						{{ $currentNode := . }}
+						{{ range .Site.Menus.main }}
+							{{ if .HasChildren }}
+								<li class="{{if $currentNode.HasMenuCurrent "main" . }}active{{end}} footer-menu-item footer-dropdown">
+									<a href="javascript:;" class="">
+										{{ .Pre }}
+										<span>{{ .Name }}</span>
+										{{ .Post }}
+									</a>
+									<ul class="footer-dropdown-menu">
+										{{ range .Children }}
+										<li class="{{if $currentNode.IsMenuCurrent "main" . }}active{{end}} footer-dropdown-menu-item">
+											<a href="{{.URL}}"> {{ .Name }} </a>
+										</li>
+										{{ end }}
+									</ul>
+								</li>
+							{{else}}
+								<li class="footer-menu-item">
+									<a class="" href="{{.URL}}">
+										{{ .Pre }}
+										<span>{{ .Name }}</span>
+									</a>
+								</li>
+							{{end}}
+						{{end}}
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<div class="footer-address">
+						<p>107 West 9th Street</p>
+						<p>Bloomington, IN 47404</p>
+						<p>812.334.1188</p>
+						<p>bppwrite@newplays.org</p>
+					</div>
+				</div>
+			</div>
     </div>
   </div>
 
