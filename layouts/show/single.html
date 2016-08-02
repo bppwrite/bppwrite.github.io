@@ -5,54 +5,80 @@
 {{ $start := (index .Params.showtimes 0) }}
 {{/* show ends on the last date in the showtimes array */}}
 {{ $end := (index .Params.showtimes (sub (len .Params.showtimes) 1) ) }}
+
 <div class="container">
-  <h2 class="show-title">
-    {{ .Title }}
+	<h2 class="show-title">
+	  {{ .Title }}
 
-    {{/* only show the subtitle if it exists */}}
-    {{if .Params.subtitle}}
-      <small>{{ .Params.subtitle }}</small>
-    {{end}}
+	  {{/* only show the subtitle if it exists */}}
+	  {{if .Params.subtitle}}
+	    <small>{{ .Params.subtitle }}</small>
+	  {{end}}
 
-    {{if .Params.playwrights}}
-      by {{ delimit .Params.playwrights  ", " " & " | html }}
-    {{end}}
-  </h2>
+	  {{if .Params.playwrights}}
+	    by {{ delimit .Params.playwrights  ", " " & " | html }}
+	  {{end}}
+	</h2>
 
-  Director: {{ delimit .Params.directors ", " " & " | html }}
+	Director: {{ delimit .Params.directors ", " " & " | html }}
 
-  {{ partial "youtube.html" . }}
+	{{ partial "youtube.html" . }}
 
-  <img src="poster.jpg" />
+	<img src="poster.jpg" />
 
-  {{ .Content }}
+	{{ .Content }}
 
-  <h3 class="showtimes-title">Showtimes</h3>
+	<h3>Showtimes</h3>
 
-  <ul class="showtimes-dates">
-    {{ range .Params.showtimes }}
-      <li>{{ dateFormat "Mon, Jan 2, 2006 at 3:04PM" . }}</li>
-    {{ end }}
-  </ul>
+	<ul>
+	  {{ range .Params.showtimes }}
+	    <li>{{ dateFormat "Mon, Jan 2, 2006 at 3:04PM" . }}</li>
+	  {{ end }}
+	</ul>
 
-  <p>
-    Run starts on
-      {{ dateFormat "Mon, Jan 2, 2006" $start }}
-    and ends on
-      {{ dateFormat "Mon, Jan 2, 2006" $end }}
-  </p>
-  <p>
-    {{ .Params.showtimes_human }}
-  </p>
+	<p>
+	  Run starts on
+	    {{ dateFormat "Mon, Jan 2, 2006" $start }}
+	  and ends on
+	    {{ dateFormat "Mon, Jan 2, 2006" $end }}
+	</p>
+	<p>
+	  {{ .Params.showtimes_human }}
+	</p>
 
-  <div>
-    {{ if .Prev }}
-      Previous: <a class="previous" href="{{.Prev.Permalink}}"> {{.Prev.Title}}</a> <br/>
-    {{ end }}
-    {{ if .Next }}
-      Next: <a class="next" href="{{.Next.Permalink}}"> {{.Next.Title}}</a>
-    {{ end }}
-  </div>
+	<h4 class="showtimes-title">Showtimes Styled</h4>
+
+	{{ $.Scratch.Add "months" (slice (dateFormat "January" $start)) }}
+	{{ range $index, $showtime := .Params.showtimes }}
+	  {{ $.Scratch.Set "hasMonth" false }}
+	  {{ range $i, $month := ($.Scratch.Get "months") }}
+	    {{ if eq $month (dateFormat "January" $showtime) }}
+	      {{ $.Scratch.Set "hasMonth" true }}
+	    {{ end }}
+	  {{ end }}
+	  {{ if eq ($.Scratch.Get "hasMonth") false }}
+	    {{ $.Scratch.Add "months" (dateFormat "January" $showtime) }}
+	  {{ end }}
+	  {{ $.Scratch.Add "days" (slice (dateFormat "2" $showtime)) }}
+	{{ end }}
+
+	<h5>{{ delimit ($.Scratch.Get "months") ", " " & " }}</h5>
+
+	<p>
+	  {{ range $i, $day := ($.Scratch.Get "days") }}
+	    <span>{{ $day }}</span>
+	  {{ end }}
+	</p>
+
+	<div>
+	  {{ if .Prev }}
+	    Previous: <a class="previous" href="{{.Prev.Permalink}}"> {{.Prev.Title}}</a> <br/>
+	  {{ end }}
+	  {{ if .Next }}
+	    Next: <a class="next" href="{{.Next.Permalink}}"> {{.Next.Title}}</a>
+	  {{ end }}
+
+	</div>
 </div>
 
 {{ partial "foot.html" . }}
