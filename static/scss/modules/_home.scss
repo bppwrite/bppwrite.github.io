@@ -1,0 +1,41 @@
+// ---- Home Page ----
+
+.hero-home {
+	background: url(../img/hero.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 450px;
+}
+
+.hero-home-text {
+	color: $white;
+	margin: 0;
+	text-align: center;
+	padding-top: 200px;
+}
+
+.hero-home-text-emphasis {
+	color: $color-accent;
+	font-family: $font-stack-show;
+	text-transform: uppercase;
+}
+
+@media (min-width: $start-tablet) {
+	.hero-home {
+		height: 500px;
+	}
+	.hero-home-text {
+		padding-top: 300px;
+	}
+}
+@media (min-width: $start-laptop) {
+	.hero-home {
+		height: 550px;
+	}
+	.hero-home-text {
+		padding-top: 350px;
+	}
+}
