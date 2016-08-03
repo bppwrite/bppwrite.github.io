@@ -5,5 +5,12 @@
 }
 
 a {
+  color: $color-accent;
   text-decoration: none;
+}
+
+a:hover {
+  color: mix($black, $color-accent, 75%);
+  transition: color 0.5s;
+  -webkit-transition: color 0.5s;
 }

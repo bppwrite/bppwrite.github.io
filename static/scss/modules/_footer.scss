@@ -1,0 +1,91 @@
+// ---- Footer ----
+
+footer {
+  background-color: $black;
+  color: $light-grey;
+}
+
+.background-footer-sponsor {
+  background-color: $light-grey;
+  color: $black;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+}
+
+.container-footer-info {
+	padding-top: 1em;
+}
+
+.container-sponsor-lead, .container-sponsor-season {
+  text-align: center;
+  color: $dark-grey;
+}
+
+$filter-factor: 95%;
+.container-sponsor-lead {
+  img {
+    height: 75px;
+    width: auto;
+    filter: grayscale($filter-factor);
+    -webkit-filter: grayscale($filter-factor);
+  }
+}
+
+.container-sponsor-season {
+  img {
+    height: 50px;
+    width: auto;
+    filter: grayscale($filter-factor);
+    -webkit-filter: grayscale($filter-factor);
+  }
+}
+
+.sponsor-season-list {
+  @include flexbox();
+  @include flex-prop-prefixes(flex-direction, row);
+  @include flex-prop-prefixes(justify-content, center);
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-address {
+	padding-bottom: 1em;
+}
+
+.footer-address p {
+	margin: 0;
+	padding: 0;
+}
+
+.footer-site-title {
+	margin-top: 0;
+}
+
+// ---- footer menu ----
+
+.footer-menu {
+  @include flexbox();
+  @include flex-prop-prefixes(flex-wrap, wrap);
+  @include flex-prop-prefixes(justify-content, space-between);
+  @include flex-prop-prefixes(align-items, flex-start);
+  font-family: $font-stack-header;
+  list-style: none;
+	margin-top: 0;
+  text-align: center;
+}
+
+.footer-menu-item {
+  @include flex(1 1 auto);
+}
+
+// .footer-dropdown {
+//   position: relative;
+// }
+
+.footer-dropdown-menu {
+	@include flexbox();
+	@include flex-prop-prefixes(flex-direction, row);
+	@include flex-prop-prefixes(justify-content, center);
+  list-style: none;
+	padding: 0.5em 0 0 0;
+}
