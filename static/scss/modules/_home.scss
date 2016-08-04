@@ -23,6 +23,11 @@
 	text-transform: uppercase;
 }
 
+.hero-home-text-background {
+	background-color: $black-trans;
+	padding: (4/16) * 1em;
+}
+
 .home-shows-container {
 	@include flexbox();
 	@include flex-prop-prefixes(justify-content, space-between);
