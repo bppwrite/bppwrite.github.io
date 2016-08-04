@@ -440,7 +440,7 @@ body {
 .show-title {
   font-family: TwentytwelveSlab-Regular, sans-serif; }
 
-.show-dates {
+.show-dates, .home-show-dates {
   font-family: "TrendSansOne", sans-serif; }
 
 .show-meta {
@@ -452,6 +452,14 @@ body {
   opacity: 0.6;
   filter: alpha(opacity=60);
   /* For IE8 and earlier */ }
+
+.show-circle {
+  font-size: 0.83333em;
+  background-color: #f9a025;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  padding: 7px; }
 
 .row::before {
   display: table;
@@ -933,6 +941,9 @@ footer {
   text-transform: uppercase;
   font-family: "TrendSansOne", sans-serif;
   margin: 0; }
+
+.home-show-dates {
+  margin: 0.5em 0 0.5em 0; }
 
 @media (min-width: 601px) {
   .hero-home {

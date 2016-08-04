@@ -51,6 +51,11 @@
 	margin: 0;
 }
 
+.home-show-dates {
+	@extend .show-dates;
+	margin: 0.5em 0 0.5em 0;
+}
+
 @media (min-width: $start-tablet) {
 	.hero-home {
 		height: 500px;

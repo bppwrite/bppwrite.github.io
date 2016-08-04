@@ -34,3 +34,12 @@ body {
 	opacity: 0.6;
 	filter: alpha(opacity=60); /* For IE8 and earlier */
 }
+
+.show-circle {
+	font-size: (15 / 18) * 1em;
+	background-color: $color-accent;
+	border-radius: 50%;
+	width: 5px;
+	height: 5px;
+	padding: 7px;
+}
