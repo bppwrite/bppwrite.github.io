@@ -795,6 +795,11 @@ footer {
   filter: grayscale(95%);
   -webkit-filter: grayscale(95%); }
 
+.footer-section-title {
+  text-align: center;
+  color: #615464;
+  margin-bottom: 0; }
+
 .sponsor-season-list {
   display: -webkit-box;
   display: -moz-box;
@@ -964,6 +969,22 @@ footer {
   -webkit-align-items: flex-start;
   -ms-align-items: flex-start;
   align-items: flex-start; }
+
+.home-section-title {
+  text-align: center; }
+
+.home-google-map {
+  position: relative;
+  padding-bottom: 33%;
+  height: 0;
+  overflow: hidden; }
+
+.home-google-map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important; }
 
 @media (min-width: 601px) {
   .hero-home {

@@ -64,6 +64,24 @@
 	@include flex-prop-prefixes(align-items, flex-start);
 }
 
+.home-section-title {
+	text-align: center;
+}
+
+.home-google-map {
+		position: relative;
+		padding-bottom: 33%; // This is the aspect ratio
+		height: 0;
+		overflow: hidden;
+}
+.home-google-map iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100% !important;
+		height: 100% !important;
+}
+
 @media (min-width: $start-tablet) {
 	.hero-home {
 		height: 500px;

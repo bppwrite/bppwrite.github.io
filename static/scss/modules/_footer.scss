@@ -40,6 +40,12 @@ $filter-factor: 95%;
   }
 }
 
+.footer-section-title {
+	text-align: center;
+	color: $dark-grey;
+	margin-bottom: 0;
+}
+
 .sponsor-season-list {
   @include flexbox();
   @include flex-prop-prefixes(flex-direction, row);
