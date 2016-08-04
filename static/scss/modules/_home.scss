@@ -54,6 +54,9 @@
 .home-show-dates {
 	@extend .show-dates;
 	margin: 0.5em 0 0.5em 0;
+	@include flexbox();
+	@include flex-prop-prefixes(justify-content, space-between);
+	@include flex-prop-prefixes(align-items, flex-start);
 }
 
 @media (min-width: $start-tablet) {

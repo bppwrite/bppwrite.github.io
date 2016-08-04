@@ -457,9 +457,10 @@ body {
   font-size: 0.83333em;
   background-color: #f9a025;
   border-radius: 50%;
-  width: 5px;
-  height: 5px;
-  padding: 7px; }
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding-top: 3px; }
 
 .row::before {
   display: table;
@@ -943,7 +944,22 @@ footer {
   margin: 0; }
 
 .home-show-dates {
-  margin: 0.5em 0 0.5em 0; }
+  margin: 0.5em 0 0.5em 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-justify-content: space-between;
+  -moz-box-justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-align-items: flex-start;
+  -moz-box-align-items: flex-start;
+  -webkit-align-items: flex-start;
+  -ms-align-items: flex-start;
+  align-items: flex-start; }
 
 @media (min-width: 601px) {
   .hero-home {
