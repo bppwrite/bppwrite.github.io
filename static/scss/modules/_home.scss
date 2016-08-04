@@ -14,13 +14,41 @@
 	color: $white;
 	margin: 0;
 	text-align: center;
-	padding-top: 200px;
+	padding-top: 150px;
 }
 
 .hero-home-text-emphasis {
 	color: $color-accent;
 	font-family: $font-stack-show;
 	text-transform: uppercase;
+}
+
+.home-shows-container {
+	@include flexbox();
+	@include flex-prop-prefixes(justify-content, space-between);
+	@include flex-prop-prefixes(align-items, flex-start);
+	@include flex-prop-prefixes(flex-direction, row);
+	@include flex-prop-prefixes(flex-wrap, wrap);
+}
+
+.home-shows-card {
+
+}
+
+.home-shows-title {
+	font-family: $font-stack-show;
+	margin: 0.5em 0 0.25em 0;
+}
+
+.home-shows-poster {
+	width: 325px;
+	height: auto;
+}
+
+.home-shows-month {
+	text-transform: uppercase;
+	font-family: $font-stack-show-dates;
+	margin: 0;
 }
 
 @media (min-width: $start-tablet) {
