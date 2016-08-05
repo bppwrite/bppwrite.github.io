@@ -890,9 +890,6 @@ footer {
 
 .hero-home {
   background: url(../img/hero.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   width: 100%;
   height: 450px; }
@@ -985,6 +982,51 @@ footer {
   left: 0;
   width: 100% !important;
   height: 100% !important; }
+
+.home-blog-img {
+  width: 100%;
+  height: auto; }
+
+.home-blog-title {
+  margin: 0 0 0.5em 0; }
+
+.home-blog-lead {
+  margin: 0; }
+
+.home-img-sequence {
+  margin: 3em 0 3em 0; }
+
+.home-img-sequence-short, .home-img-sequence-tickets, .home-img-sequence-education {
+  height: 375px;
+  margin-top: 20px; }
+
+.home-img-sequence-long, .home-img-sequence-about, .home-img-sequence-support {
+  height: 375px;
+  margin-top: 20px; }
+
+.home-img-sequence-about {
+  background-image: url(../img/about-fill.jpg);
+  background-position: center center;
+  background-size: cover;
+  position: relative; }
+
+.home-img-sequence-tickets {
+  background-image: url(../img/tickets-fill.jpg);
+  background-position: center center;
+  background-size: cover;
+  position: relative; }
+
+.home-img-sequence-education {
+  background-image: url(../img/education-fill.jpg);
+  background-position: center center;
+  background-size: cover;
+  position: relative; }
+
+.home-img-sequence-support {
+  background-image: url(../img/support-fill.jpeg);
+  background-position: center center;
+  background-size: cover;
+  position: relative; }
 
 @media (min-width: 601px) {
   .hero-home {
