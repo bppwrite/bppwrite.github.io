@@ -11,8 +11,6 @@ $start-laptop: 1001px;
 // Colors
 
 // palette
-$radical-red:   		#FE4F6F;
-$cornflower:    		#95CEF5;
 $royal:         		#260036;
 $royal-light:   		mix(white, $royal, 50%);
 $flat-gold:     		#f9a025;
@@ -26,6 +24,11 @@ $black-trans:				rgba(35, 31, 32, 0.75);
 $light-grey:     		mix($white, $royal, 95%);
 $dark-grey:      		mix($black, $royal-light, 45%);
 $color-accent-dark: mix($black, $color-accent, 55%);
+$thiry-background:	#4bb9e7;
+$home-background: 	#40ad48;
+$row-background: 		#1c87a2;
+$calling-background:#ffdd17;
+$happily-background:#af2525;
 
 // Fonts
 $font-path: '../fonts/';

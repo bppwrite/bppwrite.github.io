@@ -34,12 +34,13 @@
 }
 
 .home-shows-card {
-
+	background-color: $light-grey;
 }
 
 .home-shows-title {
 	font-family: $font-stack-show;
 	margin: 0.5em 0 0.25em 0;
+	padding-left: 0.25em;
 }
 
 .home-shows-poster {
@@ -51,11 +52,13 @@
 	text-transform: uppercase;
 	font-family: $font-stack-show-dates;
 	margin: 0;
+	padding-left: 0.25em;
 }
 
 .home-show-dates {
 	@extend .show-dates;
 	margin: 0.5em 0 0.5em 0;
+	padding-left: 0.25em;
 	@include flexbox();
 	@include flex-prop-prefixes(justify-content, space-between);
 	@include flex-prop-prefixes(align-items, flex-start);
