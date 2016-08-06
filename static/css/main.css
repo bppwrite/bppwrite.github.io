@@ -1041,19 +1041,6 @@ footer {
   margin-top: 3em;
   text-align: center; }
 
-.home-google-map {
-  position: relative;
-  padding-bottom: 33%;
-  height: 0;
-  overflow: hidden; }
-
-.home-google-map iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100% !important;
-  height: 100% !important; }
-
 .home-blog-img {
   width: 100%;
   height: auto; }
@@ -1120,5 +1107,17 @@ footer {
 
   .hero-home-text {
     padding-top: 350px; } }
+.google-map {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden; }
+
+.google-map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important; }
 
 /*# sourceMappingURL=main.css.map */
