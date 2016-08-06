@@ -44,6 +44,7 @@ $font-file-twenty: 'TwentytwelveSlab-Regular';
 @include font-face-ttf($font-path, $font-file-twenty);
 
 // font stacks
+$font-stack-extra-bold: Interstate-Black, sans-serif;
 $font-stack-header: Interstate-BoldCondensed, sans-serif;
 $font-stack-show: TwentytwelveSlab-Regular, sans-serif;
 $font-stack-meta: Interstate-LightCondensed, sans-serif;

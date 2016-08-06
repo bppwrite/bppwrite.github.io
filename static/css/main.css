@@ -968,6 +968,8 @@ footer {
   align-items: flex-start; }
 
 .home-section-title {
+  font-family: Interstate-Black, sans-serif;
+  margin-top: 3em;
   text-align: center; }
 
 .home-google-map {
@@ -1027,6 +1029,15 @@ footer {
   background-position: center center;
   background-size: cover;
   position: relative; }
+
+.hero-img-text-background {
+  background-color: rgba(35, 31, 32, 0.75);
+  padding: 0.25em; }
+
+.hero-img-sequence-text {
+  color: #ffffff;
+  margin: 0;
+  padding: 30px 0 0 30px; }
 
 @media (min-width: 601px) {
   .hero-home {
