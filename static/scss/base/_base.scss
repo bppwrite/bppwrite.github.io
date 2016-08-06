@@ -10,7 +10,7 @@ a {
 }
 
 a:hover {
-  color: mix($black, $color-accent, 75%);
+  color: $color-accent-dark;
   transition: color 0.5s;
   -webkit-transition: color 0.5s;
 }
