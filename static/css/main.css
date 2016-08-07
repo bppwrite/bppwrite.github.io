@@ -453,15 +453,6 @@ body {
   filter: alpha(opacity=60);
   /* For IE8 and earlier */ }
 
-.show-circle {
-  font-size: 0.83333em;
-  background-color: #f9a025;
-  border-radius: 50%;
-  width: 33px;
-  height: 33px;
-  text-align: center;
-  padding-top: 5px; }
-
 .row::before {
   display: table;
   content: ""; }
@@ -954,8 +945,51 @@ footer {
   font-family: TwentytwelveSlab-Regular, sans-serif;
   text-transform: uppercase; }
 
-.showtimes-title, .showtimes-dates {
+.showtimes-dates {
   font-family: "TrendSansOne", sans-serif; }
+
+.show-circle {
+  font-size: 0.83333em;
+  background-color: #f9a025;
+  border-radius: 50%;
+  width: 33px;
+  height: 33px;
+  text-align: center;
+  padding-top: 5px; }
+
+.show-month {
+  text-transform: uppercase;
+  font-family: "TrendSansOne", sans-serif;
+  margin: 0; }
+
+.show-dates, .home-show-dates {
+  margin: 0.5em 0 0.5em 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-justify-content: flex-start;
+  -moz-box-justify-content: flex-start;
+  -webkit-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-box-align-items: flex-start;
+  -moz-box-align-items: flex-start;
+  -webkit-align-items: flex-start;
+  -ms-align-items: flex-start;
+  align-items: flex-start; }
+
+.show-dates span + span, .home-show-dates span + span {
+  margin-left: 3px; }
+
+.show-see {
+  text-transform: uppercase;
+  margin: 0; }
+
+.show-poster {
+  width: 100%;
+  height: auto; }
 
 .hero-home {
   background: url(../img/hero.jpg) no-repeat center center fixed;

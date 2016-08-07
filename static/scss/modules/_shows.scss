@@ -5,6 +5,45 @@
   text-transform: uppercase;
 }
 
-.showtimes-title, .showtimes-dates {
+.showtimes-dates {
   font-family: $font-stack-show-dates;
+}
+
+.show-circle {
+	font-size: (15 / 18) * 1em;
+	background-color: $color-accent;
+	border-radius: 50%;
+	width: 33px;
+	height: 33px;
+	text-align: center;
+	padding-top: 5px;
+}
+
+.show-month {
+	text-transform: uppercase;
+	font-family: $font-stack-show-dates;
+	margin: 0;
+}
+
+.show-dates {
+	margin: 0.5em 0 0.5em 0;
+	@include flexbox();
+	@include flex-prop-prefixes(justify-content, flex-start);
+	@include flex-prop-prefixes(align-items, flex-start);
+}
+
+.show-dates span + span {
+	margin-left: 3px;
+}
+
+.show-see {
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.show-meta {}
+
+.show-poster {
+	width: 100%;
+	height: auto;
 }
