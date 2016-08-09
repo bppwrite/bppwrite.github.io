@@ -14,6 +14,7 @@ footer {
 
 .container-footer-info {
 	padding-top: 1em;
+	text-align: center;
 }
 
 .container-sponsor-lead, .container-sponsor-season {
@@ -38,6 +39,12 @@ $filter-factor: 95%;
     filter: grayscale($filter-factor);
     -webkit-filter: grayscale($filter-factor);
   }
+}
+
+.footer-section-title {
+	text-align: center;
+	color: $dark-grey;
+	margin-bottom: 0;
 }
 
 .sponsor-season-list {
@@ -67,20 +74,20 @@ $filter-factor: 95%;
   @include flexbox();
   @include flex-prop-prefixes(flex-wrap, wrap);
   @include flex-prop-prefixes(justify-content, space-between);
-  @include flex-prop-prefixes(align-items, flex-start);
+  @include flex-prop-prefixes(align-items, center);
+	@include flex-prop-prefixes(flex-direction, column);
   font-family: $font-stack-header;
   list-style: none;
 	margin-top: 0;
   text-align: center;
+	padding-left: 0;
 }
 
 .footer-menu-item {
-  @include flex(1 1 auto);
+	@include flexbox();
+	@include flex-prop-prefixes(flex-direction, row);
+	@include flex-prop-prefixes(align-items, baseline);
 }
-
-// .footer-dropdown {
-//   position: relative;
-// }
 
 .footer-dropdown-menu {
 	@include flexbox();
@@ -88,4 +95,32 @@ $filter-factor: 95%;
 	@include flex-prop-prefixes(justify-content, center);
   list-style: none;
 	padding: 0.5em 0 0 0;
+}
+
+.footer-dropdown-menu-item {
+	padding-left: (5 / 16) * 1em;
+}
+
+@media (min-width: $start-tablet) {
+  .container-footer-info {
+    text-align: left;
+  }
+	.footer-menu {
+	  @include flexbox();
+	  @include flex-prop-prefixes(flex-wrap, wrap);
+	  @include flex-prop-prefixes(justify-content, space-between);
+	  @include flex-prop-prefixes(align-items, flex-start);
+		@include flex-prop-prefixes(flex-direction, row);
+	  font-family: $font-stack-header;
+	  list-style: none;
+		margin-top: 0;
+	  text-align: center;
+	}
+	.footer-menu-item {
+		@include flex-prop-prefixes(flex-direction, column);
+		@include flex-prop-prefixes(align-items, center);
+	}
+	.footer-dropdown-menu-item {
+		padding-left: 0;
+	}
 }

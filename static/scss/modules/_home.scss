@@ -2,9 +2,6 @@
 
 .hero-home {
 	background: url(../img/hero.jpg) no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 	background-size: cover;
 	width: 100%;
 	height: 450px;
@@ -14,13 +11,132 @@
 	color: $white;
 	margin: 0;
 	text-align: center;
-	padding-top: 200px;
+	padding-top: 150px;
 }
 
 .hero-home-text-emphasis {
 	color: $color-accent;
 	font-family: $font-stack-show;
 	text-transform: uppercase;
+}
+
+.hero-home-text-background {
+	background-color: $black-trans;
+	padding: (4/16) * 1em;
+}
+
+.home-shows-container {
+	@include flexbox();
+	@include flex-prop-prefixes(justify-content, space-between);
+	@include flex-prop-prefixes(align-items, flex-start);
+	@include flex-prop-prefixes(flex-direction, row);
+	@include flex-prop-prefixes(flex-wrap, wrap);
+}
+
+.home-shows-card {
+	background-color: $light-grey;
+}
+
+.home-shows-title {
+	font-family: $font-stack-show;
+	margin: 0.5em 0 0.25em 0;
+	padding-left: 0.25em;
+}
+
+.home-shows-poster {
+	width: 325px;
+	height: auto;
+}
+
+.home-shows-month {
+	text-transform: uppercase;
+	font-family: $font-stack-show-dates;
+	margin: 0;
+	padding-left: 0.25em;
+}
+
+.home-show-dates {
+	@extend .show-dates;
+	margin: 0.5em 0 0.5em 0;
+	padding-left: 0.25em;
+	@include flexbox();
+	@include flex-prop-prefixes(justify-content, space-between);
+	@include flex-prop-prefixes(align-items, flex-start);
+}
+
+.home-section-title {
+	font-family: $font-stack-extra-bold;
+	margin-top: 3em;
+	text-align: center;
+}
+
+.home-blog-img {
+	width: 100%;
+	height: auto;
+}
+
+.home-blog-title {
+	margin: 0 0 0.5em 0;
+}
+
+.home-blog-lead {
+	margin: 0;
+}
+
+.home-blog-text {}
+
+.home-img-sequence {
+margin: 3em 0 3em 0;
+}
+
+.home-img-sequence-short {
+	height: 375px;
+	margin-top: 20px;
+}
+
+.home-img-sequence-long {
+	height: 375px;
+	margin-top: 20px;
+}
+
+.home-img-sequence-about {
+	@extend .home-img-sequence-long;
+	background-image: url(../img/about-fill.jpg);
+	background-position: center center;
+	background-size: cover;
+	position: relative;
+}
+.home-img-sequence-tickets {
+	@extend .home-img-sequence-short;
+	background-image: url(../img/tickets-fill.jpg);
+	background-position: center center;
+	background-size: cover;
+	position: relative;
+}
+.home-img-sequence-education {
+	@extend .home-img-sequence-short;
+	background-image: url(../img/education-fill.jpg);
+	background-position: center center;
+	background-size: cover;
+	position: relative;
+}
+.home-img-sequence-support {
+	@extend .home-img-sequence-long;
+	background-image: url(../img/support-fill.jpeg);
+	background-position: center center;
+	background-size: cover;
+	position: relative;
+}
+
+.hero-img-text-background {
+	background-color: $black-trans;
+	padding: (4/16) * 1em;
+}
+
+.hero-img-sequence-text {
+	color: $white;
+	margin: 0;
+	padding: 30px 0 0 30px;
 }
 
 @media (min-width: $start-tablet) {
