@@ -4,26 +4,6 @@
 	<h2>Single {{ .Title }}</h2>
 
 	{{ .Content }}
+</div>
 
-	<h3>Context</h3>
-
-	<h4>Page type</h4>
-
-	<p>
-	  {{ printf "%T" . }}
-	</p>
-
-	<h4>.Site variables</h4>
-
-	<p>
-	  {{ printf "%#v" $.Site }}
-	</p>
-
-	<h4>Variables in the current context</h4>
-
-	<p>
-	  {{ printf "%#v" . }}
-	</p>
-	</div>
-	
-	{{ partial "foot.html" . }}
+{{ partial "foot.html" . }}
