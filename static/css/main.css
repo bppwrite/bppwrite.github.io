@@ -943,7 +943,8 @@ footer {
     padding-left: 0; } }
 .show-title {
   font-family: TwentytwelveSlab-Regular, sans-serif;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin: 20px 0 0.5em 0; }
 
 .showtimes-dates {
   font-family: "TrendSansOne", sans-serif; }
@@ -987,7 +988,19 @@ footer {
   text-transform: uppercase;
   margin: 0; }
 
+.show-meta {
+  font-family: Interstate-LightCondensed, sans-serif;
+  margin: 0; }
+
+.show-meta-container {
+  margin: 0 0 0.5em 0; }
+
+.show-subtitle {
+  font-family: Interstate-BoldCondensed, sans-serif;
+  margin: 0 0 0.5em 0; }
+
 .show-poster {
+  margin-top: 20px;
   width: 100%;
   height: auto; }
 

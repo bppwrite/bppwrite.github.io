@@ -16,18 +16,30 @@
 				{{ .Title }}
 			</h2>
 
-			<h5 class="show-meta">
-				{{/* only show the subtitle if it exists */}}
-				{{if .Params.subtitle}}
-					<small>{{ .Params.subtitle }}</small>
-				{{end}}
+			<h6 class="show-subtitle">
+				<small>
+					{{/* only show the subtitle if it exists */}}
+					{{if .Params.subtitle}}
+						{{ .Params.subtitle }}
+					{{end}}
+				</small>
+			</h6>
+			<div class="show-meta-container">
+				<h6 class="show-meta">
+					<small>
+						{{if .Params.playwrights}}
+							By {{ delimit .Params.playwrights  ", " " & " | html }}
+						{{end}}
+					</small>
+				</h6>
+				<h6 class="show-meta">
+					<small>
+						Directed by {{ delimit .Params.directors ", " " & " | html }}
+					</small>
+				</h6>
+			</div>
 
-				{{if .Params.playwrights}}
-					by {{ delimit .Params.playwrights  ", " " & " | html }}
-				{{end}}
 
-			Director: {{ delimit .Params.directors ", " " & " | html }}
-		</h5>
 
 			{{ partial "youtube.html" . }}
 
@@ -49,7 +61,7 @@
 				{{ $.Scratch.Add "days" (slice (dateFormat "2" $showtime)) }}
 			{{ end }}
 
-			<h4 class="show-month">{{ delimit ($.Scratch.Get "months") ", " " & " }}</h4>
+			<h3 class="show-month">{{ delimit ($.Scratch.Get "months") ", " " & " }}</h3>
 
 			<h6 class="show-dates">
 				{{ range $i, $day := ($.Scratch.Get "days") }}

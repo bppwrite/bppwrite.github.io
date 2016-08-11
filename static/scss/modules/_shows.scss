@@ -3,6 +3,7 @@
 .show-title {
   font-family: $font-stack-show;
   text-transform: uppercase;
+	margin: 20px 0 0.5em 0;
 }
 
 .showtimes-dates {
@@ -41,9 +42,22 @@
 	margin: 0;
 }
 
-.show-meta {}
+.show-meta {
+	font-family: $font-stack-meta;
+	margin: 0;
+}
+
+.show-meta-container {
+	margin: 0 0 0.5em 0;
+}
+
+.show-subtitle {
+	font-family: $font-stack-subtitle;
+	margin: 0 0 0.5em 0;
+}
 
 .show-poster {
+	margin-top: 20px;
 	width: 100%;
 	height: auto;
 }
