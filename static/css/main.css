@@ -944,7 +944,7 @@ footer {
 .show-title {
   font-family: TwentytwelveSlab-Regular, sans-serif;
   text-transform: uppercase;
-  margin: 20px 0 0.5em 0; }
+  margin: 20px 0 0.75em 0; }
 
 .showtimes-dates {
   font-family: "TrendSansOne", sans-serif; }
@@ -959,12 +959,12 @@ footer {
   padding-top: 5px; }
 
 .show-month {
-  text-transform: uppercase;
   font-family: "TrendSansOne", sans-serif;
-  margin: 0; }
+  margin: 0;
+  text-transform: uppercase; }
 
 .show-dates, .home-show-dates {
-  margin: 0.5em 0 0.5em 0;
+  margin: 0.5em 0 0.75em 0;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -986,18 +986,18 @@ footer {
 
 .show-see {
   text-transform: uppercase;
-  margin: 0; }
+  margin: 1.25em 0 0 0; }
 
 .show-meta {
   font-family: Interstate-LightCondensed, sans-serif;
   margin: 0; }
 
 .show-meta-container {
-  margin: 0 0 0.5em 0; }
+  margin: 0 0 0.75em 0; }
 
 .show-subtitle {
   font-family: Interstate-BoldCondensed, sans-serif;
-  margin: 0 0 0.5em 0; }
+  margin: 0 0 0.75em 0; }
 
 .show-poster {
   margin-top: 20px;
