@@ -16,30 +16,33 @@
 				{{ .Title }}
 			</h2>
 
-			<h6 class="show-subtitle">
-				<small>
-					{{/* only show the subtitle if it exists */}}
-					{{if .Params.subtitle}}
-						{{ .Params.subtitle }}
-					{{end}}
-				</small>
-			</h6>
+            {{/* only show the subtitle if it exists */}}
+            {{if .Params.subtitle}}
+            <h6 class="show-subtitle">
+                <small>
+                    {{ .Params.subtitle }}
+                </small>
+            </h6>
+            {{end}}
+
 			<div class="show-meta-container">
-				<h6 class="show-meta">
-					<small>
-						{{if .Params.playwrights}}
-							By {{ delimit .Params.playwrights  ", " " & " | html }}
-						{{end}}
-					</small>
-				</h6>
-				<h6 class="show-meta">
-					<small>
-						Directed by {{ delimit .Params.directors ", " " & " | html }}
-					</small>
-				</h6>
+                {{if .Params.playwrights}}
+                    {{ $links := apply .Params.playwrights "partial" "playwright/link.html" "." }}
+    				<h6 class="show-meta">
+                        <small>
+    	                    By {{ delimit $links  ", " " & " }}
+                        </small>
+    				</h6>
+                {{end}}
+                {{if .Params.directors}}
+                    {{ $links := apply .Params.directors "partial" "director/link.html" "." }}
+    				<h6 class="show-meta">
+    					<small>
+    						Directed by {{ delimit $links ", " " & " }}
+    					</small>
+    				</h6>
+                {{end}}
 			</div>
-
-
 
 			{{ partial "youtube.html" . }}
 
@@ -68,6 +71,7 @@
 					<span class="show-circle show-date">{{ $day }}</span>
 				{{ end }}
 			</h6>
+        </div>
 	</div>
 </div>
 
