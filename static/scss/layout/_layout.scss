@@ -7,8 +7,14 @@
   max-width: $container-width-max;
 }
 
-.container-footer, .container-nav, .container-sponsor-season, .container-sponsor-lead, .container-footer-info {
+.container-sponsor-season, .container-sponsor-lead {
   width: 95%;
   margin: 0 auto;
   max-width: $container-width-max;
+}
+
+.container-nav, .container-footer-info {
+	width: 95%;
+	margin: 0 auto;
+	max-width: $container-width-max;
 }
