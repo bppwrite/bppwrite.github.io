@@ -434,7 +434,7 @@ h6 {
   font-size: 1.16667em; }
 
 body {
-  font-size: 18px;
+  font-size: 16px;
   font-family: Interstate-RegularCondensed, sans-serif; }
 
 .show-title {
@@ -650,7 +650,12 @@ body {
     clear: both;
     content: ""; }
 
-.container-footer, .container-nav, .container-sponsor-season, .container-sponsor-lead, .container-footer-info {
+.container-sponsor-season, .container-sponsor-lead {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1200px; }
+
+.container-nav, .container-footer-info {
   width: 95%;
   margin: 0 auto;
   max-width: 1200px; }
@@ -943,7 +948,8 @@ footer {
     padding-left: 0; } }
 .show-title {
   font-family: TwentytwelveSlab-Regular, sans-serif;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin: 20px 0 0.75em 0; }
 
 .showtimes-dates {
   font-family: "TrendSansOne", sans-serif; }
@@ -958,12 +964,12 @@ footer {
   padding-top: 5px; }
 
 .show-month {
-  text-transform: uppercase;
   font-family: "TrendSansOne", sans-serif;
-  margin: 0; }
+  margin: 0;
+  text-transform: uppercase; }
 
 .show-dates, .home-show-dates {
-  margin: 0.5em 0 0.5em 0;
+  margin: 0.5em 0 0.75em 0;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -985,9 +991,21 @@ footer {
 
 .show-see {
   text-transform: uppercase;
+  margin: 1.25em 0 0 0; }
+
+.show-meta {
+  font-family: Interstate-LightCondensed, sans-serif;
   margin: 0; }
 
+.show-meta-container {
+  margin: 0 0 0.75em 0; }
+
+.show-subtitle {
+  font-family: Interstate-BoldCondensed, sans-serif;
+  margin: 0 0 0.75em 0; }
+
 .show-poster {
+  margin-top: 20px;
   width: 100%;
   height: auto; }
 
@@ -1023,16 +1041,16 @@ footer {
   -webkit-justify-content: space-between;
   -ms-justify-content: space-between;
   justify-content: space-between;
-  -webkit-box-align-items: flex-start;
-  -moz-box-align-items: flex-start;
-  -webkit-align-items: flex-start;
-  -ms-align-items: flex-start;
-  align-items: flex-start;
-  -webkit-box-flex-direction: row;
-  -moz-box-flex-direction: row;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  -webkit-box-align-items: center;
+  -moz-box-align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-box-flex-direction: column;
+  -moz-box-flex-direction: column;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-flex-wrap: wrap;
   -moz-box-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
@@ -1040,7 +1058,8 @@ footer {
   flex-wrap: wrap; }
 
 .home-shows-card {
-  background-color: #f4f2f5; }
+  background-color: #f4f2f5;
+  margin-top: 0.25em; }
 
 .home-shows-title {
   font-family: TwentytwelveSlab-Regular, sans-serif;
@@ -1048,7 +1067,7 @@ footer {
   padding-left: 0.25em; }
 
 .home-shows-poster {
-  width: 325px;
+  width: 99%;
   height: auto; }
 
 .home-shows-month {
@@ -1136,17 +1155,50 @@ footer {
   padding: 30px 0 0 30px; }
 
 @media (min-width: 601px) {
+  .home-shows-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-justify-content: space-between;
+    -moz-box-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-box-align-items: flex-start;
+    -moz-box-align-items: flex-start;
+    -webkit-align-items: flex-start;
+    -ms-align-items: flex-start;
+    align-items: flex-start;
+    -webkit-box-flex-direction: row;
+    -moz-box-flex-direction: row;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-flex-wrap: wrap;
+    -moz-box-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+
   .hero-home {
     height: 500px; }
 
   .hero-home-text {
-    padding-top: 300px; } }
+    padding-top: 300px; }
+
+  .home-shows-poster {
+    width: 300px; } }
 @media (min-width: 1001px) {
   .hero-home {
     height: 550px; }
 
   .hero-home-text {
-    padding-top: 350px; } }
+    padding-top: 350px; }
+
+  .home-shows-poster {
+    width: 350px; } }
 .google-map {
   position: relative;
   padding-bottom: 75%;

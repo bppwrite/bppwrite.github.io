@@ -3,6 +3,7 @@
 .show-title {
   font-family: $font-stack-show;
   text-transform: uppercase;
+	margin: 20px 0 0.75em 0;
 }
 
 .showtimes-dates {
@@ -20,13 +21,13 @@
 }
 
 .show-month {
-	text-transform: uppercase;
 	font-family: $font-stack-show-dates;
 	margin: 0;
+	text-transform: uppercase;
 }
 
 .show-dates {
-	margin: 0.5em 0 0.5em 0;
+	margin: 0.5em 0 0.75em 0;
 	@include flexbox();
 	@include flex-prop-prefixes(justify-content, flex-start);
 	@include flex-prop-prefixes(align-items, flex-start);
@@ -38,12 +39,25 @@
 
 .show-see {
 	text-transform: uppercase;
+	margin: 1.25em 0 0 0;
+}
+
+.show-meta {
+	font-family: $font-stack-meta;
 	margin: 0;
 }
 
-.show-meta {}
+.show-meta-container {
+	margin: 0 0 0.75em 0;
+}
+
+.show-subtitle {
+	font-family: $font-stack-subtitle;
+	margin: 0 0 0.75em 0;
+}
 
 .show-poster {
+	margin-top: 20px;
 	width: 100%;
 	height: auto;
 }

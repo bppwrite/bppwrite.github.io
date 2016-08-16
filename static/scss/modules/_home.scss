@@ -28,13 +28,14 @@
 .home-shows-container {
 	@include flexbox();
 	@include flex-prop-prefixes(justify-content, space-between);
-	@include flex-prop-prefixes(align-items, flex-start);
-	@include flex-prop-prefixes(flex-direction, row);
+	@include flex-prop-prefixes(align-items, center);
+	@include flex-prop-prefixes(flex-direction, column);
 	@include flex-prop-prefixes(flex-wrap, wrap);
 }
 
 .home-shows-card {
 	background-color: $light-grey;
+	margin-top: 0.25em;
 }
 
 .home-shows-title {
@@ -44,7 +45,7 @@
 }
 
 .home-shows-poster {
-	width: 325px;
+	width: 99%;
 	height: auto;
 }
 
@@ -140,11 +141,21 @@ margin: 3em 0 3em 0;
 }
 
 @media (min-width: $start-tablet) {
+	.home-shows-container {
+		@include flexbox();
+		@include flex-prop-prefixes(justify-content, space-between);
+		@include flex-prop-prefixes(align-items, flex-start);
+		@include flex-prop-prefixes(flex-direction, row);
+		@include flex-prop-prefixes(flex-wrap, wrap);
+	}
 	.hero-home {
 		height: 500px;
 	}
 	.hero-home-text {
 		padding-top: 300px;
+	}
+	.home-shows-poster {
+		width: 300px;
 	}
 }
 @media (min-width: $start-laptop) {
@@ -153,5 +164,8 @@ margin: 3em 0 3em 0;
 	}
 	.hero-home-text {
 		padding-top: 350px;
+	}
+	.home-shows-poster {
+		width: 350px;
 	}
 }
