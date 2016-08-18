@@ -13,7 +13,7 @@ lyricists = []
 musicians = []
 playwrights = ["Gregory S. Moss"]
 runtime = ""
-series = "2016-2017"
+series = "2015-2016"
 "set designers" = []
 showtimes = [
   "2015-12-04T19:30:00-04:00",

@@ -2,11 +2,19 @@ baseurl = "/"
 languageCode = "en-us"
 title = "Bloomington Playwrights Project"
 
+# [params]
+#     currentSeries = "2016-2017"
+
 [[menu.main]]
-  name = "Shows"
-  pre = "<i class='fa fa-download'></i>"
-  url = "/show"
-  weight = -200
+    name = "Shows"
+    pre = "<i class='fa fa-download'></i>"
+    url = "/show"
+    weight = -200
+[[menu.main]]
+    name = "Events"
+    pre = "<i class='fa fa-download'></i>"
+    url = "/event"
+    weight = -195
 [[menu.main]]
   name = "Tickets"
   pre = "<i class='fa fa-cubes'></i>"

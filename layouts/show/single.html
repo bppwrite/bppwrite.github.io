@@ -50,7 +50,7 @@
 
 			<h5 class="show-see">See It Live</h5>
 
-			{{ $.Scratch.Add "months" (slice (dateFormat "January" $start)) }}
+			{{ $.Scratch.Set "months" (slice (dateFormat "January" $start)) }}
 			{{ range $index, $showtime := .Params.showtimes }}
 				{{ $.Scratch.Set "hasMonth" false }}
 				{{ range $i, $month := ($.Scratch.Get "months") }}
@@ -71,6 +71,10 @@
 					<span class="show-circle show-date">{{ $day }}</span>
 				{{ end }}
 			</h6>
+
+            <div>
+                <a href="https://web.ovationtix.com/trs/dept/1090">Buy Tickets</a>
+            </div>
         </div>
 	</div>
 </div>

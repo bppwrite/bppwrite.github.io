@@ -1,6 +1,9 @@
 {{ partial "head.html" . }}
 {{ partial "nav.html" . }}
 
+{{/* current series is the latest */}}
+{{ $currentSeries := (index .Site.Taxonomies.series.TaxonomyArray 0) }}
+
 <div class="hero-home">
 		<div class="container">
 			<div class="row">
@@ -14,91 +17,47 @@
 <div class="container">
 	<div class="row">
 		<div class="col-sm-12">
-			<h2 class="home-section-title">Upcoming Shows</h2>
+			<h2 class="home-section-title">Upcoming Shows {{ $currentSeries.Name }}</h2>
 		</div>
 	</div>
 
-	<div class="home-shows-container">
-		<div class="home-shows-card thirty-card">
-			<img src="img/30-day-mourning-period.jpg" class="home-shows-poster">
-			<h4 class="home-shows-title">30 Day Mourning Period</h4>
-			<h6 class="home-shows-month">SEPT. & OCT.</h6>
-			<h6 class="home-show-dates">
-				<span class="show-circle">23</span>
-				<span class="show-circle">24</span>
-				<span class="show-circle">29</span>
-				<span class="show-circle">30</span>
-				<span class="show-circle">1</span>
-				<span class="show-circle">6</span>
-				<span class="show-circle">7</span>
-				<span class="show-circle">8</span>
-			</h6>
-		</div>
+    <div class="home-shows-container">
 
-		<div class="home-shows-card home-card">
-			<img src="img/home.jpg" class="home-shows-poster">
-			<h4 class="home-shows-title">Home</h4>
-			<h6 class="home-shows-month">DEC.</h6>
-			<h6 class="home-show-dates">
-				<span class="show-circle">2</span>
-				<span class="show-circle">3</span>
-				<span class="show-circle">8</span>
-				<span class="show-circle">9</span>
-				<span class="show-circle">10</span>
-				<span class="show-circle">15</span>
-				<span class="show-circle">16</span>
-				<span class="show-circle">17</span>
-			</h6>
-		</div>
+    {{/* all current pages in the "show" section */}}
+    {{- range where $currentSeries.Pages "Section" "show" -}}
+        {{/* show starts on the first date in the showtimes array */}}
+        {{- $start := (index .Params.showtimes 0) -}}
+        {{/* show ends on the last date in the showtimes array */}}
+        {{- $end := (index .Params.showtimes (sub (len .Params.showtimes) 1) ) -}}
+        <div class="home-shows-card">
+            <img src="img/{{ .Title | urlize }}.jpg" class="home-shows-poster">
+            <h4 class="home-shows-title">{{ .Title }}</h4>
+            {{- $.Scratch.Set "months" (slice (dateFormat "January" $start)) -}}
+            {{- $.Scratch.Set "days" slice -}}
+			{{- range $index, $showtime := .Params.showtimes -}}
+				{{- $.Scratch.Set "hasMonth" false -}}
+				{{- range $i, $month := ($.Scratch.Get "months") -}}
+					{{- if eq $month (dateFormat "January" $showtime) -}}
+						{{- $.Scratch.Set "hasMonth" true -}}
+					{{- end -}}
+				{{- end -}}
+				{{- if eq ($.Scratch.Get "hasMonth") false -}}
+					{{- $.Scratch.Add "months" (dateFormat "January" $showtime) -}}
+				{{- end -}}
+				{{- $.Scratch.Add "days" (slice (dateFormat "2" $showtime)) -}}
+			{{- end -}}
+            <h6 class="home-shows-month">
+                {{ delimit ($.Scratch.Get "months") ", " " & " }}
+            </h6>
+            <h6 class="home-show-dates">
+                {{ range $i, $day := ($.Scratch.Get "days") }}
+					<span class="show-circle">{{ $day }}</span>
+				{{ end }}
+            </h6>
+        </div>
+    {{- end -}}
+    </div>
 
-		<div class="home-shows-card row-card">
-			<img src="img/row-after-row.jpg" class="home-shows-poster">
-			<h4 class="home-shows-title">Row After Row</h4>
-			<h6 class="home-shows-month">JAN. & FEB.</h6>
-			<h6 class="home-show-dates">
-				<span class="show-circle">27</span>
-				<span class="show-circle">28</span>
-				<span class="show-circle">2</span>
-				<span class="show-circle">3</span>
-				<span class="show-circle">4</span>
-				<span class="show-circle">9</span>
-				<span class="show-circle">10</span>
-				<span class="show-circle">11</span>
-			</h6>
-		</div>
-
-		<div class="home-shows-card calling-card">
-			<img src="img/calling-all-kates.jpg" class="home-shows-poster">
-			<h4 class="home-shows-title">Calling All Kates</h4>
-			<h6 class="home-shows-month">MARCH & APRIL</h6>
-			<h6 class="home-show-dates">
-				<span class="show-circle">31</span>
-				<span class="show-circle">1</span>
-				<span class="show-circle">6</span>
-				<span class="show-circle">7</span>
-				<span class="show-circle">8</span>
-				<span class="show-circle">13</span>
-				<span class="show-circle">14</span>
-				<span class="show-circle">15</span>
-			</h6>
-		</div>
-
-		<div class="home-shows-card happily-card">
-			<img src="img/happily-after-ever.jpg" class="home-shows-poster">
-			<h4 class="home-shows-title">Happily After Ever</h4>
-			<h6 class="home-shows-month">MAY</h6>
-			<h6 class="home-show-dates">
-				<span class="show-circle">12</span>
-				<span class="show-circle">13</span>
-				<span class="show-circle">18</span>
-				<span class="show-circle">19</span>
-				<span class="show-circle">20</span>
-				<span class="show-circle">25</span>
-				<span class="show-circle">26</span>
-				<span class="show-circle">27</span>
-			</h6>
-		</div>
-	</div>
 
 	<div class="row">
 		<div class="col-sm-12">
