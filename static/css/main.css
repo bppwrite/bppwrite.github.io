@@ -1016,6 +1016,15 @@ footer {
   width: 100%;
   height: auto; }
 
+.show-data {
+  padding: 0 2.5% 0 2.5%; }
+
+@media (min-width: 601px) {
+  .show-data {
+    padding: 1em 1% 0 1%; } }
+@media (min-width: 1001px) {
+  .show-data {
+    padding: 2em 5% 0 5%; } }
 .hero-home {
   background: url(../img/hero.jpg) no-repeat center center fixed;
   background-size: cover;
