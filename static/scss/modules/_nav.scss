@@ -26,6 +26,7 @@ header {
   @include flex-prop-prefixes(align-items, flex-end);
   font-family: $font-stack-header;
   list-style: none;
+	padding-left: 0;
   width: 100%;
 }
 
@@ -63,11 +64,14 @@ header {
   }
 
   .menu {
-    width: 80%;
+		@include flex-prop-prefixes(justify-content, flex-end);
+		width: auto;
   }
+	.menu-item + .menu-item {
+		padding-left: 2em;
+	}
 }
 @media (min-width: $start-laptop) {
   .menu {
-    width: 50%;
   }
 }
