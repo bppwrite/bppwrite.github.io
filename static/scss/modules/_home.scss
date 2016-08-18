@@ -67,6 +67,7 @@
 
 .home-section-title {
 	font-family: $font-stack-extra-bold;
+	font-size: 2em;
 	margin-top: 3em;
 	text-align: center;
 }
@@ -123,7 +124,7 @@ margin: 3em 0 3em 0;
 }
 .home-img-sequence-support {
 	@extend .home-img-sequence-long;
-	background-image: url(../img/support-fill.jpeg);
+	background-image: url(../img/support-fill.jpg);
 	background-position: center center;
 	background-size: cover;
 	position: relative;

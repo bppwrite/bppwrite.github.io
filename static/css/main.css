@@ -657,8 +657,7 @@ body {
 
 .container-nav, .container-footer-info {
   width: 95%;
-  margin: 0 auto;
-  max-width: 1200px; }
+  margin: 0 auto; }
 
 header {
   background-color: #231f20; }
@@ -714,6 +713,7 @@ header {
   align-items: flex-end;
   font-family: Interstate-BoldCondensed, sans-serif;
   list-style: none;
+  padding-left: 0;
   width: 100%; }
 
 .menu-item {
@@ -758,16 +758,21 @@ header {
     flex-direction: row; }
 
   .menu {
-    width: 80%; } }
-@media (min-width: 1001px) {
-  .menu {
-    width: 50%; } }
+    -webkit-box-justify-content: flex-end;
+    -moz-box-justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    -ms-justify-content: flex-end;
+    justify-content: flex-end;
+    width: auto; }
+
+  .menu-item + .menu-item {
+    padding-left: 2em; } }
 footer {
   background-color: #231f20;
-  color: #f4f2f5; }
+  color: #f7f4f8; }
 
 .background-footer-sponsor {
-  background-color: #f4f2f5;
+  background-color: #f7f4f8;
   color: #231f20;
   padding-top: 0.25em;
   padding-bottom: 0.25em; }
@@ -778,7 +783,7 @@ footer {
 
 .container-sponsor-lead, .container-sponsor-season {
   text-align: center;
-  color: #615464; }
+  color: #6e5f74; }
 
 .container-sponsor-lead img {
   height: 75px;
@@ -794,7 +799,7 @@ footer {
 
 .footer-section-title {
   text-align: center;
-  color: #615464;
+  color: #6e5f74;
   margin-bottom: 0; }
 
 .sponsor-season-list {
@@ -912,11 +917,11 @@ footer {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-box-justify-content: space-between;
-    -moz-box-justify-content: space-between;
-    -webkit-justify-content: space-between;
-    -ms-justify-content: space-between;
-    justify-content: space-between;
+    -webkit-box-justify-content: flex-end;
+    -moz-box-justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    -ms-justify-content: flex-end;
+    justify-content: flex-end;
     -webkit-box-align-items: flex-start;
     -moz-box-align-items: flex-start;
     -webkit-align-items: flex-start;
@@ -943,6 +948,9 @@ footer {
     -webkit-align-items: center;
     -ms-align-items: center;
     align-items: center; }
+
+  .footer-menu-item + .footer-menu-item {
+    padding-left: 2em; }
 
   .footer-dropdown-menu-item {
     padding-left: 0; } }
@@ -1005,10 +1013,18 @@ footer {
   margin: 0 0 0.75em 0; }
 
 .show-poster {
-  margin-top: 20px;
   width: 100%;
   height: auto; }
 
+.show-data {
+  padding: 0 2.5% 0 2.5%; }
+
+@media (min-width: 601px) {
+  .show-data {
+    padding: 1em 1% 0 1%; } }
+@media (min-width: 1001px) {
+  .show-data {
+    padding: 2em 5% 0 5%; } }
 .hero-home {
   background: url(../img/hero.jpg) no-repeat center center fixed;
   background-size: cover;
@@ -1058,7 +1074,7 @@ footer {
   flex-wrap: wrap; }
 
 .home-shows-card {
-  background-color: #f4f2f5;
+  background-color: #f7f4f8;
   margin-top: 0.25em; }
 
 .home-shows-title {
@@ -1097,6 +1113,7 @@ footer {
 
 .home-section-title {
   font-family: Interstate-Black, sans-serif;
+  font-size: 2em;
   margin-top: 3em;
   text-align: center; }
 
@@ -1140,7 +1157,7 @@ footer {
   position: relative; }
 
 .home-img-sequence-support {
-  background-image: url(../img/support-fill.jpeg);
+  background-image: url(../img/support-fill.jpg);
   background-position: center center;
   background-size: cover;
   position: relative; }

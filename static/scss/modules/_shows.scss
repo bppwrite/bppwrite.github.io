@@ -57,7 +57,21 @@
 }
 
 .show-poster {
-	margin-top: 20px;
 	width: 100%;
 	height: auto;
+}
+
+.show-data {
+	padding: 0 2.5% 0 2.5%;
+}
+
+@media (min-width: $start-tablet) {
+  .show-data {
+		padding: 1em 1% 0 1%;
+	}
+}
+@media (min-width: $start-laptop) {
+  .show-data {
+		padding: 2em 5% 0 5%;
+	}
 }

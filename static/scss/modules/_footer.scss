@@ -108,7 +108,7 @@ $filter-factor: 95%;
 	.footer-menu {
 	  @include flexbox();
 	  @include flex-prop-prefixes(flex-wrap, wrap);
-	  @include flex-prop-prefixes(justify-content, space-between);
+	  @include flex-prop-prefixes(justify-content, flex-end);
 	  @include flex-prop-prefixes(align-items, flex-start);
 		@include flex-prop-prefixes(flex-direction, row);
 	  font-family: $font-stack-header;
@@ -119,6 +119,9 @@ $filter-factor: 95%;
 	.footer-menu-item {
 		@include flex-prop-prefixes(flex-direction, column);
 		@include flex-prop-prefixes(align-items, center);
+	}
+	.footer-menu-item + .footer-menu-item {
+		padding-left: 2em;
 	}
 	.footer-dropdown-menu-item {
 		padding-left: 0;
