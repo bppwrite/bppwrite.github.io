@@ -25,36 +25,12 @@
 
     {{/* all current pages in the "show" section */}}
     {{- range where $currentSeries.Pages "Section" "show" -}}
-        {{/* show starts on the first date in the showtimes array */}}
-        {{- $start := (index .Params.showtimes 0) -}}
-        {{/* show ends on the last date in the showtimes array */}}
-        {{- $end := (index .Params.showtimes (sub (len .Params.showtimes) 1) ) -}}
-        <div class="home-shows-card">
-            <img src="img/{{ .Title | urlize }}.jpg" class="home-shows-poster">
-            <h4 class="home-shows-title">{{ .Title }}</h4>
-            {{- $.Scratch.Set "months" (slice (dateFormat "January" $start)) -}}
-            {{- $.Scratch.Set "days" slice -}}
-			{{- range $index, $showtime := .Params.showtimes -}}
-				{{- $.Scratch.Set "hasMonth" false -}}
-				{{- range $i, $month := ($.Scratch.Get "months") -}}
-					{{- if eq $month (dateFormat "January" $showtime) -}}
-						{{- $.Scratch.Set "hasMonth" true -}}
-					{{- end -}}
-				{{- end -}}
-				{{- if eq ($.Scratch.Get "hasMonth") false -}}
-					{{- $.Scratch.Add "months" (dateFormat "January" $showtime) -}}
-				{{- end -}}
-				{{- $.Scratch.Add "days" (slice (dateFormat "2" $showtime)) -}}
-			{{- end -}}
-            <h6 class="home-shows-month">
-                {{ delimit ($.Scratch.Get "months") ", " " & " }}
-            </h6>
-            <h6 class="home-show-dates">
-                {{ range $i, $day := ($.Scratch.Get "days") }}
-					<span class="show-circle">{{ $day }}</span>
-				{{ end }}
-            </h6>
-        </div>
+        <a href="/show/{{ .Params.series }}/{{ (.Title | urlize) }}">
+            <div class="home-shows-card">
+                {{ partial "show/poster.html" . }}
+                {{ partial "show/dates.html" . }}
+            </div>
+        </a>
     {{- end -}}
     </div>
 

@@ -24,22 +24,33 @@
         {{end}}
 
         <div class="show-meta-container">
-            {{if .Params.playwrights}}
+            {{ if .Params.genres }}
+                {{ $links := apply .Params.genres "partial" "genre/link.html" "." }}
+                <h6 class="show-meta">
+                    <small>
+                        Genre{{ if gt (len .Params.genres) 1 }}s{{ end }}:
+                        {{ delimit $links  ", " " & " }}
+                    </small>
+                </h6>
+            {{ end }}
+            {{ if .Params.playwrights }}
                 {{ $links := apply .Params.playwrights "partial" "playwright/link.html" "." }}
                 <h6 class="show-meta">
                     <small>
-                        By {{ delimit $links  ", " " & " }}
+                        Playwright{{ if gt (len .Params.playwrights) 1 }}s{{ end }}:
+                        {{ delimit $links  ", " " & " }}
                     </small>
                 </h6>
-            {{end}}
-            {{if .Params.directors}}
+            {{ end }}
+            {{ if .Params.directors }}
                 {{ $links := apply .Params.directors "partial" "director/link.html" "." }}
                 <h6 class="show-meta">
                     <small>
-                        Directed by {{ delimit $links ", " " & " }}
+                        Director{{ if gt (len .Params.directors) 1 }}s{{ end }}:
+                        {{ delimit $links ", " " & " }}
                     </small>
                 </h6>
-            {{end}}
+            {{ end }}
         </div>
 
         {{ partial "youtube.html" . }}
@@ -48,36 +59,27 @@
 
         <h5 class="show-see">See It Live</h5>
 
-        {{ $.Scratch.Set "months" (slice (dateFormat "January" $start)) }}
-        {{ range $index, $showtime := .Params.showtimes }}
-            {{ $.Scratch.Set "hasMonth" false }}
-            {{ range $i, $month := ($.Scratch.Get "months") }}
-                {{ if eq $month (dateFormat "January" $showtime) }}
-                    {{ $.Scratch.Set "hasMonth" true }}
-                {{ end }}
-            {{ end }}
-            {{ if eq ($.Scratch.Get "hasMonth") false }}
-                {{ $.Scratch.Add "months" (dateFormat "January" $showtime) }}
-            {{ end }}
-            {{ if eq ($.Scratch.Get "hasMonth") false }}
-                {{ $.Scratch.Add "months" (dateFormat "January" $showtime) }}
-            {{ end }}
-            {{ $.Scratch.Add "days" (slice (dateFormat "2" $showtime)) }}
-        {{ end }}
-
-        <h3 class="show-month">
-            {{ delimit ($.Scratch.Get "months") ", " " & " }}
-        </h3>
-
-        <h6 class="show-dates">
-    		{{ range $i, $day := ($.Scratch.Get "days") }}
-    			<span class="show-circle show-date">{{ $day }}</span>
-    		{{ end }}
-    	</h6>
+        {{ partial "show/dates.html" . }}
 
         <div>
             <a href="https://web.ovationtix.com/trs/dept/1090">Buy Tickets</a>
         </div>
+
+        {{ if (index .Params "set designers" ) }}
+            {{ $links := apply (index .Params "set designers" ) "partial" "set-designer/link.html" "." }}
+            <h6 class="show-meta">
+                Set Designer{{ if gt (len (index .Params "set designers" )) 1 }}s{{ end }}:
+                {{ delimit $links ", " " & " }}
+            </h6>
+        {{ end }}
+        {{ if (index .Params "stage managers" ) }}
+            {{ $links := apply (index .Params "stage managers" ) "partial" "stage-manager/link.html" "." }}
+            <h6 class="show-meta">
+                Stage Manager{{ if gt (len (index .Params "stage managers" )) 1 }}s{{ end }}:
+                {{ delimit $links ", " " & " }}
+            </h6>
+        {{ end }}
+
     </div>
 </div>
 
