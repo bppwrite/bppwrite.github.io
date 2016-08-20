@@ -1,5 +1,5 @@
 +++
-aliases = []
+aliases = ["/node/152"]
 date = "2016-07-03T13:01:52-04:00"
 intermission_count = "0"
 runtime = ""
