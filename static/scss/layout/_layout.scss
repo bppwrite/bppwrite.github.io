@@ -13,7 +13,12 @@
   max-width: $container-width-max;
 }
 
-.container-nav, .container-footer-info {
+.container-footer-info {
+	width: 95%;
+	margin: 0 auto;
+}
+
+.container-wide {
 	width: 95%;
 	margin: 0 auto;
 }

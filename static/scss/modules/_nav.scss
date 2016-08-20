@@ -1,77 +1,65 @@
 // ---- Navigation ----
 
 header {
+	background-color: $black;
   a {
     color: $white;
   }
-  background-color: $black;
-}
-
-.container-nav {
-  @include flexbox();
-  @include flex-prop-prefixes(justify-content, space-between);
-  @include flex-prop-prefixes(align-items, center);
-  @include flex-prop-prefixes(flex-direction, column);
-}
-
-.logo {
-  height: auto;
-  width: 4em;
-}
-
-.menu {
-  @include flexbox();
-  @include flex-prop-prefixes(flex-wrap, wrap);
-  @include flex-prop-prefixes(justify-content, space-between);
-  @include flex-prop-prefixes(align-items, flex-end);
-  font-family: $font-stack-header;
-  list-style: none;
-	padding-left: 0;
-  width: 100%;
-}
-
-.menu-item {
-  @include flex(1 1 auto);
-}
-
-.dropdown {
-  position: relative;
-}
-
-.dropdown:after {
-  color: $white;
-  content: "\25BC";
-  font-size: 0.5em;
-}
-
-.dropdown-menu {
-  position: absolute;
-  display: none;
-  list-style: none;
-}
-
-.dropdown-menu-item {
-}
-.dropdown:hover > .dropdown-menu {
-  display: block;
-}
-
-@media (min-width: $start-tablet) {
-  .container-nav {
-    @include flexbox();
-    @include flex-prop-prefixes(justify-content, space-between);
-    @include flex-prop-prefixes(flex-direction, row);
-  }
-
-  .menu {
-		@include flex-prop-prefixes(justify-content, flex-end);
-		width: auto;
-  }
-	.menu-item + .menu-item {
-		padding-left: 2em;
+	// First of Two Flexbox parents
+	.container-wide {
+		@include flexbox();
+		@include flex-prop-prefixes(justify-content, space-between);
+		@include flex-prop-prefixes(align-items, center);
+		@include flex-prop-prefixes(flex-direction, column);
+	}
+	.logo {
+		height: auto;
+		width: 5em;
+	}
+	// Second of Two Flexbox parents
+	.menu {
+	  @include flexbox();
+	  @include flex-prop-prefixes(flex-wrap, wrap);
+	  @include flex-prop-prefixes(justify-content, space-between);
+	  @include flex-prop-prefixes(align-items, flex-end);
+	  font-family: $font-stack-show-dates;
+		font-size: (13 / 16) * 1em;
+	  list-style: none;
+		padding-left: 0;
+	}
+	.dropdown {
+	  position: relative;
+	}
+	.dropdown:after {
+	  color: $white;
+	  content: "\25BC";
+	  font-size: 0.5em;
+	}
+	.dropdown-menu {
+	  position: absolute;
+	  display: none;
+	  list-style: none;
+	}
+	.dropdown:hover > .dropdown-menu {
+	  display: block;
 	}
 }
-@media (min-width: $start-laptop) {
-  .menu {
-  }
+
+// ---- Media Queries ----
+
+@media (min-width: $start-tablet) {
+	header {
+		.container-wide {
+			@include flexbox();
+			@include flex-prop-prefixes(justify-content, space-between);
+			@include flex-prop-prefixes(flex-direction, row);
+		}
+		.menu {
+			@include flex-prop-prefixes(justify-content, flex-end);
+			width: auto;
+		}
+		.menu-item + .menu-item {
+			padding-left: 2em;
+		}
+	}
 }
