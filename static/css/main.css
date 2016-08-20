@@ -671,10 +671,6 @@ body {
   margin: 0 auto;
   max-width: 1200px; }
 
-.container-footer-info {
-  width: 95%;
-  margin: 0 auto; }
-
 .container-wide {
   width: 95%;
   margin: 0 auto; }
@@ -826,21 +822,19 @@ footer {
     filter: grayscale(95%);
     -webkit-filter: grayscale(95%); }
 
-.container-footer-info {
-  padding-top: 1em;
-  text-align: center; }
-
-.footer-address {
+.footer-traditional h5 {
+  margin: 0.5em 0 0.5em 0; }
+.footer-traditional .address {
   padding-bottom: 1em; }
-
-.footer-address p {
+.footer-traditional .address p {
   margin: 0;
   padding: 0; }
-
-.footer-site-title {
-  margin-top: 0; }
-
-.footer-menu {
+.footer-traditional .social-icons {
+  margin: 0.5em 0 0.5em 0;
+  text-align: right; }
+.footer-traditional .social-icons a {
+  color: #f7f4f8; }
+.footer-traditional .footer-menu {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -871,51 +865,45 @@ footer {
   margin-top: 0;
   text-align: center;
   padding-left: 0; }
-
-.footer-menu-item {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-flex-direction: row;
-  -moz-box-flex-direction: row;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-align-items: baseline;
-  -moz-box-align-items: baseline;
-  -webkit-align-items: baseline;
-  -ms-align-items: baseline;
-  align-items: baseline; }
-
-.footer-dropdown-menu {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-flex-direction: row;
-  -moz-box-flex-direction: row;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-justify-content: center;
-  -moz-box-justify-content: center;
-  -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
-  list-style: none;
-  padding: 0.5em 0 0 0; }
-
-.footer-dropdown-menu-item {
-  padding-left: 0.3125em; }
+  .footer-traditional .footer-menu .menu-item {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-flex-direction: row;
+    -moz-box-flex-direction: row;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align-items: baseline;
+    -moz-box-align-items: baseline;
+    -webkit-align-items: baseline;
+    -ms-align-items: baseline;
+    align-items: baseline; }
+  .footer-traditional .footer-menu .dropdown-menu {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-flex-direction: row;
+    -moz-box-flex-direction: row;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-justify-content: center;
+    -moz-box-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0.5em 0 0 0; }
+  .footer-traditional .footer-menu .dropdown-menu-item {
+    padding-left: 0.3125em; }
 
 @media (min-width: 601px) {
-  .container-footer-info {
-    text-align: left; }
-
-  .footer-menu {
+  .footer-traditional .footer-menu {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -945,24 +933,21 @@ footer {
     list-style: none;
     margin-top: 0;
     text-align: center; }
-
-  .footer-menu-item {
-    -webkit-box-flex-direction: column;
-    -moz-box-flex-direction: column;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align-items: center;
-    -moz-box-align-items: center;
-    -webkit-align-items: center;
-    -ms-align-items: center;
-    align-items: center; }
-
-  .footer-menu-item + .footer-menu-item {
-    padding-left: 2em; }
-
-  .footer-dropdown-menu-item {
-    padding-left: 0; } }
+    .footer-traditional .footer-menu .menu-item {
+      -webkit-box-flex-direction: column;
+      -moz-box-flex-direction: column;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align-items: center;
+      -moz-box-align-items: center;
+      -webkit-align-items: center;
+      -ms-align-items: center;
+      align-items: center; }
+    .footer-traditional .footer-menu .menu-item + .menu-item {
+      padding-left: 2em; }
+    .footer-traditional .footer-menu .dropdown-menu-item {
+      padding-left: 0; } }
 .show-dates .days {
   margin: 0.5em 0 0.5em 0;
   display: -webkit-box;
