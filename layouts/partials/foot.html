@@ -1,34 +1,36 @@
 <footer>
 
-<div class="background-footer-sponsor">
-	<div class="row">
-		<div class="col-sm-12">
-			<h2 class="footer-section-title">Thanks to our sponsors!</h2>
+<div class="sponsor">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<h2>Thanks to our sponsors!</h2>
+			</div>
 		</div>
-	</div>
-    <div class="container-sponsor-lead">
-        <h5>Lead Sponsor</h5>
+			<div class="sponsor-lead">
+					<h5>Lead Sponsor</h5>
 
-        {{ range where (where .Site.Pages "Section" "sponsor") ".Params.is_lead" "==" true }}
-            <p>
-                <a href="{{ .Params.website }}">
-                    {{ partial "sponsor/logo.html" . }}
-                </a>
-            </p>
-        {{ end }}
-    </div>
-    <div class="container-sponsor-season">
-        <h5>Season Sponsors</h5>
-        <ul class="sponsor-season-list">
-            {{ range where (where .Site.Pages "Section" "sponsor") ".Params.is_lead" "!=" true }}
-                <li>
-                    <a href="{{ .Params.website }}">
-                        {{ partial "sponsor/logo.html" . }}
-                    </a>
-                </li>
-            {{ end }}
-        </ul>
-    </div>
+					{{ range where (where .Site.Pages "Section" "sponsor") ".Params.is_lead" "==" true }}
+							<p>
+									<a href="{{ .Params.website }}">
+											{{ partial "sponsor/logo.html" . }}
+									</a>
+							</p>
+					{{ end }}
+			</div>
+			<div class="sponsor-season">
+					<h5>Season Sponsors</h5>
+					<ul>
+							{{ range where (where .Site.Pages "Section" "sponsor") ".Params.is_lead" "!=" true }}
+									<li>
+											<a href="{{ .Params.website }}">
+													{{ partial "sponsor/logo.html" . }}
+											</a>
+									</li>
+							{{ end }}
+					</ul>
+			</div>
+	</div>
 </div>
 
 <div class="background-footer-info">

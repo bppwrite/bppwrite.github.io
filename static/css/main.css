@@ -771,55 +771,60 @@ footer {
   background-color: #231f20;
   color: #f7f4f8; }
 
-.background-footer-sponsor {
+.sponsor {
   background-color: #f7f4f8;
-  color: #231f20;
+  color: #6e5f74;
   padding-top: 0.25em;
-  padding-bottom: 0.25em; }
+  padding-bottom: 0.25em;
+  text-align: center; }
+  .sponsor h2 {
+    margin: 1em 0 0 0; }
+  .sponsor h5 {
+    margin: 1.25em 0 1.25em 0; }
+  .sponsor .sponsor-lead img {
+    height: 75px;
+    width: auto;
+    filter: grayscale(95%);
+    -webkit-filter: grayscale(95%); }
+  .sponsor .sponsor-season ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-flex-direction: row;
+    -moz-box-flex-direction: row;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align-content: space-between;
+    -moz-box-align-content: space-between;
+    -webkit-align-content: space-between;
+    -ms-align-content: space-between;
+    align-content: space-between;
+    -webkit-box-justify-content: space-around;
+    -moz-box-justify-content: space-around;
+    -webkit-justify-content: space-around;
+    -ms-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-box-flex-wrap: wrap;
+    -moz-box-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0; }
+  .sponsor .sponsor-season li {
+    margin: 5px; }
+  .sponsor .sponsor-season img {
+    height: 60px;
+    width: auto;
+    filter: grayscale(95%);
+    -webkit-filter: grayscale(95%); }
 
 .container-footer-info {
   padding-top: 1em;
   text-align: center; }
-
-.container-sponsor-lead, .container-sponsor-season {
-  text-align: center;
-  color: #6e5f74; }
-
-.container-sponsor-lead img {
-  height: 75px;
-  width: auto;
-  filter: grayscale(95%);
-  -webkit-filter: grayscale(95%); }
-
-.container-sponsor-season img {
-  height: 50px;
-  width: auto;
-  filter: grayscale(95%);
-  -webkit-filter: grayscale(95%); }
-
-.footer-section-title {
-  text-align: center;
-  color: #6e5f74;
-  margin-bottom: 0; }
-
-.sponsor-season-list {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-flex-direction: row;
-  -moz-box-flex-direction: row;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-justify-content: center;
-  -moz-box-justify-content: center;
-  -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
-  list-style: none;
-  padding-left: 0; }
 
 .footer-address {
   padding-bottom: 1em; }

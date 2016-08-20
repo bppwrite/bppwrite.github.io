@@ -5,54 +5,53 @@ footer {
   color: $light-grey;
 }
 
-.background-footer-sponsor {
+// ---- sponsors ----
+.sponsor {
   background-color: $light-grey;
-  color: $black;
+	color: $dark-grey;
   padding-top: 0.25em;
   padding-bottom: 0.25em;
+	text-align: center;
+	h2 {
+		margin: 1em 0 0 0;
+	}
+	h5 {
+		margin: 1.25em 0 1.25em 0;
+	}
+	$filter-factor: 95%;
+	.sponsor-lead {
+	  img {
+	    height: 75px;
+	    width: auto;
+	    filter: grayscale($filter-factor);
+	    -webkit-filter: grayscale($filter-factor);
+	  }
+	}
+	.sponsor-season {
+		ul {
+	  	@include flexbox();
+	  	@include flex-prop-prefixes(flex-direction, row);
+			@include flex-prop-prefixes(align-content, space-between);
+	  	@include flex-prop-prefixes(justify-content, space-around);
+			@include flex-prop-prefixes(flex-wrap, wrap);
+	  	list-style: none;
+	  	padding-left: 0;
+		}
+		li {
+			margin: 5px;
+		}
+		img {
+			height: 60px;
+			width: auto;
+			filter: grayscale($filter-factor);
+			-webkit-filter: grayscale($filter-factor);
+		}
+	}
 }
 
 .container-footer-info {
 	padding-top: 1em;
 	text-align: center;
-}
-
-.container-sponsor-lead, .container-sponsor-season {
-  text-align: center;
-  color: $dark-grey;
-}
-
-$filter-factor: 95%;
-.container-sponsor-lead {
-  img {
-    height: 75px;
-    width: auto;
-    filter: grayscale($filter-factor);
-    -webkit-filter: grayscale($filter-factor);
-  }
-}
-
-.container-sponsor-season {
-  img {
-    height: 50px;
-    width: auto;
-    filter: grayscale($filter-factor);
-    -webkit-filter: grayscale($filter-factor);
-  }
-}
-
-.footer-section-title {
-	text-align: center;
-	color: $dark-grey;
-	margin-bottom: 0;
-}
-
-.sponsor-season-list {
-  @include flexbox();
-  @include flex-prop-prefixes(flex-direction, row);
-  @include flex-prop-prefixes(justify-content, center);
-  list-style: none;
-  padding-left: 0;
 }
 
 .footer-address {
