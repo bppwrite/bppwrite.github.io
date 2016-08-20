@@ -13,7 +13,7 @@
     <title> {{ .Title }} &middot; {{ .Site.Title }} </title>
 
     <!-- CSS -->
-		<link rel="stylesheet" href="{{ .Site.BaseURL }}css/font-awesome/font-awesome.css">
+	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/font-awesome/font-awesome.css">
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css">
 
     <!-- Icons -->
@@ -21,5 +21,7 @@
 
     <!-- RSS -->
     <link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+
+    {{ template "_internal/google_analytics_async.html" . }}
   </head>
   <body>

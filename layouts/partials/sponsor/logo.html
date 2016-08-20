@@ -1,0 +1,8 @@
+{{- $.Scratch.Set "sponsorLogo" "logo.valid_img_ext" -}}
+{{- range (readDir (printf "content/%s" .RelPermalink)) -}}
+    {{- if hasPrefix .Name "logo" -}}
+        {{- $.Scratch.Set "sponsorLogo" .Name -}}
+    {{- end -}}
+{{- end -}}
+{{- $imgFilePath := (printf "%s%s" .RelPermalink ($.Scratch.Get "sponsorLogo")) -}}
+<img src="{{ $imgFilePath }}" alt="{{ .Title }} Logo" />
