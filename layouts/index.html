@@ -24,7 +24,7 @@
 		</div>
 		<div class="flex-container">
     	{{/* all current pages in the "show" section */}}
-    	{{- range where $currentSeries.Pages "Section" "show" -}}
+    	{{- range where $currentSeries.Pages.ByDate "Section" "show" -}}
 			<div class="shows-card">
 				{{ partial "show/poster.html" . }}
 				<div class="show-info">

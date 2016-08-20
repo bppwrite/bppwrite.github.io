@@ -1,15 +1,40 @@
 {{ partial "head.html" . }}
 {{ partial "nav.html" . }}
 
-<h2>List</h2>
+{{/* current series is the latest */}}
+{{ $currentSeries := (index .Site.Taxonomies.series.TaxonomyArray 0) }}
 
-<section id="main">
-  <div>
-   <h1 id="title">{{ .Title }}</h1>
-    {{ range .Data.Pages }}
-        {{ .Summary }}
+<h1 id="title">{{ .Title }}</h1>
+
+{{ $.Scratch.Set "hasSeries" false }}
+{{ range .Data.Pages }}
+    {{ if .Params.series }}
+        {{ $.Scratch.Set "hasSeries" true }}
     {{ end }}
-  </div>
-</section>
+{{ end }}
+
+{{ if ($.Scratch.Get "hasSeries") }}
+    {{/* anything in a series is grouped by series */}}
+    {{ range (.Data.Pages.GroupByParam "series").Reverse  }}
+        <h2>{{ .Key }}</h2>
+        <ul>
+        {{ range .Pages.ByDate }}
+            <li>
+                <span>{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </li>
+        {{ end }}
+        </ul>
+    {{ end }}
+{{ else }}
+    <ul>
+    {{ range .Data.Pages.ByDate  }}
+        <li>
+            <span>{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </li>
+    {{ end }}
+    </ul>
+{{ end }}
 
 {{ partial "foot.html" . }}
