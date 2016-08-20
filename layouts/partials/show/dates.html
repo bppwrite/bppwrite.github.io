@@ -22,11 +22,13 @@
 This class name isn't semantic. At a minimum, it shouldn't have the
 "home-" prefix
 -->
-<h6 class="home-shows-month">
-    {{ delimit ($.Scratch.Get "months") ", " " & " }}
-</h6>
-<h6 class="home-show-dates">
-    {{ range $i, $day := ($.Scratch.Get "days") }}
-        <span class="show-circle">{{ $day }}</span>
-    {{ end }}
-</h6>
+<div class="show-dates">
+	<h6 class="months">
+	    {{ delimit ($.Scratch.Get "months") ", " " & " }}
+	</h6>
+	<h6 class="days">
+	    {{ range $i, $day := ($.Scratch.Get "days") }}
+	        <span class="day">{{ $day }}</span>
+	    {{ end }}
+	</h6>
+</div>

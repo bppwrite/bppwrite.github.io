@@ -1,0 +1,26 @@
+.show-dates {
+	.days {
+		margin: 0.5em 0 0.5em 0;
+		@include flexbox();
+		@include flex-prop-prefixes(justify-content, flex-start);
+		@include flex-prop-prefixes(align-items, flex-start);
+	}
+	.day {
+		background-color: $color-accent;
+		border-radius: 50%;
+		color: $white;
+		font-size: (15 / 18) * 1em;
+		height: 33px;
+		padding-top: 5px;
+		text-align: center;
+		width: 33px;
+	}
+	.day + .day {
+		margin-left: 3px;
+	}
+	.months {
+		text-transform: uppercase;
+		margin: 0;
+		padding-left: 0.25em;
+	}
+}

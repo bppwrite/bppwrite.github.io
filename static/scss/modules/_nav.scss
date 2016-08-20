@@ -27,6 +27,9 @@ header {
 	  list-style: none;
 		padding-left: 0;
 	}
+	.menu-item + .menu-item {
+		padding-left: 2em;
+	}
 	.dropdown {
 	  position: relative;
 	}
@@ -57,9 +60,6 @@ header {
 		.menu {
 			@include flex-prop-prefixes(justify-content, flex-end);
 			width: auto;
-		}
-		.menu-item + .menu-item {
-			padding-left: 2em;
 		}
 	}
 }

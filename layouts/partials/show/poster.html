@@ -10,14 +10,7 @@
 Just a thought that we might use <figure> here
 -->
 <figure>
-    <img src="{{ $imgFilePath }}" class="home-shows-poster" alt="{{ .Title }} poster">
-    <figcaption>
-        <!--
-            We could use an H4 here or style it as <figcaption> specifically.
-            Not sure what's "best"...
-        -->
-        <!-- <h4 class="home-shows-title"> -->
-        {{ .Title }}
-        <!-- </h4> -->
-    </figcaption>
+	<a href="/show/{{ .Params.series }}/{{ (.Title | urlize) }}">
+    <img src="{{ $imgFilePath }}" alt="{{ .Title }} poster">
+	</a>
 </figure>

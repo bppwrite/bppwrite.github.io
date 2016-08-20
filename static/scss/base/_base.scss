@@ -14,3 +14,17 @@ a:hover {
   transition: color 0.5s;
   -webkit-transition: color 0.5s;
 }
+
+.section-title {
+	font-size: 2em;
+	margin: 2em 0 1em 0;
+	text-align: center;
+}
+
+// ---- media queries  ----
+
+@media (min-width: $start-laptop) {
+	.section-title {
+		margin: 2em 0 2em 0;
+	}
+}

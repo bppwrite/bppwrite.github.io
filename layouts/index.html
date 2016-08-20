@@ -14,71 +14,73 @@
 		</div>
 </div>
 
-<div class="container">
-	<div class="row">
-		<div class="col-sm-12">
-			<h2 class="home-section-title">Upcoming Shows {{ $currentSeries.Name }}</h2>
+	<div class="shows">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<h2 class="section-title">Upcoming Shows {{ $currentSeries.Name }}</h2>
+				</div>
+			</div>
+		</div>
+		<div class="flex-container">
+    	{{/* all current pages in the "show" section */}}
+    	{{- range where $currentSeries.Pages "Section" "show" -}}
+			<div class="shows-card">
+				{{ partial "show/poster.html" . }}
+				<div class="show-info">
+					<h4><a href="/show/{{ .Params.series }}/{{ (.Title | urlize) }}">{{ .Title }}</a></h4>
+						{{ partial "show/dates.html" . }}
+					</div>
+				</div>
+			{{- end -}}
+			</div>
 		</div>
 	</div>
 
-    <div class="home-shows-container">
-
-    {{/* all current pages in the "show" section */}}
-    {{- range where $currentSeries.Pages "Section" "show" -}}
-        <a href="/show/{{ .Params.series }}/{{ (.Title | urlize) }}">
-            <div class="home-shows-card">
-                {{ partial "show/poster.html" . }}
-                {{ partial "show/dates.html" . }}
-            </div>
-        </a>
-    {{- end -}}
-    </div>
-
-
-	<div class="row">
-		<div class="col-sm-12">
-			<h2 class="home-section-title">Read Our Blog</h2>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="col-sm-12 col-md-5">
-			<img src="img/blog-fill.jpg" class="home-blog-img">
-		</div>
-		<div class="col-sm-12 col-md-6">
-			<h1 class="home-blog-title">Vinyl Truffaut</h1>
-			<h6 class="home-blog-lead">Knausgaard Lumbersexaul Cardigan</h6>
-			<p class="home-blog-text">Vice williamsburg twee taxidermy craft beer. Chia irony pickled tacos, humblebrag disrupt selvage direct trade mixtape master cleanse skateboard asymmetrical swag normcore. Tattooed slow-carb tousled messenger bag kale chips, asymmetrical readymade migas fashion axe blog drinking vinegar godard intelligentsia fap leggings. Biodiesel gastropub austin listicle vegan sriracha. Wayfarers tousled skateboard, chambray cray everyday carry jean shorts readymade farm-to-table blue bottle swag tumblr. Literally meh cray, pitchfork chartreuse yr migas roof party scenester butcher fixie knausgaard typewriter. Cliche swag marfa, pug deep v seitan chillwave tumblr vinyl asymmetrical chambray kickstarter single-origin coffee crucifix.</p>
-		</div>
-	</div>
-
-	<div class="home-img-sequence">
+	<div class="container">
 		<div class="row">
-			<div class="col-sm-12 col-md-6 col-lg-8">
-				<div class="home-img-sequence-about">
-					<h2 class="hero-img-sequence-text"><span class="hero-img-text-background">About</span></h2>
-				</div>
-			</div>
-			<div class="col-sm-12 col-md-6 col-lg-4">
-				<div class="home-img-sequence-tickets">
-					<h2 class="hero-img-sequence-text"><span class="hero-img-text-background">Tickets</span></h2>
-				</div>
+			<div class="col-sm-12">
+				<h2 class="section-title">Read Our Blog</h2>
 			</div>
 		</div>
+
 		<div class="row">
-			<div class="col-sm-12 col-md-6 col-lg-4">
-				<div class="home-img-sequence-education">
-					<h2 class="hero-img-sequence-text"><span class="hero-img-text-background">Education</span></h2>
+			<div class="col-sm-12 col-md-5">
+				<img src="img/blog-fill.jpg" class="home-blog-img">
+			</div>
+			<div class="col-sm-12 col-md-6">
+				<h1 class="home-blog-title">Vinyl Truffaut</h1>
+				<h6 class="home-blog-lead">Knausgaard Lumbersexaul Cardigan</h6>
+				<p class="home-blog-text">Vice williamsburg twee taxidermy craft beer. Chia irony pickled tacos, humblebrag disrupt selvage direct trade mixtape master cleanse skateboard asymmetrical swag normcore. Tattooed slow-carb tousled messenger bag kale chips, asymmetrical readymade migas fashion axe blog drinking vinegar godard intelligentsia fap leggings. Biodiesel gastropub austin listicle vegan sriracha. Wayfarers tousled skateboard, chambray cray everyday carry jean shorts readymade farm-to-table blue bottle swag tumblr. Literally meh cray, pitchfork chartreuse yr migas roof party scenester butcher fixie knausgaard typewriter. Cliche swag marfa, pug deep v seitan chillwave tumblr vinyl asymmetrical chambray kickstarter single-origin coffee crucifix.</p>
+			</div>
+		</div>
+
+		<div class="home-img-sequence">
+			<div class="row">
+				<div class="col-sm-12 col-md-6 col-lg-8">
+					<div class="home-img-sequence-about">
+						<h2 class="hero-img-sequence-text"><span class="hero-img-text-background">About</span></h2>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					<div class="home-img-sequence-tickets">
+						<h2 class="hero-img-sequence-text"><span class="hero-img-text-background">Tickets</span></h2>
+					</div>
 				</div>
 			</div>
-			<div class="col-sm-12 col-md-6 col-lg-8">
-				<div class="home-img-sequence-support">
-					<h2 class="hero-img-sequence-text"><span class="hero-img-text-background">Support</span></h2>
+			<div class="row">
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					<div class="home-img-sequence-education">
+						<h2 class="hero-img-sequence-text"><span class="hero-img-text-background">Education</span></h2>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-8">
+					<div class="home-img-sequence-support">
+						<h2 class="hero-img-sequence-text"><span class="hero-img-text-background">Support</span></h2>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
-</div>
 
 {{ partial "foot.html" . }}
