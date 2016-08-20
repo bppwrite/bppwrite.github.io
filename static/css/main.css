@@ -1218,9 +1218,9 @@ footer {
   height: 100% !important; }
 
 .social-icons {
-  color: #ffffff;
+  color: #f7f4f8;
   list-style: none; }
-  .social-icons li + li {
+  .social-icons a + a {
     padding-left: 0.5em; }
 
 /*# sourceMappingURL=main.css.map */

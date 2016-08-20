@@ -1,7 +1,7 @@
 .social-icons {
-	color: $white;
+	color: $light-grey;
 	list-style: none;
-	li + li {
+	a + a {
 		padding-left: 0.5em;
 	}
 }
