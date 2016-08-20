@@ -415,7 +415,8 @@ a:hover {
 .section-title {
   font-size: 2em;
   margin: 2em 0 1em 0;
-  text-align: center; }
+  text-align: center;
+  text-shadow: 1px 1px rgba(35, 31, 32, 0.25); }
 
 @media (min-width: 1001px) {
   .section-title {
