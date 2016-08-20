@@ -28,7 +28,7 @@
 			<div class="shows-card">
 				{{ partial "show/poster.html" . }}
 				<div class="show-info">
-					<h4><a href="/show/{{ .Params.series }}/{{ (.Title | urlize) }}">{{ .Title }}</a></h4>
+					<h3><a href="/show/{{ .Params.series }}/{{ (.Title | urlize) }}">{{ .Title }}</a></h3>
 						{{ partial "show/dates.html" . }}
 					</div>
 				</div>
@@ -55,28 +55,28 @@
 			</div>
 		</div>
 
-		<div class="home-img-sequence">
+		<div class="img-sequence">
 			<div class="row">
 				<div class="col-sm-12 col-md-6 col-lg-8">
-					<div class="home-img-sequence-about">
-						<h2 class="hero-img-sequence-text"><span class="hero-img-text-background">About</span></h2>
+					<div class="about">
+						<h2><span class="img-text-background">About</span></h2>
 					</div>
 				</div>
 				<div class="col-sm-12 col-md-6 col-lg-4">
-					<div class="home-img-sequence-tickets">
-						<h2 class="hero-img-sequence-text"><span class="hero-img-text-background">Tickets</span></h2>
+					<div class="tickets">
+						<h2><span class="img-text-background">Tickets</span></h2>
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-sm-12 col-md-6 col-lg-4">
-					<div class="home-img-sequence-education">
-						<h2 class="hero-img-sequence-text"><span class="hero-img-text-background">Education</span></h2>
+					<div class="education">
+						<h2><span class="img-text-background">Education</span></h2>
 					</div>
 				</div>
 				<div class="col-sm-12 col-md-6 col-lg-8">
-					<div class="home-img-sequence-support">
-						<h2 class="hero-img-sequence-text"><span class="hero-img-text-background">Support</span></h2>
+					<div class="support">
+						<h2><span class="img-text-background">Support</span></h2>
 					</div>
 				</div>
 			</div>

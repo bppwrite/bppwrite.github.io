@@ -11,16 +11,15 @@
 		color: $white;
 		font-size: (15 / 18) * 1em;
 		height: 33px;
-		padding-top: 5px;
+		padding-top: 7.5px;
 		text-align: center;
 		width: 33px;
 	}
 	.day + .day {
-		margin-left: 3px;
+		margin-left: 6px;
 	}
 	.months {
 		text-transform: uppercase;
 		margin: 0;
-		padding-left: 0.25em;
 	}
 }

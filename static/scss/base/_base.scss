@@ -22,6 +22,11 @@ a:hover {
 	text-shadow: 1px 1px rgba(35, 31, 32, 0.25);
 }
 
+.img-text-background {
+	background-color: $black-trans;
+	padding: (4/16) * 1em;
+}
+
 // ---- media queries  ----
 
 @media (min-width: $start-laptop) {

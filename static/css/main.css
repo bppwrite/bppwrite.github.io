@@ -418,6 +418,10 @@ a:hover {
   text-align: center;
   text-shadow: 1px 1px rgba(35, 31, 32, 0.25); }
 
+.img-text-background {
+  background-color: rgba(35, 31, 32, 0.75);
+  padding: 0.25em; }
+
 @media (min-width: 1001px) {
   .section-title {
     margin: 2em 0 2em 0; } }
@@ -982,15 +986,14 @@ footer {
   color: #ffffff;
   font-size: 0.83333em;
   height: 33px;
-  padding-top: 5px;
+  padding-top: 7.5px;
   text-align: center;
   width: 33px; }
 .show-dates .day + .day {
-  margin-left: 3px; }
+  margin-left: 6px; }
 .show-dates .months {
   text-transform: uppercase;
-  margin: 0;
-  padding-left: 0.25em; }
+  margin: 0; }
 
 .show-title {
   font-family: TwentytwelveSlab-Regular, sans-serif;
@@ -1049,19 +1052,6 @@ footer {
   color: #f9a025;
   font-family: TwentytwelveSlab-Regular, sans-serif;
   text-transform: uppercase; }
-
-.hero-home-text-background {
-  background-color: rgba(35, 31, 32, 0.75);
-  padding: 0.25em; }
-
-.hero-img-text-background {
-  background-color: rgba(35, 31, 32, 0.75);
-  padding: 0.25em; }
-
-.hero-img-sequence-text {
-  color: #ffffff;
-  margin: 0;
-  padding: 30px 0 0 30px; }
 
 .shows {
   background-color: #f7f4f8;
@@ -1124,10 +1114,9 @@ footer {
         border-top: 6px solid #231f20;
         padding: 1em;
         margin-top: 1em; }
-        .shows .flex-container .shows-card .show-info h4 {
+        .shows .flex-container .shows-card .show-info h3 {
           font-family: TwentytwelveSlab-Regular, sans-serif;
-          margin: 0.5em 0 0.25em 0;
-          padding-left: 0.25em; }
+          margin: 0.5em 0 0.25em 0; }
       .shows .flex-container .shows-card figure {
         margin: 0;
         width: 25%; }
@@ -1177,40 +1166,38 @@ footer {
 .home-blog-lead {
   margin: 0; }
 
-.home-img-sequence {
+.img-sequence {
+  color: #ffffff;
   margin: 3em 0 3em 0; }
-
-.home-img-sequence-short, .home-img-sequence-tickets, .home-img-sequence-education {
-  height: 375px;
-  margin-top: 20px; }
-
-.home-img-sequence-long, .home-img-sequence-about, .home-img-sequence-support {
-  height: 375px;
-  margin-top: 20px; }
-
-.home-img-sequence-about {
-  background-image: url(../img/about-fill.jpg);
-  background-position: center center;
-  background-size: cover;
-  position: relative; }
-
-.home-img-sequence-tickets {
-  background-image: url(../img/tickets-fill.jpg);
-  background-position: center center;
-  background-size: cover;
-  position: relative; }
-
-.home-img-sequence-education {
-  background-image: url(../img/education-fill.jpg);
-  background-position: center center;
-  background-size: cover;
-  position: relative; }
-
-.home-img-sequence-support {
-  background-image: url(../img/support-fill.jpg);
-  background-position: center center;
-  background-size: cover;
-  position: relative; }
+  .img-sequence .short, .img-sequence .tickets, .img-sequence .education {
+    height: 375px;
+    margin-top: 20px; }
+  .img-sequence .long, .img-sequence .about, .img-sequence .support {
+    height: 375px;
+    margin-top: 20px; }
+  .img-sequence .about {
+    background-image: url(../img/about-fill.jpg);
+    background-position: center center;
+    background-size: cover;
+    position: relative; }
+  .img-sequence .tickets {
+    background-image: url(../img/tickets-fill.jpg);
+    background-position: center center;
+    background-size: cover;
+    position: relative; }
+  .img-sequence .education {
+    background-image: url(../img/education-fill.jpg);
+    background-position: center center;
+    background-size: cover;
+    position: relative; }
+  .img-sequence .support {
+    background-image: url(../img/support-fill.jpg);
+    background-position: center center;
+    background-size: cover;
+    position: relative; }
+  .img-sequence h2 {
+    margin: 0;
+    padding: 30px 0 0 30px; }
 
 @media (min-width: 601px) {
   .hero-home {
@@ -1232,7 +1219,7 @@ footer {
     -ms-order: 1;
     order: 1; }
     .shows .shows-card:nth-child(odd) figure img {
-      box-shadow: -30px 30px #582972; }
+      box-shadow: -25px 25px #582972; }
   .shows .shows-card:nth-child(even) .show-info {
     -webkit-box-order: 1;
     -moz-box-order: 1;
@@ -1246,7 +1233,7 @@ footer {
     -ms-order: 2;
     order: 2; }
     .shows .shows-card:nth-child(even) figure img {
-      box-shadow: 30px 30px #f9a025; }
+      box-shadow: 25px 25px #f9a025; }
   .shows .flex-container .shows-card {
     -webkit-box-flex-direction: row;
     -moz-box-flex-direction: row;
