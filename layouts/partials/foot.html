@@ -12,7 +12,7 @@
         {{ range where (where .Site.Pages "Section" "sponsor") ".Params.is_lead" "==" true }}
             <p>
                 <a href="{{ .Params.website }}">
-                    <img src="{{ .RelPermalink }}/logo.jpg" alt="{{ .Title }} Logo" />
+                    {{ partial "sponsor/logo.html" . }}
                 </a>
             </p>
         {{ end }}
@@ -23,7 +23,7 @@
             {{ range where (where .Site.Pages "Section" "sponsor") ".Params.is_lead" "!=" true }}
                 <li>
                     <a href="{{ .Params.website }}">
-                        <img src="{{ .RelPermalink }}/logo.jpg" alt="{{ .Title }} Logo" />
+                        {{ partial "sponsor/logo.html" . }}
                     </a>
                 </li>
             {{ end }}

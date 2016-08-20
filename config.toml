@@ -1,6 +1,7 @@
 baseurl = "/"
 languageCode = "en-us"
 title = "Bloomington Playwrights Project"
+googleAnalytics = "UA-35759378-1"
 
 # [params]
 #     currentSeries = "2016-2017"
