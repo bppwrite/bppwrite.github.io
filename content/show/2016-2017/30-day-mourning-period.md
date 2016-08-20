@@ -1,5 +1,6 @@
 +++
 date = "2016-09-23T19:30:00-04:00"
+aliases = ["/node/414"]
 series = "2016-2017"
 genres = ["comedy"]
 playwrights = ["Hank Greene"]
