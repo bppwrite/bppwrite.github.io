@@ -10,4 +10,8 @@ title = "Escape the Room"
 venue = "Bloomington Playwrights Project"
 youtube_id = ""
 
+"producing artistic director" = "Chad Rabinovitz"
+"associate artistic director" = "Ben Smith"
+"managing director" = "Jessica Reed"
+
 +++

@@ -1,0 +1,12 @@
+{{ partial "head.html" . }}
+{{ partial "nav.html" . }}
+
+<h1 id="{{ .Title | urlize }}">{{ .Title }}</h1>
+
+{{ if .Params.email }}
+    <a href="mailto:{{ .Params.email }}">{{ .Params.email }}</a>
+{{ end }}
+
+{{ .Content }}
+
+{{ partial "foot.html" . }}

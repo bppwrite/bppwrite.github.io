@@ -37,6 +37,10 @@ title = "Home"
 venue = "Bloomington Playwrights Project"
 youtube_id = ""
 
+"producing artistic director" = "Chad Rabinovitz"
+"associate artistic director" = "Ben Smith"
+"managing director" = "Jessica Reed"
+
 +++
 
 Katherine escaped from her small Texas home and her hypochondriac mother 9 years ago. When she finally steps back into her childhood home, Katherine is immediately overwhelmed by the familiar. Every room seems to have a story. Every corner of the house holds another recollection. Katherine’s memories become so vivid, in fact, they appear to come alive before her eyes. Both humorous and heartbreaking, HOME explores parenting and childhood with unflinching honesty, questioning what it means to grow older, and whether we truly have the capacity to grow up.

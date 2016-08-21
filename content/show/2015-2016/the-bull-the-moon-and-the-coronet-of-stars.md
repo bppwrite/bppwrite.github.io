@@ -34,6 +34,10 @@ title = "The Bull, the Moon and the Coronet of Stars"
 venue = "Bloomington Playwrights Project"
 youtube_id = "v6XRUWxx688"
 
+"producing artistic director" = "Chad Rabinovitz"
+"associate artistic director" = "David Sheehan"
+"managing director" = "Jessica Reed"
+
 +++
 
 Marion tries not to fall for Michael, her handsome (and very married) co-worker. But as Marion and Michael become entangled in each other, the museum where they work comes under a mysterious, mythological attack. A beast is roaming through the halls; a beast that threatens to destroy Marion’s capacity for love and to leave her wondering if she ever wants to find it again. The U.S. premiere of an award-winning new Australian play, THE BULL, THE MOON AND THE CORONET OF STARS is a magical, passionate, and charming love story of mythic proportions.

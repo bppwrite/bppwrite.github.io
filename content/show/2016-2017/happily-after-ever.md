@@ -34,6 +34,11 @@ title = "Happily After Ever"
 venue = "Bloomington Playwrights Project"
 youtube_id = ""
 
+"producing artistic director" = "Chad Rabinovitz"
+"associate artistic director" = "Ben Smith"
+"managing director" = "Jessica Reed"
+
+
 +++
 
 Newlyweds Darren and Janet want nothing more than to build the perfect life together. But when Janet gives birth to a baby with both male and female genitalia, they find themselves in the unlikely position of having to choose a gender for their child - all while competing with the perfect couple next door and dealing with a misunderstood family dog - in this hilarious battle of the sexes.

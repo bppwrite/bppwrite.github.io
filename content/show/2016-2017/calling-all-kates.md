@@ -34,6 +34,10 @@ title = "Calling All Kates"
 venue = "Bloomington Playwrights Project"
 youtube_id = ""
 
+"producing artistic director" = "Chad Rabinovitz"
+"associate artistic director" = "Ben Smith"
+"managing director" = "Jessica Reed"
+
 +++
 
-Marc gets dumped by his fiancé, Kate McBride, right before their wedding and honeymoon around the world. He’s now single and left to travel the globe alone since his plane tickets are non-transferrable and non-refundable. In an act of desperation, Marc posts an ad online for the only companion who could legally join him... someone with the exact same name as his ex-fiancé. Set loose in a bunch of different foreign countries, strangers Marc and Kate must get to know one another and learn to get along in the wake of Marc's heartbreak. Will they fall in love? Probably not. Will they have a heck of a good time? Definitely. 
+Marc gets dumped by his fiancé, Kate McBride, right before their wedding and honeymoon around the world. He’s now single and left to travel the globe alone since his plane tickets are non-transferrable and non-refundable. In an act of desperation, Marc posts an ad online for the only companion who could legally join him... someone with the exact same name as his ex-fiancé. Set loose in a bunch of different foreign countries, strangers Marc and Kate must get to know one another and learn to get along in the wake of Marc's heartbreak. Will they fall in love? Probably not. Will they have a heck of a good time? Definitely.

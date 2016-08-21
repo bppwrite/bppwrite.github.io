@@ -25,4 +25,8 @@ title = "Everything in its Place"
 venue = "Bloomington Playwrights Project"
 youtube_id = ""
 
+"producing artistic director" = "Chad Rabinovitz"
+"associate artistic director" = "David Sheehan"
+"managing director" = "Jessica Reed"
+
 +++
