@@ -822,15 +822,14 @@ footer {
     filter: grayscale(95%);
     -webkit-filter: grayscale(95%); }
 
-.footer-traditional h5 {
-  margin: 0.5em 0 0.5em 0; }
+.footer-traditional h5, .footer-traditional .social-icons {
+  margin: 16px 0 16px 0; }
 .footer-traditional .address {
   padding-bottom: 1em; }
 .footer-traditional .address p {
   margin: 0;
   padding: 0; }
 .footer-traditional .social-icons {
-  margin: 0.5em 0 0.5em 0;
   text-align: right; }
 .footer-traditional .social-icons a {
   color: #f7f4f8; }
@@ -860,7 +859,7 @@ footer {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  font-family: Interstate-BoldCondensed, sans-serif;
+  font-family: "TrendSansOne", sans-serif;
   list-style: none;
   margin-top: 0;
   text-align: center;
@@ -904,16 +903,6 @@ footer {
 
 @media (min-width: 601px) {
   .footer-traditional .footer-menu {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-flex-wrap: wrap;
-    -moz-box-flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
     -webkit-box-justify-content: flex-end;
     -moz-box-justify-content: flex-end;
     -webkit-justify-content: flex-end;
@@ -929,7 +918,6 @@ footer {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
-    font-family: Interstate-BoldCondensed, sans-serif;
     list-style: none;
     margin-top: 0;
     text-align: center; }

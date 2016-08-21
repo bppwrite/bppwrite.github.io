@@ -52,8 +52,8 @@ footer {
 // ---- deep foot ----
 
 .footer-traditional {
-	h5 {
-		margin: 0.5em 0 0.5em 0;
+	h5, .social-icons {
+		margin: 16px 0 16px 0;
 	}
 	.address {
 		padding-bottom: 1em;
@@ -63,7 +63,6 @@ footer {
 		padding: 0;
 	}
 	.social-icons {
-		margin: 0.5em 0 0.5em 0;
 		text-align: right;
 	}
 	.social-icons a {
@@ -80,7 +79,7 @@ footer {
 	  @include flex-prop-prefixes(justify-content, space-between);
 	  @include flex-prop-prefixes(align-items, center);
 		@include flex-prop-prefixes(flex-direction, column);
-	  font-family: $font-stack-header;
+	  font-family: $font-stack-show-dates;
 	  list-style: none;
 		margin-top: 0;
 	  text-align: center;
@@ -111,12 +110,9 @@ footer {
 @media (min-width: $start-tablet) {
 	.footer-traditional {
 		.footer-menu {
-			@include flexbox();
-			@include flex-prop-prefixes(flex-wrap, wrap);
 			@include flex-prop-prefixes(justify-content, flex-end);
 			@include flex-prop-prefixes(align-items, flex-start);
 			@include flex-prop-prefixes(flex-direction, row);
-			font-family: $font-stack-header;
 			list-style: none;
 			margin-top: 0;
 			text-align: center;

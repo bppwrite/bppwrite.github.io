@@ -1,9 +1,8 @@
 {{ partial "head.html" . }}
 {{ partial "nav.html" . }}
-<div class="container">
-	<h2>Single {{ .Title }}</h2>
 
-	{{ .Content }}
-</div>
+<h1 id="{{ .Title | urlize }}">{{ .Title }}</h1>
+
+{{ .Content }}
 
 {{ partial "foot.html" . }}
