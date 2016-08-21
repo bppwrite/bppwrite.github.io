@@ -39,4 +39,10 @@ intermission_count = "0"
 
 venue = "Bloomington Playwrights Project"
 
+"producing artistic director" = "Chad Rabinovitz"
+"associate artistic director" = "Ben Smith"
+"managing director" = "Jessica Reed"
+
+
+
 +++

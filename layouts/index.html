@@ -2,7 +2,7 @@
 {{ partial "nav.html" . }}
 
 {{/* current series is the latest */}}
-{{ $currentSeries := (index .Site.Taxonomies.series.TaxonomyArray 0) }}
+{{ $currentSeries := (index .Site.Taxonomies.series.Alphabetical.Reverse 0) }}
 
 <div class="hero-home">
 		<div class="container">

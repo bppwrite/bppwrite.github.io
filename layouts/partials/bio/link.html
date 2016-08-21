@@ -1,0 +1,7 @@
+{{/* first file found in content/bio where the name is the person urlized with a .md extension */}}
+{{- $name := . -}}
+{{- range first 1 (where (readDir "content/bio") ".Name" (printf "%s.md" ( $name | urlize ))) -}}
+    <a class="" href="/bio/{{ $name | urlize }}">{{ $name }}</a>
+{{- else -}}
+    <span class="no-bio">{{- $name -}}</span>
+{{- end -}}

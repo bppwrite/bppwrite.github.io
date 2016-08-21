@@ -27,28 +27,71 @@
             {{ if .Params.genres }}
                 {{ $links := apply .Params.genres "partial" "genre/link.html" "." }}
                 <h6 class="show-meta">
-                    <small>
-                        Genre{{ if gt (len .Params.genres) 1 }}s{{ end }}:
-                        {{ delimit $links  ", " " & " }}
-                    </small>
+                    Genre{{ if gt (len .Params.genres) 1 }}s{{ end }}:
+                    {{ delimit $links  ", " " & " }}
                 </h6>
             {{ end }}
             {{ if .Params.playwrights }}
-                {{ $links := apply .Params.playwrights "partial" "playwright/link.html" "." }}
+                {{ $links := apply .Params.playwrights "partial" "bio/link.html" "." }}
                 <h6 class="show-meta">
-                    <small>
-                        Playwright{{ if gt (len .Params.playwrights) 1 }}s{{ end }}:
-                        {{ delimit $links  ", " " & " }}
-                    </small>
+                    Playwright{{ if gt (len .Params.playwrights) 1 }}s{{ end }}:
+                    {{ delimit $links  ", " " & " }}
+                </h6>
+            {{ end }}
+            {{ if .Params.musicians }}
+                {{ $links := apply .Params.musicians "partial" "bio/link.html" "." }}
+                <h6 class="show-meta">
+                    Music:
+                    {{ delimit $links  ", " " & " }}
+                </h6>
+            {{ end }}
+            {{ if .Params.lyricists }}
+                {{ $links := apply .Params.lyricists "partial" "bio/link.html" "." }}
+                <h6 class="show-meta">
+                    Lyrics:
+                    {{ delimit $links  ", " " & " }}
                 </h6>
             {{ end }}
             {{ if .Params.directors }}
-                {{ $links := apply .Params.directors "partial" "director/link.html" "." }}
+                {{ $links := apply .Params.directors "partial" "bio/link.html" "." }}
                 <h6 class="show-meta">
-                    <small>
-                        Director{{ if gt (len .Params.directors) 1 }}s{{ end }}:
-                        {{ delimit $links ", " " & " }}
-                    </small>
+                    Director{{ if gt (len .Params.directors) 1 }}s{{ end }}:
+                    {{ delimit $links ", " " & " }}
+                </h6>
+            {{ end }}
+            {{ if (index .Params "set designers" ) }}
+                {{ $links := apply (index .Params "set designers" ) "partial" "bio/link.html" "." }}
+                <h6 class="show-meta">
+                    Set Designer{{ if gt (len (index .Params "set designers" )) 1 }}s{{ end }}:
+                    {{ delimit $links ", " " & " }}
+                </h6>
+            {{ end }}
+            {{ if (index .Params "stage managers" ) }}
+                {{ $links := apply (index .Params "stage managers" ) "partial" "bio/link.html" "." }}
+                <h6 class="show-meta">
+                    Stage Manager{{ if gt (len (index .Params "stage managers" )) 1 }}s{{ end }}:
+                    {{ delimit $links ", " " & " }}
+                </h6>
+            {{ end }}
+            {{ if (index .Params "lighting designers" ) }}
+                {{ $links := apply (index .Params "lighting designers" ) "partial" "bio/link.html" "." }}
+                <h6 class="show-meta">
+                    Lighting Designer{{ if gt (len (index .Params "lighting designers" )) 1 }}s{{ end }}:
+                    {{ delimit $links ", " " & " }}
+                </h6>
+            {{ end }}
+            {{ if (index .Params "costume designers" ) }}
+                {{ $links := apply (index .Params "costume designers" ) "partial" "bio/link.html" "." }}
+                <h6 class="show-meta">
+                    Costume Designer{{ if gt (len (index .Params "costume designers" )) 1 }}s{{ end }}:
+                    {{ delimit $links ", " " & " }}
+                </h6>
+            {{ end }}
+            {{ if (index .Params "sound designers" ) }}
+                {{ $links := apply (index .Params "sound designers" ) "partial" "bio/link.html" "." }}
+                <h6 class="show-meta">
+                    Sound Designer{{ if gt (len (index .Params "sound designers" )) 1 }}s{{ end }}:
+                    {{ delimit $links ", " " & " }}
                 </h6>
             {{ end }}
         </div>
@@ -64,21 +107,6 @@
         <div>
             <a href="https://web.ovationtix.com/trs/dept/1090">Buy Tickets</a>
         </div>
-
-        {{ if (index .Params "set designers" ) }}
-            {{ $links := apply (index .Params "set designers" ) "partial" "set-designer/link.html" "." }}
-            <h6 class="show-meta">
-                Set Designer{{ if gt (len (index .Params "set designers" )) 1 }}s{{ end }}:
-                {{ delimit $links ", " " & " }}
-            </h6>
-        {{ end }}
-        {{ if (index .Params "stage managers" ) }}
-            {{ $links := apply (index .Params "stage managers" ) "partial" "stage-manager/link.html" "." }}
-            <h6 class="show-meta">
-                Stage Manager{{ if gt (len (index .Params "stage managers" )) 1 }}s{{ end }}:
-                {{ delimit $links ", " " & " }}
-            </h6>
-        {{ end }}
 
     </div>
 </div>

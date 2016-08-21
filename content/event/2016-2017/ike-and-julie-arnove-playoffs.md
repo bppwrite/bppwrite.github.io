@@ -13,6 +13,10 @@ subtitle = "9 Playwrights, 9 Directors and 27 actors have only 24 hours to make 
 venue = "Bloomington Playwrights Project"
 youtube_id = ""
 
+"producing artistic director" = "Chad Rabinovitz"
+"associate artistic director" = "Ben Smith"
+"managing director" = "Jessica Reed"
+
 +++
 
 [Donate to the 2016 Ike & Julie Arnove PlayOffs!](http://www.razoo.com/story/2013-Ike-And-Julie-Arnove-Playoffs)

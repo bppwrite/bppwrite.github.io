@@ -10,4 +10,8 @@ title = "Annual Gala"
 venue = "Ivy Tech John Waldron Arts Center"
 youtube_id = ""
 
+"producing artistic director" = "Chad Rabinovitz"
+"associate artistic director" = "Ben Smith"
+"managing director" = "Jessica Reed"
+
 +++

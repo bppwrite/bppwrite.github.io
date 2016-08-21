@@ -36,6 +36,10 @@ title = "Row After Row"
 venue = "Bloomington Playwrights Project"
 youtube_id = ""
 
+"producing artistic director" = "Chad Rabinovitz"
+"associate artistic director" = "Ben Smith"
+"managing director" = "Jessica Reed"
+
 +++
 
 Historical accuracy is paramount to Cal and Tom, two hardcore Civil War re-enactors, fresh off their latest Gettysburg battle. But their accuracy is compromised when they’re joined by a soldier with a less than authentic confederate uniform... and the wrong gender. Straddling 1863 and today, ROW AFTER ROW is a dark comedy about choosing your cause and finding your courage.
