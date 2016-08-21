@@ -65,7 +65,7 @@
 
 			figure {
 				margin: 0;
-				width: 25%;
+				width: 50%;
 				img {
 					width: 100%;
 					height: auto;
@@ -86,6 +86,9 @@
 			border-color: $color-accent;
 			h3 a {
 				color: $color-primary;
+			}
+			h3 a:hover {
+				color: $color-primary-dark;
 			}
 			.day {
 				background-color: $color-primary;
@@ -232,6 +235,17 @@
 
 	.hero-home-text {
 		padding-top: 350px;
+	}
+
+	.shows {
+		.flex-container {
+			.shows-card {
+				figure {
+					width: 33.333%;
+				}
+			}
+
+		}
 	}
 
 }

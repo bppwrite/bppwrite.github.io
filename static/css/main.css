@@ -1164,7 +1164,7 @@ footer {
           color: #ffffff; }
       .shows .flex-container .shows-card figure {
         margin: 0;
-        width: 25%; }
+        width: 50%; }
         .shows .flex-container .shows-card figure img {
           width: 100%;
           height: auto; }
@@ -1180,6 +1180,8 @@ footer {
     border-color: #f9a025; }
     .shows .shows-card:nth-child(odd) .show-info h3 a {
       color: #582972; }
+    .shows .shows-card:nth-child(odd) .show-info h3 a:hover {
+      color: #452655; }
     .shows .shows-card:nth-child(odd) .show-info .day {
       background-color: #582972; }
   .shows .shows-card:nth-child(odd) figure {
@@ -1297,7 +1299,10 @@ footer {
     height: 550px; }
 
   .hero-home-text {
-    padding-top: 350px; } }
+    padding-top: 350px; }
+
+  .shows .flex-container .shows-card figure {
+    width: 33.333%; } }
 .google-map {
   position: relative;
   padding-bottom: 75%;
