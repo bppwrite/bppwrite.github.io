@@ -400,6 +400,45 @@ textarea {
   /* IE9 Compat Modes */
   src: url("../fonts/TwentytwelveSlab-Regular.ttf") format("truetype");
   /* Safari, Android, iOS */ }
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #ffffff;
+  text-align: center;
+  font-family: Interstate-RegularCondensed, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: #f9a025;
+  border-radius: 4px;
+  border: 1px solid #f9a025;
+  cursor: pointer;
+  box-sizing: border-box; }
+
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  color: #ffffff;
+  background-color: #ae7323;
+  border-color: #ae7323;
+  outline: 0; }
+
 * {
   box-sizing: border-box; }
 
@@ -1247,6 +1286,13 @@ footer {
   .img-sequence h2 {
     margin: 0;
     padding: 30px 0 0 30px; }
+
+.subscribe {
+  background-color: #582972;
+  color: #ffffff;
+  margin-top: 3.5em;
+  padding: 1em 0 1em 0;
+  text-align: center; }
 
 @media (min-width: 601px) {
   .hero-home {

@@ -173,6 +173,18 @@
 	}
 }
 
+// ---- hero  ----
+
+.subscribe {
+	background-color: $color-primary;
+	color: $white;
+	margin-top: 3.5em;
+	padding: 1em 0 1em 0;
+	text-align: center;
+}
+
+
+
 // ---- media queries  ----
 
 @media (min-width: $start-tablet) {
