@@ -1084,7 +1084,7 @@ footer {
       width: 100%; }
       .shows .flex-container .shows-card .show-info {
         background-color: #ffffff;
-        border-top: 6px solid #231f20;
+        border-bottom: 15px solid #231f20;
         padding: 1em;
         margin-top: 1em; }
         .shows .flex-container .shows-card .show-info h3 {
@@ -1104,7 +1104,7 @@ footer {
     -webkit-order: 2;
     -ms-order: 2;
     order: 2;
-    border-top-color: #452655; }
+    border-bottom-color: #452655; }
   .shows .shows-card:nth-child(odd) figure {
     -webkit-box-order: 1;
     -moz-box-order: 1;
@@ -1119,7 +1119,7 @@ footer {
     -webkit-order: 2;
     -ms-order: 2;
     order: 2;
-    border-top-color: #ae7323; }
+    border-bottom-color: #ae7323; }
   .shows .shows-card:nth-child(even) figure {
     -webkit-box-order: 1;
     -moz-box-order: 1;
