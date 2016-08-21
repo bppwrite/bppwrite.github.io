@@ -58,6 +58,9 @@
 					letter-spacing: 0.05em;
 					text-transform: uppercase;;
 				}
+				.months {
+					color: $white;
+				}
 			}
 
 			figure {
@@ -79,25 +82,28 @@
 	.shows-card:nth-child(odd) {
 		.show-info  {
 			@include flex-prop-prefixes(order, 2);
-			border-color: $color-primary;
+			background-color: $color-accent;
+			border-color: $color-accent;
+			h3 a {
+				color: $color-primary;
+			}
+			.day {
+				background-color: $color-primary;
+			}
+
 		}
 		figure {
 			@include flex-prop-prefixes(order, 1);
-			img {
-				// box-shadow: -10px 10px $color-primary;
-			}
 		}
 	}
 	.shows-card:nth-child(even) {
 		.show-info  {
 			@include flex-prop-prefixes(order, 2);
-			border-color: $color-accent;
+			background-color: $color-primary;
+			border-color: $color-primary;
 		}
 		figure {
 			@include flex-prop-prefixes(order, 1);
-			img {
-				// box-shadow: 10px 10px $color-accent;
-			}
 		}
 	}
 
@@ -189,9 +195,6 @@
 			}
 			figure {
 				@include flex-prop-prefixes(order, 1);
-				img {
-					// box-shadow: -25px 25px $color-primary;
-				}
 			}
 		}
 		.shows-card:nth-child(even) {
@@ -201,9 +204,6 @@
 			}
 			figure {
 				@include flex-prop-prefixes(order, 2);
-				img {
-					// box-shadow: 25px 25px $color-accent;
-				}
 			}
 		}
 

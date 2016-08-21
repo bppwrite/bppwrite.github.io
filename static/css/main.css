@@ -1160,6 +1160,8 @@ footer {
           margin: 0.5em 0 0.25em 0;
           letter-spacing: 0.05em;
           text-transform: uppercase; }
+        .shows .flex-container .shows-card .show-info .months {
+          color: #ffffff; }
       .shows .flex-container .shows-card figure {
         margin: 0;
         width: 25%; }
@@ -1174,7 +1176,12 @@ footer {
     -webkit-order: 2;
     -ms-order: 2;
     order: 2;
-    border-color: #582972; }
+    background-color: #f9a025;
+    border-color: #f9a025; }
+    .shows .shows-card:nth-child(odd) .show-info h3 a {
+      color: #582972; }
+    .shows .shows-card:nth-child(odd) .show-info .day {
+      background-color: #582972; }
   .shows .shows-card:nth-child(odd) figure {
     -webkit-box-order: 1;
     -moz-box-order: 1;
@@ -1187,7 +1194,8 @@ footer {
     -webkit-order: 2;
     -ms-order: 2;
     order: 2;
-    border-color: #f9a025; }
+    background-color: #582972;
+    border-color: #582972; }
   .shows .shows-card:nth-child(even) figure {
     -webkit-box-order: 1;
     -moz-box-order: 1;
