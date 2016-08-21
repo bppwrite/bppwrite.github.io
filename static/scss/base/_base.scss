@@ -27,6 +27,13 @@ a:hover {
 	padding: (4/16) * 1em;
 }
 
+::selection {
+  background: $royal-light;
+}
+::-moz-selection {
+  background: $royal-light;
+}
+
 // ---- media queries  ----
 
 @media (min-width: $start-laptop) {

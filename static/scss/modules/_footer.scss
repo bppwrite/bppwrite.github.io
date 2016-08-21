@@ -57,15 +57,34 @@ footer {
 	}
 	.address {
 		padding-bottom: 1em;
+		text-align: center;
 	}
 	.address p {
 		margin: 0;
 		padding: 0;
 	}
 	.social-icons {
-		text-align: right;
+		text-align: center;
 	}
 	.social-icons a {
+		color: $light-grey;
+	}
+
+	.title {
+		color: $color-primary;
+		background: -webkit-linear-gradient(330deg, $color-primary 0%, $color-accent 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		text-align: center;
+		h2 {
+			font-family: $font-stack-extra-bold;
+			font-size: ((16 * 2) / 16) * 1em;
+		}
+	}
+	.misc {
+		text-align: center;
+	}
+	.misc a {
 		color: $light-grey;
 	}
 
@@ -84,6 +103,9 @@ footer {
 		margin-top: 0;
 	  text-align: center;
 		padding-left: 0;
+		a {
+			color: $light-grey;
+		}
 		.menu-item {
 			@include flexbox();
 			@include flex-prop-prefixes(flex-direction, row);
@@ -102,7 +124,6 @@ footer {
 			padding-left: (5 / 16) * 1em;
 		}
 	}
-
 
 }
 
@@ -125,6 +146,36 @@ footer {
 			}
 			.dropdown-menu-item {
 				padding-left: 0;
+			}
+		}
+		.footer-menu.misc {
+			@include flex-prop-prefixes(justify-content, flex-end);
+			@include flex-prop-prefixes(align-items, flex-end);
+			height: 76px; // strategy will need to change
+		}
+		.title {
+			h2 {
+				font-size: ((16 * 3) / 16) * 1em;
+			}
+		}
+	}
+
+}
+
+@media (min-width: $start-laptop) {
+	.footer-traditional {
+		.address {
+			text-align: left;
+		}
+		.misc {
+			text-align: right;
+		}
+		.social-icons {
+			text-align: right;
+		}
+		.title {
+			h2 {
+				font-size: ((16 * 4) / 16) * 1em;
 			}
 		}
 	}
