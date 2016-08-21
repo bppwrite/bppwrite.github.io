@@ -49,8 +49,8 @@
 
 			.show-info {
 				background-color: $white;
-				border-top: 6px solid $black;
-				padding: 1em;
+				border-bottom: 15px solid $black;
+				padding: 1.5em;
 				margin-top: 1em;
 				h3 {
 					font-family: $font-stack-show;
@@ -77,7 +77,7 @@
 	.shows-card:nth-child(odd) {
 		.show-info  {
 			@include flex-prop-prefixes(order, 2);
-			border-top-color: $color-primary-dark;
+			border-bottom-color: $color-primary-dark;
 		}
 		figure {
 			@include flex-prop-prefixes(order, 1);
@@ -89,7 +89,7 @@
 	.shows-card:nth-child(even) {
 		.show-info  {
 			@include flex-prop-prefixes(order, 2);
-			border-top-color: $color-accent-dark;
+			border-bottom-color: $color-accent-dark;
 		}
 		figure {
 			@include flex-prop-prefixes(order, 1);

@@ -49,80 +49,145 @@ footer {
 	}
 }
 
-.container-footer-info {
-	padding-top: 1em;
-	text-align: center;
-}
+// ---- deep foot ----
 
-.footer-address {
-	padding-bottom: 1em;
-}
+.footer-traditional {
+	.address {
+		padding-bottom: 1em;
+		text-align: center;
+	}
+	.address p {
+		margin: 0;
+		padding: 0;
+	}
+	.social-icons {
+		margin: 0.25em 0 0 0;
+		text-align: center;
+	}
+	.social-icons a {
+		color: $light-grey;
+	}
 
-.footer-address p {
-	margin: 0;
-	padding: 0;
-}
+	.title {
+		color: $color-primary;
+		background: -webkit-linear-gradient(330deg, $color-primary 0%, $color-accent 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		text-align: center;
+		h2 {
+			font-family: $font-stack-extra-bold;
+			font-size: ((16 * 2) / 16) * 1em;
+		}
+	}
+	.misc {
+		text-align: center;
+	}
+	.misc a {
+		color: $light-grey;
+	}
 
-.footer-site-title {
-	margin-top: 0;
-}
 
-// ---- footer menu ----
 
-.footer-menu {
-  @include flexbox();
-  @include flex-prop-prefixes(flex-wrap, wrap);
-  @include flex-prop-prefixes(justify-content, space-between);
-  @include flex-prop-prefixes(align-items, center);
-	@include flex-prop-prefixes(flex-direction, column);
-  font-family: $font-stack-header;
-  list-style: none;
-	margin-top: 0;
-  text-align: center;
-	padding-left: 0;
-}
+	// ---- footer menu ----
 
-.footer-menu-item {
-	@include flexbox();
-	@include flex-prop-prefixes(flex-direction, row);
-	@include flex-prop-prefixes(align-items, baseline);
-}
-
-.footer-dropdown-menu {
-	@include flexbox();
-	@include flex-prop-prefixes(flex-direction, row);
-	@include flex-prop-prefixes(justify-content, center);
-  list-style: none;
-	padding: 0.5em 0 0 0;
-}
-
-.footer-dropdown-menu-item {
-	padding-left: (5 / 16) * 1em;
-}
-
-@media (min-width: $start-tablet) {
-  .container-footer-info {
-    text-align: left;
-  }
 	.footer-menu {
 	  @include flexbox();
 	  @include flex-prop-prefixes(flex-wrap, wrap);
-	  @include flex-prop-prefixes(justify-content, flex-end);
-	  @include flex-prop-prefixes(align-items, flex-start);
-		@include flex-prop-prefixes(flex-direction, row);
-	  font-family: $font-stack-header;
+	  @include flex-prop-prefixes(justify-content, space-between);
+	  @include flex-prop-prefixes(align-items, center);
+		@include flex-prop-prefixes(flex-direction, column);
+	  font-family: $font-stack-show-dates;
+		font-size: (13 / 16) * 1em;
 	  list-style: none;
 		margin-top: 0;
+		margin-bottom: 0;
 	  text-align: center;
-	}
-	.footer-menu-item {
-		@include flex-prop-prefixes(flex-direction, column);
-		@include flex-prop-prefixes(align-items, center);
-	}
-	.footer-menu-item + .footer-menu-item {
-		padding-left: 2em;
-	}
-	.footer-dropdown-menu-item {
 		padding-left: 0;
+		a {
+			color: $light-grey;
+		}
+		.menu-item {
+			@include flexbox();
+			@include flex-prop-prefixes(flex-direction, row);
+			@include flex-prop-prefixes(align-items, baseline);
+		}
+
+		.dropdown-menu {
+			@include flexbox();
+			@include flex-prop-prefixes(flex-direction, row);
+			@include flex-prop-prefixes(justify-content, center);
+			list-style: none;
+			padding: 0.5em 0 0 0;
+		}
+
+		.dropdown-menu-item {
+			padding-left: (5 / 16) * 1em;
+		}
 	}
+
+}
+
+// ---- media queries ----
+@media (min-width: $start-tablet) {
+	.footer-traditional {
+		.footer-menu {
+			@include flex-prop-prefixes(justify-content, center);
+			@include flex-prop-prefixes(align-items, flex-start);
+			@include flex-prop-prefixes(flex-direction, row);
+			list-style: none;
+			text-align: center;
+			.menu-item {
+				@include flex-prop-prefixes(flex-direction, column);
+				@include flex-prop-prefixes(align-items, center);
+			}
+			.menu-item + .menu-item {
+				padding-left: 2em;
+			}
+			.dropdown-menu-item {
+				padding-left: 0;
+			}
+		}
+		.footer-menu, .social-icons {
+			margin-top: (16 / 16) * 1em;
+			margin-bottom: (16 / 16) * 1em;
+		}
+		.footer-menu.misc {
+			@include flex-prop-prefixes(justify-content, center);
+			@include flex-prop-prefixes(align-items, flex-end);
+		}
+		.title {
+			h2 {
+				font-size: ((16 * 3) / 16) * 1em;
+			}
+		}
+	}
+
+}
+
+@media (min-width: $start-laptop) {
+	.footer-traditional {
+		.address {
+			text-align: left;
+		}
+		.misc {
+			text-align: right;
+		}
+		.social-icons {
+			text-align: right;
+		}
+		.title {
+			h2 {
+				font-size: ((16 * 4) / 16) * 1em;
+			}
+		}
+		.footer-menu {
+			@include flex-prop-prefixes(justify-content, flex-start);
+		}
+		.footer-menu.misc {
+			@include flex-prop-prefixes(justify-content, flex-end);
+			@include flex-prop-prefixes(align-items, flex-end);
+			height: 63px; // strategy will need to change
+		}
+	}
+
 }
