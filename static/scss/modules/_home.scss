@@ -208,6 +208,10 @@
 		.flex-container {
 			.shows-card {
 				@include flex-prop-prefixes(flex-direction, row);
+				@include flex-prop-prefixes(justify-content, center);
+			}
+			.show-info {
+				margin-left: 1em;
 			}
 		}
 

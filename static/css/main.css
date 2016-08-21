@@ -1282,7 +1282,14 @@ footer {
     -moz-box-flex-direction: row;
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
-    flex-direction: row; }
+    flex-direction: row;
+    -webkit-box-justify-content: center;
+    -moz-box-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center; }
+  .shows .flex-container .show-info {
+    margin-left: 1em; }
   .shows .show-info {
     margin-top: 0; } }
 @media (min-width: 1001px) {
