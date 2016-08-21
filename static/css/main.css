@@ -903,11 +903,11 @@ footer {
 
 @media (min-width: 601px) {
   .footer-traditional .footer-menu {
-    -webkit-box-justify-content: flex-end;
-    -moz-box-justify-content: flex-end;
-    -webkit-justify-content: flex-end;
-    -ms-justify-content: flex-end;
-    justify-content: flex-end;
+    -webkit-box-justify-content: flex-start;
+    -moz-box-justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    justify-content: flex-start;
     -webkit-box-align-items: flex-start;
     -moz-box-align-items: flex-start;
     -webkit-align-items: flex-start;
