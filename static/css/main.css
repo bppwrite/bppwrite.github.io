@@ -1157,7 +1157,9 @@ footer {
         margin-top: 1em; }
         .shows .flex-container .shows-card .show-info h3 {
           font-family: TwentytwelveSlab-Regular, sans-serif;
-          margin: 0.5em 0 0.25em 0; }
+          margin: 0.5em 0 0.25em 0;
+          letter-spacing: 0.05em;
+          text-transform: uppercase; }
       .shows .flex-container .shows-card figure {
         margin: 0;
         width: 25%; }
