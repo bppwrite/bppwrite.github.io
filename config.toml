@@ -1,6 +1,15 @@
+title = "Bloomington Playwrights Project"
+
+[params.address]
+    street = "107 West 9th Street"
+    city = "Bloomington"
+    state = "IN"
+    zip = "40404"
+    phone = "812.334.1188"
+    email = "bppwrite@newplays.org"
+
 baseurl = "/"
 languageCode = "en-us"
-title = "Bloomington Playwrights Project"
 googleAnalytics = "UA-35759378-1"
 
 # [params]
@@ -40,6 +49,25 @@ googleAnalytics = "UA-35759378-1"
   name = "Blog"
   url = "/contact"
   weight = -170
+
+SectionPagesMenu = "main"
+
+[[menu.foot]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 100
+[[menu.foot]]
+    name = "Privacy Policy"
+    url = "/privacy-policy/"
+    weight = 200
+[[menu.foot]]
+    name = "Terms & Conditions"
+    url = "/terms-and-conditions/"
+    weight = 300
+[[menu.foot]]
+    name = "Facility Rentals"
+    url = "/facility-rentals/"
+    weight = 400
 
 preserveTaxonomyNames = true
 

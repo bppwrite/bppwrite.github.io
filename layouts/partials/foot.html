@@ -38,10 +38,9 @@
 		<div class="row">
 			<div class="col-lg-9 col-md-12 col-sm-12">
 				<ul class="footer-menu">
-					{{ $currentNode := . }}
 					{{ range .Site.Menus.main }}
 						{{ if .HasChildren }}
-							<li class="{{if $currentNode.HasMenuCurrent "main" . }}active{{end}} menu-item dropdown">
+							<li class="menu-item dropdown{{if $.HasMenuCurrent "main" . }} active{{end}}">
 								<a href="javascript:;" class="">
 									{{ .Pre }}
 									<span>{{ .Name }}</span>
@@ -49,14 +48,14 @@
 								</a>
 								<ul class="dropdown-menu">
 									{{ range .Children }}
-									<li class="{{if $currentNode.IsMenuCurrent "main" . }}active{{end}} dropdown-menu-item">
+									<li class="dropdown-menu-item{{if $.IsMenuCurrent "main" . }} active{{end}}">
 										<a href="{{.URL}}"> {{ .Name }} </a>
 									</li>
 									{{ end }}
 								</ul>
 							</li>
 						{{else}}
-							<li class="menu-item">
+							<li class="menu-item{{if $.IsMenuCurrent "main" . }} active{{end}}">
 								<a class="" href="{{.URL}}">
 									{{ .Pre }}
 									<span>{{ .Name }}</span>
@@ -77,23 +76,29 @@
 		</div>
 		<div class="row title">
 			<div class="col-md-12 col-sm-12">
-				<h2>Bloomington Playwrights Project<h2>
+				<h2>{{ .Site.Title }}<h2>
 		</div>
 	</div>
 		<div class="row">
 			<div class="col-lg-3 col-md-12 col-sm-12">
 				<div class="address">
-					<p>107 West 9th Street</p>
-					<p>Bloomington, IN 47404</p>
-					<p><a href="tel:+1-812-334-1188">812.334.1188</a></p>
-					<p><a href="mailto:bppwrite@newplays.org">bppwrite@newplays.org</a></p>
+					<p>{{ .Site.Params.address.street }}</p>
+					<p>{{ .Site.Params.address.city }},
+                        {{ .Site.Params.address.state }}
+                        {{ .Site.Params.address.zip }}
+                    </p>
+					<p><a href="tel:+1-{{ .Site.Params.address.phone }}">
+                        {{ .Site.Params.address.phone }}</a>
+                    </p>
+					<p><a href="mailto:{{ .Site.Params.address.email }}">
+                        {{ .Site.Params.address.email }}</a></p>
 				</div>
 			</div>
 			<div class="col-lg-9 col-md-12 col-sm-12 misc footer-menu">
-				<a class="menu-item" href="/contact">Contact</a>
-				<a class="menu-item" href="/privacy-policy">Privacy Policy</a>
-				<a class="menu-item" href="/terms-and-conditions">Terms and Conditions</a>
-				<a class="menu-item" href="/facility-rentals">Facility Rentals</a>
+                {{ range .Site.Menus.foot }}
+                    <a class="menu-item{{if or ($.IsMenuCurrent "foot" .) ($.HasMenuCurrent "foot" .) }} active{{end}}"
+                        href="{{.URL}}">{{ .Name }}</a>
+                {{end}}
 			</div>
 		</div>
 
