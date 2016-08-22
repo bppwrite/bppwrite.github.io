@@ -69,12 +69,13 @@ footer {
 	}
 
 	.title {
-		color: $color-primary;
-		background: -webkit-linear-gradient(330deg, $color-primary 0%, $color-accent 100%);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
 		text-align: center;
+		// only works in chrome, switch to svg text or abandon
 		h2 {
+			color: $color-primary;
+			background: -webkit-linear-gradient(330deg, $color-primary 0%, $color-accent 100%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
 			font-family: $font-stack-extra-bold;
 			font-size: ((16 * 2) / 16) * 1em;
 		}

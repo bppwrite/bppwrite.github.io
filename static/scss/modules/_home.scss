@@ -130,7 +130,7 @@
 // ---- image sequence  ----
 .img-sequence {
 	color: $white;
-	margin: 3em 0 3em 0;
+	margin: 0 0 3em 0;
 	.short {
 		height: 375px;
 		margin-top: 20px;
@@ -139,14 +139,7 @@
 		height: 375px;
 		margin-top: 20px;
 	}
-	.about {
-		@extend .long;
-		background-image: url(../img/about-fill.jpg);
-		background-position: center center;
-		background-size: cover;
-		position: relative;
-	}
-	.tickets {
+	.volunteer {
 		@extend .short;
 		background-image: url(../img/tickets-fill.jpg);
 		background-position: center center;
@@ -160,7 +153,7 @@
 		background-size: cover;
 		position: relative;
 	}
-	.support {
+	.donate {
 		@extend .long;
 		background-image: url(../img/support-fill.jpg);
 		background-position: center center;
