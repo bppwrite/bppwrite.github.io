@@ -754,7 +754,8 @@ header {
     flex-direction: column; }
   header .logo {
     height: auto;
-    width: 5em; }
+    width: 5em;
+    padding-bottom: 0.5em; }
   header .menu {
     display: -webkit-box;
     display: -moz-box;
@@ -780,6 +781,8 @@ header {
     font-size: 0.8125em;
     list-style: none;
     padding-left: 0; }
+  header .menu-item {
+    padding-top: 1em; }
   header .menu-item + .menu-item {
     padding-left: 2em; }
   header .dropdown {
@@ -794,8 +797,10 @@ header {
     list-style: none; }
   header .dropdown:hover > .dropdown-menu {
     display: block; }
+  header .social-icons {
+    padding-top: 1.5em; }
 
-@media (min-width: 601px) {
+@media (min-width: 1001px) {
   header .container-wide {
     display: -webkit-box;
     display: -moz-box;
@@ -812,13 +817,18 @@ header {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row; }
+  header .logo {
+    padding-bottom: 0; }
   header .menu {
     -webkit-box-justify-content: flex-end;
     -moz-box-justify-content: flex-end;
     -webkit-justify-content: flex-end;
     -ms-justify-content: flex-end;
     justify-content: flex-end;
-    width: auto; } }
+    width: auto; }
+  header .menu-item, header .social-icons {
+    padding-top: 0;
+    padding-bottom: 0; } }
 footer {
   background-color: #231f20;
   color: #f7f4f8; }

@@ -15,6 +15,7 @@ header {
 	.logo {
 		height: auto;
 		width: 5em;
+		padding-bottom: 0.5em;
 	}
 	// Second of Two Flexbox parents
 	.menu {
@@ -26,6 +27,9 @@ header {
 		font-size: (13 / 16) * 1em;
 	  list-style: none;
 		padding-left: 0;
+	}
+	.menu-item {
+		padding-top: 1em;
 	}
 	.menu-item + .menu-item {
 		padding-left: 2em;
@@ -46,20 +50,30 @@ header {
 	.dropdown:hover > .dropdown-menu {
 	  display: block;
 	}
+	.social-icons {
+		padding-top: 1.5em;
+	}
 }
 
 // ---- Media Queries ----
 
-@media (min-width: $start-tablet) {
+@media (min-width: $start-laptop) {
 	header {
 		.container-wide {
 			@include flexbox();
 			@include flex-prop-prefixes(justify-content, space-between);
 			@include flex-prop-prefixes(flex-direction, row);
 		}
+		.logo {
+			padding-bottom: 0;
+		}
 		.menu {
 			@include flex-prop-prefixes(justify-content, flex-end);
 			width: auto;
+		}
+		.menu-item, .social-icons {
+			padding-top: 0;
+			padding-bottom: 0;
 		}
 	}
 }
