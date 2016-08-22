@@ -1,16 +1,17 @@
-title = "Bloomington Playwrights Project"
-
-[params.address]
-    street = "107 West 9th Street"
-    city = "Bloomington"
-    state = "IN"
-    zip = "40404"
-    phone = "812.334.1188"
-    email = "bppwrite@newplays.org"
-
 baseurl = "/"
 languageCode = "en-us"
 googleAnalytics = "UA-35759378-1"
+
+title = "Bloomington Playwrights Project"
+
+[params]
+    [params.address]
+        street = "107 West 9th Street"
+        city = "Bloomington"
+        state = "IN"
+        zip = "40404"
+        phone = "812.334.1188"
+        email = "bppwrite@newplays.org"
 
 # [params]
 #     currentSeries = "2016-2017"
