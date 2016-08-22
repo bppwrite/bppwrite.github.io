@@ -452,7 +452,8 @@ a:hover {
   -webkit-transition: color 0.5s; }
 
 ul {
-  margin: 0; }
+  margin: 0;
+  padding-left: 0; }
 
 ::selection {
   background: #ac94b9; }
@@ -864,7 +865,7 @@ footer {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     list-style: none;
-    padding-left: 0; }
+    padding-bottom: 2em; }
   .sponsor .sponsor-season li {
     margin: 5px; }
   .sponsor .sponsor-season img {
