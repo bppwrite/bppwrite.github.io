@@ -728,7 +728,10 @@ body {
   margin: 0 auto; }
 
 header {
-  background-color: #231f20; }
+  background-color: rgba(0, 0, 0, 0.25);
+  position: fixed;
+  width: 100%;
+  z-index: 1; }
   header a {
     color: #ffffff; }
   header .container-wide {
@@ -754,7 +757,7 @@ header {
     flex-direction: column; }
   header .logo {
     height: auto;
-    width: 5em;
+    width: 3.5em;
     padding-bottom: 0.5em; }
   header .menu {
     display: -webkit-box;
