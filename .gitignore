@@ -6,3 +6,16 @@
 ###########
 .sass-cache/
 *.css.map
+
+# NPM #
+###########
+/node_modules
+
+# JS #
+###########
+/static/js/lib/
+/static/js/dist/
+
+# IMAGES #
+###########
+/static/img/src/

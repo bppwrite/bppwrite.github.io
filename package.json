@@ -1,0 +1,35 @@
+{
+  "name": "bppwrite.github.io",
+  "version": "1.0.0",
+  "description": "the website of the bloomington playwrights project",
+  "main": "index.js",
+  "scripts": {
+    "build:all": "npm run build:css && npm run build:images && npm run build:js",
+    "build:css": "npm run scss",
+    "build:images": "npm run imagemin",
+    "build:js": "npm run tower && npm run uglify",
+    "imagemin": "imagemin static/img/src/* -o static/img",
+    "lint": "eslint static/js/src",
+    "scss": "node-sass --output-style compressed --source-map true -o static/css static/scss",
+    "tower": "babel static/js/src -d static/js/lib",
+    "uglify": "mkdir -p static/js/dist && uglifyjs static/js/lib/*.js -m -o static/js/dist/app.js && uglifyjs static/js/lib/*.js -m -c -o static/js/dist/app.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bppwrite/bppwrite.github.io.git"
+  },
+  "author": "",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/bppwrite/bppwrite.github.io/issues"
+  },
+  "homepage": "https://github.com/bppwrite/bppwrite.github.io#readme",
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-preset-es2015": "^6.13.2",
+    "eslint": "^3.3.1",
+    "imagemin-cli": "^3.0.0",
+    "node-sass": "^3.8.0",
+    "uglify-js": "^2.7.3"
+  }
+}
