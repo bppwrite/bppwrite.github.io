@@ -13,7 +13,7 @@
     <title> {{ .Title }} &middot; {{ .Site.Title }} </title>
 
     <!-- CSS -->
-	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/font-awesome/font-awesome.css">
+		<link rel="stylesheet" href="{{ .Site.BaseURL }}css/font-awesome/font-awesome.css">
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css">
 
     <!-- Icons -->
@@ -21,6 +21,10 @@
 
     <!-- RSS -->
     <link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+
+		<!-- javascript -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="{{ .Site.BaseURL }}js/dist/app.min.js"></script>
 
     {{ template "_internal/google_analytics_async.html" . }}
   </head>

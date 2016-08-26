@@ -21,6 +21,7 @@ $color-accent:   		$flat-gold;
 $white:          		#ffffff;
 $black:          		#231f20;
 $black-trans:				rgba(35, 31, 32, 0.75);
+$full-trans:				rgba(35, 31, 32, 0);
 $light-grey:     		mix($white, $royal, 95%);
 $dark-grey:      		mix($black, $royal-light, 45%);
 $color-accent-dark: mix($black, $color-accent, 35%);

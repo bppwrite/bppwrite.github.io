@@ -24,6 +24,7 @@ ul {
 ::-moz-selection {
   background: $royal-light;
 }
+
 // ---- quick classes ----
 .section-title {
 	font-size: 2em;
@@ -34,6 +35,11 @@ ul {
 .img-text-background {
 	background-color: $black-trans;
 	padding: (4/16) * 1em;
+}
+.img-text-emphasis {
+	color: $color-accent;
+	font-family: $font-stack-show;
+	text-transform: uppercase;
 }
 .lead {
 	font-size: 1.5em;

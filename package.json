@@ -4,9 +4,8 @@
   "description": "the website of the bloomington playwrights project",
   "main": "index.js",
   "scripts": {
-    "build:all": "npm run build:css && npm run build:images && npm run build:js",
+    "build:all": "npm run build:css && npm run build:js",
     "build:css": "npm run scss",
-    "build:images": "npm run imagemin",
     "build:js": "npm run tower && npm run uglify",
     "imagemin": "imagemin static/img/src/* -o static/img",
     "lint": "eslint static/js/src",

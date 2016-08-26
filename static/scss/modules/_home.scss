@@ -2,31 +2,6 @@
 
 
 
-// ---- hero  ----
-
-.hero-home {
-	background: url(../img/hero.jpg) no-repeat center center fixed;
-	background-size: cover;
-	width: 100%;
-	height: 450px;
-}
-
-.hero-home-text {
-	color: $white;
-	margin: 0;
-	text-align: center;
-	padding-top: 150px;
-}
-
-.hero-home-text-emphasis {
-	color: $color-accent;
-	font-family: $font-stack-show;
-	text-transform: uppercase;
-}
-
-
-
-
 // ---- shows  ----
 
 .shows {
@@ -112,6 +87,8 @@
 
 }
 
+
+
 // ---- blog  ----
 
 .home-blog-img {
@@ -126,6 +103,8 @@
 .home-blog-lead {
 	margin: 0;
 }
+
+
 
 // ---- image sequence  ----
 .img-sequence {
@@ -169,7 +148,9 @@
 	}
 }
 
-// ---- hero  ----
+
+
+// ---- call to action  ----
 
 .subscribe {
 	background-color: $color-primary;
@@ -184,16 +165,6 @@
 // ---- media queries  ----
 
 @media (min-width: $start-tablet) {
-
-	// ---- hero  ----
-
-	.hero-home {
-		height: 500px;
-	}
-
-	.hero-home-text {
-		padding-top: 300px;
-	}
 
 	// ---- shows  ----
 
@@ -235,16 +206,8 @@
 
 @media (min-width: $start-laptop) {
 
-	// ---- hero  ----
-
-	.hero-home {
-		height: 550px;
-	}
-
-	.hero-home-text {
-		padding-top: 350px;
-	}
-
+	// ---- shows  ----
+	
 	.shows {
 		.flex-container {
 			.shows-card {

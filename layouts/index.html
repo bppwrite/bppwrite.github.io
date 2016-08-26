@@ -4,16 +4,22 @@
 {{/* current series is the latest */}}
 {{ $currentSeries := (index .Site.Taxonomies.series.Alphabetical.Reverse 0) }}
 
-<div class="hero-home">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12">
-					<h2 class="hero-home-text"><span class="img-text-background">The <span class="hero-home-text-emphasis">only</span> professional theater in Indiana focused solely on <span class="hero-home-text-emphasis">new works</span>.</span></h2>
-				</div>
-			</div>
-		</div>
+<!-- slider -->
+<div class="slider-wrap">
+  <div class="slider" id="slider">
+    <div class="holder">
+      <div class="slide" id="slide-0"><span class="slide-text"><span class="img-text-background">The <span class="img-text-emphasis">only</span> professional theater in Indiana focused solely on <span class="img-text-emphasis">new works</span>.</span></span></div>
+      <div class="slide" id="slide-1"><span class="slide-text"><span class="img-text-background">64°</span></span></div>
+      <div class="slide" id="slide-2"><span class="slide-text"><span class="img-text-background">The only new play theater in the world to sell out every performance for <span class="img-text-emphasis">two straight years</span>.</span></span></div>
+    </div>
+  </div>
+	<nav class="slider-nav" id="slider-nav">
+		<a href="#slide-0" class="active">Slide 0</a>
+		<a href="#slide-1">Slide 1</a>
+		<a href="#slide-2">Slide 2</a>
+	</nav>
 </div>
-
+<!-- shows -->
 	<div class="shows">
 		<div class="container">
 			<div class="row">
@@ -36,14 +42,13 @@
 			</div>
 		</div>
 	</div>
-
+	<!-- blog -->
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
 				<h2 class="section-title">Read Our Blog</h2>
 			</div>
 		</div>
-
 		<div class="row">
 			<div class="col-sm-12 col-md-5">
 				<img src="img/blog-fill.jpg" class="home-blog-img">
@@ -55,7 +60,7 @@
 			</div>
 		</div>
 	</div>
-
+	<!-- call-to-action -->
 	<div class="subscribe">
 		<div class="container">
 			<div class="row">
@@ -66,7 +71,7 @@
 			</div>
 		</div>
 	</div>
-
+	<!-- join us image sequence -->
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
