@@ -35,13 +35,16 @@
 	// ---- individual slides ----
 
 	#slide-0 {
-	  background: url(../img/slide-0.jpg);
+	  background: url(../img/slide-0.jpg) center center;
+		background-size: cover;
 	}
 	#slide-1 {
-	  background: url(http://farm8.staticflickr.com/7384/8730654121_05bca33388_z.jpg);
+	  background: url(http://farm8.staticflickr.com/7384/8730654121_05bca33388_z.jpg) center center;
+		background-size: cover;
 	}
 	#slide-2 {
-	  background: url(../img/slide-2.jpg);
+	  background: url(../img/slide-2.jpg) center center;
+		background-size: cover;
 	}
 
 

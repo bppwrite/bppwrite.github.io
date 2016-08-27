@@ -30,7 +30,10 @@
 				"max-len": [
 					"error",
 					120,
-					4
+					4,
+				],
+				"no-undef": [
+					"false"	
 				]
     }
 }

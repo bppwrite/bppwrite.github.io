@@ -9,9 +9,11 @@ $(document).ready(function() {
 			sliderNav.querySelector('a[href="#slide-1"]'),
 			sliderNav.querySelector('a[href="#slide-2"]')
 		];
-		let autoTiming = 3000;
+		let autoTimer;
+		let autoTiming = 4000;
 		let scrollTiming = 1000;
 		let slideWidth = getWidth(document.getElementById('slide-0'));
+		let activeIndex = 0;
 
 		function init() {
 			bindUIEvents();
@@ -22,6 +24,8 @@ $(document).ready(function() {
 			sliderDiv.on('scroll', function(event) {
 				moveSlidePosition(event);
 			});
+			// autotimer slides through a scroll
+			autoTimer = window.setInterval(autoMove, autoTiming);
 			// user clicks slider nav
 			sliderNavLinks.forEach(function(link, i) {
 				link.addEventListener('click', function(event) {
@@ -37,19 +41,47 @@ $(document).ready(function() {
 			});
 		}
 
+		function autoMove() {
+			let activeNext = calculateNext(activeIndex);
+			sliderDiv.animate({
+				scrollLeft: activeNext * slideWidth
+			}, scrollTiming);
+			activeIndex = activeNext;
+			changeActiveNavAuto(activeIndex);
+		}
+
+		function calculateNext(current) {
+			let next = 0;
+			if (current === 0) {
+				next = 1;
+			} else if (current === 1) {
+				next = 2;
+			} else {
+				next = 0;
+			}
+			return next;
+		}
+
 		function handleNavClick(event, el, i) {
 			event.preventDefault();
-			changeActiveNav(el);
+			changeActiveNavClick(el);
 			sliderDiv.animate({
 				scrollLeft: i * slideWidth
 			}, scrollTiming);
 		}
 
-		function changeActiveNav(el) {
+		function changeActiveNavClick(el) {
 			sliderNavLinks.forEach(function(link) {
 				link.removeAttribute('class');
 			});
 			el.setAttribute('class', 'active');
+		}
+
+		function changeActiveNavAuto(index) {
+			sliderNavLinks.forEach(function(link) {
+				link.removeAttribute('class');
+			});
+			sliderNavLinks[index].setAttribute('class', 'active');
 		}
 
 		function getWidth(el) {
