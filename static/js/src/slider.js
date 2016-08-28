@@ -71,6 +71,7 @@ $(document).ready(function() {
 		}
 
 		function changeActiveNavClick(el) {
+			activeIndex = sliderNavLinks.indexOf(el);
 			sliderNavLinks.forEach(function(link) {
 				link.removeAttribute('class');
 			});
