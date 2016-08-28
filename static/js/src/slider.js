@@ -25,7 +25,7 @@ $(document).ready(function() {
 				moveSlidePosition(event);
 			});
 			// autotimer slides through a scroll
-			autoTimer = window.setInterval(autoMove, autoTiming);
+			setTimer();
 			// user clicks slider nav
 			sliderNavLinks.forEach(function(link, i) {
 				link.addEventListener('click', function(event) {
@@ -64,14 +64,16 @@ $(document).ready(function() {
 
 		function handleNavClick(event, el, i) {
 			event.preventDefault();
+			window.clearInterval(autoTimer);
+			activeIndex = sliderNavLinks.indexOf(el);
 			changeActiveNavClick(el);
 			sliderDiv.animate({
 				scrollLeft: i * slideWidth
 			}, scrollTiming);
+			setTimer();
 		}
 
 		function changeActiveNavClick(el) {
-			activeIndex = sliderNavLinks.indexOf(el);
 			sliderNavLinks.forEach(function(link) {
 				link.removeAttribute('class');
 			});
@@ -92,6 +94,10 @@ $(document).ready(function() {
 			width += parseInt(style.marginLeft) + parseInt(style.marginRight);
 
 			return width;
+		}
+
+		function setTimer() {
+			autoTimer = window.setInterval(autoMove, autoTiming);
 		}
 
 		return {
