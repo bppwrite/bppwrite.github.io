@@ -1,10 +1,9 @@
 {{ partial "head.html" . }}
 {{ partial "nav.html" . }}
 {{/* show starts on the first date in the showtimes array */}}
-{{ $start := (index .Params.showtimes 0) }}
+{{ $start := (index .Params.showtimes 0).time }}
 {{/* show ends on the last date in the showtimes array */}}
-{{ $end := (index .Params.showtimes (sub (len .Params.showtimes) 1) ) }}
-
+{{ $end := (index .Params.showtimes (sub (len .Params.showtimes) 1) ).time }}
 
 <div class="row">
     <div class="col-sm-12 col-md-6 col-lg-6">
@@ -100,13 +99,21 @@
 
         <p>{{ .Content }}</p>
 
-        <h5 class="show-see">See It Live</h5>
+        {{ if gt $end.Unix .Now.Unix }}
+            <h5 class="show-see">See It Live</h5>
+        {{ else }}
+            <h5 class="show-see">
+                Performed Live
+            </h5>
+        {{ end }}
 
         {{ partial "show/dates.html" . }}
 
-        <div>
-            <a href="https://web.ovationtix.com/trs/dept/1090">Buy Tickets</a>
-        </div>
+        {{ if gt $end.Unix .Now.Unix }}
+            <div>
+                <a href="{{ .Params.tickets_run }}">Buy Tickets</a>
+            </div>
+        {{ end }}
 
     </div>
 </div>

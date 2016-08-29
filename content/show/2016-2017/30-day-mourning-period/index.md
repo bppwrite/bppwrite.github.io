@@ -1,5 +1,12 @@
 +++
 date = "2016-09-23T19:30:00-04:00"
+title = "30 Day Mourning Period"
+subtitle = "(or the Revolution that Occurred When Mr. Clybourne Killed Himself and Thus Was Unable to Come in to Work Thursday Morning)"
+venue = "Bloomington Playwrights Project"
+
+"producing artistic director" = "Chad Rabinovitz"
+"associate artistic director" = "Ben Smith"
+"managing director" = "Jessica Reed"
 aliases = ["/node/414"]
 series = "2016-2017"
 genres = ["comedy"]
@@ -17,24 +24,33 @@ awards = [
 ]
 slot = "Reva Shiner Comedy Award Winner"
 youtube_id = "8s1okUL7VW8"
-showtimes = [
-  "2016-09-23T19:30:00-04:00",
-  "2016-09-24T19:30:00-04:00",
-  "2016-09-29T19:30:00-04:00",
-  "2016-09-30T19:30:00-04:00",
-  "2016-10-01T19:30:00-04:00",
-  "2016-10-06T19:30:00-04:00",
-  "2016-10-07T19:30:00-04:00",
-  "2016-10-08T19:30:00-04:00",
-]
-showtimes_human = "September 23-24, 29-30, October 1, 6-8"
-title = "30 Day Mourning Period"
-subtitle = "(or the Revolution that Occurred When Mr. Clybourne Killed Himself and Thus Was Unable to Come in to Work Thursday Morning)"
-venue = "Bloomington Playwrights Project"
 
-"producing artistic director" = "Chad Rabinovitz"
-"associate artistic director" = "Ben Smith"
-"managing director" = "Jessica Reed"
+tickets_run = "https://web.ovationtix.com/trs/pr/960770"
+
+[[showtimes]]
+time = 2016-09-23T19:30:00
+tickets = "https://web.ovationtix.com/trs/pe/10098333"
+[[showtimes]]
+time = 2016-09-24T19:30:00
+tickets = "https://web.ovationtix.com/trs/pe/10098334"
+[[showtimes]]
+time = 2016-09-29T19:30:00
+tickets = "https://web.ovationtix.com/trs/pe/10098335"
+[[showtimes]]
+time = 2016-09-30T19:30:00
+tickets = "https://web.ovationtix.com/trs/pe/10098336"
+[[showtimes]]
+time = 2016-10-01T19:30:00
+tickets = "https://web.ovationtix.com/trs/pe/10098337"
+[[showtimes]]
+time = 2016-10-06T19:30:00
+tickets = "https://web.ovationtix.com/trs/pe/10098338"
+[[showtimes]]
+time = 2016-10-07T19:30:00
+tickets = "https://web.ovationtix.com/trs/pe/10098339"
+[[showtimes]]
+time = 2016-10-08T19:30:00
+tickets = "https://web.ovationtix.com/trs/pe/10098340"
 
 +++
 

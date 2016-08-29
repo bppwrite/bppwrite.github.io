@@ -20,6 +20,11 @@ build:
     # Read more about steps on our dev center:
     # http://devcenter.wercker.com/docs/steps/index.html
   steps:
+    - script:
+        name: set timezone
+        code: |
+            cp /usr/share/zoneinfo/America/Indiana/Indianapolis /etc/timezone
+            dpkg-reconfigure --frontend noninteractive tzdata
     - arjen/hugo-build:
       version: "0.16"
       #theme: hugo-bootswatch

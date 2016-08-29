@@ -1,4 +1,15 @@
 +++
+slot = "International Playwright Series"
+"sound designers" = []
+"stage managers" = []
+subtitle = ""
+title = "The Bull, the Moon and the Coronet of Stars"
+venue = "Bloomington Playwrights Project"
+youtube_id = "v6XRUWxx688"
+
+"producing artistic director" = "Chad Rabinovitz"
+"associate artistic director" = "David Sheehan"
+"managing director" = "Jessica Reed"
 actors = []
 aliases = ["/node/394"]
 awards = []
@@ -15,28 +26,33 @@ playwrights = ["Van Badham"]
 runtime = ""
 series = "2015-2016"
 "set designers" = []
-showtimes = [
-  "2015-10-02T19:30:00-04:00",
-  "2016-10-03T19:30:00-04:00",
-  "2016-10-08T19:30:00-04:00",
-  "2016-10-09T19:30:00-04:00",
-  "2016-10-10T19:30:00-04:00",
-  "2016-10-15T19:30:00-04:00",
-  "2016-10-16T19:30:00-04:00",
-  "2016-10-17T19:30:00-04:00"
-]
-showtimes_human = "October 2-3, 8-10, 15-17"
-slot = "International Playwright Series"
-"sound designers" = []
-"stage managers" = []
-subtitle = ""
-title = "The Bull, the Moon and the Coronet of Stars"
-venue = "Bloomington Playwrights Project"
-youtube_id = "v6XRUWxx688"
 
-"producing artistic director" = "Chad Rabinovitz"
-"associate artistic director" = "David Sheehan"
-"managing director" = "Jessica Reed"
+tickets_run = ""
+
+[[showtimes]]
+time = 2015-10-02T19:30:00
+tickets = ""
+[[showtimes]]
+time = 2015-10-03T19:30:00
+tickets = ""
+[[showtimes]]
+time = 2015-10-08T19:30:00
+tickets = ""
+[[showtimes]]
+time = 2015-10-09T19:30:00
+tickets = ""
+[[showtimes]]
+time = 2015-10-10T19:30:00
+tickets = ""
+[[showtimes]]
+time = 2015-10-15T19:30:00
+tickets = ""
+[[showtimes]]
+time = 2015-10-16T19:30:00
+tickets = ""
+[[showtimes]]
+time = 2015-10-17T19:30:00
+tickets = ""
 
 +++
 

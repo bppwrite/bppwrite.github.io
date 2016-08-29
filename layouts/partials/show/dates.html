@@ -1,34 +1,36 @@
 {{/* show starts on the first date in the showtimes array */}}
-{{- $start := (index .Params.showtimes 0) -}}
+{{- $start := (index .Params.showtimes 0).time -}}
 {{/* show ends on the last date in the showtimes array */}}
-{{- $end := (index .Params.showtimes (sub (len .Params.showtimes) 1) ) -}}
+{{- $end := (index .Params.showtimes (sub (len .Params.showtimes) 1) ).time -}}
 
-{{- $.Scratch.Set "months" (slice (dateFormat "January" $start)) -}}
-{{- $.Scratch.Set "days" slice -}}
+{{- $.Scratch.Set "monthFormat" "January" -}}
+{{- if lt $end.Unix .Now.Unix -}}
+    {{- $.Scratch.Set "monthFormat" "January 2006" -}}
+{{- end -}}
+{{- $monthFormat := ($.Scratch.Get "monthFormat") -}}
+
+{{- $.Scratch.Set "months" (slice (dateFormat $monthFormat $start)) -}}
 {{- range $index, $showtime := .Params.showtimes -}}
     {{- $.Scratch.Set "hasMonth" false -}}
     {{- range $i, $month := ($.Scratch.Get "months") -}}
-        {{- if eq $month (dateFormat "January" $showtime) -}}
+        {{- if eq $month (dateFormat $monthFormat $showtime.time) -}}
             {{- $.Scratch.Set "hasMonth" true -}}
         {{- end -}}
     {{- end -}}
     {{- if eq ($.Scratch.Get "hasMonth") false -}}
-        {{- $.Scratch.Add "months" (dateFormat "January" $showtime) -}}
+        {{- $.Scratch.Add "months" (dateFormat $monthFormat $showtime.time) -}}
     {{- end -}}
-    {{- $.Scratch.Add "days" (slice (dateFormat "2" $showtime)) -}}
 {{- end -}}
 
-<!--
-This class name isn't semantic. At a minimum, it shouldn't have the
-"home-" prefix
--->
 <div class="show-dates">
 	<h6 class="months">
 	    {{ delimit ($.Scratch.Get "months") ", " " & " }}
 	</h6>
 	<h6 class="days">
-	    {{ range $i, $day := ($.Scratch.Get "days") }}
-	        <span class="day">{{ $day }}</span>
+	    {{- range $i, $showtime := .Params.showtimes -}}
+            <a href="{{ $showtime.tickets }}">
+	            <span class="day">{{ dateFormat "2" $showtime.time }}</span>
+            </a>
 	    {{ end }}
 	</h6>
 </div>

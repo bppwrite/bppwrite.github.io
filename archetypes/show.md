@@ -10,13 +10,6 @@ series = "2016-2017"
 # e.g., "Reva Shiner Comedy Award Winner" or "Off-Broadway/On-Ninth"
 # may be the same as the "award"
 slot = ""
-# list showtimes in ISO 8601 format
-showtimes = [
-  "2016-01-01T19:30:00-04:00",
-  "2016-01-02T19:30:00-04:00",
-  "2016-01-03T19:30:00-04:00",
-]
-showtimes_human = ""
 
 genres = []
 directors = []
@@ -43,6 +36,15 @@ venue = "Bloomington Playwrights Project"
 "associate artistic director" = "Ben Smith"
 "managing director" = "Jessica Reed"
 
+# link to tickets for production run
+tickets_run = ""
 
+# list showtimes in ISO 8601 format with links to tickets
+[[showtimes]]
+    time = "2016-01-01T19:30:00-04:00"
+    tickets = ""
+[[showtimes]]
+    time = "2016-01-02T19:30:00-04:00"
+    tickets = ""
 
 +++

@@ -1,6 +1,8 @@
 {{ partial "head.html" . }}
 {{ partial "nav.html" . }}
 
+{{ .TableOfContents }}
+
 <h1 id="{{ .Title | urlize }}">{{ .Title }}</h1>
 
 {{ .Content }}

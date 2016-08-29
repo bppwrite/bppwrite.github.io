@@ -10,7 +10,7 @@
 Just a thought that we might use <figure> here
 -->
 <figure>
-	<a href="/show/{{ .Params.series }}/{{ (.Title | urlize) }}">
+	<a href="/{{ .Section }}/{{ .Params.series }}/{{ ( .Title | urlize ) }}">
     <img src="{{ $imgFilePath }}" alt="{{ .Title }} poster">
 	</a>
 </figure>
