@@ -23,9 +23,8 @@ build:
     - script:
         name: set timezone to America/Indiana/Indianapolis
         code: |
-            echo "America/Indianapolis" > /etc/timezone
+            echo "America/Indiana/Indianapolis" > /etc/timezone
             dpkg-reconfigure --frontend noninteractive tzdata
-            echo date
     - arjen/hugo-build:
       version: "0.16"
       #theme: hugo-bootswatch
