@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "http://bppwrite.github.io/"
 languageCode = "en-us"
 googleAnalytics = "UA-35759378-1"
 
