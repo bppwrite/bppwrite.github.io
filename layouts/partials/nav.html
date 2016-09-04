@@ -5,39 +5,22 @@
       <a href="{{ .Site.BaseURL }}"><img src="{{ .Site.BaseURL }}img/bpp-logo.svg"></a>
     </div>
     <ul class="menu">
-      {{ $currentNode := . }}
-      {{ range .Site.Menus.main }}
-        {{ if .HasChildren }}
-          <li class="{{if $currentNode.HasMenuCurrent "main" . }}active{{end}} menu-item dropdown">
-            <a href="javascript:;" class="">
-              {{ .Pre }}
-              <span>{{ .Name }}</span>
-              {{ .Post }}
-            </a>
-            <ul class="dropdown-menu">
-              {{ range .Children }}
-              <li class="{{if $currentNode.IsMenuCurrent "main" . }}active{{end}} dropdown-menu-item">
-                <a href="{{.URL}}"> {{ .Name }} </a>
-              </li>
-              {{ end }}
-            </ul>
-          </li>
-        {{else}}
-          <li class="menu-item">
-            <a class="" href="{{.URL}}">
-              {{ .Pre }}
-              <span>{{ .Name }}</span>
-            </a>
-          </li>
-        {{end}}
-      {{end}}
+        {{- range .Site.Menus.main -}}
+            {{- if eq ( .Pre | plainify ) "hero" -}}
+                <li class="menu-item">
+                    <a class="" href="{{.URL}}">
+                        <span>{{ .Name }}</span>
+                    </a>
+                </li>
+            {{- end -}}
+        {{- end -}}
     </ul>
-		<ul class="social-icons">
-			<a href="https://twitter.com/bloomingplays"><li class="fa fa-twitter" aria-hidden="true"></li></a>
-			<a href="https://www.facebook.com/BloomingtonPlaywrightsProject"><li class="fa fa-facebook" aria-hidden="true"></li></a>
-			<a href="https://www.pinterest.com/bloomingplays"><li class="fa fa-pinterest-p" aria-hidden="true"></li></a>
-			<a href="https://www.instagram.com/bloomingplays"><li class="fa fa-instagram" aria-hidden="true"></li></a>
-		</ul>
+	<ul class="social-icons">
+		<a href="https://twitter.com/bloomingplays"><li class="fa fa-twitter" aria-hidden="true"></li></a>
+		<a href="https://www.facebook.com/BloomingtonPlaywrightsProject"><li class="fa fa-facebook" aria-hidden="true"></li></a>
+		<a href="https://www.pinterest.com/bloomingplays"><li class="fa fa-pinterest-p" aria-hidden="true"></li></a>
+		<a href="https://www.instagram.com/bloomingplays"><li class="fa fa-instagram" aria-hidden="true"></li></a>
+	</ul>
   </div>
 </header>
 <!-- nav end-->

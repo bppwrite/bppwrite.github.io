@@ -41,10 +41,8 @@
 					{{ range .Site.Menus.main }}
 						{{ if .HasChildren }}
 							<li class="menu-item dropdown{{if $.HasMenuCurrent "main" . }} active{{end}}">
-								<a href="javascript:;" class="">
-									{{ .Pre }}
+								<a href="{{ .URL }}" class="">
 									<span>{{ .Name }}</span>
-									{{ .Post }}
 								</a>
 								<ul class="dropdown-menu">
 									{{ range .Children }}
@@ -57,7 +55,6 @@
 						{{else}}
 							<li class="menu-item{{if $.IsMenuCurrent "main" . }} active{{end}}">
 								<a class="" href="{{.URL}}">
-									{{ .Pre }}
 									<span>{{ .Name }}</span>
 								</a>
 							</li>
@@ -95,10 +92,11 @@
 				</div>
 			</div>
 			<div class="col-lg-9 col-md-12 col-sm-12 misc footer-menu">
-                {{ range .Site.Menus.foot }}
-                    <a class="menu-item{{if or ($.IsMenuCurrent "foot" .) ($.HasMenuCurrent "foot" .) }} active{{end}}"
-                        href="{{.URL}}">{{ .Name }}</a>
-                {{end}}
+                {{- range .Site.Menus.main -}}
+                    {{- if eq ( .Pre | plainify ) "foot" -}}
+                        <a class="menu-item" href="{{.URL}}">{{ .Name }}</a>
+                    {{- end -}}
+                {{- end -}}
 			</div>
 		</div>
 
