@@ -4,23 +4,20 @@
     <div class="site-title">
       <a href="/"><h1>BPP</h1></a>
     </div>
-    <ul class="menu">
-        {{- range .Site.Menus.main -}}
-            {{- if eq ( .Pre | plainify ) "hero" -}}
-                <li class="menu-item">
-                    <a class="" href="{{.URL}}">
-                        <span>{{ .Name }}</span>
-                    </a>
-                </li>
-            {{- end -}}
-        {{- end -}}
-    </ul>
-	<ul class="social-icons">
-		<a href="https://twitter.com/bloomingplays"><li class="fa fa-twitter" aria-hidden="true"></li></a>
-		<a href="https://www.facebook.com/BloomingtonPlaywrightsProject"><li class="fa fa-facebook" aria-hidden="true"></li></a>
-		<a href="https://www.pinterest.com/bloomingplays"><li class="fa fa-pinterest-p" aria-hidden="true"></li></a>
-		<a href="https://www.instagram.com/bloomingplays"><li class="fa fa-instagram" aria-hidden="true"></li></a>
-	</ul>
+    <div class="menu-container">
+      <ul class="menu">
+          {{- range .Site.Menus.main -}}
+              {{- if eq ( .Pre | plainify ) "hero" -}}
+                  <li class="menu-item">
+                      <a class="" href="{{.URL}}">
+                          <span>{{ .Name }}</span>
+                      </a>
+                  </li>
+              {{- end -}}
+          {{- end -}}
+      </ul>
+      <a href="#" class="menu-icon"><li class="fa fa-bars" aria-hidden="true"></li></a>
+    </div>
   </div>
 </header>
 <!-- nav end-->
