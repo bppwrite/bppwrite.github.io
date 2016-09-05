@@ -89,22 +89,6 @@
 
 
 
-// ---- blog  ----
-
-.home-blog-img {
-	width: 99%;
-	height: auto;
-}
-
-.home-blog-title {
-	margin: 0 0 0.5em 0;
-}
-
-.home-blog-lead {
-	margin: 0;
-}
-
-
 
 // ---- image sequence  ----
 .img-sequence {
@@ -207,7 +191,7 @@
 @media (min-width: $start-laptop) {
 
 	// ---- shows  ----
-	
+
 	.shows {
 		.flex-container {
 			.shows-card {

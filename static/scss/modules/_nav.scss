@@ -7,6 +7,9 @@ header {
 	z-index: 1;
   a {
     color: $white;
+		h1 {
+			font-family: $font-stack-show;
+		}
   }
 	// First of Two Flexbox parents
 	.container-wide {
@@ -14,11 +17,6 @@ header {
 		@include flex-prop-prefixes(justify-content, space-between);
 		@include flex-prop-prefixes(align-items, center);
 		@include flex-prop-prefixes(flex-direction, column);
-	}
-	.logo {
-		height: auto;
-		width: 3.5em;
-		padding-bottom: 0.5em;
 	}
 	// Second of Two Flexbox parents
 	.menu {
@@ -66,9 +64,6 @@ header {
 			@include flexbox();
 			@include flex-prop-prefixes(justify-content, space-between);
 			@include flex-prop-prefixes(flex-direction, row);
-		}
-		.logo {
-			padding-bottom: 0;
 		}
 		.menu {
 			@include flex-prop-prefixes(justify-content, flex-end);
