@@ -121,10 +121,10 @@
             <a href="https://www.facebook.com/sharer.php?u={{ .Permalink }}">
                 <span class="fa fa-facebook" aria-hidden="true"></span>
             </a>
-            <a href="https://twitter.com/intent/tweet?url={{ .Permalink }}&text=At the BPP: {{ .Title }}&via=bloomingplays&hashtags=bpp,newplays">
+            <a href="https://twitter.com/intent/tweet?url={{ .Permalink }}&text={{ .Title }} &middot; {{ .Site.Title }}&via=bloomingplays&hashtags=bpp,newplays">
                 <span class="fa fa-twitter" aria-hidden="true"></span>
             </a>
-            <a href="https://pinterest.com/pin/create/bookmarklet/?media={{ .Permalink }}poster.jpg&url={{ .Permalink }}&is_video=0&description=At the BPP: {{ .Title }}">
+            <a href="https://pinterest.com/pin/create/bookmarklet/?media={{ .Permalink }}poster.jpg&url={{ .Permalink }}&is_video=0&description={{ .Title }} &middot; {{ .Site.Title }}">
                 <span class="fa fa-pinterest-p" aria-hidden="true"></span>
             </a>
         </ul>
