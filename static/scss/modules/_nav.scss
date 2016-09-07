@@ -1,8 +1,7 @@
 // ---- Navigation ----
 
 header {
-	background-color: rgba(0, 0, 0, 0.15);
-	position: fixed;
+	position: absolute;
 	width: 100%;
 	z-index: 1;
   a {
@@ -50,6 +49,15 @@ header {
 	.menu-icon {
 		font-size: (21 / 18) * 1em;
 		margin-left: 1em;
+	}
+}
+
+
+
+// nav for index page only
+.home-intro {
+	header {
+		bottom: 0;
 	}
 }
 

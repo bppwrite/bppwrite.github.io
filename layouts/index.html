@@ -1,23 +1,25 @@
 {{ partial "head.html" . }}
-{{ partial "nav.html" . }}
+<div class="home-intro">
+  {{ partial "nav.html" . }}
 
-{{/* current series is the latest */}}
-{{ $currentSeries := (index .Site.Taxonomies.series.Alphabetical.Reverse 0) }}
+  {{/* current series is the latest */}}
+  {{ $currentSeries := (index .Site.Taxonomies.series.Alphabetical.Reverse 0) }}
 
-<!-- slider -->
-<div class="slider-wrap">
-  <div class="slider" id="slider">
-    <div class="holder">
-      <div class="slide" id="slide-0"><span class="slide-text"><span class="img-text-background">The <span class="img-text-emphasis">only</span> professional theater in Indiana focused solely on <span class="img-text-emphasis">new works</span>.</span></span></div>
-      <div class="slide" id="slide-1"><span class="slide-text"><span class="img-text-background">64°</span></span></div>
-      <div class="slide" id="slide-2"><span class="slide-text"><span class="img-text-background">The only new play theater in the world to sell out every performance for <span class="img-text-emphasis">two straight years</span>.</span></span></div>
+  <!-- slider -->
+  <div class="slider-wrap">
+    <div class="slider" id="slider">
+      <div class="holder">
+        <div class="slide" id="slide-0"><span class="slide-text"><span class="img-text-background">The <span class="img-text-emphasis">only</span> professional theater in Indiana focused solely on <span class="img-text-emphasis">new works</span>.</span></span></div>
+        <div class="slide" id="slide-1"><span class="slide-text"><span class="img-text-background">64°</span></span></div>
+        <div class="slide" id="slide-2"><span class="slide-text"><span class="img-text-background">The only new play theater in the world to sell out every performance for <span class="img-text-emphasis">two straight years</span>.</span></span></div>
+      </div>
     </div>
+  	<nav class="slider-nav" id="slider-nav">
+      <span class="fa fa-chevron-left" id="control-left" aria-hidden="true"></span>
+      <span class="fa fa-chevron-down" id="control-down" aria-hidden="true"></span>
+      <span class="fa fa-chevron-right" id="control-right" aria-hidden="true"></span>
+  	</nav>
   </div>
-	<nav class="slider-nav" id="slider-nav">
-		<a href="#slide-0" class="active">Slide 0</a>
-		<a href="#slide-1">Slide 1</a>
-		<a href="#slide-2">Slide 2</a>
-	</nav>
 </div>
 <!-- shows -->
 	<div class="shows">

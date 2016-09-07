@@ -2,7 +2,7 @@
 
 .slider-wrap {
   width: 100%;
-  height: 500px;
+  height: 100vh;
   margin: 0 auto;
 
 	.slider {
@@ -50,32 +50,35 @@
 
 
 	// ---- slide nav ----
+  span.fa {
+    color: $white;
+    font-size: (27 / 18) * 1em;
+  }
 
 	.slider-nav {
-	  text-align: center;
 		position: absolute;
-		top: 445px;
-		left: 0;
-		right: 0;
-		margin: 0 auto;
-		text-align: center;
 		width: 100%;
-		a + a {
-			margin-left: 5px;
-		}
-	}
-	.slider-nav a {
-	  width: 10px;
-	  height: 10px;
-	  display: inline-block;
-	  background: $full-trans;
-	  overflow: hidden;
-	  text-indent: -9999px;
-	  border-radius: 50%;
-		border: 1px solid $white;
-	}
-	.slider-nav a.active {
-	  background: $white;
+    height: 100%;
+    top: 0;
+    .fa {
+      position: absolute;
+    }
+    #control-down {
+      top: auto;
+      bottom: 5vh;
+      left: 50%;
+      right: 50%;
+    }
+    #control-left {
+      top: 50%;
+      bottom: 50%;
+      left: 5vh;
+    }
+    #control-right {
+      top: 50%;
+      bottom: 50%;
+      right: 5vh;
+    }
 	}
 
 }
