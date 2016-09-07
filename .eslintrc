@@ -23,17 +23,15 @@
             "error",
             "always"
         ],
-				"space-before-function-paren": [
-					"error",
-					"never"
-				],
-				"max-len": [
-					"error",
-					120,
-					4,
-				],
-				"no-undef": [
-					"false"	
-				]
+        "space-before-function-paren": [
+        "error",
+        "never"
+        ],
+        "max-len": [
+        "error",
+        120,
+        4,
+        ],
+        "no-undef": 0
     }
 }

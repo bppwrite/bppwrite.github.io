@@ -2,13 +2,10 @@ $(document).ready(function() {
 	let slider = (function() {
 
 		let sliderDiv = $('#slider');
-		let allSlides = $(".slide");
-		let sliderNav = document.getElementById('slider-nav');
-		let sliderNavLinks = [
-			sliderNav.querySelector('a[href="#slide-0"]'),
-			sliderNav.querySelector('a[href="#slide-1"]'),
-			sliderNav.querySelector('a[href="#slide-2"]')
-		];
+		let allSlides = $('.slide');
+		let sliderNavLeft = $('#control-left');
+		let sliderNavRight = $('#control-right');
+		let sliderNavDown = $('#control-down');
 		let autoTimer;
 		let autoTiming = 4000;
 		let scrollTiming = 1000;
@@ -27,10 +24,14 @@ $(document).ready(function() {
 			// autotimer slides through a scroll
 			setTimer();
 			// user clicks slider nav
-			sliderNavLinks.forEach(function(link, i) {
-				link.addEventListener('click', function(event) {
-					handleNavClick(event, this, i);
-				});
+			sliderNavLeft.on('click', function(event) {
+				navClickedLeft(event);
+			});
+			sliderNavDown.on('click', function(event) {
+				navClickedDown(event);
+			});
+			sliderNavRight.on('click', function(event) {
+				navClickedRight(event);
 			});
 		}
 
@@ -47,7 +48,6 @@ $(document).ready(function() {
 				scrollLeft: activeNext * slideWidth
 			}, scrollTiming);
 			activeIndex = activeNext;
-			changeActiveNavAuto(activeIndex);
 		}
 
 		function calculateNext(current) {
@@ -62,29 +62,48 @@ $(document).ready(function() {
 			return next;
 		}
 
-		function handleNavClick(event, el, i) {
+		function calculatePrevious(current) {
+			let next = 0;
+			if (current === 0) {
+				next = 2;
+			} else if (current === 1) {
+				next = 0;
+			} else {
+				next = 1;
+			}
+			return next;
+		}
+
+		function navClickedRight(event) {
 			event.preventDefault();
 			window.clearInterval(autoTimer);
-			activeIndex = sliderNavLinks.indexOf(el);
-			changeActiveNavClick(el);
+			let activeNext = calculateNext(activeIndex);
 			sliderDiv.animate({
-				scrollLeft: i * slideWidth
+				scrollLeft: activeNext * slideWidth
 			}, scrollTiming);
+			activeIndex = activeNext;
 			setTimer();
 		}
 
-		function changeActiveNavClick(el) {
-			sliderNavLinks.forEach(function(link) {
-				link.removeAttribute('class');
-			});
-			el.setAttribute('class', 'active');
+		function navClickedLeft(event) {
+			event.preventDefault();
+			window.clearInterval(autoTimer);
+			let activeNext = calculatePrevious(activeIndex);
+			sliderDiv.animate({
+				scrollLeft: activeNext * slideWidth
+			}, scrollTiming);
+			activeIndex = activeNext;
+			setTimer();
 		}
 
-		function changeActiveNavAuto(index) {
-			sliderNavLinks.forEach(function(link) {
-				link.removeAttribute('class');
-			});
-			sliderNavLinks[index].setAttribute('class', 'active');
+		function navClickedDown(event) {
+			let y = $(window).scrollTop();
+			event.preventDefault();
+			window.clearInterval(autoTimer);
+			$('html, body').animate({
+				scrollTop: y + $(window).height()
+			}, scrollTiming);
+			setTimer();
 		}
 
 		function getWidth(el) {
