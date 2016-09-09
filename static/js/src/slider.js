@@ -125,4 +125,5 @@ $(document).ready(function() {
 	})();
 
 	slider.init();
+
 });

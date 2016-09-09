@@ -1,5 +1,7 @@
 // ---- Navigation ----
 
+
+
 header {
 	position: absolute;
 	width: 100%;
@@ -10,7 +12,11 @@ header {
 			font-family: $font-stack-show;
 		}
   }
+
+
+
 	// First of Two Flexbox parents
+
 	.container-wide {
 		@include flexbox();
 		@include flex-prop-prefixes(justify-content, space-between);
@@ -46,7 +52,7 @@ header {
 	.dropdown:hover > .dropdown-menu {
 	  display: block;
 	}
-	.menu-icon {
+	.menu-icon-open {
 		font-size: (21 / 18) * 1em;
 		margin-left: 1em;
 	}
@@ -55,6 +61,7 @@ header {
 
 
 // nav for index page only
+
 .home-intro {
 	header {
 		bottom: 0;
@@ -62,6 +69,112 @@ header {
 }
 
 
+
+// mobile nav
+
+// overlay styles
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: $primary-trans;
+	z-index: 3;
+
+	.menu-icon-close {
+		color: $white;
+		font-size: 3em;
+		width: 80px;
+		height: 80px;
+		position: absolute;
+		right: 20px;
+		top: 20px;
+		z-index: 4;
+	}
+
+	.menu-icon-close:hover,
+	 .menu-icon-close:focus {
+		color: $color-accent;
+	}
+
+	nav {
+		text-align: center;
+		position: relative;
+		top: 50%;
+		height: 60%;
+		font-size: 3em;
+		-webkit-transform: translateY(-50%);
+		transform: translateY(-50%);
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0 auto;
+			display: inline-block;
+			height: 100%;
+			position: relative;
+			li {
+				display: block;
+				height: 20%;
+				height: calc(100% / 5);
+				min-height: 54px;
+				a {
+					display: block;
+					color: $white;
+					-webkit-transition: color 0.2s;
+					transition: color 0.2s;
+				}
+				a:hover, a:focus {
+					color: $color-accent;
+				}
+			}
+		}
+	}
+}
+
+// overlay effects
+
+.overlay-screen {
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+	transition: opacity 0.5s, visibility 0s 0.5s;
+	nav {
+		-webkit-perspective: 1200px;
+		perspective: 1200px;
+		ul {
+			opacity: 0.4;
+			-webkit-transform: translateY(-25%) rotateX(35deg);
+			transform: translateY(-25%) rotateX(35deg);
+			-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+			transition: transform 0.5s, opacity 0.5s;
+		}
+	}
+}
+
+.overlay-screen.open {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+	nav {
+		ul {
+			opacity: 1;
+			-webkit-transform: rotateX(0deg);
+			transform: rotateX(0deg);
+		}
+	}
+
+}
+
+.overlay-screen.close {
+	nav {
+		ul {
+			-webkit-transform: translateY(25%) rotateX(-35deg);
+			transform: translateY(25%) rotateX(-35deg);
+		}
+	}
+}
 
 // ---- media queries  ----
 

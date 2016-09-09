@@ -1,4 +1,4 @@
-<!-- nav start-->
+<!-- main nav -->
 <header>
   <div class="container-wide">
     <div class="site-title">
@@ -16,8 +16,20 @@
               {{- end -}}
           {{- end -}}
       </ul>
-      <a href="#" class="menu-icon"><li class="fa fa-bars" aria-hidden="true"></li></a>
+      <a href="#" class="menu-icon-open" id="menu-icon-open"><li class="fa fa-bars" aria-hidden="true"></li></a>
     </div>
   </div>
 </header>
-<!-- nav end-->
+<!-- main nav end-->
+<!-- mobile nav -->
+<div class="overlay overlay-screen">
+	<a href="#" class="menu-icon-close" id="menu-icon-close"><span class="fa fa-times" aria-hidden="true"></span></a>
+	<nav>
+		<ul>
+			<li><a href="#">Shows</a></li>
+			<li><a href="#">Playwrights</a></li>
+			<li><a href="#">Get Involved</a></li>
+		</ul>
+	</nav>
+</div>
+<!-- mobile nav end -->

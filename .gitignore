@@ -18,3 +18,7 @@
 # IMAGES #
 ###########
 /static/img/src/
+
+# DS Store #
+###########
+.DS_Store
