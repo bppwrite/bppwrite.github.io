@@ -9,7 +9,7 @@ $(document).ready(function() {
 		let autoTimer;
 		let autoTiming = 4000;
 		let scrollTiming = 1000;
-		let slideWidth = getWidth(document.getElementById('slide-0'));
+		let slideWidth = getWidth($('.slide').get(0));
 		let activeIndex = 0;
 
 		function init() {

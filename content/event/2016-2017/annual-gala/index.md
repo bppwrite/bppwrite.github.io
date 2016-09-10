@@ -4,7 +4,7 @@ date = "2016-08-20T15:48:44-04:00"
 intermission_count = "0"
 runtime = ""
 series = "2016-2017"
-showtimes = ["2016-01-01T19:30:00-04:00", "2016-01-02T19:30:00-04:00", "2016-01-03T19:30:00-04:00"]
+
 subtitle = ""
 title = "Annual Gala"
 venue = "Ivy Tech John Waldron Arts Center"
@@ -13,5 +13,13 @@ youtube_id = ""
 "producing artistic director" = "Chad Rabinovitz"
 "associate artistic director" = "Ben Smith"
 "managing director" = "Jessica Reed"
+
+# list showtimes in ISO 8601 format with links to tickets
+[[showtimes]]
+    time = 2016-01-01T19:30:00
+    tickets = ""
+[[showtimes]]
+    time = 2016-01-02T19:30:00
+    tickets = ""
 
 +++

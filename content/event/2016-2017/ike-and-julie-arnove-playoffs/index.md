@@ -4,10 +4,7 @@ date = "2016-07-03T13:01:52-04:00"
 intermission_count = "0"
 runtime = ""
 series = "2016-2017"
-showtimes = [
-  "2016-11-05T19:30:00-04:00",
-  "2016-11-06T19:30:00-04:00",
-]
+
 title = "Ike & Julie Arnove Playoffs"
 subtitle = "9 Playwrights, 9 Directors and 27 actors have only 24 hours to make a play!"
 venue = "Bloomington Playwrights Project"
@@ -16,6 +13,14 @@ youtube_id = ""
 "producing artistic director" = "Chad Rabinovitz"
 "associate artistic director" = "Ben Smith"
 "managing director" = "Jessica Reed"
+
+# list showtimes in ISO 8601 format with links to tickets
+[[showtimes]]
+    time = 2016-11-05T19:30:00
+    tickets = ""
+[[showtimes]]
+    time = 2016-11-06T19:30:00
+    tickets = ""
 
 +++
 

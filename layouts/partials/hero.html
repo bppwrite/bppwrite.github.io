@@ -1,0 +1,16 @@
+{{- $.Scratch.Set "heroPath" nil -}}
+{{- range (readDir (printf "content/%s" .RelPermalink)) -}}
+    {{- if hasPrefix .Name "hero" -}}
+        {{- $.Scratch.Set "heroPath" .Name -}}
+    {{- end -}}
+    {{/* if there isn't a hero, the default is the poster */}}
+    {{- if not ($.Scratch.Get "heroPath") -}}
+        {{- if hasPrefix .Name "poster" -}}
+            {{- $.Scratch.Set "heroPath" .Name -}}
+        {{- end -}}
+    {{- end -}}
+{{- end -}}
+{{- if ($.Scratch.Get "heroPath") -}}
+    {{- $imgFilePath := (printf "%s%s" .RelPermalink ($.Scratch.Get "heroPath")) -}}
+    {{ $imgFilePath }}
+{{- end -}}

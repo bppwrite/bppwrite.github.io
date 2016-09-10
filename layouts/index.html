@@ -1,17 +1,100 @@
-{{ partial "head.html" . }}
+{{- partial "head.html" . -}}
 <div class="home-intro">
-  {{ partial "nav.html" . }}
+  {{- partial "nav.html" . -}}
 
   {{/* current series is the latest */}}
-  {{ $currentSeries := (index .Site.Taxonomies.series.Alphabetical.Reverse 0) }}
+  {{- $currentSeries := (index .Site.Taxonomies.series.Alphabetical.Reverse 0) -}}
+  {{/* current show is one with Now between start and end */}}
+  {{- $.Scratch.Set "currentShow" nil -}}
+  {{- $.Scratch.Set "currentEvent" nil -}}
+  {{/* next show is the earliest one where the start date is in the future */}}
+  {{- $.Scratch.Set "nextShow" nil -}}
+  {{- $.Scratch.Set "nextEvent" nil -}}
+  {{/* if neither current nor next show is found, the current show is the latest */}}
+  {{- range where $currentSeries.Pages.ByDate "Section" "in" (slice "show" "event") -}}
+      {{/* show starts on the first date in the showtimes array */}}
+      {{- $start := (index .Params.showtimes 0).time -}}
+      {{/* show ends on the last date in the showtimes array */}}
+      {{- $end := (index .Params.showtimes (sub (len .Params.showtimes) 1) ).time -}}
+      {{- if gt $end.Unix .Now.Unix -}}
+        {{/* it's either running now or it's in the future */}}
+        {{- if lt $start.Unix .Now.Unix -}}
+            {{/* it's running now */}}
+            {{- if eq .Section "show" -}}
+                {{- $.Scratch.Set "currentShow" . -}}
+                {{- $.Scratch.Set "currentShowHero" (partial "hero.html" .) -}}
+            {{- else -}}
+                {{- $.Scratch.Set "currentEvent" . -}}
+                {{- $.Scratch.Set "currentEventHero" (partial "hero.html" .) -}}
+            {{- end -}}
+        {{- else -}}
+            {{/* it's in the future */}}
+            {{- if eq .Section "show" -}}
+                {{- $.Scratch.Set "nextShow" . -}}
+                {{- $.Scratch.Set "nextShowHero" (partial "hero.html" .) -}}
+            {{- else -}}
+                {{- $.Scratch.Set "nextEvent" . -}}
+                {{- $.Scratch.Set "nextEventHero" (partial "hero.html" .) -}}
+            {{- end -}}
+        {{- end -}}
+      {{- end -}}
+  {{- end -}}
+
 
   <!-- slider -->
   <div class="slider-wrap">
     <div class="slider" id="slider">
       <div class="holder">
-        <div class="slide" id="slide-0"><span class="slide-text"><span class="img-text-background">The <span class="img-text-emphasis">only</span> professional theater in Indiana focused solely on <span class="img-text-emphasis">new works</span>.</span></span></div>
-        <div class="slide" id="slide-1"><span class="slide-text"><span class="img-text-background">64°</span></span></div>
-        <div class="slide" id="slide-2"><span class="slide-text"><span class="img-text-background">The only new play theater in the world to sell out every performance for <span class="img-text-emphasis">two straight years</span>.</span></span></div>
+
+          {{- if ($.Scratch.Get "currentShow") -}}
+              <div class="slide" style="background-image: url({{ $.Scratch.Get "currentShowHero" }})">
+                  <span class="slide-text">
+                      <span class="img-text-background">
+                          <b>Now Playing:</b>
+                          {{ ($.Scratch.Get "currentShow").Title | markdownify }}
+                      </span>
+                  </span>
+              </div>
+          {{- else if ($.Scratch.Get "nextShow") -}}
+              <div class="slide" style="background-image: url({{ $.Scratch.Get "nextShowHero" }})">
+                  <span class="slide-text">
+                      <span class="img-text-background">
+                          <b>Next Show:</b>
+                          {{ ($.Scratch.Get "nextShow").Title | markdownify }}
+                      </span>
+                  </span>
+              </div>
+          {{- end -}}
+
+          {{- if ($.Scratch.Get "currentEvent") -}}
+              <div class="slide" style="background-image: url({{ $.Scratch.Get "currentEventHero" }})">
+                  <span class="slide-text">
+                      <span class="img-text-background">
+                          <b>Now Playing:</b>
+                          {{ ($.Scratch.Get "currentEvent").Title | markdownify }}
+                      </span>
+                  </span>
+              </div>
+          {{- else if ($.Scratch.Get "nextEvent") -}}
+              <div class="slide" style="background-image: url({{ $.Scratch.Get "nextEventHero" }})">
+                  <span class="slide-text">
+                      <span class="img-text-background">
+                          <b>Next Event:</b>
+                          {{ ($.Scratch.Get "nextEvent").Title | markdownify }}
+                      </span>
+                  </span>
+              </div>
+          {{- end -}}
+
+          {{- range where (where .Data.Pages "Section" "special") ".Params.is_active" true -}}
+              <div class="slide" style="background-image: url({{ partial "hero.html" . }})">
+                  <span class="slide-text">
+                      <span class="img-text-background">
+                          {{ .Title | markdownify }}
+                      </span>
+                  </span>
+              </div>
+          {{- end -}}
       </div>
     </div>
   	<nav class="slider-nav" id="slider-nav">

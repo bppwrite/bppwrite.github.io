@@ -35,11 +35,12 @@ ul {
 .img-text-background {
 	background-color: $black-trans;
 	padding: (4/16) * 1em;
-}
-.img-text-emphasis {
-	color: $color-accent;
-	font-family: $font-stack-show;
-	text-transform: uppercase;
+    em {
+        color: $color-accent;
+    	font-family: $font-stack-show;
+    	text-transform: uppercase;
+        font-style: normal;
+    }
 }
 .lead {
 	font-size: 1.5em;
