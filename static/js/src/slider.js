@@ -56,7 +56,7 @@ $(document).ready(function() {
 		function moveSlidePosition(event) {
 			// 6 and 100 are 'magic' numbers
 			allSlides.css({
-				'background-position': $(event.target).scrollLeft()/6-100 + 'px 0'
+				'background-position': $(event.target).scrollLeft()/6-100 + 'px center'
 			});
 		}
 
