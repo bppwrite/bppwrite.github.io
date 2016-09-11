@@ -1,19 +1,37 @@
 $(document).ready(function() {
 	let slider = (function() {
 
-		let sliderDiv = $('#slider');
+		// declare variables
+		//slider references
 		let allSlides = $('.slide');
+		let sliderDiv = $('#slider');
+		let holder = $('.holder');
+		// nav references
 		let sliderNavLeft = $('#control-left');
 		let sliderNavRight = $('#control-right');
 		let sliderNavDown = $('#control-down');
+		// math references
 		let autoTimer;
 		let autoTiming = 4000;
 		let scrollTiming = 1000;
-		let slideWidth = getWidth($('.slide').get(0));
+		let slideWidth;
 		let activeIndex = 0;
+		let slideCount = $('.slide').length;
+		let maxIndex = slideCount - 1;
 
 		function init() {
+			styleWrite();
 			bindUIEvents();
+		}
+
+		function styleWrite() {
+			holder.css({
+				'width': `${ slideCount * 100 }%`
+			});
+			allSlides.css({
+				'width': `${ 100 / slideCount }%`
+			});
+			slideWidth = getWidth($('.slide').get(0));
 		}
 
 		function bindUIEvents() {
@@ -43,41 +61,35 @@ $(document).ready(function() {
 		}
 
 		function autoMove() {
-			let activeNext = calculateNext(activeIndex);
+			let activeNext = calculateNext(activeIndex, maxIndex);
 			sliderDiv.animate({
 				scrollLeft: activeNext * slideWidth
 			}, scrollTiming);
 			activeIndex = activeNext;
 		}
 
-		function calculateNext(current) {
-			let next = 0;
-			if (current === 0) {
-				next = 1;
-			} else if (current === 1) {
-				next = 2;
-			} else {
-				next = 0;
+		function calculateNext(current, max) {
+
+			if (current === max) {
+				return 0;
 			}
-			return next;
+
+			return current + 1;
 		}
 
-		function calculatePrevious(current) {
-			let next = 0;
+		function calculatePrevious(current, max) {
+
 			if (current === 0) {
-				next = 2;
-			} else if (current === 1) {
-				next = 0;
-			} else {
-				next = 1;
+				return max;
 			}
-			return next;
+
+			return current - 1;
 		}
 
 		function navClickedRight(event) {
 			event.preventDefault();
 			window.clearInterval(autoTimer);
-			let activeNext = calculateNext(activeIndex);
+			let activeNext = calculateNext(activeIndex, maxIndex);
 			sliderDiv.animate({
 				scrollLeft: activeNext * slideWidth
 			}, scrollTiming);
@@ -88,7 +100,7 @@ $(document).ready(function() {
 		function navClickedLeft(event) {
 			event.preventDefault();
 			window.clearInterval(autoTimer);
-			let activeNext = calculatePrevious(activeIndex);
+			let activeNext = calculatePrevious(activeIndex, maxIndex);
 			sliderDiv.animate({
 				scrollLeft: activeNext * slideWidth
 			}, scrollTiming);
