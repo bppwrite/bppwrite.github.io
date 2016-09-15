@@ -12,7 +12,17 @@ title = "Bloomington Playwrights Project"
         zip = "40404"
         phone = "812.334.1188"
         email = "bppwrite@newplays.org"
-
+    [params.social]
+        github          = "bppwrite"
+        facebook        = "BloomingtonPlaywrightsProject"
+        facebook_admin  = "" # "17807199"  # This needs to be a page admin to get domain insights
+        twitter         = "bloomingplays"
+        twitter_domain  = "" # This domain shows in twitter cards as "View on `twitter_domain`"
+        googleplus      = ""
+        pinterest       = "bloomingplays"
+        instagram       = "bloomingplays"
+        youtube         = "UCHUgE7KH1bGDoPRiHv1H1VA"
+        linkedin        = "bloomington-playwrights-project"
 # [params]
 #     currentSeries = "2016-2017"
 
