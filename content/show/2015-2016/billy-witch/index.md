@@ -56,4 +56,4 @@ tickets = ""
 
 +++
 
-Oliver is hoping that summer camp will change him. Somewhere in the bizarre mixture of secrets and s’mores; sexual exploration and swimming; ghosts, girls and god’s eyes; somewhere in all that mess...Oliver just might grow up. Travel back to a time when we were all innocent in this riotously funny and disarmingly tender Reva Shiner Comedy Award winning play about the awkward (and often hysterical) transformation from youth to adolescence.
+Oliver is hoping that summer camp will change him. Somewhere in the bizarre mixture of secrets and s’mores; sexual exploration and swimming; ghosts, girls and god’s eyes; somewhere in all that mess...Oliver just might grow up. Travel back to a time when we were all innocent in this riotously funny and disarmingly tender [Reva Shiner Comedy Award](/playwrights/reva-shiner-comedy/) winning play about the awkward (and often hysterical) transformation from youth to adolescence.
