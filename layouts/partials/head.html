@@ -17,8 +17,8 @@
     <meta property="og:url" content="{{ .Permalink }}" />
     {{- if .IsPage -}}
         {{ if or (eq .Type "show") (eq .Type "event" ) }}
-            <meta property="og:image" content="poster.jpg" />
-            <meta property="og:image" content="hero.jpg" />
+            <meta property="og:image" content="{{ .Permalink }}poster.jpg" />
+            <meta property="og:image" content="{{ .Permalink }}hero.jpg" />
         {{ end }}
     {{- end -}}
     {{ with .Params.images }}{{ range first 6 . }}
@@ -79,8 +79,8 @@
     <!-- Output images -->
     {{- if .IsPage -}}
         {{ if or (eq .Type "show") (eq .Type "event" ) }}
-            <meta property="og:image" content="poster.jpg" />
-            <meta property="og:image" content="hero.jpg" />
+            <meta property="og:image" content="{{ .Permalink }}poster.jpg" />
+            <meta property="og:image" content="{{ .Permalink }}hero.jpg" />
         {{ end }}
     {{- end -}}
     {{ with .Params.images }}{{ range first 6 . }}
@@ -98,7 +98,7 @@
         {{ if or (eq .Type "show") (eq .Type "event" ) }}
             <!-- Twitter summary card with large image must be at least 280x150px -->
             <meta name="twitter:card" content="summary_large_image"/>
-            <meta name="twitter:image:src" content="poster.jpg"/>
+            <meta name="twitter:image:src" content="{{ .Permalink }}poster.jpg"/>
         {{ end }}
     {{- end -}}
 
