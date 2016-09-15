@@ -13,7 +13,7 @@
     <!-- Required Open Graph Info -->
     <meta property="og:title" content="{{ .Title }}" />
     <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ end }}{{ end }}" />
-    <meta property="og:type" content="{{ if .IsPage }}{{ .Type }}{{ else }}website{{ end }}" />
+    <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
     <meta property="og:url" content="{{ .Permalink }}" />
     {{- if .IsPage -}}
         {{ if or (eq .Type "show") (eq .Type "event" ) }}
