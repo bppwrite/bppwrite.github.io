@@ -11,7 +11,7 @@
 	top: 0;
 	left: 0;
 	background: $primary-trans;
-	z-index: 3;
+	z-index: 4;
 
 	.menu-icon-close {
 		color: $white;
@@ -21,7 +21,7 @@
 		position: absolute;
 		right: 20px;
 		top: 20px;
-		z-index: 4;
+		z-index: 5;
 	}
 
 	.menu-icon-close:hover,
