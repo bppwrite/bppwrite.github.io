@@ -47,10 +47,20 @@
 			<svg>
 				<defs>
 					<linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-						<stop offset="0%" style="stop-color:rgb(259,160,37); stop-opacity:1"/>
-						<stop offset="100%" style="stop-color:rgb(88,41,114); stop-opacity:1"/>
-					</linearGradient>
-				</defs>
+			      <stop offset="0%" stop-color="#ffa025">
+			        <animate attributeName="stop-color" values="#ffa025; #582972; #582972; #ffa025; #ffa025;" dur="9s" repeatCount="indefinite"></animate>
+			      </stop>
+			      <stop offset="33.333%" stop-color="#ffa025">
+			        <animate attributeName="stop-color" values="#ffa025; #ffa025; #582972; #582972; #ffa025;" dur="9s" repeatCount="indefinite"></animate>
+			      </stop>
+			            <stop offset="66.666%" stop-color="#582972">
+			        <animate attributeName="stop-color" values="#582972; #ffa025; #ffa025; #582972; #582972;" dur="9s" repeatCount="indefinite"></animate>
+			      </stop>
+			      <stop offset="100%" stop-color="#582972">
+			        <animate attributeName="stop-color" values="#582972; #582972; #ffa025; #ffa025; #582972;" dur="9s" repeatCount="indefinite"></animate>
+			      </stop>
+			    </linearGradient>
+			  </defs>
 				<text x="0" y="50" fill="url(#textGradient)">Get Tickets</text>
 			</svg>
 		</button>
