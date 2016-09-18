@@ -16,6 +16,24 @@
 		color: $color-accent;
 		font-family: $font-stack-show-dates;
 		font-size: 2em;
+		svg {
+			stop:nth-of-type(1) {
+				animation: firstWave 9s linear infinite;
+				stop-color: $color-accent;
+			}
+			stop:nth-of-type(2) {
+				animation: secondWave 9s linear infinite;
+				stop-color: $color-accent;
+			}
+			stop:nth-of-type(3) {
+				animation: thirdWave 9s linear infinite;
+				stop-color: $color-primary;
+			}
+			stop:nth-of-type(4) {
+				animation: fourthWave 9s linear infinite;
+				stop-color: $color-primary;
+			}
+		}
 	}
 
 	button:hover {
@@ -32,5 +50,10 @@
 			}
 		}
 	}
+
+	@keyframes firstWave{0% { stop-color: $color-accent; } 25%{ stop-color: $color-primary; } 50%{ stop-color: $color-primary; } 75%{ stop-color: $color-accent; } 100%{ stop-color: $color-accent; }}
+	@keyframes secondWave{0%{ stop-color: $color-accent; } 25% { stop-color: $color-accent; } 50%{ stop-color: $color-primary; } 75%{ stop-color: $color-primary; } 100%{ stop-color: $color-accent; }}
+	@keyframes thirdWave{0% { stop-color: $color-primary; } 25%{ stop-color: $color-accent; } 50%{ stop-color: $color-accent; } 75%{ stop-color: $color-primary; } 100%{ stop-color: $color-primary; }}
+	@keyframes fourthWave{0% { stop-color: $color-primary; } 25%{ stop-color: $color-primary; } 50%{ stop-color: $color-accent; } 75%{ stop-color: $color-accent; } 100%{ stop-color: $color-primary; }}
 
 }
