@@ -1,0 +1,36 @@
+// ---- Call-to-Action Fixed on Slider ----
+
+.slider-wrap {
+	button {
+		// positioning
+		position: absolute;
+		z-index: 3;
+		margin: 0 auto;
+		top: 5vh; right: 0; bottom: 0; left: 0;
+		width: 325px; // width has to be set to perfectly center if positioned absolute
+		height: 80px;
+		// styling
+		border-color: transparent;
+		border-radius: 0;
+		background-color: $white;
+		color: $color-accent;
+		font-family: $font-stack-show-dates;
+		font-size: 2em;
+	}
+
+	button:hover {
+		animation: gradientWave 9s linear infinite;
+		background: $color-accent; /* For browsers that do not support gradients */
+		background: -webkit-linear-gradient(left, $color-accent, $color-primary); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(left, $color-accent, $color-primary); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(left, $color-accent, $color-primary); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(to right, $color-accent, $color-primary); /* Standard syntax */
+		border: none;
+		svg {
+			text {
+				fill: $white;
+			}
+		}
+	}
+
+}
