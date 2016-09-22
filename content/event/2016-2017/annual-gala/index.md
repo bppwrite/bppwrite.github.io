@@ -1,6 +1,6 @@
 +++
 aliases = ["/node/378"]
-date = "2016-08-20T15:48:44-04:00"
+date = "2016-08-26T18:30:00-04:00"
 intermission_count = "0"
 runtime = ""
 series = "2016-2017"
@@ -16,10 +16,7 @@ youtube_id = ""
 
 # list showtimes in ISO 8601 format with links to tickets
 [[showtimes]]
-    time = 2016-01-01T19:30:00
-    tickets = ""
-[[showtimes]]
-    time = 2016-01-02T19:30:00
+    time = 2016-08-26T18:30:00
     tickets = ""
 
 +++

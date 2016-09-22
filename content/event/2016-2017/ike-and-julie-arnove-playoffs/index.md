@@ -1,6 +1,6 @@
 +++
 aliases = ["/node/152"]
-date = "2016-07-03T13:01:52-04:00"
+date = "2016-11-05T19:30:00-04:00"
 intermission_count = "0"
 runtime = ""
 series = "2016-2017"

@@ -26,6 +26,11 @@ build:
         code: |
             echo "America/Indiana/Indianapolis" > /etc/timezone
             dpkg-reconfigure --frontend noninteractive tzdata
+    # - npm-install
+    # - script:
+    #     name: npm run build:all
+    #     code: |
+    #         npm run build:all
     - arjen/hugo-build:
       version: "0.16"
       #theme: hugo-bootswatch
