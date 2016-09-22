@@ -21,6 +21,7 @@ $color-accent:   		$flat-gold;
 $white:          		#ffffff;
 $black:          		#231f20;
 $black-trans:				rgba(35, 31, 32, 0.75);
+$nightmare-trans:		rgba(35, 31, 32, 0.98);
 $full-trans:				rgba(35, 31, 32, 0);
 $primary-trans:			rgba(88, 41, 114, 0.9);
 $accent-trans:			rgba(259, 160, 37, 0.9);
@@ -28,6 +29,8 @@ $light-grey:     		mix($white, $royal, 95%);
 $dark-grey:      		mix($black, $royal-light, 45%);
 $color-accent-dark: mix($black, $color-accent, 35%);
 $color-primary-dark:mix($black, $color-primary, 35%);
+$color-accent-light: mix($white, $color-accent, 35%);
+$color-primary-light:mix($white, $color-primary, 35%);
 
 
 // Fonts
