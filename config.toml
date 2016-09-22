@@ -48,6 +48,7 @@ title = "Bloomington Playwrights Project"
 [[menu.main]]
     name = "DramatiCATS"
     url = "/education/dramaticats"
+    parent = "education"
     weight = 320
 [[menu.main]]
     name = "Laugh Factory"
