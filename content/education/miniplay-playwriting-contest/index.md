@@ -1,6 +1,7 @@
 +++
 date = "2016-09-04T11:54:42-04:00"
 title = "MiniPlay Playwriting Contest"
+aliases = ["/node/126"]
 
 +++
 
@@ -13,3 +14,5 @@ The BPP will select the three best plays in each category, based on how well the
 ## More Information
 
 For more information, to participate, or to find out this year's theme, please contact <education@newplays.org>.
+
+[Check out the MiniPlay performance event page](/event/2016-2017/miniplay-playwriting-competition/)

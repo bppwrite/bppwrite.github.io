@@ -1,6 +1,7 @@
 +++
 date = "2016-09-04T11:54:13-04:00"
 title = "BPP's Musical Theater Camp"
+aliases = ["/node/121"]
 
 +++
 

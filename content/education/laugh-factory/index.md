@@ -1,6 +1,7 @@
 +++
 date = "2016-09-04T11:53:35-04:00"
 title = "BPP's Laugh Factory"
+aliases = ["/node/123"]
 
 +++
 

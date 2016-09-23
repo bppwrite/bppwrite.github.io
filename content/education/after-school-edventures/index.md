@@ -1,6 +1,7 @@
 +++
 date = "2016-09-04T11:54:26-04:00"
 title = "After School EdVentures"
+aliases = ["/node/125"]
 
 +++
 

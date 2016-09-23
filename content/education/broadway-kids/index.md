@@ -2,6 +2,8 @@
 date = "2016-09-04T11:53:09-04:00"
 title = "Broadway Kids"
 
+aliases = ["/node/122", "/node/8"]
+
 +++
 
 # Broadway Kids
