@@ -18,11 +18,11 @@
 	.menu-icon-close {
 		color: $white;
 		font-size: 3em;
-		width: 80px;
-		height: 80px;
 		position: absolute;
-		right: 20px;
-		top: 20px;
+		margin: 0;
+		padding: 0;
+		right: 10px;
+		top: 5px;
 		z-index: 5;
 	}
 
@@ -39,7 +39,7 @@
 			font-family: $font-stack-show-dates;
 			list-style: none;
 			padding: 0;
-			margin: 0 5px;
+			margin: 10px;
 			max-width: 99%;
 			width: 320px;
 			display: inline-block;
@@ -143,6 +143,12 @@
 
 @media (min-width: $start-tablet) {
 	.overlay {
+
+		.menu-icon-close {
+			right: 5vh;
+			top: 5vh;
+		}
+
 		nav {
 			@include flex-prop-prefixes(justify-content, center);
 			@include flex-prop-prefixes(align-items, center);
