@@ -15,10 +15,12 @@ $(document).ready(function() {
 
 		function bindUIEvents() {
 			openButton.on('click', function(event) {
+				event.preventDefault();
 				openOverlay(overlay, openClass);
 				body.addClass(noScroll);
 			});
 			closeButton.on('click', function(event) {
+				event.preventDefault();
 				closeOverlay(overlay, closeClass, openClass);
 				body.removeClass(noScroll);
 			});
