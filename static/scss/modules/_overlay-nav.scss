@@ -69,7 +69,6 @@
 			@include flex-prop-prefixes(flex-wrap, wrap);
 			@include flex-prop-prefixes(justify-content, space-between);
 			font-family: $font-stack-body;
-			max-height: 75px;
 			.dropdown-menu-item {
 				a {
 					color: $color-primary-light;
