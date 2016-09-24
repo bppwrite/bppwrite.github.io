@@ -1,11 +1,13 @@
 $(document).ready(function() {
 	let hamburger = (function() {
 
+		let body = $(document.body);
 		let openButton = $('#menu-icon-open');
 		let overlay = $('div.overlay-screen');
 		let closeButton = $('#menu-icon-close');
 		let openClass = 'open';
 		let closeClass = 'close';
+		let noScroll = 'no-scroll';
 
 		function init() {
 			bindUIEvents();
@@ -14,9 +16,11 @@ $(document).ready(function() {
 		function bindUIEvents() {
 			openButton.on('click', function(event) {
 				openOverlay(overlay, openClass);
+				body.addClass(noScroll);
 			});
 			closeButton.on('click', function(event) {
 				closeOverlay(overlay, closeClass, openClass);
+				body.removeClass(noScroll);
 			});
 		}
 
