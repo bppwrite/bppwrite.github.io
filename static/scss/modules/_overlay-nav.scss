@@ -28,8 +28,8 @@
 
 	nav {
 		@include flexbox();
-		@include flex-prop-prefixes(justify-content, center);
-		@include flex-prop-prefixes(align-items, center);
+		@include flex-prop-prefixes(justify-content, flex-start);
+		@include flex-prop-prefixes(align-items, flex-start);
 		position: relative;
 		top: 50%;
 		font-size: $body-font-size;
@@ -39,9 +39,9 @@
 			font-family: $font-stack-show-dates;
 			list-style: none;
 			padding: 0;
-			margin: 0 auto;
+			margin: 0 0;
 			max-width: 99%;
-			width: 400px;
+			width: 320px;
 			display: inline-block;
 			height: 100%;
 			position: relative;
@@ -142,6 +142,8 @@
 @media (min-width: $start-tablet) {
 	.overlay {
 		nav {
+			@include flex-prop-prefixes(justify-content, center);
+			@include flex-prop-prefixes(align-items, center);
 			ul:not(.dropdown-menu) {
 				max-width: $start-laptop;
 				width: 400px;
