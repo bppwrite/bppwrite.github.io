@@ -31,15 +31,15 @@
 		@include flex-prop-prefixes(justify-content, flex-start);
 		@include flex-prop-prefixes(align-items, flex-start);
 		position: relative;
-		top: 50%;
+		top: 0%;
 		font-size: $body-font-size;
-		-webkit-transform: translateY(-50%);
-		transform: translateY(-50%);
+		-webkit-transform: translateY(0%);
+		transform: translateY(0%);
 		ul:not(.dropdown-menu) {
 			font-family: $font-stack-show-dates;
 			list-style: none;
 			padding: 0;
-			margin: 0 0;
+			margin: 0 5px;
 			max-width: 99%;
 			width: 320px;
 			display: inline-block;
@@ -144,8 +144,13 @@
 		nav {
 			@include flex-prop-prefixes(justify-content, center);
 			@include flex-prop-prefixes(align-items, center);
+			top: 50%;
+			font-size: $body-font-size;
+			-webkit-transform: translateY(-50%);
+			transform: translateY(-50%);
 			ul:not(.dropdown-menu) {
 				max-width: $start-laptop;
+				margin: 0;
 				width: 400px;
 			}
 		}
