@@ -45,116 +45,111 @@
 
 {{- partial "head.html" . -}}
 <div class="home-intro">
-  {{- partial "nav.html" . -}}
+    {{- partial "nav.html" . -}}
 
-  <!-- slider -->
-	<div class="slider-wrap">
-		<button>
+    <!-- slider -->
+    <div class="slider-wrap">
+        <button>
 			<svg>
 				<defs>
 					<linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-			      <stop offset="0%"></stop>
-			      <stop offset="33.333%"></stop>
-			      <stop offset="66.666%"></stop>
-			      <stop offset="100%"></stop>
-			    </linearGradient>
-			  </defs>
+                        <stop offset="0%"></stop>
+                        <stop offset="33.333%"></stop>
+                        <stop offset="66.666%"></stop>
+                        <stop offset="100%"></stop>
+                    </linearGradient>
+                </defs>
 				<text x="0" y="50" fill="url(#textGradient)">Get Tickets</text>
 			</svg>
 		</button>
-    <div class="slider" id="slider">
-      <div class="holder">
+        <div class="slider" id="slider">
+            <div class="holder">
 
-          {{- range $weight, $page := ($.Scratch.GetSortedMapValues "heros") -}}
-          <div class="slide" style="background-image: url({{ partial "hero.html" . }})">
-              <span class="slide-text">
-                  <span class="img-text-background">
-                      <b>Next {{ .Type | title }}:</b>
-                      {{ .Title | markdownify }}
-                  </span>
-              </span>
-          </div>
-          {{- end -}}
+                {{- range $weight, $page := ($.Scratch.GetSortedMapValues "heros") -}}
+                <div class="slide" style="background-image: url({{ partial "hero.html" . }})">
+                    <span class="slide-text">
+                        <span class="img-text-background">
+                            <b>Next {{ .Type | title }}:</b>
+                            {{ .Title | markdownify }}
+                        </span>
+                    </span>
+                </div>
+                {{- end -}}
 
-      </div>
+            </div>
+        </div>
+        <nav class="slider-nav" id="slider-nav">
+            <span class="fa fa-chevron-left" id="control-left" aria-hidden="true"></span>
+            <span class="fa fa-chevron-down" id="control-down" aria-hidden="true"></span>
+            <span class="fa fa-chevron-right" id="control-right" aria-hidden="true"></span>
+        </nav>
     </div>
-  	<nav class="slider-nav" id="slider-nav">
-      <span class="fa fa-chevron-left" id="control-left" aria-hidden="true"></span>
-      <span class="fa fa-chevron-down" id="control-down" aria-hidden="true"></span>
-      <span class="fa fa-chevron-right" id="control-right" aria-hidden="true"></span>
-  	</nav>
-  </div>
 </div>
 <!-- shows -->
-	<div class="shows">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12">
-					<h2 class="section-title">Upcoming Shows {{ $currentSeries.Name }}</h2>
-				</div>
-			</div>
-		</div>
-		<div class="flex-container">
-    	{{/* all current pages in the "show" section */}}
-    	{{- range where $currentSeries.Pages.ByDate "Section" "show" -}}
-			<div class="shows-card">
-				{{ partial "show/poster.html" . }}
-				<div class="show-info">
-					<h3><a href="/show/{{ .Params.series }}/{{ (.Title | urlize) }}">{{ .Title }}</a></h3>
-						{{ partial "show/dates.html" . }}
-					</div>
-				</div>
-			{{- end -}}
-			</div>
-		</div>
-	</div>
-	<!-- call-to-action -->
-	<div class="subscribe">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12">
-					<p class="lead">Buy a season ticket pass. Do it. Do it right now.</p>
-					<p><a class="button" href="https://web.ovationtix.com/trs/store/34132/packages">Subscribe</a></p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- join us image sequence -->
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12">
-				<h2 class="section-title">Join Us</h2>
-			</div>
-		</div>
-		<div class="img-sequence">
-			<div class="row">
-				<div class="col-sm-12 col-md-6 col-lg-6">
-					<div class="volunteer">
-						<h2><span class="img-text-background"><a href="#">Volunteer</a></span></h2>
-					</div>
-				</div>
-				<div class="col-sm-12 col-md-6 col-lg-6">
-					<div class="education">
-						<h2><span class="img-text-background"><a href="#">Youth Education Program</a></span></h2>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-12 col-md-12 col-lg-12">
-					<div class="donate">
-						<h2><span class="img-text-background"><a href="#">Donate</a></span></h2>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="VK9JZG92JHJX6">
-<input type="image" src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/btn_donate_cc_147x47.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-
-
+<div class="shows">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 class="section-title">Upcoming Shows {{ $currentSeries.Name }}</h2>
+            </div>
+        </div>
+    </div>
+    <div class="flex-container">
+        {{/* all current pages in the "show" section */}}
+        {{- range where $currentSeries.Pages.ByDate "Section" "show" -}}
+        <div class="shows-card">
+            {{ partial "show/poster.html" . }}
+            <div class="show-info">
+                <h3>
+                    <a href="/show/{{ .Params.series }}/{{ (.Title | urlize) }}">
+                        {{ .Title }}
+                    </a>
+                </h3>
+                {{ partial "show/dates.html" . }}
+            </div>
+        </div>
+        {{- end -}}
+    </div>
+</div>
+</div>
+<!-- call-to-action -->
+<div class="subscribe">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <p class="lead">Buy a season ticket pass. Do it. Do it right now.</p>
+                <p><a class="button" href="https://web.ovationtix.com/trs/store/34132/packages">Subscribe</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- join us image sequence -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h2 class="section-title">Join Us</h2>
+        </div>
+    </div>
+    <div class="img-sequence">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="volunteer">
+                    <h2><span class="img-text-background"><a href="#">Volunteer</a></span></h2>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="education">
+                    <h2><span class="img-text-background"><a href="#">Youth Education Program</a></span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="donate">
+                    <h2><span class="img-text-background"><a href="#">Donate</a></span></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {{ partial "foot.html" . }}

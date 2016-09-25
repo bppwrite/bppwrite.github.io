@@ -12,7 +12,9 @@
     <li>
         Each submission must include a cover letter with contact information and a $10.00 reader fee. Agent submissions require no fee. The fee will be waived for Dramatist Guild members with an enclosed photocopy of a membership card. The BPP only accepts U.S. checks or money orders (Make check payable to &quot;BPP&quot;). No international checks or money orders will be accepted. If submitting internationally or if you want to avoid paying by check, pay online with your credit card here:
 
-        <p> PayPal - The safer, easier way to pay online!</p>
+        <p>
+            {{ partial "paypal_button.html" (dict "text" "Pay Reader Fee" "id" "BTLYFLANT6KSC") }}
+        </p>
 
         <p> Make sure to note with your submission that you have paid the reader fee online.</p>
     </li>
