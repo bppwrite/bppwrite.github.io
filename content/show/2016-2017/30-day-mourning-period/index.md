@@ -23,7 +23,7 @@ awards = [
   "Reva Shiner Comedy Award Winner"
 ]
 slot = "Reva Shiner Comedy Award Winner"
-youtube_id = "8s1okUL7VW8"
+youtube_id = "A0UnS-i8MS0"
 
 tickets_run = "https://web.ovationtix.com/trs/pr/960770"
 

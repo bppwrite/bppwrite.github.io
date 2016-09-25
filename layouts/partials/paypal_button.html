@@ -1,0 +1,24 @@
+{{/*
+    this partial expects a dict of two parameters:
+        text: "the text in the button",
+        id: "the id of the hosted paypal button"
+*/}}
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+    <input type="hidden" name="cmd" value="_s-xclick">
+    <input type="hidden" name="hosted_button_id"
+        value="{{ .id | default "VK9JZG92JHJX6" }}">
+    <!--
+    <input type="image"
+        src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/btn_donate_cc_147x47.png"
+        border="0" name="submit"
+        alt="PayPal - The safer, easier way to pay online!">
+    -->
+    <button type="submit">
+        <span class="fa fa-paypal"></span>
+        {{ .text | default "Donate to the BPP" }}
+    </button>
+    <img alt="" border="0"
+        src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1"
+        height="1">
+</form>

@@ -5,7 +5,7 @@ slot = "Celebrity Guest Star Series"
 subtitle = "The Life and Slimes of Marc Summers"
 title = "Everything in its Place"
 venue = "Bloomington Playwrights Project"
-youtube_id = ""
+youtube_id = "Ma_Ox5F7AEI"
 
 "producing artistic director" = "Chad Rabinovitz"
 "associate artistic director" = "David Sheehan"
@@ -18,7 +18,7 @@ aliases = ["/node/397"]
 awards = []
 choreographers = []
 "costume designers" = []
-date = "2016-08-20T15:33:53-04:00"
+date = "2016-04-01T19:30:00-04:00"
 directors = ["Chad Rabinovitz"]
 genres = []
 intermission_count = "0"
@@ -59,3 +59,5 @@ tickets = ""
 
 
 +++
+
+You may know him from his time hosting [Nickelodeon's _Double Dare_](https://en.wikipedia.org/wiki/Double_Dare_(Nickelodeon_game_show)) and [Food Network's _Unwrapped_](http://www.foodnetwork.com/shows/unwrapped.html), or as the Producer of hits like [_Dinner:Impossible_](http://www.foodnetwork.com/shows/dinner-impossible.html) and [_Restaurant:Impossible_](http://www.foodnetwork.com/shows/restaurant-impossible.html), but now you get the chance to meet the real [Marc Summers](http://www.marcsummerstv.com/) -- a man who's led a fascinating life of fame and frustration. _Everything in its Place_ is a guided tour through Marc's life, from an early obsession with magic to his notable television career and his struggles with OCD. Marc stars in this tell-all about his life, his disorder, and taking the physical challenge.

@@ -5,9 +5,17 @@
 {{/* show ends on the last date in the showtimes array */}}
 {{ $end := (index .Params.showtimes (sub (len .Params.showtimes) 1) ).time }}
 
+{{- $.Scratch.Set "posterPath" nil -}}
+{{- range (readDir (printf "content/%s" .RelPermalink)) -}}
+    {{- if hasPrefix .Name "poster" -}}
+        {{- $.Scratch.Set "posterPath" .Name -}}
+    {{- end -}}
+{{- end -}}
+
+
 <div class="row">
     <div class="col-sm-12 col-md-6 col-lg-6">
-        <img src="poster.jpg" class="show-poster" />
+        <img src="{{ $.Scratch.Get "posterPath" }}" class="show-poster" />
     </div>
     <div class="col-sm-12 col-md-6 col-lg-6 show-data">
         <h2 class="show-title">
@@ -124,7 +132,7 @@
             <a href="https://twitter.com/intent/tweet?url={{ .Permalink }}&text={{ .Title }} &middot; {{ .Site.Title }}&via=bloomingplays&hashtags=bpp,newplays">
                 <span class="fa fa-twitter" aria-hidden="true"></span>
             </a>
-            <a href="https://pinterest.com/pin/create/bookmarklet/?media={{ .Permalink }}poster.jpg&url={{ .Permalink }}&is_video=0&description={{ .Title }} &middot; {{ .Site.Title }}">
+            <a href="https://pinterest.com/pin/create/bookmarklet/?media={{ .Permalink }}{{ $.Scratch.Get "posterPath" }}&url={{ .Permalink }}&is_video=0&description={{ .Title }} &middot; {{ .Site.Title }}">
                 <span class="fa fa-pinterest-p" aria-hidden="true"></span>
             </a>
         </ul>

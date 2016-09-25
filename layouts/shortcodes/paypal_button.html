@@ -1,0 +1,4 @@
+{{- $text := (.Get "text" | default "Donate to the BPP") -}}
+{{- $id := (.Get "id" | default "VK9JZG92JHJX6") -}}
+
+{{ partial "paypal_button.html" (dict "text" $text "id" $id) }}
