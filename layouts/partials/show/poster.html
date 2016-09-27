@@ -1,4 +1,5 @@
-{{ $imgPath := (printf "%s/%s/%s" .Section .Params.series (.Title | urlize)) }}
+{{/* $imgPath := (printf "%s/%s/%s" .Section .Params.series (.Title | urlize)) */}}
+{{ $imgPath := .RelPermalink }}
 {{ $.Scratch.Set "poster" "poster.valid_img_ext" }}
 {{ range (readDir (printf "content/%s" $imgPath)) }}
     {{ if hasPrefix .Name "poster" }}
