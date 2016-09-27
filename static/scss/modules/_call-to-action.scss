@@ -16,6 +16,7 @@
 		color: $color-accent;
 		font-family: $font-stack-show-dates;
 		font-size: 2em;
+		text-shadow: 2px 2px rgba(35, 31, 32,0.25);
 		svg {
 			stop:nth-of-type(1) {
 				animation: firstWave 9s linear infinite;
