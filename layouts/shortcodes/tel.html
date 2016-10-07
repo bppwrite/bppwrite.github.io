@@ -1,0 +1,2 @@
+{{- $phone := (.Get 0 | default .Site.Params.address.phone) -}}
+<a href="tel:{{ $phone }}">{{ $phone }}</a>
