@@ -78,22 +78,22 @@ title = "Bloomington Playwrights Project"
     weight = 400
 [[menu.main]]
     name = "Alumni Playwrights"
-    url = "/playwrights/alumni-playwrights"
+    url = "/playwrights/#alumni-playwrights"
     parent = "playwrights"
     weight = 410
 [[menu.main]]
     name = "Submit a Play"
-    url = "/playwrights/submit-a-play"
+    url = "/playwrights/#submit-a-play"
     parent = "playwrights"
     weight = 420
 [[menu.main]]
     name = "Reva Shiner Comedy Award"
-    url = "/playwrights/submit-a-play/#reva-shiner-comedy-award"
+    url = "/playwrights/reva-shiner-comedy"
     parent = "playwrights"
     weight = 430
 [[menu.main]]
     name = "Woodward/Newman Drama Award"
-    url = "/playwrights/submit-a-play/#woodward-newman-drama-award"
+    url = "/playwrights/submit-a-play/woodward-newman-drama"
     parent = "playwrights"
     weight = 440
 [[menu.main]]
@@ -126,16 +126,16 @@ title = "Bloomington Playwrights Project"
     url = "/support"
     identifier = "support"
     weight = 700
-[[menu.main]]
-    name = "Individual"
-    url = "/support/#individual"
-    parent = "support"
-    weight = 710
-[[menu.main]]
-    name = "Corporate"
-    url = "/support/#corporate"
-    parent = "support"
-    weight = 720
+# [[menu.main]]
+#     name = "Individual"
+#     url = "/support/#individual"
+#     parent = "support"
+#     weight = 710
+# [[menu.main]]
+#     name = "Corporate"
+#     url = "/support/#corporate"
+#     parent = "support"
+#     weight = 720
 [[menu.main]]
     name = "Facility Rentals"
     url = "/facility-rentals"
