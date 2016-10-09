@@ -1,10 +1,107 @@
 +++
 date = "2011-01-01T00:00:00-04:00"
 title = "Past Productions"
+aliases = ["/node/4"]
 
 +++
 
-## 2011
+# About
+
+The Bloomington Playwrights Project (BPP) is the only professional theatre in the entire state of Indiana dedicated solely to new plays. In operation for 35 years, we serve both the Bloomington and national theatre community by working with talented playwrights, actors, and artists to develop high-level productions for our local patrons as well as the many audiences attending subsequent productions of scripts that originated here at the BPP. We are an advocate for playwrights and new plays and believe firmly that they are not only important but absolutely vital to the future of our art form.
+
+## Staff
+
+**General Inquiries:** <bppwrite@newplays.org>
+
+**Questions About Script Submissions:** <literarymanager@newplays.org>
+
+**Producing Artistic Director:** Chad Rabinovitz <artisticdirector@newplays.org>
+
+**Managing Director:** Jessica Reed <managingdirector@newplays.org>
+
+**Associate Artistic Director:** Ben Smith <ben@newplays.org>
+
+**Education Director:** Kyli Walls <education@newplays.org>
+
+**Box Office Manager:** Benny Sully <boxoffice@newplays.org>
+
+**Company Manager:** Jordan Strong
+
+**Marketing Associate:** Molli Duckworth <development@newplays.org>
+
+**Literary Manager:** Susan Jones <literarymanager@newplays.org>
+
+**Resident Playwright and Literary Associate:** Hank Greene <hankg2013@gmail.com>
+
+**BPP Historian:** Sonja Johnson <sejohnso2@gmail.com>
+
+**Resident Stage Manager:** Tabitha Burton <stagemanager@newplays.org>
+
+**Technical Director:** Brian Lewis
+
+**Resident Scenic Designer:** David Wade
+
+**Sound Engineer / Master Electrician:** Thomas Tiggleman
+
+**Resident Costume Designers:** Scott Jones & Chib Gratz
+
+## Board of Directors
+
+* David Chadwick, President
+* Sandra Freund, Vice President
+* Susan Jones, Secretary
+* Harlan Lewis, Treasurer
+* Gene Elias
+* Jocelyn Bowie
+* Marty Joachim
+* Ray Hedin
+* Saundra Taylor
+
+## Director's Circle
+
+To bring a new play to life is an arduous and risky journey requiring a strong creative team and visionary supporters willing to provide the resources needed for the trip. The Directors Circle was established by the BPP Board in 2011 to bring together and to recognize loyal and generous patrons willing to provide annual support to the BPP’s operations now and into the future.
+
+Each season the Directors Circle hosts five programs, each one related to one of the season’s productions. All provide behind-the-scenes insight into the new play production process. A program might consist of a scene from an upcoming production and a chance to discuss it with the principals behind the project. A scene designer might trace the creation of a set from concept to construction – describing the interaction with script, director, and other designers that goes into the process. Or a playwright may join us to describe the inspiration behind the play and the value of the development process that BPP provides.
+
+Every program provides Directors Circle members not only a special theatre experience but also a chance to visit informally with the new play production team and with other supporters of new plays. To become part of the Directors Circle, contact <directorscircle@newplays.org>
+
+## Mission & History
+
+### Mission Statement
+
+The Bloomington Playwrights Project (BPP) strives to be a leading artistic force in the production and encouragement of new plays. The BPP provides opportunities for development, education, and production for promising and established writers and theater artists in a professional environment.
+
+### History
+
+In 1979, the Bloomington Playwrights Project (BPP) was founded by Tom Moseman and Jim Leonard, both of whom shared a vision of creating a venue to workshop and produce playwrights' works, and provide a place for actors, directors, and theatre technicians to hone their crafts. Jim Leonard's play The Diviners has since seen many productions across the country, and he has gone on to write and produce for television, notably Skin and most recently Close to Home. Tom Moseman is currently Senior Vice President of Envirosell.
+
+#### About the Timothy J Wiles Theater's Namesake
+
+Timothy J Wiles had a passion for theater from his pre-adolescence. Growing up in Norway Maine (population 5,000) a village which boasted of enthusiastic community theater efforts (Tim worked stage crew for a popular production of Dial M For Murder when he was 13.) Tim avidly read the New York Times theater reviews.
+
+In 1960 as a senior at Bethel Academy, he was selected to attend a national theater Institute for high school students at the Ohio State University. While there he attended a cycle of Shakespearean plays at Antioch College and his college plans were set in his mind. He majored in English at Antioch and became involved in multiple stage productions. He interned during one cooperative academic quarter at the McCarter Theater in Princeton. He studied for PhD at Stanford University and wrote a dissertation that became a University of Chicago publication: THE THEATER EVENT, a study of the process of catharsis in avant-garde European and American theater.
+
+In 1972 he joined the English faculty at Indiana University, Bloomington and his undergraduate drama courses became known for their dramatic productions: he staged Brecht’s, THE MEASURES TAKEN in the woods behind Woodburn Hall, using Jordan creek as a part of the setting and he directed an innovative production of Apollinaire’s, THE BREASTS OF TIRESIAS, on the roof of the IMU.
+
+In 1975 two theater students, Tom Moseman and Jim Poyser came to Tim and asked his to direct an independent study course in playwriting for them. Later they were joined by Jim Leonard, a graduate student who had a major success with his first play, THE DIVINERS, which had a won a national collegiate theater competition and been produced at the Kennedy Center.
+
+The three asked Tim to mentor them and to help them found a black box theater to produce new and developing plays. For several years, the Bloomington Playwrights Project was a small, theater workshop for new playwrights like those three young playwriting students.
+
+Tim Wiles served on the BPP Board of Directors for many years, served as President and Vice President of the Board through the 1990’s. He died in Bloomington in 2003.
+
+## Arts Fair on the Square
+
+[www.artsfair.org](http://www.artsfair.org)
+
+<img align="right" src="/img/artlogo.png" alt="Arts Fair on the Square" title="Arts Fair on the Square"> The Bloomington Playwrights Project's Arts Fair on the Square is celebrating 33 years of bringing visual artists and craftspeople together with the local and regional buying community. This juried art show features over 60 regional and national artists and craftspeople on the picturesque grounds surrounding the Monroe County Courthouse. The mission of Arts Fair on the Square is to showcase fine art and craft of the highest quality, connect artists with the art-buying community and promote commitment to the arts through a variety of interactive arts experiences.
+
+Arts Fair on the Square also includes interactive arts activities for children and entertainment from local artists for the whole family. Arts Fair on the Square runs in conjunction with the Taste of Bloomington which offers sampling opportunities from over 35 local and regional restaurants, special music and children's activities. Together Arts Fair on the Square and Taste of Bloomington draw thousands of visitors to downtown Bloomington to experience the finest the visual arts has to offer while sharing a little of that Hoosier hospitality that makes Arts Fair on the Square a favorite among artists and art patrons alike.
+
+For more information please visit [www.artsfair.org](http://www.artsfair.org).
+
+## Past Productions
+
+### 2011
 
 * _Bomb|Shell_ by Various Artists
 * _I Am Grock_ by Amanda Rogers
@@ -13,7 +110,7 @@ title = "Past Productions"
 * _Miles Away_ by Christine Whitley
 * _Still The River Runs_ by Barton Bishop
 
-## 2010
+### 2010
 
 * _Blizzard Rewind_ by Various Artists
 * _BloomingPlays Festival_ by Hoosier Artists
@@ -23,7 +120,7 @@ title = "Past Productions"
 * _AwareFest: A Green World_ by Various Artists
 * _Artifice_ by Anne Flanagan (Reva Shiner Comedy Award Winner)
 
-## 2009
+### 2009
 
 * _Alone in the Light_ by Various Artists
 * _BloomingPlays_ by Various Artists
@@ -36,7 +133,7 @@ title = "Past Productions"
 * _Talley's Folly_ by Wilson, Lanford
 * _Vintage Scenes_ by Various Artists
 
-## 2008
+### 2008
 
 * _Alone in the Light_ by Various Artists
 * _Blizzard_ by Various Artists
@@ -51,7 +148,7 @@ title = "Past Productions"
 * _Symphony for Three_ by Smith, Mike
 * _Work_ by Wagoner, Terri
 
-## 2007
+### 2007
 
 * _Alone in the Light_ by Various Artists
 * _BloomingPlays Festival_ by Various Artists
@@ -65,7 +162,7 @@ title = "Past Productions"
 * _Vintage Scenes_ by Various Artists
 * _VROOOMMM!_ by Allard, Janet
 
-## 2006
+### 2006
 
 * _The Age of Cynicism or Karaoke Night at the Hog_ by Huff, Keith
 * _Alone in the Light_ by Various Artists
@@ -76,21 +173,21 @@ title = "Past Productions"
 * _Empty Sky_ by Sarah Treem
 * _Holy Spirit on Grand Avenue_ by Press-Coffman, Toni
 
-## 2005
+### 2005
 
 * _Ballot Box Blizzard_ by Various Artists
 * _Chicks with Dicks_ by Baldwin, Trista
 * _The PlayOffs_ by Various Artists
 * _Second Helpins_ by Various Artists
 
-## 2004
+### 2004
 
 * _The Button_ by Brooks, Jon
 * _Maleficia_ by Wingrove, Suzanne
 * _Patty Red Pants_ by Baldwin, Trista
 * _Harry & The Streetbeat_ by OyamO
 
-## 2003
+### 2003
 
 * _.22 Caliber Mouth_ by Robert, Lauren
 * _Bach at Leipzig_ by Moses, Itamar
@@ -113,7 +210,7 @@ title = "Past Productions"
 * _Slow Boat to China_ by Weedman, Lauren
 * _Twelve Plays of Christmas_ by Various Artists
 
-## 2002
+### 2002
 
 * _Afterdark_ by Manning, Kara
 * _The Dastardly Ficus_ by Schwartz, Emily
@@ -129,7 +226,7 @@ title = "Past Productions"
 * _Schoolgirl Figure_ by MacLeod, Wendy
 * _Scrooge Variations III_ by Pfeffinger, Eric R
 
-## 2001
+### 2001
 
 * _Beatles In the Bathtub_ by Polsgrove, Cora
 * _The Burial_ by Mattern, Jennifer
@@ -151,7 +248,7 @@ title = "Past Productions"
 * _Tender_ by Owens, Greg
 * _Tender: A Situation in 12 Scenes_ by Owens, Craig
 
-## 2000
+### 2000
 
 * _31_ by Anderson, Pat
 * _Beauty in the Woods_ by Anderson, Pat
@@ -171,7 +268,7 @@ title = "Past Productions"
 * _Signature_ by Dye, Ron
 * _Simplicity Itself_ by Hartwig, Kurt
 
-## 1999
+### 1999
 
 * _Angels of Lemnos_ by Henry, Jim
 * _Chestnuts Roasting_ by Larimer, Angeline R.
@@ -186,7 +283,7 @@ title = "Past Productions"
 * _Sunflower Town_ by Hartzler, Kara
 * _Traumaturgy_ by Pfeffinger, Eric R
 
-## 1998
+### 1998
 
 * _Alice In Ireland_ by Sheehan, Judy
 * _Diary of a Madman_ by Burgun, Bruce
@@ -198,7 +295,7 @@ title = "Past Productions"
 * _Ted Meets the Cable Man_ by Papa
 * _Where Men Are Empty Overcoats_ by Pfeffinger, Eric R
 
-## 1997
+### 1997
 
 * _Alexander and The United Snakes of America_ by Lewis, Donald
 * _The Book on Esther_ by Sahl, Benjamin
@@ -215,7 +312,7 @@ title = "Past Productions"
 * _Voices International_ by Various Artists
 * _Wreck of Cutty Perdition_ by Chemers, Michael Mark
 
-## 1996
+### 1996
 
 * _Bloomington Briefs_ by Various Artists
 * _A Christmas Carol_ by Mills, Rebekah
@@ -234,7 +331,7 @@ title = "Past Productions"
 * _Stick Girl_ by Zocher, Bryan
 * _Very Short Play about Almost Nothing_ by Chemers, Michael Mark
 
-## 1995
+### 1995
 
 * _Between Men and Cattle_ by Kalinoski, Richard
 * _Bulletproof Hearts_ by Gotch, Michael
@@ -257,7 +354,7 @@ title = "Past Productions"
 * _Taste of Bloomington_ by Various Artists
 * _Wicked Lemonade_ by Bass, M. Gettys
 
-## 1994
+### 1994
 
 * _America Played On_ by Various Artists
 * _A Christmas Carol_ by Owens, Greg
@@ -276,7 +373,7 @@ title = "Past Productions"
 * _When Mummy is Daddy_ by Ellis, Greg
 * _The Zalmar Boys_ by Muth, C. Russell & Ramsay, Matthew
 
-## 1993
+### 1993
 
 * _Alice's Wonderland_ by McCann, Karen
 * _Christmas Carol_ by Smith, Gretchen
@@ -295,7 +392,7 @@ title = "Past Productions"
 * _Waiting for Forever_ by Poyser, Jim
 * _Wyoming_ by Owens, Greg
 
-## 1992
+### 1992
 
 * _Adeline Klienhammer's Boarding House Tea_ by Wegener, Sally
 * _Alton's Coming Home_ by Dye, Ron
@@ -325,14 +422,14 @@ title = "Past Productions"
 * _Waterworks_ by various Artists
 * _Whale Shit_ by Houghtaling, David
 
-## 1991
+### 1991
 
 * _Blind Faith_ by Sayer, Mandy
 * _Dragoon_ by Aronson, Shari
 * _Hard Rain_ by Various Artists
 * _Nightingale_ by Smith, Gretchen
 
-## 1990
+### 1990
 
 * _Beer-La'HaiRoi_ by Hunt, Michael
 * _Calcutta_ by Dye, Ron
@@ -353,7 +450,7 @@ title = "Past Productions"
 * _There is No Present_ by Blumenthal, Barbara
 * _Waterworks_ by Various Artists
 
-## 1989
+### 1989
 
 * _Belongings_ by Cebulska, Marcia
 * _Comin' and Goin'_ by Dye, Ron
@@ -372,7 +469,7 @@ title = "Past Productions"
 * _Turtle Island Tales_ by Dye, Ron
 * _Waiting for Forever_ by Poyser, Jim
 
-## 1988
+### 1988
 
 * _A Harlequin's Romance_ by Christman, David Paul
 * _The American Nightmare_ by Weatherwax, Nell and Richard Van Schoewen
@@ -415,7 +512,7 @@ title = "Past Productions"
 * _Wings Over_ by Scott, David
 * _The Woman in the Slip_ by Weatherwax & Kondrat
 
-## 1987
+### 1987
 
 * _Accidentist_ by Poyser, Jim
 * _Aunt Elinor's Closet_ by Donley, Jan
@@ -463,7 +560,7 @@ title = "Past Productions"
 * _Two Short Plays_ by various
 * _Your Eyes - Your Eyes Are Like Pools_ by Aronson, Shari
 
-## 1986
+### 1986
 
 * _1/2 Acts_ by Various Artists
 * _Bowling Balls and Babies_ by Riley, Deanna
@@ -489,7 +586,7 @@ title = "Past Productions"
 * _Writers Block_ by Weatherwax, Nell, J. Shank, C. Nelson, J. Bellis, D. Christman
 * _You Are What you Eat_ by Christman, David
 
-## 1985
+### 1985
 
 * _Act One, Scene One_ by Elliott, Bill
 * _Barleybone & Me_ by Smiley, Sam
@@ -510,7 +607,7 @@ title = "Past Productions"
 * _Strange Romance_ by Mader, Ron
 * _War_ by Colerid, Christopher
 
-## 1984
+### 1984
 
 * _Ashes to Ashes_ by Hanes, Kenneth
 * _Atomic Brunch_ by Beverly, Nancy
@@ -531,7 +628,7 @@ title = "Past Productions"
 * _Trio_ by Various Artists
 * _Triplet_ by Various Artists
 
-## 1983
+### 1983
 
 * _An Evening of One Acts_ by Various Artists
 * _Broken Circle_ by Pritchard, Jeanne
@@ -542,7 +639,7 @@ title = "Past Productions"
 * _Somer Sault Brothers Chapter 9_ by Poyser, Jim
 * _Trust your Car to the Man Who Wears a Star_ by Beverly, Nancy
 
-## 1982
+### 1982
 
 * _And They Dance Real Slow in Jackson_ by Leonard, Jim, Jr.
 * _The Cashier_ by Merzer, Glen O.
@@ -552,7 +649,7 @@ title = "Past Productions"
 * _Talk Show_ by Beverly, Nancy
 * _What?_ by Staton, Dale
 
-## 1981
+### 1981
 
 * _An Evening of One Acts_ by Various Artists
 * _Everything in America and Parts of Europe_ by Blewett, Barbara
@@ -567,7 +664,7 @@ title = "Past Productions"
 * _So Sorry, Cincinnati_ by Rogers, Doug
 * _Waiting_ by Rockwell, PJ
 
-## 1980
+### 1980
 
 * _And They Dance Real Slow in Jackson_ by Leonard, Jim, Jr.
 * _Fish Story_ by Poyser, Jim
@@ -580,7 +677,7 @@ title = "Past Productions"
 * _Scene with a Grapefruit_ by Blue, Susan
 * _Stage - Traffic_ by Various Artists
 
-## 1979
+### 1979
 
 * _Discards_ by Dillard, Mollie
 * _Hand on Mirror_ by Poyser, Jim

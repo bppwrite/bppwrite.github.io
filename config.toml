@@ -72,7 +72,7 @@ title = "Bloomington Playwrights Project"
     weight = 360
 [[menu.main]]
     name = "Playwrights"
-    url = "/playwrights"
+    url = "/playwrights/"
     identifier = "playwrights"
     pre = "hero" # hack -- using pre to indicate that this is a hero menu item
     weight = 400
@@ -93,7 +93,7 @@ title = "Bloomington Playwrights Project"
     weight = 430
 [[menu.main]]
     name = "Woodward/Newman Drama Award"
-    url = "/playwrights/submit-a-play/woodward-newman-drama"
+    url = "/playwrights/#woodward-newman-drama"
     parent = "playwrights"
     weight = 440
 [[menu.main]]
@@ -142,7 +142,7 @@ title = "Bloomington Playwrights Project"
     weight = 800
 [[menu.main]]
     name = "About Us"
-    url = "/about"
+    url = "/about/"
     identifier = "about"
     weight = 900
 [[menu.main]]
@@ -162,7 +162,7 @@ title = "Bloomington Playwrights Project"
     weight = 930
 [[menu.main]]
     name = "Mission & History"
-    url = "/about/#mission-and-history"
+    url = "/about/#mission-history"
     parent = "about"
     weight = 940
 [[menu.main]]
