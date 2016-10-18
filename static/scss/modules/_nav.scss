@@ -3,6 +3,7 @@
 
 
 header {
+	background: linear-gradient(to bottom, $black-trans, rgba(35, 31, 32, 0));
 	position: absolute;
 	width: 100%;
 	z-index: 1;
@@ -55,16 +56,6 @@ header {
 	.menu-icon-open {
 		font-size: (21 / 18) * 1em;
 		margin-left: 1em;
-	}
-}
-
-
-
-// nav for index page only
-
-.home-intro {
-	header {
-		bottom: 0;
 	}
 }
 

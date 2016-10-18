@@ -44,60 +44,45 @@
 {{- .Scratch.Set "heros" ($.Scratch.Get "heros") -}}
 
 {{- partial "head.html" . -}}
-<div class="home-intro">
-    {{- partial "nav.html" . -}}
+  {{- partial "nav.html" . -}}
 
-    <!-- slider -->
-    <div class="slider-wrap">
-        <button>
-			<svg>
-				<defs>
-					<linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                        <stop offset="0%"></stop>
-                        <stop offset="33.333%"></stop>
-                        <stop offset="66.666%"></stop>
-                        <stop offset="100%"></stop>
-                    </linearGradient>
-                </defs>
-				<text x="0" y="50" fill="url(#textGradient)">Get Tickets</text>
-			</svg>
-		</button>
-        <div class="slider" id="slider">
-            <div class="holder">
+  <!-- slider -->
+  <div class="slider-wrap">
+      <div class="slider" id="slider">
+          <div class="holder">
 
-                {{- range $weight, $page := ($.Scratch.GetSortedMapValues "heros") -}}
-                <div class="slide" style="background-image: url({{ partial "hero.html" . }})">
-                    <span class="slide-text">
-                        <span class="img-text-background">
-                            <b>Next {{ .Type | title }}:</b>
-                            {{ .Title | markdownify }}
-                        </span>
-                    </span>
-                </div>
-                {{- end -}}
+              {{- range $weight, $page := ($.Scratch.GetSortedMapValues "heros") -}}
+              <div class="slide" style="background-image: url({{ partial "hero.html" . }})">
+                  <span class="slide-text">
+                      <span class="img-text-background">
+                          <b>Next {{ .Type | title }}:</b>
+                          {{ .Title | markdownify }}
+                      </span>
+                  </span>
+              </div>
+              {{- end -}}
 
-            </div>
-        </div>
-        <nav class="slider-nav" id="slider-nav">
-            <span class="fa fa-chevron-left" id="control-left" aria-hidden="true"></span>
-            <span class="fa fa-chevron-down" id="control-down" aria-hidden="true"></span>
-            <span class="fa fa-chevron-right" id="control-right" aria-hidden="true"></span>
-        </nav>
-    </div>
-</div>
+          </div>
+      </div>
+      <nav class="slider-nav" id="slider-nav">
+          <span class="fa fa-chevron-left" id="control-left" aria-hidden="true"></span>
+          <span class="fa fa-chevron-down" id="control-down" aria-hidden="true"></span>
+          <span class="fa fa-chevron-right" id="control-right" aria-hidden="true"></span>
+      </nav>
+  </div>
 <!-- shows -->
-<div class="shows">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <h2 class="section-title">Upcoming Shows {{ $currentSeries.Name }}</h2>
-            </div>
-        </div>
-    </div>
-    <div class="flex-container">
+<div class="shows-section">
+  <div class="container">
+      <div class="row">
+          <div class="col-sm-12">
+              <h2 class="section-title">Upcoming Shows {{ $currentSeries.Name }}</h2>
+          </div>
+      </div>
+  </div>
+    <div class="upcoming-container">
         {{/* all current pages in the "show" section */}}
         {{- range where $currentSeries.Pages.ByDate "Section" "show" -}}
-        <div class="shows-card">
+        <div class="show">
             {{ partial "show/poster.html" . }}
             <div class="show-info">
                 <h3>
@@ -119,35 +104,6 @@
             <div class="col-sm-12">
                 <p class="lead">Buy a season ticket pass. Do it. Do it right now.</p>
                 <p><a class="button" href="https://web.ovationtix.com/trs/store/34132/packages">Subscribe</a></p>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- join us image sequence -->
-<div class="container">
-    <div class="row">
-        <div class="col-sm-12">
-            <h2 class="section-title">Join Us</h2>
-        </div>
-    </div>
-    <div class="img-sequence">
-        <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-6">
-                <div class="volunteer">
-                    <h2><span class="img-text-background"><a href="#">Volunteer</a></span></h2>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-6">
-                <div class="education">
-                    <h2><span class="img-text-background"><a href="#">Youth Education Program</a></span></h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-12">
-                <div class="donate">
-                    <h2><span class="img-text-background"><a href="#">Donate</a></span></h2>
-                </div>
             </div>
         </div>
     </div>

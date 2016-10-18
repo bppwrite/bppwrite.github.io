@@ -40,6 +40,21 @@
     font-size: 2em;
   }
 
+	.fa-chevron-left:before {
+		background: linear-gradient(to right, $black-trans, rgba(35, 31, 32, 0));
+		padding: 10px;
+	}
+
+	.fa-chevron-right:before {
+		background: linear-gradient(to left, $black-trans, rgba(35, 31, 32, 0));
+		padding: 10px;
+	}
+
+	.fa-chevron-down:before {
+		background: linear-gradient(to top, $black-trans, rgba(35, 31, 32, 0));
+		padding: 10px;
+	}
+
 	.slider-nav {
 		position: absolute;
 		width: 100%;
@@ -50,7 +65,7 @@
     }
     #control-down {
       top: auto;
-      bottom: 5vh;
+      bottom: 0;
       left: 50%;
       right: 50%;
       z-index: 2;
@@ -58,12 +73,12 @@
     #control-left {
       top: 50%;
       bottom: 50%;
-      left: 5vh;
+      left: 0;
     }
     #control-right {
       top: 50%;
       bottom: 50%;
-      right: 5vh;
+      right: 0;
     }
 		#control-down, #control-left, #control-right {
 			cursor: pointer;

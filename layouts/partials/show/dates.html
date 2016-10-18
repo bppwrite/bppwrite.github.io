@@ -28,8 +28,8 @@
 	</h6>
 	<h6 class="days">
 	    {{- range $i, $showtime := .Params.showtimes -}}
-            <a href="{{ $showtime.tickets }}">
-	            <span class="day">{{ dateFormat "2" $showtime.time }}</span>
+            <a href="{{ $showtime.tickets }}" class="day">
+	            <span>{{ dateFormat "2" $showtime.time }}</span>
             </a>
 	    {{ end }}
 	</h6>
