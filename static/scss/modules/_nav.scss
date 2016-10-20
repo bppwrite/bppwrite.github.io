@@ -1,10 +1,10 @@
 // ---- Navigation ----
 
 
-
+// Default/general header styles
 header {
-	background: linear-gradient(to bottom, $black-trans, rgba(35, 31, 32, 0));
-	position: absolute;
+	background: $black;
+	position: static;
 	width: 100%;
 	z-index: 1;
   a {
@@ -57,6 +57,14 @@ header {
 		font-size: (21 / 18) * 1em;
 		margin-left: 1em;
 	}
+}
+
+
+
+// Ovewrite on home page
+header.home {
+	background: linear-gradient(to bottom, $black-trans, rgba(35, 31, 32, 0));
+	position: absolute;
 }
 
 
