@@ -66,7 +66,7 @@
     }
     #control-down {
       top: auto;
-      bottom: 7px;
+      bottom: 10px;
       left: 50%;
       right: 50%;
       z-index: 2;
@@ -74,12 +74,12 @@
     #control-left {
       top: 50%;
       bottom: 50%;
-      left: 7px;
+      left: 10px;
     }
     #control-right {
       top: 50%;
       bottom: 50%;
-      right: 7px;
+      right: 10px;
     }
 		#control-down, #control-left, #control-right {
 			cursor: pointer;
