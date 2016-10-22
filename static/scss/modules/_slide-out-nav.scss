@@ -42,6 +42,7 @@
 
 nav#menu {
 	background-color: $black;
+	font-size: (15 / 18) * 1em;
 	ul {
 		list-style: none;
 		li {
@@ -50,11 +51,15 @@ nav#menu {
 				font-family: $trend;
 			}
 		}
+		li.menu-item {
+			padding-top: 1em;
+		}
 	}
 
 	ul.dropdown-menu {
 		padding-left: 0;
 		li {
+			padding-top: 0.25em;
 			a {
 				color: $gray-light;
 				font-family: $int-reg;
