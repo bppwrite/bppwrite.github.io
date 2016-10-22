@@ -1,7 +1,7 @@
 // ---- Base Typography ----
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $font-stack-header;
+  font-family: $int-bold-cond;
 }
 
 h1 { font-size: 2em; }
@@ -13,23 +13,23 @@ h6 { font-size: (21 / 18) * 1em; }
 
 body {
   font-size: $body-font-size;
-  font-family: $font-stack-body;
+  font-family: $int-light;
 }
 
 .section-title {
-	font-family: $font-stack-show-dates;
+	font-family: $trend;
 }
 
 .show-title {
-  font-family: $font-stack-show;
+  font-family: $twenty;
 }
 
 .show-dates {
-  font-family: $font-stack-show-dates;
+  font-family: $trend;
 }
 
 .show-meta {
-  font-family: $font-stack-meta;
+  font-family: $int-bold-cond;
 }
 
 .transbox {

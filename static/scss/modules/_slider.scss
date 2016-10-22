@@ -16,14 +16,15 @@
 	  width: (100 / 4) * 1%;
 	  height: 100vh;
 	  position: relative;
-    background: $dark-grey;
+    background: $gray-dark;
 	  background-position: center center;
     background-size: cover;
 	}
 	.slide-text {
 	  position: absolute;
 	  color: $white;
-	  font-size: (33 / 18) * 1em;
+	  font-size: (27 / 18) * 1em;
+		font-family: $int-reg;
 		bottom: 33%;
 		left: 0;
 		right: 0;
@@ -36,19 +37,19 @@
 
 	// ---- slide nav ----
   span.fa {
-    color: $white;
+    color: $gray-light;
     font-size: 2em;
   }
 
-	.fa-chevron-left:before {
-		background: linear-gradient(to right, $black-trans, rgba(35, 31, 32, 0));
-		padding: 10px;
-	}
-
-	.fa-chevron-right:before {
-		background: linear-gradient(to left, $black-trans, rgba(35, 31, 32, 0));
-		padding: 10px;
-	}
+	// .fa-chevron-left:before {
+	// 	background: linear-gradient(to right, $black-trans, rgba(35, 31, 32, 0));
+	// 	padding: 10px;
+	// }
+	//
+	// .fa-chevron-right:before {
+	// 	background: linear-gradient(to left, $black-trans, rgba(35, 31, 32, 0));
+	// 	padding: 10px;
+	// }
 
 	.fa-chevron-down:before {
 		background: linear-gradient(to top, $black-trans, rgba(35, 31, 32, 0));
@@ -65,7 +66,7 @@
     }
     #control-down {
       top: auto;
-      bottom: 0;
+      bottom: 7px;
       left: 50%;
       right: 50%;
       z-index: 2;
@@ -73,12 +74,12 @@
     #control-left {
       top: 50%;
       bottom: 50%;
-      left: 0;
+      left: 7px;
     }
     #control-right {
       top: 50%;
       bottom: 50%;
-      right: 0;
+      right: 7px;
     }
 		#control-down, #control-left, #control-right {
 			cursor: pointer;

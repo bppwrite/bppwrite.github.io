@@ -5,20 +5,20 @@
 }
 
 a {
-  color: $color-accent;
+  color: $accent;
   text-decoration: none;
 }
 
 a:hover {
-  color: $color-accent-dark;
+  color: $accent;
   transition: color 0.5s;
   -webkit-transition: color 0.5s;
 }
 ::selection {
-  background: $royal-light;
+  background: $primary-light;
 }
 ::-moz-selection {
-  background: $royal-light;
+  background: $primary-light;
 }
 
 // ---- quick classes ----
@@ -32,8 +32,8 @@ a:hover {
 	background-color: $nightmare-trans;
 	padding: (4/16) * 1em;
     em {
-        color: $color-accent;
-    	font-family: $font-stack-show;
+        color: $accent;
+    	font-family: $twenty;
     	text-transform: uppercase;
         font-style: normal;
     }

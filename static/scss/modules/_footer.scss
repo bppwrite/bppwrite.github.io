@@ -2,15 +2,15 @@
 
 footer {
   background-color: $black;
-  color: $light-grey;
+  color: $gray-light;
 
 
 
 	// ---- sponsors ----
 
 	.sponsor {
-	  background-color: $light-grey;
-		color: $dark-grey;
+	  background-color: $gray-light;
+		color: $gray-dark;
 	  padding-top: 0.25em;
 	  padding-bottom: 0.25em;
 		text-align: center;
@@ -77,7 +77,7 @@ footer {
 			padding: 0;
 		}
 		.social-icons a {
-			color: $light-grey;
+			color: $gray-light;
 		}
 
 	}

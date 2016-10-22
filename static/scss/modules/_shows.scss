@@ -1,17 +1,17 @@
 // ---- Shows ----
 
 .show-title {
-  font-family: $font-stack-show;
+  font-family: $twenty;
   text-transform: uppercase;
 	margin: 20px 0 0.75em 0;
 }
 
 .showtimes-dates {
-  font-family: $font-stack-show-dates;
+  font-family: $trend;
 }
 
 .show-month {
-	font-family: $font-stack-show-dates;
+	font-family: $trend;
 	margin: 0;
 	text-transform: uppercase;
 }
@@ -22,7 +22,7 @@
 }
 
 .show-meta {
-	font-family: $font-stack-meta;
+	font-family: $int-bold-cond;
 	margin: 0;
 }
 
@@ -31,7 +31,7 @@
 }
 
 .show-subtitle {
-	font-family: $font-stack-subtitle;
+	font-family: $int-light;
 	margin: 0 0 0.75em 0;
 }
 

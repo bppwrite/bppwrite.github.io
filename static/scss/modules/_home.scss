@@ -5,7 +5,7 @@
 // ---- shows  ----
 
 .shows-section {
-	background-color: $light-grey;
+	background-color: $gray-light;
 	padding-bottom: 4em;
 	.upcoming-container {
 		@include flexbox();
@@ -37,7 +37,7 @@
 				padding: 1.5em;
 				margin-top: 1em;
 				h3 {
-					font-family: $font-stack-show;
+					font-family: $twenty;
 					margin: 0.5em 0 0.25em 0;
 					letter-spacing: 0.05em;
 					text-transform: uppercase;;
@@ -59,16 +59,16 @@
 	.show:nth-child(odd) {
 		.show-info  {
 			@include flex-prop-prefixes(order, 2);
-			background-color: $color-accent;
-			border-color: $color-accent;
+			background-color: $accent;
+			border-color: $accent;
 			h3 a {
-				color: $color-primary;
+				color: $primary;
 			}
 			h3 a:hover {
-				color: $color-primary-dark;
+				color: $primary-dark;
 			}
 			.day {
-				background-color: $color-primary;
+				background-color: $primary;
 			}
 
 		}
@@ -79,8 +79,8 @@
 	.show:nth-child(even) {
 		.show-info  {
 			@include flex-prop-prefixes(order, 2);
-			background-color: $color-primary;
-			border-color: $color-primary;
+			background-color: $primary;
+			border-color: $primary;
 		}
 		figure {
 			@include flex-prop-prefixes(order, 1);
@@ -97,7 +97,7 @@
 		@include flex-prop-prefixes(align-items, flex-start);
 	}
 	.day {
-		background-color: $color-accent;
+		background-color: $accent;
 		border-radius: 50%;
 		color: $white;
 		font-size: (15 / 18) * 1em;
@@ -120,7 +120,7 @@
 // ---- call to action  ----
 
 .subscribe {
-	background-color: $color-primary;
+	background-color: $primary;
 	color: $white;
 	padding: 1em 0 1em 0;
 	text-align: center;

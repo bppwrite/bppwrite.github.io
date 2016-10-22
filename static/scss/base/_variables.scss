@@ -12,25 +12,30 @@ $start-laptop: 1001px;
 
 // palette
 $royal:         		#582972;
-$royal-light:   		mix(white, $royal, 50%);
 $flat-gold:     		#f9a025;
+$off-white:					#fafafa;
+$off-black:					#424242;
 
 // in use
-$color-primary:  		$royal;
-$color-accent:   		$flat-gold;
+// grays
 $white:          		#ffffff;
+$gray-light:     		mix($white, $royal, 90%);
+$gray-dark:      		mix($off-black, $royal, 90%);
+$gray: 							mix($gray-light, $gray-dark, 50%);
 $black:          		#231f20;
+// colors
+$primary:						$royal;
+$primary-light:			mix($white, $primary, 50%);
+$primary-dark:			mix($black, $primary, 50%);
+$accent:						$flat-gold;
+// transparent
 $black-trans:				rgba(35, 31, 32, 0.75);
 $nightmare-trans:		rgba(35, 31, 32, 0.98);
 $full-trans:				rgba(35, 31, 32, 0);
 $primary-trans:			rgba(88, 41, 114, 0.9);
 $accent-trans:			rgba(259, 160, 37, 0.9);
-$light-grey:     		mix($white, $royal, 95%);
-$dark-grey:      		mix($black, $royal-light, 45%);
-$color-accent-dark: mix($black, $color-accent, 35%);
-$color-primary-dark:mix($black, $color-primary, 35%);
-$color-accent-light: mix($white, $color-accent, 35%);
-$color-primary-light:mix($white, $color-primary, 35%);
+
+
 
 
 // Fonts
@@ -51,13 +56,11 @@ $font-file-twenty: 'TwentytwelveSlab-Regular';
 @include font-face-ttf($font-path, $font-file-twenty);
 
 // font stacks
-$font-stack-extra-bold: Interstate-Black, sans-serif;
-$font-stack-header: Interstate-BoldCondensed, sans-serif;
-$font-stack-show: TwentytwelveSlab-Regular, sans-serif;
-$font-stack-meta: Interstate-LightCondensed, sans-serif;
-$font-stack-body: Interstate-RegularCondensed, sans-serif;
-$font-stack-pull-quotes: Interstate-BoldCondensed, sans-serif;
-$font-stack-subtitle: Interstate-BoldCondensed, sans-serif;
-$font-stack-show-dates: 'TrendSansOne', sans-serif;
+$int-black: Interstate-Black, sans-serif;
+$int-bold-cond: Interstate-BoldCondensed, sans-serif;
+$int-reg: Interstate-RegularCondensed, sans-serif;
+$int-light: Interstate-LightCondensed, sans-serif;
+$trend: 'TrendSansOne', sans-serif;
+$twenty: TwentytwelveSlab-Regular, sans-serif;
 
-$body-font-size: 16px;
+$body-font-size: 18px;

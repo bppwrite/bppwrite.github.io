@@ -36,7 +36,7 @@
 		-webkit-transform: translateY(0%);
 		transform: translateY(0%);
 		ul:not(.dropdown-menu) {
-			font-family: $font-stack-show-dates;
+			font-family: $trend;
 			list-style: none;
 			padding: 0;
 			margin: 10px;
@@ -68,19 +68,19 @@
 			@include flex-prop-prefixes(flex-direction, column);
 			@include flex-prop-prefixes(flex-wrap, wrap);
 			@include flex-prop-prefixes(justify-content, space-between);
-			font-family: $font-stack-body;
+			font-family: $int-reg;
 			.dropdown-menu-item {
 				a {
-					color: $color-primary-light;
+					color: $primary-light;
 				}
 				a:hover, a:focus {
-					color: $color-accent;
+					color: $accent;
 				}
 			}
 		}
 	}
 	a:hover, a:focus {
-		color: $color-accent;
+		color: $accent;
 	}
 }
 

@@ -1,0 +1,67 @@
+.color-example {
+	padding: 5px;
+  width: 50%;
+  text-indent: 50%;
+  white-space: nowrap;
+  margin: 0 0 15px 0;
+}
+
+.gray-1 {
+	background-color: $white;
+}
+
+.gray-2 {
+	background-color: $gray-light;
+}
+
+.gray-3 {
+	background-color: $gray;
+}
+
+.gray-4 {
+	background-color: $gray-dark;
+}
+
+.gray-5 {
+	background-color: $black;
+}
+
+.color-1 {
+	background-color: $primary-dark;
+}
+
+.color-2 {
+	background-color: $primary;
+}
+
+.color-3 {
+	background-color: $primary-light;
+}
+
+.color-4 {
+	background-color: $accent;
+}
+
+.font-1 {
+	font-family: $int-black;
+}
+
+.font-2 {
+	font-family: $int-bold-cond;
+}
+
+.font-3 {
+	font-family: $int-reg;
+}
+
+.font-4 {
+	font-family: $int-light;
+}
+
+.font-5 {
+	font-family: $trend;
+}
+
+.font-6 {
+	font-family: $twenty;
+}
