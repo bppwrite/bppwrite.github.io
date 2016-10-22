@@ -1,6 +1,7 @@
 {{ partial "head.html" . }}
 {{ partial "nav.html" . }}
 
+<div class="container">
 {{/* current series is the latest */}}
 {{ $currentSeries := (index .Site.Taxonomies.series.TaxonomyArray 0) }}
 
@@ -36,5 +37,6 @@
     {{ end }}
     </ul>
 {{ end }}
+</div>
 
 {{ partial "foot.html" . }}
