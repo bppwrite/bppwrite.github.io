@@ -14,12 +14,4 @@ $(document).ready(function() {
 		slideout.toggle();
 	});
 
-	slideout.on('beforeopen', function() {
-		document.querySelector('.abs').classList.add('abs-open');
-	});
-
-	slideout.on('beforeclose', function() {
-		document.querySelector('.abs').classList.remove('abs-open');
-	});
-
 });

@@ -1,30 +1,3 @@
-<!-- main nav -->
-
-<header id="panel" {{ if .IsHome }}class="home abs"{{ end }}>
-  <div class="container-wide">
-    <div class="site-title">
-      <a href="/"><h1>BPP</h1></a>
-    </div>
-    <div class="menu-container">
-      <ul class="menu">
-          {{- range .Site.Menus.main -}}
-              {{- if eq ( .Pre | plainify ) "hero" -}}
-                  <li class="menu-item">
-                      <a class="" href="{{.URL}}">
-                          <span>{{ .Name }}</span>
-                      </a>
-                  </li>
-              {{- end -}}
-          {{- end -}}
-      </ul>
-      	<a href="#" class="toggle-button"><li class="fa fa-bars" aria-hidden="true"></li></a>
-    </div>
-  </div>
-</header>
-
-
-<!-- main nav end-->
-<!-- mobile nav -->
 <nav id="menu">
   <ul>
     {{ range .Site.Menus.main }}
@@ -51,4 +24,25 @@
     {{end}}
   </ul>
 </nav>
-<!-- mobile nav end -->
+<!-- main nav -->
+<header id="panel" class="{{ if .IsHome }}home abs{{ end }}">
+  <div class="container-wide">
+    <div class="site-title">
+      <a href="/"><h1>BPP</h1></a>
+    </div>
+    <div class="menu-container">
+      <ul class="menu">
+          {{- range .Site.Menus.main -}}
+              {{- if eq ( .Pre | plainify ) "hero" -}}
+                  <li class="menu-item">
+                      <a class="" href="{{.URL}}">
+                          <span>{{ .Name }}</span>
+                      </a>
+                  </li>
+              {{- end -}}
+          {{- end -}}
+      </ul>
+      	<a href="#" class="toggle-button"><li class="fa fa-bars" aria-hidden="true"></li></a>
+    </div>
+  </div>
+</header>
