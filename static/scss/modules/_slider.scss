@@ -59,7 +59,7 @@
 	.slider-nav {
 		position: absolute;
 		width: 100%;
-    height: 100%;
+    height: 100vh;
     top: 0;
     .fa {
       position: absolute;
@@ -75,11 +75,13 @@
       top: 50%;
       bottom: 50%;
       left: 10px;
+			z-index: 2;
     }
     #control-right {
       top: 50%;
       bottom: 50%;
       right: 10px;
+			z-index: 2;
     }
 		#control-down, #control-left, #control-right {
 			cursor: pointer;
