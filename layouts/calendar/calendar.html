@@ -1,0 +1,25 @@
+{{/* current series is the latest */}}
+{{- $currentSeries := (index .Site.Taxonomies.series.Alphabetical.Reverse 0) -}}
+
+{{- partial "head.html" . -}}
+
+{{- partial "nav.html" . -}}
+
+{{ .Content }}
+
+{{/* all current pages in the "show" or "event" section */}}
+{{- range where $currentSeries.Pages.ByDate "Section" "in" (slice "show" "event") -}}
+<div class="shows-card">
+    {{ partial "show/poster.html" . }}
+    <div class="show-info">
+        <h3>
+            <a href="/{{ .Section }}/{{ .Params.series }}/{{ (.Title | urlize) }}">
+                {{ .Title }}
+            </a>
+        </h3>
+        {{ partial "show/dates.html" . }}
+    </div>
+</div>
+{{- end -}}
+
+{{ partial "foot.html" . }}

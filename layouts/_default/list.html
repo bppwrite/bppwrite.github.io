@@ -6,6 +6,8 @@
 
 <h1 id="title">{{ .Title }}</h1>
 
+_default/list.html
+
 {{ $.Scratch.Set "hasSeries" false }}
 {{ range .Data.Pages }}
     {{ if .Params.series }}

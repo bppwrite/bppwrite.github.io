@@ -93,7 +93,7 @@ title = "Bloomington Playwrights Project"
     weight = 430
 [[menu.main]]
     name = "Woodward/Newman Drama Award"
-    url = "/playwrights/#woodward-newman-drama"
+    url = "/playwrights/woodward-newman-drama"
     parent = "playwrights"
     weight = 440
 [[menu.main]]
