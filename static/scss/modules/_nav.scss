@@ -1,15 +1,16 @@
 // ---- Navigation ----
 
 
-
+// Default/general header styles
 header {
-	position: absolute;
+	background: $black;
+	position: static;
 	width: 100%;
 	z-index: 1;
   a {
     color: $white;
 		h1 {
-			font-family: $font-stack-show;
+			font-family: $twenty;
 		}
   }
 
@@ -25,10 +26,11 @@ header {
 	}
 	.menu {
 		display: none;
-	  font-family: $font-stack-show-dates;
+	  font-family: $trend;
 		font-size: (13 / 16) * 1em;
 	  list-style: none;
 		padding-left: 0;
+		margin: 0;
 	}
 	.menu-item {
 		float: left;
@@ -52,7 +54,7 @@ header {
 	.dropdown:hover > .dropdown-menu {
 	  display: block;
 	}
-	.menu-icon-open {
+	.toggle-button {
 		font-size: (21 / 18) * 1em;
 		margin-left: 1em;
 	}
@@ -60,12 +62,10 @@ header {
 
 
 
-// nav for index page only
-
-.home-intro {
-	header {
-		bottom: 0;
-	}
+// Ovewrite on home page
+header.home {
+	background: linear-gradient(to bottom, $black-trans, rgba(35, 31, 32, 0));
+	position: absolute;
 }
 
 

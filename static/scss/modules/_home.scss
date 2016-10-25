@@ -4,17 +4,26 @@
 
 // ---- shows  ----
 
-.shows {
-	background-color: $light-grey;
+.shows-section {
+	background-color: $gray-light;
 	padding-bottom: 4em;
-	.flex-container {
+	.upcoming-container {
 		@include flexbox();
 		@include flex-prop-prefixes(justify-content, space-between);
 		@include flex-prop-prefixes(align-items, center);
 		@include flex-prop-prefixes(flex-direction, column);
 		@include flex-prop-prefixes(flex-wrap, wrap);
 
-		.shows-card {
+		figure {
+			margin: 0;
+			width: 50%;
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		.show {
 			@include flexbox();
 			@include flex-prop-prefixes(justify-content, space-around);
 			@include flex-prop-prefixes(align-items, center);
@@ -28,7 +37,7 @@
 				padding: 1.5em;
 				margin-top: 1em;
 				h3 {
-					font-family: $font-stack-show;
+					font-family: $twenty;
 					margin: 0.5em 0 0.25em 0;
 					letter-spacing: 0.05em;
 					text-transform: uppercase;;
@@ -38,35 +47,28 @@
 				}
 			}
 
-			figure {
-				margin: 0;
-				width: 50%;
-				img {
-					width: 100%;
-					height: auto;
-				}
-			}
+
 		}
 
-		.shows-card + .shows-card {
+		.show + .show {
 			margin-top: 2em;
 		}
 
 	}
 
-	.shows-card:nth-child(odd) {
+	.show:nth-child(odd) {
 		.show-info  {
 			@include flex-prop-prefixes(order, 2);
-			background-color: $color-accent;
-			border-color: $color-accent;
+			background-color: $accent;
+			border-color: $accent;
 			h3 a {
-				color: $color-primary;
+				color: $primary;
 			}
 			h3 a:hover {
-				color: $color-primary-dark;
+				color: $primary-dark;
 			}
 			.day {
-				background-color: $color-primary;
+				background-color: $primary;
 			}
 
 		}
@@ -74,11 +76,11 @@
 			@include flex-prop-prefixes(order, 1);
 		}
 	}
-	.shows-card:nth-child(even) {
+	.show:nth-child(even) {
 		.show-info  {
 			@include flex-prop-prefixes(order, 2);
-			background-color: $color-primary;
-			border-color: $color-primary;
+			background-color: $primary;
+			border-color: $primary;
 		}
 		figure {
 			@include flex-prop-prefixes(order, 1);
@@ -87,48 +89,29 @@
 
 }
 
-
-
-
-// ---- image sequence  ----
-.img-sequence {
-	color: $white;
-	margin: 0 0 3em 0;
-	.short {
-		height: 375px;
-		margin-top: 20px;
+.show-dates {
+	.days {
+		margin: 0.5em 0 0.5em 0;
+		@include flexbox();
+		@include flex-prop-prefixes(justify-content, flex-start);
+		@include flex-prop-prefixes(align-items, flex-start);
 	}
-	.long {
-		height: 375px;
-		margin-top: 20px;
-	}
-	.volunteer {
-		@extend .short;
-		background-image: url(../img/tickets-fill.jpg);
-		background-position: center center;
-		background-size: cover;
-		position: relative;
-	}
-	.education {
-		@extend .short;
-		background-image: url(../img/education-fill.jpg);
-		background-position: center center;
-		background-size: cover;
-		position: relative;
-	}
-	.donate {
-		@extend .long;
-		background-image: url(../img/support-fill.jpg);
-		background-position: center center;
-		background-size: cover;
-		position: relative;
-	}
-	h2 {
-		font-family: $font-stack-show;
-		margin: 0;
-		padding-top: 250px;
+	.day {
+		background-color: $accent;
+		border-radius: 50%;
+		color: $white;
+		font-size: (15 / 18) * 1em;
+		height: 33px;
+		padding-top: 7.5px;
 		text-align: center;
+		width: 33px;
+	}
+	.day + .day {
+		margin-left: 10px;
+	}
+	.months {
 		text-transform: uppercase;
+		margin: 0;
 	}
 }
 
@@ -137,9 +120,8 @@
 // ---- call to action  ----
 
 .subscribe {
-	background-color: $color-primary;
+	background-color: $primary;
 	color: $white;
-	margin-top: 3.5em;
 	padding: 1em 0 1em 0;
 	text-align: center;
 }
@@ -152,9 +134,9 @@
 
 	// ---- shows  ----
 
-	.shows {
+	.shows-section {
 
-		.shows-card:nth-child(odd) {
+		.show:nth-child(odd) {
 			.show-info  {
 				@include flex-prop-prefixes(order, 2);
 				margin-left: 1.5em;
@@ -163,7 +145,7 @@
 				@include flex-prop-prefixes(order, 1);
 			}
 		}
-		.shows-card:nth-child(even) {
+		.show:nth-child(even) {
 			.show-info  {
 				@include flex-prop-prefixes(order, 1);
 				margin-right: 1.5em;
@@ -173,8 +155,8 @@
 			}
 		}
 
-		.flex-container {
-			.shows-card {
+		.upcoming-container {
+			.show {
 				@include flex-prop-prefixes(flex-direction, row);
 				@include flex-prop-prefixes(justify-content, center);
 			}
@@ -192,9 +174,9 @@
 
 	// ---- shows  ----
 
-	.shows {
-		.flex-container {
-			.shows-card {
+	.shows-section {
+		.upcoming-container {
+			.show {
 				figure {
 					width: 33.333%;
 				}

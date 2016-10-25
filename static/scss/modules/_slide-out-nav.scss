@@ -1,0 +1,70 @@
+// ---- Mobile Nav ----
+
+// slideout plugin
+.slideout-menu {
+  position: fixed;
+  left: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  width: 256px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: none;
+}
+
+.slideout-panel {
+	background-color: $white;
+  position:relative;
+  z-index: 1;
+  will-change: transform;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+  display: block;
+}
+
+.abs {
+  backface-visibility: hidden;
+  transition: transform 400ms ease-in;
+	right: 0;
+}
+
+.abs-open {
+  transform: translate3d(256px, 0px, 0px);
+}
+
+nav#menu {
+	background-color: $black;
+	font-size: (15 / 18) * 1em;
+	ul {
+		list-style: none;
+		li {
+			a {
+				color: $gray;
+				font-family: $trend;
+			}
+		}
+		li.menu-item {
+			padding-top: 1em;
+		}
+	}
+
+	ul.dropdown-menu {
+		padding-left: 0;
+		li {
+			padding-top: 0.25em;
+			a {
+				color: $gray-light;
+				font-family: $int-reg;
+			}
+		}
+	}
+}

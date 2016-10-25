@@ -28,46 +28,46 @@ title = "Bloomington Playwrights Project"
 
 [[menu.main]]
     name = "Shows" # - Plays and events listed chronologically – like ATF’s site is fine – denoting which is a show and which is a special event - Sub-pages for each show
-    url = "/show"
+    url = "/calendar/"
     pre = "hero" # hack -- using pre to indicate that this is a hero menu item
     weight = 100
 [[menu.main]]
     name = "Tickets"
-    url = "/tickets"
+    url = "/tickets/"
     weight = 200
 [[menu.main]]
     name = "Education" #(page and link for each of the following)
-    url = "/education"
+    url = "/education/"
     identifier = "education"
     weight = 300
 [[menu.main]]
     name = "Broadway Kids"
-    url = "/education/broadway-kids"
+    url = "/education/broadway-kids/"
     parent = "education"
     weight = 310
 [[menu.main]]
     name = "DramatiCATS"
-    url = "/education/dramaticats"
+    url = "/education/dramaticats/"
     parent = "education"
     weight = 320
 [[menu.main]]
     name = "Laugh Factory"
-    url = "/education/laugh-factory"
+    url = "/education/laugh-factory/"
     parent = "education"
     weight = 330
 [[menu.main]]
     name = "Musical Theater Camp"
-    url = "/education/musical-theater-camp"
+    url = "/education/musical-theater-camp/"
     parent = "education"
     weight = 340
 [[menu.main]]
     name = "After School Edventures"
-    url = "/education/after-school-edventures"
+    url = "/education/after-school-edventures/"
     parent = "education"
     weight = 350
 [[menu.main]]
     name = "MiniPlay Playwriting Contest"
-    url = "/education/miniplay-playwriting-contest"
+    url = "/education/miniplay-playwriting-contest/"
     parent = "education"
     weight = 360
 [[menu.main]]
@@ -88,21 +88,21 @@ title = "Bloomington Playwrights Project"
     weight = 420
 [[menu.main]]
     name = "Reva Shiner Comedy Award"
-    url = "/playwrights/reva-shiner-comedy"
+    url = "/playwrights/reva-shiner-comedy/"
     parent = "playwrights"
     weight = 430
 [[menu.main]]
     name = "Woodward/Newman Drama Award"
-    url = "/playwrights/woodward-newman-drama"
+    url = "/playwrights/woodward-newman-drama/"
     parent = "playwrights"
     weight = 440
 [[menu.main]]
     name = "Photo Gallery"
-    url = "/photo-gallery"
+    url = "/photo-gallery/"
     weight = 500
 [[menu.main]]
     name = "Get Involved"
-    url = "/get-involved"
+    url = "/get-involved/"
     identifier = "get-involved"
     pre = "hero" # hack -- using pre to indicate that this is a hero menu item
     weight = 600
@@ -123,7 +123,7 @@ title = "Bloomington Playwrights Project"
     weight = 630
 [[menu.main]]
     name = "Support"
-    url = "/support"
+    url = "/support/"
     identifier = "support"
     weight = 700
 # [[menu.main]]
@@ -138,7 +138,7 @@ title = "Bloomington Playwrights Project"
 #     weight = 720
 [[menu.main]]
     name = "Facility Rentals"
-    url = "/facility-rentals"
+    url = "/facility-rentals/"
     weight = 800
 [[menu.main]]
     name = "About Us"

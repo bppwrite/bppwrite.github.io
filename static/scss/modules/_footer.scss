@@ -2,193 +2,126 @@
 
 footer {
   background-color: $black;
-  color: $light-grey;
-}
+  color: $gray-light;
 
-// ---- sponsors ----
-.sponsor {
-  background-color: $light-grey;
-	color: $dark-grey;
-  padding-top: 0.25em;
-  padding-bottom: 0.25em;
-	text-align: center;
-	h2 {
-		margin: 1em 0 0 0;
-	}
-	h5 {
-		margin: 1.25em 0 1.25em 0;
-	}
-	$filter-factor: 95%;
-	.sponsor-lead {
-	  img {
-	    height: 75px;
-	    width: auto;
-	    filter: grayscale($filter-factor);
-	    -webkit-filter: grayscale($filter-factor);
-	  }
-	}
-	.sponsor-season {
-		ul {
-	  	@include flexbox();
-	  	@include flex-prop-prefixes(flex-direction, row);
-			@include flex-prop-prefixes(align-content, space-between);
-	  	@include flex-prop-prefixes(justify-content, space-around);
-			@include flex-prop-prefixes(flex-wrap, wrap);
-	  	list-style: none;
-	  	padding-bottom: 2em;
-		}
-		li {
-			margin: 5px;
-		}
-		img {
-			height: 60px;
-			width: auto;
-			filter: grayscale($filter-factor);
-			-webkit-filter: grayscale($filter-factor);
-		}
-	}
-}
 
-// ---- deep foot ----
 
-.footer-traditional {
-	.address {
-		padding-bottom: 1em;
+	// ---- sponsors ----
+
+	.sponsor {
+	  background-color: $gray-light;
+		color: $gray-dark;
+	  padding-top: 0.25em;
+	  padding-bottom: 0.25em;
 		text-align: center;
-	}
-	.address p {
-		margin: 0;
-		padding: 0;
-	}
-	.social-icons {
-		margin: 0.25em 0 0 0;
-		text-align: center;
-	}
-	.social-icons a {
-		color: $light-grey;
-	}
-
-	.title {
-		text-align: center;
-		// only works in chrome, switch to svg text or abandon
 		h2 {
-			color: $color-primary;
-			background: -webkit-linear-gradient(330deg, $color-primary 0%, $color-accent 100%);
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-			font-family: $font-stack-extra-bold;
-			font-size: ((16 * 2) / 16) * 1em;
+			margin: 1em 0 0 0;
+		}
+		h5 {
+			margin: 1.25em 0 1.25em 0;
+		}
+		$filter-factor: 95%;
+		.sponsor-lead {
+		  img {
+		    height: 75px;
+		    width: auto;
+		    filter: grayscale($filter-factor);
+		    -webkit-filter: grayscale($filter-factor);
+		  }
+		}
+		.sponsor-season {
+			ul {
+		  	@include flexbox();
+		  	@include flex-prop-prefixes(flex-direction, row);
+				@include flex-prop-prefixes(align-content, space-between);
+		  	@include flex-prop-prefixes(justify-content, space-around);
+				@include flex-prop-prefixes(flex-wrap, wrap);
+		  	list-style: none;
+		  	padding-bottom: 2em;
+			}
+			li {
+				margin: 5px;
+			}
+			img {
+				height: 60px;
+				width: auto;
+				filter: grayscale($filter-factor);
+				-webkit-filter: grayscale($filter-factor);
+			}
 		}
 	}
-	.misc {
+
+
+
+	// ---- traditional footer ----
+
+	.traditional {
 		text-align: center;
+
+
+
+		// address
+		.address {
+			padding-top: 0.25em;
+		}
+		.address p {
+			margin: 0;
+			padding: 0;
+		}
+
+
+
+		// social icons
+		.social-icons {
+			margin: 0.25em 0 0 0;
+			padding: 0;
+		}
+		.social-icons a {
+			color: $gray-light;
+		}
+
 	}
-	.misc a {
-		color: $light-grey;
-	}
-
-
-
-	// ---- footer menu ----
-
-	.footer-menu {
-	  @include flexbox();
-	  @include flex-prop-prefixes(flex-wrap, wrap);
-	  @include flex-prop-prefixes(justify-content, space-between);
-	  @include flex-prop-prefixes(align-items, center);
-		@include flex-prop-prefixes(flex-direction, column);
-	  font-family: $font-stack-show-dates;
-		font-size: (13 / 16) * 1em;
-	  list-style: none;
-		margin-top: 0;
-		margin-bottom: 0;
-	  text-align: center;
-		padding-left: 0;
-		a {
-			color: $light-grey;
-		}
-		.menu-item {
-			@include flexbox();
-			@include flex-prop-prefixes(flex-direction, row);
-			@include flex-prop-prefixes(align-items, baseline);
-		}
-
-		.dropdown-menu {
-			@include flexbox();
-			@include flex-prop-prefixes(flex-direction, row);
-			@include flex-prop-prefixes(justify-content, center);
-			list-style: none;
-			padding: 0.5em 0 0 0;
-		}
-
-		.dropdown-menu-item {
-			padding-left: (5 / 16) * 1em;
-		}
-	}
-
 }
+
+
 
 // ---- media queries ----
+
 @media (min-width: $start-tablet) {
-	.footer-traditional {
-		.footer-menu {
-			@include flex-prop-prefixes(justify-content, center);
-			@include flex-prop-prefixes(align-items, flex-start);
-			@include flex-prop-prefixes(flex-direction, row);
-			list-style: none;
-			text-align: center;
-			.menu-item {
-				@include flex-prop-prefixes(flex-direction, column);
-				@include flex-prop-prefixes(align-items, center);
+	footer {
+
+
+
+		// traditional footer
+		.traditional {
+
+			// container
+			.container {
+				padding-top: 2em;
+				padding-bottom: 1.5em;
 			}
-			.menu-item + .menu-item {
-				padding-left: 2em;
+
+
+			// two p's and social icons
+			.left-collection {
+				text-align: left;
 			}
-			.dropdown-menu-item {
-				padding-left: 0;
+
+			.left-collection p {
+				margin-top: 0.25em;
+				margin-bottom: 0;
 			}
-		}
-		.footer-menu, .social-icons {
-			margin-top: (16 / 16) * 1em;
-			margin-bottom: (16 / 16) * 1em;
-		}
-		.footer-menu.misc {
-			@include flex-prop-prefixes(justify-content, center);
-			@include flex-prop-prefixes(align-items, flex-end);
-		}
-		.title {
-			h2 {
-				font-size: ((16 * 3) / 16) * 1em;
+
+
+
+			// address
+			.address {
+				text-align: right;
 			}
 		}
 	}
-
 }
 
 @media (min-width: $start-laptop) {
-	.footer-traditional {
-		.address {
-			text-align: left;
-		}
-		.misc {
-			text-align: right;
-		}
-		.social-icons {
-			text-align: right;
-		}
-		.title {
-			h2 {
-				font-size: ((16 * 4) / 16) * 1em;
-			}
-		}
-		.footer-menu {
-			@include flex-prop-prefixes(justify-content, flex-start);
-		}
-		.footer-menu.misc {
-			@include flex-prop-prefixes(justify-content, flex-end);
-			@include flex-prop-prefixes(align-items, flex-end);
-			height: 63px; // strategy will need to change
-		}
-	}
 
 }

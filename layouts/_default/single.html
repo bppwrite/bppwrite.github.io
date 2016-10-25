@@ -1,10 +1,12 @@
 {{ partial "head.html" . }}
+{{ partial "nav_hidden.html" . }}
+<div id="panel">
 {{ partial "nav.html" . }}
 
-{{ .TableOfContents }}
-
-_default/single.html
-
-{{ .Content }}
+	<div class="container">
+	{{ .TableOfContents }}
+	{{ .Content }}
+	</div>
 
 {{ partial "foot.html" . }}
+</div>

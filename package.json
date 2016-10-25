@@ -4,7 +4,7 @@
   "description": "the website of the bloomington playwrights project",
   "main": "index.js",
   "scripts": {
-		"autoprefixer": "postcss -u autoprefixer -r static/css/main.css",
+    "autoprefixer": "postcss -u autoprefixer -r static/css/main.css",
     "build:all": "npm run build:css && npm run build:js",
     "build:css": "npm run scss && npm run autoprefixer",
     "build:js": "npm run tower && npm run uglify",
@@ -33,5 +33,8 @@
     "node-sass": "^3.8.0",
     "postcss-cli": "^2.6.0",
     "uglify-js": "^2.7.3"
+  },
+  "dependencies": {
+    "slideout": "^0.1.12"
   }
 }

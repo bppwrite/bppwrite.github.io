@@ -149,6 +149,8 @@ $(document).ready(function() {
 
 	})();
 
-	slider.init();
+	if ($('header').hasClass('home')) {
+		slider.init();
+	}
 
 });

@@ -1,4 +1,6 @@
 {{ partial "head.html" . }}
+{{ partial "nav_hidden.html" . }}
+<div id="panel">
 {{ partial "nav.html" . }}
 
 <h2>Taxonomy term: {{ .Title }}</h2>
@@ -16,3 +18,4 @@
 </ul>
 
 {{ partial "foot.html" . }}
+</div>

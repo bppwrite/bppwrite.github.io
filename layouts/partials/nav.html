@@ -1,5 +1,5 @@
-<!-- main nav -->
-<header>
+<!-- three item nav -->
+<header class="{{ if .IsHome }}home abs{{ end }}">
   <div class="container-wide">
     <div class="site-title">
       <a href="/"><h1>BPP</h1></a>
@@ -16,39 +16,7 @@
               {{- end -}}
           {{- end -}}
       </ul>
-      <a href="#" class="menu-icon-open" id="menu-icon-open"><li class="fa fa-bars" aria-hidden="true"></li></a>
+      	<a href="#" class="toggle-button"><li class="fa fa-bars" aria-hidden="true"></li></a>
     </div>
   </div>
 </header>
-<!-- main nav end-->
-<!-- mobile nav -->
-<div class="overlay overlay-screen">
-	<a href="#" class="menu-icon-close" id="menu-icon-close"><span class="fa fa-times" aria-hidden="true"></span></a>
-	<nav>
-    <ul>
-      {{ range .Site.Menus.main }}
-        {{ if .HasChildren }}
-          <li class="menu-item dropdown{{if $.HasMenuCurrent "main" . }} active{{end}}">
-            <a href="{{ .URL }}" class="">
-              <span>{{ .Name }}</span>
-            </a>
-            <ul class="dropdown-menu">
-              {{ range .Children }}
-              <li class="dropdown-menu-item{{if $.IsMenuCurrent "main" . }} active{{end}}">
-                <a href="{{.URL}}"> {{ .Name }} </a>
-              </li>
-              {{ end }}
-            </ul>
-          </li>
-        {{else}}
-          <li class="menu-item{{if $.IsMenuCurrent "main" . }} active{{end}}">
-            <a class="" href="{{.URL}}">
-              <span>{{ .Name }}</span>
-            </a>
-          </li>
-        {{end}}
-      {{end}}
-    </ul>
-	</nav>
-</div>
-<!-- mobile nav end -->
