@@ -16,18 +16,28 @@ $flat-gold:     		#f9a025;
 $off-white:					#fafafa;
 $off-black:					#424242;
 
+$material-primary-dark:   #7B1FA2;
+$material-primary:   	 		#9C27B0;
+$material-primary-light:  #E1BEE7;
+$material-white:          #FFFFFF;
+$material-accent:         #FFC107;
+$material-primary-text:   #212121;
+$material-secondary-text: #757575;
+$material-divider:        #BDBDBD;
+
 // in use
 // grays
 $white:          		#ffffff;
-$gray-light:     		mix($white, $royal, 90%);
-$gray-dark:      		mix($off-black, $royal, 90%);
+$gray-light:     		#e9eaeb;
+$gray-dark:      		#31353C;
 $gray: 							mix($gray-light, $gray-dark, 50%);
 $black:          		#231f20;
 // colors
-$primary:						$royal;
-$primary-light:			mix($white, $primary, 50%);
-$primary-dark:			mix($black, $primary, 50%);
-$accent:						$flat-gold;
+$primary:						$material-primary;
+$primary-light:			$material-primary-light;
+$primary-dark:			$material-primary-dark;
+$accent:						$material-accent;
+$accent-dark:				#FFA000;
 // transparent
 $black-trans:				rgba(35, 31, 32, 0.75);
 $nightmare-trans:		rgba(35, 31, 32, 0.98);

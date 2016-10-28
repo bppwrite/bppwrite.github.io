@@ -48,21 +48,23 @@ nav#menu {
 		list-style: none;
 		li {
 			a {
-				color: $gray;
+				color: $gray-light;
 				font-family: $trend;
 			}
 		}
 		li.menu-item {
-			padding-top: 1em;
+			padding-top: 0.5em;
+			padding-bottom: 0.5em;
 		}
 	}
 
 	ul.dropdown-menu {
-		padding-left: 0;
+		padding-left: 0.5em;
 		li {
-			padding-top: 0.25em;
+			padding-top: 0.333em;
+			padding-bottom: 0.333em;
 			a {
-				color: $gray-light;
+				color: $gray;
 				font-family: $int-reg;
 			}
 		}
