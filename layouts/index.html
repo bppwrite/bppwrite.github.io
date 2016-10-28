@@ -72,31 +72,33 @@
 	          <span class="fa fa-chevron-right" id="control-right" aria-hidden="true"></span>
 	      </nav>
 	  </div>
+	<!-- shows -->
+	<div class="shows-section">
+	  <div class="container">
+	      <div class="row">
+	          <div class="col-sm-12">
+	              <h2 class="section-title">Upcoming Shows {{ $currentSeries.Name }}</h2>
+	          </div>
+	      </div>
+	  </div>
+	    <div class="upcoming-container">
+	        {{/* all current pages in the "show" section */}}
+	        {{- range where $currentSeries.Pages.ByDate "Section" "show" -}}
+	        <div class="show">
+	            {{ partial "show/poster.html" . }}
+	            <div class="show-info">
+	                <h3>
+	                    <a href="/show/{{ .Params.series }}/{{ (.Title | urlize) }}">
+	                        {{ .Title }}
+	                    </a>
+	                </h3>
+	                {{ partial "show/dates.html" . }}
+	            </div>
+	        </div>
+	        {{- end -}}
+	    </div>
 	</div>
-    <!-- join us image sequence -->
-    <div class="container">
-        <div class="img-sequence">
-            <div class="row">
-                <div class="col-sm-12 col-md-6 col-lg-6">
-                    <div class="volunteer">
-                        <h2><span class="img-text-background"><a href="/get-involved/#volunteer">Volunteer</a></span></h2>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-6">
-                    <div class="education">
-                        <h2><span class="img-text-background"><a href="/education/">Youth Education Program</a></span></h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-12">
-                    <div class="donate">
-                        <h2><span class="img-text-background"><a href="/support/">Support the BPP`</a></span></h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+	</div>
 	<!-- call-to-action -->
 	<div class="subscribe">
 	    <div class="container">
