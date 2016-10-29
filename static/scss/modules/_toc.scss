@@ -1,0 +1,31 @@
+// ---- Table of Content ----
+.container-toc {
+	background-color: $gray-light;
+	border-radius: 6px;
+	font-size: 89%;
+	margin-top: 37.295px;
+	padding: 0.5em;
+	width: 100%;
+
+	#TableOfContents > ul {
+		margin-top: 0;
+		margin-bottom: 0em;
+	}
+
+
+	h4 {
+		font-style: italic;
+		color: $primary;
+		text-transform: uppercase;
+		font-family: $font-file-twenty;
+		letter-spacing: 0;
+		margin-top: 0.333em;
+	}
+
+}
+
+@media (max-width: $start-tablet) {
+    .container-toc {
+        display: none;
+    }
+	}
