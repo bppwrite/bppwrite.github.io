@@ -26,6 +26,19 @@ p {
 
 // ---- lists ----
 
+blockquote {
+	font-style: italic;
+	border-left: 3px solid $black;
+	padding-left: 1em;
+	margin: 1em 0;
+}
+
+// ---- lists ----
+
+ul {
+	padding-left: 20px;
+}
+
 // ---- Buttons ----
 button {
 	border:none;
@@ -74,9 +87,9 @@ button.button-secondary,
 input[type="submit"].button-secondary,
 input[type="reset"].button-secondary,
 input[type="button"].button-secondary {
-	color: #555;
+	color: $accent;
 	background-color: transparent;
-	border: 1px solid #bbb;
+	border: 1px solid $accent;
 }
 .button.button-secondary:hover,
 button.button-secondary:hover,
@@ -88,8 +101,8 @@ button.button-secondary:focus,
 input[type="submit"].button-secondary:focus,
 input[type="reset"].button-secondary:focus,
 input[type="button"].button-secondary:focus {
-  color: #333;
-  border-color: #888;
+  color: $accent-dark;
+  border-color: $accent-dark;
 	background-color: transparent;
 }
 
@@ -121,5 +134,8 @@ input[type="button"].button-secondary:focus {
 @media (min-width: $start-laptop) {
 	.section-title {
 		margin: 2em 0 2em 0;
+	}
+	ul {
+		padding-left: 30px;
 	}
 }
