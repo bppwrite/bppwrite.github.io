@@ -5,7 +5,8 @@
 	font-size: 89%;
 	margin-top: 37.295px;
 	padding: 0.5em;
-	width: 100%;
+	height: 100%;
+	@include order(1);
 
 	#TableOfContents > ul {
 		margin-top: 0;
@@ -24,8 +25,18 @@
 
 }
 
-@media (max-width: $start-tablet) {
-    .container-toc {
-        display: none;
-    }
+.container-single-content {
+	@include order(2);
+}
+
+@media (min-width: $start-tablet) {
+
+	.container-single-content {
+		@include order(1);
 	}
+
+	.container-toc {
+		@include order(2);
+	}
+
+}

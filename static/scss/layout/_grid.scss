@@ -4,10 +4,20 @@
 }
 
 @for $i from 1 through $column-count {
-  .col-sm-#{$i} {
+  .col-xs-#{$i} {
     width: $i / $column-count * 100%;
     float: left;
     @if $i < $column-count { padding-right: $column-padding; }
+  }
+}
+
+@media (min-width: $start-phablet) {
+  @for $i from 1 through $column-count {
+    .col-sm-#{$i} {
+      width: $i / $column-count * 100%;
+      float: left;
+      @if $i < $column-count { padding-right: $column-padding; }
+    }
   }
 }
 
