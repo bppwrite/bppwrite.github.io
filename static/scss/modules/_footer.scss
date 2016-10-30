@@ -2,31 +2,19 @@
 
 footer {
   background-color: $black;
-  color: $gray-light;
-
-
+  color: $white;
+	text-align: center;
 
 	// ---- sponsors ----
 
 	.sponsor {
-	  background-color: $gray-light;
-		color: $gray-dark;
-	  padding-top: 0.25em;
+	  background-color: $white;
+		color: $black;
 	  padding-bottom: 0.25em;
-		text-align: center;
-		h2 {
-			margin: 1em 0 0 0;
-		}
-		h5 {
-			margin: 1.25em 0 1.25em 0;
-		}
-		$filter-factor: 95%;
 		.sponsor-lead {
 		  img {
 		    height: 75px;
 		    width: auto;
-		    filter: grayscale($filter-factor);
-		    -webkit-filter: grayscale($filter-factor);
 		  }
 		}
 		.sponsor-season {
@@ -43,33 +31,18 @@ footer {
 				margin: 5px;
 			}
 			img {
-				height: 60px;
+				height: 50px;
+				max-width: 100vw;
 				width: auto;
-				filter: grayscale($filter-factor);
-				-webkit-filter: grayscale($filter-factor);
 			}
 		}
 	}
 
-
-
 	// ---- traditional footer ----
 
 	.traditional {
-		text-align: center;
-
-
-
-		// address
-		.address {
-			padding-top: 0.25em;
-		}
-		.address p {
-			margin: 0;
-			padding: 0;
-		}
-
-
+		padding-bottom: 1em;
+		padding-top: 1em;
 
 		// social icons
 		.social-icons {
@@ -77,51 +50,41 @@ footer {
 			padding: 0;
 		}
 		.social-icons a {
-			color: $gray-light;
+			color: $white;
+		}
+
+		p {
+			padding-bottom: 0;
+			margin-bottom: 0;
 		}
 
 	}
 }
 
-
-
 // ---- media queries ----
 
 @media (min-width: $start-tablet) {
 	footer {
-
-
-
-		// traditional footer
-		.traditional {
-
-			// container
-			.container {
-				padding-top: 2em;
-				padding-bottom: 1.5em;
-			}
-
-
-			// two p's and social icons
-			.left-collection {
-				text-align: left;
-			}
-
-			.left-collection p {
-				margin-top: 0.25em;
-				margin-bottom: 0;
-			}
-
-
-
-			// address
-			.address {
-				text-align: right;
+		// sponsors
+		.sponsor {
+			.sponsor-season {
+				img {
+					height: 65px;
+				}
 			}
 		}
 	}
 }
 
 @media (min-width: $start-laptop) {
-
+	footer {
+		// sponsors
+		.sponsor {
+			.sponsor-season {
+				img {
+					height: 75px;
+				}
+			}
+		}
+	}
 }

@@ -17,3 +17,14 @@
 	width: 95%;
 	margin: 0 auto;
 }
+
+.container-flex {
+	@include flexbox();
+	@include flex-prop-prefixes(flex-direction, column);
+}
+
+@media (min-width: $start-tablet) {
+	.container-flex {
+		@include flex-prop-prefixes(flex-direction, row);
+	}
+}

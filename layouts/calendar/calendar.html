@@ -10,7 +10,8 @@
 {{- end -}}
 
 {{- partial "head.html" . -}}
-
+{{- partial "nav_hidden.html" . -}}
+<div id="panel">
 {{- partial "nav.html" . -}}
 
 {{ .Content }}
@@ -20,5 +21,7 @@
     <li>{{ $dict.showtime.time }} - {{ $dict.page.Title }}</li>
 {{- end -}}
 </ul>
+
+</div>
 
 {{ partial "foot.html" . }}

@@ -7,12 +7,17 @@ header {
 	position: static;
 	width: 100%;
 	z-index: 1;
+	height: 3.33em;
   a {
     color: $white;
 		h1 {
 			font-family: $twenty;
+			margin: 0;
 		}
   }
+	div.site-title {
+		margin: 0;
+	}
 
 
 
@@ -22,6 +27,15 @@ header {
 		@include flexbox();
 		@include flex-prop-prefixes(justify-content, space-between);
 		@include flex-prop-prefixes(align-items, center);
+		@include flex-prop-prefixes(align-content, center);
+		@include flex-prop-prefixes(flex-direction, row);
+		height: 100%;
+	}
+	.menu-container {
+		@include flexbox();
+		@include flex-prop-prefixes(justify-content, space-between);
+		@include flex-prop-prefixes(align-items, center);
+		@include flex-prop-prefixes(align-content, center);
 		@include flex-prop-prefixes(flex-direction, row);
 	}
 	.menu {
@@ -37,6 +51,9 @@ header {
 	}
 	.menu-item + .menu-item {
 		padding-left: 2em;
+	}
+	.menu-icon-open {
+		padding-left: 1em;
 	}
 	.dropdown {
 	  position: relative;

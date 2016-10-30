@@ -1,0 +1,42 @@
+// ---- Table of Content ----
+.container-toc {
+	background-color: $gray-light;
+	border-radius: 6px;
+	font-size: 89%;
+	margin-top: 37.295px;
+	padding: 0.5em;
+	height: 100%;
+	@include order(1);
+
+	#TableOfContents > ul {
+		margin-top: 0;
+		margin-bottom: 0em;
+	}
+
+
+	h4 {
+		font-style: italic;
+		color: $primary;
+		text-transform: uppercase;
+		font-family: $font-file-twenty;
+		letter-spacing: 0;
+		margin-top: 0.333em;
+	}
+
+}
+
+.container-single-content {
+	@include order(2);
+}
+
+@media (min-width: $start-tablet) {
+
+	.container-single-content {
+		@include order(1);
+	}
+
+	.container-toc {
+		@include order(2);
+	}
+
+}
