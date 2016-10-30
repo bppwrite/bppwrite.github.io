@@ -2,12 +2,13 @@
 {{- $currentSeries := (index .Site.Taxonomies.series.Alphabetical.Reverse 0) -}}
 
 {{- partial "head.html" . -}}
-
+{{- partial "nav_hidden.html" . -}}
+<div id="panel">
 {{- partial "nav.html" . -}}
 
 {{ .Content }}
 
-<div class="panel">
+
 
     <div class="shows-section">
 
