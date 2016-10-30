@@ -72,7 +72,33 @@
 	          <span class="fa fa-chevron-right" id="control-right" aria-hidden="true"></span>
 	      </nav>
 	  </div>
+	<!-- shows -->
+	<!-- <div class="shows-section">
+	  <div class="container">
+	      <div class="row">
+	          <div class="col-sm-12">
+	              <h2 class="section-title">Upcoming Shows {{ $currentSeries.Name }}</h2>
+	          </div>
+	      </div>
+	  </div>
+	    <div class="upcoming-container">
+	        {{/* all current pages in the "show" section */}}
+	        {{- range where $currentSeries.Pages.ByDate "Section" "show" -}}
+	        <div class="show">
+	            {{ partial "show/poster.html" . }}
+	            <div class="show-info">
+	                <h3>
+	                    <a href="/show/{{ .Params.series }}/{{ (.Title | urlize) }}">
+	                        {{ .Title }}
+	                    </a>
+	                </h3>
+	                {{ partial "show/dates.html" . }}
+	            </div>
+	        </div>
+	        {{- end -}}
+	    </div>
 	</div>
+	</div> -->
 	<!-- call-to-action -->
 	<div class="subscribe">
 	    <div class="container">

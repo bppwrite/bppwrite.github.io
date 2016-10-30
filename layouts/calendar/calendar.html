@@ -1,6 +1,14 @@
 {{/* current series is the latest */}}
 {{- $currentSeries := (index .Site.Taxonomies.series.Alphabetical.Reverse 0) -}}
 
+{{/* load scratch with all items with showtimes */}}
+{{/* one record for each showtime keyed on showtime */}}
+{{- range $page := where $currentSeries.Pages.ByDate "Section" "in" (slice "show" "event") -}}
+    {{- range .Params.showtimes -}}
+        {{- $.Scratch.SetInMap "calendar" (.time.Unix | string) (dict "showtime" . "page" $page) -}}
+    {{- end -}}
+{{- end -}}
+
 {{- partial "head.html" . -}}
 {{- partial "nav_hidden.html" . -}}
 <div id="panel">
@@ -27,6 +35,12 @@
 		</div>
 		{{- end -}}
 </div>
+
+<ul>
+{{- range $weight, $dict := ($.Scratch.GetSortedMapValues "calendar") -}}
+    <li>{{ $dict.showtime.time }} - {{ $dict.page.Title }}</li>
+{{- end -}}
+</ul>
 
 </div>
 
