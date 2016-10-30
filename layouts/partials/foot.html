@@ -1,6 +1,8 @@
 <footer>
 <!-- sponsors -->
+
 <div class="sponsor">
+	<div class="horizontal-line"></div>
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
@@ -8,7 +10,7 @@
 			</div>
 		</div>
 			<div class="sponsor-lead">
-					<h5>Lead Sponsor</h5>
+					<h3>Lead Sponsor</h3>
 
 					{{ range where (where .Site.Pages "Section" "sponsor") ".Params.is_lead" "==" true }}
 							<p>
@@ -19,7 +21,7 @@
 					{{ end }}
 			</div>
 			<div class="sponsor-season">
-					<h5>Season Sponsors</h5>
+					<h3>Season Sponsors</h3>
 					<ul>
 							{{ range where (where .Site.Pages "Section" "sponsor") ".Params.is_lead" "!=" true }}
 									<li>
