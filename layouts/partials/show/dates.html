@@ -23,14 +23,14 @@
 {{- end -}}
 
 <div class="show-dates">
-	<h6 class="months">
+	<h3 class="months">
 	    {{ delimit ($.Scratch.Get "months") ", " " & " }}
-	</h6>
-	<h6 class="days">
+	</h3>
+	<h4 class="days">
 	    {{- range $i, $showtime := .Params.showtimes -}}
             <a href="{{ $showtime.tickets }}" class="day">
 	            <span>{{ dateFormat "2" $showtime.time }}</span>
             </a>
 	    {{ end }}
-	</h6>
+	</h4>
 </div>

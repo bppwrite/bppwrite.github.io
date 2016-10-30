@@ -7,31 +7,27 @@
 {{- partial "nav.html" . -}}
 
 {{ .Content }}
+<div class="container">
+	<h1>Upcoming Shows and Events</h1>
+		{{/* all current pages in the "show" or "event" section */}}
+		{{- range where $currentSeries.Pages.ByDate "Section" "in" (slice "show" "event") -}}
+		<div class="show-card container-flex">
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+				{{ partial "show/poster.html" . }}
+			</div>
+				<div class="show-info col-xs-12 col-sm-12 col-md-8 col-lg-8">
+						<h2>
+								<a href="/{{ .Section }}/{{ .Params.series }}/{{ (.Title | urlize) }}">
+										{{ .Title }}
+								</a>
+						</h2>
+						<p>SEE IT LIVE<p>
+						{{ partial "show/dates.html" . }}
+				</div>
+		</div>
+		{{- end -}}
+</div>
 
-
-
-    <div class="shows-section">
-
-        <div class="upcoming-container">
-
-            {{/* all current pages in the "show" or "event" section */}}
-            {{- range where $currentSeries.Pages.ByDate "Section" "in" (slice "show" "event") -}}
-            <div class="shows-card">
-                {{ partial "show/poster.html" . }}
-                <div class="show-info">
-                    <h3>
-                        <a href="/{{ .Section }}/{{ .Params.series }}/{{ (.Title | urlize) }}">
-                            {{ .Title }}
-                        </a>
-                    </h3>
-                    {{ partial "show/dates.html" . }}
-                </div>
-            </div>
-            {{- end -}}
-
-        </div>
-
-    </div>
 </div>
 
 {{ partial "foot.html" . }}

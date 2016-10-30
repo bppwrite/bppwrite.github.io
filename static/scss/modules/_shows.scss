@@ -1,56 +1,66 @@
-// ---- Shows ----
+// --- Upcoming/Calendar Page ---
 
-.show-title {
-  font-family: $twenty;
-  text-transform: uppercase;
-	margin: 20px 0 0.75em 0;
+// -- Generic Show Poster Design ---
+figure.poster {
+	img {
+		width: 100%;
+		height: auto;
+	}
 }
 
-.showtimes-dates {
-  font-family: $trend;
+.show-info {
+	h2 {
+		font-family: $twenty;
+		text-transform: uppercase;
+		a {
+			color: $black;
+		}
+	}
+	p {
+		font-family: $trend;
+		letter-spacing: -.08rem;
+		margin: 0;
+		text-transform: capitalize;
+	}
 }
 
-.show-month {
+.days {
+	margin: 0.5em 0 0.5em 0;
+	@include flexbox();
+	@include flex-prop-prefixes(justify-content, flex-start);
+	@include flex-prop-prefixes(align-items, flex-start);
+	@include flex-prop-prefixes(flex-wrap, wrap);
+}
+.day {
+	background-color: $accent;
+	border-radius: 50%;
+	color: $white;
+	font-size: 18px;
+	height: 33px;
+	padding-top: 5.5px;
+	text-align: center;
+	width: 33px;
+}
+.day + .day {
+	margin-left: 8px;
+}
+.months {
 	font-family: $trend;
-	margin: 0;
+	letter-spacing: 0;
 	text-transform: uppercase;
-}
-
-.show-see {
-	text-transform: uppercase;
-	margin: 1.25em 0 0 0;
-}
-
-.show-meta {
-	font-family: $int-bold-cond;
 	margin: 0;
+	text-shadow: 1.5px 1.5px $day-trans;
 }
 
-.show-meta-container {
-	margin: 0 0 0.75em 0;
-}
 
-.show-subtitle {
-	font-family: $int-light;
-	margin: 0 0 0.75em 0;
-}
-
-.show-poster {
-	width: 100%;
-	height: auto;
-}
-
-.show-data {
-	padding: 0 2.5% 0 2.5%;
-}
+// ---- media queries  ----
 
 @media (min-width: $start-tablet) {
-  .show-data {
-		padding: 1em 1% 0 1%;
-	}
+
 }
+
 @media (min-width: $start-laptop) {
-  .show-data {
-		padding: 2em 5% 0 5%;
-	}
+
 }
+
+// -- Show Page ---
