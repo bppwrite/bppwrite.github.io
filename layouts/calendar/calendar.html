@@ -15,7 +15,8 @@
 {{- partial "nav.html" . -}}
 
 {{ .Content }}
-<div class="container">
+
+<!-- <div class="container">
 	<h1>Upcoming Shows and Events</h1>
 		{{/* all current pages in the "show" or "event" section */}}
 		{{- range where $currentSeries.Pages.ByDate "Section" "in" (slice "show" "event") -}}
@@ -34,10 +35,19 @@
 				</div>
 		</div>
 		{{- end -}}
-</div>
+</div> -->
 
 <ul>
+
+{{- $.Scratch.Set "months" (slice) -}}
 {{- range $weight, $dict := ($.Scratch.GetSortedMapValues "calendar") -}}
+    {{- $.Scratch.Set "month" (dateFormat "January 2006" $dict.showtime.time) -}}
+    {{- if not (in ($.Scratch.Get "months") ($.Scratch.Get "month")) -}}
+        {{- $.Scratch.Add "months" ($.Scratch.Get "month") -}}
+        <h2>
+            {{ $.Scratch.Get "month" }}
+        </h2>
+    {{- end -}}
     <li>{{ $dict.showtime.time }} - {{ $dict.page.Title }}</li>
 {{- end -}}
 </ul>

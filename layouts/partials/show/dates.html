@@ -3,13 +3,24 @@
 {{/* show ends on the last date in the showtimes array */}}
 {{- $end := (index .Params.showtimes (sub (len .Params.showtimes) 1) ).time -}}
 
+{{/* start out with a standard month format */}}
 {{- $.Scratch.Set "monthFormat" "January" -}}
+{{/* if the season has ended, note the year */}}
 {{- if lt $end.Unix .Now.Unix -}}
     {{- $.Scratch.Set "monthFormat" "January 2006" -}}
 {{- end -}}
 {{- $monthFormat := ($.Scratch.Get "monthFormat") -}}
 
+{{/*
+    start an array in Scratch called "months"
+    containing one entry for each month represented
+    in the showtimes
+*/}}
+{{/* start with the month of the start date */}}
 {{- $.Scratch.Set "months" (slice (dateFormat $monthFormat $start)) -}}
+{{/*
+    for all showtimes, add the month to the array if it's not already there
+*/}}
 {{- range $index, $showtime := .Params.showtimes -}}
     {{- $.Scratch.Set "hasMonth" false -}}
     {{- range $i, $month := ($.Scratch.Get "months") -}}
@@ -18,6 +29,9 @@
         {{- end -}}
     {{- end -}}
     {{- if eq ($.Scratch.Get "hasMonth") false -}}
+        {{/*
+            this month isn't in the array yet, so add it
+        */}}
         {{- $.Scratch.Add "months" (dateFormat $monthFormat $showtime.time) -}}
     {{- end -}}
 {{- end -}}
