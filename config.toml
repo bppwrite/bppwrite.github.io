@@ -157,7 +157,7 @@ title = "Bloomington Playwrights Project"
     weight = 920
 [[menu.main]]
     name = "Director's Circle"
-    url = "/about/#directors-circle"
+    url = "/about/#director-s-circle"
     parent = "about"
     weight = 930
 [[menu.main]]
