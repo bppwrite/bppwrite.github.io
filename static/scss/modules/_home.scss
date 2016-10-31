@@ -2,11 +2,14 @@
 
 // ---- call to action  ----
 
+
 .subscribe {
-	background-color: $primary-dark;
 	color: $white;
+	background-color: $primary;
 	padding: 1em 0 1em 0;
 	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 2em;
 }
 
 // ---- image sequence  ----
