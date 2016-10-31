@@ -8,3 +8,45 @@
 	padding: 1em 0 1em 0;
 	text-align: center;
 }
+
+// ---- image sequence  ----
+.img-sequence {
+	margin-top: 36px;
+	margin-bottom: 36px;
+	.volunteer, .education, .donate {
+		height: 375px;
+	}
+	.volunteer {
+		background-image: url(../img/tickets-fill.jpg);
+		background-position: center center;
+		background-size: cover;
+	}
+	.education {
+		background-image: url(../img/education-fill.jpg);
+		background-position: center center;
+		background-size: cover;
+		margin-top: $column-padding;
+	}
+	.donate {
+		background-image: url(../img/support-fill.jpg);
+		background-position: center center;
+		background-size: cover;
+		margin-top: $column-padding;
+	}
+	h2 {
+		margin: 0;
+		padding-top: 250px;
+		text-align: center;
+	}
+}
+
+// ---- media queries  ----
+@media (min-width: $start-tablet) {
+
+	.img-sequence {
+		.education {
+			margin-top: 0;
+		}
+	}
+
+}

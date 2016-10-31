@@ -112,12 +112,15 @@ input[type="button"].button-secondary:focus {
 .img-text-background {
 	background-color: $black-trans;
 	padding: (4/16) * 1em;
-    em {
-        color: $accent;
-    	font-family: $twenty;
-    	text-transform: uppercase;
-        font-style: normal;
-    }
+	a {
+		color: $white;
+	}
+  em {
+      color: $accent;
+  	font-family: $twenty;
+  	text-transform: uppercase;
+      font-style: normal;
+  }
 }
 
 // ---- media queries  ----
