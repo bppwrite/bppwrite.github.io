@@ -5,7 +5,7 @@ $(document).ready(function() {
 
 		// declare variables
 		//slider references
-		let allSlides = $('.slide');
+		// let allSlides = $('.slide');
 		let sliderDiv = $('#slider');
 		let holder = $('.holder');
 		// nav references
@@ -32,16 +32,16 @@ $(document).ready(function() {
 			holder.css({
 				'width': `${ slideCount * 100 }%`
 			});
-			allSlides.css({
-				'width': `${ 100 / slideCount }%`
-			});
+			// allSlides.css({
+			// 	'width': `${ 100 / slideCount }%`
+			// });
 			slideWidth = getWidth($('.slide').get(0));
 		}
 
 		function bindUIEvents() {
 			// user manually scrolls over picture
 			sliderDiv.on('scroll', function(event) {
-				moveSlidePosition(event);
+				// moveSlidePosition(event);
 			});
 			// autotimer slides through a scroll
 			setTimer();
@@ -65,12 +65,12 @@ $(document).ready(function() {
 
 		// event functions
 
-		function moveSlidePosition(event) {
-			// 6 and 100 are 'magic' numbers
-			allSlides.css({
-				'background-position': $(event.target).scrollLeft()/6-100 + 'px center'
-			});
-		}
+		// function moveSlidePosition(event) {
+		// 	// 6 and 100 are 'magic' numbers
+		// 	allSlides.css({
+		// 		'background-position': $(event.target).scrollLeft()/6-100 + 'px center'
+		// 	});
+		// }
 
 		function navClicked(event) {
 			let activeNext;
