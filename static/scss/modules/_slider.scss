@@ -20,6 +20,15 @@
     background-size: cover;
     background-repeat: no-repeat;
 	}
+	.slide:before {
+	  content: "";
+	  position: absolute;
+	  bottom: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  background: $day-trans;
+}
 	.slide-text {
 	  position: absolute;
 	  color: $white;
@@ -52,8 +61,8 @@
 	// }
 
 	.fa-chevron-down:before {
-		background: linear-gradient(to top, $black-trans, rgba(35, 31, 32, 0));
-		padding: 10px;
+		// background: linear-gradient(to top, $black-trans, rgba(35, 31, 32, 0));
+		// padding: 10px;
 	}
 
 	.slider-nav {
