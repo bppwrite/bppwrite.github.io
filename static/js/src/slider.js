@@ -14,7 +14,7 @@ $(document).ready(function() {
 		let sliderNavDown = $('#control-down');
 		// math references
 		let autoTimer;
-		let autoTiming = 7000;
+		let autoTiming = 9000;
 		let scrollTiming = 1000;
 		let slideWidth;
 		let activeIndex = 0;
