@@ -81,8 +81,7 @@ header {
 
 // Ovewrite on home page
 header.home {
-	// background: linear-gradient(to bottom, $black-trans, rgba(35, 31, 32, 0));
-	background: $full-trans;
+	background: linear-gradient(to bottom, $black-trans, rgba(35, 31, 32, 0));
 	position: absolute;
 }
 
