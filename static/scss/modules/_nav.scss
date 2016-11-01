@@ -19,10 +19,7 @@ header {
 		margin: 0;
 	}
 
-
-
 	// First of Two Flexbox parents
-
 	.container-wide {
 		@include flexbox();
 		@include flex-prop-prefixes(justify-content, space-between);
@@ -77,15 +74,11 @@ header {
 	}
 }
 
-
-
 // Ovewrite on home page
 header.home {
 	background: linear-gradient(to bottom, $black-trans, rgba(35, 31, 32, 0));
 	position: absolute;
 }
-
-
 
 // ---- media queries  ----
 
