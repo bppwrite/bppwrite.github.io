@@ -108,7 +108,11 @@
 	{{ partial "foot.html" . }}
 </div>
 
-<script src="/js/systemjs.config.js"></script>
+<!-- these are needed in dev mode
+<script src="/js/config.js"></script>
 <script>
-	System.import('app').catch(function(err){ console.error(err); });
+	System.import('/js/app').catch(function(err){ console.error(err); });
 </script>
+-->
+<!-- this should only be activated for production -->
+<script src="js/build.js"></script>

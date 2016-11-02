@@ -30,19 +30,17 @@ npm install
 
 Changes to the Sass stylesheets should be made in `static/scss`.
 
-Changes to JavaScript files should be made in `static/js/src`.
+Changes to JavaScript files should be made to files in the `static/js/app`
+directory or to `static/js/app.js`.
 
 ## COMPILE
 
-To compile (and minify) your Sass to CSS, run
+To compile your Sass to CSS, run
 ```sh
 npm run build:css
 ```
-To compile (and minify) your JavaScript, run
+To compile your JavaScript, run
 ```sh
-npm run build:js
+jspm bundle-sfx --minify js/app
 ```
-To compile both, run
-```sh
-npm run build:all
-```
+and then move `build.js` to the `js` directory.
