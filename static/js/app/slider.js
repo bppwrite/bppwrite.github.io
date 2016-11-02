@@ -17,7 +17,7 @@ function Slider() {
 	// math references
 	let autoTimer;
 	let autoTiming = 9000;
-	let scrollTiming = 1000;
+	let scrollTiming = 555;
 	let slideWidth;
 	let activeIndex = 0;
 	let slideCount = holder.querySelectorAll('.slide').length;
