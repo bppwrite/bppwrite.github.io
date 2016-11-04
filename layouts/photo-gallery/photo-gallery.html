@@ -1,7 +1,4 @@
-{{- partial "head.html" . -}}
-{{- partial "nav_hidden.html" . -}}
-<div id="panel">
-{{- partial "nav.html" . -}}
+{{ define "main" }}
 
 {{ .Content }}
 
@@ -10,6 +7,4 @@
 
 </div>
 
-</div>
-
-{{ partial "foot.html" . }}
+{{ end }}

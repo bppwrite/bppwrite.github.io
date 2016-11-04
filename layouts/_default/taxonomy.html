@@ -1,9 +1,5 @@
-{{ partial "head.html" . }}
-{{ partial "nav_hidden.html" . }}
-<div id="panel">
-	{{ partial "nav.html" . }}
+{{ define "main" }}
 
     <h2>Taxonomy: {{ .Title }}</h2>
 
-	{{ partial "foot.html" . }}
-</div>
+{{ end }}

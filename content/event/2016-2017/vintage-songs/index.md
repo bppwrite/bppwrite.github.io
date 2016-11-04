@@ -15,7 +15,7 @@ youtube_id = ""
 
 # list showtimes in ISO 8601 format with links to tickets
 [[showtimes]]
-    time = 2017-06-15T19:30:00
+    time = "2017-06-15T19:30:00"
     tickets = "https://web.ovationtix.com/trs/pe/10016588"
 
 +++

@@ -1,29 +1,36 @@
-{{ partial "head.html" . }}
-{{ partial "nav_hidden.html" . }}
-<div id="panel">
-{{ partial "nav.html" . }}
+{{ define "main" }}
 
 <div class="container">
-{{/* current series is the latest */}}
-{{ $currentSeries := (index .Site.Taxonomies.series.TaxonomyArray 0) }}
+    {{/* current series is the latest */}}
+    {{ $currentSeries := (index .Site.Taxonomies.series.TaxonomyArray 0) }}
 
-<h1 id="title">{{ .Title }}</h1>
+    <h1 id="title">{{ .Title }}</h1>
 
-_default/list.html
+    _default/list.html
 
-{{ $.Scratch.Set "hasSeries" false }}
-{{ range .Data.Pages }}
-    {{ if .Params.series }}
-        {{ $.Scratch.Set "hasSeries" true }}
+    {{ $.Scratch.Set "hasSeries" false }}
+    {{ range .Data.Pages }}
+        {{ if .Params.series }}
+            {{ $.Scratch.Set "hasSeries" true }}
+        {{ end }}
     {{ end }}
-{{ end }}
 
-{{ if ($.Scratch.Get "hasSeries") }}
-    {{/* anything in a series is grouped by series */}}
-    {{ range (.Data.Pages.GroupByParam "series").Reverse  }}
-        <h2>{{ .Key }}</h2>
+    {{ if ($.Scratch.Get "hasSeries") }}
+        {{/* anything in a series is grouped by series */}}
+        {{ range (.Data.Pages.GroupByParam "series").Reverse  }}
+            <h2>{{ .Key }}</h2>
+            <ul>
+            {{ range .Pages.ByDate }}
+                <li>
+                    <span>{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                </li>
+            {{ end }}
+            </ul>
+        {{ end }}
+    {{ else }}
         <ul>
-        {{ range .Pages.ByDate }}
+        {{ range .Data.Pages.ByDate  }}
             <li>
                 <span>{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
                 <a href="{{ .Permalink }}">{{ .Title }}</a>
@@ -31,17 +38,6 @@ _default/list.html
         {{ end }}
         </ul>
     {{ end }}
-{{ else }}
-    <ul>
-    {{ range .Data.Pages.ByDate  }}
-        <li>
-            <span>{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
-        </li>
-    {{ end }}
-    </ul>
-{{ end }}
 </div>
 
-{{ partial "foot.html" . }}
-</div>
+{{ end }}

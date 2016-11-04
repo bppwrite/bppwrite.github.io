@@ -1,26 +1,25 @@
-{{ partial "head.html" . }}
-{{ partial "nav.html" . }}
+{{ define "main" }}
 
-<h2>
-  {{ .Title }}
+    <h2>
+      {{ .Title }}
 
-  {{/* only show the subtitle if it exists */}}
-  {{if .Params.subtitle}}
-    <small>{{ .Params.subtitle }}</small>
-  {{end}}
-</h2>
+      {{/* only show the subtitle if it exists */}}
+      {{if .Params.subtitle}}
+        <small>{{ .Params.subtitle }}</small>
+      {{end}}
+    </h2>
 
-<img src="logo.jpg" />
+    <img src="logo.jpg" />
 
-{{ .Content }}
+    {{ .Content }}
 
-<div>
-  {{ if .Prev }}
-    Previous: <a class="previous" href="{{.Prev.Permalink}}"> {{.Prev.Title}}</a> <br/>
-  {{ end }}
-  {{ if .Next }}
-    Next: <a class="next" href="{{.Next.Permalink}}"> {{.Next.Title}}</a>
-  {{ end }}
-</div>
+    <div>
+      {{ if .Prev }}
+        Previous: <a class="previous" href="{{.Prev.Permalink}}"> {{.Prev.Title}}</a> <br/>
+      {{ end }}
+      {{ if .Next }}
+        Next: <a class="next" href="{{.Next.Permalink}}"> {{.Next.Title}}</a>
+      {{ end }}
+    </div>
 
-{{ partial "foot.html" . }}
+{{ end }}

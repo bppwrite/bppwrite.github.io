@@ -30,25 +30,25 @@ youtube_id = "8s1okUL7VW8"
 
 [[showtimes]]
   tickets = ""
-  time = 2015-01-30T19:30:00Z
+  time = "2015-01-30T19:30:00"
 [[showtimes]]
   tickets = ""
-  time = 2015-01-31T19:30:00Z
+  time = "2015-01-31T19:30:00"
 [[showtimes]]
   tickets = ""
-  time = 2015-02-05T19:30:00Z
+  time = "2015-02-05T19:30:00"
 [[showtimes]]
   tickets = ""
-  time = 2015-02-06T19:30:00Z
+  time = "2015-02-06T19:30:00"
 [[showtimes]]
   tickets = ""
-  time = 2015-02-07T19:30:00Z
+  time = "2015-02-07T19:30:00"
 [[showtimes]]
   tickets = ""
-  time = 2015-02-12T19:30:00Z
+  time = "2015-02-12T19:30:00"
 [[showtimes]]
   tickets = ""
-  time = 2015-02-13T19:30:00Z
+  time = "2015-02-13T19:30:00"
 
 +++
 

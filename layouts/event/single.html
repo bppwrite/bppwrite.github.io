@@ -1,5 +1,4 @@
-{{ partial "head.html" . }}
-{{ partial "nav.html" . }}
+{{ define "main" }}
 
 {{/* event starts on the first date in the showtimes array */}}
 {{ $start := (index .Params.showtimes 0).time }}
@@ -43,4 +42,4 @@
 	  {{ end }}
 	</div></div>
 
-{{ partial "foot.html" . }}
+{{ end }}

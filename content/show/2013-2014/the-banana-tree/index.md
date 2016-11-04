@@ -29,28 +29,28 @@ youtube_id = "XbVWuqgfxRU"
 
 [[showtimes]]
   tickets = ""
-  time = 2013-12-06T19:30:00
+  time = "2013-12-06T19:30:00"
 [[showtimes]]
   tickets = ""
-  time = 2013-12-07T19:30:00
+  time = "2013-12-07T19:30:00"
 [[showtimes]]
   tickets = ""
-  time = 2013-12-12T19:30:00
+  time = "2013-12-12T19:30:00"
 [[showtimes]]
   tickets = ""
-  time = 2013-12-13T19:30:00
+  time = "2013-12-13T19:30:00"
 [[showtimes]]
   tickets = ""
-  time = 2013-12-14T19:30:00
+  time = "2013-12-14T19:30:00"
 [[showtimes]]
   tickets = ""
-  time = 2013-12-19T19:30:00
+  time = "2013-12-19T19:30:00"
 [[showtimes]]
   tickets = ""
-  time = 2013-12-20T19:30:00
+  time = "2013-12-20T19:30:00"
 [[showtimes]]
   tickets = ""
-  time = 2013-12-21T19:30:00
+  time = "2013-12-21T19:30:00"
 
 +++
 

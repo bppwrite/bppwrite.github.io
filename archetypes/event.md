@@ -16,10 +16,10 @@ intermission_count = "0"
 
 # list showtimes in ISO 8601 format with links to tickets (if applicable)
 [[showtimes]]
-    time = 2016-01-01T19:30:00
+    time = "2016-01-01T19:30:00"
     tickets = ""
 [[showtimes]]
-    time = 2016-01-02T19:30:00
+    time = "2016-01-02T19:30:00"
     tickets = ""
 
 +++

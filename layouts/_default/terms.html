@@ -1,21 +1,17 @@
-{{ partial "head.html" . }}
-{{ partial "nav_hidden.html" . }}
-<div id="panel">
-{{ partial "nav.html" . }}
+{{ define "main" }}
 
-<h2>Taxonomy term: {{ .Title }}</h2>
+    <h2>Taxonomy term: {{ .Title }}</h2>
 
-<ul>
-  {{ $data := .Data }}
-  {{ range $key, $value := .Data.Terms.Alphabetical }}
-    <li>
-      <a href="/{{ $data.Plural }}/{{ $value.Name | urlize }}">
-        {{ $value.Name }}
-      </a>
-      {{ $value.Count }}
-    </li>
-  {{ end }}
-</ul>
+    <ul>
+      {{ $data := .Data }}
+      {{ range $key, $value := .Data.Terms.Alphabetical }}
+        <li>
+          <a href="/{{ $data.Plural }}/{{ $value.Name | urlize }}">
+            {{ $value.Name }}
+          </a>
+          {{ $value.Count }}
+        </li>
+      {{ end }}
+    </ul>
 
-{{ partial "foot.html" . }}
-</div>
+{{ end }}

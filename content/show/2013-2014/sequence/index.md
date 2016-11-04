@@ -29,19 +29,19 @@ youtube_id = "xgoExnWhXd4"
 
 [[showtimes]]
   tickets = ""
-  time = 2013-10-04T19:30:00
+  time = "2013-10-04T19:30:00"
 [[showtimes]]
   tickets = ""
-  time = 2013-10-05T19:30:00
+  time = "2013-10-05T19:30:00"
 [[showtimes]]
   tickets = ""
-  time = 2013-10-10T19:30:00
+  time = "2013-10-10T19:30:00"
 [[showtimes]]
   tickets = ""
-  time = 2013-10-11T19:30:00
+  time = "2013-10-11T19:30:00"
 [[showtimes]]
   tickets = ""
-  time = 2013-10-12T19:30:00
+  time = "2013-10-12T19:30:00"
 
 +++
 

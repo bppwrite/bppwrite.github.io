@@ -16,22 +16,22 @@ youtube_id = ""
 
 # list showtimes in ISO 8601 format with links to tickets
 [[showtimes]]
-    time = 2017-02-23T19:30:00
+    time = "2017-02-23T19:30:00"
     tickets = ""
 [[showtimes]]
-    time = 2017-02-24T19:30:00
+    time = "2017-02-24T19:30:00"
     tickets = ""
 [[showtimes]]
-    time = 2017-02-25T19:30:00
+    time = "2017-02-25T19:30:00"
     tickets = ""
 [[showtimes]]
-    time = 2017-03-02T19:30:00
+    time = "2017-03-02T19:30:00"
     tickets = ""
 [[showtimes]]
-    time = 2017-03-03T19:30:00
+    time = "2017-03-03T19:30:00"
     tickets = ""
 [[showtimes]]
-    time = 2017-03-04T19:30:00
+    time = "2017-03-04T19:30:00"
     tickets = ""
 
 +++

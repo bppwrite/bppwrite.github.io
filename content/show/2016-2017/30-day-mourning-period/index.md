@@ -28,28 +28,28 @@ youtube_id = "A0UnS-i8MS0"
 tickets_run = "https://web.ovationtix.com/trs/pr/960770"
 
 [[showtimes]]
-time = 2016-09-23T19:30:00
+time = "2016-09-23T19:30:00"
 tickets = "https://web.ovationtix.com/trs/pe/10098333"
 [[showtimes]]
-time = 2016-09-24T19:30:00
+time = "2016-09-24T19:30:00"
 tickets = "https://web.ovationtix.com/trs/pe/10098334"
 [[showtimes]]
-time = 2016-09-29T19:30:00
+time = "2016-09-29T19:30:00"
 tickets = "https://web.ovationtix.com/trs/pe/10098335"
 [[showtimes]]
-time = 2016-09-30T19:30:00
+time = "2016-09-30T19:30:00"
 tickets = "https://web.ovationtix.com/trs/pe/10098336"
 [[showtimes]]
-time = 2016-10-01T19:30:00
+time = "2016-10-01T19:30:00"
 tickets = "https://web.ovationtix.com/trs/pe/10098337"
 [[showtimes]]
-time = 2016-10-06T19:30:00
+time = "2016-10-06T19:30:00"
 tickets = "https://web.ovationtix.com/trs/pe/10098338"
 [[showtimes]]
-time = 2016-10-07T19:30:00
+time = "2016-10-07T19:30:00"
 tickets = "https://web.ovationtix.com/trs/pe/10098339"
 [[showtimes]]
-time = 2016-10-08T19:30:00
+time = "2016-10-08T19:30:00"
 tickets = "https://web.ovationtix.com/trs/pe/10098340"
 
 +++

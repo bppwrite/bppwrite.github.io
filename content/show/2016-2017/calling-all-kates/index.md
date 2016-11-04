@@ -31,28 +31,28 @@ series = "2016-2017"
 tickets_run = "https://web.ovationtix.com/trs/pr/960774"
 
 [[showtimes]]
-time = 2017-03-31T19:30:00
+time = "2017-03-31T19:30:00"
 tickets = "https://web.ovationtix.com/trs/pe/10098361"
 [[showtimes]]
-time = 2017-04-01T19:30:00
+time = "2017-04-01T19:30:00"
 tickets = "https://web.ovationtix.com/trs/pe/10098362"
 [[showtimes]]
-time = 2017-04-06T19:30:00
+time = "2017-04-06T19:30:00"
 tickets = "https://web.ovationtix.com/trs/pe/10098363"
 [[showtimes]]
-time = 2017-04-07T19:30:00
+time = "2017-04-07T19:30:00"
 tickets = "https://web.ovationtix.com/trs/pe/10098364"
 [[showtimes]]
-time = 2017-04-08T19:30:00
+time = "2017-04-08T19:30:00"
 tickets = "https://web.ovationtix.com/trs/pe/10098365"
 [[showtimes]]
-time = 2017-04-13T19:30:00
+time = "2017-04-13T19:30:00"
 tickets = "https://web.ovationtix.com/trs/pe/10098366"
 [[showtimes]]
-time = 2017-04-14T19:30:00
+time = "2017-04-14T19:30:00"
 tickets = "https://web.ovationtix.com/trs/pe/10098367"
 [[showtimes]]
-time = 2017-04-15T19:30:00
+time = "2017-04-15T19:30:00"
 tickets = "https://web.ovationtix.com/trs/pe/10098368"
 
 +++

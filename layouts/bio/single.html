@@ -1,12 +1,11 @@
-{{ partial "head.html" . }}
-{{ partial "nav.html" . }}
+{{ define "main" }}
 
-<h1 id="{{ .Title | urlize }}">{{ .Title }}</h1>
+    <h1 id="{{ .Title | urlize }}">{{ .Title }}</h1>
 
-{{ if .Params.email }}
-    <a href="mailto:{{ .Params.email }}">{{ .Params.email }}</a>
+    {{ if .Params.email }}
+        <a href="mailto:{{ .Params.email }}">{{ .Params.email }}</a>
+    {{ end }}
+
+    {{ .Content }}
+
 {{ end }}
-
-{{ .Content }}
-
-{{ partial "foot.html" . }}

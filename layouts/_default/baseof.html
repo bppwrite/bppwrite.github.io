@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+  {{with .Site.LanguageCode}} xml:lang="{{.}}" lang="{{.}}"{{end}}>
+  <head>
+    {{ partial "head.html" . }}
+  </head>
+  <body id="{{- if .IsPage -}}page{{- else -}}node{{- end -}}-{{ .Title | urlize }}">
+
+      {{ partial "nav_hidden.html" . }}
+      <div id="panel">
+      {{ partial "nav.html" . }}
+
+      {{ block "main" . }}
+        This is the main content.
+        {{ end }}
+
+      <footer>
+      <!-- sponsors -->
+      <div class="sponsor">
+      	<div class="horizontal-line"></div>
+      	<div class="container">
+      		<h2>Support Our Local Sponsors</h2>
+      		<div class="sponsor-lead">
+      			<h3>Lead Sponsor</h3>
+      				{{ range where (where .Site.Pages "Section" "sponsor") ".Params.is_lead" "==" true }}
+      					<p>
+      						<a href="{{ .Params.website }}">
+      							{{ partial "sponsor/logo.html" . }}
+      						</a>
+      					</p>
+      				{{ end }}
+      		</div>
+      		<div class="sponsor-season">
+      				<h3>Season Sponsors</h3>
+      				<ul>
+      						{{ range where (where .Site.Pages "Section" "sponsor") ".Params.is_lead" "!=" true }}
+      								<li>
+      										<a href="{{ .Params.website }}">
+      												{{ partial "sponsor/logo.html" . }}
+      										</a>
+      								</li>
+      						{{ end }}
+      				</ul>
+      		</div>
+      	</div>
+      </div>
+      <!-- footer -->
+      <div class="traditional">
+          <div class="container">
+      		<div class="row">
+      				<div class="col-xs-12">
+      					<ul class="social-icons">
+      						<a href="https://twitter.com/{{ .Site.Params.twitter }}"><li class="fa fa-twitter" aria-hidden="true"></li></a>
+      						<a href="https://www.facebook.com/{{ .Site.Params.facebook }}"><li class="fa fa-facebook" aria-hidden="true"></li></a>
+      						<a href="https://www.pinterest.com/{{ .Site.Params.pinterest }}"><li class="fa fa-pinterest-p" aria-hidden="true"></li></a>
+      						<a href="https://www.instagram.com/{{ .Site.Params.instagram }}"><li class="fa fa-instagram" aria-hidden="true"></li></a>
+      					</ul>
+      						<p>{{ .Site.Params.address.street }},
+      							{{ .Site.Params.address.city }}, {{ .Site.Params.address.state }}
+      							 {{ .Site.Params.address.zip }}</p>
+      						<p><a href="tel:+1-{{ .Site.Params.address.phone }}">
+      								{{ .Site.Params.address.phone }}
+      							</a></p>
+      						<p><a href="mailto:{{ .Site.Params.address.email }}">
+      							{{ .Site.Params.address.email }}
+      						</a></p>
+      					<p>&copy; 2016 BPP</p>
+      				</div>
+      		</div>
+      	</div>
+      </div>
+
+      </footer>
+
+  <!-- close panel div -->
+  </div>
+
+  </body>
+  </html>

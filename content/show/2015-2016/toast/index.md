@@ -30,28 +30,28 @@ series = "2015-2016"
 tickets_run = ""
 
 [[showtimes]]
-time = 2016-01-29T19:30:00
+time = "2016-01-29T19:30:00"
 tickets = ""
 [[showtimes]]
-time = 2016-01-30T19:30:00
+time = "2016-01-30T19:30:00"
 tickets = ""
 [[showtimes]]
-time = 2016-02-04T19:30:00
+time = "2016-02-04T19:30:00"
 tickets = ""
 [[showtimes]]
-time = 2016-02-05T19:30:00
+time = "2016-02-05T19:30:00"
 tickets = ""
 [[showtimes]]
-time = 2016-02-06T19:30:00
+time = "2016-02-06T19:30:00"
 tickets = ""
 [[showtimes]]
-time = 2016-02-11T19:30:00
+time = "2016-02-11T19:30:00"
 tickets = ""
 [[showtimes]]
-time = 2016-02-12T19:30:00
+time = "2016-02-12T19:30:00"
 tickets = ""
 [[showtimes]]
-time = 2016-02-13T19:30:00
+time = "2016-02-13T19:30:00"
 tickets = ""
 
 +++

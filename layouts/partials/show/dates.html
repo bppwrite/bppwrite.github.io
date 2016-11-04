@@ -1,7 +1,7 @@
 {{/* show starts on the first date in the showtimes array */}}
-{{- $start := (index .Params.showtimes 0).time -}}
+{{- $start := (time (index .Params.showtimes 0).time ) -}}
 {{/* show ends on the last date in the showtimes array */}}
-{{- $end := (index .Params.showtimes (sub (len .Params.showtimes) 1) ).time -}}
+{{- $end := (time (index .Params.showtimes (sub (len .Params.showtimes) 1) ).time ) -}}
 
 {{/* start out with a standard month format */}}
 {{- $.Scratch.Set "monthFormat" "January" -}}
