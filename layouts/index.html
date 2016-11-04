@@ -77,50 +77,44 @@
 	          <span class="fa fa-chevron-right" id="control-right" aria-hidden="true"></span>
 	      </nav>
 	  </div>
-		<!-- I can work on adding this back to the homepage in some format,
-					but these styles are dead -->
-	<!-- shows -->
-	<!-- <div class="shows-section">
-	  <div class="container">
-	      <div class="row">
-	          <div class="col-sm-12">
-	              <h2 class="section-title">Upcoming Shows {{ $currentSeries.Name }}</h2>
-	          </div>
-	      </div>
-	  </div>
-	    <div class="upcoming-container">
-	        {{/* all current pages in the "show" section */}}
-	        {{- range where $currentSeries.Pages.ByDate "Section" "show" -}}
-	        <div class="show">
-	            {{ partial "show/poster.html" . }}
-	            <div class="show-info">
-	                <h3>
-	                    <a href="/show/{{ .Params.series }}/{{ (.Title | urlize) }}">
-	                        {{ .Title }}
-	                    </a>
-	                </h3>
-	                {{ partial "show/dates.html" . }}
-	            </div>
-	        </div>
-	        {{- end -}}
-	    </div>
-	</div>
-	</div> -->
 	<!-- call-to-action -->
-	<div class="subscribe">
-	    <div class="container">
+	<div class="container">
+	    <div class="subscribe">
 	        <div class="row">
 	            <div class="col-sm-12">
-	                <p class="lead">Buy a season ticket pass. Do it. Do it right now.</p>
-	                <p><a class="button" href="https://web.ovationtix.com/trs/store/34132/packages">Subscribe</a></p>
+	                <h1>Buy a season ticket pass. Do it. Do it right now.</h1>
+	                <a class="button" href="https://web.ovationtix.com/trs/store/34132/packages">Subscribe</a>
 	            </div>
 	        </div>
 	    </div>
+	</div>
+	<!-- join us image sequence -->
+	<div class="container img-sequence">
+ 			<div class="row">
+ 				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<div class="volunteer">
+						<h2><span class="img-text-background"><a href="/get-involved/">Get Involved</a></span></h2>
+ 					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<div class="education">
+						<h2><span class="img-text-background"><a href="/education/">Youth Education Program</a></span></h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="donate">
+						<h2><span class="img-text-background"><a href="/support/">Support the BPP</a></span></h2>
+					</div>
+				</div>
+			</div>
 	</div>
 	{{ partial "foot.html" . }}
 
-    <!-- close panel div -->
-    </div>
+</div>
+
+{{ partial "body_script.html" . }}
 
 </body>
 </html>

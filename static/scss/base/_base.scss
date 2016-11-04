@@ -52,7 +52,7 @@ input[type="button"] {
 	height: 34px;
 	padding: 0 30px;
 	text-align: center;
-	font-size: 16px;
+	font-size: 16.5px;
 	font-weight: 600;
 	line-height: 34px;
 	letter-spacing: 0;
@@ -112,12 +112,15 @@ input[type="button"].button-secondary:focus {
 .img-text-background {
 	background-color: $black-trans;
 	padding: (4/16) * 1em;
-    em {
-        color: $accent;
-    	font-family: $twenty;
-    	text-transform: uppercase;
-        font-style: normal;
-    }
+	a {
+		color: $white;
+	}
+  em {
+      color: $accent;
+  	font-family: $twenty;
+  	text-transform: uppercase;
+      font-style: normal;
+  }
 }
 
 // ---- media queries  ----

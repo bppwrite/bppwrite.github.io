@@ -3,11 +3,16 @@
   @include clearfix;
 }
 
+[class*='col-'] {
+  float: left;
+  padding-right: 0;
+}
+
 @for $i from 1 through $column-count {
   .col-xs-#{$i} {
     width: $i / $column-count * 100%;
-    float: left;
-    @if $i < $column-count { padding-right: $column-padding; }
+    // float: left;
+    // @if $i < $column-count { padding-right: $column-padding; }
   }
 }
 
@@ -15,8 +20,8 @@
   @for $i from 1 through $column-count {
     .col-sm-#{$i} {
       width: $i / $column-count * 100%;
-      float: left;
-      @if $i < $column-count { padding-right: $column-padding; }
+      // float: left;
+      // @if $i < $column-count { padding-right: $column-padding; }
     }
   }
 }
@@ -25,8 +30,8 @@
   @for $i from 1 through $column-count {
     .col-md-#{$i} {
       width: $i / $column-count * 100%;
-      float: left;
-      @if $i < $column-count { padding-right: $column-padding; }
+      // float: left;
+      // @if $i < $column-count { padding-right: $column-padding; }
     }
   }
 }
@@ -35,8 +40,17 @@
   @for $i from 1 through $column-count {
     .col-lg-#{$i} {
       width: $i / $column-count * 100%;
-      float: left;
-      @if $i < $column-count { padding-right: $column-padding; }
+      // float: left;
+      // @if $i < $column-count { padding-right: $column-padding; }
     }
   }
+}
+
+@media (min-width: $start-tablet) {
+	[class*='col-'] {
+		padding-right: $column-padding;
+		.row &:last-of-type {
+			padding-right: 0;
+		}
+	}
 }
