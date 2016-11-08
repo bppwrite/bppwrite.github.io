@@ -12,13 +12,13 @@ files.
  version of node recommended for you. There should be a big green button on the
  home page.
 
-2. Install Project Dependencies with NPM
+2. Install Dependencies with NPM
 
- Installing Node automatically installs NPM on your computer. Now, you need
- to use NPM to install the development dependencies listed in the
- `package.json` file for this project.
+ If you completed step one and installed Node, NPM was automatically installed
+ on your computer. Now, you need to use NPM to install our dependencies (these
+	 are listed in the `package.json` file for this project, if you're curious).
 
-	First, you'll navigate to the root directory for this project
+	First, navigate to the root directory for this project
 	(ie. "wherever-you-cloned-it" or "wherever-package.json-lives"). Second,
 	you'll run `npm install`.
 ```sh
@@ -26,12 +26,32 @@ cd ~/wherever-you-cloned-it
 npm install
 ```
 
+3. Install jspm (and Some More Dependencies)
+
+ jspm is used to bundle the JavaScript we write with the third-party libraries
+ we use into one file for deployment. It's also used to install those
+ third-party libraries.
+
+ First, you need to install the jspm command line interface on your computer
+ ```sh
+ npm install jspm -g
+ ```
+ Next, you need to install some more third-party JavaScript libraries using jspm
+ ```sh
+ jspm install
+ ```
+
+
+
 ## CHANGE FILES
 
-Changes to the Sass stylesheets should be made in `static/scss`.
+Changes to the Sass stylesheets should be made in `static/scss`. The sass files
+are further categorized into folders within `static/scss`.
 
-Changes to JavaScript files should be made to files in the `static/js/app`
-directory or to `static/js/app.js`.
+JavaScript changes should be made to files in the `static/js/app`
+directory or to `static/js/app.js`. `config.js` is automatically maintained by
+jspm. `build.js` is the final file we deploy, which is created when we
+use jspm to bundle our files.
 
 ## COMPILE
 

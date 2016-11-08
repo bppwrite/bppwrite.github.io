@@ -32,13 +32,13 @@ hugo server
 
 Now hugo is running and serving your site locally.
 
-## Web development changes
+## Contribute content changes
+
+See the [CONTRIBUTING](CONTRIBUTING.md) document
+
+## Contribute web development changes
 
 This set of steps can be ignored unless you're changing Sass or JavaScript
 files.
 If you are, see [CONTRIBUTING-DEV](CONTRIBUTING-DEV.md). If you're looking to
-change website content, see below.
-
-## Contribute content changes
-
-See the [CONTRIBUTING](CONTRIBUTING.md) document
+change website content (page copy, images, etc.), see above.
