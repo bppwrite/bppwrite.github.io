@@ -1,25 +1,9 @@
-<!-- these are needed in dev mode -->
-<!-- <script src="/js/config.js"></script>
+<!-- javascript -->
+<!-- using systemjs directly is more convenient in dev -->
+<!-- <script src="/js/jspm_packages/system.js"></script>
+<script src="/js/config.js"></script>
 <script>
   System.import('/js/app').catch(function(err){ console.error(err); });
 </script> -->
-<!-- this should only be activated for production -->
-<script src="js/build.js"></script>
-
-<script>
-  'use strict';
-
-  var slideoutConfig = new Slideout({
-      'panel': document.getElementById('panel'),
-      'menu': document.getElementById('menu'),
-      'padding': 256,
-      'side': 'right',
-      'fx': 'ease-in',
-      'duration': 400,
-      'tolerance': 70
-  });
-
-  document.querySelector('.toggle-button').addEventListener('click', function () {
-      slideoutConfig.toggle();
-  });
-</script>
+<!-- this should be activated for production -->
+<script src="{{$.Site.BaseURL}}js/build.js"></script>

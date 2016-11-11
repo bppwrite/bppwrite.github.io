@@ -19,6 +19,7 @@ System.config({
     "core-js": "npm:core-js@1.2.7",
     "jquery": "npm:jquery@3.1.1",
     "rxjs": "npm:rxjs@5.0.0-rc.1",
+    "slideout": "npm:slideout@0.1.12",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.4.1"
     },
@@ -60,6 +61,9 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.2",
       "systemjs-json": "github:systemjs/plugin-json@0.1.2"
     },
+    "npm:decouple@0.0.2": {
+      "systemjs-json": "github:systemjs/plugin-json@0.1.2"
+    },
     "npm:inherits@2.0.1": {
       "util": "github:jspm/nodelibs-util@0.1.0"
     },
@@ -75,6 +79,11 @@ System.config({
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2",
       "symbol-observable": "npm:symbol-observable@1.0.4"
+    },
+    "npm:slideout@0.1.12": {
+      "decouple": "npm:decouple@0.0.2",
+      "emitter": "github:Mango/emitter@0.0.7",
+      "fs": "github:jspm/nodelibs-fs@0.1.2"
     },
     "npm:util@0.10.3": {
       "inherits": "npm:inherits@2.0.1",
