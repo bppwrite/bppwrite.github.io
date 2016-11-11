@@ -7,6 +7,7 @@ let header = document.querySelector('header');
 let dollar = V();
 
 slideoutMenu.init();
+slideoutMenu.hashFix();
 
 if (dollar.hasClass(header, 'home')) {
 	let hero = Slider();
