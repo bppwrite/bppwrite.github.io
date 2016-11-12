@@ -32,16 +32,14 @@
 
 {{/* by default, ordered by weight then by date */}}
 {{- range $index, $page := where (where .Data.Pages "Section" "special") ".Params.is_active" true -}}
-    {{- if .Params.weight }}
-        {{- $.Scratch.SetInMap "heros" .Params.weight . -}}
+    {{- if $page.Params.hero_weight }}
+        {{- $.Scratch.SetInMap "heros" ($page.Params.hero_weight | string) . -}}
     {{- else -}}
         {{/* this weight should be 300, 400, 500 as we loop */}}
         {{- $weight := (add (mul (add $index 1) 100) 200) -}}
         {{- $.Scratch.SetInMap "heros" ($weight | string) . -}}
     {{- end -}}
 {{- end -}}
-
-{{- .Scratch.Set "heros" ($.Scratch.Get "heros") -}}
 
 <html xmlns="http://www.w3.org/1999/xhtml"
   {{with .Site.LanguageCode}} xml:lang="{{.}}" lang="{{.}}"{{end}}>
@@ -58,15 +56,20 @@
 	      <div class="slider" id="slider">
 	          <div class="holder">
 
-	              {{- range $weight, $page := ($.Scratch.GetSortedMapValues "heros") -}}
-	              <div class="slide" style="background-image: url({{ partial "hero.html" . }})">
+	              {{- range $index, $page := ($.Scratch.GetSortedMapValues "heros") -}}
+                  {{- $heroPaths := (partial "heros.html" $page) -}}
+                  {{- if $heroPaths -}}
+	              <div class="slide"
+                    style="background-image: url({{ partial "hero.html" $page }})"
+                    data-heros="{{ $heroPaths }}">
 	                  <span class="slide-text">
 	                      <span class="img-text-background">
-	                          <b>Next {{ .Type | title }}:</b>
-	                          {{ .Title | markdownify }}
+	                          <!-- <b>{{ $index }} Next {{ $page.Type | title }}:</b> -->
+	                          {{ $page.Title | markdownify }}
 	                      </span>
 	                  </span>
 	              </div>
+                  {{- end -}}
 	              {{- end -}}
 
 	          </div>

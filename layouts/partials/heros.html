@@ -1,0 +1,11 @@
+{{/* render a json object of paths to hero images for this page */}}
+{{- $.Scratch.Set "heroPaths" slice -}}
+{{- $relPermalink := .RelPermalink -}}
+{{- range (readDir (printf "content/%s" $relPermalink)) -}}
+    {{- if hasPrefix .Name "hero" -}}
+        {{- $.Scratch.Add "heroPaths" (slice (printf "%s%s" $relPermalink .Name)) -}}
+    {{- end -}}
+{{- end -}}
+{{- with ($.Scratch.Get "heroPaths") -}}
+    {{ $.Scratch.Get "heroPaths" | jsonify | safeJS }}
+{{- end -}}

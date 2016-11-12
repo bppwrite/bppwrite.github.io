@@ -1,9 +1,51 @@
-## Creating a Show
+## Creating a Show or Event
+
+This process is generally the same for Shows and Events but they are in two different directories, `show/` and `event/` respectively.
+
+### Example structure
+
+```
+content/show/2016-2017
+├── 30-day-mourning-period
+│   ├── index.md
+│   └── poster.jpg
+├── calling-all-kates
+│   ├── index.md
+│   └── poster.jpg
+├── happily-after-ever
+│   ├── index.md
+│   └── poster.jpg
+├── home
+│   ├── index.md
+│   └── poster.jpg
+└── row-after-row
+    ├── index.md
+    └── poster.jpg
+```
+
+```
+content/event/2016-2017
+├── annual-gala
+│   ├── index.md
+│   └── poster.jpg
+├── escape-the-room
+│   ├── index.md
+│   └── poster.jpg
+├── ike-and-julie-arnove-playoffs
+│   ├── index.md
+│   └── poster.jpg
+├── miniplay-playwriting-competition
+│   ├── index.md
+│   └── poster.jpg
+└── vintage-songs
+    ├── index.md
+    └── poster.jpg
+```
 
 ### Create the main content file
 
 ```sh
-$ hugo new show/[2016-2017]/[the-title-of-the-show].md
+$ hugo new show/[2016-2017]/[the-title-of-the-show]/index.md
 ```
 
 Replace `[2016-2017]` with the season series to which you're adding the show. Replace `[the-title-of-the-show]` with the actual title of the show -- all lowercase with hyphens separating words.
@@ -11,8 +53,8 @@ Replace `[2016-2017]` with the season series to which you're adding the show. Re
 You should get a result of something like this:
 
 ```sh
-$ hugo new show/2015-2016/the-bull-the-moon-and-the-coronet-of-stars.md
-/Users/marcguyer/dev/bppwrite.github.io/content/show/2015-2016/the-bull-the-moon-and-the-coronet-of-stars.md created
+$ hugo new show/2015-2016/the-bull-the-moon-and-the-coronet-of-stars/index.md
+/Users/marcguyer/dev/bppwrite.github.io/content/show/2015-2016/the-bull-the-moon-and-the-coronet-of-stars/index.md created
 ```
 
 #### Set the frontmatter for the content file
@@ -20,23 +62,31 @@ $ hugo new show/2015-2016/the-bull-the-moon-and-the-coronet-of-stars.md
 Open the content file you created with your favorite text editor. The frontmatter is shown at the top of the content file delimited by `+++`. Each element of the frontmatter has a default (usually empty). It's your job to change the value of each element according to the show components. Here's a quick checklist:
 
 1. Fix the capitalization of the `title`. Set the `subtitle` if applicable
-2. List the `showtimes` using the ISO 8601 datetime format
-3. Set `showtimes_human` to something like "October 28-29, November 4-6"
+2. List the `showtimes` using the ISO 8601 datetime format (e.g., "2016-01-01T19:30:00")
+3. List the OvationTix link to the tickets page for each showtime.
 4. Set the `date` parameter equal to the first element of the list of `showtimes`
 5. Set the `series` parameter equal to the season lable in format `<year>-<year>`
 6. Set the `slot` parameter
 7. Set the `genres` parameter to the effective genre or multiple genres if applicable
 8. Set the cast and crew elements as they become known
 
-### Add images for the show
+Note: the frontmatter elements for an Event will be different than for a Show
 
-#### Create a directory for the images
+### Add images
+
+#### Poster
+
+Create an image called `poster` of any valid web type (e.g., JPG, GIF, PNG, SVG) and place it in the same directory as the show. e.g., `show/2015-2016/the-bull-the-moon-and-the-coronet-of-stars/poster.png`.
+
+#### Hero
+
+Create an image called `hero` of any valid web type (e.g., JPG, GIF, PNG, SVG) and place it in the same directory as the show. e.g., `show/2015-2016/the-bull-the-moon-and-the-coronet-of-stars/hero.jpg`.
+
+#### Image gallery
 
 ```sh
 $ mkdir -p show/[2016-2017]/[the-title-of-the-show]/gallery
 ```
-
-The directory name, `[the-title-of-the-show]`, must match the name of the show you created previously.
 
 Add all of the images related to this show in the `show/[2016-2017]/[the-title-of-the-show]/gallery` directory.
 
@@ -45,7 +95,7 @@ Add all of the images related to this show in the `show/[2016-2017]/[the-title-o
 ### Create the main content file
 
 ```sh
-hugo new sponsor/[the-name-of-the-sponsor].md
+$ hugo new sponsor/[the-name-of-the-sponsor]/index.md
 ```
 
 Replace `[the-name-of-the-sponsor]` with the name of the sponsor -- all lowercase with hyphens separating words.
@@ -53,8 +103,8 @@ Replace `[the-name-of-the-sponsor]` with the name of the sponsor -- all lowercas
 You should get a result of something like this:
 
 ```sh
-$ hugo new sponsor/ivy-tech.md
-/Users/marcguyer/dev/bppwrite.github.io/content/sponsor/ivy-tech.md created
+$ hugo new sponsor/ivy-tech/index.md
+/Users/marcguyer/dev/bppwrite.github.io/content/sponsor/ivy-tech/index.md created
 ```
 
 #### Set the frontmatter for the content file
@@ -63,12 +113,47 @@ Open the content file you created with your favorite text editor. The frontmatte
 
 ### Add images for the sponsor
 
-#### Create a directory for the images
+#### Logo
+
+Create an image called `logo` of any valid web type (e.g., JPG, GIF, PNG, SVG) and place it in the same directory as the show. e.g., `sponsor/ivy-tech/logo.png`.
+
+## Creating a Special Hero
+
+The next (or currently running) Show and the next Event are automatically included in the hero system on the homepage. You may choose to add special hero images and corresponding call-to-action.
+
+### Create the main content file
 
 ```sh
-$ mkdir -p sponsor/[this-name-of-the-sponsor]
+$ hugo new special/[the-name-of-the-special]/index.md
 ```
 
-The directory name, `[the-name-of-the-sponsor]`, must match the name of the sponsor you created previously.
+Replace `[the-name-of-the-special]` with the name of the special -- all lowercase with hyphens separating words.
 
-Add the logo to the `sponsor/[the-name-of-the-sponsor]` directory and name it `logo.jpg`.
+You should get a result of something like this:
+
+```sh
+$ hugo new special/new-works/index.md
+/Users/marcguyer/dev/bppwrite.github.io/content/special/new-works/index.md created
+```
+
+#### Set the frontmatter for the content file
+
+Open the content file you created with your favorite text editor. The frontmatter is shown at the top of the content file delimited by `+++`. Each element of the frontmatter has a default (usually empty). It's your job to change the value of each element according to the show components. Here's a quick checklist:
+
+1. Set the `title` to the main text headline of the special
+2. Set the `call_to_action` to what you want the action button to say in text, and `call_to_action_link` to the target of the button
+3. Set the `hero_weight` if you'd like to override the default order
+
+##### Changing hero order
+
+By default, the hero order is the following:
+
+1. The next or currently running show (default `hero_weight` of "100")
+2. The next or currently running event (default `hero_weight` of "200")
+3. All special heros ordered chronologically by `date`. (default `hero_weight` of "300", "400", etc)
+
+To override the order, specify a different `hero_weight`. For example, to force a new special hero to be first, set the `hero_weight` to "010". Note the leading zero. The heros are ordered by `hero_weight` alphabetically, not numerically. The value "010" comes _before_ "100" but "10" comes _after_ "100", hence why we must use the leading zero.
+
+### Add images
+
+A special hero may have multiple images chosen randomly for each visitor. Simply add at least one and potentially several images starting with `hero` of any valid web type (e.g., JPG, GIF, PNG, SVG) and place it in the same directory as the special hero content file. e.g., `special/new-works/hero.png`, `special/new-works/hero_2.png`, `special/new-works/hero_xyz.png`, etc.
