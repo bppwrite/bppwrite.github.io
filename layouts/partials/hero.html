@@ -1,6 +1,6 @@
 {{- $.Scratch.Set "heroPath" nil -}}
 {{- range (readDir (printf "content/%s" .RelPermalink)) -}}
-    {{- if hasPrefix .Name "hero." -}}
+    {{- if hasPrefix .Name "hero" -}}
         {{- $.Scratch.Set "heroPath" .Name -}}
     {{- end -}}
     {{/* if there isn't a hero, the default is the poster */}}
