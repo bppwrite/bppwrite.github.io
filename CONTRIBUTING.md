@@ -152,8 +152,17 @@ By default, the hero order is the following:
 2. The next or currently running event (default `hero_weight` of "200")
 3. All special heros ordered chronologically by `date`. (default `hero_weight` of "300", "400", etc)
 
-To override the order, specify a different `hero_weight`. For example, to force a new special hero to be first, set the `hero_weight` to "010". Note the leading zero. The heros are ordered by `hero_weight` alphabetically, not numerically. The value "010" comes _before_ "100" but "10" comes _after_ "100", hence why we must use the leading zero.
+To override the order, specify a different `hero_weight`. For example, to force a new special hero to be first, set the `hero_weight` to "010". Note the leading zero. The heros are ordered by `hero_weight` alphabetically, not numerically. The value "010" comes _before_ "100" but "10" comes _after_ "100", and is why we must use the leading zero.
 
 ### Add images
 
 A special hero may have multiple images chosen randomly for each visitor. Simply add at least one and potentially several images starting with `hero` of any valid web type (e.g., JPG, GIF, PNG, SVG) and place it in the same directory as the special hero content file. e.g., `special/new-works/hero.png`, `special/new-works/hero_2.png`, `special/new-works/hero_xyz.png`, etc.
+
+## Optimizing images
+
+| Purpose | Orientation | Dimensions | Compression |
+| --- | --- | --- | --- |
+| Hero | Landscape | 1920x1280px | 80% |
+| Poster | Portrait | 720x1280px | 80% |
+| Gallery | any | 1280x720px | 80% |
+| Sponsor Logo | any | --- | --- |
