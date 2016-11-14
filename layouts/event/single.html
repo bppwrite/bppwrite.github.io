@@ -4,42 +4,29 @@
 {{ $start := (index .Params.showtimes 0).time }}
 {{/* event ends on the last date in the showtimes array */}}
 {{ $end := (index .Params.showtimes (sub (len .Params.showtimes) 1) ).time }}
-<div class="container">
-	<h2 class="show-title">
-	  {{ .Title }}
+<div class="container event-single">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
+			<img src="poster.jpg" />
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-8 col-lg-5">
+			<h1>
+				{{ .Title }}
 
-	  {{/* only show the subtitle if it exists */}}
-	  {{if .Params.subtitle}}
-	    <small>{{ .Params.subtitle }}</small>
-	  {{end}}
-	</h2>
-
-	{{ partial "youtube.html" . }}
-
-	<img src="poster.jpg" />
-
-	{{ .Content }}
-
-	<h3 class="showtimes-title">Showtimes</h3>
-
-	<ul class="showtimes-dates">
-	  {{ range .Params.showtimes }}
-	    <li>{{ dateFormat "Mon, Jan 2, 2006 at 3:04PM" .time }}</li>
-	  {{ end }}
-	</ul>
-
-	Run starts on
-	  {{ dateFormat "Mon, Jan 2, 2006" $start }}
-	and ends on
-	  {{ dateFormat "Mon, Jan 2, 2006" $end }}
-
-	<div>
-	  {{ if .Prev }}
-	    Previous: <a class="previous" href="{{.Prev.Permalink}}"> {{.Prev.Title}}</a> <br/>
-	  {{ end }}
-	  {{ if .Next }}
-	    Next: <a class="next" href="{{.Next.Permalink}}"> {{.Next.Title}}</a>
-	  {{ end }}
-	</div></div>
+				{{/* only show the subtitle if it exists */}}
+				{{if .Params.subtitle}}
+					<h6>{{ .Params.subtitle }}</h6>
+				{{end}}
+			</h1>
+			{{ .Content }}
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4">
+			{{ partial "youtube.html" . }}
+			<div class="times">
+				{{ partial "show/dates.html" . }}
+			</div>
+		</div>
+	</div>
+</div>
 
 {{ end }}
