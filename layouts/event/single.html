@@ -1,32 +1,3 @@
 {{ define "main" }}
-
-{{/* event starts on the first date in the showtimes array */}}
-{{ $start := (index .Params.showtimes 0).time }}
-{{/* event ends on the last date in the showtimes array */}}
-{{ $end := (index .Params.showtimes (sub (len .Params.showtimes) 1) ).time }}
-<div class="container event-single">
-	<div class="row">
-		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
-			<img src="poster.jpg" />
-		</div>
-		<div class="col-xs-12 col-sm-12 col-md-8 col-lg-5">
-			<h1>
-				{{ .Title }}
-
-				{{/* only show the subtitle if it exists */}}
-				{{if .Params.subtitle}}
-					<h6>{{ .Params.subtitle }}</h6>
-				{{end}}
-			</h1>
-			{{ .Content }}
-		</div>
-		<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4">
-			{{ partial "youtube.html" . }}
-			<div class="times">
-				{{ partial "show/dates.html" . }}
-			</div>
-		</div>
-	</div>
-</div>
-
+{{ partial "single_show_or_event.html" . }}
 {{ end }}
