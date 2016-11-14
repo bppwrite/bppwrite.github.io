@@ -1,0 +1,47 @@
+// -- Show Pages Template Styles ---
+
+.show-single {
+	margin-top: 3em;
+	img {
+		width: 100%;
+		height: auto;
+	}
+	h1 {
+		font-family: $twenty;
+		margin-top: 0;
+	}
+	.subtitle {
+		font-family: $twenty;
+	}
+	.meta {
+		p {
+			font-family: $int-bold-cond;
+			font-size: (1/1.125) * 1em;
+			margin-bottom: 0;
+		}
+		p:last-of-type {
+			margin-bottom: 1em;
+		}
+	}
+	.times {
+		background-color: $gray-light;
+		padding: 0.5em;
+	}
+
+}
+
+.test {
+	margin-top: 0;
+	background-color: $gray-light;
+}
+
+
+// ---- media queries  ----
+
+@media (min-width: $start-tablet) {
+
+}
+
+@media (min-width: $start-laptop) {
+
+}

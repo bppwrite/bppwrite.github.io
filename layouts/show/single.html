@@ -12,132 +12,123 @@
         {{- $.Scratch.Set "posterPath" .Name -}}
     {{- end -}}
 {{- end -}}
+<div class="container show-single">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
+			<img src="{{ $.Scratch.Get "posterPath" }}" />
+			<ul class="social-icons">
+				<a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}">
+					<span class="fa fa-facebook" aria-hidden="true"></span>
+				</a>
+				<a href="https://twitter.com/intent/tweet?url={{ .Permalink }}&text={{ .Title }} &middot; {{ .Site.Title }}&via=bloomingplays&hashtags=bpp,newplays">
+					<span class="fa fa-twitter" aria-hidden="true"></span>
+			  </a>
+			  <a href="https://pinterest.com/pin/create/bookmarklet/?media={{ .Permalink }}{{ $.Scratch.Get "posterPath" }}&url={{ .Permalink }}&is_video=0&description={{ .Title }} &middot; {{ .Site.Title }}">
+			  	<span class="fa fa-pinterest-p" aria-hidden="true"></span>
+			  </a>
+			</ul>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-8 col-lg-5">
+			<h1>{{ .Title }}</h1>
+			{{/* only show the subtitle if it exists */}}
+			{{if .Params.subtitle}}
+			<h6 class="subtitle">{{ .Params.subtitle }}</h6>
+			{{end}}
+			<div class="meta">
+				{{ if .Params.genres }}
+				{{ $links := apply .Params.genres "partial" "genre/link.html" "." }}
+				<p>
+					Genre{{ if gt (len .Params.genres) 1 }}s{{ end }}:
+					{{ delimit $links  ", " " & " }}
+				</p>
+				{{ end }}
+				{{ if .Params.playwrights }}
+				{{ $links := apply .Params.playwrights "partial" "bio/link.html" "." }}
+				<p>
+				  Playwright{{ if gt (len .Params.playwrights) 1 }}s{{ end }}:
+				  {{ delimit $links  ", " " & " }}
+				</p>
+				{{ end }}
+				{{ if .Params.musicians }}
+				{{ $links := apply .Params.musicians "partial" "bio/link.html" "." }}
+				<p>
+				  Music:
+				  {{ delimit $links  ", " " & " }}
+				</p>
+				{{ end }}
+				{{ if .Params.lyricists }}
+				{{ $links := apply .Params.lyricists "partial" "bio/link.html" "." }}
+				<p>
+					Lyrics:
+					{{ delimit $links  ", " " & " }}
+				</p>
+				{{ end }}
+				{{ if .Params.directors }}
+				{{ $links := apply .Params.directors "partial" "bio/link.html" "." }}
+				<p>
+				  Director{{ if gt (len .Params.directors) 1 }}s{{ end }}:
+				  {{ delimit $links ", " " & " }}
+				</p>
+			    {{ end }}
+			    {{ if (index .Params "set designers" ) }}
+			    {{ $links := apply (index .Params "set designers" ) "partial" "bio/link.html" "." }}
+			  <p>
+			    Set Designer{{ if gt (len (index .Params "set designers" )) 1 }}s{{ end }}:
+			    {{ delimit $links ", " " & " }}
+			  </p>
+			    {{ end }}
+			    {{ if (index .Params "stage managers" ) }}
+			    {{ $links := apply (index .Params "stage managers" ) "partial" "bio/link.html" "." }}
+			  <p>
+			    Stage Manager{{ if gt (len (index .Params "stage managers" )) 1 }}s{{ end }}:
+			    {{ delimit $links ", " " & " }}
+			  </p>
+			    {{ end }}
+			    {{ if (index .Params "lighting designers" ) }}
+			    {{ $links := apply (index .Params "lighting designers" ) "partial" "bio/link.html" "." }}
+			  <p>
+			    Lighting Designer{{ if gt (len (index .Params "lighting designers" )) 1 }}s{{ end }}:
+			    {{ delimit $links ", " " & " }}
+			  </p>
+			    {{ end }}
+			    {{ if (index .Params "costume designers" ) }}
+			    {{ $links := apply (index .Params "costume designers" ) "partial" "bio/link.html" "." }}
+			  <p>
+			    Costume Designer{{ if gt (len (index .Params "costume designers" )) 1 }}s{{ end }}:
+			    {{ delimit $links ", " " & " }}
+			  </p>
+			    {{ end }}
+			    {{ if (index .Params "sound designers" ) }}
+			    {{ $links := apply (index .Params "sound designers" ) "partial" "bio/link.html" "." }}
+			  <p>
+			    Sound Designer{{ if gt (len (index .Params "sound designers" )) 1 }}s{{ end }}:
+			    {{ delimit $links ", " " & " }}
+			  </p>
+			    {{ end }}
+			</div>
 
-<div class="row">
-    <div class="col-sm-12 col-md-6 col-lg-6">
-        <img src="{{ $.Scratch.Get "posterPath" }}" class="show-poster" />
-    </div>
-    <div class="col-sm-12 col-md-6 col-lg-6 show-data">
-        <h2 class="show-title">
-			{{ .Title }}
-		</h2>
-        {{/* only show the subtitle if it exists */}}
-        {{if .Params.subtitle}}
-            <h6 class="show-subtitle">
-                <small>
-                    {{ .Params.subtitle }}
-                </small>
-            </h6>
-        {{end}}
+			<p>{{ .Content }}</p>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4">
+				{{ partial "youtube.html" . }}
+				<div class="times">
+					{{ if gt $end.Unix .Now.Unix }}
+							<h6>See It Live</h6>
+					{{ else }}
+							<h6>Performed Live</h6>
+					{{ end }}
 
-        <div class="show-meta-container">
-            {{ if .Params.genres }}
-                {{ $links := apply .Params.genres "partial" "genre/link.html" "." }}
-                <h6 class="show-meta">
-                    Genre{{ if gt (len .Params.genres) 1 }}s{{ end }}:
-                    {{ delimit $links  ", " " & " }}
-                </h6>
-            {{ end }}
-            {{ if .Params.playwrights }}
-                {{ $links := apply .Params.playwrights "partial" "bio/link.html" "." }}
-                <h6 class="show-meta">
-                    Playwright{{ if gt (len .Params.playwrights) 1 }}s{{ end }}:
-                    {{ delimit $links  ", " " & " }}
-                </h6>
-            {{ end }}
-            {{ if .Params.musicians }}
-                {{ $links := apply .Params.musicians "partial" "bio/link.html" "." }}
-                <h6 class="show-meta">
-                    Music:
-                    {{ delimit $links  ", " " & " }}
-                </h6>
-            {{ end }}
-            {{ if .Params.lyricists }}
-                {{ $links := apply .Params.lyricists "partial" "bio/link.html" "." }}
-                <h6 class="show-meta">
-                    Lyrics:
-                    {{ delimit $links  ", " " & " }}
-                </h6>
-            {{ end }}
-            {{ if .Params.directors }}
-                {{ $links := apply .Params.directors "partial" "bio/link.html" "." }}
-                <h6 class="show-meta">
-                    Director{{ if gt (len .Params.directors) 1 }}s{{ end }}:
-                    {{ delimit $links ", " " & " }}
-                </h6>
-            {{ end }}
-            {{ if (index .Params "set designers" ) }}
-                {{ $links := apply (index .Params "set designers" ) "partial" "bio/link.html" "." }}
-                <h6 class="show-meta">
-                    Set Designer{{ if gt (len (index .Params "set designers" )) 1 }}s{{ end }}:
-                    {{ delimit $links ", " " & " }}
-                </h6>
-            {{ end }}
-            {{ if (index .Params "stage managers" ) }}
-                {{ $links := apply (index .Params "stage managers" ) "partial" "bio/link.html" "." }}
-                <h6 class="show-meta">
-                    Stage Manager{{ if gt (len (index .Params "stage managers" )) 1 }}s{{ end }}:
-                    {{ delimit $links ", " " & " }}
-                </h6>
-            {{ end }}
-            {{ if (index .Params "lighting designers" ) }}
-                {{ $links := apply (index .Params "lighting designers" ) "partial" "bio/link.html" "." }}
-                <h6 class="show-meta">
-                    Lighting Designer{{ if gt (len (index .Params "lighting designers" )) 1 }}s{{ end }}:
-                    {{ delimit $links ", " " & " }}
-                </h6>
-            {{ end }}
-            {{ if (index .Params "costume designers" ) }}
-                {{ $links := apply (index .Params "costume designers" ) "partial" "bio/link.html" "." }}
-                <h6 class="show-meta">
-                    Costume Designer{{ if gt (len (index .Params "costume designers" )) 1 }}s{{ end }}:
-                    {{ delimit $links ", " " & " }}
-                </h6>
-            {{ end }}
-            {{ if (index .Params "sound designers" ) }}
-                {{ $links := apply (index .Params "sound designers" ) "partial" "bio/link.html" "." }}
-                <h6 class="show-meta">
-                    Sound Designer{{ if gt (len (index .Params "sound designers" )) 1 }}s{{ end }}:
-                    {{ delimit $links ", " " & " }}
-                </h6>
-            {{ end }}
-        </div>
+					{{ partial "show/dates.html" . }}
 
-        {{ partial "youtube.html" . }}
+					{{ if gt $end.Unix .Now.Unix }}
+							<div>
+								<a class="button button-secondary" href="{{ .Params.tickets_run }}">Buy Tickets</a>
+							</div>
+					{{ end }}
+				</div>
+			</div>
 
-        <p>{{ .Content }}</p>
-
-        {{ if gt $end.Unix .Now.Unix }}
-            <h5 class="show-see">See It Live</h5>
-        {{ else }}
-            <h5 class="show-see">
-                Performed Live
-            </h5>
-        {{ end }}
-
-        {{ partial "show/dates.html" . }}
-
-        {{ if gt $end.Unix .Now.Unix }}
-            <div>
-                <a href="{{ .Params.tickets_run }}">Buy Tickets</a>
-            </div>
-        {{ end }}
-
-        <h5>Share</h5>
-
-        <ul class="social-icons">
-            <a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}">
-                <span class="fa fa-facebook" aria-hidden="true"></span>
-            </a>
-            <a href="https://twitter.com/intent/tweet?url={{ .Permalink }}&text={{ .Title }} &middot; {{ .Site.Title }}&via=bloomingplays&hashtags=bpp,newplays">
-                <span class="fa fa-twitter" aria-hidden="true"></span>
-            </a>
-            <a href="https://pinterest.com/pin/create/bookmarklet/?media={{ .Permalink }}{{ $.Scratch.Get "posterPath" }}&url={{ .Permalink }}&is_video=0&description={{ .Title }} &middot; {{ .Site.Title }}">
-                <span class="fa fa-pinterest-p" aria-hidden="true"></span>
-            </a>
-        </ul>
-
-    </div>
+	</div>
 </div>
 
 {{end}}
