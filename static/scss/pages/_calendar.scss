@@ -1,0 +1,96 @@
+.calendar {
+	.event {
+		@include flex-prop-prefixes(flex-direction, row);
+		@include flex-prop-prefixes(flex-wrap, wrap);
+		@include flex-prop-prefixes(align-content, space-between);
+		@include flex-prop-prefixes(justify-content, space-around);
+		margin-bottom: 1em;
+	}
+	.date-time {
+		// as child
+		@include flex-prop-prefixes(order, 2);
+		@include flex(4 1 auto);
+		// as parent
+		@include flex-prop-prefixes(align-content, flex-start);
+		@include flex-prop-prefixes(align-items, flex-start);
+		@include flex-prop-prefixes(justify-content, flex-start);
+		margin-left: 20px;
+	}
+	.date {
+		div:first-of-type {
+			color: $primary;
+			padding: 3px;
+		}
+		div + div:not(:last-child) {
+			font-size: 1.44em; line-height: 1.3; letter-spacing: -.1rem;
+		}
+	}
+	.time {
+		h6 {
+			margin: 0;
+		}
+		h6 span {
+			background-color: $gray-light;
+			border-radius: 6px;
+			color: $gray;
+			padding: 3px 9px;
+			white-space: nowrap;
+		}
+	}
+	figure {
+		@include flex(1 1 10%);
+		@include flex-prop-prefixes(order, 1);
+		margin: 0;
+	}
+	.description {
+		@include flex(4 1 100%);
+		@include flex-prop-prefixes(order, 3);
+		a {
+			font-family: $twenty;
+		}
+	}
+}
+
+@media (min-width: $start-phablet) {
+	.calendar {
+		.date-time {
+			// as child
+			@include flex(4 auto);
+			@include flex-prop-prefixes(order, 1);
+			margin-left: 0;
+		}
+		figure {
+			@include flex(1 1 100px);
+			@include flex-prop-prefixes(order, 2);
+		}
+	}
+}
+
+@media (min-width: $start-tablet) {
+	.calendar {
+		.event {
+			@include flex-prop-prefixes(justify-content, space-between);
+		}
+		.date-time {
+			// as child
+			@include flex(6 auto);
+			// as parent
+			@include flex-prop-prefixes(justify-content, space-between);
+		}
+		.date {
+			@include flex(1 auto);
+			text-align: left;
+		}
+		.time {
+			@include flex(1 auto);
+			text-align: left;
+		}
+		figure {
+			@include flex(1 1 100px);
+		}
+		.description {
+			@include flex(5 1 25%);
+			margin-left: 40px;
+		}
+	}
+}

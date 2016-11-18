@@ -13,7 +13,7 @@
 
     {{ .Content }}
 
-    <div class="container">
+    <div class="container calendar">
     	<h1>Shows and Events Calendar</h1>
 
         {{- $.Scratch.Set "months" (slice) -}}
@@ -25,19 +25,19 @@
                     {{ $.Scratch.Get "month" }}
                 </h2>
             {{- end -}}
-            <div class="container-flex">
-                <div class="col-xs-2">
-                    <div>{{ dateFormat "Mon" $dict.showtime.time }}</div>
-                    <span>{{ dateFormat "2" $dict.showtime.time }}</span>
-                    <div>{{ dateFormat "Jan" $dict.showtime.time }}</div>
-                </div>
-                <div class="col-xs-2">
-                    {{ dateFormat "3:04PM" $dict.showtime.time }}
-                </div>
-                <div class="col-xs-2">
+            <div class="container-flex event">
+									<div class="date-time container-flex">
+										<div class="date">
+											<div>{{ dateFormat "Mon" $dict.showtime.time }}</div>
+											<div>{{ dateFormat "2" $dict.showtime.time }}</div>
+											<div>{{ dateFormat "Jan" $dict.showtime.time }}</div>
+										</div>
+										<div class="time">
+											<h6><span>{{ dateFormat "3:04 PM" $dict.showtime.time }}</span><h6>
+										</div>
+									</div>
                     {{ partial "show/poster.html" $dict.page }}
-                </div>
-                <div class="col-xs-6">
+                <div class="description">
                     <a href="{{ $dict.page.RelPermalink }}">
                         {{ $dict.page.Title }}
                     </a>
