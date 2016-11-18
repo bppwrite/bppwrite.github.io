@@ -38,9 +38,12 @@
 		}
 	}
 	figure {
-		@include flex(1 1 10%);
 		@include flex-prop-prefixes(order, 1);
 		margin: 0;
+		img {
+			height: 139px;
+			width: auto;
+		}
 	}
 	.description {
 		@include flex(4 1 100%);
@@ -54,14 +57,10 @@
 @media (min-width: $start-phablet) {
 	.calendar {
 		.date-time {
-			// as child
-			@include flex(4 auto);
-			@include flex-prop-prefixes(order, 1);
-			margin-left: 0;
+
 		}
 		figure {
-			@include flex(1 1 100px);
-			@include flex-prop-prefixes(order, 2);
+
 		}
 	}
 }
@@ -72,8 +71,11 @@
 			@include flex-prop-prefixes(justify-content, space-between);
 		}
 		.date-time {
+
 			// as child
-			@include flex(6 auto);
+			@include flex(4 auto);
+			@include flex-prop-prefixes(order, 1);
+			margin-left: 0;
 			// as parent
 			@include flex-prop-prefixes(justify-content, space-between);
 		}
@@ -87,10 +89,26 @@
 		}
 		figure {
 			@include flex(1 1 100px);
+			@include flex(1 1 100px);
+			@include flex-prop-prefixes(order, 2);
+			height: auto;
+			img {
+				height: auto;
+				width: 100%;
+			}
 		}
 		.description {
 			@include flex(5 1 25%);
 			margin-left: 40px;
+		}
+	}
+}
+
+@media (min-width: $start-laptop) {
+	.calendar {
+		.date-time {
+			// as child
+			@include flex(6 auto);
 		}
 	}
 }
