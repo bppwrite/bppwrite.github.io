@@ -15,7 +15,7 @@ title = "Bloomington Playwrights Project"
     [params.social]
         github          = "bppwrite"
         facebook        = "BloomingtonPlaywrightsProject"
-        facebook_admin  = "" # "17807199"  # This needs to be a page admin to get domain insights
+        facebook_app_id = "1810257965898767"
         twitter         = "bloomingplays"
         twitter_domain  = "" # This domain shows in twitter cards as "View on `twitter_domain`"
         googleplus      = ""

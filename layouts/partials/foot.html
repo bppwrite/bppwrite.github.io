@@ -1,81 +1,100 @@
 <footer>
-    <!-- sponsors -->
-    <div class="sponsor">
-    	<div class="horizontal-line"></div>
-    	<div class="container">
-    		<h2>Support Our Local Sponsors</h2>
-    		<div class="sponsor-lead">
-    			<h3>Lead Sponsor</h3>
-    				{{ range where (where .Site.Pages "Section" "sponsor") ".Params.is_lead" "==" true }}
-    					<p>
-    						<a href="{{ .Params.website }}">
-    							{{ partial "sponsor/logo.html" . }}
-    						</a>
-    					</p>
-    				{{ end }}
-    		</div>
-    		<div class="sponsor-season">
-    				<h3>Season Sponsors</h3>
-    				<ul>
-    						{{ range where (where .Site.Pages "Section" "sponsor") ".Params.is_lead" "!=" true }}
-    								<li>
-    										<a href="{{ .Params.website }}">
-    												{{ partial "sponsor/logo.html" . }}
-    										</a>
-    								</li>
-    						{{ end }}
-    				</ul>
-    		</div>
-    	</div>
-    </div>
-    <!-- footer -->
-    <div class="traditional container-wide">
-			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-					<div class="container-flex left">
-						<p class="address">
-							Bloomington Playwrights Project<br>
-							{{ .Site.Params.address.street }}<br>
-							{{ .Site.Params.address.city }}, {{ .Site.Params.address.state }}
-							{{ .Site.Params.address.zip }}
-						</p>
-						<p class="contact">
-							<a href="tel:+1-{{ .Site.Params.address.phone }}">
-								{{ .Site.Params.address.phone }}
-							</a>
-							<br>
-							<a href="mailto:{{ .Site.Params.address.email }}">
-								{{ .Site.Params.address.email }}
-							</a>
-						</p>
-					</div>
-				</div>
-				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-					<div class="container-flex middle">
-						<div class="donate">
-							<a class="button button-secondary" href="/support/">Support Us</a>
-							<!-- {{ partial "paypal_button.html" . }} -->
-						</div>
-						<h2>Bloomington Playwrights Project</h2>
-						<p class="made">Made in Indiana by <a href="http://marc.guyer.me/">Tweedledee</a> and <a href="http://mattbatman.com">Tweedledum</a></p>
-					</div>
-				</div>
-				<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-					<div class="container-flex right">
-						<ul class="social-icons">
-							<a href="https://twitter.com/{{ .Site.Params.twitter }}"><li class="fa fa-twitter" aria-hidden="true"></li></a>
-							<a href="https://www.facebook.com/{{ .Site.Params.facebook }}"><li class="fa fa-facebook" aria-hidden="true"></li></a>
-							<a href="https://www.pinterest.com/{{ .Site.Params.pinterest }}"><li class="fa fa-pinterest-p" aria-hidden="true"></li></a>
-							<a href="https://www.instagram.com/{{ .Site.Params.instagram }}"><li class="fa fa-instagram" aria-hidden="true"></li></a>
-						</ul>
-						<p class="copyright">&copy; 2016 BPP</p>
-					</div>
-				</div>
-			</div>
 
+<!-- sponsors -->
+<div class="sponsor">
+    <div class="horizontal-line"></div>
+    <div class="container">
+        <h2>Support Our Local Sponsors</h2>
+        <div class="sponsor-lead">
+            <h3>Lead Sponsor</h3>
+            {{- range where (where .Site.Pages "Section" "sponsor") ".Params.is_lead" "==" true -}}
+                <p>
+                    <a href="{{ .Params.website }}">
+                        {{ partial "sponsor/logo.html" . }}
+                    </a>
+                </p>
+            {{- end -}}
+        </div>
+        <div class="sponsor-season">
+            <h3>Season Sponsors</h3>
+            <ul>
+            {{- range where (where .Site.Pages "Section" "sponsor") ".Params.is_lead" "!=" true -}}
+                <li>
+                    <a href="{{ .Params.website }}">
+                        {{ partial "sponsor/logo.html" . }}
+                    </a>
+                </li>
+            {{- end -}}
+            </ul>
+        </div>
     </div>
-
+</div>
+<!-- footer -->
+<div class="traditional container-wide">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+            <div class="container-flex left">
+                <p class="address">
+                    {{ .Site.Title}}<br>
+                    {{- with .Site.Params.address -}}
+                        {{ .street }}<br>
+                        {{ .city }}, {{ .state }} {{ .zip }}
+                    {{- end -}}
+                </p>
+                <p class="contact">
+                    <a href="tel:+1-{{ .Site.Params.address.phone }}">
+                        {{ .Site.Params.address.phone }}
+                    </a>
+                    <br>
+                    <a href="mailto:{{ .Site.Params.address.email }}">
+                        {{ .Site.Params.address.email }}
+                    </a><br>
+                </p>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <div class="container-flex middle">
+                <div class="donate">
+                    <a class="button button-secondary" href="/support/">
+                        Support Us
+                    </a>
+                </div>
+                <h2>Bloomington Playwrights Project</h2>
+                <p class="made">
+                    Made in Indiana by
+                    <a href="http://marc.guyer.me/">Tweedledee</a>
+                    and <a href="http://mattbatman.com">Tweedledum</a>
+                </p>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+            <div class="container-flex right">
+                <ul class="social-icons">
+                {{- with .Site.Params.social.twitter -}}
+                    <a href="https://twitter.com/{{ . }}">
+                        <li class="fa fa-twitter" aria-hidden="true"></li>
+                    </a>
+                {{- end -}}
+                {{- with .Site.Params.social.facebook -}}
+                    <a href="https://www.facebook.com/{{ . }}">
+                        <li class="fa fa-facebook" aria-hidden="true"></li>
+                    </a>
+                {{- end -}}
+                {{- with .Site.Params.social.pinterest -}}
+                    <a href="https://www.pinterest.com/{{ . }}">
+                        <li class="fa fa-pinterest-p" aria-hidden="true"></li>
+                    </a>
+                {{- end -}}
+                {{- with .Site.Params.social.instagram -}}
+                    <a href="https://www.instagram.com/{{ . }}">
+                        <li class="fa fa-instagram" aria-hidden="true"></li>
+                    </a>
+                {{- end -}}
+                </ul>
+                <p class="copyright">&copy; 2016 BPP</p>
+            </div>
+        </div>
+    </div>
+</div>
 
 </footer>
-
-{{ partial "body_script.html" . }}

@@ -13,17 +13,28 @@
 	<div class="row">
 		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
 			<img src="{{ $.Scratch.Get "posterPath" }}" />
+            <span
+                id="fb_share_button"
+                class="fa fa-facebook" aria-hidden="true"></span>
 			<ul class="social-icons">
-				<a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}">
-					<span class="fa fa-facebook" aria-hidden="true"></span>
-				</a>
-				<a href="https://twitter.com/intent/tweet?url={{ .Permalink }}&amp;text={{ .Title }} &middot; {{ .Site.Title }}&amp;via=bloomingplays&amp;hashtags=bpp,newplays">
+				<a href="https://twitter.com/intent/tweet?url={{ .Permalink }}&amp;text={{ .Title }} &middot; {{ .Site.Title }}&amp;via={{ .Site.Params.social.twitter }}&amp;hashtags=bpp,newplays">
 					<span class="fa fa-twitter" aria-hidden="true"></span>
 			    </a>
 			    <a href="https://pinterest.com/pin/create/bookmarklet/?media={{ .Permalink }}{{ $.Scratch.Get "posterPath" }}&amp;url={{ .Permalink }}&amp;is_video=0&amp;description={{ .Title }} &middot; {{ .Site.Title }}">
 			  	    <span class="fa fa-pinterest-p" aria-hidden="true"></span>
 			    </a>
+                {{ with .Params.youtube_id }}
+			    <a href="https://youtu.be/{{ . }}">
+			  	    <span class="fa fa-youtube" aria-hidden="true"></span>
+			    </a>
+                {{ end }}
 			</ul>
+            <div
+                class="fb-share"
+                data-share="true"
+                data-width="450"
+                data-show-faces="true">
+            </div>
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-8 col-lg-5">
 			<h1>{{ .Title }}</h1>
