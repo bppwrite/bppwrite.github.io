@@ -2,7 +2,7 @@ function Facebook() {
 
 	window.fbAsyncInit = function() {
 	  FB.init({
-	    appId      : '{{ .Site.Params.social.facebook_app_id }}',
+	    appId      : '1810257965898767',
 	    xfbml      : true,
 	    version    : 'v2.8'
 	  });
@@ -20,7 +20,7 @@ function Facebook() {
 	    FB.ui({
 	      method: 'share',
 	      display: 'popup',
-	      href: '{{ .Permalink }}',
+	      href: 'http://bppwrite.github.io/',
 	    }, function(response){});
 	  }
 

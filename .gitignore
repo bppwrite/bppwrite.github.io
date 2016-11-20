@@ -15,6 +15,7 @@
 ###########
 /static/js/jspm_packages/
 /static/build.js.map
+/static/js/build.js.map
 
 # IMAGES #
 ###########

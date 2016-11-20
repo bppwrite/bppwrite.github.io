@@ -6,6 +6,7 @@ import { SlideoutMenu } from './app/slideout-menu';
 let slideoutMenu = SlideoutMenu();
 let header = document.querySelector('header');
 let dollar = V();
+let fbShare = document.getElementById('fb_share_button');
 
 slideoutMenu.init();
 slideoutMenu.hashFix();
@@ -15,4 +16,6 @@ if (dollar.hasClass(header, 'home')) {
 	hero.init();
 }
 
-Facebook();
+if (fbShare) {
+	Facebook();
+}
