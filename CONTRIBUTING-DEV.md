@@ -53,6 +53,10 @@ directory or to `static/js/app.js`. `config.js` is automatically maintained by
 jspm. `build.js` is the final file we deploy, which is created when we
 use jspm to bundle our files.
 
+### On JavaScript Style
+Currently, standard ES2015 modules are used, with `statics/js/app/` intended to
+contain modules, and `app.js` to generally control them.
+
 ## COMPILE
 
 To compile your Sass to CSS, run

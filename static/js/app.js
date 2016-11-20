@@ -1,3 +1,4 @@
+import { Facebook } from './app/facebook';
 import { V } from './app/jVanilla';
 import { Slider } from './app/slider';
 import { SlideoutMenu } from './app/slideout-menu';
@@ -13,3 +14,5 @@ if (dollar.hasClass(header, 'home')) {
 	let hero = Slider();
 	hero.init();
 }
+
+Facebook();

@@ -149,4 +149,7 @@
 <link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml"
     title="{{ .Site.Title }}" />
 
+<!-- JavaScript -->
+{{ partial "script.html" . }}
+
 {{ template "_internal/google_analytics_async.html" . }}
