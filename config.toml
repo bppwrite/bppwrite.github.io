@@ -4,6 +4,25 @@ googleAnalytics = "UA-35759378-1"
 
 title = "Bloomington Playwrights Project"
 
+preserveTaxonomyNames = true
+
+[taxonomies]
+genre = "genres" # drama, musical, etc
+series = "series" # a run of plays; formatted as year1-year2
+actor = "actors"
+playwright = "playwrights"
+director = "directors"
+musician = "musicians"
+lyricist = "lyricists"
+choreographer = "choreographers"
+"stage manager" = "stage managers"
+"lighting designer" = "lighting designers"
+"set designer" = "set designers"
+"costume designer" = "costume designers"
+"sound designer" = "sound designers"
+award = "awards"
+venue = "venues"
+
 [params]
     [params.address]
         street = "107 West 9th Street"
@@ -195,22 +214,3 @@ title = "Bloomington Playwrights Project"
     url = "/contact"
     pre = "foot"
     weight = 1300
-
-preserveTaxonomyNames = true
-
-[taxonomies]
-genre = "genres" # drama, musical, etc
-series = "series" # a run of plays; formatted as year1-year2
-actor = "actors"
-playwright = "playwrights"
-director = "directors"
-musician = "musicians"
-lyricist = "lyricists"
-choreographer = "choreographers"
-"stage manager" = "stage managers"
-"lighting designer" = "lighting designers"
-"set designer" = "set designers"
-"costume designer" = "costume designers"
-"sound designer" = "sound designers"
-award = "awards"
-venue = "venues"
