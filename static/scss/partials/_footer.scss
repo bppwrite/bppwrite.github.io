@@ -41,23 +41,33 @@ footer {
 	// ---- traditional footer ----
 
 	.traditional {
-		padding-bottom: 1em;
 		padding-top: 1em;
-
-		// social icons
-		.social-icons {
-			margin: 0.25em 0 0 0;
-			padding: 0;
+		.container-flex {
+			@include flex-prop-prefixes(flex-direction, column);
+			@include flex-prop-prefixes(justify-content, space-between);
 		}
-		.social-icons a {
+		a {
 			color: $white;
 		}
-
-		p {
-			padding-bottom: 0;
-			margin-bottom: 0;
+		.button-secondary {
+			color: $primary;
+			border-color: $primary;
 		}
-
+		.button-secondary:hover {
+			color: $primary-dark;
+			border-color: $primary-dark;
+		}
+		.social-icons {
+			margin-top: 0;
+		}
+		h2, .made, .made a {
+			color: $gray;
+		}
+		h2 {
+			font-family: $twenty;
+			font-size: 2.074em;
+			letter-spacing: 0;
+		}
 	}
 }
 
@@ -71,6 +81,17 @@ footer {
 				img {
 					height: 65px;
 				}
+			}
+		}
+		.traditional {
+			.container-flex {
+				height: 275px;
+			}
+			.container-flex.left {
+				text-align: left;
+			}
+			.container-flex.right {
+				text-align: right;
 			}
 		}
 	}
