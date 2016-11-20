@@ -41,12 +41,16 @@
     {{- end -}}
 {{- end -}}
 
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
-    {{with .Site.LanguageCode}} xml:lang="{{.}}" lang="{{.}}"{{end}}>
+    {{with .Site.LanguageCode}} xml:lang="{{.}}" lang="{{.}}"{{end}}
+    itemscope itemtype="http://schema.org/{{- if .IsPage -}}Article{{- else -}}WebPage{{- end -}}">
 
 <head>
     {{- partial "head.html" . -}}
 </head>
+
+<body id="{{- if .IsPage -}}page{{- else -}}node{{- end -}}-{{ .Title | urlize }}">
 
 {{- partial "nav_hidden.html" . -}}
 

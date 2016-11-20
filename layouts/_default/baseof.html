@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
-  {{with .Site.LanguageCode}} xml:lang="{{.}}" lang="{{.}}"{{end}}>
-  <head>
-    {{ partial "head.html" . }}
-  </head>
-  <body id="{{- if .IsPage -}}page{{- else -}}node{{- end -}}-{{ .Title | urlize }}">
+    {{with .Site.LanguageCode}} xml:lang="{{.}}" lang="{{.}}" {{end}}
+    itemscope itemtype="http://schema.org/{{- if .IsPage -}}Article{{- else -}}WebPage{{- end -}}">
 
-      {{ partial "nav_hidden.html" . }}
-      <div id="panel">
-      {{ partial "nav.html" . }}
+    <head>
+        {{ partial "head.html" . }}
+    </head>
 
-      {{ block "main" . }}
-        This is the main content.
-        {{ end }}
+    <body id="{{- if .IsPage -}}page{{- else -}}node{{- end -}}-{{ .Title | urlize }}">
 
-        {{ partial "foot.html" . }}
+        {{ partial "nav_hidden.html" . }}
 
-      <!-- close panel div -->
-      </div>
+        <div id="panel">
 
-    {{ partial "body_script.html" . }}
+            {{ partial "nav.html" . }}
 
-  </body>
-  </html>
+            {{ block "main" . }}
+
+                This is the main content.
+
+            {{ end }}
+
+            {{ partial "foot.html" . }}
+
+        <!-- close panel div -->
+        </div>
+
+        {{ partial "body_script.html" . }}
+
+    </body>
+
+</html>
