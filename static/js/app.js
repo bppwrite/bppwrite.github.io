@@ -17,5 +17,5 @@ if (dollar.hasClass(header, 'home')) {
 }
 
 if (fbShare) {
-	Facebook();
+	Facebook(fbShare);
 }

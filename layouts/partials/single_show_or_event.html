@@ -15,7 +15,9 @@
 			<img src="{{ $.Scratch.Get "posterPath" }}" />
             <span
                 id="fb_share_button"
-                class="fa fa-facebook" aria-hidden="true"></span>
+                data-permalink="{{ .Permalink }}"
+                class="fa fa-facebook"
+                aria-hidden="true"></span>
 			<ul class="social-icons">
 				<a href="https://twitter.com/intent/tweet?url={{ .Permalink }}&amp;text={{ .Title }} &middot; {{ .Site.Title }}&amp;via={{ .Site.Params.social.twitter }}&amp;hashtags=bpp,newplays">
 					<span class="fa fa-twitter" aria-hidden="true"></span>
