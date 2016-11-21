@@ -26,6 +26,8 @@ build:
         code: |
             echo "America/Indiana/Indianapolis" > /etc/timezone
             dpkg-reconfigure --frontend noninteractive tzdata
+    - install-packages:
+        packages: curl
     - script:
         name: install nodejs deb source
         code: |
