@@ -43,28 +43,73 @@ npm install
 
 
 
-## CHANGE FILES
+## SASS
 
-Changes to the Sass stylesheets should be made in `static/scss`. The sass files
-are further categorized into folders within `static/scss`.
+Changes to the Sass stylesheets should be made in the sub-directories within `static/scss/`.
 
-JavaScript changes should be made to files in the `static/js/app`
-directory or to `static/js/app.js`. `config.js` is automatically maintained by
-jspm. `build.js` is the final file we deploy, which is created when we
-use jspm to bundle our files.
+### OVERVIEW
 
-### On JavaScript Style
-Currently, standard ES2015 modules are used, with `statics/js/app/` intended to
-contain modules, and `app.js` to generally control them.
+ `static/scss/main.scss` imports the `_index.scss` file found in each of the sub-directories, which in turn import each Sass partial in the same directory.
 
-## COMPILE
+### COMPILE
 
 To compile your Sass to CSS, run
 ```sh
 npm run build:css
 ```
+
+## JAVASCRIPT
+
+### OVERVIEW
+#### FILES
+The `static/js/` directory includes:
+* `app.js` - the point of entry for our JavaScript code
+* `build.js` - the final compiled file we desploy, which is created when we use jspm to bundle our files. `build.js` is the equivalent to deploying `app.js` + SystemJS.
+* `config.js` - automatically maintained by jspm. It's the configuration file for SystemJS, including how to find each of our third-party dependencies and our application
+* `\jspm_packages\` - a directory ignored by git that should hold all packages installed by jspm (it's the jspm equivalent to a `node_modules` directory)
+* `\app\` - a directory intended to hold modules imported into `app.js`
+
+#### DEPLOYMENT
+We use [SystemJS](https://github.com/systemjs/systemjs) to be able to write and deploy JavaScript as modules, and [jspm](http://jspm.io/) to bundle those modules and our third-party libraries for faster page loads.
+
+SystemJS evaluates what we've written and imported into `app.js` to determine which files should be loaded on the page, including the modules we wrote in the `static\js\app\` sub-directory and any third-party libraries we imported into those modules (or directly into `app.js`). Any file that isn't eventually imported into `app.js` will not be loaded by SystemJS.
+
+When used directly on a webpage, SystemJS makes a separate xhr request for every imported module, which is why we bundle everything using jspm for deployment. jspm will use SystemJS to determine what modules are imported into `app.js`, and then bundle them into one file (`build.js`).
+
+To use SystemJS alone, include the following script (to load SystemJS, then the configuration file that lets SystemJS know how to find each module and third-party library, and then to import `app.js` into SystemJS):
+```ssh
+<script src="/js/jspm_packages/system.js"></script>
+<script src="/js/config.js"></script>
+<script>
+  System.import('/js/app').catch(function(err){ console.error(err); });
+</script>
+```
+
+When you have a build file from jspm, you just need to deploy that build file:
+```ssh
+<script src="{{$.Site.BaseURL}}js/build.js"></script>
+```
+
+### COMMANDS
+
+#### COMPILE
+
 To compile your JavaScript, run
 ```sh
 jspm bundle-sfx --minify js/app
 ```
 and then move `build.js` to the `js` directory.
+
+#### INSTALLING THIRD-PARTY LIBRARIES
+
+To add a new dependency, install it using jspm, for example:
+```ssh
+jspm install npm:lodash-node
+```
+Then, jspm would automatically update our `config.js` file so SystemJS knows where to find lodash. We would ultimately need to import lodash directly into `app.js` or indirectly via another module we wrote in `js\app\` and in turn import into `app.js`.
+
+### TROUBLESHOOTING AND REFERENCES
+
+The jspm [getting started guide](http://jspm.io/docs/getting-started.html) can help to explain the role of jspm and SystemJS.
+
+Rerunning `npm install` and `jspm install` before compiling with `jspm bundle-sfx --minify js/app` would be necessary if any new packages were added to `package.json` on your last pull from the repository. This could be easy to overlook, since `build.js` should include all dependencies.
