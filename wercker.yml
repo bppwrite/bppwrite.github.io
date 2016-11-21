@@ -26,6 +26,12 @@ build:
         code: |
             echo "America/Indiana/Indianapolis" > /etc/timezone
             dpkg-reconfigure --frontend noninteractive tzdata
+    - script:
+        name: install nodejs deb source
+        code: |
+            curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
+    - install-packages:
+        packages: nodejs
     - npm-install
     - nahody/jspm-install
     - script:
