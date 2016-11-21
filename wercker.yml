@@ -26,11 +26,12 @@ build:
         code: |
             echo "America/Indiana/Indianapolis" > /etc/timezone
             dpkg-reconfigure --frontend noninteractive tzdata
-    # - npm-install
-    # - script:
-    #     name: npm run build:all
-    #     code: |
-    #         npm run build:all
+    - npm-install
+    - nahody/jspm-install
+    - script:
+        name: compile js via jspm
+        code: |
+            jspm bundle-sfx --minify js/app static/js/build.js
     - arjen/hugo-build:
       version: "0.17"
       #theme: hugo-bootswatch
