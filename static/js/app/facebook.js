@@ -3,7 +3,7 @@ function Facebook(element) {
     window.fbAsyncInit = function() {
         FB.init({
             appId: '1810257965898767',
-            xfbml: true,
+            xfbml: false,
             version: 'v2.8'
         });
     };
@@ -22,7 +22,8 @@ function Facebook(element) {
     element.onclick = function(e) {
         FB.ui({
             method: 'share',
-            // display: 'popup',
+            hashtag: 'newplays',
+            display: 'popup',
             href: e.target.dataset.permalink,
         }, function(response) {});
     }
