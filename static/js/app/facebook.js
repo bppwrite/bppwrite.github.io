@@ -22,7 +22,7 @@ function Facebook(element) {
     element.onclick = function(e) {
         FB.ui({
             method: 'share',
-            display: 'popup',
+            // display: 'popup',
             href: e.target.dataset.permalink,
         }, function(response) {});
     }
