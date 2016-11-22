@@ -32,14 +32,14 @@ build:
     #     name: install nodejs deb source
     #     code: |
     #         curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
-    - install-packages:
-        packages: nodejs
-    - npm-install
-    - nahody/jspm-install
-    - script:
-        name: compile js via jspm
-        code: |
-            jspm bundle-sfx --minify js/app static/js/build.js
+    # - install-packages:
+    #     packages: nodejs
+    # - npm-install
+    # - nahody/jspm-install
+    # - script:
+    #     name: compile js via jspm
+    #     code: |
+    #         jspm bundle-sfx --minify js/app static/js/build.js
     - arjen/hugo-build:
       version: "0.17"
       #theme: hugo-bootswatch
