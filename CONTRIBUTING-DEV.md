@@ -69,7 +69,7 @@ The `static/js/` directory includes:
 
 #### DEPLOYMENT
 
-Deployment is achieved via [Wercker](https://app.wercker.com/bppwrite/bppwrite.github.io). The build steps in `/wercker.yml` dictate how this is done. The following is automated, making any manual changes to the code unnecessary prior to deploying.
+_The following is automated via Wercker (see [SITE DEPLOYMENT](#site-deployment)), making any manual changes to the code is unnecessary prior to deploying._
 
 We use [SystemJS](https://github.com/systemjs/systemjs) to be able to write and deploy JavaScript as modules, and [jspm](http://jspm.io/) to bundle those modules and our third-party libraries for faster page loads.
 
@@ -120,3 +120,11 @@ Then, jspm would automatically update our `config.js` file so SystemJS knows whe
 The jspm [getting started guide](http://jspm.io/docs/getting-started.html) can help to explain the role of jspm and SystemJS.
 
 Rerunning `npm install` and `jspm install` before compiling with `jspm bundle-sfx --minify js/app` would be necessary if any new packages were added to `package.json` on your last pull from the repository. This could be easy to overlook, since `build.js` should include all dependencies.
+
+## SITE DEPLOYMENT
+
+Deployment is achieved via [Wercker](https://app.wercker.com/bppwrite/bppwrite.github.io). The build steps in [wercker.yml](wercker.yml) dictate how this is done.
+
+A [custom Docker image](https://hub.docker.com/r/marcguyer/docker-golang-npm/) was created for this purpose and includes the needed versions of Go and Nodejs.
+
+Wercker is engaged immediately after a new commit (or a set of commits) is pushed to the Github repository. Wercker, via it's configured build steps, compiles and minifies the javascript code, builds the Hugo site, then deploys the resulting static files to the [master branch](bppwrite/bppwrite.github.io/tree/master)

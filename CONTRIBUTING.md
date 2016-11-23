@@ -1,3 +1,7 @@
+# Contributing Content
+
+The following is a fairly comprehensive guide for contributing new or changes to the site content. For guidance with contributing additional coding elements, like CSS and Javascript, see [CONTRIBUTING-DEV](CONTRIBUTING-DEV.md)
+
 ## Creating a Show or Event
 
 This process is generally the same for Shows and Events but they are in two different directories, `show/` and `event/` respectively.
