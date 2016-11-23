@@ -3,7 +3,10 @@
 .social-icons {
 	color: $gray-light;
 	list-style: none;
-	a + a {
+	li {
+		display: inline;
+	}
+	li + li {
 		padding-left: 0.5em;
 	}
 	padding-left: 0;
