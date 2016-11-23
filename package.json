@@ -23,7 +23,7 @@
     "autoprefixer": "^6.4.1",
     "eslint": "^3.3.1",
     "jspm": "^0.16.47",
-    "node-sass": "^3.8.0",
+    "node-sass": "^3.13.0",
     "postcss-cli": "^2.6.0"
   },
   "jspm": {
