@@ -2,7 +2,7 @@
 # Docker Hub https://registry.hub.docker.com/_/debian/
 # Read more about containers on our dev center
 # http://devcenter.wercker.com/docs/containers/index.html
-box: debian
+box: marcguyer/docker-golang-npm
 # box: wercker/default
 # You can also use services such as databases. Read more on our dev center:
 # http://devcenter.wercker.com/docs/services/index.html
@@ -26,27 +26,17 @@ build:
         code: |
             echo "America/Indiana/Indianapolis" > /etc/timezone
             dpkg-reconfigure --frontend noninteractive tzdata
-    # - install-packages:
-    #     packages: curl
-    # - script:
-    #     name: install nodejs deb source
-    #     code: |
-    #         curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
-    # - install-packages:
-    #     packages: nodejs
-    # - npm-install
-    # - nahody/jspm-install
-    # - script:
-    #     name: compile js via jspm
-    #     code: |
-    #         jspm bundle-sfx --minify js/app static/js/build.js
+    - npm-install
+    - nahody/jspm-install
+    - script:
+        name: compile js via jspm
+        code: |
+            jspm bundle-sfx --minify js/app static/js/build.js
     - arjen/hugo-build:
       version: "0.17"
       #theme: hugo-bootswatch
 deploy:
   steps:
-    - install-packages:
-        packages: git ssh-client
     - leipert/git-push:
         gh_oauth: $GIT_TOKEN
         # domain: bppwrite.github.io
