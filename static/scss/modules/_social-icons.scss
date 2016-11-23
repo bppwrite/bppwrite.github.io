@@ -2,8 +2,12 @@
 
 .social-icons {
 	color: $gray-light;
+	display: inline-block;
 	list-style: none;
-	a + a {
+	li {
+		display: inline;
+	}
+	li + li {
 		padding-left: 0.5em;
 	}
 	padding-left: 0;

@@ -1,0 +1,8 @@
+#fb_share_button {
+	color: $primary;
+	display: inline-block;
+}
+#fb_share_button:hover {
+	color: $primary-light;
+	cursor: pointer; cursor: hand;
+}
