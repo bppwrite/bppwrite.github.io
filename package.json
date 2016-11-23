@@ -6,6 +6,7 @@
   "scripts": {
     "autoprefixer": "postcss -u autoprefixer -r static/css/main.css",
     "build:css": "npm run scss && npm run autoprefixer",
+		"build:js": "jspm bundle-sfx --minify js/app",
     "lint": "eslint static/js/src",
     "scss": "node-sass --output-style compressed --source-map true -o static/css static/scss"
   },
