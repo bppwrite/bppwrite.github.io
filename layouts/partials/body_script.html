@@ -1,13 +1,3 @@
-<!-- javascript -->
-<!-- using systemjs directly is more convenient in dev -->
-<!-- <script src="/js/jspm_packages/system.js"></script>
-<script src="/js/config.js"></script>
-<script>
-  System.import('/js/app').catch(function(err){ console.error(err); });
-</script> -->
-<!-- this should be activated for production -->
-<!-- <script src="/js/build.js"></script> -->
-
 {{/* if the build file is there, use it. Otherwise, use systemjs */}}
 {{- if eq ($.Scratch.Get "isBuilt") nil -}}
     {{- range (readDir "static/js") -}}

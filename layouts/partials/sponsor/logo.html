@@ -1,7 +1,12 @@
-{{ $sponsor := . }}
-{{- range (readDir (printf "content/%s" .RelPermalink)) -}}
-    {{- if hasPrefix .Name "logo" -}}
-        <img src="{{ printf "%s%s" $sponsor.RelPermalink .Name }}"
-            alt="{{ $sponsor.Title }} Logo" />
+{{- $sponsor := . -}}
+{{- $sponsorKey := (printf "sponsor-logo-%s" (.Title | urlize)) -}}
+{{- if eq ($.Scratch.Get $sponsorKey) nil -}}
+    {{- range (readDir (printf "content/%s" .RelPermalink)) -}}
+        {{- if hasPrefix .Name "logo" -}}
+            {{- $.Scratch.Set $sponsorKey .Name -}}
+        {{- end -}}
     {{- end -}}
-{{- end -}}
+{{- end }}
+
+<img src="{{ printf "%s%s" $sponsor.RelPermalink ($.Scratch.Get $sponsorKey) }}"
+    alt="{{ $sponsor.Title }} Logo" />
