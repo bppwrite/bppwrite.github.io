@@ -1,15 +1,16 @@
 {{ define "main" }}
 
-{{ .Content }}
-
 <div class="container-wide">
-	<h1>Photo Gallery</h1>
-	<div class="gallery">
-		{{ range $i, $sequence :=  (seq 57) }}
-		<img src="/photo-gallery/photos/photo{{ $sequence }}.jpg">
-		{{ end }}
-	</div>
+    <h1>Photo Gallery</h1>
 
+    {{ .Content }}
+
+    <div class="gallery">
+        {{ $path := (printf "%sphotos" .RelPermalink) }}
+        {{- range (readDir (printf "/content%s" $path)) -}}
+            <img src="{{ printf "%s/%s" $path .Name }}">
+        {{- end -}}
+    </div>
 </div>
 
 {{ end }}
