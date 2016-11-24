@@ -8,7 +8,8 @@
     <div class="gallery">
         {{ $path := (printf "%sphotos" .RelPermalink) }}
         {{- range (readDir (printf "/content%s" $path)) -}}
-            <img src="{{ printf "%s/%s" $path .Name }}">
+            <img src="{{ printf "%s/%s" $path .Name }}"
+                alt="{{ .Name | replaceRE "(.+?)(\\.[^.]*$|$)" "$1" }}">
         {{- end -}}
     </div>
 </div>
