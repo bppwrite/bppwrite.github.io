@@ -72,7 +72,11 @@
                         <span class="slide-text">
                             <span class="img-text-background">
                                 <!-- <b>{{ $index }} Next {{ $page.Type | title }}:</b> -->
-                                {{ $page.Title | markdownify }}
+                                {{- if ne $page.Params.hero_title nil -}}
+                                    {{ $page.Params.hero_title | markdownify }}
+                                {{- else -}}
+                                    {{ $page.Title | markdownify }}
+                                {{- end -}}
                             </span>
                         </span>
                     </div>

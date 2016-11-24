@@ -4,6 +4,7 @@ slot = "Heartfelt Musical"
 "stage managers" = []
 subtitle = ""
 title = "Home"
+hero_title = "A heartfelt musical: _Home_ -- book by _Christy Hall_, music & lyrics by _Scott Alan_"
 venue = "Bloomington Playwrights Project"
 youtube_id = "r5t5WBosE1U"
 
