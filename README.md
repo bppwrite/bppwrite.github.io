@@ -21,6 +21,12 @@ git clone https://github.com/bppwrite/bppwrite.github.io.git
 
 Now you have all of the source code for the site.
 
+Checkout the `dev` branch. All developement is based on this branch.
+
+```sh
+git checkout dev
+```
+
 ## RUN
 
 Run `hugo` and serve the site locally. Open a terminal and...
