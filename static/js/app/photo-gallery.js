@@ -27,7 +27,7 @@ function ScrapeImageElements() {
 		})
 		.map((item) => {
 			return {
-				src: item.currentSrc,
+				src: item.getAttribute('src'),
 				w: item.width,
 				h: item.height
 			};
