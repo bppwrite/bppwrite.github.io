@@ -22,31 +22,17 @@ function ScrapeImageElements() {
 		.filter((item) => {
 			return item.parentElement === divGallery;
 		})
+		.filter((item) => {
+			return item.alt !== '.DS_Store';
+		})
 		.map((item) => {
 			return {
-				src: item.baseURI,
+				src: item.currentSrc,
 				w: item.width,
 				h: item.height
 			};
 		});
-		console.log(items);
 	return items;
 }
 
 export { PhotoGallery, ScrapeImageElements };
-
-/*
-// build items array
-let items = [
-	{
-		src: 'https://placekitten.com/600/400',
-		w: 600,
-		h: 400
-	},
-	{
-		src: 'https://placekitten.com/1200/900',
-		w: 1200,
-		h: 900
-	}
-];
-*/
