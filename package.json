@@ -1,47 +1,53 @@
 {
-    "name": "bppwrite.github.io",
-    "version": "1.0.0",
-    "description": "the website of the bloomington playwrights project",
-    "main": "index.js",
-    "scripts": {
-        "autoprefixer": "postcss -u autoprefixer -r static/css/main.css",
-        "build:css": "npm run scss && npm run autoprefixer",
-        "build:js": "jspm bundle-sfx --minify js/app",
-        "lint": "eslint static/js/src",
-        "scss": "node-sass --output-style compressed --source-map true -o static/css static/scss"
+  "name": "bppwrite.github.io",
+  "version": "1.0.0",
+  "description": "the website of the bloomington playwrights project",
+  "main": "index.js",
+  "scripts": {
+    "autoprefixer": "postcss -u autoprefixer -r static/css/main.css",
+    "build:css": "npm run scss && npm run autoprefixer",
+    "build:js": "jspm bundle-sfx --minify js/app",
+    "lint": "eslint static/js/src",
+    "scss": "node-sass --output-style compressed --source-map true -o static/css static/scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bppwrite/bppwrite.github.io.git"
+  },
+  "author": "",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/bppwrite/bppwrite.github.io/issues"
+  },
+  "homepage": "https://github.com/bppwrite/bppwrite.github.io#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.4.1",
+    "eslint": "^3.3.1",
+    "jspm": "^0.16.47",
+    "node-sass": "^3.13.0",
+    "postcss-cli": "^2.6.0"
+  },
+  "jspm": {
+    "directories": {
+      "baseURL": "static",
+      "packages": "static/js/jspm_packages"
     },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/bppwrite/bppwrite.github.io.git"
+    "configFile": "static/js/config.js",
+    "dependencies": {
+      "jquery": "npm:jquery@^3.1.1",
+      "photoswipe": "npm:photoswipe@^4.1.1",
+      "rxjs": "npm:rxjs@^5.0.0-rc.1",
+      "slideout": "npm:slideout@^0.1.12"
     },
-    "author": "",
-    "license": "Unlicense",
-    "bugs": {
-        "url": "https://github.com/bppwrite/bppwrite.github.io/issues"
-    },
-    "homepage": "https://github.com/bppwrite/bppwrite.github.io#readme",
     "devDependencies": {
-        "autoprefixer": "^6.4.1",
-        "eslint": "^3.3.1",
-        "jspm": "^0.16.47",
-        "node-sass": "^3.13.0",
-        "postcss-cli": "^2.6.0"
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
     },
-    "jspm": {
-        "directories": {
-            "baseURL": "static",
-            "packages": "static/js/jspm_packages"
-        },
-        "configFile": "static/js/config.js",
-        "dependencies": {
-            "jquery": "npm:jquery@^3.1.1",
-            "rxjs": "npm:rxjs@^5.0.0-rc.1",
-            "slideout": "npm:slideout@^0.1.12"
-        },
-        "devDependencies": {
-            "babel": "npm:babel-core@^5.8.24",
-            "babel-runtime": "npm:babel-runtime@^5.8.24",
-            "core-js": "npm:core-js@^1.1.4"
-        }
+    "overrides": {
+      "npm:photoswipe@4.1.1": {
+        "lib": "src"
+      }
     }
+  }
 }
