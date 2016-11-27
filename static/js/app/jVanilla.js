@@ -16,7 +16,17 @@ function V() {
 		return width;
 	}
 
+	function getPageScroll() {
+		return `${window.pageYOffset || document.documentElement.scrollTop}px`;
+	}
+
+	function getPositionToViewport(selection) {
+		return selection.getBoundingClientRect();
+	}
+
 	return {
+		getPageScroll: getPageScroll,
+		getPositionToViewport: getPositionToViewport,
 		hasClass: hasClass,
 		outerWidth: outerWidth
 	};
