@@ -1,5 +1,5 @@
 import { Facebook } from './app/facebook';
-import { PhotoGallery, ScrapeImageElements }	from './app/photo-gallery';
+import { PhotoGallery }	from './app/photo-gallery';
 import { V } from './app/jVanilla';
 import { Slider } from './app/slider';
 import { SlideoutMenu } from './app/slideout-menu';
@@ -23,6 +23,5 @@ if (fbShare) {
 }
 
 if (pswpElement) {
-	let images = ScrapeImageElements();
-	PhotoGallery(pswpElement, images);
+	PhotoGallery(pswpElement);
 }
