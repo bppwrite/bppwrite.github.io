@@ -17,18 +17,23 @@ function V() {
 	}
 
 	function getPageScroll() {
-		return `${window.pageYOffset || document.documentElement.scrollTop}px`;
+		return window.pageYOffset || document.documentElement.scrollTop;
 	}
 
-	function getPositionToViewport(selection) {
-		return selection.getBoundingClientRect();
+	function width() {
+		return document.documentElement.clientWidth;
+	}
+
+	function height() {
+		return document.documentElement.clientHeight;
 	}
 
 	return {
 		getPageScroll: getPageScroll,
-		getPositionToViewport: getPositionToViewport,
 		hasClass: hasClass,
-		outerWidth: outerWidth
+		height: height,
+		outerWidth: outerWidth,
+		width: width
 	};
 }
 

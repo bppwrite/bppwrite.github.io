@@ -14,12 +14,16 @@ export var PhotoGallery = function(psEl) {
 	// dom references
 	let imageEls = document.querySelectorAll('div.gallery img');
 	let topBar = document.querySelector('.pswp__top-bar');
+	let arrowLeft = document.querySelector('.pswp__button--arrow--left');
+	let arrowRight = document.querySelector('.pswp__button--arrow--right');
 	// rxjs
 	let img$ = Observable.fromEvent(items, 'click')
 		.subscribe(imgObserver);
 	let imgObserver = {
 		next: (event) => {
-			topBar.style.top = dollar.getPageScroll();
+			topBar.style.top = `${dollar.getPageScroll()}px`;
+			arrowLeft.style.top = `${dollar.getPageScroll() + dollar.height()/2}px`;
+			arrowRight.style.top = `${dollar.getPageScroll() + dollar.height()/2}px`;
 			options.index = [].slice.call(imageEls).findIndex(
 				(el) => {
 					return event.srcElement.alt === el.alt;
@@ -31,7 +35,11 @@ export var PhotoGallery = function(psEl) {
 			// Initializes and opens PhotoSwipe
 			let gallery = new PhotoSwipe(psEl, PhotoSwipeUI_Default, items, options);
 			gallery.init();
-			gallery.listen('resize', () => { topBar.style.top = dollar.getPageScroll(); });
+			gallery.listen('resize', () => {
+				topBar.style.top = dollar.getPageScroll();
+				arrowLeft.style.top = `${dollar.getPageScroll() + dollar.height()/2}px`;
+				arrowRight.style.top = `${dollar.getPageScroll() + dollar.height()/2}px`;
+			});
 		},
 		error: (e) => { console.log(e); },
 		complete: () => {}
