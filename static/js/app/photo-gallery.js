@@ -8,6 +8,14 @@ export var PhotoGallery = function(psEl) {
 	let imageEls = document.querySelectorAll('div.gallery img');
 	let imgObserver = {
 		next: (event) => {
+			options.index = [].slice.call(imageEls).findIndex(
+				(el) => {
+					return event.srcElement.alt === el.alt;
+				}
+			);
+			if (options.index === -1) {
+				options.index = 0;
+			}
 			// Initializes and opens PhotoSwipe
 			let gallery = new PhotoSwipe(psEl, PhotoSwipeUI_Default, items, options);
 			gallery.init();
