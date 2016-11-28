@@ -16,9 +16,24 @@ function V() {
 		return width;
 	}
 
+	function getPageScroll() {
+		return window.pageYOffset || document.documentElement.scrollTop;
+	}
+
+	function width() {
+		return document.documentElement.clientWidth;
+	}
+
+	function height() {
+		return document.documentElement.clientHeight;
+	}
+
 	return {
+		getPageScroll: getPageScroll,
 		hasClass: hasClass,
-		outerWidth: outerWidth
+		height: height,
+		outerWidth: outerWidth,
+		width: width
 	};
 }
 
