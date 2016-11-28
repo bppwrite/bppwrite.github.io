@@ -18,7 +18,6 @@ System.config({
     "babel-runtime": "npm:babel-runtime@5.8.38",
     "core-js": "npm:core-js@1.2.7",
     "jquery": "npm:jquery@3.1.1",
-    "photoswipe": "npm:photoswipe@4.1.1",
     "rxjs": "npm:rxjs@5.0.0-rc.1",
     "slideout": "npm:slideout@0.1.12",
     "github:jspm/nodelibs-assert@0.1.0": {
