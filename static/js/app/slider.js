@@ -5,9 +5,8 @@ import './rxjs-operators';
 
 function Slider() {
 	let dollar = V();
-	// declare variables
 	//slider references
-	// let allSlides = $('.slide');
+	let firstSlide = document.querySelector('.slide');
 	let sliderDiv = $('#slider');
 	let holder = document.querySelector('.holder');
 	// nav references
@@ -56,8 +55,13 @@ function Slider() {
 
 	// called to initialize a slider
 	function init() {
+		randomize();
 		styleWrite();
 		bindUIEvents();
+	}
+
+	function randomize() {
+		firstSlide.style.backgroundImage = `url('${getRandomReference(firstSlide)}')`;
 	}
 
 	function styleWrite() {
@@ -118,6 +122,16 @@ function Slider() {
 
 	function setTimer() {
 		autoTimer = window.setInterval(autoMove, autoTiming);
+	}
+
+	function getRandomReference(slide) {
+		let paths = JSON.parse(slide.dataset.heros);
+		let randomNumber = getRandomInt(0, paths.length - 1);
+		return paths[randomNumber];
+	}
+
+	function getRandomInt(min, max) {
+		return Math.floor(Math.random() * (max - min + 1)) + min;
 	}
 
 	return {
