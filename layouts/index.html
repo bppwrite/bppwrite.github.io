@@ -71,13 +71,36 @@
                         data-heros="{{ $heroPaths }}">
                         <span class="slide-text">
                             <span class="img-text-background">
-                                <!-- <b>{{ $index }} Next {{ $page.Type | title }}:</b> -->
-                                {{- if ne $page.Params.hero_title nil -}}
-                                    {{ $page.Params.hero_title | markdownify }}
+                                {{- with $page.Params.hero_title -}}
+                                    {{- if $page.Params.hero_subtitle -}}
+                                        {{ (printf "%s: %s" . $page.Params.hero_subtitle) | markdownify }}
+                                    {{- else -}}
+                                        {{ . | markdownify }}
+                                    {{- end -}}
                                 {{- else -}}
-                                    {{ $page.Title | markdownify }}
+                                    {{- with $page.Params.subtitle -}}
+                                        {{ (printf "%s: %s" $page.Title .) | markdownify }}
+                                    {{- else -}}
+                                        {{ $page.Title | markdownify }}
+                                    {{- end -}}
                                 {{- end -}}
                             </span>
+                            {{- if and $page.Params.hero_call_to_action $page.Params.hero_call_to_action_link -}}
+                                <br>
+                                <a class="button" href="{{ $page.Params.hero_call_to_action_link }}">
+                                    {{ $page.Params.hero_call_to_action | markdownify }}
+                                </a>
+                            {{- else if $page.Params.tickets_run -}}
+                                <br>
+                                <a class="button" href="{{ $page.Params.tickets_run }}">
+                                    Get Tickets
+                                </a>
+                            {{- else -}}
+                                <br>
+                                <a class="button" href="/tickets/#season-subscription">
+                                    Buy a Season Subscription
+                                </a>
+                            {{- end -}}
                         </span>
                     </div>
                 {{- end -}}

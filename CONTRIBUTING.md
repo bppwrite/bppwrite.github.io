@@ -65,7 +65,7 @@ $ hugo new show/2015-2016/the-bull-the-moon-and-the-coronet-of-stars/index.md
 
 Open the content file you created with your favorite text editor. The frontmatter is shown at the top of the content file delimited by `+++`. Each element of the frontmatter has a default (usually empty). It's your job to change the value of each element according to the show components. Here's a quick checklist:
 
-1. Fix the capitalization of the `title`. Set the `subtitle` if applicable
+1. Fix the capitalization of the `title`. Set the `subtitle` if applicable.
 2. List the `showtimes` using the ISO 8601 datetime format (e.g., "2016-01-01T19:30:00")
 3. List the OvationTix link to the tickets page for each showtime.
 4. Set the `date` parameter equal to the first element of the list of `showtimes`
@@ -76,15 +76,23 @@ Open the content file you created with your favorite text editor. The frontmatte
 
 Note: the frontmatter elements for an Event will be different than for a Show
 
-### Add images
-
-#### Poster
+### Add Poster
 
 Create an image called `poster` of any valid web type (e.g., JPG, GIF, PNG, SVG) and place it in the same directory as the show. e.g., `show/2015-2016/the-bull-the-moon-and-the-coronet-of-stars/poster.png`.
 
-#### Hero
+### Add Hero
+
+#### Image
 
 Create an image called `hero` of any valid web type (e.g., JPG, GIF, PNG, SVG) and place it in the same directory as the show. e.g., `show/2015-2016/the-bull-the-moon-and-the-coronet-of-stars/hero.jpg`.
+
+#### Headline
+
+By default, the `title` and `subtitle` (if set) are used for the hero headline. You may override these with the frontmatter params `hero_title` and `hero_subtitle`. The override params are markdown enabled so you may choose to add emphasis to the text of the headline.
+
+#### Call to Action
+
+By default, the call to action is "Buy a Season Subscription". If a `tickets_run` frontmatter param is set, this is used for the target with the text of "Get Tickets". Lastly, if the `hero_call_to_action` and `hero_call_to_action_link` are both set, these values are used.
 
 #### Image gallery
 
@@ -142,11 +150,7 @@ $ hugo new special/new-works/index.md
 
 #### Set the frontmatter for the content file
 
-Open the content file you created with your favorite text editor. The frontmatter is shown at the top of the content file delimited by `+++`. Each element of the frontmatter has a default (usually empty). It's your job to change the value of each element according to the show components. Here's a quick checklist:
-
-1. Set the `title` to the main text headline of the special
-2. Set the `call_to_action` to what you want the action button to say in text, and `call_to_action_link` to the target of the button
-3. Set the `hero_weight` if you'd like to override the default order
+Open the content file you created with your favorite text editor. The frontmatter is shown at the top of the content file delimited by `+++`. Each element of the frontmatter has a default (usually empty). It's your job to change the value of each element according to the special hero components. The frontmatter options are generally the same as for a show or event. 
 
 ##### Changing hero order
 
