@@ -7,11 +7,14 @@
     width: 100vw;
     height: 100vh;
 	}
+	.holder {
+		background: $black;
+	}
 	.slide {
 	  width: 100vw;
 	  height: 100vh;
 	  position: absolute;
-    background: $gray-dark;
+    background: $gray;
 	  background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
