@@ -17,7 +17,6 @@ function Slider() {
 	let autoTimer;
 	let autoTiming = 9000;
 	let scrollTiming = 555;
-	let slideWidth;
 	let activeIndex = 0;
 	let slideCount = holder.querySelectorAll('.slide').length;
 	let maxIndex = slideCount - 1;
@@ -42,9 +41,6 @@ function Slider() {
 	let windowObserver = {
 		next: (event) => {
 			window.clearInterval(autoTimer);
-			slideWidth = dollar.outerWidth(holder.firstChild);
-			dollar.removeClass(holder.children[activeIndex], 'show');
-			dollar.addClass(holder.children[activeNext], 'hide');
 			setTimer();
 		},
 		error: (e) => { console.log(e); },
