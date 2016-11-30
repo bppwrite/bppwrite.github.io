@@ -1,3 +1,23 @@
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [CONTRIBUTING FRONT-END DEVELOPMENT CHANGES](#contributing-front-end-development-changes)
+	- [SETUP](#setup)
+		- [INSTALL](#install)
+	- [SASS](#sass)
+		- [OVERVIEW](#overview)
+		- [COMPILE](#compile)
+	- [JAVASCRIPT](#javascript)
+		- [OVERVIEW](#overview)
+			- [FILES](#files)
+			- [DEPLOYMENT](#deployment)
+		- [COMMANDS](#commands)
+			- [COMPILE](#compile)
+			- [INSTALLING THIRD-PARTY LIBRARIES](#installing-third-party-libraries)
+		- [TROUBLESHOOTING AND REFERENCES](#troubleshooting-and-references)
+	- [SITE DEPLOYMENT](#site-deployment)
+
+<!-- /TOC -->
+
 # CONTRIBUTING FRONT-END DEVELOPMENT CHANGES
 
 This set of steps can be ignored unless you're changing Sass or JavaScript files.
