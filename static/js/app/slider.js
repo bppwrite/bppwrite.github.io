@@ -1,4 +1,3 @@
-import $ from 'jquery';
 import { V } from './jVanilla';
 import { Observable } from 'rxjs/Observable';
 import './rxjs-operators';
@@ -7,8 +6,8 @@ function Slider() {
 	let dollar = V();
 	//slider references
 	let firstSlide = document.querySelector('.slide');
-	let sliderDiv = $('#slider');
-	let holder = document.querySelector('.holder');
+	let sliderDiv = document.getElementById('slider');
+	let arrayHolder = [].slice.call(sliderDiv.children);
 	// nav references
 	let left = document.getElementById('control-left');
 	let right = document.getElementById('control-right');
@@ -16,17 +15,14 @@ function Slider() {
 	// math references
 	let autoTimer;
 	let autoTiming = 9000;
-	let scrollTiming = 555;
-	let slideWidth;
 	let activeIndex = 0;
-	let slideCount = holder.querySelectorAll('.slide').length;
+	let slideCount = sliderDiv.querySelectorAll('.slide').length;
 	let maxIndex = slideCount - 1;
 
 	let downObserver = {
 		next: () => {
-			$('html, body').animate({
-				scrollTop: $(window).height()
-			}, scrollTiming);
+
+			dollar.smoothScroll(dollar.getPageScroll(), dollar.height());
 		},
 		error: (e) => { console.log(e); },
 		complete: () => {}
@@ -43,10 +39,6 @@ function Slider() {
 	let windowObserver = {
 		next: (event) => {
 			window.clearInterval(autoTimer);
-			slideWidth = dollar.outerWidth(holder.firstChild);
-			sliderDiv.animate({
-				scrollLeft: activeIndex * slideWidth
-			}, 0);
 			setTimer();
 		},
 		error: (e) => { console.log(e); },
@@ -65,14 +57,22 @@ function Slider() {
 	}
 
 	function styleWrite() {
-		holder.style.width = `${ slideCount * 100 }%`;
-		slideWidth = dollar.outerWidth(holder.firstChild);
+		arrayHolder.forEach(
+			(child, i) => {
+				if (i === 0) {
+					dollar.addClass(arrayHolder[i], 'show');
+				} else {
+					dollar.addClass(arrayHolder[i], 'hide');
+				}
+			}
+		);
 	}
 
 	function bindUIEvents() {
+		// because requestAnimationFrame is used:
+		dollar.requestAnimationFramePolyfill();
 		let left$ = Observable.fromEvent(left, 'click');
 		let right$ = Observable.fromEvent(right, 'click');
-
 		let down$ = Observable.fromEvent(down, 'click')
 			.subscribe(downObserver);
 		let lr$ = Observable.merge(left$, right$)
@@ -90,9 +90,10 @@ function Slider() {
 		event.preventDefault();
 		window.clearInterval(autoTimer);
 		activeNext = calculateNext(activeIndex, maxIndex, event.target.id);
-		sliderDiv.animate({
-			scrollLeft: activeNext * slideWidth
-		}, scrollTiming);
+		dollar.removeClass(arrayHolder[activeIndex], 'show');
+		dollar.addClass(arrayHolder[activeIndex], 'hide');
+		dollar.addClass(arrayHolder[activeNext], 'show');
+		dollar.removeClass(arrayHolder[activeNext], 'hide');
 		activeIndex = activeNext;
 		setTimer();
 	}
@@ -100,9 +101,10 @@ function Slider() {
 	// utility functions
 	function autoMove() {
 		let activeNext = calculateNext(activeIndex, maxIndex, 'control-right');
-		sliderDiv.animate({
-			scrollLeft: activeNext * slideWidth
-		}, scrollTiming);
+		dollar.removeClass(arrayHolder[activeIndex], 'show');
+		dollar.addClass(arrayHolder[activeIndex], 'hide');
+		dollar.addClass(arrayHolder[activeNext], 'show');
+		dollar.removeClass(arrayHolder[activeNext], 'hide');
 		activeIndex = activeNext;
 	}
 

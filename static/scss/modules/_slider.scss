@@ -3,32 +3,24 @@
 .slider-wrap {
 
 	.slider {
-	  overflow-x: scroll;
+		background-color: $black;
+		display: block;
     width: 100vw;
     height: 100vh;
 	}
-	.holder {
-	  width: 400%;
-	}
 	.slide {
-	  float: left;
 	  width: 100vw;
 	  height: 100vh;
-	  position: relative;
-    background: $gray-dark;
+	  position: absolute;
+    background: $gray;
 	  background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+		transition: all .5s ease-in-out;
+		top: 0;
+		left: 0;
+		z-index: 1;
 	}
-	.slide:before {
-	  content: "";
-	  position: absolute;
-	  bottom: 0;
-	  left: 0;
-	  width: 100%;
-	  height: 100%;
-	  background: $day-trans;
-}
 	.slide-text {
 	  position: absolute;
 	  color: $white;
@@ -41,6 +33,14 @@
 		text-align: center;
 		width: 100%;
 	}
+	.hide {
+		opacity: 0;
+		z-index: 1;
+	}
+	.show {
+		opacity: 1;
+		z-index: 2;
+	}
 
 
 
@@ -49,21 +49,6 @@
     color: $gray-light;
     font-size: 2em;
   }
-
-	// .fa-chevron-left:before {
-	// 	background: linear-gradient(to right, $black-trans, rgba(35, 31, 32, 0));
-	// 	padding: 10px;
-	// }
-	//
-	// .fa-chevron-right:before {
-	// 	background: linear-gradient(to left, $black-trans, rgba(35, 31, 32, 0));
-	// 	padding: 10px;
-	// }
-	//
-	// .fa-chevron-down:before {
-	// 	background: linear-gradient(to top, $black-trans, rgba(35, 31, 32, 0));
-	// 	padding: 10px;
-	// }
 
 	.slider-nav {
 		position: absolute;
@@ -78,21 +63,21 @@
       bottom: 10px;
       left: 50%;
       right: 50%;
-      z-index: 2;
+      z-index: 10;
 			text-shadow: 1px 1px $black-trans;
     }
     #control-left {
       top: 50%;
       bottom: 50%;
       left: 10px;
-			z-index: 2;
+			z-index: 10;
 			text-shadow: 1px 1px $black-trans;
     }
     #control-right {
       top: 50%;
       bottom: 50%;
       right: 10px;
-			z-index: 2;
+			z-index: 10;
 			text-shadow: 1px 1px $black-trans;
     }
 		#control-down, #control-left, #control-right {
@@ -101,3 +86,5 @@
 	}
 
 }
+
+// NOTE z-index

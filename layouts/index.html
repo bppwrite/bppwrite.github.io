@@ -61,7 +61,6 @@
     <!-- slider -->
     <div class="slider-wrap">
         <div class="slider" id="slider">
-            <div class="holder">
 
             {{- range $index, $page := ($.Scratch.GetSortedMapValues "heros") -}}
                 {{- $heroPaths := (partial "heros.html" $page) -}}
@@ -106,7 +105,6 @@
                 {{- end -}}
             {{- end -}}
 
-            </div>
         </div>
         <nav class="slider-nav" id="slider-nav">
             <span class="fa fa-chevron-left"

@@ -34,7 +34,6 @@
     },
     "configFile": "static/js/config.js",
     "dependencies": {
-      "jquery": "npm:jquery@^3.1.1",
       "rxjs": "npm:rxjs@^5.0.0-rc.1",
       "slideout": "npm:slideout@^0.1.12"
     },
