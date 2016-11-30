@@ -1,3 +1,30 @@
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Contributing Content](#contributing-content)
+	- [Creating a Show or Event](#creating-a-show-or-event)
+		- [Example structure](#example-structure)
+		- [Create the main content file](#create-the-main-content-file)
+			- [Set the frontmatter for the content file](#set-the-frontmatter-for-the-content-file)
+		- [Add Poster](#add-poster)
+		- [Add Hero](#add-hero)
+			- [Image](#image)
+			- [Headline](#headline)
+			- [Call to Action](#call-to-action)
+		- [Image gallery](#image-gallery)
+	- [Creating a Sponsor](#creating-a-sponsor)
+		- [Create the main content file](#create-the-main-content-file)
+			- [Set the frontmatter for the content file](#set-the-frontmatter-for-the-content-file)
+		- [Add images for the sponsor](#add-images-for-the-sponsor)
+			- [Logo](#logo)
+	- [Creating a Special Hero](#creating-a-special-hero)
+		- [Create the main content file](#create-the-main-content-file)
+			- [Set the frontmatter for the content file](#set-the-frontmatter-for-the-content-file)
+				- [Changing hero order](#changing-hero-order)
+		- [Add images](#add-images)
+	- [Optimizing images](#optimizing-images)
+
+<!-- /TOC -->
+
 # Contributing Content
 
 The following is a fairly comprehensive guide for contributing new or changes to the site content. For guidance with contributing additional coding elements, like CSS and Javascript, see [CONTRIBUTING-DEV](CONTRIBUTING-DEV.md)
@@ -94,7 +121,7 @@ By default, the `title` and `subtitle` (if set) are used for the hero headline. 
 
 By default, the call to action is "Buy a Season Subscription". If a `tickets_run` frontmatter param is set, this is used for the target with the text of "Get Tickets". Lastly, if the `hero_call_to_action` and `hero_call_to_action_link` are both set, these values are used.
 
-#### Image gallery
+### Image gallery
 
 ```sh
 $ mkdir -p show/[2016-2017]/[the-title-of-the-show]/gallery
@@ -150,7 +177,7 @@ $ hugo new special/new-works/index.md
 
 #### Set the frontmatter for the content file
 
-Open the content file you created with your favorite text editor. The frontmatter is shown at the top of the content file delimited by `+++`. Each element of the frontmatter has a default (usually empty). It's your job to change the value of each element according to the special hero components. The frontmatter options are generally the same as for a show or event. 
+Open the content file you created with your favorite text editor. The frontmatter is shown at the top of the content file delimited by `+++`. Each element of the frontmatter has a default (usually empty). It's your job to change the value of each element according to the special hero components. The frontmatter options are generally the same as for a show or event.
 
 ##### Changing hero order
 
