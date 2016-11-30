@@ -7,8 +7,7 @@ function Slider() {
 	//slider references
 	let firstSlide = document.querySelector('.slide');
 	let sliderDiv = document.getElementById('slider');
-	let holder = document.querySelector('.holder');
-	let arrayHolder = [].slice.call(holder.children);
+	let arrayHolder = [].slice.call(sliderDiv.children);
 	// nav references
 	let left = document.getElementById('control-left');
 	let right = document.getElementById('control-right');
@@ -16,9 +15,8 @@ function Slider() {
 	// math references
 	let autoTimer;
 	let autoTiming = 9000;
-	let scrollTiming = 555;
 	let activeIndex = 0;
-	let slideCount = holder.querySelectorAll('.slide').length;
+	let slideCount = sliderDiv.querySelectorAll('.slide').length;
 	let maxIndex = slideCount - 1;
 
 	let downObserver = {

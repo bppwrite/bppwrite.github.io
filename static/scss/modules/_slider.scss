@@ -3,12 +3,10 @@
 .slider-wrap {
 
 	.slider {
+		background-color: $black;
 		display: block;
     width: 100vw;
     height: 100vh;
-	}
-	.holder {
-		background: $black;
 	}
 	.slide {
 	  width: 100vw;
@@ -35,11 +33,9 @@
 		width: 100%;
 	}
 	.hide {
-		position: relative;
 		opacity: 0;
 	}
 	.show {
-		position: absolute;
 		opacity: 1;
 	}
 
