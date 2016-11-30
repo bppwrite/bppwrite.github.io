@@ -19,6 +19,7 @@
 		transition: all .5s ease-in-out;
 		top: 0;
 		left: 0;
+		z-index: 1;
 	}
 	.slide-text {
 	  position: absolute;
@@ -34,9 +35,11 @@
 	}
 	.hide {
 		opacity: 0;
+		z-index: 1;
 	}
 	.show {
 		opacity: 1;
+		z-index: 2;
 	}
 
 
@@ -60,21 +63,21 @@
       bottom: 10px;
       left: 50%;
       right: 50%;
-      z-index: 2;
+      z-index: 10;
 			text-shadow: 1px 1px $black-trans;
     }
     #control-left {
       top: 50%;
       bottom: 50%;
       left: 10px;
-			z-index: 2;
+			z-index: 10;
 			text-shadow: 1px 1px $black-trans;
     }
     #control-right {
       top: 50%;
       bottom: 50%;
       right: 10px;
-			z-index: 2;
+			z-index: 10;
 			text-shadow: 1px 1px $black-trans;
     }
 		#control-down, #control-left, #control-right {
@@ -83,3 +86,5 @@
 	}
 
 }
+
+// NOTE z-index
