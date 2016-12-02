@@ -44,7 +44,7 @@ deploy:
     - script:
         name: delete build files
         code: |
-            cd public && rm -rf js/app js/app.js js/config.js scss/
+            cd public && rm -rf js/app js/app.js js/config.js js/jspm_packages scss/
     - leipert/git-push:
         gh_oauth: $GIT_TOKEN
         # domain: bppwrite.github.io
