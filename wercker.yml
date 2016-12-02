@@ -52,3 +52,4 @@ deploy:
         repo: bppwrite/bppwrite.github.io
         branch: master
         clean_removed_files: true
+        discard_history: true
