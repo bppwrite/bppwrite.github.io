@@ -32,11 +32,19 @@ build:
         name: compile js via jspm
         code: |
             jspm bundle-sfx --minify js/app static/js/build.js
+    - script:
+        name: compile scss
+        code: |
+            npm run build:css
     - arjen/hugo-build:
       version: "0.17"
       #theme: hugo-bootswatch
 deploy:
   steps:
+    - script:
+        name: delete build files
+        code: |
+            cd public && rm -rf js/app js/app.js js/config.js scss/
     - leipert/git-push:
         gh_oauth: $GIT_TOKEN
         # domain: bppwrite.github.io
