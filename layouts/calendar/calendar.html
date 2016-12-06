@@ -25,24 +25,22 @@
                     {{ $.Scratch.Get "month" }}
                 </h2>
             {{- end -}}
-            <div class="container-flex event">
-									<div class="date-time container-flex">
-										<div class="date">
-											<div>{{ dateFormat "Mon" $dict.showtime.time }}</div>
-											<div>{{ dateFormat "2" $dict.showtime.time }}</div>
-											<div>{{ dateFormat "Jan" $dict.showtime.time }}</div>
-										</div>
-										<div class="time">
-											<h6><span>{{ dateFormat "3:04 PM" $dict.showtime.time }}</span><h6>
-										</div>
-									</div>
-                    {{ partial "show/poster.html" $dict.page }}
-                <div class="description">
-                    <a href="{{ $dict.page.RelPermalink }}">
-                        {{ $dict.page.Title }}
-                    </a>
-                    - {{ $dict.page.Summary }}
-                </div>
+            <div class="row event">
+							<div class="col-xs-2 col-sm-2 col-md-1">
+								{{ partial "show/poster.html" $dict.page }}
+							</div>
+							<div class="date-time">
+								<div class="date col-xs-2 col-sm-1 col-md-1">
+									<div>{{ dateFormat "Mon" $dict.showtime.time }}</div>
+									<div>{{ dateFormat "2" $dict.showtime.time }}</div>
+								</div>
+								<div class="time col-xs-8 col-sm-9 col-md-10">
+									<a href="{{ $dict.page.RelPermalink }}" class="title">
+											{{ $dict.page.Title }}
+									</a>
+									<h6><span>{{ dateFormat "3:04 PM" $dict.showtime.time }}</span><h6>
+								</div>
+							</div>
             </div>
         {{- end -}}
 
