@@ -1,20 +1,29 @@
 .calendar {
 	h2 {
 		font-family: $trend;
+		font-weight: 400;
 	}
 	.event {
+		@include flex-prop-prefixes(flex-direction, row);
+		@include flex-prop-prefixes(align-items, center);
 		margin-bottom: 1em;
 	}
-	.date-time {
-		margin-left: 20px;
-	}
 	.date {
+		background-color: $accent;
+		border-radius: 50%;
+		font-family: $int-black;
+		height: 67px;
+		padding: 0;
+		margin-right: 5px;
+		margin-left: 5px;
+		width: 67px;
+		text-align: center;
 		div:first-of-type {
-			color: $primary;
+			color: $black;
 			padding: 3px;
 		}
 		div + div {
-			font-size: 1.44em; line-height: 1.3; letter-spacing: -.1rem;
+			color: $white;
 		}
 	}
 	.time {
@@ -31,6 +40,7 @@
 	}
 	figure {
 		height: auto;
+		width: 95px;
 		margin: 0;
 		img {
 			height: auto;
@@ -44,4 +54,13 @@
 		text-transform: uppercase;
 	}
 
+}
+
+@media (min-width: $start-laptop) {
+	.calendar {
+		.date {
+			margin-right: 20px;
+			margin-left: 20px;
+		}
+	}
 }
