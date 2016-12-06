@@ -17,6 +17,8 @@
 		margin-right: 5px;
 		margin-left: 5px;
 		width: 67px;
+		min-width: 67px;
+		min-height: 67px;
 		text-align: center;
 		div:first-of-type {
 			color: $black;
@@ -40,7 +42,7 @@
 	}
 	figure {
 		height: auto;
-		width: 95px;
+		width: 70px;
 		margin: 0;
 		img {
 			height: auto;
@@ -56,11 +58,22 @@
 
 }
 
+@media (min-width: $start-phablet) {
+	.calendar {
+		figure {
+			width: 80px;
+		}
+	}
+}
+
 @media (min-width: $start-laptop) {
 	.calendar {
 		.date {
 			margin-right: 20px;
 			margin-left: 20px;
+		}
+		figure {
+			width: 90px;
 		}
 	}
 }
