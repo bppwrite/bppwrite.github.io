@@ -1,48 +1,52 @@
 {{ define "main" }}
 
-    {{/* current series is the latest */}}
-    {{- $currentSeries := (index .Site.Taxonomies.series.Alphabetical.Reverse 0) -}}
+{{/* current series is the latest */}}
+{{- $currentSeries := (index .Site.Taxonomies.series.Alphabetical.Reverse 0) -}}
 
-    {{/* load scratch with all items with showtimes */}}
-    {{/* one record for each showtime keyed on showtime */}}
-    {{- range $page := where $currentSeries.Pages.ByDate "Section" "in" (slice "show" "event") -}}
-        {{- range .Params.showtimes -}}
+{{/* load scratch with all items with showtimes */}}
+{{/* one record for each showtime keyed on showtime */}}
+{{- range $page := where $currentSeries.Pages.ByDate "Section" "in" (slice "show" "event") -}}
+    {{- range .Params.showtimes -}}
+        {{- if gt (time .time).Unix $.Now.Unix -}}
             {{- $.Scratch.SetInMap "calendar" ( (time .time).Unix | string) (dict "showtime" . "page" $page) -}}
         {{- end -}}
     {{- end -}}
+{{- end -}}
 
-    {{ .Content }}
+{{ .Content }}
 
-    <div class="container calendar">
-    	<h1>Shows and Events Calendar</h1>
+<div class="container calendar">
+    <h1>Shows and Events Calendar</h1>
 
-        {{- $.Scratch.Set "months" (slice) -}}
-        {{- range $weight, $dict := ($.Scratch.GetSortedMapValues "calendar") -}}
-            {{- $.Scratch.Set "month" (dateFormat "January 2006" $dict.showtime.time) -}}
-            {{- if not (in ($.Scratch.Get "months") ($.Scratch.Get "month")) -}}
-                {{- $.Scratch.Add "months" ($.Scratch.Get "month") -}}
-                <h2>
-                    {{ $.Scratch.Get "month" }}
-                </h2>
-            {{- end -}}
-            <div class="row event container-flex">
-								{{ partial "show/poster.html" $dict.page }}
-
-							<div class="date">
-								<div>{{ dateFormat "Mon" $dict.showtime.time }}</div>
-								<div>{{ dateFormat "2" $dict.showtime.time }}</div>
-							</div>
-							<div class="time">
-								<a href="{{ $dict.page.RelPermalink }}" class="title">
-										{{ $dict.page.Title }}
-								</a>
-								<h6><span>{{ dateFormat "3:04 PM" $dict.showtime.time }}</span><h6>
-							</div>
-						</div>
-
-
+    {{- $.Scratch.Set "months" (slice) -}}
+    {{- range $weight, $dict := ($.Scratch.GetSortedMapValues "calendar") -}}
+        {{- $.Scratch.Set "month" (dateFormat "January 2006" $dict.showtime.time) -}}
+        {{- if not (in ($.Scratch.Get "months") ($.Scratch.Get "month")) -}}
+            {{- $.Scratch.Add "months" ($.Scratch.Get "month") -}}
+            <h2>
+                {{ $.Scratch.Get "month" }}
+            </h2>
         {{- end -}}
+        <div class="row event container-flex">
+            {{ partial "show/poster.html" $dict.page }}
 
-    </div>
+            <div class="date">
+                <div>{{ dateFormat "Mon" $dict.showtime.time }}</div>
+                <div>{{ dateFormat "2" $dict.showtime.time }}</div>
+            </div>
+            <div class="time">
+                <a href="{{ $dict.page.RelPermalink }}" class="title">
+                    {{ $dict.page.Title }}
+                </a>
+                <h6>
+                    <span>
+                        {{ dateFormat "3:04 PM" $dict.showtime.time }}
+                    </span>
+                <h6>
+            </div>
+        </div>
+    {{- end -}}
 
-{{ end }}
+</div>
+
+{{- end -}}

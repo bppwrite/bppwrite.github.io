@@ -2,20 +2,20 @@
 
 <!-- MDTOC maxdepth:6 firsth1:2 numbering:0 flatten:0 bullets:1 updateOnSave:1 -->
 
-- [SETUP](#setup)   
-   - [INSTALL](#install)   
-- [SASS](#sass)   
-   - [OVERVIEW](#overview)   
-   - [COMPILE](#compile)   
-- [JAVASCRIPT](#javascript)   
-   - [OVERVIEW](#overview)   
-      - [FILES](#files)   
-      - [DEPLOYMENT](#deployment)   
-   - [COMMANDS](#commands)   
-      - [COMPILE](#compile)   
-      - [INSTALLING THIRD-PARTY LIBRARIES](#installing-third-party-libraries)   
-   - [TROUBLESHOOTING AND REFERENCES](#troubleshooting-and-references)   
-- [SITE DEPLOYMENT](#site-deployment)   
+- [SETUP](#setup)
+   - [INSTALL](#install)
+- [SASS](#sass)
+   - [OVERVIEW](#overview)
+   - [COMPILE](#compile)
+- [JAVASCRIPT](#javascript)
+   - [OVERVIEW](#overview)
+      - [FILES](#files)
+      - [DEPLOYMENT](#deployment)
+   - [COMMANDS](#commands)
+      - [COMPILE](#compile)
+      - [INSTALLING THIRD-PARTY LIBRARIES](#installing-third-party-libraries)
+   - [TROUBLESHOOTING AND REFERENCES](#troubleshooting-and-references)
+- [SITE DEPLOYMENT](#site-deployment)
 
 <!-- /MDTOC -->
 
@@ -144,4 +144,6 @@ Deployment is achieved via [Wercker](https://app.wercker.com/bppwrite/bppwrite.g
 
 A [custom Docker image](https://hub.docker.com/r/marcguyer/docker-golang-npm/) was created for this purpose and includes the needed versions of Go and Nodejs.
 
-Wercker is engaged immediately after a new commit (or a set of commits) is pushed to the Github repository. Wercker, via it's configured build steps, compiles and minifies the javascript code, builds the Hugo site, then deploys the resulting static files to the [master branch](bppwrite/bppwrite.github.io/tree/master)
+Wercker is engaged immediately after a new commit (or a set of commits) is pushed to the Github repository. Wercker, via it's configured build steps, compiles and minifies the javascript and scss code, builds the Hugo site, then deploys the resulting static files to the [master branch](bppwrite/bppwrite.github.io/tree/master)
+
+The latest build is automatically rerun every morning at 7am so that date-based logic can be somewhat dynamic. This is scheduled via @marcguyer's Zapier account.

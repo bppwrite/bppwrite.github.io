@@ -14,7 +14,7 @@
     {{- $start := (time (index .Params.showtimes 0).time ) -}}
     {{/* show ends on the last date in the showtimes array */}}
     {{- $end := (time (index .Params.showtimes (sub (len .Params.showtimes) 1) ).time ) -}}
-    {{- if gt $end.Unix .Now.Unix -}}
+    {{- if gt $end.Unix $.Now.Unix -}}
         {{/* it's either running now or it's in the future */}}
         {{- if eq .Section "show" -}}
             {{/* show weight is always 100 */}}
@@ -84,13 +84,36 @@
                                     {{- end -}}
                                 {{- end -}}
                             </span>
+
+                            {{/* set a prompt for call to action */}}
+                            {{- $.Scratch.Set "prompt" nil -}}
+                            {{- if eq $page.Section "show" -}}
+                                {{/* get the start time of this show/event */}}
+                                {{- $start := (time (index $page.Params.showtimes 0).time ) -}}
+                                {{- if lt $start.Unix $.Now.Unix -}}
+                                    {{- $.Scratch.Set "prompt" "Performing Now" -}}
+                                {{- else -}}
+                                    {{- $.Scratch.Set "prompt" (printf "Opens %s" (dateFormat "Jan 2nd" $start) ) -}}
+                                {{- end -}}
+                            {{- end -}}
+
                             {{- if and $page.Params.hero_call_to_action $page.Params.hero_call_to_action_link -}}
                                 <br>
+                                {{- with ($.Scratch.Get "prompt") -}}
+                                    <span class="img-text-background">
+                                        {{ . }}
+                                    </span>
+                                {{- end -}}
                                 <a class="button" href="{{ $page.Params.hero_call_to_action_link }}">
                                     {{ $page.Params.hero_call_to_action | markdownify }}
                                 </a>
                             {{- else if $page.Params.tickets_run -}}
                                 <br>
+                                {{- with ($.Scratch.Get "prompt") -}}
+                                    <span class="img-text-background">
+                                        {{ . }}
+                                    </span>
+                                {{- end -}}
                                 <a class="button" href="{{ $page.Params.tickets_run }}">
                                     Get Tickets
                                 </a>
