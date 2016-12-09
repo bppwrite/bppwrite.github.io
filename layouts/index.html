@@ -99,22 +99,18 @@
 
                             {{- if and $page.Params.hero_call_to_action $page.Params.hero_call_to_action_link -}}
                                 <br>
-                                {{- with ($.Scratch.Get "prompt") -}}
-                                    <span class="img-text-background">
-                                        {{ . }}
-                                    </span>
-                                {{- end -}}
                                 <a class="button" href="{{ $page.Params.hero_call_to_action_link }}">
+                                    {{- with ($.Scratch.Get "prompt") }}
+                                        {{ . }} -
+                                    {{- end }}
                                     {{ $page.Params.hero_call_to_action | markdownify }}
                                 </a>
                             {{- else if $page.Params.tickets_run -}}
                                 <br>
-                                {{- with ($.Scratch.Get "prompt") -}}
-                                    <span class="img-text-background">
-                                        {{ . }}
-                                    </span>
-                                {{- end -}}
                                 <a class="button" href="{{ $page.Params.tickets_run }}">
+                                    {{- with ($.Scratch.Get "prompt") }}
+                                        {{ . }} -
+                                    {{- end }}
                                     Get Tickets
                                 </a>
                             {{- else -}}

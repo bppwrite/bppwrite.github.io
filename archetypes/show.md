@@ -34,7 +34,7 @@ youtube_id = ""
 runtime = ""
 intermission_count = "0"
 
-venue = "Bloomington Playwrights Project"
+venue = "Ted Jones Playhouse"
 
 "producing artistic director" = "Chad Rabinovitz"
 "associate artistic director" = "Ben Smith"
