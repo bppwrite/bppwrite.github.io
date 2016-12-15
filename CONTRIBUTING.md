@@ -2,27 +2,27 @@
 
 <!-- MDTOC maxdepth:6 firsth1:2 numbering:0 flatten:0 bullets:1 updateOnSave:1 -->
 
-- [Creating a Show or Event](#creating-a-show-or-event)   
-   - [Example structure](#example-structure)   
-   - [Create the main content file](#create-the-main-content-file)   
-      - [Set the frontmatter for the content file](#set-the-frontmatter-for-the-content-file)   
-   - [Add Poster](#add-poster)   
-   - [Add Hero](#add-hero)   
-      - [Image](#image)   
-      - [Headline](#headline)   
-      - [Call to Action](#call-to-action)   
-   - [Image gallery](#image-gallery)   
-- [Creating a Sponsor](#creating-a-sponsor)   
-   - [Create the main content file](#create-the-main-content-file)   
-      - [Set the frontmatter for the content file](#set-the-frontmatter-for-the-content-file)   
-   - [Add images for the sponsor](#add-images-for-the-sponsor)   
-      - [Logo](#logo)   
-- [Creating a Special Hero](#creating-a-special-hero)   
-   - [Create the main content file](#create-the-main-content-file)   
-      - [Set the frontmatter for the content file](#set-the-frontmatter-for-the-content-file)   
-         - [Changing hero order](#changing-hero-order)   
-   - [Add images](#add-images)   
-- [Optimizing images](#optimizing-images)   
+- [Creating a Show or Event](#creating-a-show-or-event)
+   - [Example structure](#example-structure)
+   - [Create the main content file](#create-the-main-content-file)
+      - [Set the frontmatter for the content file](#set-the-frontmatter-for-the-content-file)
+   - [Add Poster](#add-poster)
+   - [Add Hero](#add-hero)
+      - [Image](#image)
+      - [Headline](#headline)
+      - [Call to Action](#call-to-action)
+   - [Image gallery](#image-gallery)
+- [Creating a Sponsor](#creating-a-sponsor)
+   - [Create the main content file](#create-the-main-content-file)
+      - [Set the frontmatter for the content file](#set-the-frontmatter-for-the-content-file)
+   - [Add images for the sponsor](#add-images-for-the-sponsor)
+      - [Logo](#logo)
+- [Creating a Special Hero](#creating-a-special-hero)
+   - [Create the main content file](#create-the-main-content-file)
+      - [Set the frontmatter for the content file](#set-the-frontmatter-for-the-content-file)
+         - [Changing hero order](#changing-hero-order)
+   - [Add images](#add-images)
+- [Optimizing images](#optimizing-images)
 
 <!-- /MDTOC -->
 
@@ -110,7 +110,7 @@ Create an image called `poster` of any valid web type (e.g., JPG, GIF, PNG, SVG)
 
 #### Image
 
-Create an image called `hero` of any valid web type (e.g., JPG, GIF, PNG, SVG) and place it in the same directory as the show. e.g., `show/2015-2016/the-bull-the-moon-and-the-coronet-of-stars/hero.jpg`.
+Create an image called `hero` of any valid web type (e.g., JPG, GIF, PNG, SVG) and place it in the same directory as the show. e.g., `show/2015-2016/the-bull-the-moon-and-the-coronet-of-stars/hero.jpg`. See [guidelines for image sizing and optimization](#optimizing-images).
 
 #### Headline
 
@@ -126,7 +126,7 @@ By default, the call to action is "Buy a Season Subscription". If a `tickets_run
 $ mkdir -p show/[2016-2017]/[the-title-of-the-show]/gallery
 ```
 
-Add all of the images related to this show in the `show/[2016-2017]/[the-title-of-the-show]/gallery` directory.
+Add all of the images related to this show in the `show/[2016-2017]/[the-title-of-the-show]/gallery` directory. See [guidelines for image sizing and optimization](#optimizing-images).
 
 ## Creating a Sponsor
 
@@ -153,11 +153,11 @@ Open the content file you created with your favorite text editor. The frontmatte
 
 #### Logo
 
-Create an image called `logo` of any valid web type (e.g., JPG, GIF, PNG, SVG) and place it in the same directory as the show. e.g., `sponsor/ivy-tech/logo.png`.
+Create an image called `logo` of any valid web type (e.g., JPG, GIF, PNG, SVG) and place it in the same directory as the show. e.g., `sponsor/ivy-tech/logo.png`. See [guidelines for image sizing and optimization](#optimizing-images).
 
 ## Creating a Special Hero
 
-The next (or currently running) Show and the next Event are automatically included in the hero system on the homepage. You may choose to add special hero images and corresponding call-to-action.
+The next (or currently running) Show and the next Event are automatically included in the hero system on the homepage. You may choose to add special hero images and corresponding call-to-action. See [guidelines for image sizing and optimization](#optimizing-images).
 
 ### Create the main content file
 
