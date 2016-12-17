@@ -92,10 +92,6 @@ footer {
                 }
             }
         }
-
-        .copyright {
-            padding-right: 60px;
-        }
     }
 }
 // ---- media queries ----
@@ -121,6 +117,10 @@ footer {
 
             .container-flex.right {
                 text-align: right;
+            }
+
+            .copyright {
+                padding-right: 60px;
             }
         }
     }
