@@ -29,17 +29,5 @@
                 </li>
             {{end}}
         {{end}}
-
-        <li>
-            <form action="//google.com/search" id="google-search"
-                onsubmit="document.getElementById('google-query').value = 'site:' + window.location.host + ' ' + document.getElementById('user-query').value; return true;">
-                <label>
-                    <i class="fa fa-search"></i>
-                    <input type="text" id="user-query" value=""
-                        placeholder="Google Site Search">
-                </label>
-                <input type="hidden" id="google-query" name="q">
-            </form>
-        </li>
     </ul>
 </nav>

@@ -46,22 +46,6 @@ nav#menu {
     // space for perma-logo
     padding-bottom: 80px;
 
-    form {
-        padding-top:10px;
-        label {
-            position:relative;
-            .fa {
-                position: absolute;
-                left: 8px;
-                top: 50%;
-                transform: translateY(-50%);
-            }
-            #user-query {
-                padding-left: 2rem;
-            }
-        }
-    }
-
     ul {
         list-style: none;
 

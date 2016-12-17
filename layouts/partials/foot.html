@@ -51,40 +51,15 @@
         <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
             <div class="container-flex left">
                 <p class="address">
+                    <a href="https://www.google.com/maps/place/Bloomington+Playwrights+Project/@39.1703395,-86.5362622,17z/data=!3m1!4b1!4m5!3m4!1s0x886c66e79e763a19:0x701ea1b47eebba43!8m2!3d39.1703395!4d-86.5340682?hl=en">
                     {{ .Site.Title}}<br>
                     {{- with .Site.Params.address -}}
                         {{ .street }}<br>
                         {{ .city }}, {{ .state }} {{ .zip }}
                     {{- end -}}
-                </p>
-                <p class="contact">
-                    <a href="tel:+1-{{ .Site.Params.address.phone }}">
-                        {{ .Site.Params.address.phone }}
                     </a>
-                    <br>
-                    <a href="mailto:{{ .Site.Params.address.email }}">
-                        {{ .Site.Params.address.email }}
-                    </a><br>
                 </p>
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-            <div class="container-flex middle">
-                <div class="donate">
-                    <a class="button button-secondary" href="/support/">
-                        Support Us
-                    </a>
-                </div>
-                <h2>{{ .Site.Title }}</h2>
-                <p class="made">
-                    Made in Indiana by
-                    <a href="http://marc.guyer.me/">Tweedledee</a>
-                    and <a href="http://mattbatman.com">Tweedledum</a>
-                </p>
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-            <div class="container-flex right">
+
                 <ul class="social-icons">
                 {{- with .Site.Params.social.twitter }}
                     <li>
@@ -115,6 +90,44 @@
                     </li>
                 {{- end }}
                 </ul>
+
+                <p class="contact">
+                    <a href="tel:+1-{{ .Site.Params.address.phone }}">
+                        {{ .Site.Params.address.phone }}
+                    </a>
+                    <br>
+                    <a href="mailto:{{ .Site.Params.address.email }}">
+                        {{ .Site.Params.address.email }}
+                    </a><br>
+                </p>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <div class="container-flex middle">
+                <div class="donate">
+                    <a class="button button-secondary" href="/support/">
+                        Support Us
+                    </a>
+                </div>
+                <h2>{{ .Site.Title }}</h2>
+                <p class="made">
+                    Made in Indiana by
+                    <a href="http://marc.guyer.me/">Tweedledee</a>
+                    and <a href="http://mattbatman.com">Tweedledum</a>
+                </p>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+            <div class="container-flex right">
+                <form action="//google.com/search" id="google-search"
+                    onsubmit="document.getElementById('google-query').value = 'site:' + window.location.host + ' ' + document.getElementById('user-query').value; return true;">
+                    <label>
+                        <i class="fa fa-search"></i>
+                        <input type="text" id="user-query" value=""
+                            placeholder="Google Site Search">
+                    </label>
+                    <input type="hidden" id="google-query" name="q">
+                </form>
                 <p class="copyright">&copy; 2016 BPP</p>
             </div>
         </div>
