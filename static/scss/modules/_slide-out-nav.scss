@@ -1,74 +1,95 @@
 // ---- Mobile Nav ----
-
 // slideout plugin
 .slideout-menu {
-  position: fixed;
-  left: auto;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 0;
-  width: 256px;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  display: none;
+    position: fixed;
+    left: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    width: 256px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    display: none;
 }
 
 .slideout-panel {
-	background-color: $white;
-  position:relative;
-  z-index: 1;
-  will-change: transform;
+    background-color: $white;
+    position: relative;
+    z-index: 1;
+    will-change: transform;
 }
 
 .slideout-open,
-.slideout-open body,
-.slideout-open .slideout-panel {
-  overflow: hidden;
+.slideout-open .slideout-panel,
+.slideout-open body {
+    overflow: hidden;
 }
 
 .slideout-open .slideout-menu {
-  display: block;
+    display: block;
 }
 
 .abs {
-  backface-visibility: hidden;
-  transition: transform 400ms ease-in;
-	right: 0;
+    backface-visibility: hidden;
+    transition: transform 400ms ease-in;
+    right: 0;
 }
 
 .abs-open {
-  transform: translate3d(256px, 0px, 0px);
+    transform: translate3d(256px, 0px, 0px);
 }
 
 nav#menu {
-	background-color: $black;
-	font-size: (15 / 18) * 1em;
-	ul {
-		list-style: none;
-		li {
-			a {
-				color: $gray-light;
-				font-family: $trend;
-			}
-		}
-		li.menu-item {
-			padding-top: 0.5em;
-			padding-bottom: 0.5em;
-		}
-	}
+    background-color: $black;
+    font-size: (15 / 18) * 1em;
+    // space for perma-logo
+    padding-bottom: 80px;
 
-	ul.dropdown-menu {
-		padding-left: 0.5em;
-		li {
-			padding-top: 0.333em;
-			padding-bottom: 0.333em;
-			a {
-				color: $gray;
-				font-family: $int-reg;
-			}
-		}
-	}
+    form {
+        padding-top:10px;
+        label {
+            position:relative;
+            .fa {
+                position: absolute;
+                left: 8px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            #user-query {
+                padding-left: 2rem;
+            }
+        }
+    }
+
+    ul {
+        list-style: none;
+
+        li {
+            a {
+                color: $gray-light;
+                font-family: $trend;
+            }
+        }
+
+        li.menu-item {
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+        }
+    }
+
+    ul.dropdown-menu {
+        padding-left: 0.5em;
+
+        li {
+            padding-top: 0.333em;
+            padding-bottom: 0.333em;
+
+            a {
+                color: $gray;
+                font-family: $int-reg;
+            }
+        }
+    }
 }
-
 // NOTE z-index

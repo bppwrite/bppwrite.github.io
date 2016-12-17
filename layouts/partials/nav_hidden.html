@@ -1,31 +1,45 @@
 <!-- fixed logo cannot be inside of the #panel re: browser quirks-->
 <div class="perma-logo">
-    <a href="/"><img src="/img/bpp-logo.svg" alt="{{ .Site.Title }} Logo" /></a>
+    <a href="/">
+        <img src="/img/bpp-logo.svg" alt="{{ .Site.Title }} Logo" />
+    </a>
 </div>
 <!-- full site map nav -->
 <nav id="menu">
-  <ul>
-    {{ range .Site.Menus.main }}
-      {{ if .HasChildren }}
-        <li class="menu-item dropdown{{if $.HasMenuCurrent "main" . }} active{{end}}">
-          <a href="{{ .URL }}" class="">
-            <span>{{ .Name }}</span>
-          </a>
-          <ul class="dropdown-menu">
-            {{ range .Children }}
-            <li class="dropdown-menu-item{{if $.IsMenuCurrent "main" . }} active{{end}}">
-              <a href="{{.URL}}"> {{ .Name }} </a>
-            </li>
-            {{ end }}
-          </ul>
+    <ul>
+        {{ range .Site.Menus.main }}
+            {{ if .HasChildren }}
+                <li class="menu-item dropdown{{if $.HasMenuCurrent "main" . }} active{{end}}">
+                    <a href="{{ .URL }}" class="">
+                        <span>{{ .Name }}</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        {{ range .Children }}
+                            <li class="dropdown-menu-item{{if $.IsMenuCurrent "main" . }} active{{end}}">
+                                <a href="{{.URL}}"> {{ .Name }} </a>
+                            </li>
+                        {{ end }}
+                    </ul>
+                </li>
+            {{else}}
+                <li class="menu-item{{if $.IsMenuCurrent "main" . }} active{{end}}">
+                    <a class="" href="{{.URL}}">
+                        <span>{{ .Name }}</span>
+                    </a>
+                </li>
+            {{end}}
+        {{end}}
+
+        <li>
+            <form action="//google.com/search" id="google-search"
+                onsubmit="document.getElementById('google-query').value = 'site:' + window.location.host + ' ' + document.getElementById('user-query').value; return true;">
+                <label>
+                    <i class="fa fa-search"></i>
+                    <input type="text" id="user-query" value=""
+                        placeholder="Google Site Search">
+                </label>
+                <input type="hidden" id="google-query" name="q">
+            </form>
         </li>
-      {{else}}
-        <li class="menu-item{{if $.IsMenuCurrent "main" . }} active{{end}}">
-          <a class="" href="{{.URL}}">
-            <span>{{ .Name }}</span>
-          </a>
-        </li>
-      {{end}}
-    {{end}}
-  </ul>
+    </ul>
 </nav>
