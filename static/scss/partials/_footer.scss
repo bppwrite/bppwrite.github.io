@@ -61,9 +61,12 @@ footer {
             color: $primary-dark;
             border-color: $primary-dark;
         }
+				.e-contact {
+					margin-bottom: 1em;
+				}
 
         .social-icons {
-            margin-top: 0;
+            margin: 0;
         }
 
         .made, .made a, h2 {
@@ -79,16 +82,19 @@ footer {
         form {
             padding-top:10px;
             label {
-                position:relative;
+            	position:relative;
                 .fa {
-                    color: $gray;
-                    position: absolute;
-                    left: 8px;
-                    top: 50%;
-                    transform: translateY(-50%);
+                	color: $white;
+                  position: absolute;
+                  left: 8px;
+                  top: 50%;
+                  transform: translateY(-50%);
                 }
                 #user-query {
-                    padding-left: 2rem;
+									color: $white;
+									background-color: $black;
+									border: 1px solid $white;
+                  padding-left: 2rem;
                 }
             }
         }
