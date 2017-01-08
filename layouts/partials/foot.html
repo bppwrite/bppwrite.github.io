@@ -52,54 +52,51 @@
             <div class="container-flex left">
                 <p class="address">
                     <a href="https://www.google.com/maps/place/Bloomington+Playwrights+Project/@39.1703395,-86.5362622,17z/data=!3m1!4b1!4m5!3m4!1s0x886c66e79e763a19:0x701ea1b47eebba43!8m2!3d39.1703395!4d-86.5340682?hl=en">
-                    {{ .Site.Title}}<br>
                     {{- with .Site.Params.address -}}
                         {{ .street }}<br>
                         {{ .city }}, {{ .state }} {{ .zip }}
                     {{- end -}}
-                    </a>
+                    </a><br>
+										<a href="tel:+1-{{ .Site.Params.address.phone }}">
+												{{ .Site.Params.address.phone }}
+										</a>
                 </p>
 
-                <ul class="social-icons">
-                {{- with .Site.Params.social.twitter }}
-                    <li>
-                        <a href="https://twitter.com/{{ . }}">
-                            <span class="fa fa-twitter" aria-hidden="true"></span>
-                        </a>
-                    </li>
-                {{- end -}}
-                {{- with .Site.Params.social.facebook }}
-                    <li>
-                        <a href="https://www.facebook.com/{{ . }}">
-                            <span class="fa fa-facebook" aria-hidden="true"></span>
-                        </a>
-                    </li>
-                {{- end -}}
-                {{- with .Site.Params.social.pinterest }}
-                    <li>
-                        <a href="https://www.pinterest.com/{{ . }}">
-                            <span class="fa fa-pinterest-p" aria-hidden="true"></span>
-                        </a>
-                    </li>
-                {{- end -}}
-                {{- with .Site.Params.social.instagram }}
-                    <li>
-                        <a href="https://www.instagram.com/{{ . }}">
-                            <span class="fa fa-instagram" aria-hidden="true"></span>
-                        </a>
-                    </li>
-                {{- end }}
-                </ul>
-
-                <p class="contact">
-                    <a href="tel:+1-{{ .Site.Params.address.phone }}">
-                        {{ .Site.Params.address.phone }}
-                    </a>
-                    <br>
+                <div class="e-contact">
+									<ul class="social-icons">
+									{{- with .Site.Params.social.twitter }}
+											<li>
+													<a href="https://twitter.com/{{ . }}">
+															<span class="fa fa-twitter" aria-hidden="true"></span>
+													</a>
+											</li>
+									{{- end -}}
+									{{- with .Site.Params.social.facebook }}
+											<li>
+													<a href="https://www.facebook.com/{{ . }}">
+															<span class="fa fa-facebook" aria-hidden="true"></span>
+													</a>
+											</li>
+									{{- end -}}
+									{{- with .Site.Params.social.pinterest }}
+											<li>
+													<a href="https://www.pinterest.com/{{ . }}">
+															<span class="fa fa-pinterest-p" aria-hidden="true"></span>
+													</a>
+											</li>
+									{{- end -}}
+									{{- with .Site.Params.social.instagram }}
+											<li>
+													<a href="https://www.instagram.com/{{ . }}">
+															<span class="fa fa-instagram" aria-hidden="true"></span>
+													</a>
+											</li>
+									{{- end }}
+								</ul><br>
                     <a href="mailto:{{ .Site.Params.address.email }}">
                         {{ .Site.Params.address.email }}
-                    </a><br>
-                </p>
+                    </a>
+                </div>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
