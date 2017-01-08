@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+<div class="container">
+    <div class="row">
+        <div class="container-flex">
+            <div class="container-single-content col-sm-12 col-md-8 col-lg-8">
+                {{ .Content }}
+            </div>
+            <div class="container-toc col-sm-12 col-md-4 col-lg-4">
+                <h4>Table of Contents</h4>
+                {{ .TableOfContents }}
+            </div>
+        </div>
+    </div>
+</div>
+
+{{ end }}

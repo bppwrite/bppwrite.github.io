@@ -1,0 +1,12 @@
+{{/* current series is the latest */}}
+{{- $currentSeries := (index .Site.Taxonomies.series.Alphabetical.Reverse 0) -}}
+{{- $url := ((printf "/series/%s" $currentSeries.Term) | absURL) -}}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ .Title }}</title>
+    <link rel="canonical" href="{{ $url }}"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="refresh" content="0; url={{ $url }}"/>
+</head>
+</html>

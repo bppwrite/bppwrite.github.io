@@ -14,12 +14,12 @@ playwright = "playwrights"
 director = "directors"
 musician = "musicians"
 lyricist = "lyricists"
-choreographer = "choreographers"
-"stage manager" = "stage managers"
-"lighting designer" = "lighting designers"
-"set designer" = "set designers"
-"costume designer" = "costume designers"
-"sound designer" = "sound designers"
+# choreographer = "choreographers"
+# "stage manager" = "stage managers"
+# "lighting designer" = "lighting designers"
+# "set designer" = "set designers"
+# "costume designer" = "costume designers"
+# "sound designer" = "sound designers"
 award = "awards"
 venue = "venues"
 
@@ -46,8 +46,8 @@ venue = "venues"
 #     currentSeries = "2016-2017"
 
 [[menu.main]]
-    name = "Shows" # - Plays and events listed chronologically – like ATF’s site is fine – denoting which is a show and which is a special event - Sub-pages for each show
-    url = "/calendar/"
+    name = "Season" # - Plays and events listed chronologically – like ATF’s site is fine – denoting which is a show and which is a special event - Sub-pages for each show
+    url = "/season/" # dynamically set to the current series
     pre = "hero" # hack -- using pre to indicate that this is a hero menu item
     weight = 100
 [[menu.main]]
@@ -91,28 +91,28 @@ venue = "venues"
     weight = 360
 [[menu.main]]
     name = "Playwrights"
-    url = "/playwrights/"
+    url = "/submit-a-play/"
     identifier = "playwrights"
     pre = "hero" # hack -- using pre to indicate that this is a hero menu item
     weight = 400
 [[menu.main]]
     name = "Alumni Playwrights"
-    url = "/playwrights/#alumni-playwrights"
+    url = "/submit-a-play/#alumni-playwrights"
     parent = "playwrights"
     weight = 410
 [[menu.main]]
     name = "Submit a Play"
-    url = "/playwrights/#submit-a-play"
+    url = "/submit-a-play/#submit-a-play"
     parent = "playwrights"
     weight = 420
 [[menu.main]]
     name = "Reva Shiner Comedy Award"
-    url = "/playwrights/reva-shiner-comedy/"
+    url = "/submit-a-play/reva-shiner-comedy/"
     parent = "playwrights"
     weight = 430
 [[menu.main]]
     name = "Woodward/Newman Drama Award"
-    url = "/playwrights/woodward-newman-drama/"
+    url = "/submit-a-play/woodward-newman-drama/"
     parent = "playwrights"
     weight = 440
 [[menu.main]]

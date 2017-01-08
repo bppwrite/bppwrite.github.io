@@ -7,27 +7,27 @@
 <!-- full site map nav -->
 <nav id="menu">
     <ul>
-        {{ range .Site.Menus.main }}
-            {{ if .HasChildren }}
+        {{- range .Site.Menus.main -}}
+            {{- if .HasChildren -}}
                 <li class="menu-item dropdown{{if $.HasMenuCurrent "main" . }} active{{end}}">
                     <a href="{{ .URL }}" class="">
                         <span>{{ .Name }}</span>
                     </a>
                     <ul class="dropdown-menu">
-                        {{ range .Children }}
+                        {{- range .Children -}}
                             <li class="dropdown-menu-item{{if $.IsMenuCurrent "main" . }} active{{end}}">
                                 <a href="{{.URL}}"> {{ .Name }} </a>
                             </li>
-                        {{ end }}
+                        {{- end -}}
                     </ul>
                 </li>
-            {{else}}
+            {{- else -}}
                 <li class="menu-item{{if $.IsMenuCurrent "main" . }} active{{end}}">
                     <a class="" href="{{.URL}}">
                         <span>{{ .Name }}</span>
                     </a>
                 </li>
-            {{end}}
-        {{end}}
+            {{- end -}}
+        {{- end -}}
     </ul>
 </nav>

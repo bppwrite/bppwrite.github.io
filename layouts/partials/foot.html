@@ -6,7 +6,7 @@
     <div class="container">
         <h2>Support Our Local Sponsors</h2>
         {{- $.Scratch.Set "leadSponsor" nil -}}
-        {{- range first 1 (where (where .Site.Pages "Section" "sponsor") ".Params.is_lead" "==" true) -}}
+        {{- range first 1 (where (where .Site.RegularPages "Section" "sponsor") ".Params.is_lead" "==" true) -}}
             {{- $.Scratch.Set "leadSponsor" . -}}
         {{- end -}}
         {{- if ne ($.Scratch.Get "leadSponsor") nil -}}
@@ -21,7 +21,7 @@
             <div class="sponsor-season">
                 <h3>Season Sponsors</h3>
                 <ul>
-                {{- range where (where .Site.Pages "Section" "sponsor") ".Params.is_lead" "!=" true -}}
+                {{- range where (where .Site.RegularPages "Section" "sponsor") ".Params.is_lead" "!=" true -}}
                     <li>
                         <a href="{{ .Params.website }}">
                             {{ partial "sponsor/logo.html" . }}
@@ -33,7 +33,7 @@
         {{- else -}}
             <div class="sponsor-season">
                 <ul>
-                {{- range where (where .Site.Pages "Section" "sponsor") ".Params.is_lead" "!=" true -}}
+                {{- range where (where .Site.RegularPages "Section" "sponsor") ".Params.is_lead" "!=" true -}}
                     <li>
                         <a href="{{ .Params.website }}">
                             {{ partial "sponsor/logo.html" . }}
