@@ -37,7 +37,7 @@ build:
         code: |
             npm run build:css
     - arjen/hugo-build:
-      version: "0.17"
+      version: "0.18"
       #theme: hugo-bootswatch
 deploy:
   steps:
