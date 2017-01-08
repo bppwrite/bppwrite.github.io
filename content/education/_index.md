@@ -17,7 +17,7 @@ All of our classes and camps focus on the art of creating something new; whether
 
 ## Ages 8 - 13
 
-[DramatiCATS](dramticats)
+[DramatiCATS](dramaticats)
 
 [BPP's Laugh Factory](laugh-factory)
 
