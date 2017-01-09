@@ -21,7 +21,7 @@ awards = []
 choreographers = []
 "costume designers" = []
 date = "2017-01-27T19:30:00"
-directors = []
+directors = ["David Anspaugh"]
 genres = [
   "comedy"
 ]
@@ -29,7 +29,7 @@ intermission_count = "0"
 "lighting designers" = []
 lyricists = []
 musicians = []
-playwrights = []
+playwrights = ["Jessica Dickey"]
 runtime = ""
 series = "2016-2017"
 "set designers" = []
