@@ -17,7 +17,7 @@ System.config({
     "babel": "npm:babel-core@5.8.38",
     "babel-runtime": "npm:babel-runtime@5.8.38",
     "core-js": "npm:core-js@1.2.7",
-    "rxjs": "npm:rxjs@5.0.0-rc.1",
+    "rxjs": "npm:rxjs@5.0.3",
     "slideout": "npm:slideout@0.1.12",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.4.1"
@@ -74,7 +74,7 @@ System.config({
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "vm": "github:jspm/nodelibs-vm@0.1.0"
     },
-    "npm:rxjs@5.0.0-rc.1": {
+    "npm:rxjs@5.0.3": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2",
       "symbol-observable": "npm:symbol-observable@1.0.4"
