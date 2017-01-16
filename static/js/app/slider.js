@@ -21,7 +21,6 @@ function Slider() {
 
 	let downObserver = {
 		next: () => {
-
 			dollar.smoothScroll(dollar.getPageScroll(), dollar.height());
 		},
 		error: (e) => { console.log(e); },
@@ -36,10 +35,21 @@ function Slider() {
 		complete: () => {}
 	};
 
+	let lrEnterObserver = {
+		next: (event) => { window.clearInterval(autoTimer); },
+		error: (e) => { console.log(e); },
+		complete: () => {}
+	}
+
+	let lrLeaveObserver = {
+		next: (event) => { setTimer(); },
+		error: (e) => { console.log(e); },
+		complete: () => {}
+	}
+
 	let windowObserver = {
 		next: (event) => {
-			window.clearInterval(autoTimer);
-			setTimer();
+			resetTimer();
 		},
 		error: (e) => { console.log(e); },
 		complete: () => {}
@@ -73,10 +83,18 @@ function Slider() {
 		dollar.requestAnimationFramePolyfill();
 		let left$ = Observable.fromEvent(left, 'click');
 		let right$ = Observable.fromEvent(right, 'click');
+		let leftEnter$ = Observable.fromEvent(left, 'mouseenter');
+		let rightEnter$ = Observable.fromEvent(right, 'mouseenter');
+		let leftLeave$ = Observable.fromEvent(left, 'mouseleave');
+		let rightLeave$ = Observable.fromEvent(right, 'mouseleave');
 		let down$ = Observable.fromEvent(down, 'click')
 			.subscribe(downObserver);
 		let lr$ = Observable.merge(left$, right$)
 			.subscribe(lrObserver);
+		let lrEnter$ = Observable.merge(leftEnter$, rightEnter$)
+			.subscribe(lrEnterObserver);
+		let lrLeave$ = Observable.merge(leftLeave$, rightLeave$)
+			.subscribe(lrLeaveObserver);
 		// autotimer slides through a scroll
 		setTimer();
 		// set window resize handler
@@ -88,14 +106,12 @@ function Slider() {
 	function navClicked(event) {
 		let activeNext;
 		event.preventDefault();
-		window.clearInterval(autoTimer);
 		activeNext = calculateNext(activeIndex, maxIndex, event.target.id);
 		dollar.removeClass(arrayHolder[activeIndex], 'show');
 		dollar.addClass(arrayHolder[activeIndex], 'hide');
 		dollar.addClass(arrayHolder[activeNext], 'show');
 		dollar.removeClass(arrayHolder[activeNext], 'hide');
 		activeIndex = activeNext;
-		setTimer();
 	}
 
 	// utility functions
@@ -124,6 +140,11 @@ function Slider() {
 
 	function setTimer() {
 		autoTimer = window.setInterval(autoMove, autoTiming);
+	}
+
+	function resetTimer() {
+		window.clearInterval(autoTimer);
+		setTimer();
 	}
 
 	function getRandomReference(slide) {
