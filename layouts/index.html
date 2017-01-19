@@ -93,7 +93,7 @@
                                 {{- if lt $start.Unix $.Now.Unix -}}
                                     {{- $.Scratch.Set "prompt" "Performing Now" -}}
                                 {{- else -}}
-                                    {{- $.Scratch.Set "prompt" (printf "Opens %s" (dateFormat "Jan 2" $start) ) -}}
+                                    {{- $.Scratch.Set "prompt" (printf "Opens %s %s" (dateFormat "Jan" $start) (humanize (dateFormat "2" $start))) -}}
                                 {{- end -}}
                             {{- end -}}
 
