@@ -1,0 +1,12 @@
+{{/* this should start as a placeholder image for a poster */}}
+{{- $.Scratch.Set "poster" nil -}}
+{{- range (readDir (printf "content/%s" .RelPermalink)) -}}
+    {{- if hasPrefix .Name "poster" -}}
+        {{- $.Scratch.Set "poster" .Name -}}
+    {{- end -}}
+{{- end -}}
+{{- if eq ($.Scratch.Get "poster") nil -}}
+    http://placeholder.pics/svg/960x1280/DEDEDE/555555
+{{- else -}}
+    {{- printf "%s%s" .RelPermalink ($.Scratch.Get "poster") -}}
+{{- end -}}

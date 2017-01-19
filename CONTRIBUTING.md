@@ -197,6 +197,6 @@ A special hero may have multiple images chosen randomly for each visitor. Simply
 | Purpose | Orientation | Dimensions | Compression | Max Expected Disk Size |
 | --- | --- | --- | --- | --- |
 | Hero | Landscape | 1920x1280px | 80% | 300-400Kb |
-| Poster | Portrait | 720x1280px | 80% | 200-300Kb |
-| Gallery | any | 1280x720px | 80% | 200-300Kb |
+| Poster | Portrait | 960x1280px | 80% | 200-300Kb |
+| Gallery | any | 1280x960px | 80% | 200-300Kb |
 | Sponsor Logo | any | --- | --- | --- |

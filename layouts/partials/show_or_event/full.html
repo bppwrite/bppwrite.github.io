@@ -129,7 +129,7 @@
 					<h6>Performed Live</h6>
 				{{ end }}
 
-				{{ partial "show/dates.html" . }}
+				{{ partial "show_or_event/dates.html" . }}
 
 				{{ if gt $end.Unix .Now.Unix }}
                     {{ with .Params.tickets_run }}

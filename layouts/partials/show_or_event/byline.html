@@ -1,0 +1,38 @@
+{{/* Musicals have a specialized byline */}}
+{{- if in .Params.genres "musical" -}}
+    {{- with .Params.playwrights -}}
+        <div>
+            Book by {{ delimit . "&" }}
+        </div>
+    {{- end -}}
+    {{/* when music and lyrics are done by the same person(s) */}}
+    {{- if eq .Params.musicians .Params.lyricists }}
+        <div>
+            Music & Lyrics by {{ delimit .Params.musicians "&" }}
+        </div>
+    {{/* when music and lyrics are done by different people */}}
+    {{- else -}}
+        {{- with .Params.musicians -}}
+            <div>
+                Music by {{ delimit . "&" }}
+            </div>
+        {{- end -}}
+        {{- with .Params.lyricists -}}
+            <div>
+                Lyrics by {{ delimit . "&" }}<br>
+            </div>
+        {{- end -}}
+    {{- end -}}
+{{/* Typical byline */}}
+{{- else -}}
+    {{- with .Params.playwrights -}}
+        <div>
+            Written by {{ delimit . "&" }}
+        </div>
+    {{- end -}}
+    {{- with .Params.directors -}}
+        <div>
+            Directed by {{ delimit . "&" }}
+        </div>
+    {{- end -}}
+{{- end -}}

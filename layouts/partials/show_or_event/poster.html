@@ -1,0 +1,7 @@
+{{ $imgFilePath := (partial "show_or_event/poster_path.html" .) }}
+
+<figure class="poster">
+	<a href="{{ .RelPermalink }}">
+        <img src="{{ $imgFilePath }}" alt="{{ .Title }} poster">
+	</a>
+</figure>
