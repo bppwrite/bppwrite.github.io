@@ -11,20 +11,25 @@
 		position: absolute;
 		bottom: 65px;
 		width: 100%;
-		padding: 3px;
+		padding: 4px;
 	}
 	.show-title {
 		font-weight: 400;
 	}
-	.event-title {
+	.event-title,
+	.event-title + .subtitle {
 		text-transform: uppercase;
 	}
+	.event-title + .subtitle {
+		font-family: $int-black;
+	}
 	.show-title,
-	.event-title {
+	.event-title,
+	.meta,
+	.subtitle {
 		margin: 0 0 3px 0;
 	}
 	.meta {
 		line-height: 1em;
-		margin-bottom: 3px;
 	}
 }

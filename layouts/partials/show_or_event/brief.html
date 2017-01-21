@@ -7,12 +7,12 @@
     {{ partial "show_or_event/poster.html" . }}
 
 		<div class="figcaption">
-			<h3 class="{{ .Type }}-title">
+			<h4 class="{{ .Type }}-title">
 					{{ .Title }}
+			</h4>
 					{{- with .Params.subtitle }}
-							<small>{{ . }}</small>
+							<h6 class="subtitle">{{ . }}</h6>
 					{{ end -}}
-			</h3>
 
 			<div class="meta">
 				<div>
@@ -28,14 +28,14 @@
 				</div>
 			</div>
 
-			<h4 class="months">
+			<h6 class="months">
 					{{- if eq $start $end -}}
 							{{ dateFormat "January 2" $start }}
 					{{- else -}}
 							{{ dateFormat "January 2" $start }} -
 									{{ dateFormat "January 2" $end }}
 					{{- end -}}
-			</h4>
+			</h6>
 
 		</div>
 
