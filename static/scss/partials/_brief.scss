@@ -1,0 +1,30 @@
+// ---- Brief ----
+
+// layouts/show_or_event/brief.html
+// uses other partials
+
+.brief {
+	color: $white;
+	position: relative;
+	.figcaption {
+		background-color: $black-trans;
+		position: absolute;
+		bottom: 65px;
+		width: 100%;
+		padding: 3px;
+	}
+	.show-title {
+		font-weight: 400;
+	}
+	.event-title {
+		text-transform: uppercase;
+	}
+	.show-title,
+	.event-title {
+		margin: 0 0 3px 0;
+	}
+	.meta {
+		line-height: 1em;
+		margin-bottom: 3px;
+	}
+}

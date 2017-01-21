@@ -1,14 +1,18 @@
 {{ define "main" }}
 
-<div class="container calendar">
+<div class="container">
 
-    <h1>{{ .Title }}</h1>
+		<div class="jumbo-header dark">
+			<h1><span class="underline">{{ .Title }}</span></h1>
+		</div>
 
-    {{ .Content }}
+		<div class="season">
+			{{ .Content }}
 
-    {{- range .Data.Pages.ByDate -}}
-        {{ .Render "brief" }}
-    {{- end -}}
+			{{- range .Data.Pages.ByDate -}}
+					{{ .Render "brief" }}
+			{{- end -}}
+		</div>
 
 </div>
 

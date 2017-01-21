@@ -18,19 +18,23 @@ body {
   font-family: $int-light;
 }
 
-// everything below probably  needs to be deleted/replaced
+// classes with font family conventions
 
-.section-title {
+.show-title,
+.brand-title,
+.subtitle {
+	font-family: $twenty;
+}
+
+.event-title {
+	font-family: $int-black;
+}
+
+.months {
 	font-family: $trend;
 }
 
-.show-dates {
-  font-family: $trend;
-}
-
-.transbox {
-	margin: 30px;
-	background-color: $black;
-	opacity: 0.6;
-	filter: alpha(opacity=60); /* For IE8 and earlier */
+.meta {
+	font-family: $int-bold-cond;
+	font-size: (1/1.125) * 1em;
 }

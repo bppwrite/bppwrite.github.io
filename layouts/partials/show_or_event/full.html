@@ -9,7 +9,7 @@
         {{- $.Scratch.Set "posterPath" .Name -}}
     {{- end -}}
 {{- end -}}
-<div class="container {{ .Type }}-single">
+<div class="container show-or-event-full">
 	<div class="row">
 		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
 			<img src="{{ $.Scratch.Get "posterPath" }}" />
@@ -39,7 +39,7 @@
             </div>
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-8 col-lg-5">
-			<h1>{{ .Title }}</h1>
+			<h1 class="{{ .Type }}-title">{{ .Title }}</h1>
 			{{/* only show the subtitle if it exists */}}
 			{{- if .Params.subtitle -}}
                 <h6 class="subtitle">{{ .Params.subtitle }}</h6>

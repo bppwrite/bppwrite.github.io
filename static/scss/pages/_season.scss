@@ -1,0 +1,75 @@
+// ---- Season ----
+
+// the season calendar layout is located in taxonomy/series.html
+// it uses partials located in:
+// partials/show_or_event/poster.html
+// partials/show_or_event/poster.html
+
+// FIXME --
+// needs to flow left to right
+// column layout shouldn't be used
+
+.season {
+	margin-top: 1vw;
+	.months {
+		font-size: 1em;
+	}
+	.show-title, .event-title {
+		font-size: 1.2em; line-height: 1.35; letter-spacing: -.08rem;
+	}
+	-webkit-columns: 1 95vw;
+	-moz-columns: 1 95vw;
+	columns: 1 95vw;
+	-webkit-column-gap: 0;
+	-moz-column-gap: 0;
+	column-gap: 0;
+	.brief {
+	  width: 95vw;
+		height: auto;
+	}
+	.figcaption {
+	}
+}
+
+
+@media (min-width: $start-tablet) {
+	.season {
+		-webkit-columns: 2 44vw;
+		-moz-columns: 2 44vw;
+		columns: 2 44vw;
+		-webkit-column-gap: 1vw;
+		-moz-column-gap: 1vw;
+		column-gap: 1vw;
+		.brief {
+		  width: 47vw;
+		}
+	}
+}
+
+@media (min-width: $start-laptop) {
+	.season {
+		-webkit-columns: 3 30vw;
+		-moz-columns: 3 30vw;
+		columns: 3 30vw;
+		-webkit-column-gap: 1vw;
+		-moz-column-gap: 1vw;
+		column-gap: 1vw;
+		.brief {
+		  width: 31vw;
+		}
+	}
+}
+
+@media (min-width: $container-width-max) {
+	.season {
+		-webkit-columns: 3 388px;
+		-moz-columns: 3 388px;
+		columns: 3 388px;
+		-webkit-column-gap: 12px;
+		-moz-column-gap: 12px;
+		column-gap: 12px;
+		.brief {
+			max-width: 388px;
+		}
+	}
+}
