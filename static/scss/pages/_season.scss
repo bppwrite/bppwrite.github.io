@@ -11,59 +11,65 @@
 
 .season {
 	margin-top: 1vw;
-	-webkit-columns: 1 95vw;
-	-moz-columns: 1 95vw;
-	columns: 1 95vw;
-	-webkit-column-gap: 0;
-	-moz-column-gap: 0;
-	column-gap: 0;
 	.brief {
 	  width: 95vw;
 		height: auto;
-	}
-	.figcaption {
 	}
 }
 
 
 @media (min-width: $start-tablet) {
 	.season {
-		-webkit-columns: 2 44vw;
-		-moz-columns: 2 44vw;
-		columns: 2 44vw;
-		-webkit-column-gap: 1vw;
-		-moz-column-gap: 1vw;
-		column-gap: 1vw;
+		flex-wrap: wrap;
 		.brief {
 		  width: 47vw;
+			height: 47 * 1.4vw;
+			margin-top: 0.5vw;
+			margin-bottom: 0.5vw;
+		}
+		.brief:nth-of-type(2n) {
+			margin-left: 1vw;
+		}
+		img {
+			height: 47 * 1.4vw;
+			object-fit: cover;
 		}
 	}
 }
 
 @media (min-width: $start-laptop) {
 	.season {
-		-webkit-columns: 3 30vw;
-		-moz-columns: 3 30vw;
-		columns: 3 30vw;
-		-webkit-column-gap: 1vw;
-		-moz-column-gap: 1vw;
-		column-gap: 1vw;
 		.brief {
 		  width: 31vw;
+			height: 31 * 1.4vw;
+		}
+		.brief:nth-of-type(2n) {
+			margin-left: 0;
+		}
+		.brief:nth-of-type(3n-1) {
+			margin-left: 1vw;
+			margin-right: 1vw;
+		}
+		img {
+			height: 31 * 1.4vw;
 		}
 	}
 }
 
 @media (min-width: $container-width-max) {
 	.season {
-		-webkit-columns: 3 388px;
-		-moz-columns: 3 388px;
-		columns: 3 388px;
-		-webkit-column-gap: 12px;
-		-moz-column-gap: 12px;
-		column-gap: 12px;
 		.brief {
 			max-width: 388px;
+			max-height: 624.95px;
+			margin-top: 6px;
+			margin-bottom: 6px;
+		}
+		.brief:nth-of-type(3n-1) {
+			margin-left: 12px;
+			margin-right: 12px;
+		}
+		img {
+			max-height: 624.95px;
 		}
 	}
 }
