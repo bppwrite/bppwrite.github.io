@@ -2,24 +2,30 @@
 {{- if in .Params.genres "musical" -}}
     {{- with .Params.playwrights -}}
         <div>
-            Book by {{ delimit . "&" }}
+            Book by
+            {{ delimit (apply . "partial" "bio/link.html" ".") ", " " & " }}
         </div>
     {{- end -}}
     {{/* when music and lyrics are done by the same person(s) */}}
     {{- if eq .Params.musicians .Params.lyricists }}
-        <div>
-            Music & Lyrics by {{ delimit .Params.musicians "&" }}
-        </div>
+        {{- with .Params.musicians -}}
+            <div>
+                Music & Lyrics by
+                {{ delimit (apply . "partial" "bio/link.html" ".") ", " " & " }}
+            </div>
+        {{- end -}}
     {{/* when music and lyrics are done by different people */}}
     {{- else -}}
         {{- with .Params.musicians -}}
             <div>
-                Music by {{ delimit . "&" }}
+                Music by
+                {{ delimit (apply . "partial" "bio/link.html" ".") ", " " & " }}
             </div>
         {{- end -}}
         {{- with .Params.lyricists -}}
             <div>
-                Lyrics by {{ delimit . "&" }}<br>
+                Lyrics by
+                {{ delimit (apply . "partial" "bio/link.html" ".") ", " " & " }}
             </div>
         {{- end -}}
     {{- end -}}
@@ -27,12 +33,14 @@
 {{- else -}}
     {{- with .Params.playwrights -}}
         <div>
-            Written by {{ delimit . "&" }}
+            Written by
+            {{ delimit (apply . "partial" "bio/link.html" ".") ", " " & " }}
         </div>
     {{- end -}}
     {{- with .Params.directors -}}
         <div>
-            Directed by {{ delimit . "&" }}
+            Directed by
+            {{ delimit (apply . "partial" "bio/link.html" ".") ", " " & " }}
         </div>
     {{- end -}}
 {{- end -}}
