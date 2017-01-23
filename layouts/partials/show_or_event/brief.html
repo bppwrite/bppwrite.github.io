@@ -35,7 +35,7 @@
             {{- if eq $start $end -}}
                 {{ dateFormat "January 2" $start }}
             {{- else -}}
-                {{- if eq (dateFormat "January" $start) dateFormat "January" $end) -}}
+                {{- if eq (dateFormat "January" $start) (dateFormat "January" $end) -}}
                     {{ dateFormat "January 2" $start }}-{{ dateFormat "2" $end }}
                 {{- else -}}
                     {{ dateFormat "January 2" $start }} -
@@ -45,7 +45,7 @@
 
             {{/* Display year if it's not this year */}}
             {{- if ne (dateFormat "2006" now) (dateFormat "2006" $end) -}}
-                {{ dateFormat "2006" $end }}
+                , {{ dateFormat "2006" $end }}
             {{- end -}}
         </h6>
 
