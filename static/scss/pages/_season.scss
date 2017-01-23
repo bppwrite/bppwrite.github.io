@@ -1,0 +1,75 @@
+// ---- Season ----
+
+// the season calendar layout is located in taxonomy/series.html
+// it uses partials located in:
+// partials/show_or_event/poster.html
+// partials/show_or_event/poster.html
+
+// FIXME --
+// needs to flow left to right
+// column layout shouldn't be used
+
+.season {
+	margin-top: 1vw;
+	.brief {
+	  width: 95vw;
+		height: auto;
+	}
+}
+
+
+@media (min-width: $start-tablet) {
+	.season {
+		flex-wrap: wrap;
+		.brief {
+		  width: 47vw;
+			height: 47 * 1.4vw;
+			margin-top: 0.5vw;
+			margin-bottom: 0.5vw;
+		}
+		.brief:nth-of-type(2n) {
+			margin-left: 1vw;
+		}
+		img {
+			height: 47 * 1.4vw;
+			object-fit: cover;
+		}
+	}
+}
+
+@media (min-width: $start-laptop) {
+	.season {
+		.brief {
+		  width: 31vw;
+			height: 31 * 1.4vw;
+		}
+		.brief:nth-of-type(2n) {
+			margin-left: 0;
+		}
+		.brief:nth-of-type(3n-1) {
+			margin-left: 1vw;
+			margin-right: 1vw;
+		}
+		img {
+			height: 31 * 1.4vw;
+		}
+	}
+}
+
+@media (min-width: $container-width-max) {
+	.season {
+		.brief {
+			max-width: 388px;
+			max-height: 624.95px;
+			margin-top: 6px;
+			margin-bottom: 6px;
+		}
+		.brief:nth-of-type(3n-1) {
+			margin-left: 12px;
+			margin-right: 12px;
+		}
+		img {
+			max-height: 624.95px;
+		}
+	}
+}

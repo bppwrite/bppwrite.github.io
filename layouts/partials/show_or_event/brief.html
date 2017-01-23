@@ -3,35 +3,40 @@
 {{/* show ends on the last date in the showtimes array */}}
 {{- $end := (time (index .Params.showtimes (sub (len .Params.showtimes) 1) ).time ) -}}
 
-<div class="row event container-flex">
+<div class="brief">
     {{ partial "show_or_event/poster.html" . }}
 
-    <h3>
-        {{ .Title }}
-        {{- with .Params.subtitle }}
-            <small>{{ . }}</small>
-        {{ end -}}
-    </h3>
+		<div class="figcaption">
+			<h4 class="{{ .Type }}-title">
+					{{ .Title }}
+			</h4>
+					{{- with .Params.subtitle }}
+							<h6 class="subtitle">{{ . }}</h6>
+					{{ end -}}
 
-    <div>
-        {{- with .Params.slot -}}
-            {{ . }}
-        {{- else -}}
-            {{ delimit (apply .Params.genres "title" "." ) "&" }}
-        {{- end -}}
-    </div>
+			<div class="meta">
+				<div>
+						{{- with .Params.slot -}}
+								{{ . }}
+						{{- else -}}
+								{{ delimit (apply .Params.genres "title" "." ) "&" }}
+						{{- end -}}
+				</div>
 
-    <div>
-        {{ partial "show_or_event/byline.html" . }}
-    </div>
+				<div>
+						{{ partial "show_or_event/byline.html" . }}
+				</div>
+			</div>
 
-    <h4>
-        {{- if eq $start $end -}}
-            {{ dateFormat "January 2" $start }}
-        {{- else -}}
-            {{ dateFormat "January 2" $start }} -
-                {{ dateFormat "January 2" $end }}
-        {{- end -}}
-    </h4>
+			<h6 class="months">
+					{{- if eq $start $end -}}
+							{{ dateFormat "January 2" $start }}
+					{{- else -}}
+							{{ dateFormat "January 2" $start }} -
+									{{ dateFormat "January 2" $end }}
+					{{- end -}}
+			</h6>
+
+		</div>
 
 </div>

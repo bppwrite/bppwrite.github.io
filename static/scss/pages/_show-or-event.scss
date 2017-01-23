@@ -1,22 +1,18 @@
 // -- Show Pages Template Styles ---
 
-.show-single {
+// "show_or_event/full.html"
+
+.show-or-event-full {
 	margin-top: 3em;
 	img {
 		width: 100%;
 		height: auto;
 	}
 	h1 {
-		font-family: $twenty;
 		margin-top: 0;
-	}
-	.subtitle {
-		font-family: $twenty;
 	}
 	.meta {
 		p {
-			font-family: $int-bold-cond;
-			font-size: (1/1.125) * 1em;
 			margin-bottom: 0;
 		}
 		p:last-of-type {
@@ -33,9 +29,4 @@
 	.pull-right {
 		float: right;
 	}
-}
-
-.test {
-	margin-top: 0;
-	background-color: $gray-light;
 }

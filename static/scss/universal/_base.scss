@@ -106,8 +106,6 @@ input[type="button"].button-secondary:focus {
 	background-color: transparent;
 }
 
-
-
 // ---- quick classes ----
 .img-text-background {
 	background-color: $black-trans;
@@ -121,6 +119,28 @@ input[type="button"].button-secondary:focus {
   	text-transform: uppercase;
       font-style: normal;
   }
+}
+
+.jumbo-header {
+	border: 1px solid $primary;
+	border-radius: 6px;
+	padding: 1em 0 1em 0;
+	text-align: center;
+	padding-top: 0.999em;
+	padding-bottom: 2em;
+	margin-top: 36px;
+}
+
+.jumbo-header.dark {
+	border-color: $black;
+	background-color: $black;
+	color: $white;
+	// NOTE - .underline should be changed when .text-decoration-color has
+	// better browser support
+	.underline {
+		border-bottom: 5px solid $primary;
+		width: 100%;
+	}
 }
 
 // ---- media queries  ----
