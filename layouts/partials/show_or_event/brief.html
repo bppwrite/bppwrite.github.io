@@ -6,37 +6,49 @@
 <div class="brief">
     {{ partial "show_or_event/poster.html" . }}
 
-		<div class="figcaption">
-			<h4 class="{{ .Type }}-title">
-					{{ .Title }}
-			</h4>
-					{{- with .Params.subtitle }}
-							<h6 class="subtitle">{{ . }}</h6>
-					{{ end -}}
+    <div class="figcaption">
+        {{/* Show/event title */}}
+        <h4 class="{{ .Type }}-title">
+            {{ .Title }}
+        </h4>
+        {{- with .Params.subtitle }}
+            <h6 class="subtitle">{{ . }}</h6>
+        {{ end -}}
 
-			<div class="meta">
-				<div>
-						{{- with .Params.slot -}}
-								{{ . }}
-						{{- else -}}
-								{{ delimit (apply .Params.genres "title" "." ) "&" }}
-						{{- end -}}
-				</div>
+        <div class="meta">
+            {{/* Slot or genres if no slot */}}
+            <div>
+                {{- with .Params.slot -}}
+                    {{ . }}
+                {{- else -}}
+                    {{ delimit (apply .Params.genres "title" "." ) "&" }}
+                {{- end -}}
+            </div>
 
-				<div>
-						{{ partial "show_or_event/byline.html" . }}
-				</div>
-			</div>
+            {{/* written by, directed by, etc, with specialized musical handling */}}
+            <div>
+                {{ partial "show_or_event/byline.html" . }}
+            </div>
+        </div>
 
-			<h6 class="months">
-					{{- if eq $start $end -}}
-							{{ dateFormat "January 2" $start }}
-					{{- else -}}
-							{{ dateFormat "January 2" $start }} -
-									{{ dateFormat "January 2" $end }}
-					{{- end -}}
-			</h6>
+        <h6 class="months">
+            {{- if eq $start $end -}}
+                {{ dateFormat "January 2" $start }}
+            {{- else -}}
+                {{- if eq (dateFormat "January" $start) dateFormat "January" $end) -}}
+                    {{ dateFormat "January 2" $start }}-{{ dateFormat "2" $end }}
+                {{- else -}}
+                    {{ dateFormat "January 2" $start }} -
+                        {{ dateFormat "January 2" $end }}
+                {{- end -}}
+            {{- end -}}
 
-		</div>
+            {{/* Display year if it's not this year */}}
+            {{- if ne (dateFormat "2006" now) (dateFormat "2006" $end) -}}
+                {{ dateFormat "2006" $end }}
+            {{- end -}}
+        </h6>
+
+    </div>
 
 </div>
