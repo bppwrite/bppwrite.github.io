@@ -9,8 +9,9 @@ aliases = ["/node/122", "/node/8"]
 # Broadway Kids
 
 * Ages 5-8
-* Session 1: May 29 - June 2, 2017 - $290
-* Session 2: June 5 - June 9, 2017 - $290
+* Session 1: May 29 - June 2, 2017 - $175
+* Session 2: June 5 - June 9, 2017 - $175
+* Register for both sessions for $300
 * Monday - Friday; 9am - 4pm
 * [Register Today](2016_IvyTech_YouthSummerCamps_Registration_earlyBPP.pdf)
 * [More Information](mailto:bppwrite@newplays.org)
