@@ -9,9 +9,10 @@
 {{- if eq ($.Scratch.Get "isBuilt") "true" -}}
     <script src="/js/build.js"></script>
 {{- else -}}
-    <script src="/js/jspm_packages/system.js"></script>
+    <script src="/js/build.js"></script>
+    <!-- <script src="/js/jspm_packages/system.js"></script>
     <script src="/js/config.js"></script>
     <script>
         System.import('/js/app').catch(function(err){ console.error(err); });
-    </script>
+    </script> -->
 {{- end -}}

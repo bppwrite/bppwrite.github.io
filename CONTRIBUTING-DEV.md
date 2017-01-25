@@ -107,20 +107,18 @@ To use SystemJS alone, include the following script (to load SystemJS, then the 
 When you have a build file from jspm, you just need to deploy that build file:
 
 ```ssh
-<script src="{{$.Site.BaseURL}}js/build.js"></script>
+<script src="/js/build.js"></script>
 ```
 
 ### COMMANDS
 
-#### COMPILE
+#### BUILD
 
-To compile your JavaScript, run
+To build your JavaScript, run
 
 ```sh
-jspm bundle-sfx --minify js/app
+npm run build:js
 ```
-
-and then move `build.js` to the `js` directory.
 
 #### INSTALLING THIRD-PARTY LIBRARIES
 
