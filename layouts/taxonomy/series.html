@@ -2,17 +2,21 @@
 
 <div class="container">
 
-		<div class="jumbo-header dark">
-			<h1><span class="underline">{{ .Title }}</span></h1>
-		</div>
+    <div class="jumbo-header dark">
+        <h1>
+            <span class="underline">
+                {{ printf "%s %s" .Title "Season" }}
+            </span>
+        </h1>
+    </div>
 
-		<div class="season container-flex">
-			{{ .Content }}
+    <div class="season container-flex">
+        {{ .Content }}
 
-			{{- range .Data.Pages.ByDate -}}
-					{{ .Render "brief" }}
-			{{- end -}}
-		</div>
+        {{- range .Data.Pages.ByDate -}}
+            {{ .Render "brief" }}
+        {{- end -}}
+    </div>
 
 </div>
 
