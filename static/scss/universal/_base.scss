@@ -137,10 +137,6 @@ input[type="button"].button-secondary:focus {
 	color: $white;
 	// NOTE - .underline should be changed when .text-decoration-color has
 	// better browser support
-	.underline {
-		border-bottom: 5px solid $primary;
-		width: 100%;
-	}
 }
 
 // ---- media queries  ----
