@@ -8,7 +8,8 @@
     "build:css": "npm run scss && npm run autoprefixer",
     "build:js": "jspm bundle-sfx --minify js/app static/js/build.js",
     "lint": "eslint static/js/src",
-    "scss": "node-sass --output-style compressed --source-map true -o static/css static/scss"
+    "scss": "node-sass --output-style compressed --source-map true -o static/css static/scss",
+    "watch:js": "onchange 'static/js/app/*.js' 'static/js/app.js' -- npm run build:js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
     "eslint": "^3.3.1",
     "jspm": "^0.16.47",
     "node-sass": "^3.13.0",
+    "onchange": "^3.2.1",
     "postcss-cli": "^2.6.0"
   },
   "jspm": {

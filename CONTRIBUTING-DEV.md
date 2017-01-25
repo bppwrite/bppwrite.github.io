@@ -114,10 +114,16 @@ When you have a build file from jspm, you just need to deploy that build file:
 
 #### BUILD
 
-To build your JavaScript, run
+To build your JavaScript once, run
 
 ```sh
 npm run build:js
+```
+
+To watch for changes and create a new build file on each save, run
+
+```sh
+npm run watch:js
 ```
 
 #### INSTALLING THIRD-PARTY LIBRARIES
