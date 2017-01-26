@@ -17,3 +17,7 @@ aliases = ["/node/122", "/node/8"]
 * [More Information](mailto:bppwrite@newplays.org)
 
 Participants will explore the world of theatre through music, movement, visual arts, and performance. The BPP will focus on fostering creativity and imagination through teaching the art of acting and storytelling. Students will learn improvisation techniques along with such introductory elements of acting as character creation and artistic collaboration. Our Broadway Kids will gain self-confidence, respect for others, and a greater ability to express themselves both physically and vocally.
+
+**Broadway Kids Week 1** – Take the Stage! – Students will be encouraged to speak up in front of others, share things about themselves, and create and perform their original work on BPP’s main stage!
+
+**Broadway Kids Week 2** – Tell Your Story! - Students will learn improvisation techniques along with such introductory elements of acting as character creation and artistic collaboration.
