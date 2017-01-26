@@ -47,9 +47,9 @@ deploy:
             cd public && rm -rf js/app js/app.js js/config.js js/jspm_packages scss/
     - leipert/git-push:
         gh_oauth: $GIT_TOKEN
-        # domain: bppwrite.github.io
+        domain: newplays.org
         basedir: public
         repo: bppwrite/bppwrite.github.io
         branch: master
         clean_removed_files: true
-        discard_history: false
+        discard_history: true
