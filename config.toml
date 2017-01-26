@@ -65,8 +65,8 @@ venue = "venues"
     parent = "education"
     weight = 310
 [[menu.main]]
-    name = "DramatiCATS"
-    url = "/education/dramaticats/"
+    name = "DramatiKIDS"
+    url = "/education/dramatikids/"
     parent = "education"
     weight = 320
 [[menu.main]]
