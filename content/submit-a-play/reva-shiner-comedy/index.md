@@ -33,7 +33,7 @@ Congratulations to our 2016-17 Reva Shiner Comedy Award WINNER:
 
 ## Guidelines for Submissions
 
-We are currently accepting submissions for the 2017-18 Reva Shiner Comedy Award (the deadline for the 2016-17 contest was Oct. 31, 2015). The top 10 finalists and the winner of the 2016-17 Reva Shiner Comedy Award will be announced at the end of March 2016.
+We are currently accepting submissions for the 2017-18 Reva Shiner Comedy Award (the deadline for the 2016-17 contest was Oct. 31, 2016). The top 10 finalists and the winner of the 2016-17 Reva Shiner Comedy Award will be announced at the end of March 2016.
 
 {{< submission_guidelines >}}
 
