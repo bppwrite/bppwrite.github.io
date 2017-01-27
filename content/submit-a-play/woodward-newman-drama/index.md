@@ -2,6 +2,10 @@
 date = "2016-09-13T08:20:27-04:00"
 title = "Woodward/Newman Drama Award"
 
+aliases = [
+    "/node/167"
+]
+
 +++
 
 # Woodward/Newman Drama Award

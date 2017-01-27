@@ -1,7 +1,9 @@
 +++
 date = "2016-07-05T08:34:12-04:00"
 title = "Tickets"
-aliases = ["/node/9"]
+aliases = [
+    "/node/9"
+]
 
 +++
 

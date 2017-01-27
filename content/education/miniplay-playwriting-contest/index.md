@@ -1,7 +1,11 @@
 +++
 date = "2016-09-04T11:54:42-04:00"
 title = "MiniPlay Playwriting Contest"
-aliases = ["/node/126"]
+aliases = [
+    "/node/126",
+    "/node/124",
+    "/node/408&subnid=19"
+]
 
 +++
 

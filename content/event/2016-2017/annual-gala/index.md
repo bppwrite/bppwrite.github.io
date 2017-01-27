@@ -1,5 +1,8 @@
 +++
-aliases = ["/node/378"]
+aliases = [
+    "/node/378",
+    "/node/378&subnid=379"
+]
 date = "2016-08-26T18:30:00-04:00"
 intermission_count = "0"
 runtime = ""

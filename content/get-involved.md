@@ -2,7 +2,10 @@
 date = "2016-10-02T08:34:12-04:00"
 title = "Get Involved"
 
-aliases = ["/node/6"]
+aliases = [
+    "/node/6",
+    "/node/94"
+]
 
 +++
 

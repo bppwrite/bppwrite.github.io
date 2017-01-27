@@ -1,7 +1,10 @@
 +++
 date = "2011-01-01T00:00:00-04:00"
 title = "About"
-aliases = ["/node/4"]
+aliases = [
+    "/node/4&subnid=56&left_node=4",
+    "/node/4"
+]
 
 +++
 
@@ -21,7 +24,7 @@ The Bloomington Playwrights Project (BPP) is the only professional theatre in th
 
 **Associate Artistic Director:** Ben Smith <ben@newplays.org>
 
-**Associate Managing Director** Emily Goodson <emily@newplays.org> 
+**Associate Managing Director** Emily Goodson <emily@newplays.org>
 
 **Education Director:** Kyli Walls <education@newplays.org>
 
