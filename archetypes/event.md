@@ -15,9 +15,7 @@ youtube_id = ""
 runtime = ""
 intermission_count = "0"
 
-"producing artistic director" = "Chad Rabinovitz"
-"associate artistic director" = "Ben Smith"
-"managing director" = "Jessica Reed"
+directors = []
 
 tickets_run = ""
 

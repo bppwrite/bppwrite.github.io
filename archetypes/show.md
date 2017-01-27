@@ -21,12 +21,6 @@ playwrights = []
 musicians = []
 choreographers = []
 lyricists = []
-"set designers" = []
-"lighting designers" = []
-"sound designers" = []
-"costume designers" = []
-"stage managers" = []
-actors = []
 awards = []
 
 youtube_id = ""
@@ -35,10 +29,6 @@ runtime = ""
 intermission_count = "0"
 
 venue = "Ted Jones Playhouse"
-
-"producing artistic director" = "Chad Rabinovitz"
-"associate artistic director" = "Ben Smith"
-"managing director" = "Jessica Reed"
 
 # link to tickets for production run
 tickets_run = ""
