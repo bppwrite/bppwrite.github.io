@@ -1,0 +1,3 @@
+{{/* current series is the latest */}}
+{{- $currentSeries := (index .Site.Taxonomies.series.Alphabetical.Reverse 0) -}}
+{{ printf "/event/%s/%s/" $currentSeries.Name (.Get 0) }}

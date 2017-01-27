@@ -35,7 +35,7 @@ Congratulations to our 2016-17 Woodward/Newman Drama Award Winner:
 
 The BPP is accepting submissions for the 2016-17 Woodward/Newman Drama Award. Submissions are due by March 1, 2017. The top 10 finalists will be announced at the end of May with the winner announced in June 2017.
 
-{{< submission_guidelines >}}
+{{< submission-guidelines >}}
 
 ## Past Winners
 

@@ -14,7 +14,7 @@ You can always call {{< tel >}} or e-mail <bppwrite@newplays.org> for informatio
 
 ## Get on the Email List
 
-{{< mailchimp_list_subscribe >}}
+{{< mailchimp-list-subscribe >}}
 
 ## Volunteer
 
@@ -44,7 +44,7 @@ To speak with someone about auditions, call {{< tel >}} or e-mail <bppwrite@newp
 
 ### Get on the Auditions Callout List
 
-{{< mailchimp_list_subscribe "b53497e480" >}}
+{{< mailchimp-list-subscribe "b53497e480" >}}
 
 ## Technical Opportunities
 

@@ -11,7 +11,7 @@ As a 501\(c\)3 not-for-profit organization, the BPP relies on donations from ind
 
 Call us at {{< tel >}}, email us at <bppwrite@newplays.org>, or use PayPal:
 
-{{< paypal_button >}}
+{{< paypal-button >}}
 
 ## Productions
 
