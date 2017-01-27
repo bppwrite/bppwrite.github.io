@@ -29,4 +29,4 @@ All of our classes and camps focus on the art of creating something new; whether
 
 [After School Edventures](after-school-edventures)
 
-[MiniPlay Playwriting Contest](miniplay-paywriting-contest)
+[MiniPlay Playwriting Contest](miniplay-playwriting-contest)
