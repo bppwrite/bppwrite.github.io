@@ -32,7 +32,7 @@ runtime = ""
 series = "2016-2017"
 "set designers" = []
 
-tickets_run = "https://web.ovationtix.com/trs/pr/960775"
+tickets_run = "https://bctboxoffice.org/event/happily-after-ever/"
 
 [[showtimes]]
 time = "2017-05-12T19:30:00"

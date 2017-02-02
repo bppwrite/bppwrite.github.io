@@ -33,7 +33,7 @@ runtime = ""
 series = "2016-2017"
 "set designers" = []
 
-tickets_run = "https://web.ovationtix.com/trs/pr/960774"
+tickets_run = "https://bctboxoffice.org/event/calling-all-kates/"
 
 [[showtimes]]
 time = "2017-03-31T19:30:00"
