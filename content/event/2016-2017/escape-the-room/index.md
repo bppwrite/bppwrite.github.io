@@ -10,7 +10,7 @@ title = "Escape the Room"
 hero_title = ""
 hero_subtitle = ""
 hero_call_to_action = "Get Tickets"
-hero_call_to_action_link = "/tickets/"
+hero_call_to_action_link = ""
 
 venue = "Bloomington Playwrights Project"
 youtube_id = ""
