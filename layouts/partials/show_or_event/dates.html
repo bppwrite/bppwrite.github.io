@@ -10,6 +10,7 @@
     {{- $.Scratch.Set "monthFormat" "January 2006" -}}
 {{- end -}}
 {{- $monthFormat := ($.Scratch.Get "monthFormat") -}}
+{{- $dayFormat := "20060102" -}}
 
 {{/*
     start an array in Scratch called "months"
@@ -18,20 +19,12 @@
 */}}
 {{/* start with the month of the start date */}}
 {{- $.Scratch.Set "months" (slice (dateFormat $monthFormat $start)) -}}
+{{- $.Scratch.Set "days" (slice nil) -}}
 {{/*
     for all showtimes, add the month to the array if it's not already there
 */}}
 {{- range $index, $showtime := .Params.showtimes -}}
-    {{- $.Scratch.Set "hasMonth" false -}}
-    {{- range $i, $month := ($.Scratch.Get "months") -}}
-        {{- if eq $month (dateFormat $monthFormat $showtime.time) -}}
-            {{- $.Scratch.Set "hasMonth" true -}}
-        {{- end -}}
-    {{- end -}}
-    {{- if eq ($.Scratch.Get "hasMonth") false -}}
-        {{/*
-            this month isn't in the array yet, so add it
-        */}}
+    {{- if not (in ($.Scratch.Get "months") (dateFormat $monthFormat $showtime.time)) -}}
         {{- $.Scratch.Add "months" (dateFormat $monthFormat $showtime.time) -}}
     {{- end -}}
 {{- end -}}
@@ -42,9 +35,12 @@
 	</h3>
 	<h4 class="days">
 	    {{- range $i, $showtime := .Params.showtimes -}}
-            <a href="{{ $showtime.tickets }}" class="day">
-	            <span>{{ dateFormat "2" $showtime.time }}</span>
-            </a>
+            {{- if not (in ($.Scratch.Get "days") (dateFormat $dayFormat $showtime.time)) -}}
+                {{- $.Scratch.Add "days" (dateFormat $dayFormat $showtime.time) -}}
+                <a href="{{ $showtime.tickets }}" class="day">
+                    <span>{{ dateFormat "2" $showtime.time }}</span>
+                </a>
+            {{- end -}}
 	    {{ end }}
 	</h4>
 </div>

@@ -105,7 +105,7 @@
                                     {{- end }}
                                     {{ $page.Params.hero_call_to_action | markdownify }}
                                 </a>
-                            {{- else if eq $page.Section "show" -}}
+                            {{- else if ne $page.Section "special" -}}
                                 <br>
                                 <a class="button" href="{{ $page.RelPermalink }}">
                                     {{- with ($.Scratch.Get "prompt") }}
