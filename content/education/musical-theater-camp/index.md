@@ -9,7 +9,7 @@ aliases = ["/node/121"]
 
 * Ages 9 - 16
 * July 10 - July 30, 2017
-* Monday - Friday; 9am - 4pm, $360
+* Monday - Friday; 9am - 4pm, $375
 * Performances July 27, 28, and 29 @ 7:30pm, July 30 @ 2pm
 <!-- * [Register Today](2016_IvyTech_YouthSummerCamps_Registration_earlyBPP.pdf) -->
 * [More Information](mailto:bppwrite@newplays.org)
