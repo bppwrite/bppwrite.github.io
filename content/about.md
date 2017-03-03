@@ -107,6 +107,15 @@ For more information please visit [www.artsfair.org](http://www.artsfair.org).
 
 ## Past Productions
 
+### 2016
+
+* _Toast_ by Sam Carner & Derek Gregor
+* _Everything in its Place: The Life and Slimes of Marc Summers_ by Alex Brightman with Music by Drew Gasparini
+* _You Remind Me of You_ by Matthew Capodicasa
+* _Think Again_ with Max Major
+* _Thirty Day Mourning Period_ by Hank Greene
+* _Home_ by Christy Hall & Scott Alan
+
 ### 2015
 
 * _Make Me Bad_ by Drew Gasparini & Alex Brightman
