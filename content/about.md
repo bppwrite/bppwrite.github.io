@@ -24,7 +24,7 @@ The Bloomington Playwrights Project (BPP) is the only professional theatre in th
 
 **Associate Artistic Director:** Ben Smith <ben@newplays.org>
 
-**Associate Managing Director** Emily Goodson <emily@newplays.org>
+**Financial Manager** Emily Goodson <emily@newplays.org>
 
 **Education Director:** Kyli Walls <education@newplays.org>
 
@@ -106,6 +106,15 @@ Arts Fair on the Square also includes interactive arts activities for children a
 For more information please visit [www.artsfair.org](http://www.artsfair.org).
 
 ## Past Productions
+
+### 2012
+
+* _The Boy in the Bathroom_ by Michael Lluberes & Joe Maloney
+* _Three Views of the Same Object_ by Henry Murray
+* _Maggie Cassidy_ by Chris Jeffries
+* _The Blizzard_ by Various Artists
+* _Rx_ by Kate Fodor
+* _Lemonade_ by Mark Krause
 
 ### 2011
 
