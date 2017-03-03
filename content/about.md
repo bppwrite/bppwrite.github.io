@@ -107,6 +107,15 @@ For more information please visit [www.artsfair.org](http://www.artsfair.org).
 
 ## Past Productions
 
+### 2015
+
+* _Make Me Bad_ by Drew Gasparini & Alex Brightman
+* _Ugly Lies the Bone_ by Lindsay Ferrentino
+* _The Capables_ by Jay Stull
+* _The Blizzard_ by Various Artists
+* _The Bull, the Moon and the Coronet of Stars_ by Van Badham
+* _Billy Witch_ by Gregory S. Moss
+
 ### 2014
 
 * _Island Song_ by Sam Carner & Derek Gregor
