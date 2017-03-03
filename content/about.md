@@ -63,7 +63,7 @@ The Bloomington Playwrights Project (BPP) is the only professional theatre in th
 * Paul Wagoner
 * John Whikehart
 
-## Director's Circle
+## Directors Circle
 
 To bring a new play to life is an arduous and risky journey requiring a strong creative team and visionary supporters willing to provide the resources needed for the trip. The Directors Circle was established by the BPP Board in 2011 to bring together and to recognize loyal and generous patrons willing to provide annual support to the BPP’s operations now and into the future.
 
