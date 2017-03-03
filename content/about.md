@@ -107,6 +107,16 @@ For more information please visit [www.artsfair.org](http://www.artsfair.org).
 
 ## Past Productions
 
+### 2013
+
+* _The Truman Show: A Musical_ by Alexander Gemignani & Brad Bauner
+* _Ampersand_ by Vincent Delaney
+* _Spun: A Rock Musical_ by Jeremy Schonfeld & Emily Goodson
+* _The Blizzard_ by Various Artists
+* _Sequence_ by Arun Lakra
+* _The Banana Tree_ by Dan Castellaneta & Deb Lacusta
+
+
 ### 2012
 
 * _The Boy in the Bathroom_ by Michael Lluberes & Joe Maloney
