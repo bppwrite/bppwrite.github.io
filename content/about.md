@@ -107,6 +107,15 @@ For more information please visit [www.artsfair.org](http://www.artsfair.org).
 
 ## Past Productions
 
+### 2014
+
+* _Island Song_ by Sam Carner & Derek Gregor
+* _Mad Gravity_ by William Missouri Downs
+* _Greta_ by Jeremy Schonfeld & Emily Goodson
+* _The Blizzard_ by Various Artists
+* _Kalamazoo_ by Michelle Kholos Brooks & Kelly Younger
+* _She Kills Monsters_ by Qui Nguyen
+
 ### 2013
 
 * _The Truman Show: A Musical_ by Alexander Gemignani & Brad Bauner
