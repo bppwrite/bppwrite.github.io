@@ -11,8 +11,8 @@ aliases = ["/node/121"]
 * July 10 - July 30, 2017
 * Monday - Friday; 9am - 4pm, $375
 * Performances July 27, 28, and 29 @ 7:30pm, July 30 @ 2pm
-<!-- * [Register Today](2016_IvyTech_YouthSummerCamps_Registration_earlyBPP.pdf) -->
-* [More Information](mailto:bppwrite@newplays.org)
+* [Register Today](https://www.ivytech.edu/files/bl-cllregistrationandparticipationFORMS.pdf)
+* [More Information](mailto:education@newplays.org)
 
 Each year, students work with BPP professionals to write and produce an exciting new musical starring them! Over the course of this three week camp, students will learn the skills needed to produce and perform musical theatre, culminating in a series of full performances for the general public.
  

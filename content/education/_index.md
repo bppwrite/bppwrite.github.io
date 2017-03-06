@@ -11,13 +11,16 @@ Through BPP's Youth Education Program, over 13,000 kids have written new plays o
 
 All of our classes and camps focus on the art of creating something new; whether it’s a new character, a new story, or a new play. Students learn to collaborate with others and become comfortable with their body and voices while in many of the programs learning the tools needed to write and create their own play.
 
+Contact Education Director [Kyli Walls](mailto:education@newplays.org) for more information or [Register Now](https://www.ivytech.edu/files/bl-cllregistrationandparticipationFORMS.pdf).
+
+
 ## Ages 5 - 8
 
 [Broadway Kids](broadway-kids)
 
 ## Ages 8 - 13
 
-[DramatiCATS](dramaticats)
+[DramatiKIDS](dramatikids)
 
 [BPP's Laugh Factory](laugh-factory)
 
