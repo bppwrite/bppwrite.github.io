@@ -28,7 +28,7 @@ venue = "venues"
         street = "107 West 9th Street"
         city = "Bloomington"
         state = "IN"
-        zip = "40404"
+        zip = "47404"
         phone = "812.334.1188"
         email = "bppwrite@newplays.org"
     [params.social]
