@@ -4,7 +4,7 @@ title = "Home"
 aliases = [
     "/node",
     "/node/55",
-    "/cmsms/home"
+    "/cmsms/home",
     "/node/376"
 ]
 
