@@ -2,6 +2,10 @@
 date = "2016-09-11T13:14:50-04:00"
 title = "Reva Shiner Comedy Award"
 
+aliases = [
+    "/cmsms/for-artists/submissions/reva-shiner-play-contest"
+]
+
 +++
 
 # Reva Shiner Comedy Award
