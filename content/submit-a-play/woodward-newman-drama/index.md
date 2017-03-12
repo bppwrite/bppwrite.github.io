@@ -12,7 +12,7 @@ aliases = [
 
 The Woodward/Newman Drama Award is an exclusive honor offered by Bloomington Playwrights Project, sponsored by the [Newman's Own Foundation](http://newmansownfoundation.org/), remembering the many great dramas Joanne Woodward and Paul Newman performed in together.
 
-It presents the best unpublished full-length drama of the year with a full production as part of the BPP's Mainstage season, along with travel reimbursement. We are currently accepting submissions for the 2017-18 competition. The deadline is March 1, 2017.
+It presents the best unpublished full-length drama of the year with a full production as part of the BPP's Mainstage season, along with travel reimbursement. We are currently accepting submissions for the 2018-19 competition. Submissions must be postmarked by March 1, 2018.
 
 ## 2016-17 Award
 
@@ -37,7 +37,7 @@ Congratulations to our 2016-17 Woodward/Newman Drama Award Winner:
 
 ## Guidelines for Submissions
 
-The BPP is accepting submissions for the 2016-17 Woodward/Newman Drama Award. Submissions are due by March 1, 2017. The top 10 finalists will be announced at the end of May with the winner announced in June 2017.
+The BPP is accepting submissions for the 2018-19 Woodward/Newman Drama Award. Submissions must be postmarked by March 1, 2018. The top 10 finalists will be announced at the end of May with the winner announced in June 2018.
 
 {{< submission-guidelines >}}
 

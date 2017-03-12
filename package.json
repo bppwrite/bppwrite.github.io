@@ -36,6 +36,7 @@
     },
     "configFile": "static/js/config.js",
     "dependencies": {
+      "redux": "npm:redux@^3.6.0",
       "rxjs": "npm:rxjs@^5.0.0-rc.1",
       "slideout": "npm:slideout@^0.1.12"
     },

@@ -3,19 +3,16 @@ import { V } from './app/jVanilla';
 import { Slider } from './app/slider';
 import { SlideoutMenu } from './app/slideout-menu';
 
-let slideoutMenu = SlideoutMenu();
-let header = document.querySelector('header');
-let dollar = V();
-let fbShare = document.getElementById('fb_share_button');
+const header = document.querySelector('header');
+const dollar = V();
+const fbShare = document.getElementById('fb_share_button');
 
-slideoutMenu.init();
-slideoutMenu.hashFix();
+SlideoutMenu(dollar);
 
 if (dollar.hasClass(header, 'home')) {
-	let hero = Slider();
-	hero.init();
+  Slider(dollar);
 }
 
 if (fbShare) {
-	Facebook(fbShare);
+  Facebook(fbShare);
 }

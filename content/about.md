@@ -24,7 +24,7 @@ The Bloomington Playwrights Project (BPP) is the only professional theatre in th
 
 **Associate Artistic Director:** Ben Smith <ben@newplays.org>
 
-**Associate Managing Director** Emily Goodson <emily@newplays.org>
+**Financial Manager** Emily Goodson <emily@newplays.org>
 
 **Education Director:** Kyli Walls <education@newplays.org>
 
@@ -63,7 +63,7 @@ The Bloomington Playwrights Project (BPP) is the only professional theatre in th
 * Paul Wagoner
 * John Whikehart
 
-## Director's Circle
+## Directors Circle
 
 To bring a new play to life is an arduous and risky journey requiring a strong creative team and visionary supporters willing to provide the resources needed for the trip. The Directors Circle was established by the BPP Board in 2011 to bring together and to recognize loyal and generous patrons willing to provide annual support to the BPP’s operations now and into the future.
 
@@ -106,6 +106,52 @@ Arts Fair on the Square also includes interactive arts activities for children a
 For more information please visit [www.artsfair.org](http://www.artsfair.org).
 
 ## Past Productions
+
+### 2016
+
+* _Toast_ by Sam Carner & Derek Gregor
+* _Everything in its Place: The Life and Slimes of Marc Summers_ by Alex Brightman with Music by Drew Gasparini
+* _You Remind Me of You_ by Matthew Capodicasa
+* _Think Again_ with Max Major
+* _Thirty Day Mourning Period_ by Hank Greene
+* _Home_ by Christy Hall & Scott Alan
+
+### 2015
+
+* _Make Me Bad_ by Drew Gasparini & Alex Brightman
+* _Ugly Lies the Bone_ by Lindsay Ferrentino
+* _The Capables_ by Jay Stull
+* _The Blizzard_ by Various Artists
+* _The Bull, the Moon and the Coronet of Stars_ by Van Badham
+* _Billy Witch_ by Gregory S. Moss
+
+### 2014
+
+* _Island Song_ by Sam Carner & Derek Gregor
+* _Mad Gravity_ by William Missouri Downs
+* _Greta_ by Jeremy Schonfeld & Emily Goodson
+* _The Blizzard_ by Various Artists
+* _Kalamazoo_ by Michelle Kholos Brooks & Kelly Younger
+* _She Kills Monsters_ by Qui Nguyen
+
+### 2013
+
+* _The Truman Show: A Musical_ by Alexander Gemignani & Brad Bauner
+* _Ampersand_ by Vincent Delaney
+* _Spun: A Rock Musical_ by Jeremy Schonfeld & Emily Goodson
+* _The Blizzard_ by Various Artists
+* _Sequence_ by Arun Lakra
+* _The Banana Tree_ by Dan Castellaneta & Deb Lacusta
+
+
+### 2012
+
+* _The Boy in the Bathroom_ by Michael Lluberes & Joe Maloney
+* _Three Views of the Same Object_ by Henry Murray
+* _Maggie Cassidy_ by Chris Jeffries
+* _The Blizzard_ by Various Artists
+* _Rx_ by Kate Fodor
+* _Lemonade_ by Mark Krause
 
 ### 2011
 
