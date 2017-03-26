@@ -3,7 +3,9 @@ date = "2011-01-01T00:00:00-04:00"
 title = "About"
 aliases = [
     "/node/4&subnid=56&left_node=4",
-    "/node/4"
+    "/node/4",
+    "/artsfair",
+    "/artsfair/artsfair.html"
 ]
 
 +++
