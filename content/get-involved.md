@@ -9,8 +9,6 @@ aliases = [
 
 +++
 
-# Get Involved
-
 The BPP relies heavily on the support and contribution of volunteers to produce its high-quality productions. We work with an average of over 40 volunteers and interns who assist with everything from hanging posters to working on a backstage crew. We also hold open auditions to the public and work with many artists from within the Bloomington area.
 
 You can always call {{< tel >}} or e-mail <bppwrite@newplays.org> for information about how you can support the development of new plays in Bloomington.

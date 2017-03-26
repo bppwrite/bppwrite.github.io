@@ -5,8 +5,6 @@ aliases = ["/node/125"]
 
 +++
 
-# After School EdVentures
-
 The BPP offers drama clubs for elementary students through the After School EdVentures program.
 
 ## Where?

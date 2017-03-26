@@ -10,8 +10,6 @@ aliases = [
 
 +++
 
-# About
-
 The Bloomington Playwrights Project (BPP) is the only professional theatre in the entire state of Indiana dedicated solely to new plays. In operation for 35 years, we serve both the Bloomington and national theatre community by working with talented playwrights, actors, and artists to develop high-level productions for our local patrons as well as the many audiences attending subsequent productions of scripts that originated here at the BPP. We are an advocate for playwrights and new plays and believe firmly that they are not only important but absolutely vital to the future of our art form.
 
 ## Staff

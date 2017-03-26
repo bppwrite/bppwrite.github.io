@@ -4,8 +4,6 @@ date = "2017-03-26T09:36:08-04:00"
 
 +++
 
-# Style Guide
-
 ## Colors
 
 <div class="color-example gray-1">$white</div>

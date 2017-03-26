@@ -5,8 +5,6 @@ aliases = ["/node/123"]
 
 +++
 
-# BPP's Laugh Factory
-
 * Ages 9 - 13
 * June 26 - July 7, 2017
 * 9am - 4pm

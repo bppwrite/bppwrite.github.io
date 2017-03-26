@@ -1,11 +1,9 @@
 +++
 date = "2011-01-01T00:00:00-04:00"
-title = "Education"
+title = "Youth Education Program"
 aliases = ["/node/8"]
 
 +++
-
-# Youth Education Program
 
 Through BPP's Youth Education Program, over 13,000 kids have written new plays or performed on our stage. BPP operates the longest running and most trusted theatre education program in the area, with over 30 years of experience in arts education. We offer programming year-round for ages 5 and up and work closely with the MCCSC school system to teach theatre directly in the schools.
 

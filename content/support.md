@@ -5,8 +5,6 @@ aliases = ["/node/14"]
 
 +++
 
-# Support the BPP
-
 As a 501\(c\)3 not-for-profit organization, the BPP relies on donations from individuals and businesses as well as grants and special event fundraisers. Only a small percentage of our overall budget comes from ticket sales so we rely on your generous and warmhearted support to continue to serve the Bloomington and national theatre communities.
 
 Call us at {{< tel >}}, email us at <bppwrite@newplays.org>, or use PayPal:

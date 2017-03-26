@@ -8,8 +8,6 @@ aliases = [
 
 +++
 
-# Playwrights
-
 ## Submit a Play
 
 The BPP makes calls for scripts several times each season for productions of new theatre. Please have a look at our ongoing opportunities to submit your new work:

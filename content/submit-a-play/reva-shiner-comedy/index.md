@@ -8,8 +8,6 @@ aliases = [
 
 +++
 
-# Reva Shiner Comedy Award
-
 The Reva Shiner Comedy Award presents an unpublished full-length comedy with a cash prize of $1,000, a full production as part of the Bloomington Playwrights Project's Mainstage season, along with travel reimbursement. We are currently accepting submissions for the 2018-19 Season. Scripts must be postmarked by October 31, 2017.
 
 Previous winners have gone on to enjoy productions around the world and to garner additional honors such as the National Play Award.

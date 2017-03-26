@@ -5,8 +5,6 @@ aliases = ["/node/121"]
 
 +++
 
-# BPP's Musical Theater Camp
-
 * Ages 9 - 16
 * July 10 - July 30, 2017
 * Monday - Friday; 9am - 4pm, $375

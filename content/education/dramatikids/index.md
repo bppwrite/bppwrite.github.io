@@ -8,8 +8,6 @@ aliases = [
 
 +++
 
-# DramatiKIDS
-
 {{% block-highlight %}}
 * Ages 8 - 12
 * $260

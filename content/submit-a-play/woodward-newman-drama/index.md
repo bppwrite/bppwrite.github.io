@@ -8,8 +8,6 @@ aliases = [
 
 +++
 
-# Woodward/Newman Drama Award
-
 The Woodward/Newman Drama Award is an exclusive honor offered by Bloomington Playwrights Project, sponsored by the [Newman's Own Foundation](http://newmansownfoundation.org/), remembering the many great dramas Joanne Woodward and Paul Newman performed in together.
 
 It presents the best unpublished full-length drama of the year with a full production as part of the BPP's Mainstage season, along with travel reimbursement. We are currently accepting submissions for the 2018-19 competition. Submissions must be postmarked by March 1, 2018.

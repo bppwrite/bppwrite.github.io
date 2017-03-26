@@ -7,8 +7,6 @@ aliases = [
 
 +++
 
-# Tickets
-
 For tickets, contact the BCT Box Office at {{< tel "812.323.3020" >}} or visit them at 114 E. Kirkwood, next to the Buskirk-Chumley Theater.
 
 Tickets for most BPP shows are also available for purchase at the door the night of the event and online.
