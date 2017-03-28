@@ -36,7 +36,7 @@ youtube_id = ""
 
 ## 2017 Event
 
-The winning plays will be performed by local actors on Sunday, April 10th! Winners will be fetched from their homes in a limo and driven to watch the premier of their plays here at BPP! Admittance will be granted with a first-come first-serve basis with limited seating. This is a wonderful program we hope to bring back next year, and so BPP will be accepting donations throughout the event.
+The winning plays will be performed by local actors on Sunday, April 9th! Admittance will be granted with a first-come first-serve basis with limited seating. This is a wonderful program we hope to bring back next year, and so BPP will be accepting donations throughout the event.
 
 Any questions? Please contact: <education@newplays.org>
 
