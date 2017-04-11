@@ -12,35 +12,34 @@ The Reva Shiner Comedy Award presents an unpublished full-length comedy with a c
 
 Previous winners have gone on to enjoy productions around the world and to garner additional honors such as the National Play Award.
 
-## 2016-17 Award
+## 2017-18 Award
 
 ### Winner
 
-Congratulations to our 2016-17 Reva Shiner Comedy Award WINNER:
+Congratulations to our 2017-18 Reva Shiner Comedy Award WINNER:
 
-[_30 Day Mourning Period_](/show/2016-2017/30-day-mourning-period/) by Hank Greene
+[_Beating A Dead Horse_] by Jenny Stafford
 
 ### Finalists:
 
-* _Where is Everybody?_ by Kevin Daly
-* _The Graveyard Shift_ by Chelsea Sutton
-* _Domestic Tranquility_ by Rich Orloff
-* _Cloud Control_ by George Holets
-* _Cufflinked_ by Cary Pepper
-* _Can Dina Even Spell Afghanistan?_ by Michael Griffo
-* _The Way of the World_ by Theresa Rebeck
-* _No Time At All_ by R.L. Conlon
-* _99 Degrees_ by Stuart Gerber
-* _A Short Course on the Lake Poets_ by Vicki Riba Koestler
+* _Enduring Loves_ by Zan Skolnick
+* _Virginia Throws A Wake_ by Rob Dames
+* _Michael, Cleveland_ by Mark Rigney
+* _Swimming Upstream_ by Rich Rubin
+* _The Bastard Seed_ by Tony Pasqualini
+* _Mall in the Family_ by Jenn Dlugos and Charlie Hatton
+* _That Time the House Burned Down_ by MJ Halberstadt
+* _The Super Variety Match Bonus Round!_ by Deb Hiett
 
 ## Guidelines for Submissions
 
-We are currently accepting submissions for the 2018-19 Reva Shiner Comedy Award. The top 10 finalists and the winner of the 2016-17 Reva Shiner Comedy Award will be announced at the end of March 2016.
+We are currently accepting submissions for the 2018-19 Reva Shiner Comedy Award. The top 10 finalists and the winner of the 2018-19 Reva Shiner Comedy Award will be announced at the end of March 2018.
 
 {{< submission-guidelines >}}
 
 ## Past Winners
 
+* **2016-2017** [_Thirty Day Mourning Period_](/show/2016-2017/30-day-mourning-period/) by Hank Greene
 * **2015-2016** [_Billy Witch_](/show/2015-2016/billy-witch/) by Gregory S Moss
 * **2014-2015** _Kalamazoo_ by Michelle Kholos Brooks & Kelly Younger
 * **2013-2014** _Mad Gravity_ by William Missouri Downs
