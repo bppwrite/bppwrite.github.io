@@ -18,7 +18,7 @@ Previous winners have gone on to enjoy productions around the world and to garne
 
 Congratulations to our 2017-18 Reva Shiner Comedy Award WINNER:
 
-[_Beating A Dead Horse_] by Jenny Stafford
+_Beating A Dead Horse_ by Jenny Stafford
 
 ### Finalists:
 
