@@ -10,7 +10,7 @@ hero_call_to_action = "Get Tickets"
 hero_call_to_action_link = ""
 
 venue = "Bloomington Playwrights Project"
-youtube_id = "1mp3qqfciD0"
+youtube_id = ""
 
 "producing artistic director" = "Chad Rabinovitz"
 "associate artistic director" = "Ben Smith"
