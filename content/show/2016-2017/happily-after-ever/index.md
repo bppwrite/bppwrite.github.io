@@ -42,22 +42,22 @@ time = "2017-05-13T19:30:00"
 tickets = "https://web.ovationtix.com/trs/pe/10098370"
 [[showtimes]]
 time = "2017-05-18T19:30:00"
-tickets = "https://web.ovationtix.com/trs/pe/10098370"
-[[showtimes]]
-time = "2017-05-19T19:30:00"
 tickets = "https://web.ovationtix.com/trs/pe/10098371"
 [[showtimes]]
-time = "2017-05-20T19:30:00"
+time = "2017-05-19T19:30:00"
 tickets = "https://web.ovationtix.com/trs/pe/10098372"
 [[showtimes]]
-time = "2017-05-25T19:30:00"
+time = "2017-05-20T19:30:00"
 tickets = "https://web.ovationtix.com/trs/pe/10098373"
 [[showtimes]]
-time = "2017-05-26T19:30:00"
+time = "2017-05-25T19:30:00"
 tickets = "https://web.ovationtix.com/trs/pe/10098374"
 [[showtimes]]
-time = "2017-05-27T19:30:00"
+time = "2017-05-26T19:30:00"
 tickets = "https://web.ovationtix.com/trs/pe/10098375"
+[[showtimes]]
+time = "2017-05-27T19:30:00"
+tickets = "https://web.ovationtix.com/trs/pe/10098376"
 
 +++
 
