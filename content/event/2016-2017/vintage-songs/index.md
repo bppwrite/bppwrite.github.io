@@ -21,8 +21,8 @@ youtube_id = ""
 # list showtimes in ISO 8601 format with links to tickets
 [[showtimes]]
     time = "2017-06-15T19:30:00"
-    tickets = "https://web.ovationtix.com/trs/pe/10016588"
+    tickets = "https://web.ovationtix.com/trs/pe/10173568"
 
 +++
 
-Join us at the [Oliver Winery](http://www.oliverwinery.com/) for food, wine, and a performance of favorite songs from BPP’s original musicals.
+ This June, we invite you to expand your dramatic palate with an all-new show featuring a performance of favorite songs from BPP's original musicals, as well as the announcement of the 2017-18 Season. The evening begins Thursday, June 15, 2017 with a full buffet dinner at 6:30pm, followed by the performances at 7:30pm. A cash bar with wine will also be open. Please note, the location has changed! This year we’ll be at the Oliver Winery Creekbend Vineyard at 200. W Winery Rd, Bloomington, IN 47404. 
