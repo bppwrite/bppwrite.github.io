@@ -7,7 +7,7 @@ aliases = ["/node/122", "/node/8"]
 +++
 
 * Ages 5-8
-* Session 1: May 29 - June 2, 2017 - $175
+* Session 1: May 30 - June 2, 2017 - $175 (Please note: there is NO camp on Monday May 29)
 * Session 2: June 5 - June 9, 2017 - $200
 * Register for both sessions for $325
 * Monday - Friday; 9am - 4pm
