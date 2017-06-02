@@ -12,7 +12,7 @@ The Woodward/Newman Drama Award is an exclusive honor offered by Bloomington Pla
 
 It presents the best unpublished full-length drama of the year with a full production as part of the BPP's Mainstage season, along with travel reimbursement. We are currently accepting submissions for the 2018-19 competition. Submissions must be postmarked by March 1, 2018.
 
-## 2016-17 Award
+## 2017-18 Award
 
 ### Winner
 
