@@ -30,7 +30,7 @@ _Out of Orbit_ by Jennifer Maisel
 * _Sir Lancelot Jones_ by Jim Henry
 * _Cold_ by Ben Jolivet
 * _I Carry Your Heart_ by Georgette Kelly
-* _The Bridge_ by Norma Leahy
+* _The Bridge_ by Nora Leahy
 
 ## Guidelines for Submissions
 
