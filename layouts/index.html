@@ -14,7 +14,7 @@
     {{- $start := (time (index .Params.showtimes 0).time ) -}}
     {{/* show ends on the last date in the showtimes array */}}
     {{- $end := (time (index .Params.showtimes (sub (len .Params.showtimes) 1) ).time ) -}}
-    {{- if gt $end.Unix $.Now.Unix -}}
+    {{- if gt $end.Unix now.Unix -}}
         {{/* it's either running now or it's in the future */}}
         {{- if eq .Section "show" -}}
             {{/* show weight is always 100 */}}
@@ -90,10 +90,13 @@
                             {{- if eq $page.Section "show" -}}
                                 {{/* get the start time of this show/event */}}
                                 {{- $start := (time (index $page.Params.showtimes 0).time ) -}}
-                                {{- if lt $start.Unix $.Now.Unix -}}
+                                {{- $end := (time (index $page.Params.showtimes (sub (len $page.Params.showtimes) 1) ).time ) -}}
+                                {{- if and (lt $start.Unix now.Unix) (gt $end.Unix now.Unix) -}}
                                     {{- $.Scratch.Set "prompt" "Performing Now" -}}
-                                {{- else -}}
+                                {{- else if gt $start.Unix now.Unix -}}
                                     {{- $.Scratch.Set "prompt" (printf "Opens %s %s" (dateFormat "Jan" $start) (humanize (dateFormat "2" $start))) -}}
+                                {{- else -}}
+                                    {{- $.Scratch.Set "prompt" (printf "Closes %s %s" (dateFormat "Jan" $end) (humanize (dateFormat "2" $end))) -}}
                                 {{- end -}}
                             {{- end -}}
 

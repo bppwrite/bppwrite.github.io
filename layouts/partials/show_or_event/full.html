@@ -75,7 +75,7 @@
         <div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 pull-right">
             {{ partial "youtube.html" . }}
             <div class="times">
-                {{ if gt $end.Unix .Now.Unix }}
+                {{ if gt $end.Unix now.Unix }}
                     <h6>See It Live</h6>
                 {{ else }}
                     <h6>Performed Live</h6>
@@ -83,7 +83,7 @@
 
                 {{ partial "show_or_event/dates.html" . }}
 
-                {{ if gt $end.Unix .Now.Unix }}
+                {{ if gt $end.Unix now.Unix }}
                     {{ with .Params.tickets_run }}
                         <div>
                             <a class="button button-secondary" href="{{ . }}">

@@ -6,7 +6,7 @@
 {{/* start out with a standard month format */}}
 {{- $.Scratch.Set "monthFormat" "January" -}}
 {{/* if the season has ended, note the year */}}
-{{- if lt $end.Unix .Now.Unix -}}
+{{- if lt $end.Unix now.Unix -}}
     {{- $.Scratch.Set "monthFormat" "January 2006" -}}
 {{- end -}}
 {{- $monthFormat := ($.Scratch.Get "monthFormat") -}}

@@ -45,7 +45,7 @@
             {{- end -}}
 
             {{/* Display year if it's not this year */}}
-            {{- if ne (dateFormat "2006" .Now) (dateFormat "2006" $end) -}}
+            {{- if ne (dateFormat "2006" now) (dateFormat "2006" $end) -}}
                 , {{ dateFormat "2006" $end }}
             {{- end -}}
         </h6>
