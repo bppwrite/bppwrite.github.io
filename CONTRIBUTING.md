@@ -32,6 +32,8 @@ The following is a fairly comprehensive guide for contributing new or changes to
 
 This process is generally the same for Shows and Events but they are in two different directories, `show/` and `event/` respectively.
 
+The archetypes for content are in the `archetypes` directory in the root of the project. An archetype is like a template for creating new content. You may change the archetype to change the default values for the frontmatter for a new content element.
+
 ### Example structure
 
 ```
@@ -40,15 +42,18 @@ content/show/2016-2017
 │   ├── index.md
 │   └── poster.jpg
 ├── calling-all-kates
+│   ├── hero.jpg
 │   ├── index.md
 │   └── poster.jpg
 ├── happily-after-ever
+│   ├── hero.jpg
 │   ├── index.md
 │   └── poster.jpg
 ├── home
 │   ├── index.md
 │   └── poster.jpg
 └── row-after-row
+    ├── hero.jpg
     ├── index.md
     └── poster.jpg
 ```
@@ -59,6 +64,7 @@ content/event/2016-2017
 │   ├── index.md
 │   └── poster.jpg
 ├── escape-the-room
+│   ├── hero.jpg
 │   ├── index.md
 │   └── poster.jpg
 ├── ike-and-julie-arnove-playoffs
@@ -68,11 +74,18 @@ content/event/2016-2017
 │   ├── index.md
 │   └── poster.jpg
 └── vintage-songs
+    ├── hero.jpg
     ├── index.md
     └── poster.jpg
 ```
 
 ### Create the main content file
+
+In your terminal, navigate to the location of your project. Here's an example:
+
+```sh
+cd ~/dev/bppwrite.github.io
+```
 
 ```sh
 $ hugo new show/[2016-2017]/[the-title-of-the-show]/index.md
@@ -91,7 +104,7 @@ $ hugo new show/2015-2016/the-bull-the-moon-and-the-coronet-of-stars/index.md
 
 Open the content file you created with your favorite text editor. The frontmatter is shown at the top of the content file delimited by `+++`. Each element of the frontmatter has a default (usually empty). It's your job to change the value of each element according to the show components. Here's a quick checklist:
 
-1. Fix the capitalization of the `title`. Set the `subtitle` if applicable.
+1. Set the `title`. Set the `subtitle` if applicable.
 2. List the `showtimes` using the ISO 8601 datetime format (e.g., "2016-01-01T19:30:00")
 3. List the OvationTix link to the tickets page for each showtime.
 4. Set the `date` parameter equal to the first element of the list of `showtimes`
@@ -102,7 +115,7 @@ Open the content file you created with your favorite text editor. The frontmatte
 
 Note: the frontmatter elements for an Event will be different than for a Show
 
-### Add Poster
+### Add Poster Image
 
 Create an image called `poster` of any valid web type (e.g., JPG, GIF, PNG, SVG) and place it in the same directory as the show. e.g., `show/2015-2016/the-bull-the-moon-and-the-coronet-of-stars/poster.png`.
 
@@ -178,7 +191,11 @@ $ hugo new special/new-works/index.md
 
 Open the content file you created with your favorite text editor. The frontmatter is shown at the top of the content file delimited by `+++`. Each element of the frontmatter has a default (usually empty). It's your job to change the value of each element according to the special hero components. The frontmatter options are generally the same as for a show or event.
 
-##### Changing hero order
+### Add images
+
+A special hero may have multiple images chosen randomly for each visitor. Simply add at least one and potentially several images starting with `hero` of any valid web type (e.g., JPG, GIF, PNG, SVG) and place it in the same directory as the special hero content file. e.g., `special/new-works/hero.png`, `special/new-works/hero_2.png`, `special/new-works/hero_xyz.png`, etc.
+
+## Changing hero order
 
 By default, the hero order is the following:
 
@@ -187,10 +204,6 @@ By default, the hero order is the following:
 3. All special heros ordered chronologically by `date`. (default `hero_weight` of "300", "400", etc)
 
 To override the order, specify a different `hero_weight`. For example, to force a new special hero to be first, set the `hero_weight` to "010". Note the leading zero. The heros are ordered by `hero_weight` alphabetically, not numerically. The value "010" comes _before_ "100" but "10" comes _after_ "100", and is why we must use the leading zero.
-
-### Add images
-
-A special hero may have multiple images chosen randomly for each visitor. Simply add at least one and potentially several images starting with `hero` of any valid web type (e.g., JPG, GIF, PNG, SVG) and place it in the same directory as the special hero content file. e.g., `special/new-works/hero.png`, `special/new-works/hero_2.png`, `special/new-works/hero_xyz.png`, etc.
 
 ## Optimizing images
 
