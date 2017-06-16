@@ -12,8 +12,11 @@ hero_title = ""
 intermission_count = "0"
 lyricists = ["Larry Kass"]
 musicians = ["Larry Kass" ]
-playwrights = ["Larry Kass, Sara Kass", and "George Pinney"]
-runtime = """
+playwrights = [
+  "Larry Kass, Sara Kass",
+  "George Pinney"
+]
+runtime = ""
 series = "2017-2018"
 slot = "BPP/IU Musical Collaboration"
 subtitle = ""
