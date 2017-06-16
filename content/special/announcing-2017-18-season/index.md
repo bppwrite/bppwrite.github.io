@@ -5,6 +5,6 @@ hero_call_to_action_link = "/series/2017-2018"
 is_active = true
 subtitle = ""
 title = "Announcing the 2017-18 Season"
-weight = ""
+weight = "010"
 
 +++
