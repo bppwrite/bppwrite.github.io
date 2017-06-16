@@ -1,5 +1,5 @@
 +++
-date = "2016-07-05T08:34:12-04:00"
+date = "2017-06-15T08:34:12-04:00"
 title = "Tickets"
 aliases = [
     "/node/9"
@@ -30,4 +30,4 @@ Subscribe to the BPP Main Stage Series and receive these benefits with your Subs
 
 If you are a current BPP subscriber, for each subscription you purchase, you get to give the gift of a free additional subscription to a friend of your choice!
 
-[Buy Season Subscription Online](https://web.ovationtix.com/trs/store/34132/pk/90344)
+[Buy Season Subscription Online](https://web.ovationtix.com/trs/store/34132/pk/93628)
