@@ -28,6 +28,7 @@ build:
             dpkg-reconfigure --frontend noninteractive tzdata
     - npm-install
     - nahody/jspm-install
+        github-auth: $GIT_TOKEN
     - script:
         name: compile js via jspm
         code: |
