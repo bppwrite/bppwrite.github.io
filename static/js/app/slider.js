@@ -46,9 +46,11 @@ function Slider(dollar) {
       if (i === store.getState()) {
         dollar.addClass(arrayHolder[i], 'show');
         dollar.removeClass(arrayHolder[i], 'hide');
-      } else {
+      } else if (dollar.isVisible(arrayHolder[i])){
         dollar.addClass(arrayHolder[i], 'hide');
         dollar.removeClass(arrayHolder[i], 'show');
+        // randomize this hero for the next display
+        setRandomHero(arrayHolder[i]);
       }
     });
   };
@@ -91,6 +93,9 @@ function Slider(dollar) {
   // local helper functions
   const getRandomReference = (slide) => {
     const paths = JSON.parse(slide.dataset.heros);
+    if (paths.length == 1) {
+      return paths[0];
+    }
     const randomNumber = getRandomInt(0, paths.length - 1);
     return paths[randomNumber];
   };
@@ -99,9 +104,19 @@ function Slider(dollar) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   };
 
+  const setRandomHero = (slide) => {
+    if (!slide.dataset.heros) {
+      return;
+    }
+    const paths = JSON.parse(slide.dataset.heros);
+    if (!paths.length || paths.length == 1) {
+      return;
+    }
+    slide.style.backgroundImage = `url('${getRandomReference(slide)}')`;
+  }
+
   // init actions
   dollar.requestAnimationFramePolyfill();
-  arrayHolder[0].style.backgroundImage = `url('${getRandomReference(arrayHolder[0])}')`;
   store.subscribe(render);
   render();
 
