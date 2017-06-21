@@ -44,13 +44,13 @@ function Slider(dollar) {
   const render = () => {
     arrayHolder.forEach((child, i) => {
       if (i === store.getState()) {
-        // randomize this hero for the this display
-        setRandomHero(arrayHolder[i]);
         dollar.addClass(arrayHolder[i], 'show');
         dollar.removeClass(arrayHolder[i], 'hide');
       } else if (dollar.hasClass(arrayHolder[i], 'show')){
         dollar.addClass(arrayHolder[i], 'hide');
         dollar.removeClass(arrayHolder[i], 'show');
+        // randomize this hero for the next display
+        setRandomHero(arrayHolder[i]);
       }
     });
   };
@@ -115,7 +115,14 @@ function Slider(dollar) {
     slide.style.backgroundImage = `url('${getRandomReference(slide)}')`;
   }
 
+  const initHeros = () => {
+    arrayHolder.forEach((child, i) => {
+      setRandomHero(arrayHolder[i]);
+    });
+  }
+
   // init actions
+  initHeros();
   dollar.requestAnimationFramePolyfill();
   store.subscribe(render);
   render();
