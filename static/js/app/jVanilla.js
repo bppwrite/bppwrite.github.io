@@ -26,14 +26,6 @@ function V() {
     }
   }
 
-  function isVisible(el) {
-    return (el.offsetParent !== null)
-  }
-
-  function isHidden(el) {
-    return (el.offsetParent === null)
-  }
-
   function outerWidth(el) {
     let width = el.offsetWidth;
     let style = getComputedStyle(el);
@@ -106,9 +98,7 @@ function V() {
     requestAnimationFramePolyfill: requestAnimationFramePolyfill,
     smoothScroll: smoothScroll,
     outerWidth: outerWidth,
-    width: width,
-    isVisible: isVisible,
-    isHidden: isHidden
+    width: width
   };
 }
 

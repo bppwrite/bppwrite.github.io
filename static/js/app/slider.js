@@ -46,7 +46,7 @@ function Slider(dollar) {
       if (i === store.getState()) {
         dollar.addClass(arrayHolder[i], 'show');
         dollar.removeClass(arrayHolder[i], 'hide');
-      } else if (dollar.isVisible(arrayHolder[i])){
+      } else if (dollar.hasClass(arrayHolder[i], 'show')){
         dollar.addClass(arrayHolder[i], 'hide');
         dollar.removeClass(arrayHolder[i], 'show');
         // randomize this hero for the next display
