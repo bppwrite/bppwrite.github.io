@@ -113,13 +113,13 @@ function Slider(dollar) {
       return;
     }
     slide.style.backgroundImage = `url('${getRandomReference(slide)}')`;
-  }
+  };
 
   const initHeros = () => {
     arrayHolder.forEach((child, i) => {
       setRandomHero(arrayHolder[i]);
     });
-  }
+  };
 
   // init actions
   initHeros();

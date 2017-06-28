@@ -21,8 +21,15 @@
 	}
 	.times {
 		background-color: $gray-light;
-		padding: 0.5em;
+		padding: 5px;
 	}
+    .times h6 {
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+    .times a.button {
+        margin: 3px;
+    }
 	#fb_share_button {
 		padding-right: 0.5em;
 	}
