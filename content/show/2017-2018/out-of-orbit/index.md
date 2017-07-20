@@ -50,4 +50,4 @@ youtube_id = ""
 
 +++
 
-Sara, one of the world’s most brilliant astrophysicists, lives her life on Mars time — her days lasting longer and longer as she monitors mankind’s latest voyage to the Red Planet. But her daughter, Lis, continues to live her life as a teenager on Earth time, showing no interest in her mother’s world out in space—despite Sara’s best efforts. As both of their lives begin to spin out of control, they must grapple with the distance their two time zones create between them… even when they’re standing side by side.
+Sara, one of the world’s most brilliant planetary geologists, lives her life on Mars time — her days lasting longer and longer as she monitors mankind’s latest voyage to the Red Planet. But her daughter, Lis, continues to live her life as a teenager on Earth time, showing no interest in her mother’s world out in space—despite Sara’s best efforts. As both of their lives begin to spin out of control, they must grapple with the distance their two time zones create between them… even when they’re standing side by side.
