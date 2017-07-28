@@ -29,7 +29,7 @@ Just a few of the many opportunities available at the BPP:
 * Dresser
 * Props
 * Marketing (hanging posters, writing press releases, designing materials)
-* Development (soliciting donations, grantwriting)
+* Development (soliciting donations, grant writing)
 * Special Event Assistance (Gala, Opening Nights)
 * Ushering
 * Box Office
