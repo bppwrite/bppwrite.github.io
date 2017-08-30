@@ -45,7 +45,7 @@ To speak with someone about auditions, call {{< tel >}} or e-mail <bppwrite@newp
 
 ### Get on the Auditions Callout List
 
-{{< mailchimp-list-subscribe "b53497e480" >}}
+{{< mailchimp-list-subscribe "//newplays.us4.list-manage.com/subscribe/post?u=d08e965e0fc39524b466ca013&amp;id=b53497e480" >}}
 
 ## Technical Opportunities
 
