@@ -22,6 +22,7 @@ You can always call {{< tel >}} or e-mail <bppwrite@newplays.org> for informatio
 BPP seeks a full-time Managing Director to manage day-to-day administrative activity and work with the Producing Artistic Director to achieve strategic direction. The Managing Director reports directly to the Producing Artistic Director.
 
 Position Responsibilities Include:
+
 * Supervising administrative staff/interns and directing administrative operations.  
 * In collaboration with the Producing Artistic Director, preparing and adhering to the annual operating budget, including budgets for individual productions.  The MD is responsible for all necessary financial reporting including current financial results, budget performance forecasting, cash flow projections and balance sheets.  
 * Working with the Marketing and Development Director to plan and implement audience development activities including marketing strategies, public relations activities and promotional events for season and single tick campaigns, as well as seasonal, production and program sponsorships.
@@ -35,6 +36,7 @@ Position Responsibilities Include:
 * Serving, with the Producing Artistic Director, as the primary staff liaison to the Board. The MD works closely with the President of the Board regarding the operation of the Theatre.  
 
 Qualifications:
+
 * Bachelor’s Degree or advanced degree
 * Demonstrated ability to effectively handle multiple priorities and projects simultaneously
 * Ability to work independently and collaboratively
