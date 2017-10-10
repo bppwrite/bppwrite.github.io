@@ -42,6 +42,8 @@ Qualifications:
 * Ability to work independently and collaboratively
 * Excellent interpersonal skills
 
+Compensation: $33,000 
+
 To apply, qualified and interested candidates should submit a cover letter and resume to Producing Artistic Director Chad Rabinovitz at <artisticdirector@newplays.org>.
 
 ## Volunteer
