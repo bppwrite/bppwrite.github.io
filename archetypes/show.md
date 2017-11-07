@@ -17,9 +17,11 @@ series = "2017-2018"
 slot = ""
 
 genres = []
+exec_producers = []
 directors = []
 playwrights = []
 musicians = []
+music_directors = []
 choreographers = []
 lyricists = []
 awards = []

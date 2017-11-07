@@ -12,10 +12,13 @@ hero_title = ""
 intermission_count = "0"
 lyricists = ["Larry Kass"]
 musicians = ["Larry Kass" ]
+music_directors = ["Terry LaBolt"]
 playwrights = [
-  "Larry Kass, Sara Kass",
+  "Larry Kass",
+  "Sara Kass",
   "George Pinney"
 ]
+exec_producers = ["Sara Kass"]
 runtime = ""
 series = "2017-2018"
 slot = "BPP/IU Musical Collaboration"

@@ -10,7 +10,7 @@
     {{- if eq .Params.musicians .Params.lyricists }}
         {{- with .Params.musicians -}}
             <div>
-                Music & Lyrics by
+                Music &amp; Lyrics by
                 {{ delimit (apply . "partial" "bio/link.html" ".") ", " " & " }}
             </div>
         {{- end -}}
@@ -29,6 +29,12 @@
             </div>
         {{- end -}}
     {{- end -}}
+    {{- with .Params.music_directors -}}
+        <div>
+            Music Director
+            {{ delimit (apply . "partial" "bio/link.html" ".") ", " " & " }}
+        </div>
+    {{- end -}}
 {{/* Typical byline */}}
 {{- else -}}
     {{- with .Params.playwrights -}}
@@ -37,10 +43,18 @@
             {{ delimit (apply . "partial" "bio/link.html" ".") ", " " & " }}
         </div>
     {{- end -}}
-    {{- with .Params.directors -}}
-        <div>
-            Directed by
-            {{ delimit (apply . "partial" "bio/link.html" ".") ", " " & " }}
-        </div>
-    {{- end -}}
+{{- end -}}
+
+{{- with .Params.directors -}}
+    <div>
+        Directed by
+        {{ delimit (apply . "partial" "bio/link.html" ".") ", " " & " }}
+    </div>
+{{- end -}}
+
+{{- with .Params.exec_producers -}}
+    <div>
+        Executive Producer
+        {{ delimit (apply . "partial" "bio/link.html" ".") ", " " & " }}
+    </div>
 {{- end -}}
