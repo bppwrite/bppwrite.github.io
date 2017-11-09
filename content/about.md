@@ -22,13 +22,13 @@ The Bloomington Playwrights Project (BPP) is the only professional theatre in th
 
 **Managing Director:** Jessica Reed <managingdirector@newplays.org>
 
-**Associate Artistic Director:** Ben Smith <ben@newplays.org>
+**Development and Marketing Director:** Jana Surigao <jana@newplays.org>
 
-**Financial Manager** Emily Goodson <emily@newplays.org>
+**Associate Artistic Director:** Ben Smith <ben@newplays.org>
 
 **Education Director:** Kyli Walls <education@newplays.org>
 
-**Box Office Manager:** Benny Sully <boxoffice@newplays.org>
+**Box Office Manager:** Maddie Burton <maddie@newplays.org>
 
 **Marketing Associate:** Tabitha Burton <tab@newplays.org>
 
@@ -54,13 +54,14 @@ The Bloomington Playwrights Project (BPP) is the only professional theatre in th
 * Jocelyn Bowie, Vice President
 * Susan Jones, Secretary
 * Harlan Lewis, Treasurer
+* Bob Arnove
+* Pat Brantlinger
 * David Chadwick
 * Gene Elias
-* Valeri Haughton
+* Valeri Haughton-Motley
 * Ray Hedin
 * Martin Joachim
 * Saundra Taylor
-* Paul Wagoner
 * John Whikehart
 
 ## Directors Circle
