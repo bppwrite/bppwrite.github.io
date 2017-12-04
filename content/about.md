@@ -22,6 +22,8 @@ The Bloomington Playwrights Project (BPP) is the only professional theatre in th
 
 **Managing Director:** Jessica Reed <managingdirector@newplays.org>
 
+**Development and Marketing Director:** Jana Surigao <jana@newplays.org>
+
 **Associate Artistic Director:** Ben Smith <ben@newplays.org>
 
 **Education Director:** Kyli Walls <education@newplays.org>
