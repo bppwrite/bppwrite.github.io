@@ -11,7 +11,7 @@ aliases = [
 {{% block-highlight %}}
 * Ages 8 - 12
 * $260
-* June 12 - June 23, 2017
+* June 11 - June 22, 2018
 * Monday - Friday; 9am - 4pm
 * [Register Today](https://www.ivytech.edu/files/bl-cllregistrationandparticipationFORMS.pdf)
 * [More Information](mailto:education@newplays.org)
