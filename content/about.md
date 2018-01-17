@@ -20,25 +20,21 @@ The Bloomington Playwrights Project (BPP) is the only professional theatre in th
 
 **Producing Artistic Director:** Chad Rabinovitz <artisticdirector@newplays.org>
 
-**Managing Director:** Jessica Reed <managingdirector@newplays.org>
+**Managing Director:** Brad Schiesser <brad@newplays.org>
 
 **Development and Marketing Director:** Jana Surigao <jana@newplays.org>
 
-**Associate Artistic Director:** Ben Smith <ben@newplays.org>
-
 **Education Director:** Kyli Walls <education@newplays.org>
 
-**Box Office Manager:** Maddie Burton <maddie@newplays.org>
+**Company Management Associate:** Kate Glen <kate@newplays.org>
 
-**Marketing Associate:** Tabitha Burton <tab@newplays.org>
+**Box Office Manager:** Maddie Burton <maddie@newplays.org>
 
 **Literary Manager:** Susan Jones <literarymanager@newplays.org>
 
 **Resident Playwright and Literary Associate:** Hank Greene <hankg2013@gmail.com>
 
 **BPP Historian:** Sonja Johnson <sejohnso2@gmail.com>
-
-**Resident Stage Manager:** Tabitha Burton <tab@newplays.org>
 
 **Technical Director:** Brian Lewis
 

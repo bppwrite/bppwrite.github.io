@@ -1,4 +1,5 @@
 +++
+date = "2017-11-04T19:30:00-04:00"
 title = "Ike & Julie Arnove Playoffs"
 subtitle = "9 Playwrights, 9 Directors and 27 actors have only 24 hours to make a play!"
 hero_title = ""
