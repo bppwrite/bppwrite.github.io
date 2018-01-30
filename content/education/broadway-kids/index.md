@@ -7,12 +7,12 @@ aliases = ["/node/122", "/node/8"]
 +++
 
 * Ages 5-8
-* Session 1: May 30 - June 2, 2017 - $175 (Please note: there is NO camp on Monday May 29)
-* Session 2: June 5 - June 9, 2017 - $200
-* Register for both sessions for $325
+* Session 1: May 28 - June 1, 2018 - $200 (Please note: Day 1 is Memorial Day, but attendance is optional)
+* Session 2: June 4 - June 8, 2018 - $200
+* Register for both sessions for $350
 * Monday - Friday; 9am - 4pm
-* [Register Today](https://www.ivytech.edu/files/bl-cllregistrationandparticipationFORMS.pdf)
-* [More Information](mailto:education@newplays.org)
+* [Register today!](http://services.bloomington.ivytech.edu/cll_local/cll_registration_form.html)
+* [Email education@newplays.org for more info.](mailto:education@newplays.org)
 
 Participants will explore the world of theatre through music, movement, visual arts, and performance. The BPP will focus on fostering creativity and imagination through teaching the art of acting and storytelling. Students will learn improvisation techniques along with such introductory elements of acting as character creation and artistic collaboration. Our Broadway Kids will gain self-confidence, respect for others, and a greater ability to express themselves both physically and vocally.
 
