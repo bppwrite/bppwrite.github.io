@@ -5,8 +5,8 @@ aliases = ["/node/5"]
 
 +++
 
-The BPP has one of the most sought-after rental spaces in Bloomington for anything from a theatre, dance performance, and film festivals to birthday parties, holiday events, and business meetings. Our newly renovated and handicap accessible building meets the needs of many and we aim to keep our prices as affordable as possible in order to better serve the Bloomington community.
+The BPP's Ted Jones Playhouse boasts one of the most versatile rental spaces in Bloomington for anything from a theatre, dance performances, and film festivals to birthday parties, holiday events, and business meetings. BPP aims to keep our beautifully renovated,  handicap accessible building as multi-purpose and affordable as possible, to better serve the Bloomington community.
 
-Our facility has a large lobby space housing the Stone Belt art gallery and the Lora Shiner Studio Stage, our Timothy J. Wiles Mainstage Theatre seating 86, two Dressing Rooms, a Kitchen, Shop/Paint Space, Costume Storage, Props Storage, and Office Space.
+Our facility has a large, open-air lobby space housing a box office booth, concessions counter, art gallery, and the Lora Shiner Studio Stage. Our Timothy J. Wiles Mainstage Theatre seats 85, and features two dressing rooms, a tech booth, and a shop/paint space. The upstairs houses our office space, kitchen, as well as costume and props storage. The entire facility has a 180 person occupancy limit.
 
-Please contact Chad Rabinovitz at <artisticdirector@newplays.org> or {{< tel >}} for more info, rates, and to check on availability.
+Please contact Chad Rabinovitz at <artisticdirector@newplays.org> for more details, rates, and availability.
