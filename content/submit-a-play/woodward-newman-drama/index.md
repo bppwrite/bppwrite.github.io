@@ -8,9 +8,9 @@ aliases = [
 
 +++
 
-The Woodward/Newman Drama Award is an exclusive honor offered by Bloomington Playwrights Project, sponsored by the [Newman's Own Foundation](http://newmansownfoundation.org/), remembering the many great dramas Joanne Woodward and Paul Newman performed in together.
+The Woodward/Newman Drama Award is an exclusive honor offered by Bloomington Playwrights Project, remembering the many great dramas Joanne Woodward and Paul Newman performed in together.
 
-It presents the best unpublished full-length drama of the year with a full production as part of the BPP's Mainstage season, along with travel reimbursement. We are currently accepting submissions for the 2018-19 competition. Submissions must be postmarked by March 1, 2018.
+It presents the best unpublished full-length drama of the year with a cash prize of $3,000 and a full production as part of the BPP's Mainstage season, along with travel reimbursement. Submissions for the 2018-19 competition must be postmarked by March 1, 2018. Submissions for the 2019-20 competition must be postmarked by March 1, 2019.
 
 ## 2017-18 Award
 
@@ -34,7 +34,7 @@ _Out of Orbit_ by Jennifer Maisel
 
 ## Guidelines for Submissions
 
-The BPP is accepting submissions for the 2018-19 Woodward/Newman Drama Award. Submissions must be postmarked by March 1, 2018. The top 10 finalists will be announced at the end of May with the winner announced in June 2018.
+The BPP is currently accepting submissions for the 2018-19 Woodward/Newman Drama Award. Submissions must be postmarked by March 1, 2018. The top 10 finalists will be announced at the end of May with the winner announced in June 2018.
 
 {{< submission-guidelines >}}
 

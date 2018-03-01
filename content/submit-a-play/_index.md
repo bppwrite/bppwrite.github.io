@@ -13,13 +13,13 @@ aliases = [
 The BPP makes calls for scripts several times each season for productions of new theatre. Please have a look at our ongoing opportunities to submit your new work:
 
 * [Reva Shiner Comedy Award](reva-shiner-comedy)
-* [Woodward/Newman Drama Award](woodward-newman-drama).
+* [Woodward/Newman Drama Award](woodward-newman-drama)
 
 If you have questions regarding submissions to the Bloomington Playwrights Project, please contact the Literary Manager at <literarymanager@newplays.org>.
 
 ## Alumni Playwrights
 
-The BPP has a long and successful past with too many names to mention, both local and nationally-renowned, that have spent time in our theater. We also have the only theatre award in the world named after legendary actors Paul Newman and Joanne Woodward, sponsored by [Newman’s Own Foundation](http://newmansownfoundation.org/). In just the past two years alone, we have produced groundbreaking work from top artists such as:
+The BPP has a long and successful past with too many names to mention, both local and nationally-renowned, that have spent time in our theater. We also have the only theatre award in the world named after legendary actors Paul Newman and Joanne Woodward. In recent years, we have produced groundbreaking work from top artists such as:
 
 * [**Jesse Eisenberg**](https://en.wikipedia.org/wiki/Jesse_Eisenberg) (2010 Academy Award Nominee, Best Actor – The Social Network)
 * [**Jeff Daniels**](http://www.jeffdaniels.com/) (Three-time Golden Globe nominee, Tony Nominee – The Squid and the Whale, God of Carnage, The Purple Rose of Cairo)

@@ -8,37 +8,40 @@ aliases = [
 
 +++
 
-The Reva Shiner Comedy Award presents an unpublished full-length comedy with a cash prize of $1,000, a full production as part of the Bloomington Playwrights Project's Mainstage season, along with travel reimbursement. We are currently accepting submissions for the 2018-19 Season. Scripts must be postmarked by October 31, 2017.
+The Reva Shiner Comedy Award presents an unpublished full-length comedy with a cash prize of $1,000, a full production as part of the Bloomington Playwrights Project's Mainstage season, along with travel reimbursement. We are currently accepting submissions for the 2019-20 Season. Scripts must be postmarked by October 31, 2018.
 
 Previous winners have gone on to enjoy productions around the world and to garner additional honors such as the National Play Award.
 
-## 2017-18 Award
+## 2018-19 Award
 
 ### Winner
 
-Congratulations to our 2017-18 Reva Shiner Comedy Award WINNER:
+Congratulations to our 2018-19 Reva Shiner Comedy Award WINNER:
 
-_Beating A Dead Horse_ by Jenny Stafford
+_Apropos of Nothing_ by Greg Kalleres
 
 ### Finalists:
 
-* _Enduring Loves_ by Zan Skolnick
-* _Virginia Throws A Wake_ by Rob Dames
-* _Michael, Cleveland_ by Mark Rigney
-* _Swimming Upstream_ by Rich Rubin
-* _The Bastard Seed_ by Tony Pasqualini
-* _Mall in the Family_ by Jenn Dlugos and Charlie Hatton
-* _That Time the House Burned Down_ by MJ Halberstadt
-* _The Super Variety Match Bonus Round!_ by Deb Hiett
+* _The Late Rosie Callaghan_ by Jeanne Beckwith
+* _The Escape Thingy_ by Deb Hiett
+* _Our Time_ by Ken Levine
+* _Mother's Wishes_ by Robert Lynn
+* _Story of my Life_ by James McClindon
+* _What I Didn't Learn in College_ by Rich Orloff
+* _Timeless: A Scientific Comedy_ by Reagan Payne
+* _Heart's Desire Motel_ by Mark Rosen
+* _Crashing the Party_ by Josh Tobiessen
+* _Faithful Wives and Healthy Children_ by Mattie Williams
 
 ## Guidelines for Submissions
 
-We are currently accepting submissions for the 2018-19 Reva Shiner Comedy Award. The top 10 finalists and the winner of the 2018-19 Reva Shiner Comedy Award will be announced at the end of March 2018.
+We are currently accepting submissions for the 2019-20 Reva Shiner Comedy Award. The top 10 finalists and the winner of the 2019-20 Reva Shiner Comedy Award will be announced at the end of March 2019.
 
 {{< submission-guidelines >}}
 
 ## Past Winners
 
+* **2017-2018** [_Beating a Dead Horse_](/show/2017-2018/beating-a-dead-horse/) by Jenny Stafford
 * **2016-2017** [_Thirty Day Mourning Period_](/show/2016-2017/30-day-mourning-period/) by Hank Greene
 * **2015-2016** [_Billy Witch_](/show/2015-2016/billy-witch/) by Gregory S Moss
 * **2014-2015** _Kalamazoo_ by Michelle Kholos Brooks & Kelly Younger
