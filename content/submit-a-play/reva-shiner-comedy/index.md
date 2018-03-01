@@ -28,7 +28,7 @@ _Apropos of Nothing_ by Greg Kalleres
 * _Mother's Wishes_ by Robert Lynn
 * _Story of my Life_ by James McClindon
 * _What I Didn't Learn in College_ by Rich Orloff
-* _Timeless: A Scientific Comedy_ by Reagan Payne
+* _Timeless: A Scientific Comedy_ by Raegan Payne
 * _Heart's Desire Motel_ by Mark Rosen
 * _Crashing the Party_ by Josh Tobiessen
 * _Faithful Wives and Healthy Children_ by Mattie Williams
