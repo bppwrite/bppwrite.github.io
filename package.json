@@ -24,7 +24,7 @@
   "devDependencies": {
     "autoprefixer": "^6.4.1",
     "eslint": "^3.3.1",
-    "jspm": "^0.16.47",
+    "jspm": "^0.16.53",
     "node-sass": "^4.0.0",
     "onchange": "^3.2.1",
     "postcss-cli": "^5.0.0"
@@ -36,9 +36,9 @@
     },
     "configFile": "static/js/config.js",
     "dependencies": {
-      "redux": "npm:redux@^3.6.0",
-      "rxjs": "npm:rxjs@^5.0.0-rc.1",
-      "slideout": "npm:slideout@^0.1.12"
+      "redux": "npm:redux@^3.7.2",
+      "rxjs": "npm:rxjs@^5.5.6",
+      "slideout": "npm:slideout@^1.0.1"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",
