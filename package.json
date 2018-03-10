@@ -8,6 +8,7 @@
     "build:css": "npm run scss && npm run autoprefixer",
     "build:js": "jspm bundle-sfx --minify js/app static/js/build.js",
     "lint": "eslint static/js/src",
+    "postinstall": "rimraf static/js/jspm_packages",
     "scss": "node-sass --output-style compressed --source-map true -o static/css static/scss",
     "watch:js": "onchange 'static/js/app/*.js' 'static/js/app.js' -- npm run build:js"
   },
@@ -27,7 +28,8 @@
     "jspm": "^0.16.53",
     "node-sass": "^4.0.0",
     "onchange": "^3.2.1",
-    "postcss-cli": "^5.0.0"
+    "postcss-cli": "^5.0.0",
+    "rimraf": "^2.6.2"
   },
   "jspm": {
     "directories": {
