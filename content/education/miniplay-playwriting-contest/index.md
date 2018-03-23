@@ -9,12 +9,19 @@ aliases = [
 
 +++
 
-The highly successful and long-running MiniPlay Contest invites students in grades 3 – 12 to submit original 7 - 10 minute plays in three categories (Elementary, Middle School & High School). Winning playwrights receive recognition in the local media and a staged reading of their winning play by local celebrities and adult actors at a special Education Event in their honor!
+The highly successful and long-running MiniPlay Contest invites students 13 and younger to submit original, 7 - 10 minute plays inspired by a provided theme. Six winning playwrights receive public recognition and a staged reading of their winning play by local actors at a special MiniPlay Premiere Party! Playwrights also receive an official show poster for their play.
 
-The BPP will select the three best plays in each category, based on how well the playwright crafts an original story, characters, and setting based upon the theme.
+BPP selects the six best plays, based on how well the playwright crafts an original story, characters, and setting based upon the provided theme.
 
 ## More Information
 
-For more information, to participate, or to find out this year's theme, please contact <education@newplays.org>.
+For more information, or to participate, please contact <education@newplays.org>.
 
-[Check out the MiniPlay performance event page]({{< relref-current-event "miniplay-playwriting-competition" >}})
+## Congratulations to our 2018 MiniPlay Contest Winners
+
+Hunter S.W. Broomall
+Adrian Rheam
+Gavin Robertson
+Therese Stosberg
+Cyrus Aziz Urheim
+Traeh Young  
