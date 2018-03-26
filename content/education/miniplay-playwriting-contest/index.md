@@ -19,9 +19,9 @@ For more information, or to participate, please contact <education@newplays.org>
 
 ## Congratulations to our 2018 MiniPlay Contest Winners
 
-Hunter S.W. Broomall
-Adrian Rheam
-Gavin Robertson
-Therese Stosberg
-Cyrus Aziz Urheim
-Traeh Young  
+* Hunter S.W. Broomall
+* Adrian Rheam
+* Gavin Robertson
+* Therese Stosberg
+* Cyrus Aziz Urheim
+* Traeh Young  
