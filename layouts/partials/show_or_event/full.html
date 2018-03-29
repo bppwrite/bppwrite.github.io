@@ -14,27 +14,28 @@
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
             <img src="{{ $.Scratch.Get "posterPath" }}"
                 alt="{{ .Title }} poster" />
-            <span
-                id="fb_share_button"
-                data-permalink="{{ .Permalink }}"
-                class="fa fa-facebook"
-                aria-hidden="true"></span>
+            <div id="fb_share_button">
+                <span
+                    data-permalink="{{ .Permalink }}"
+                    class="fab fa-facebook"
+                    aria-hidden="true"></span>
+            </div>
             <ul class="social-icons">
                 <li>
                     <a href="https://twitter.com/intent/tweet?url={{ .Permalink }}&amp;text={{ .Title }} &middot; {{ .Site.Title }}&amp;via={{ .Site.Params.social.twitter }}&amp;hashtags=bpp,newplays">
-                        <span class="fa fa-twitter" aria-hidden="true"></span>
+                        <span class="fab fa-twitter" aria-hidden="true"></span>
                     </a>
                 </li>
                 <li>
                     <a href="https://pinterest.com/pin/create/bookmarklet/?media={{ .Permalink }}{{ $.Scratch.Get "posterPath" }}&amp;url={{ .Permalink }}&amp;is_video=0&amp;description={{ .Title }} &middot; {{ .Site.Title }}">
-                        <span class="fa fa-pinterest-p"
+                        <span class="fab fa-pinterest-p"
                             aria-hidden="true"></span>
                     </a>
                 </li>
                 {{- with .Params.youtube_id -}}
                     <li>
                         <a href="https://youtu.be/{{ . }}">
-                            <span class="fa fa-youtube"
+                            <span class="fab fa-youtube"
                                 aria-hidden="true"></span>
                         </a>
                     </li>

@@ -1,3 +1,5 @@
+import './app/fontawesome-all.js';
+import '../scss/main.scss';
 import { Facebook } from './app/facebook';
 import { V } from './app/jVanilla';
 import { Slider } from './app/slider';
