@@ -48,16 +48,18 @@ The Bloomington Playwrights Project (BPP) is the only professional theatre in th
 
 * Sandra Freund, President
 * Jocelyn Bowie, Vice President
-* Susan Jones, Secretary
 * Harlan Lewis, Treasurer
 * Bob Arnove
 * Pat Brantlinger
 * David Chadwick
-* Gene Elias
+* Paul Daily
 * Valeri Haughton-Motley
 * Ray Hedin
 * Martin Joachim
-* Saundra Taylor
+* David Martin
+* Rob Shakespeare
+* Esther Smail
+* Ellee Spier
 * John Whikehart
 
 ## Directors Circle
