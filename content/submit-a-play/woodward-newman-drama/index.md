@@ -10,36 +10,37 @@ aliases = [
 
 The Woodward/Newman Drama Award is an exclusive honor offered by Bloomington Playwrights Project, remembering the many great dramas Joanne Woodward and Paul Newman performed in together.
 
-It presents the best unpublished full-length drama of the year with a cash prize of $3,000 and a full production as part of the BPP's Mainstage season, along with travel reimbursement. Submissions for the 2018-19 competition must be postmarked by March 1, 2018. Submissions for the 2019-20 competition must be postmarked by March 1, 2019.
+It presents the best unpublished full-length drama of the year with a cash prize of $3,000 and a full production as part of the BPP's Mainstage season, along with travel reimbursement. Submissions for the 2019-20 competition must be postmarked by March 1, 2019.
 
-## 2017-18 Award
+## 2018-19 Award
 
 ### Winner
 
-Congratulations to our 2017-18 Woodward/Newman Drama Award Winner:
+Congratulations to our 2018-19 Woodward/Newman Drama Award Winner:
 
-_Out of Orbit_ by Jennifer Maisel
+_To Quiet the Quiet_ by Christy Hall
 
 ### Finalists
 
-* _A Right Blue Hill_ by Ross Carter
-* _Origin Story_ by Nathan Davis
-* _A Motherhood Almanac_ by Noah Diaz
-* _Woman Descending a Staircase_ by Phoebe Eaton
-* _The Painted Window_ by Christy Hall
-* _Sir Lancelot Jones_ by Jim Henry
-* _Cold_ by Ben Jolivet
-* _I Carry Your Heart_ by Georgette Kelly
-* _The Bridge_ by Nora Leahy
+* _Preservation_ by Deborah Yarchun
+* _Left Hook_ by Rich Rubin
+* _Marionettes_ by Elizabeth M. Kelly
+* _Day of Saturn_ by Leviticus Jelks
+* _Men Overboard_ by Rich Orloff
+* _Rafetus_ by Ali Skye Bennet
+* _American Dream_ by John Stanisci
+* _Funny Bone_ by Catherine Butterfield
+* _Kicking the Bucket_ by Robert L. Verlaque
 
 ## Guidelines for Submissions
 
-The BPP is currently accepting submissions for the 2018-19 Woodward/Newman Drama Award. Submissions must be postmarked by March 1, 2018. The top 10 finalists will be announced at the end of May with the winner announced in June 2018.
+BPP is now accepting submissions for the 2019-20 Woodward/Newman Drama Award. Submissions must be postmarked by March 1, 2019. The winner will be announced in May/June 2019.
 
 {{< submission-guidelines >}}
 
 ## Past Winners
 
+* **2017-2018** [_Out of Orbit_](/show/2017-2018/out-of-orbit/) by LJennifer Maisel
 * **2016-2017** [_Happily After Ever_](/show/2016-2017/happily-after-ever/) by Laura Zlatos
 * **2015-2016** [_You Remind Me of You_](/show/2015-2016/you-remind-me-of-you/) by Matthew Capodicasa
 * **2014-2015** _Ugly Lies the Bone_ by Lindsay Ferrentino
