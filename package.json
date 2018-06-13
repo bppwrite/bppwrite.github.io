@@ -40,7 +40,9 @@
   },
   "dependencies": {
     "bootstrap": "^4.1.1",
+    "imagesloaded": "^4.1.4",
     "jquery": "^3.3.1",
+    "masonry-layout": "^4.2.1",
     "popper.js": "^1.14.3",
     "redux": "^4.0.0",
     "rxjs": "^5.5.10",

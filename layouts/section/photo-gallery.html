@@ -5,11 +5,14 @@
 
     {{ .Content }}
 
-    <div class="gallery">
+    <div class="photo-grid">
+        <div class="photo-grid-sizer"></div>
         {{ $path := (printf "%sphotos" .RelPermalink) }}
         {{- range (readDir (printf "/content%s" $path)) -}}
+        <div class="photo-grid-item">
             <img src="{{ printf "%s/%s" $path .Name }}"
                 alt="{{ .Name | replaceRE "(.+?)(\\.[^.]*$|$)" "$1" }}">
+        </div>
         {{- end -}}
     </div>
 </div>
