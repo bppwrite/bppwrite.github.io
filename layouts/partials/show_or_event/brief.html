@@ -3,52 +3,61 @@
 {{/* show ends on the last date in the showtimes array */}}
 {{- $end := (time (index .Params.showtimes (sub (len .Params.showtimes) 1) ).time ) -}}
 
-<div class="brief">
+
+<div class="col-sm-12 col-md-6 col-lg-4 brief">
+    <div class="card mb-2">
     {{ partial "show_or_event/poster.html" . }}
 
-    <div class="figcaption">
+        <a class="text-white" href="{{ .RelPermalink }}">
+            <div class="card-img-overlay ">
+                <div class="figcaption">
+                    {{/* Show/event title */}}
+                    <h4 class="{{ .Type }}-title card-title">
+                        {{ .Title }}
+                    </h4>
+                    {{- with .Params.subtitle }}
+                        <h6 class="subtitle card-text">{{ . }}</h6>
+                    {{ end -}}
 
-        {{/* Show/event title */}}
-        <h4 class="{{ .Type }}-title">
-            {{ .Title }}
-        </h4>
-        {{- with .Params.subtitle }}
-            <h6 class="subtitle">{{ . }}</h6>
-        {{ end -}}
+                    <div class="meta card-text">
+                        {{/* Slot or genres if no slot */}}
+                        <div class="card-text">
+                            {{- with .Params.slot -}}
+                                {{ . }}
+                            {{- else -}}
+                                {{ delimit (apply .Params.genres "title" "." ) "&" }}
+                            {{- end -}}
+                        </div>
 
-        <div class="meta">
-            {{/* Slot or genres if no slot */}}
-            <div>
-                {{- with .Params.slot -}}
-                    {{ . }}
-                {{- else -}}
-                    {{ delimit (apply .Params.genres "title" "." ) "&" }}
-                {{- end -}}
+                        {{/* written by, directed by, etc, with specialized musical handling */}}
+                        <div class="card-text">
+                            {{ partial "show_or_event/byline.html" . }}
+                        </div>
+                    </div>
+
+                    <h6 class="months card-text">
+                        {{- if eq $start $end -}}
+                            {{ dateFormat "January 2" $start }}
+                        {{- else -}}
+                            {{- if eq (dateFormat "January" $start) (dateFormat "January" $end) -}}
+                                {{ dateFormat "January 2" $start }}-{{ dateFormat "2" $end }}
+                            {{- else -}}
+                                {{ dateFormat "January 2" $start }} -
+                                    {{ dateFormat "January 2" $end }}
+                            {{- end -}}
+                        {{- end -}}
+
+                        {{/* Display year if it's not this year */}}
+                        {{- if ne (dateFormat "2006" now) (dateFormat "2006" $end) -}}
+                            , {{ dateFormat "2006" $end }}
+                        {{- end -}}
+                    </h6>
+
+                </div>
+
             </div>
 
-            {{/* written by, directed by, etc, with specialized musical handling */}}
-            <div>
-                {{ partial "show_or_event/byline.html" . }}
-            </div>
-        </div>
-
-        <h6 class="months">
-            {{- if eq $start $end -}}
-                {{ dateFormat "January 2" $start }}
-            {{- else -}}
-                {{- if eq (dateFormat "January" $start) (dateFormat "January" $end) -}}
-                    {{ dateFormat "January 2" $start }}-{{ dateFormat "2" $end }}
-                {{- else -}}
-                    {{ dateFormat "January 2" $start }} -
-                        {{ dateFormat "January 2" $end }}
-                {{- end -}}
-            {{- end -}}
-
-            {{/* Display year if it's not this year */}}
-            {{- if ne (dateFormat "2006" now) (dateFormat "2006" $end) -}}
-                , {{ dateFormat "2006" $end }}
-            {{- end -}}
-        </h6>
+        </a>
 
     </div>
 

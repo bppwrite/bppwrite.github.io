@@ -1,3 +1,6 @@
+// --- Bootstrap ---
+@import "custom-bootstrap/index";
+
 // --- Utilities ---
 // mixins
 @import "utilities/index";
@@ -7,10 +10,6 @@
 // base, base typography
 // any modular css that isn't a partial or page specific
 @import "universal/index";
-
-// --- Layout Styles ---
-// grid and containers
-@import "layout/index";
 
 // --- Partials Specific Styles ---
 @import "partials/index";

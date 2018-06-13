@@ -73,9 +73,9 @@
             <p>{{ .Content }}</p>
 
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 pull-right">
+        <div class="ml-auto col-xs-12 col-sm-12 col-md-8 col-lg-4 ">
             {{ partial "youtube.html" . }}
-            <div class="times">
+            <div class="times rounded">
                 {{ if gt $end.Unix now.Unix }}
                     <h6>See It Live</h6>
                 {{ else }}
@@ -87,7 +87,7 @@
                 {{ if gt $end.Unix now.Unix }}
                     {{ with .Params.tickets_run }}
                         <div>
-                            <a class="button button-secondary" href="{{ . }}">
+                            <a class="btn btn-secondary" href="{{ . }}">
                                 Buy Tickets
                             </a>
                         </div>

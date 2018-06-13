@@ -16,9 +16,9 @@
 	  width: 95vw;
 		height: auto;
 	  background: $gray-light;
+    vertical-align: inherit;
 	}
 }
-
 
 @media (min-width: $start-tablet) {
 	.gallery {
@@ -36,12 +36,12 @@
 
 @media (min-width: $start-laptop) {
 	.gallery {
-		-webkit-columns: 3 30vw;
-		-moz-columns: 3 30vw;
-		columns: 3 30vw;
-		-webkit-column-gap: 1vw;
-		-moz-column-gap: 1vw;
-		column-gap: 1vw;
+		-webkit-columns: 3 31vw;
+		-moz-columns: 3 31vw;
+		columns: 3 31vw;
+		-webkit-column-gap: 0;
+		-moz-column-gap: 0;
+		column-gap: 0;
 		img {
 		  width: 31vw;
 		}

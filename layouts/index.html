@@ -102,7 +102,7 @@
 
                             {{- if and $page.Params.hero_call_to_action $page.Params.hero_call_to_action_link -}}
                                 <br>
-                                <a class="button" href="{{ $page.Params.hero_call_to_action_link }}">
+                                <a class="btn btn-secondary" href="{{ $page.Params.hero_call_to_action_link }}">
                                     {{- with ($.Scratch.Get "prompt") }}
                                         {{ . }} -
                                     {{- end }}
@@ -110,7 +110,7 @@
                                 </a>
                             {{- else if ne $page.Section "special" -}}
                                 <br>
-                                <a class="button" href="{{ $page.RelPermalink }}">
+                                <a class="btn btn-secondary" href="{{ $page.RelPermalink }}">
                                     {{- with ($.Scratch.Get "prompt") }}
                                         {{ . }} -
                                     {{- end }}
@@ -118,7 +118,7 @@
                                 </a>
                             {{- else -}}
                                 <br>
-                                <a class="button" href="/tickets/#season-subscription">
+                                <a class="btn btn-secondary" href="/tickets/#season-subscription">
                                     Buy a Season Subscription
                                 </a>
                             {{- end -}}
@@ -137,17 +137,15 @@
             </div>
             <div id="control-right">
               <span class="fas fa-chevron-right" aria-hidden="true"></span>
-            </div>
-        </nav>
-    </div>
+          </div>
+      </nav>
+  </div>
 
     <!-- call-to-action -->
     <div class="container">
-        <div class="jumbo-header">
-            <div class="row">
-                <div class="col-sm-12">
-                    {{ .Content }}
-                </div>
+        <div class="row">
+            <div class="col-sm-12 border border-primary rounded text-center py-4 my-3">
+                {{ .Content }}
             </div>
         </div>
     </div>

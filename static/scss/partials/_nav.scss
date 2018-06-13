@@ -3,41 +3,11 @@
 
 // Default/general header styles
 header {
-	background: $black;
-	position: static;
-	width: 100%;
-	z-index: 10;
-	height: 3.33em;
   a {
     color: $white;
-		h1 {
-			margin: 0;
-		}
   }
-	div.site-title {
-		margin: 0;
-	}
-
-	// First of Two Flexbox parents
-	.container-wide {
-		@include flexbox();
-		@include flex-prop-prefixes(justify-content, space-between);
-		@include flex-prop-prefixes(align-items, center);
-		@include flex-prop-prefixes(align-content, center);
-		@include flex-prop-prefixes(flex-direction, row);
-		height: 100%;
-	}
-	.menu-container {
-		@include flexbox();
-		@include flex-prop-prefixes(justify-content, space-between);
-		@include flex-prop-prefixes(align-items, center);
-		@include flex-prop-prefixes(align-content, center);
-		@include flex-prop-prefixes(flex-direction, row);
-	}
 	.menu {
-		display: none;
 	  font-family: $trend;
-		font-size: (13 / 16) * 1em;
 	  list-style: none;
 		padding-left: 0;
 		margin: 0;
@@ -51,20 +21,20 @@ header {
 	.menu-icon-open {
 		padding-left: 1em;
 	}
-	.dropdown {
+	.parent {
 	  position: relative;
 	}
-	.dropdown:after {
+	.parent:after {
 	  color: $white;
 	  content: "\25BC";
 	  font-size: 0.5em;
 	}
-	.dropdown-menu {
+	.child-menu {
 	  position: absolute;
 	  display: none;
 	  list-style: none;
 	}
-	.dropdown:hover > .dropdown-menu {
+	.parent:hover > .child-menu {
 	  display: block;
 	}
 	.toggle-button {
@@ -76,21 +46,6 @@ header {
 
 // Ovewrite on home page
 header.home {
+  z-index: 999;
 	background: linear-gradient(to bottom, $black-trans, rgba(35, 31, 32, 0));
-	position: absolute;
 }
-
-// ---- media queries  ----
-
-@media (min-width: $start-tablet) {
-
-	header {
-		// ---- menu  ----
-		.menu {
-			display: inline-block;
-		}
-	}
-
-}
-
-// NOTE z-index

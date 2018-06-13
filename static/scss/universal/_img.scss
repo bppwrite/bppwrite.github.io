@@ -1,0 +1,17 @@
+img {
+  max-width: 100%;
+}
+
+.img-text-background {
+	background-color: $black-trans;
+	padding: (4/16) * 1em;
+	a {
+		color: $white;
+	}
+  em {
+      color: $accent;
+  	font-family: $twenty;
+  	text-transform: uppercase;
+      font-style: normal;
+  }
+}

@@ -1,25 +1,13 @@
 // ---- Table of Content ----
 
-.container-toc {
-	background-color: $gray-light;
-	border-radius: 6px;
-	font-size: 89%;
-	margin-top: 37.295px;
-	padding: 0.5em;
-	height: 100%;
-	@include order(1);
+.toc {
+  background-color: $gray-light;
+  border-radius: 6px;
+  font-size: 89%;
+  padding: 0.5em;
+}
 
-	#TableOfContents > ul {
-        // hack to remove empty top level of toc
-        // see https://discuss.gohugo.io/t/exclude-some-head-levels-from-tableofcontents/1380/2
-        list-style: none; margin: 0; padding: 0 5px;
-
-		margin-top: 0;
-		margin-bottom: 0em;
-	}
-
-
-	h4 {
+.toc h4 {
 		font-style: italic;
 		color: $primary-dark;
 		text-transform: uppercase;
@@ -28,20 +16,10 @@
 		margin-top: 0.333em;
 	}
 
-}
-
-.container-single-content {
-	@include order(2);
-}
-
-@media (min-width: $start-tablet) {
-
-	.container-single-content {
-		@include order(1);
-	}
-
-	.container-toc {
-		@include order(2);
-	}
-
+#TableOfContents > ul {
+  // hack to remove empty top level of toc
+  // see https://discuss.gohugo.io/t/exclude-some-head-levels-from-tableofcontents/1380/2
+  list-style: none; margin: 0; padding: 0 5px;
+  margin-top: 0;
+  margin-bottom: 0em;
 }

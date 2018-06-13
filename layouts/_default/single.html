@@ -1,18 +1,18 @@
 {{ define "main" }}
 
-<div class="container">
+<div class="container mt-md-5">
     <div class="row">
-        <div class="container-flex">
-            <div class="container-single-content col-sm-12 col-md-8 col-lg-8">
-                <h1>{{ .Title }}</h1>
-                {{ .Content }}
+        {{- if .TableOfContents }}
+        <div class="col-sm-12 col-md-4 col-lg-4 order-md-last my-3 my-md-0">
+            <div class="toc">
+                <h4>{{ .Title }}</h4>
+                {{ .TableOfContents }}
             </div>
-            {{- if .TableOfContents }}
-                <div class="container-toc col-sm-12 col-md-4 col-lg-4">
-                    <h4>{{ .Title }}</h4>
-                    {{ .TableOfContents }}
-                </div>
-            {{ end -}}
+        </div>
+        {{ end -}}
+        <div class="col-sm-12 col-md-8 col-lg-8 order-md-first">
+            <h1>{{ .Title }}</h1>
+            {{ .Content }}
         </div>
     </div>
 </div>

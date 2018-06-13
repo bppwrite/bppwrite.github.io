@@ -3,33 +3,14 @@
 // layouts/show_or_event/brief.html
 // uses other partials
 
-.brief {
-	color: $white;
-	position: relative;
-	.figcaption {
-		background-color: $black-trans;
-		position: absolute;
-		bottom: 65px;
-		width: 100%;
-		padding: 15px;
-	}
-	.show-title {
-		font-weight: 400;
-	}
-	.event-title,
-	.event-title + .subtitle {
-		text-transform: uppercase;
-	}
-	.event-title + .subtitle {
-		font-family: $int-black;
-	}
-	.show-title,
-	.event-title,
-	.meta,
-	.subtitle {
-		margin: 0 0 5px 0;
-	}
-	.meta {
-		line-height: 1em;
-	}
+.figcaption {
+	background-color: $black-trans;
+  padding: 10px;
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+}
+
+.brief .card .card-img-overlay {
+  padding: 0;
 }

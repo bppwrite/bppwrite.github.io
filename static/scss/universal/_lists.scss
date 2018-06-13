@@ -1,0 +1,9 @@
+ul {
+	padding-left: 20px;
+}
+
+@media (min-width: $start-laptop) {
+	ul {
+		padding-left: 30px;
+	}
+}

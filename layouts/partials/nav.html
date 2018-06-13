@@ -1,28 +1,26 @@
 <!-- three item nav -->
-<header class="{{ if .IsHome }}home abs{{ end }}">
-    <div class="container-wide">
-        <div class="site-title">
-            <a href="/">
-                <h1 class="brand-title">
-                    BPP
-                </h1>
-            </a>
-        </div>
-        <div class="menu-container">
-            <ul class="menu">
-                {{- range .Site.Menus.main -}}
-                    {{- if eq ( .Pre | plainify ) "hero" -}}
-                        <li class="menu-item">
-                            <a class="" href="{{.URL}}">
-                                <span>{{ .Name }}</span>
-                            </a>
-                        </li>
-                    {{- end -}}
+<header class="navbar {{ if .IsHome }}home abs position-absolute w-100{{ else }} bg-dark{{ end }}">
+    <div class="site-title">
+        <a href="/">
+            <h1 class="brand-title">
+                BPP
+            </h1>
+        </a>
+    </div>
+    <div class="navbar-items d-flex">
+        <ul class="menu d-none d-md-block">
+            {{- range .Site.Menus.main -}}
+                {{- if eq ( .Pre | plainify ) "hero" -}}
+                    <li class="menu-item">
+                        <a class="" href="{{.URL}}">
+                            <span>{{ .Name }}</span>
+                        </a>
+                    </li>
                 {{- end -}}
-            </ul>
-            <a class="toggle-button">
-                <span class="fas fa-bars" aria-hidden="true"></span>
-            </a>
-        </div>
+            {{- end -}}
+        </ul>
+        <a class="toggle-button text-white">
+            <span class="fas fa-bars" aria-hidden="true"></span>
+        </a>
     </div>
 </header>
