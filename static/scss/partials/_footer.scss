@@ -3,39 +3,43 @@
 
 .sponsor {
 
-  .sponsor-lead {
-    img {
-      height: 75px;
-      width: auto;
-    }
+  .local-grid:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  .local-grid-sizer,
+  .local-grid-item {
+    width: calc(50% - 25px);
+    margin-bottom: 25px;
+  }
+
+  .local-grid-item {
+    float: left;
+  }
+
+  .local-grid-item img {
+    height: auto;
+    max-width: 100%;
   }
 
   .sponsor-season {
     ul {
       list-style: none;
     }
-
-    li {
-      margin: 5px;
-    }
-
-    img {
-      height: 50px;
-      max-width: 100vw;
-      width: auto;
-    }
   }
 }
 
 // ---- media queries ----
-@media (min-width: $start-tablet) {
+ @include media-breakpoint-up(sm) {
   // sponsors
   .sponsor {
-      .sponsor-season {
-          img {
-              height: 65px;
-          }
-      }
+    .local-grid-item,
+    .local-grid-sizer {
+      width: calc(25% - 25px);
+      margin-bottom: 25px;
+    }
   }
 
   .traditional {
@@ -53,16 +57,6 @@
 
       .copyright {
           padding-right: 60px;
-      }
-  }
-}
-@media (min-width: $start-laptop) {
-  // sponsors
-  .sponsor {
-      .sponsor-season {
-          img {
-              height: 75px;
-          }
       }
   }
 }

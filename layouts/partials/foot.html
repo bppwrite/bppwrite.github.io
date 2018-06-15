@@ -1,7 +1,7 @@
 <footer>
 
 <!-- sponsors -->
-<div class="sponsor text-center">
+<div class="sponsor text-center my-5">
     <div class="container">
         <div class="horizontal-line"></div>
         <h2>Support Our Local Sponsors</h2>
@@ -32,15 +32,16 @@
             </div>
         {{- else -}}
             <div class="sponsor-season">
-                <ul class="d-flex flex-wrap justify-content-around align-content-between">
+                <div class="local-grid">
+                    <div class="local-grid-sizer"></div>
                 {{- range where (where .Site.RegularPages "Section" "sponsor") ".Params.is_lead" "!=" true -}}
-                    <li>
+                    <div class="local-grid-item">
                         <a href="{{ .Params.website }}">
                             {{ partial "sponsor/logo.html" . }}
                         </a>
-                    </li>
+                    </div>
                 {{- end -}}
-                </ul>
+                </div>
             </div>
         {{- end -}}
     </div>
