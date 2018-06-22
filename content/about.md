@@ -24,7 +24,7 @@ The Bloomington Playwrights Project (BPP) is the only professional theatre in th
 
 **Development and Marketing Director:** Jana Surigao <jana@newplays.org>
 
-**Education Director:** Kyli Walls <education@newplays.org>
+**Education Director:** Emily Davis <education@newplays.org>
 
 **Company Management Associate:** Kate Glen <kate@newplays.org>
 
