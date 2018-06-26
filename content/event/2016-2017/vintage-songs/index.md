@@ -1,9 +1,9 @@
 +++
 aliases = ["/node/427"]
-date = "2018-06-14T18:30:00-04:00"
+date = "2017-06-14T18:30:00-04:00"
 intermission_count = "0"
 runtime = ""
-series = "2017-2018"
+series = "2016-2017"
 subtitle = ""
 title = "Vintage Songs"
 hero_title = ""
@@ -19,7 +19,7 @@ youtube_id = ""
 
 # list showtimes in ISO 8601 format with links to tickets
 [[showtimes]]
-    time = "2018-06-14T18:30:00"
+    time = "2017-06-14T18:30:00"
     tickets = "https://web.ovationtix.com/trs/pe.c/10203434"
 
 +++

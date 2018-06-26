@@ -27,7 +27,10 @@ Subscribe to the BPP Main Stage Series and receive these benefits with your Subs
 * Invitations to Special Events
 * $80 General Admission
 * $68 Student/Senior
+* Flexibility! See each show, or use all your tickets for one show
 
-If you are a current BPP subscriber, for each subscription you purchase, you get to give the gift of a free additional subscription to a friend of your choice!
+## Subscribe-It-Forward
+
+Are you a current subscriber? When you re-subscribe, you get to give the gift of a FREE SUBSCRIPTION to a friend! 
 
 [Buy Season Subscription Online](https://web.ovationtix.com/trs/store/34132/pk/93628)
