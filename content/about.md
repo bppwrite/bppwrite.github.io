@@ -47,7 +47,7 @@ The Bloomington Playwrights Project (BPP) is the only professional theatre in th
 ## Board of Directors
 
 * Sandra Freund, President
-* Jocelyn Bowie, Vice President
+* John Whikehart, Vice President
 * Harlan Lewis, Treasurer
 * Bob Arnove
 * Pat Brantlinger
@@ -55,12 +55,10 @@ The Bloomington Playwrights Project (BPP) is the only professional theatre in th
 * Paul Daily
 * Valeri Haughton-Motley
 * Ray Hedin
-* Martin Joachim
 * David Martin
 * Rob Shakespeare
 * Esther Smail
 * Ellee Spier
-* John Whikehart
 
 ## Directors Circle
 
