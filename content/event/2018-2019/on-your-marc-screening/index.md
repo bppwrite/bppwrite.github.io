@@ -1,5 +1,5 @@
 +++
-title = "On Your Marc Sneak Preview Screening"
+title = "On Your Marc Sneak Preview Film Screening"
 subtitle = "A new documentary about the messiest man in show business."
 hero_title = "On Your Marc"
 hero_subtitle = "A new documentary about the messiest man in show business."
@@ -30,4 +30,6 @@ Do you remember when beloved TV icon Marc Summers produced his one-man show Ever
 
 Fast forward 2 years... Surprise! Marc is joining us again this fall to present a sneak preview screening of the completed feature-length documentary! On Your Marc intimately captures his life, career, and legacy. The Indianapolis native looks back on his "messy" ups and downs as he works through the production and opening night of Everything In Its Place: The Life & Slimes of Marc Summers, the hilariously illuminating one-man show, co-written by Broadway stars Alex Brightman (Tony-nominated lead in School of Rock: The Musical) and composer Drew Gasparini. The film combines a scrappy, “anything goes” appeal with an insightful look at being in the spotlight through surviving cancer, a near-fatal car crash, and a lifelong bout with OCD.
 
-On Your Marc lovingly features BPP, and the city of Bloomington, with countless scenes shot here at the theater and throughout the community. Don't miss your chance to see it first with Marc, his Slimes co-star Mike Nappi, and BPP Producing Artistic Director, Chad Rabinovitz. All three will be hosting an in-person Q&A session right after the film. 
+On Your Marc lovingly features BPP, and the city of Bloomington, with countless scenes shot here at the theater and throughout the community. Don't miss your chance to see it first with Marc, his Slimes co-star Mike Nappi, and BPP Producing Artistic Director, Chad Rabinovitz. All three will be hosting an in-person Q&A session right after the film.
+
+Tickets may be purchased online or in person at the IU Auditorium. To purchase tickets online, you will need to create or login to an IU Auditorium account. Please call the IU Auditorium Box Office at (812)855-1103 M-F 10am-5pm with any questions about creating or accessing your account. 
