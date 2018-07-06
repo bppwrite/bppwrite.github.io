@@ -16,7 +16,7 @@ series = "2018-2019"
 # may be the same as the "award"
 slot = ""
 
-genres = ["musical"]
+genres = [""]
 exec_producers = []
 directors = ["George Pinney"]
 playwrights = ["George Pinney", "Ron Newell", "Larry Kass"]

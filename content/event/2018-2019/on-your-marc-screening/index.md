@@ -1,9 +1,11 @@
 +++
-title = "On Your Marc Sneak Preview Film Screening"
+
+date = "2018-09-14T19:30:00"
+title = "Sneak Preview Film Screening"
 subtitle = "A new documentary about the messiest man in show business."
 hero_title = "On Your Marc"
 hero_subtitle = "A new documentary about the messiest man in show business."
-hero_call_to_action = "BPP Sneak Preview Screening"
+hero_call_to_action = "Sneak Preview Screening"
 hero_call_to_action_link = "/event/2018-2019/on-your-marc-screening/"
 
 venue = "IU Cinema"
@@ -32,4 +34,4 @@ Fast forward 2 years... Surprise! Marc is joining us again this fall to present 
 
 On Your Marc lovingly features BPP, and the city of Bloomington, with countless scenes shot here at the theater and throughout the community. Don't miss your chance to see it first with Marc, his Slimes co-star Mike Nappi, and BPP Producing Artistic Director, Chad Rabinovitz. All three will be hosting an in-person Q&A session right after the film.
 
-Tickets may be purchased online or in person at the IU Auditorium. To purchase tickets online, you will need to create or login to an IU Auditorium account. Please call the IU Auditorium Box Office at (812)855-1103 M-F 10am-5pm with any questions about creating or accessing your account.
+Tickets may be purchased online or in person at the IU Auditorium. To purchase tickets online, you will need to create or login to an IU Auditorium account. Please call the IU Auditorium Box Office at (812) 855-1103 M-F 10am-5pm with any questions about creating or accessing your account.

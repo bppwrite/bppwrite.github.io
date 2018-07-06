@@ -16,7 +16,7 @@ series = "2018-2019"
 # may be the same as the "award"
 slot = ""
 
-genres = ["comedy"]
+genres = [""]
 exec_producers = []
 directors = ["Chad Rabinovitz"]
 playwrights = ["Greg Kalleres"]
