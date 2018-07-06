@@ -56,7 +56,7 @@ tickets_run = "https://bctboxoffice.org/event/glitches-in-reality/"
     time = "2018-10-04T19:30:00"
     tickets = "https://web.ovationtix.com/trs/pe/10303033"
 [[showtimes]]
-    time = "2018-10-04T19:30:00"
+    time = "2018-10-05T19:30:00"
     tickets = "https://web.ovationtix.com/trs/pe/10303034"
 
 +++
