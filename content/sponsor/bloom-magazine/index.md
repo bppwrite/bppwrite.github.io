@@ -5,5 +5,6 @@ is_lead = false
 phone = ""
 title = "Bloom Magazine"
 website = "http://www.magbloom.com/"
+proportion = "tall"
 
 +++

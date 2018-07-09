@@ -11,7 +11,7 @@
         {{- end -}}
         {{- if ne ($.Scratch.Get "leadSponsor") nil -}}
             <div class="sponsor-lead">
-                <h3>Lead Sponsor</h3>
+                <h3 class="my-3">Lead Sponsor</h3>
                 <p>
                     <a href="{{ ($.Scratch.Get "leadSponsor").Params.website }}">
                         {{ partial "sponsor/logo.html" ($.Scratch.Get "leadSponsor") }}
@@ -19,10 +19,19 @@
                 </p>
             </div>
             <div class="sponsor-season">
-                <h3>Season Sponsors</h3>
-                <ul class="d-flex flex-wrap justify-content-around align-content-between">
-                {{- range where (where .Site.RegularPages "Section" "sponsor") ".Params.is_lead" "!=" true -}}
-                    <li>
+                <h3 class="mt-5 mb-3">Season Sponsors</h3>
+                <ul class="row align-items-center justify-content-center">
+                {{- range where (where (where .Site.RegularPages "Section" "sponsor") ".Params.proportion" "==" "wide") ".Params.is_lead" "!=" true -}}
+                    <li class="col-6 col-sm-4 col-md-3 col-lg-2 my-4">
+                        <a href="{{ .Params.website }}">
+                            {{ partial "sponsor/logo.html" . }}
+                        </a>
+                    </li>
+                {{- end -}}
+                </ul>
+                <ul class="row align-items-center justify-content-center">
+                {{- range where (where (where .Site.RegularPages "Section" "sponsor") ".Params.proportion" "==" "tall") ".Params.is_lead" "!=" true -}}
+                    <li class="col-6 col-sm-4 col-md-3 col-lg-2">
                         <a href="{{ .Params.website }}">
                             {{ partial "sponsor/logo.html" . }}
                         </a>
@@ -31,18 +40,17 @@
                 </ul>
             </div>
         {{- else -}}
-            <div class="sponsor-season">
-                <div class="local-grid">
-                    <div class="local-grid-sizer"></div>
-                {{- range where (where .Site.RegularPages "Section" "sponsor") ".Params.is_lead" "!=" true -}}
-                    <div class="local-grid-item">
-                        <a href="{{ .Params.website }}">
-                            {{ partial "sponsor/logo.html" . }}
-                        </a>
-                    </div>
-                {{- end -}}
-                </div>
-            </div>
+        <div class="sponsor-season">
+            <ul class="d-flex flex-wrap justify-content-around align-content-between">
+            {{- range where (where .Site.RegularPages "Section" "sponsor") ".Params.is_lead" "!=" true -}}
+                <li>
+                    <a href="{{ .Params.website }}">
+                        {{ partial "sponsor/logo.html" . }}
+                    </a>
+                </li>
+            {{- end -}}
+            </ul>
+        </div>
         {{- end -}}
     </div>
 </div>

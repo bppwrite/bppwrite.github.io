@@ -5,5 +5,6 @@ is_lead = false
 phone = ""
 title = "IU Credit Union"
 website = "https://www.iucu.org/"
+proportion = "wide"
 
 +++

@@ -5,5 +5,6 @@ address = ""
 phone = ""
 website = "http://www.fivestarseniorliving.com/communities/in/bloomington/meadowood"
 is_lead = false
+proportion = "wide"
 
 +++

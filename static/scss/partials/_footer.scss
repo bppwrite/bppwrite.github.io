@@ -1,47 +1,14 @@
 // ---- Sponsor ----
 // the sponsor section is contained in the footer partial
 
-.sponsor {
-
-  .local-grid:after {
-    content: '';
-    display: block;
-    clear: both;
-  }
-
-  .local-grid-sizer,
-  .local-grid-item {
-    width: calc(50% - 25px);
-    margin-bottom: 25px;
-  }
-
-  .local-grid-item {
-    float: left;
-  }
-
-  .local-grid-item img {
-    height: auto;
-    max-width: 100%;
-  }
-
-  .sponsor-season {
-    ul {
-      list-style: none;
-    }
+.sponsor .sponsor-season {
+  ul {
+    list-style: none;
   }
 }
 
 // ---- media queries ----
  @include media-breakpoint-up(sm) {
-  // sponsors
-  .sponsor {
-    .local-grid-item,
-    .local-grid-sizer {
-      width: calc(25% - 25px);
-      margin-bottom: 25px;
-    }
-  }
-
   .traditional {
       .container-flex {
           height: 275px;

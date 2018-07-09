@@ -5,5 +5,6 @@ is_lead = false
 phone = ""
 title = "Papa Johns"
 website = "http://www.papajohns.com/"
+proportion = "wide"
 
 +++

@@ -5,5 +5,6 @@ is_lead = false
 phone = ""
 title = "Longs Landing Furniture"
 website = "http://www.longslanding.com/"
+proportion = "wide"
 
 +++

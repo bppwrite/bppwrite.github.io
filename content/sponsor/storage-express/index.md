@@ -5,5 +5,6 @@ is_lead = false
 phone = ""
 title = "Storage Express"
 website = "https://www.storageexpress.com/"
+proportion = "wide"
 
 +++

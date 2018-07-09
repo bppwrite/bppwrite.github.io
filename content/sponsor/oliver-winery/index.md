@@ -5,5 +5,6 @@ is_lead = false
 phone = ""
 title = "Oliver Winery"
 website = "http://www.oliverwinery.com/"
+proportion = "wide"
 
 +++

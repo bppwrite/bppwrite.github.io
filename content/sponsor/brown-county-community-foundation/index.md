@@ -5,5 +5,6 @@ is_lead = false
 phone = ""
 title = "Brown County Community Foundation"
 website = "http://browncountygives.org/bcgives/"
+proportion = "tall"
 
 +++

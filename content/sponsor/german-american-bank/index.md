@@ -5,5 +5,6 @@ is_lead = false
 phone = ""
 title = "German American Bank"
 website = "https://germanamerican.com/"
+proportion = "wide"
 
 +++

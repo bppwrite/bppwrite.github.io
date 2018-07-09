@@ -5,5 +5,6 @@ is_lead = false
 phone = "(888) IVY-LINE"
 title = "Ivy Tech Community College"
 website = "https://www.ivytech.edu/bloomington/"
+proportion = "wide"
 
 +++

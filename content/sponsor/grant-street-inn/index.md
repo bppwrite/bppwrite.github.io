@@ -5,5 +5,6 @@ is_lead = false
 phone = ""
 title = "Grant Street Inn"
 website = "https://www.grantstinn.com/"
+proportion = "wide"
 
 +++

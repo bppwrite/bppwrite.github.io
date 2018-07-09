@@ -5,5 +5,6 @@ is_lead = false
 phone = ""
 title = "World Arts Printing"
 website = "http://waprinting.net/"
+proportion = "wide"
 
 +++
