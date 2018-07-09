@@ -8,7 +8,7 @@ aliases = ["/node/121"]
 * Ages 9 - 16
 * July 9 - July 29, 2018
 * Monday - Friday; 9am - 4pm, $395
-* Performances July 27, 28, & 29 @ 7:30pm, July 29 @ 2pm
+* Performances July 27 & 28 @ 7:30pm, July 29 @ 2pm
 * [Register today!](http://services.bloomington.ivytech.edu/cll_local/cll_registration_form.html)
 * [Email education@newplays.org for more info.](mailto:education@newplays.org)
 
