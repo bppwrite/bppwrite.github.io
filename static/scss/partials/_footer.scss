@@ -38,6 +38,12 @@
   }
 }
 
+@include media-breakpoint-up(lg) {
+  ul.tall li {
+    flex: 0 0 12%;
+    max-width: 12%;
+  }
+}
 
 
 
