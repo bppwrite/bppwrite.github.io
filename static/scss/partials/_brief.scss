@@ -4,6 +4,7 @@
 // uses other partials
 
 .figcaption {
+  color: $white;
 	background-color: $black-trans;
   padding: 10px;
   position: absolute;
@@ -13,4 +14,9 @@
 
 .brief .card .card-img-overlay {
   padding: 0;
+  z-index: 1;
+}
+
+.brief a {
+  color: $white;
 }
