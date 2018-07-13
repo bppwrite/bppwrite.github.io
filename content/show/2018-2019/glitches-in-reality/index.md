@@ -65,6 +65,6 @@ From the mind of renowned Australian magician, Simon Coronel, comes an evening f
 
 Winner of over a dozen international awards including multiple from the prestigious World Championships of Magic, Simon is a regular performer at the Magic Castle and is a university lecturer on perception and illusion.
 
-This show is suitable for all ages.
+*Suitable for all ages.*
 
 The BPP box office and lobby will open at 6:30pm, house opens at 7pm.

@@ -66,6 +66,6 @@ tickets_run = "https://bctboxoffice.org/event/tuning-in/"
 
 All is peaceful at the Harmony Hill retirement community – the rooms are comfy, the meals are tasty, and the citizen-run radio station is a hit (even if it only plays hits from the past). But when Mr. Coffin waltzes in threatening to take over WLK 89.3 and turn it into a contemporary music station, the talented tenants of the senior center band together and hold a radiothon to keep it alive.
 
-This play is suitable for all ages.
+*Suitable for all ages.*
 
 The BPP box office and lobby will open at 6:30pm, house opens at 7pm.

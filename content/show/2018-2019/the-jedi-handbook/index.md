@@ -68,6 +68,6 @@ A not so long time ago, in a theater not so far away, came a film that rocked th
 
 The Jedi Handbook is a coming of age story about a young boy who survives growing older with help from The Force. Experiencing the Star Wars franchise anew, through the eyes and imagination of a kid, The Jedi Handbook takes us on a nostalgic journey back to an era we can all relate to – our childhood.
 
-This show is suitable for all ages.
+*Suitable for all ages.*
 
 The BPP box office and lobby will open at 6:30pm, house opens at 7pm.

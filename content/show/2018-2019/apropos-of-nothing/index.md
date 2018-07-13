@@ -68,6 +68,6 @@ Owen confesses, apropos of nothing, that he’s in love with his best friend’s
 
 But it’s just “a passing phase,” he tells him. “Forget I even said it.” Unfortunately, no one can. And now that it’s out there, everyone’s lives are turned upside-down, and no one’s relationship is safe from the wreckage. In a comedy about love, irony, and cliché, five people struggle with…well…love, irony, and cliché.
 
-Content Warning: adult language and situations
+*Contains adult language and situations.*
 
 The BPP box office and lobby will open at 6:30pm, house opens at 7pm.

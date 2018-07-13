@@ -68,6 +68,6 @@ From the writer of the hit musical HOME.
 
 Having suffered great loss and heartbreak, Kathy is a woman on the edge. Haunted by her past and her own personal demons, Kathy seems to be losing the battle against her thoughts, her words, and her fears. And the one man who can help her may prove to be just as powerless against her…
 
-Content Warning: This show contains violence and is NOT considered suitable for children of all ages.
+*Contains violence and may not be suitable for children of all ages.*
 
 The BPP box office and lobby will open at 6:30pm, house opens at 7pm.
