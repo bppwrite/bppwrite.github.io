@@ -2,7 +2,7 @@
 
 date = "2018-08-31T19:30:00"
 title = "BPP Annual Gala"
-subtitle = "Save the Date!"
+subtitle = "at the Ivy Tech John Waldron Arts Center"
 hero_title = "BPP Annual Gala"
 hero_subtitle = ""
 hero_call_to_action = "Save the Date"
@@ -29,8 +29,8 @@ tickets_run = ""
 
 +++
 
-As always, the 2018 BPP Annual Gala is sure to be a lively and classy evening, as unique as the organization itself. This year’s theme is "Game Night: Trivia Edition." Finally! An opportunity to show off all that useless trivia knowledge! Bring your friends and your competitive spirit.
+As always, the 2018 Annual Gala is sure to be a lively and classy evening, as unique as the BPP itself. This year’s theme is "Game Night: Trivia Edition," so plan to bring your A-game, your A-team, and your competitive spirit!
 
-Doors open at 6:30pm. Cocktail hour will take place in three different areas until 7:30pm, with ice-breaker games throughout. Guests will mingle, bid on silent auction items, and enjoy delicious appetizers and beverages. The main event takes place in the Waldron auditorium from 7:30–10pm and will include a rousing, team-based trivia tournament, live auction, and a world-class dinner from IMU Catering. 
+Doors open at 6:30pm. Cocktail hour will take place in three different areas until 7:30pm, with ice-breaker games throughout. Guests will mingle and play, bid on silent auction items, and enjoy delicious appetizers and beverages. The main event takes place in the Waldron auditorium from 7:30–10pm and will include a rousing trivia tournament, a live auction, and a world-class dinner from IMU Catering.
 
 Tickets available soon!
