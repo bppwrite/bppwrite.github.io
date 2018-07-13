@@ -2,7 +2,7 @@
 
 date = "2019-05-10T19:30:00"
 title = "To Quiet the Quiet"
-subtitle = ""
+subtitle = "Woodward/Newman Drama Award Winner"
 hero_title = ""
 hero_subtitle = ""
 hero_call_to_action = "Get Tickets"
