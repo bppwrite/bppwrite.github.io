@@ -70,4 +70,4 @@ The Jedi Handbook is a coming of age story about a young boy who survives growin
 
 *Suitable for all ages.*
 
-The BPP box office opens at 6:30pm, house opens at 7pm, shows begin at 7:30pm.
+Box office opens at 6:30pm, house opens at 7pm, shows begin at 7:30pm.

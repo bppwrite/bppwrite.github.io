@@ -70,4 +70,4 @@ Having suffered great loss and heartbreak, Kathy is a woman on the edge. Haunted
 
 *Contains violence and may not be suitable for children of all ages.*
 
-The BPP box office opens at 6:30pm, house opens at 7pm, shows begin at 7:30pm.
+Box office opens at 6:30pm, house opens at 7pm, shows begin at 7:30pm.

@@ -70,4 +70,4 @@ But it’s just “a passing phase,” he tells him. “Forget I even said it.�
 
 *Contains adult language and situations.*
 
-The BPP box office opens at 6:30pm, house opens at 7pm, shows begin at 7:30pm.
+Box office opens at 6:30pm, house opens at 7pm, shows begin at 7:30pm.
