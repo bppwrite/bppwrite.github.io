@@ -1,11 +1,11 @@
 +++
 
 date = "2018-09-14T19:30:00"
-title = "Sneak Preview Film Screening"
-subtitle = "A new documentary about the messiest man in show business."
+title = "On Your Marc"
+subtitle = "Sneak Preview Screening at IU Cinema"
 hero_title = "On Your Marc"
-hero_subtitle = "A new documentary about the messiest man in show business."
-hero_call_to_action = "Sneak Preview Screening"
+hero_subtitle = "Sneak Preview Film Screening"
+hero_call_to_action = "Get Tickets"
 hero_call_to_action_link = "/event/2018-2019/on-your-marc-screening/"
 
 venue = "IU Cinema"
