@@ -67,4 +67,4 @@ Winner of over a dozen international awards including multiple from the prestigi
 
 *Suitable for all ages.*
 
-The BPP box office and lobby will open at 6:30pm, house opens at 7pm.
+The BPP box office opens at 6:30pm, house opens at 7pm, shows begin at 7:30pm.
