@@ -2,6 +2,7 @@
 
 date = "2018-08-31T19:30:00"
 title = "BPP Annual Gala"
+is_active = false
 subtitle = "at the Ivy Tech John Waldron Arts Center"
 hero_title = "BPP Annual Gala"
 hero_subtitle = ""
