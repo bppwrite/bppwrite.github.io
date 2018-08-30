@@ -1,6 +1,5 @@
 +++
-
-date = "2016-01-01T19:30:00"
+date = {{ .Date }}
 title = ""
 subtitle = ""
 hero_title = ""
@@ -11,7 +10,7 @@ hero_call_to_action_link = ""
 # full urls of links from the old site that should point to this show
 aliases = []
 
-series = "2017-2018"
+series = "2018-2019"
 # e.g., "Reva Shiner Comedy Award Winner" or "Off-Broadway/On-Ninth"
 # may be the same as the "award"
 slot = ""

@@ -1,4 +1,5 @@
 +++
+date = {{ .Date }}
 title = ""
 subtitle = ""
 hero_title = ""
@@ -8,7 +9,7 @@ hero_call_to_action_link = ""
 
 venue = "Ted Jones Playhouse"
 
-series = "2017-2018"
+series = "2019-2020"
 # full urls of links from the old site that should point to this show
 aliases = []
 youtube_id = ""
