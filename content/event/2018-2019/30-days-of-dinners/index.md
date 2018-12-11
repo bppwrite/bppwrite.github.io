@@ -1,30 +1,32 @@
 +++
 
-date = "2018-09-14T19:30:00"
-title = "Not On Your Marc"
-subtitle = "Sneak Preview Screening at IU Cinema"
-hero_title = "On Your Marc"
-hero_subtitle = "Sneak Preview Film Screening"
-hero_call_to_action = "Get Tickets"
-hero_call_to_action_link = "/event/2018-2019/on-your-marc-screening/"
+date = "2019-01-14T19:30:00"
+title = "30 Days of Dinners"
+subtitle = "A Month Long Fundraising Extravaganza"
+hero_title = "30 Days of Dinners"
+hero_subtitle = "A Month Long Fundraising Event"
 
-venue = "IU Cinema"
+venue = "Bloomington and Beyond"
 
 series = "2018-2019"
 # full urls of links from the old site that should point to this show
 aliases = []
-youtube_id = "N4Vq6Z2FXfI"
 runtime = ""
 intermission_count = "0"
 
 directors = []
 
-tickets_run = "https://oss.ticketmaster.com/aps/iucinema/EN/buy/details/EIA0914"
 
 # list showtimes in ISO 8601 format with links to tickets (if applicable)
 [[showtimes]]
-    time = "2018-09-14T19:30:00"
-    tickets = "https://oss.ticketmaster.com/aps/iucinema/EN/buy/details/EIA0914"
+    time = "2019-01-04"
+    tickets = "/dinners/brantlinger"
+[[showtimes]]
+    time = "2019-01-06"
+    tickets = "/dinners/esther_chad"
+[[showtimes]]
+    time = "2019-01-07"
+    tickets = "/dinners/Spier"
 
 +++
 
