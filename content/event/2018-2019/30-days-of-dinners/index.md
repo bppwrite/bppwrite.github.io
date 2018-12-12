@@ -26,7 +26,78 @@ directors = []
     tickets = "/dinners/esther_chad"
 [[showtimes]]
     time = "2019-01-07"
-    tickets = "/dinners/Spier"
+    tickets = "/dinners/spier"
+[[showtimes]]
+    time = "2019-01-09"
+    tickets = "/dinners/lawson"
+[[showtimes]]
+    time = "2019-01-11"
+    tickets = "/dinners/stavropoulos_molenda"
+[[showtimes]]
+    time = "2019-01-12"
+    tickets = "/dinners/freund"
+[[showtimes]]
+    time = "2019-01-13T19:30:00"
+    tickets = "/dinners/engber"
+[[showtimes]]
+    time = "2019-01-13T19:30:01"
+    tickets = "/dinners/ted_jones"
+[[showtimes]]
+    time = "2019-01-14"
+    tickets = "/dinners/martin"
+[[showtimes]]
+    time = "2019-01-16"
+    tickets = "/dinners/shakespeare"
+[[showtimes]]
+    time = "2019-01-17"
+    tickets = "/dinners/shakalis_bright"
+[[showtimes]]
+    time = "2019-01-19T19:30:00"
+    tickets = "/dinners/scheper"
+[[showtimes]]
+    time = "2019-01-19T19:30:01"
+    tickets = "/dinners/sideli"
+[[showtimes]]
+    time = "2019-01-20"
+    tickets = "/dinners/daily"
+[[showtimes]]
+    time = "2019-01-22"
+    tickets = "/dinners/susan_jones"
+[[showtimes]]
+    time = "2019-01-24"
+    tickets = "/dinners/welch"
+[[showtimes]]
+    time = "2019-01-25T19:30:00"
+    tickets = "/dinners/johnson_solberg"
+[[showtimes]]
+    time = "2019-01-25T19:30:01"
+    tickets = "/dinners/spier_arnove"
+[[showtimes]]
+    time = "2019-01-26T19:30:00"
+    tickets = "/dinners/michaelsens"
+[[showtimes]]
+    time = "2019-01-26T19:30:01"
+    tickets = "/dinners/butler"
+[[showtimes]]
+    time = "2019-01-27"
+    tickets = "/dinners/hedin"
+[[showtimes]]
+    time = "2019-01-31"
+    tickets = "/dinners/spier_ellenwood"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 +++
 

@@ -1,16 +1,16 @@
 +++
 date = "2016-09-11T13:14:50-04:00"
-title = "30 Days of Dinner-Jonathan Michaelsen"
+title = "30 Days of Dinner-Jonathan and Miah Michaelsen"
 
 +++
-Date: January 26th
-Time: 6PM
-Location: 218 Kenler Dr., Bloomington IN 47408
-Theme: Cocktail Party
-Food: "heavy hors d'oeuvres and excellent cocktails" Some hors D'oeuvres will be Vegetarian. If you have other dietary restrictions please contact Brad Schiesser below.
+* Date: January 26th
+* Time: 6PM
+* Location: 2608 E Seminary Dr., Bloomington IN 47401
+* Theme: Dinner Party
+* Food: Dinner party at their fabulous home. If you have dietary restrictions please contact Brad Schiesser below.
 
-Long time BPP Supporters, Directors Circle Members, and friends Janet Stavropoulos and Michael Molenda are having a fantastic cocktail party at their lovely home near Griffy Lake. This is going to be a fantastic affair you won't want to miss.
+Director for our upcoming production of APPROPOS OF NOTHING Jonathan Michaelsen and his wife Miah, the Deputy Director of the Indiana Arts Commission, are opening up their amazing home to guests wanting to support BPP.
 
-Only 8 seats are available for this unique event so please don't wait. Contact Brad Schiesser today to pay for your seat 812-334-1188 or brad@newplays.com
+Seats are available but limited for this unique event so please don't wait. Contact Brad Schiesser today to pay for your seat  [812-334-1188](telto:1+812-334-1188) or [brad@newplays.org](mailto:brad@newplays.org)
 
 Price: $50 per seat
