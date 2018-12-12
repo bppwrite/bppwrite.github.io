@@ -40,7 +40,7 @@ directors = []
     time = "2019-01-13T19:30:00"
     tickets = "/dinners/engber"
 [[showtimes]]
-    time = "2019-01-13T19:30:01"
+    time = "2019-01-13T20:30:01"
     tickets = "/dinners/ted_jones"
 [[showtimes]]
     time = "2019-01-14"
