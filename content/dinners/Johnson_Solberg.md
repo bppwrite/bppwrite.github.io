@@ -7,7 +7,7 @@ title = "30 Days of Dinner-Sonja Johnson and Keith Solberg"
 * Time: 6PM
 * Location: 344 S Rogers St, Bloomington IN 47403
 * Theme: Scandinavian delights
-* Food: A smorgasbord of Scandinavian cuisine, from the Scandinavian Hostess with the Mostest Sonja Johnson
+* Food: A sit down dinner of Scandinavian cuisine, from the Scandinavian Hostess with the Mostest Sonja Johnson
 
 Long time donors, volunteers, and BPP Angels Sonja Johnson and Keith Solberg are opening up their home for yet another fantastic mini-party! Their get togethers are BPP lore and we don't want you to miss out.
 

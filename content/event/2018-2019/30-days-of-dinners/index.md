@@ -85,26 +85,10 @@ directors = []
     time = "2019-01-31"
     tickets = "/dinners/spier_ellenwood"
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 +++
 
-Do you remember back in 2016 when beloved TV icon, Marc Summers, premiered his one-man show *Everything in Its Place: The Life and Slimes of Marc Summers* at BPP? We sure do. Well, while that was going on, a documentary crew was filming.
+You are invited to BPP's 30 Days of Dinner, a brand new special event taking the place of our annual gala. 30 Days of Dinner is unlike any of the other events. It happens over the entire month of January instead of one single day. Tired of seeing the same people at gatherings of over 100 at a ballroom? We have close knit dinners and parties at the homes of some of the world's greatest hosts. There is something for everyone.
 
-Fast forward 2 years... Surprise! Marc is joining us again this fall for a sneak preview screening of the completed film! *On Your Marc* intimately captures his life, career, and legacy. The Indianapolis native looks back on his "messy" ups and downs as he works through the production of that hilariously illuminating one-man show, co-written by Broadway stars Alex Brightman (Tony-nominated lead in School of Rock: The Musical) and composer Drew Gasparini. The film combines a scrappy, “anything goes” appeal with an insightful look at being in the spotlight through surviving cancer, a near-fatal car crash, and a lifelong bout with OCD.
+Masquerades, Viewing parties, Tapas dinners, Wine tastings and more. All of this for HALF the price of BPP's usual gala. $50 a person gets you a seat at some of the best tables in Bloomington and 100% of the profit goes back to BPP.
 
-Don't miss your chance to see this love-letter to BPP and the City of Bloomington. A post-film discussion with Marc Summers, his *Slimes* co-star Mike Nappi, and BPP Producing Artistic Director Chad Rabinovitz, will follow the screening.
-
-Tickets may be purchased online or in person at the IU Auditorium. To purchase tickets online, you will need an IU Auditorium account. Please call the IU Auditorium Box Office at (812) 855-1103 M-F 10am-5pm with any questions about creating or accessing your account.
+Just peruse through the dates on the top right of this page for times, locations, themes and food for these events. When you are ready to pick which dinner or dinners you want, contact Managing Director Brad Schiesser  [812-334-1188](telto:1+812-334-1188) or [brad@newplays.org](mailto:brad@newplays.org)
