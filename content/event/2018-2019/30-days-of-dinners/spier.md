@@ -1,7 +1,7 @@
 +++
-date = "2016-09-11T13:14:50-04:00"
-title = "30 Days of Dinner-Ellee and Bret Spier"
-
+date = "2019-01-07T19:00:00"
+title = "30 Days of Dinner"
+subtitle = "Ellee & Bret Spier"
 +++
 * Date: January 7th
 * Time: 7PM
@@ -11,6 +11,6 @@ title = "30 Days of Dinner-Ellee and Bret Spier"
 
 BPP Board member Ellee Spier and her husband Bret will be opening up their amazing home to anyone wanting an amazing way to watch the National Championship Game of College Football (or if you really love great chili). Ellee is a fantastic chef and uses the freshest ingredients in everything that she prepares. BPP Managing Director Brad Schiesser will be at the event as well as someone who loves both chili and football.
 
-Up to 30 seats are available for this unique event and several people are already going to be in attendance. Contact Brad Schiesser today to pay for your seat  [812-334-1188](telto:1+812-334-1188) or [brad@newplays.org](mailto:brad@newplays.org)
+Up to 30 seats are available for this unique event and several people are already going to be in attendance. Contact Brad Schiesser today to pay for your seat  [812-334-1188](tel:+1-812-334-1188) or [brad@newplays.org](mailto:brad@newplays.org)
 
 Price: $50

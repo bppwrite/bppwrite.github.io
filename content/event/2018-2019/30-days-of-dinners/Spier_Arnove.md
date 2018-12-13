@@ -1,7 +1,7 @@
 +++
-date = "2016-09-11T13:14:50-04:00"
-title = "30 Days of Dinner-Ellee Spier and Bob Arnove"
-
+date = "2019-01-25T17:00:00"
+title = "30 Days of Dinner"
+subtitle = "Ellee Spier & Bob Arnove"
 +++
 * Date: January 25th
 * Time: Sunset

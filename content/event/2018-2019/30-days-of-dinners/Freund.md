@@ -1,8 +1,9 @@
 +++
-date = "2016-09-11T13:14:50-04:00"
-title = "30 Days of Dinner-Sandra and Don Freund"
-
+date = "2019-01-12T18:00:00"
+title = "30 Days of Dinner"
+subtitle = "Sandra and Don Freund"
 +++
+
 * Date: January 12th
 * Time: 6PM
 * Location: 2100 S. Olcott Blvd., Bloomington IN 47401

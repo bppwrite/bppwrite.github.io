@@ -1,8 +1,9 @@
 +++
-date = "2016-09-11T13:14:50-04:00"
-title = "30 Days of Dinner-Kathy Sideli"
-
+date = "2019-01-19T18:00:00"
+title = "30 Days of Dinner"
+subtitle = "Kathy Sideli"
 +++
+
 * Date: January 19th
 * Time: 6PM
 * Location: Bell Trace, Bloomington IN 47408

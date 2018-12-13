@@ -1,7 +1,7 @@
 +++
-date = "2016-09-11T13:14:50-04:00"
-title = "30 Days of Dinner-Connie Shakalis and Anne Bright"
-
+date = "2019-01-17T18:30:00"
+title = "30 Days of Dinner"
+subtitle = "Connie Shakalis & Anne Bright"
 +++
 * Date: January 17th
 * Time: 6:30PM
@@ -11,6 +11,6 @@ title = "30 Days of Dinner-Connie Shakalis and Anne Bright"
 
 Herald Times Arts Reviewer Connie Shakalis (Vicky Richards in TUNING IN) and Long time BPP Supporter, Directors Circle Members, and play reader Anne Bright, invite you to a dinner party that will put some shine into the dreary month of January. Join them for not only dinner, but games and possibly live entertainment as well (pending).
 
-Only 12 seats are available for this unique event so please don't wait. Contact Brad Schiesser today to pay for your seat [812-334-1188](telto:1+812-334-1188) or [brad@newplays.org](mailto:brad@newplays.org)
+Only 12 seats are available for this unique event so please don't wait. Contact Brad Schiesser today to pay for your seat [812-334-1188](tel:+1-812-334-1188) or [brad@newplays.org](mailto:brad@newplays.org)
 
 Price: $50 per seat

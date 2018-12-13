@@ -10,10 +10,21 @@
 {{- end -}}
 {{/* next show is the earliest one where the start date is in the future */}}
 {{- range where $currentSeries.Pages.ByDate "Section" "in" (slice "show" "event") -}}
-    {{/* show starts on the first date in the showtimes array */}}
-    {{- $start := (time (index .Params.showtimes 0).time ) -}}
-    {{/* show ends on the last date in the showtimes array */}}
-    {{- $end := (time (index .Params.showtimes (sub (len .Params.showtimes) 1) ).time ) -}}
+    {{/* assume this page's date */}}
+    {{- $start := (time .Date) -}}
+    {{- $end := (time .Date) -}}
+    {{- with .Params.showtimes -}}
+        {{/* show starts on the first date in the showtimes array */}}
+        {{- $start := (time (index . 0).time ) -}}
+        {{/* show ends on the last date in the showtimes array */}}
+        {{- $end := (time (index . (sub (len .) 1) ).time ) -}}
+    {{- else -}}
+        {{/* assume subpages */}}
+        {{/* show starts on the first date in the showtimes array */}}
+        {{- $start := (time (index .Pages.Reverse 0).Date ) -}}
+        {{/* show ends on the last date in the showtimes array */}}
+        {{- $end := (time (index .Pages.Reverse (sub (len .Pages.Reverse) 1) ).Date ) -}}
+    {{- end -}}
     {{- if gt $end.Unix now.Unix -}}
         {{/* it's either running now or it's in the future */}}
         {{- if eq .Section "show" -}}
@@ -22,9 +33,13 @@
                 {{- $.Scratch.SetInMap "heros" "100" . -}}
             {{- end -}}
         {{- else -}}
-            {{/* event weight is always 200 */}}
-            {{- if lt $start.Unix (time (index (index ($.Scratch.Get "heros") "200").Params.showtimes 0).time ).Unix -}}
-                {{- $.Scratch.SetInMap "heros" "200" . -}}
+            {{- if .Params.showtimes -}}
+                {{/* event weight is always 200 */}}
+                {{- if lt $start.Unix (time (index (index ($.Scratch.Get "heros") "200").Params.showtimes 0).time ).Unix -}}
+                    {{- $.Scratch.SetInMap "heros" "200" . -}}
+                {{- end -}}
+            {{- else -}}
+                {{/* assume subpages */}}
             {{- end -}}
         {{- end -}}
     {{- end -}}

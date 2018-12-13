@@ -1,6 +1,7 @@
 +++
-date = "2016-09-11T13:14:50-04:00"
-title = "30 Days of Dinner-Mike and Cheryl Engber"
+date = "2019-01-13T18:00:00"
+title = "30 Days of Dinner"
+subtitle = "Mike and Cheryl Engber"
 
 +++
 * Date: January 13th
@@ -11,6 +12,6 @@ title = "30 Days of Dinner-Mike and Cheryl Engber"
 
 BPP Board member Michael Engber and his wife Cheryl (both longtime supporters) will be hosting a culinary delight at their home with a series of small plates or Tapas from around the world. Let yourself get taken away on a food filled tour of Spain, Greece, Japan and more. You will not want to miss out on this one if you are a foodie.
 
-Only 12 seats are available for this unique event. Contact Brad Schiesser today to pay for your seat [812-334-1188](telto:1+812-334-1188) or [brad@newplays.org](mailto:brad@newplays.org)
+Only 12 seats are available for this unique event. Contact Brad Schiesser today to pay for your seat [812-334-1188](tel:+1-812-334-1188) or [brad@newplays.org](mailto:brad@newplays.org)
 
 Price: $50

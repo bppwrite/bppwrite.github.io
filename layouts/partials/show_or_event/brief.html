@@ -1,7 +1,13 @@
-{{/* show starts on the first date in the showtimes array */}}
-{{- $start := (time (index .Params.showtimes 0).time ) -}}
-{{/* show ends on the last date in the showtimes array */}}
-{{- $end := (time (index .Params.showtimes (sub (len .Params.showtimes) 1) ).time ) -}}
+{{/* assume this page's date */}}
+{{- $start := (time .Date) -}}
+{{- $end := (time .Date) -}}
+
+{{- with .Params.showtimes -}}
+    {{/* show starts on the first date in the showtimes array */}}
+    {{- $start := (time (index . 0).time ) -}}
+    {{/* show ends on the last date in the showtimes array */}}
+    {{- $end := (time (index . (sub (len .) 1) ).time ) -}}
+{{- end -}}
 
 
 <div class="col-sm-12 col-md-6 col-lg-4 brief">

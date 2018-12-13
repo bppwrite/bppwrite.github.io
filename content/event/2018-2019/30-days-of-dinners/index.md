@@ -1,9 +1,9 @@
 +++
 
 date = "2019-01-14T19:30:00"
-title = "30 Days of Dinners"
-subtitle = "A Month Long Fundraising Extravaganza"
-hero_title = "30 Days of Dinners"
+title = "30 Days of Dinner"
+subtitle = []
+hero_title = "30 Days of Dinner"
 hero_subtitle = "A Month Long Fundraising Event"
 
 venue = "Bloomington and Beyond"
@@ -91,4 +91,4 @@ You are invited to BPP's 30 Days of Dinner, a brand new special event taking the
 
 Masquerades, Viewing parties, Tapas dinners, Wine tastings and more. All of this for HALF the price of BPP's usual gala. $50 a person gets you a seat at some of the best tables in Bloomington and 100% of the profit goes back to BPP.
 
-Just peruse through the dates on the top right of this page for times, locations, themes and food for these events. When you are ready to pick which dinner or dinners you want, contact Managing Director Brad Schiesser  [812-334-1188](telto:1+812-334-1188) or [brad@newplays.org](mailto:brad@newplays.org)
+Just peruse through the dates on this page for times, locations, themes and food for these events. When you are ready to pick which dinner or dinners you want, contact Managing Director Brad Schiesser  [812-334-1188](telto:1+812-334-1188) or [brad@newplays.org](mailto:brad@newplays.org)
