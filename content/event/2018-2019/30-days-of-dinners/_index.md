@@ -6,6 +6,9 @@ subtitle = "A Month Long Fundraising Extravaganza"
 hero_title = "30 Days of Dinners"
 hero_subtitle = "A Month Long Fundraising Event"
 
+# need this for a show with showtime files
+section = "event"
+
 venue = "Bloomington and Beyond"
 
 series = "2018-2019"
@@ -40,7 +43,7 @@ directors = []
     time = "2019-01-13T19:30:00"
     tickets = "/dinners/engber"
 [[showtimes]]
-    time = "2019-01-13T20:30:01"
+    time = "2019-01-13T20:30:00"
     tickets = "/dinners/ted_jones"
 [[showtimes]]
     time = "2019-01-14"

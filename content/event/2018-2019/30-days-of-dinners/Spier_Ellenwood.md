@@ -1,7 +1,7 @@
 +++
-date = "2016-09-11T13:14:50-04:00"
-title = "30 Days of Dinner-Ellee Spier and Susan Ellenwood"
-
+date = "2019-01-31T18:00:00"
+title = "30 Days of Dinner"
+subtitle = "Ellee Spier & Susan Ellenwood"
 +++
 * Date: January 31st
 * Time: 6PM
@@ -11,6 +11,6 @@ title = "30 Days of Dinner-Ellee Spier and Susan Ellenwood"
 
 Bring a mask (or make one there) and come enjoy a fun mid-winter masquerade party hosted by BPP Board Member Ellee Spier and friend of BPP Susan Ellenwood. Not only will it be a fantastic final party for the 30 days of Dinner, but it will also feature a one night only ESCAPE ROOM created in Ellee's home. Trust us, this is not one to be missed
 
-30 seats are available for this unique event. The more the merrier. Contact Brad Schiesser today to pay for your seat  [812-334-1188](telto:1+812-334-1188) or [brad@newplays.org](mailto:brad@newplays.org)
+30 seats are available for this unique event. The more the merrier. Contact Brad Schiesser today to pay for your seat  [812-334-1188](tel:+1-812-334-1188) or [brad@newplays.org](mailto:brad@newplays.org)
 
 Price: $50 per seat

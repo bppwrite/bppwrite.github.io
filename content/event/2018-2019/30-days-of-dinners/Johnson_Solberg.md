@@ -1,8 +1,10 @@
 +++
-date = "2016-09-11T13:14:50-04:00"
-title = "30 Days of Dinner-Sonja Johnson and Keith Solberg"
+date = "2019-01-25T18:00:00"
+title = "30 Days of Dinner"
+subtitle = "Sonja Johnson & Keith Solberg"
 
 +++
+
 * Date: January 25th
 * Time: 6PM
 * Location: 344 S Rogers St, Bloomington IN 47403

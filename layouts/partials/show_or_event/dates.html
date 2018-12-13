@@ -1,7 +1,13 @@
-{{/* show starts on the first date in the showtimes array */}}
-{{- $start := (time (index .Params.showtimes 0).time ) -}}
-{{/* show ends on the last date in the showtimes array */}}
-{{- $end := (time (index .Params.showtimes (sub (len .Params.showtimes) 1) ).time ) -}}
+{{/* assume this page's date */}}
+{{- $start := (time .Date) -}}
+{{- $end := (time .Date) -}}
+
+{{- with .Params.showtimes -}}
+    {{/* show starts on the first date in the showtimes array */}}
+    {{- $start := (time (index . 0).time ) -}}
+    {{/* show ends on the last date in the showtimes array */}}
+    {{- $end := (time (index . (sub (len .) 1) ).time ) -}}
+{{- end -}}
 
 {{/* start out with a standard month format */}}
 {{- $.Scratch.Set "monthFormat" "January" -}}
@@ -34,13 +40,33 @@
 	    {{ delimit ($.Scratch.Get "months") ", " " & " }}
 	</h3>
 	<h4 class="days">
-	    {{- range $i, $showtime := .Params.showtimes -}}
-            {{- if not (in ($.Scratch.Get "days") (dateFormat $dayFormat $showtime.time)) -}}
-                {{- $.Scratch.Add "days" (dateFormat $dayFormat $showtime.time) -}}
-                <a href="{{ $showtime.tickets }}" class="day">
-                    <span>{{ dateFormat "2" $showtime.time }}</span>
+        {{- if gt (len .Pages) 0 -}}
+            {{/* resources are the shows */}}
+            {{- range $i, $show := .Pages.Reverse -}}
+                <a href="{{ .Permalink }}" class="day">
+                    <span>{{ dateFormat "2" .Date }}</span>
                 </a>
+                <a href="{{ .Permalink }}">
+                    <span>{{ .Params.subtitle }}</span>
+                </a><br/>
             {{- end -}}
-	    {{ end }}
+        {{- else if .Params.showtimes -}}
+            {{/* use showtimes */}}
+            {{- range $i, $showtime := .Params.showtimes -}}
+                {{- if not (in ($.Scratch.Get "days") (dateFormat $dayFormat $showtime.time)) -}}
+                    {{- $.Scratch.Add "days" (dateFormat $dayFormat $showtime.time) -}}
+                    <a href="{{ $showtime.tickets }}" class="day">
+                        <span>{{ dateFormat "2" $showtime.time }}</span>
+                    </a>
+                {{- end -}}
+            {{ end }}
+        {{- else -}}
+            <a href="{{ .Permalink }}" class="day">
+                <span>{{ dateFormat "2" .Date }}</span>
+            </a>
+            <a href="{{ .Permalink }}">
+                <span>{{ .Params.subtitle }}</span>
+            </a><br/>
+        {{- end -}}
 	</h4>
 </div>

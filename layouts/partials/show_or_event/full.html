@@ -1,14 +1,26 @@
-{{/* show starts on the first date in the showtimes array */}}
-{{- $start := (time (index .Params.showtimes 0).time ) -}}
-{{/* show ends on the last date in the showtimes array */}}
-{{- $end := (time (index .Params.showtimes (sub (len .Params.showtimes) 1) ).time ) -}}
+{{/* assume this page's date */}}
+{{- $start := (time .Date) -}}
+{{- $end := (time .Date) -}}
+
+{{- with .Params.showtimes -}}
+    {{/* show starts on the first date in the showtimes array */}}
+    {{- $start := (time (index . 0).time ) -}}
+    {{/* show ends on the last date in the showtimes array */}}
+    {{- $end := (time (index . (sub (len .) 1) ).time ) -}}
+{{- end -}}
 
 {{- $.Scratch.Set "posterPath" nil -}}
-{{- range (readDir (printf "content/%s" .RelPermalink)) -}}
+{{- with .Parent.Resources.GetMatch "poster*" -}}
+    {{- $.Scratch.Set "posterPath" .RelPermalink -}}
+{{- end -}}
+{{- with .Resources.GetMatch "poster*" -}}
+    {{- $.Scratch.Set "posterPath" .RelPermalink -}}
+{{- end -}}
+{{/*- range (readDir (printf "content/%s" .RelPermalink)) -}}
     {{- if hasPrefix .Name "poster" -}}
         {{- $.Scratch.Set "posterPath" .Name -}}
     {{- end -}}
-{{- end -}}
+{{- end -*/}}
 <div class="container show-or-event-full">
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
@@ -76,11 +88,15 @@
         <div class="ml-auto col-xs-12 col-sm-12 col-md-8 col-lg-4 ">
             {{ partial "youtube.html" . }}
             <div class="times rounded">
-                {{ if gt $end.Unix now.Unix }}
-                    <h6>See It Live</h6>
-                {{ else }}
-                    <h6>Performed Live</h6>
-                {{ end }}
+                {{- if gt (len .Pages) 0 -}}
+                    <h6></h6>
+                {{- else if .Params.showtimes -}}
+                    {{ if gt $end.Unix now.Unix }}
+                        <h6>See It Live</h6>
+                    {{ else }}
+                        <h6>Performed Live</h6>
+                    {{ end }}
+                {{- end -}}
 
                 {{ partial "show_or_event/dates.html" . }}
 

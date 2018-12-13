@@ -1,8 +1,9 @@
 +++
-date = "2016-09-11T13:14:50-04:00"
-title = "30 Days of Dinner-Caroline Beebe"
-
+date = "2019-01-05T17:30:00-04:00"
+title = "30 Days of Dinner"
+subtitle = "Caroline Beebe"
 +++
+
 * Date: January 5th
 * Time: 5:30PM Dinner at 6:30PM
 * Location: 1100 Brummetts Creek Rd, Bloomington IN 47408

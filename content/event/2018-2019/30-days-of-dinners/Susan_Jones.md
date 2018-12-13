@@ -1,7 +1,7 @@
 +++
-date = "2016-09-11T13:14:50-04:00"
-title = "30 Days of Dinner-Susan and David Jones"
-
+date = "2019-01-22T18:00:00"
+title = "30 Days of Dinner"
+subtitle = "Susan & David Jones"
 +++
 * Date: January 22nd
 * Time: 6PM

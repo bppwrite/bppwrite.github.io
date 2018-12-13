@@ -14,11 +14,11 @@
     {{ .Content }}
 
     <div>
-      {{ if .Prev }}
-        Previous: <a class="previous" href="{{.Prev.Permalink}}"> {{.Prev.Title}}</a> <br/>
+      {{ if .NextPage }}
+        Previous: <a class="previous" href="{{.NextPage.Permalink}}"> {{.NextPage.Title}}</a> <br/>
       {{ end }}
-      {{ if .Next }}
-        Next: <a class="next" href="{{.Next.Permalink}}"> {{.Next.Title}}</a>
+      {{ if .PrevPage }}
+        Next: <a class="next" href="{{.PrevPage.Permalink}}"> {{.PrevPage.Title}}</a>
       {{ end }}
     </div>
 
