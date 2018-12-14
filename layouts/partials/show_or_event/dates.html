@@ -46,7 +46,7 @@
                 <a href="{{ .Permalink }}" class="day">
                     <span>{{ dateFormat "2" .Date }}</span>
                 </a>
-                <a href="{{ .Permalink }}">
+                <a href="{{ .Permalink }}" class="subtitle">
                     <span>{{ .Params.subtitle }}</span>
                 </a><br/>
             {{- end -}}
@@ -64,7 +64,7 @@
             <a href="{{ .Permalink }}" class="day">
                 <span>{{ dateFormat "2" .Date }}</span>
             </a>
-            <a href="{{ .Permalink }}">
+            <a href="{{ .Permalink }}" class="subtitle">
                 <span>{{ .Params.subtitle }}</span>
             </a><br/>
         {{- end -}}

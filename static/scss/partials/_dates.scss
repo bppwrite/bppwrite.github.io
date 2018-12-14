@@ -24,16 +24,25 @@
 	color: $white;
 	font-size: 18px;
 	height: 33px;
-    min-height:33px;
+  min-height:33px;
 	padding-top: 5.5px;
 	text-align: center;
 	width: 33px;
-    min-width: 33px;
-    margin: 3px;
+  min-width: 33px;
+  margin: 3px;
 }
 .days a:hover {
   color: $white;
   background-color: darken($accent, 15%);
+}
+.days .subtitle {
+  color: $gray-dark;
+  font-size: 1rem;
+}
+
+.days .subtitle:hover {
+  color: $gray;
+  background-color: inherit;
 }
 .months {
 	letter-spacing: 0;
