@@ -1,7 +1,7 @@
 +++
 date = "2019-01-22T18:00:00"
 title = "30 Days of Dinner"
-subtitle = "Susan & David Jones and Bob Arnove SOLD OUT"
+subtitle = "Susan & David Jones and Bob Arnove-SOLD OUT"
 +++
 * Date: January 22nd
 * Time: 6PM

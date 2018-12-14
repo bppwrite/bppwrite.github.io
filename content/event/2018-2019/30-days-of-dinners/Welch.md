@@ -1,7 +1,7 @@
 +++
 date = "2019-01-24T17:30:00"
 title = "30 Days of Dinner"
-subtitle = "Von Welch"
+subtitle = "Von Welch and Ruth Aydt"
 +++
 * Date: January 24th
 * Time: 5:30-7:30PM

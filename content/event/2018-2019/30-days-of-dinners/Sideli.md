@@ -1,7 +1,7 @@
 +++
 date = "2019-01-19T18:00:00"
 title = "30 Days of Dinner"
-subtitle = "Kathy Sideli SOLD OUT"
+subtitle = "Kathy Sideli-SOLD OUT"
 +++
 
 * Date: January 19th

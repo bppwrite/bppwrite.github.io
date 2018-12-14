@@ -1,7 +1,7 @@
 +++
 date = "2019-01-25T18:00:00"
 title = "30 Days of Dinner"
-subtitle = "Sonja Johnson & Keith Solberg"
+subtitle = "Sonja Johnson & Keith Solberg- SOLD OUT"
 
 +++
 
