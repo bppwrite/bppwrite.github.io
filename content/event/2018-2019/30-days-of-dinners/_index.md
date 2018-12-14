@@ -1,9 +1,9 @@
 +++
 
 date = "2019-01-14T19:30:00"
-title = "30 Days of Dinners"
-subtitle = "A Month Long Fundraising Extravaganza"
-hero_title = "30 Days of Dinners"
+title = "30 Days of Dinner"
+subtitle = []
+hero_title = "30 Days of Dinner"
 hero_subtitle = "A Month Long Fundraising Event"
 
 # need this for a show with showtime files
