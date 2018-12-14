@@ -25,8 +25,8 @@ directors = []
 
 +++
 
-You are invited to BPP's 30 Days of Dinner, a brand new special event taking the place of our annual gala. 30 Days of Dinner is unlike any of the other events. It happens over the entire month of January instead of one single day. Tired of seeing the same people at gatherings of over 100 at a ballroom? We have close knit dinners and parties at the homes of some of the world's greatest hosts. There is something for everyone.
+You are invited to BPP's 30 Days of Dinner, a brand new special event taking the place of our annual gala. 30 Days of Dinner is unlike any of the other events. It happens over the entire month of January instead of one single day, so you can find the day that works best for you!. Tired of seeing the same 100 people at stuffy ballroom gatherings? We have close knit dinners and parties at the homes of some of the world's greatest hosts. There is something for everyone.
 
-Masquerades, Viewing parties, Tapas dinners, Wine tastings and more. All of this for HALF the price of BPP's usual gala. $50 a person gets you a seat at some of the best tables in Bloomington and 100% of the profit goes back to BPP.
+Masquerades, Detective Mysteries, Viewing parties, Game Nights, Tapas dinners, Wine tastings and more. All of this for HALF the price of BPP's usual gala. $50 a person gets you a seat at some of the best tables in Bloomington and 100% of the profit goes back to BPP.
 
-Just peruse through the dates on the top right of this page for times, locations, themes and food for these events. When you are ready to pick which dinner or dinners you want, contact Managing Director Brad Schiesser  [812-334-1188](tel:+1-812-334-1188) or [brad@newplays.org](mailto:brad@newplays.org)
+It’s simple: hosts have graciously donated a meal and their home for our month-long event and now it’s up to you to fill their table. Just peruse through the dates on this page for times, locations, themes and food for these events. When you’ve found which dinner (or dinners!) are the perfect fit for you, contact Managing Director Brad Schiesser at [812-334-1188](tel:+1-812-334-1188) or [brad@newplays.org](mailto:brad@newplays.org)
