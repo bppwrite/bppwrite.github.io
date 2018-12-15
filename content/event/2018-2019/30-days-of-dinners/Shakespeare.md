@@ -9,7 +9,7 @@ subtitle = "Rob & Marie Shakespeare-SOLD OUT"
 * Theme: Wine Tasting
 * Food: "Appetizers paired with several incredible wines from around the world"
 
-BPP board member Rob Shakespeare and his wife (longtime BPP supporter) Marie will be hosting a wine tasting paired with delicious appetizers at their home.
+BPP board member Rob Shakespeare and his wife (longtime BPP supporter) Marie will be hosting a Pinot Noir Wine Tasting with selections from famous regions. The tasting will be paired with delicious appetizers at their home.
 
 THIS DINNER IS SOLD OUT
 
