@@ -13,6 +13,7 @@ subtitle = "Sonja Johnson & Keith Solberg- SOLD OUT"
 
 Long time donors, volunteers, and BPP Angels Sonja Johnson and Keith Solberg are opening up their home for yet another fantastic mini-party! Their get togethers are BPP lore and we don't want you to miss out.
 
-THIS DINNER IS CURRENTLY SOLD OUT!
+THIS DINNER HAS 2 SEATS LEFT! Get your tickets now.  Contact Brad Schiesser today to pay for your seat [812-334-1188](tel:+1-812-334-1188) or [brad@newplays.org](mailto:brad@newplays.org)
+
 
 Price: $50 per seat
