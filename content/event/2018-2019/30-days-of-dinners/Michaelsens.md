@@ -3,9 +3,9 @@ date = "2019-01-26T18:00:00"
 title = "30 Days of Dinner"
 subtitle = "Jonathan & Miah Michaelsen"
 +++
-* Date: January 26th
+* Date: January 25th
 * Time: 6PM
-* Location: 2608 E Seminary Dr., Bloomington IN 47401
+* Location: 2605 E Seminary Dr., Bloomington IN 47401
 * Theme: Dinner Party
 * Food: Dinner party at their fabulous home. If you have dietary restrictions please contact Brad Schiesser below.
 
