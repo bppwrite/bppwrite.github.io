@@ -8,6 +8,7 @@ subtitle = "Ellee & Bret Spier"
 * Location: 2110 E Covenanter Dr., Bloomington IN 47401
 * Theme: National Championship Game Viewing Party!
 * Food: "Chili and party foods" Vegetarian options available
+* Childcare: Babysitting at the event can be provided for an additional $15
 
 BPP Board member Ellee Spier and her husband Bret will be opening up their amazing home to anyone wanting an amazing way to watch the National Championship Game of College Football (or if you really love great chili). Ellee is a fantastic chef and uses the freshest ingredients in everything that she prepares. BPP Managing Director Brad Schiesser will be at the event as well as someone who loves both chili and football.
 

@@ -12,6 +12,6 @@ subtitle = "Esther Smail and Chad Rabinovitz"
 
 BPP Board member Esther Smail and BPP Artistic Director Chad Rabinovitz are combining forces to give you a fantastic night of fun, games, and food. With Chad acting as game master and Esther getting fabulous food together this is going to be a night you won't soon forget.
 
-Only 8 seats are available for this unique event. Contact Brad Schiesser today to pay for your seat [812-334-1188](tel:+1-812-334-1188) or [brad@newplays.org](mailto:brad@newplays.org)
+Only 1 seat is left for this unique event. Contact Brad Schiesser today to pay for your seat [812-334-1188](tel:+1-812-334-1188) or [brad@newplays.org](mailto:brad@newplays.org)
 
 Price: $50

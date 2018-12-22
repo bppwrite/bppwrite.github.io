@@ -10,6 +10,7 @@ subtitle = "Ellee Spier, Bret Spier, and Susan Ellenwood"
 * Food: There will be 5 courses to the meal including drinks.
 * Attire: Cocktail - Please wear something black, green and/or blue
 * Mask: Required - There will be a prize for the best mask
+* Childcare: Babysitting at the event can be provided for an additional $15. Children will be downstairs the whole party with the sitter.
 
 Bring a mask and come enjoy a night filled with fun and intrigue. Hosted by BPP Board Member Ellee Spier, her husband Bret Spier and friend of BPP Susan Ellenwood. Not only will it be a fantastic final party for the 30 days of Dinner, but it will be a bit theatrical itself. The party will include games and team-based challenges to unlock the next course of the meal as well as determine who is the thief in Venice.
 
