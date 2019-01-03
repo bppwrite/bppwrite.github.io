@@ -29,7 +29,7 @@ build:
             dpkg-reconfigure --frontend noninteractive tzdata
     - npm-install
     - arjen/hugo-build:
-      version: "0.52"
+      version: "0.53"
       #theme: hugo-bootswatch
 deploy:
   steps:
