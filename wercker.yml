@@ -22,7 +22,7 @@ build:
     # http://devcenter.wercker.com/docs/steps/index.html
   steps:
     - install-packages:
-        packages: tzdata
+        packages: tzdata npm
     - script:
         name: set timezone to America/Indiana/Indianapolis
         code: |
