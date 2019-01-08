@@ -1,7 +1,7 @@
 +++
 date = "2019-01-11T18:00:00"
 title = "30 Days of Dinner"
-subtitle = "Janet Stavropoulos & Michael Molenda"
+subtitle = "Janet Stavropoulos & Michael Molenda-SOLD OUT"
 +++
 * Date: January 11th
 * Time: 6PM
