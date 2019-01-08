@@ -1,5 +1,5 @@
 +++
-date = "2019-01-26T18:00:00"
+date = "2019-01-25T18:00:00"
 title = "30 Days of Dinner"
 subtitle = "Jonathan & Miah Michaelsen"
 +++
