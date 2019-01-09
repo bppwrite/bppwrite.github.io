@@ -3,9 +3,9 @@ date = "2019-01-14T18:00:00"
 title = "30 Days of Dinner"
 subtitle = "David Martin- SOLD OUT"
 +++
-* Date: January 14th
+* Date: January 17th
 * Time: 6PM
-* Location: 604 Meadowbrook Dr., Bloomington IN 47401
+* Location: 2368 Winding Brook Circle, Bloomington IN 47401
 * Theme: Dinner Party
 * Food: "Indian Cuisine" with Vegetarian options available. If you have other dietary restrictions please contact Brad Schiesser below.
 
