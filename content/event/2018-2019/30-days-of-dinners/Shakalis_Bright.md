@@ -1,7 +1,7 @@
 +++
 date = "2019-01-17T18:30:00"
 title = "30 Days of Dinner"
-subtitle = "Connie and Gus Shakalis & Anne and Jim Bright"
+subtitle = "Connie and Gus Shakalis & Anne and Jim Bright-SOLD OUT"
 +++
 * Date: January 17th
 * Time: 6:30PM
