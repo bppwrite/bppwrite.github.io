@@ -4,7 +4,7 @@ date = "2019-01-04T18:30:00"
 title = "30 Days of Dinner"
 subtitle = []
 hero_title = "30 Days of Dinner"
-hero_subtitle = "A Month Long Fundraising Event"
+hero_subtitle = "A Month Long Event"
 
 # need this for a show with showtime files
 section = "event"
@@ -24,6 +24,8 @@ directors = []
 # showtimes not listed since this is a multi-show event with detail pages
 
 +++
+
+BPP'S ONLINE AUCTION is here! http://tinyurl.com/bppauction and take a look at all our fabulous items!
 
 You are invited to BPP's 30 Days of Dinner, a brand new special event taking the place of our annual gala. 30 Days of Dinner is unlike any of the other events. It happens over the entire month of January instead of one single day, so you can find the day that works best for you!. Tired of seeing the same 100 people at stuffy ballroom gatherings? We have close knit dinners and parties at the homes of some of the world's greatest hosts. There is something for everyone.
 

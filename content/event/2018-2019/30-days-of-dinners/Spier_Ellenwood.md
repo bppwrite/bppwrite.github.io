@@ -16,6 +16,6 @@ Bring a mask and come enjoy a night filled with fun and intrigue. Hosted by BPP 
 
 Each participant prior to the party will receive information about their character in the mystery as well as additional information about the party.
 
-20 seats are available for this unique event. MUST be registered by January 15. Contact Brad Schiesser today to pay for your seat  [812-334-1188](tel:+1-812-334-1188) or [brad@newplays.org](mailto:brad@newplays.org)
+20 seats are available for this unique event. MUST be registered by January 18. Contact Brad Schiesser today to pay for your seat  [812-334-1188](tel:+1-812-334-1188) or [brad@newplays.org](mailto:brad@newplays.org)
 
 Price: $50 per seat
