@@ -10,7 +10,7 @@ aliases = [
 
 +++
 
-The Bloomington Playwrights Project (BPP) is the only professional theatre in the entire state of Indiana dedicated solely to new plays. In operation for 35 years, we serve both the Bloomington and national theatre community by working with talented playwrights, actors, and artists to develop high-level productions for our local patrons as well as the many audiences attending subsequent productions of scripts that originated here at the BPP. We are an advocate for playwrights and new plays and believe firmly that they are not only important but absolutely vital to the future of our art form.
+The Bloomington Playwrights Project (BPP) is the only professional theatre in the entire state of Indiana dedicated solely to new plays. In operation for 39 years, we serve both the Bloomington and national theatre community by working with talented playwrights, actors, and artists to develop high-level productions for our local patrons as well as the many audiences attending subsequent productions of scripts that originated here at the BPP. We are an advocate for playwrights and new plays and believe firmly that they are not only important but absolutely vital to the future of our art form.
 
 ## Staff
 
@@ -22,21 +22,19 @@ The Bloomington Playwrights Project (BPP) is the only professional theatre in th
 
 **Managing Director:** Brad Schiesser <brad@newplays.org>
 
-**Development and Marketing Director:** Jana Surigao <jana@newplays.org>
+**Associate Artistic Director:** Ben Smith <ben@newplays.org>
 
-**Education Director:** Emily Davis <education@newplays.org>
+**Education Director:** Rachael Himsel <education@newplays.org>
 
-**Company Management Associate:** Kate Glen <kate@newplays.org>
+**Marketing and Development Associate:** Mallory Elver <mallory@newplays.org>
 
 **Box Office Manager:** Maddie Burton <maddie@newplays.org>
 
 **Literary Manager:** Susan Jones <literarymanager@newplays.org>
 
-**Resident Playwright and Literary Associate:** Hank Greene <hankg2013@gmail.com>
+**Volunteer Development Associate/BPP Historian:** Sonja Johnson <sejohnso2@gmail.com>
 
-**BPP Historian:** Sonja Johnson <sejohnso2@gmail.com>
-
-**Technical Director:** Brian Lewis
+**Technical Director:** Tien-Yin Sun
 
 **Resident Scenic Designer:** David Wade
 
@@ -44,21 +42,23 @@ The Bloomington Playwrights Project (BPP) is the only professional theatre in th
 
 **Resident Costume Designers:** Scott Jones & Chib Gratz
 
+**Resident Stage Manager** Kayla Cieslinski
+
 ## Board of Directors
 
-* Sandra Freund, President
-* John Whikehart, Vice President
-* Harlan Lewis, Treasurer
+* John Whikehart, President
+* Ray Hedin, Vice President
+* Von Welch, Treasurer
+* Ellee Spier, Co-Secretary
+* Esther Smail, Co-Secretary
 * Bob Arnove
 * Pat Brantlinger
 * David Chadwick
-* Paul Daily
+* Micheal Engber
+* Sandra Freund
 * Valeri Haughton-Motley
-* Ray Hedin
 * David Martin
 * Rob Shakespeare
-* Esther Smail
-* Ellee Spier
 
 ## Directors Circle
 
