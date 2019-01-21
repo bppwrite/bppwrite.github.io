@@ -4,13 +4,13 @@ title = "30 Days of Dinner"
 subtitle = "Kathy Sideli-SOLD OUT"
 +++
 
-* Date: January 19th
+* Date: January 26th
 * Time: 6PM
-* Location: Bell Trace, Bloomington IN 47408
+* Location: 1410 E University, Bloomington IN 47401
 * Theme: Dinner Party
 * Food: A fantastic sit down dinner. Wine provided by Oliver Winery
 
-Longtime BPP supporter Kathy Sideli will be having a dinner party at her home at Bell Trace
+Longtime BPP supporter Kathy Sideli will be having a dinner party at her home
 
 THIS DINNER IS SOLD OUT
 
