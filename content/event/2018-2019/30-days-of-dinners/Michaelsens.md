@@ -4,7 +4,7 @@ title = "30 Days of Dinner"
 subtitle = "Jonathan & Miah Michaelsen-SOLD OUT"
 +++
 * Date: January 25th
-* Time: 5PM
+* Time: 5:30 PM (Will begin promptly to allow for actors and attendees to be at the performance that evening)
 * Location: 2605 E Seminary Dr., Bloomington IN 47401
 * Theme: Cocktail Party
 * Food: Cocktails and heavy hor d’ouvres at their fabulous home. If you have dietary restrictions please contact Brad Schiesser below.
