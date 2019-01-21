@@ -13,6 +13,6 @@ Director for our upcoming production of APROPOS OF NOTHING Jonathan Michaelsen a
 
 Jonathan and some of the cast of APROPOS OF NOTHING will be talking about the show and their experience. A perfect time to arrange for tickets to see the performance that evening.
 
-Seats are available but limited for this unique event so please don't wait. Contact Brad Schiesser today to pay for your seat  [812-334-1188](tel:+1-812-334-1188) or [brad@newplays.org](mailto:brad@newplays.org)
+Contact Brad Schiesser today to pay for your seat  [812-334-1188](tel:+1-812-334-1188) or [brad@newplays.org](mailto:brad@newplays.org)
 
 Price: $50 per seat
