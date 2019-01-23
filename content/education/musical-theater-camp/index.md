@@ -6,12 +6,11 @@ aliases = ["/node/121"]
 +++
 
 * Ages 9 - 16
-* July 9 - July 29, 2018
+* July 8 - July 26, 2019 Performances July 26 and 27 at 7pm
 * Monday - Friday; 9am - 4pm, $395
-* Performances July 27 & 28 @ 7:30pm, July 29 @ 2pm
 * [Register today!](http://services.bloomington.ivytech.edu/cll_local/cll_registration_form.html)
 * [Email education@newplays.org for more info.](mailto:education@newplays.org)
 
-Each year, students work with BPP professionals to write and produce an exciting new musical starring them! Over the course of this three week camp, students will learn the skills needed to produce and perform musical theatre, culminating in a series of full performances for the general public.
- 
-BPP's Musical Theatre Camp provides an intensive, summer stock experience. A rigorous rehearsal schedule and collaboration with theatre professionals give campers an exciting window into the demands and rewards of a life in theatre.
+Campers will work with BPP professionals to write and produce an exciting new musical starring them! Students will start by learning about - and singing songs from - popular Broadway musicals. They'll train as actors, singers, dancers, playwrights, and designers as they learn every element that goes into putting on a show. Over the course of this three week camp, students will gain the skills needed to create and perform a show, culminating in a series of performances of their original musical for the general public.
+
+(Please note that backstage opportunities are available for kids who want to learn about costume/makeup design, lighting, and stage managing.)
