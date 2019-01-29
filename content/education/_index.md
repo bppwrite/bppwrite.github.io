@@ -5,6 +5,8 @@ aliases = ["/node/8"]
 
 +++
 
+MINIPLAY FESTIVAL DEADLINE EXTENDED: FEBRUARY 15!
+
 <!-- REFERENCES -->
 [iucu_link]: https://www.iucu.org/
 [iucu_logo]: iucu_logo.png (IU Credit Union)
