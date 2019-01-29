@@ -9,6 +9,9 @@ aliases = [
 
 +++
 
+MINIPLAY FESTIVAL DEADLINE EXTENDED: FEBRUARY 15! 
+
+
 The highly successful and long-running MiniPlay Contest invites students 13 and younger to submit original, 7 - 10 minute plays inspired by a provided theme. Six winning playwrights receive public recognition and a staged reading of their winning play by local actors at a special MiniPlay Premiere Party! Playwrights also receive an official show poster for their play.
 
 BPP selects the six best plays, based on how well the playwright crafts an original story, characters, and setting based upon the provided theme.
