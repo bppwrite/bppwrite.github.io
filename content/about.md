@@ -44,6 +44,8 @@ The Bloomington Playwrights Project (BPP) is the only professional theatre in th
 
 **Resident Stage Manager** Kayla Cieslinski
 
+**Production Manager** Patrick Weigand
+
 ## Board of Directors
 
 * John Whikehart, President
