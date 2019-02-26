@@ -1,7 +1,7 @@
 +++
 
 date = "2018-09-14T19:30:00"
-title = "Not On Your Marc"
+title = "On Your Marc"
 subtitle = "Sneak Preview Screening at IU Cinema"
 hero_title = "On Your Marc"
 hero_subtitle = "Sneak Preview Film Screening"
