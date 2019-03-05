@@ -5,9 +5,20 @@ aliases = ["/node/8"]
 
 +++
 
-MINIPLAY FESTIVAL DEADLINE EXTENDED: FEBRUARY 15!
 
 <!-- REFERENCES -->
+
+THEATRE INTERNSHIP OPPORTUNITY!
+
+The Bloomington Playwrights Project is looking for 2-3 theatre interns for our summer camps! We have various roles available based on your expertise. We are looking for interns who have experience in any or all of these areas: acting, directing, costuming, makeup, light / sound / set design, improvisation, or vocal coaching.
+
+Please note 1, this is an unpaid internship but full summer interns will receive 2 subscriptions to the 2019-2020 BPP season. 2, you do NOT have to be available the entire summer. A full summer internship is May 27 - July 27, but partial summer internships are available for any of the BPP's four camps: Broadway Kids, DramatiKids, Laugh Factory, and Musical Theater Camp. For a full list of the summer camps, please see below:
+
+Please send your resume and brief cover letter, including which dates you are available, to Rachael Himsel: [education@newplays.org](mailto:education@newplays.org)
+
+Deadline March 15th
+
+
 [iucu_link]: https://www.iucu.org/
 [iucu_logo]: iucu_logo.png (IU Credit Union)
 [cll_link]: https://www.ivytech.edu/bloomington/cll/
@@ -21,7 +32,7 @@ Through the Ivy Tech-BPP Youth Education Program, sponsored by [IU Credit Union]
 
 All of our classes and camps focus on the art of creating something new; whether it’s a new character, a new story, or a new play. Students learn to collaborate with others and become more confident and comfortable with their bodies and voices, while learning the skills needed to write and create their own new plays.
 
-Contact Education Director [Kyli Walls](mailto:education@newplays.org) for more information or [Register Now](http://services.bloomington.ivytech.edu/cll_local/cll_registration_form.html). 2018 scholarships available.
+Contact Education Director [Rachael Himsel](mailto:education@newplays.org) for more information or [Register Now](http://services.bloomington.ivytech.edu/cll_local/cll_registration_form.html). 2018 scholarships available.
 
 
 ## Ages 5 - 8

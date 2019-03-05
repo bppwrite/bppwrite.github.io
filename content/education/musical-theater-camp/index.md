@@ -14,3 +14,14 @@ aliases = ["/node/121"]
 Campers will work with BPP professionals to write and produce an exciting new musical starring them! Students will start by learning about - and singing songs from - popular Broadway musicals. They'll train as actors, singers, dancers, playwrights, and designers as they learn every element that goes into putting on a show. Over the course of this three week camp, students will gain the skills needed to create and perform a show, culminating in a series of performances of their original musical for the general public.
 
 (Please note that backstage opportunities are available for kids who want to learn about costume/makeup design, lighting, and stage managing.)
+
+
+THEATRE INTERNSHIP OPPORTUNITY!
+
+The Bloomington Playwrights Project is looking for 2-3 theatre interns for our summer camps! We have various roles available based on your expertise. We are looking for interns who have experience in any or all of these areas: acting, directing, costuming, makeup, light / sound / set design, improvisation, or vocal coaching.
+
+Please note 1, this is an unpaid internship but full summer interns will receive 2 subscriptions to the 2019-2020 BPP season. 2, you do NOT have to be available the entire summer. A full summer internship is May 27 - July 27, but partial summer internships are available for any of the BPP's four camps: Broadway Kids, DramatiKids, Laugh Factory, and Musical Theater Camp.
+
+Please send your resume and brief cover letter, including which dates you are available, to Rachael Himsel: [education@newplays.org](mailto:education@newplays.org)
+
+Deadline March 15th
