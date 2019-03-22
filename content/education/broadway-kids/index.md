@@ -29,4 +29,4 @@ This internship is unpaid and partial summer internships are available. A full s
 
 Please send your resume and brief cover letter, including which dates you are available, to Rachael Himsel: [education@newplays.org](mailto:education@newplays.org)
 
-Deadline March 15th
+Deadline April 1

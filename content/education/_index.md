@@ -8,16 +8,6 @@ aliases = ["/node/8"]
 
 <!-- REFERENCES -->
 
-THEATRE INTERNSHIP OPPORTUNITY!
-
-The Bloomington Playwrights Project is looking for 2-3 theatre interns for our summer camps! We have various roles available based on your expertise. We are looking for interns who have experience in any or all of these areas: acting, directing, costuming, makeup, light / sound / set design, improvisation, or vocal coaching.
-
-This internship is unpaid and partial summer internships are available. A full summer internship is May 27 - July 27, but partial summer internships are available for any of the BPP's four camps: Broadway Kids, DramatiKids, Laugh Factory, and Musical Theater Camp. For descriptions of each camp please see below:
-
-Please send your resume and brief cover letter, including which dates you are available, to Rachael Himsel: [education@newplays.org](mailto:education@newplays.org)
-
-Deadline March 15th
-
 
 [iucu_link]: https://www.iucu.org/
 [iucu_logo]: iucu_logo.png (IU Credit Union)
@@ -54,3 +44,13 @@ Contact Education Director [Rachael Himsel](mailto:education@newplays.org) for m
 [After School Edventures](after-school-edventures)
 
 [MiniPlay Playwriting Contest](miniplay-playwriting-contest)
+
+THEATRE INTERNSHIP OPPORTUNITY!
+
+The Bloomington Playwrights Project is looking for 2-3 theatre interns for our summer camps! We have various roles available based on your expertise. We are looking for interns who have experience in any or all of these areas: acting, directing, costuming, makeup, light / sound / set design, improvisation, or vocal coaching.
+
+This internship is unpaid and partial summer internships are available. A full summer internship is May 27 - July 27, but partial summer internships are available for any of the BPP's four camps: Broadway Kids, DramatiKids, Laugh Factory, and Musical Theater Camp. For descriptions of each camp please see below:
+
+Please send your resume and brief cover letter, including which dates you are available, to Rachael Himsel: [education@newplays.org](mailto:education@newplays.org)
+
+Deadline April 1

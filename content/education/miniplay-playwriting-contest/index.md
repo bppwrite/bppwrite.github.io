@@ -9,8 +9,6 @@ aliases = [
 
 +++
 
-MINIPLAY FESTIVAL DEADLINE EXTENDED: FEBRUARY 15!
-
 
 The highly successful and long-running MiniPlay Contest invites students 13 and younger to submit original, 7 - 10 minute plays inspired by a provided theme. Six winning playwrights receive public recognition and a staged reading of their winning play by local actors at a special MiniPlay Premiere Party! Playwrights also receive an official show poster for their play.
 
@@ -20,11 +18,9 @@ BPP selects the six best plays, based on how well the playwright crafts an origi
 
 For more information, or to participate, please contact <education@newplays.org>.
 
-## Congratulations to our 2018 MiniPlay Contest Winners! 2019 Winners will be announced soon!
+## Congratulations to our 2019 MiniPlay Contest Winners!
 
-* Hunter S.W. Broomall
-* Adrian Rheam
-* Gavin Robertson
-* Therese Stosberg
-* Cyrus Aziz Urheim
-* Traeh Young  
+* Edith Greene Irvin
+* Aili
+* Neveah Johnson
+* Yverre Berzins
