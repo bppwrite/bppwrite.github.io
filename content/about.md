@@ -106,6 +106,28 @@ For more information please visit [www.artsfair.org](http://www.artsfair.org).
 
 ## Past Productions
 
+### 2019
+
+* _Apropos of Nothing_ by Greg Kalleres
+* _The Jedi Handbook_ by Stephen Massicotte
+* _To Quiet the Quiet_ by Christy Hall 
+
+### 2018
+
+* _Spun_ by Emily Goodson, Music and Lyrics by Jeremy Schonfeld
+* _Out of Orbit_ by Jennifer Maisel
+* _The Oregon Trail_ by Bekah Brunstetter
+* _Glitches in Reality_ with Simon Coronel
+* _Tuning In_ by Larry Kass, Sara Kass, Ron Newell, and George Pinney, Music and Lyrics by Larry Kass
+
+### 2017
+
+* _Row After Row_ by Jessica Dickey
+* _Calling All Kates_ by Emily Goodson, Music and Lyrics by Jeremy Schonfeld
+* _Happily After Ever_ by Laura Zlatos
+* _Beating a Dead Horse_ by Jenny Stafford
+* _Front Page Flo_ By Larry Kass, Sara Kass, and George Pinney, Music and Lyrics by Larry Kass
+
 ### 2016
 
 * _Toast_ by Sam Carner & Derek Gregor
