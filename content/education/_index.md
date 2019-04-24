@@ -52,5 +52,3 @@ The Bloomington Playwrights Project is looking for 2-3 theatre interns for our s
 This internship is unpaid and partial summer internships are available. A full summer internship is May 27 - July 27, but partial summer internships are available for any of the BPP's four camps: Broadway Kids, DramatiKids, Laugh Factory, and Musical Theater Camp. For descriptions of each camp please see below:
 
 Please send your resume and brief cover letter, including which dates you are available, to Rachael Himsel: [education@newplays.org](mailto:education@newplays.org)
-
-Deadline April 1
