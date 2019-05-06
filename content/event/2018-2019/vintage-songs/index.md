@@ -24,4 +24,4 @@ youtube_id = ""
 
 +++
 
- This June, we invite you to resample one of BPP's best vintages; The 2014 SMASH HIT *Kalamazoo*. Join the original cast and relive the wonderful story in an outdoor staged reading. Then stick around for the announcement of the 2019-20 Season (our 40th!). The evening begins Thursday, June 6, 2019 with a full finger food dinner at 6:30pm, followed by the performances at 7:30pm. Complimentary wine and beer included in the price.
+ This June, we invite you to resample one of BPP's best vintages; The 2014 SMASH HIT *Kalamazoo*. Join the original cast and relive the wonderful story in an staged reading at the BPP. Then stick around for the announcement of the 2019-20 Season (our 40th!). The evening begins Thursday, June 6, 2019 with a full finger food dinner at 6:30pm, followed by the performances at 7:30pm. Complimentary wine and beer included in the price.
