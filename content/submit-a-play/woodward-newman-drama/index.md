@@ -10,7 +10,7 @@ aliases = [
 
 The Woodward/Newman Drama Award is an exclusive honor offered by Bloomington Playwrights Project, remembering the many great dramas Joanne Woodward and Paul Newman performed in together.
 
-It presents the best unpublished full-length drama of the year with a cash prize of $3,000 and a full production as part of the BPP's Mainstage season, along with travel reimbursement. Submissions for the 2019-20 competition must be postmarked by March 1, 2019.
+It presents the best unpublished full-length drama of the year with a cash prize of $3,000 and a full production as part of the BPP's Mainstage season, along with travel reimbursement. Submissions for the 2020-21 competition must be postmarked by Dec 1, 2019.
 
 ## 2018-19 Award
 
@@ -34,7 +34,7 @@ _To Quiet the Quiet_ by Christy Hall
 
 ## Guidelines for Submissions
 
-BPP is now accepting submissions for the 2019-20 Woodward/Newman Drama Award. Submissions must be postmarked by March 1, 2019. The winner will be announced in May/June 2019.
+BPP is now accepting submissions for the 2019-20 Woodward/Newman Drama Award. Submissions must be postmarked by December 1, 2019. The winner will be announced in May/June 2020.
 
 {{< submission-guidelines >}}
 
