@@ -5,7 +5,7 @@ intermission_count = "0"
 runtime = ""
 series = "2018-2019"
 subtitle = ""
-title = "Vintage Plays"
+title = "BPP's 40th Birthday Celebration"
 hero_title = ""
 hero_subtitle = ""
 hero_call_to_action = "Get Tickets"
@@ -24,4 +24,4 @@ youtube_id = ""
 
 +++
 
- This June, we invite you to resample one of BPP's best vintages; The 2014 SMASH HIT *Kalamazoo*. Join the original cast and relive the wonderful story in an staged reading at the BPP. Then stick around for the announcement of the 2019-20 Season (our 40th!). The evening begins Thursday, June 6, 2019 with a full finger food dinner at 6:30pm, followed by the performances at 7:30pm. Complimentary wine and beer included in the price.
+ This June 6th, we are throwing ourselves a 40th Birthday Celebration! Start the night out at 6:30 with donated food, wine, and beer! Then move into the theatre for the announcement of our 2019-2020 Season and a staged read of the 2014 SMASH HIT *Kalamazoo*. Join the original cast and relive the wonderful story of BPP's best selling show of all time. Then stick around for the announcement of the 2019-20 Season (our 40th!). Then finish the evening with a toast to BPP and the opportunity to buy us some presents (but cash is fine too!). Only $25 for this event and all proceeds go to supporting the quality work you have come to expect from the BPP.
