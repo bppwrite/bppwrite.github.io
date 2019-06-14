@@ -13,24 +13,23 @@ Tickets for most BPP shows are also available for purchase at the door the night
 
 ## Individual Performances
 
-* General Admission - $20
-* Seniors - $17
-* Students - $10
+* General Admission - $25
+* Students - $15
 
-[Buy Tickets Online](https://web.ovationtix.com/trs/dept/1090/1535774400000)
+[Buy Tickets Online](https://web.ovationtix.com/trs/store/34132/packages)
 
 ## Season Subscription
 
 Subscribe to the BPP Main Stage Series and receive these benefits with your Subscription:
 
-* Save big! Get 5 Tickets for the Price of 4
+* Save big! Get 5 Tickets for the Price of 4 (or new this year 6 for the price of 5!)
 * Invitations to Special Events
-* $80 General Admission
-* $68 Student/Senior
+* $90 General Admission
+* $80 Student/Senior
 * Flexibility! See each show, or use all your tickets for one show
 
 ## Subscribe-It-Forward
 
-Are you a current subscriber? When you re-subscribe, give the gift of a FREE SUBSCRIPTION to a friend! 
+Are you a current subscriber? When you re-subscribe, give the gift of a FREE SUBSCRIPTION to a friend!
 
-[Buy Season Subscription Online](https://web.ovationtix.com/trs/store/34132/pk/97845)
+[Buy Season Subscription Online](https://web.ovationtix.com/trs/store/34132/packages)
