@@ -11,7 +11,7 @@ hero_call_to_action_link = "http://bctboxoffice.org/event/rap-guide-to-culture/"
 # full urls of links from the old site that should point to this show
 aliases = []
 
-series = "2018-2019"
+series = "2019-2020"
 # e.g., "Reva Shiner Comedy Award Winner" or "Off-Broadway/On-Ninth"
 # may be the same as the "award"
 slot = ""
