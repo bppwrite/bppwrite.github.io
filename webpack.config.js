@@ -1,6 +1,6 @@
 const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
@@ -15,13 +15,13 @@ module.exports = {
       {
         test: /\.(scss)$/,
         use: [{
-          loader: 'style-loader', // inject CSS to page
+          loader: MiniCssExtractPlugin.loader,
         }, {
           loader: 'css-loader', // translates CSS into CommonJS modules
         }, {
           loader: 'postcss-loader', // Run post css actions
           options: {
-            plugins: function () { // post css plugins, can be exported to postcss.config.js
+            plugins: function() { // post css plugins, can be exported to postcss.config.js
               return [
                 require('autoprefixer')
               ];
@@ -49,7 +49,11 @@ module.exports = {
   plugins: [
     new UglifyJsPlugin(),
     new CleanWebpackPlugin(['static/dist']),
-    new ExtractTextPlugin('main.css')
+    new MiniCssExtractPlugin({
+      // Options similar to the same options in webpackOptions.output
+      // both options are optional
+      filename: 'main.css',
+    }),
   ],
   output: {
     filename: 'build.js',
