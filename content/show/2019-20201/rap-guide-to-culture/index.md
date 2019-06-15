@@ -52,10 +52,6 @@ tickets_run = "http://bctboxoffice.org/event/rap-guide-to-culture/"
 
 +++
 
-Owen confesses, apropos of nothing, that he’s in love with his best friend’s wife.
-
-But it’s just “a passing phase,” he tells him. “Forget I even said it.” Unfortunately, no one can. And now that it’s out there, everyone’s lives are turned upside-down, and no one’s relationship is safe from the wreckage. In a comedy about love, irony, and cliché, five people struggle with…well…love, irony, and cliché.
-
-*Contains adult language and situations.*
+Music, poetry, art, science, politics, and relationships are all strange behaviors found in a species of (mostly) hairless primates. How do norms and social systems evolve, and who benefits? The whole planet hangs in the balance as cultures and sub-cultures compete for survival and the reach to become viral. Equal parts rap concert, TED Talk, and stand-up gig, Rap Guide to Culture surprises, delights, and ultimately heals, bringing a wealth of knowledge and razor-sharp observational wit to some of today’s stickiest topics.
 
 Box office opens at 6:30pm, house opens at 7pm, shows begin at 7:30pm.
