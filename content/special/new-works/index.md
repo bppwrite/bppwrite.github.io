@@ -5,5 +5,3 @@ date = "2017-07-01T16:03:47-04:00"
 is_active = true
 title = "The *only* professional theater in Indiana focused solely on *new works*"
 hero_weight = "010"
-
-+++
