@@ -16,6 +16,6 @@ This content is displayed immediately after the hero on the homepage.
 
 # Buy a season ticket pass. Do it. Do it right now.
 
-{{< button "https://web.ovationtix.com/trs/store/34132/pk/97845" >}}
+{{< button "https://web.ovationtix.com/trs/store/34132/packages" >}}
     Subscribe
 {{< /button >}}
