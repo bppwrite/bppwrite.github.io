@@ -5,6 +5,6 @@ hero_call_to_action_link = "/education"
 is_active = true
 subtitle = ""
 title = "Check out our Summer Camp Offerings"
-hero_weight = ""
+hero_weight = "100"
 
 +++
