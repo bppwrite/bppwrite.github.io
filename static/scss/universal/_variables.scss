@@ -21,7 +21,7 @@ $font-file-twenty: 'TwentytwelveSlab-Regular';
 @include font-face-otf($font-path, $font-file-trend);
 // @include font-face-otf($font-path, $font-file-trend-three);
 @include font-face-ttf($font-path, $font-file-int-lig);
-@include font-face-ttf($font-path, $font-file-int-reg);
+// @include font-face-ttf($font-path, $font-file-int-reg);
 @include font-face-ttf($font-path, $font-file-int-bol);
 @include font-face-ttf($font-path, $font-file-int-bla);
 @include font-face-ttf($font-path, $font-file-twenty);
@@ -29,7 +29,7 @@ $font-file-twenty: 'TwentytwelveSlab-Regular';
 // font stacks
 $int-black: Interstate-Black, sans-serif;
 $int-bold-cond: Interstate-BoldCondensed, sans-serif;
-$int-reg: Interstate-RegularCondensed, sans-serif;
+// $int-reg: Interstate-RegularCondensed, sans-serif;
 $int-light: Interstate-LightCondensed, sans-serif;
 $trend: 'TrendSansOne', sans-serif;
 $twenty: TwentytwelveSlab-Regular, sans-serif;
