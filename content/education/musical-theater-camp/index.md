@@ -8,7 +8,7 @@ aliases = ["/node/121"]
 * Ages 9 - 16
 * July 8 - July 26, 2019 Performances July 26 and 27 at 7pm
 * Monday - Friday; 9am - 4pm, $395
-* [Register today!](http://services.bloomington.ivytech.edu/cll_local/cll_registration_form.html)
+* [Register today!](https://ivytechbloomington.augusoft.net/index.cfm?method=ClassListing.ClassListingDisplay&int_category_id=6&int_sub_category_id=27&int_catalog_id=)
 * [Email education@newplays.org for more info.](mailto:education@newplays.org)
 
 Campers will work with BPP professionals to write and produce an exciting new musical starring them! Students will start by learning about - and singing songs from - popular Broadway musicals. They'll train as actors, singers, dancers, playwrights, and designers as they learn every element that goes into putting on a show. Over the course of this three week camp, students will gain the skills needed to create and perform a show, culminating in a series of performances of their original musical for the general public.

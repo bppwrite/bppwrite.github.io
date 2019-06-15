@@ -13,7 +13,7 @@ aliases = [
 * $295
 * June 10 - June 21, 2019 performances June 21 and 22 at 7pm
 * Monday - Friday; 9am - 4pm
-* [Register today!](http://services.bloomington.ivytech.edu/cll_local/cll_registration_form.html)
+* [Register today!](https://ivytechbloomington.augusoft.net/index.cfm?method=ClassListing.ClassListingDisplay&int_category_id=6&int_sub_category_id=27&int_catalog_id=)
 * [Email education@newplays.org for more info.](mailto:education@newplays.org)
 {{% /block-highlight %}}
 
