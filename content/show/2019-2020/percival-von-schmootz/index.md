@@ -1,28 +1,28 @@
 +++
 
-date = "2018-11-30T19:30:00"
-title = "Tuning In"
-subtitle = "BPP/IU Collaborative Musical"
+date = "2020-01-24T19:30:00"
+title = "The Enlightenment of Percival Von Schmootz"
+subtitle = ""
 hero_title = ""
 hero_subtitle = ""
 hero_call_to_action = "Get Tickets"
-hero_call_to_action_link = "https://bctboxoffice.org/event/tuning-in/"
+hero_call_to_action_link = "http://bctboxoffice.org/event/the-enlightenment-of-percival-von-schmootz/"
 
 # full urls of links from the old site that should point to this show
 aliases = []
 
-series = "2018-2019"
+series = "2019-2020"
 # e.g., "Reva Shiner Comedy Award Winner" or "Off-Broadway/On-Ninth"
 # may be the same as the "award"
 slot = ""
 
 genres = ["musical"]
 exec_producers = []
-directors = ["George Pinney"]
-playwrights = ["George Pinney", "Ron Newell", "Sara Kass", "Larry Kass"]
-musicians = ["Larry Kass"]
-choreographers = ["George Pinney"]
-lyricists = ["Larry Kass"]
+directors = [""]
+playwrights = ["Chris Dimond"]
+musicians = ["Michael Kooman"]
+choreographers = [""]
+lyricists = ["Chris Dimond"]
 awards = []
 
 youtube_id = ""
@@ -33,38 +33,37 @@ intermission_count = "0"
 venue = "Ted Jones Playhouse"
 
 # link to tickets for production run
-tickets_run = "https://bctboxoffice.org/event/tuning-in/"
+tickets_run = "http://bctboxoffice.org/event/the-enlightenment-of-percival-von-schmootz/"
 
 # list showtimes in ISO 8601 format with links to tickets
 [[showtimes]]
-    time = "2018-11-30T19:30:00"
-    tickets = "https://web.ovationtix.com/trs/pe/10303043"
+    time = "2020-01-24T19:30:00"
+    tickets = "https://web.ovationtix.com/trs/pe/10427392"
 [[showtimes]]
-    time = "2018-12-01T19:30:00"
-    tickets = "https://web.ovationtix.com/trs/pe/10303044"
+    time = "2020-01-25T19:30:00"
+    tickets = "https://web.ovationtix.com/trs/pe/10427393"
 [[showtimes]]
-    time = "2018-12-06T19:30:00"
-    tickets = "https://web.ovationtix.com/trs/pe/10303045"
+    time = "2020-01-30T19:30:00"
+    tickets = "https://web.ovationtix.com/trs/pe/10427394"
 [[showtimes]]
-    time = "2018-12-07T19:30:00"
-    tickets = "https://web.ovationtix.com/trs/pe/10303046"
+    time = "2020-01-31T19:30:00"
+    tickets = "https://web.ovationtix.com/trs/pe/10427395"
 [[showtimes]]
-    time = "2018-12-08T19:30:00"
-    tickets = "https://web.ovationtix.com/trs/pe/10303047"
+    time = "2020-02-01T19:30:00"
+    tickets = "https://web.ovationtix.com/trs/pe/10427396"
 [[showtimes]]
-    time = "2018-12-13T19:30:00"
-    tickets = "https://web.ovationtix.com/trs/pe/10303048"
+    time = "2020-02-06T19:30:00"
+    tickets = "https://web.ovationtix.com/trs/pe/10427397"
 [[showtimes]]
-    time = "2018-12-14T19:30:00"
-    tickets = "https://web.ovationtix.com/trs/pe/10303049"
+    time = "2020-02-07T19:30:00"
+    tickets = "https://web.ovationtix.com/trs/pe/10427398"
 [[showtimes]]
-    time = "2018-12-15T19:30:00"
-    tickets = "https://web.ovationtix.com/trs/pe/10303050"
+    time = "2020-02-08T19:30:00"
+    tickets = "https://web.ovationtix.com/trs/pe/10427399"
 
 +++
 
-All is peaceful at the Harmony Hill retirement community – the rooms are comfy, the meals are tasty, and the citizen-run radio station is a hit (even if it only plays hits from the past). But when an executive waltzes in threatening to take over WLK 89.3 and turn it into a contemporary music station, the talented tenants of the senior center band together and hold a radiothon to keep it alive.
+Fed up with a world filled with plagues, pestilence, and poor personal hygiene, a ridiculously optimistic young man sets out on a quest to end the Dark Ages. As he attempts to bring the light of hope to the world, Percival Von Schmootz meets with hilariously disastrous results at every turn. Yet in this outrageous, Monty Python-esque musical comedy, it is only when things look the darkest that Percival is able to discover what true enlightenment means, as he finds hope (and humor) in impossibly bleak circumstances.
 
-*Suitable for all ages.*
 
 Box office opens at 6:30pm, house opens at 7pm, shows begin at 7:30pm.
