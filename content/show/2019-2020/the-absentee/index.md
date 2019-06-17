@@ -1,25 +1,25 @@
 +++
 
-date = "2019-03-29T19:30:00"
-title = "The Jedi Handbook"
-subtitle = ""
+date = "2020-03-07T19:30:00"
+title = "The Absentee"
+subtitle = "Woodward/Newman Drama Award Winner"
 hero_title = ""
 hero_subtitle = ""
 hero_call_to_action = "Get Tickets"
-hero_call_to_action_link = "https://bctboxoffice.org/event/the-jedi-handbook/"
+hero_call_to_action_link = "http://bctboxoffice.org/event/the-absentee/"
 
 # full urls of links from the old site that should point to this show
 aliases = []
 
-series = "2018-2019"
+series = "2019-2020"
 # e.g., "Reva Shiner Comedy Award Winner" or "Off-Broadway/On-Ninth"
 # may be the same as the "award"
 slot = ""
 
 genres = [""]
 exec_producers = []
-directors = ["Chad Rabinovitz"]
-playwrights = ["Stephen Massicotte"]
+directors = [""]
+playwrights = ["Julia Doolittle"]
 musicians = []
 music_directors = []
 choreographers = []
@@ -34,40 +34,36 @@ intermission_count = "0"
 venue = "Ted Jones Playhouse"
 
 # link to tickets for production run
-tickets_run = "https://bctboxoffice.org/event/the-jedi-handbook/"
+tickets_run = "http://bctboxoffice.org/event/the-absentee/"
 
 # list showtimes in ISO 8601 format with links to tickets
 [[showtimes]]
-    time = "2019-03-29T19:30:00"
-    tickets = "https://web.ovationtix.com/trs/pe/10303035"
+    time = "2020-03-27T19:30:00"
+    tickets = "https://web.ovationtix.com/trs/pe/10427406"
 [[showtimes]]
-    time = "2019-03-30T19:30:00"
-    tickets = "https://web.ovationtix.com/trs/pe/10303036"
+    time = "2020-03-28T19:30:00"
+    tickets = "https://web.ovationtix.com/trs/pe/10427407"
 [[showtimes]]
-    time = "2019-04-04T19:30:00"
-    tickets = "https://web.ovationtix.com/trs/pe/10303037"
+    time = "2020-04-02T19:30:00"
+    tickets = "https://web.ovationtix.com/trs/pe/10427408"
 [[showtimes]]
-    time = "2019-04-05T19:30:00"
-    tickets = "https://web.ovationtix.com/trs/pe/10303038"
+    time = "2020-04-03T19:30:00"
+    tickets = "https://web.ovationtix.com/trs/pe/10427409"
 [[showtimes]]
-    time = "2019-04-06T19:30:00"
-    tickets = "https://web.ovationtix.com/trs/pe/10303039"
+    time = "2020-04-04T19:30:00"
+    tickets = "https://web.ovationtix.com/trs/pe/10427410"
 [[showtimes]]
-    time = "2019-04-11T19:30:00"
-    tickets = "https://web.ovationtix.com/trs/pe/10303040"
+    time = "2020-04-09T19:30:00"
+    tickets = "https://web.ovationtix.com/trs/pe/10427411"
 [[showtimes]]
-    time = "2019-04-12T19:30:00"
-    tickets = "https://web.ovationtix.com/trs/pe/10303041"
+    time = "2020-04-10T19:30:00"
+    tickets = "https://web.ovationtix.com/trs/pe/10427413"
 [[showtimes]]
-    time = "2019-04-13T19:30:00"
-    tickets = "https://web.ovationtix.com/trs/pe/10303042"
+    time = "2020-04-11T19:30:00"
+    tickets = "https://web.ovationtix.com/trs/pe/10427414"
 
 +++
 
-A not so long time ago, in a theater not so far away, came a film that rocked the galaxy – changing both cinema and schoolyards forever…
-
-The Jedi Handbook is a coming of age story about a young boy who survives growing older with help from The Force. Experiencing the Star Wars franchise anew, through the eyes and imagination of a kid, The Jedi Handbook takes us on a nostalgic journey back to an era we can all relate to – our childhood.
-
-*Suitable for all ages.*
+Far out in the Milky Way, “Beacons” serve as lighthouses for warping spaceships around the galaxy. When a U.S. Spaaaaaace Forces ship explodes near Beacon 44.AR.90, its Operator finds herself alone in deep spaaaaaace with only her ship’s AI for companionship. That is, until a persistent canvasser calls, desperate to convince her to vote absentee in the 2088 eating contest.
 
 Box office opens at 6:30pm, house opens at 7pm, shows begin at 7:30pm.
