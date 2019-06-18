@@ -18,7 +18,7 @@ slot = ""
 
 genres = [""]
 exec_producers = []
-directors = [""]
+directors = []
 playwrights = ["Julia Doolittle"]
 musicians = []
 music_directors = []

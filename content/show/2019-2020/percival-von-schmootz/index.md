@@ -18,10 +18,10 @@ slot = ""
 
 genres = ["musical"]
 exec_producers = []
-directors = [""]
+directors = []
 playwrights = ["Chris Dimond"]
 musicians = ["Michael Kooman"]
-choreographers = [""]
+choreographers = []
 lyricists = ["Chris Dimond"]
 awards = []
 

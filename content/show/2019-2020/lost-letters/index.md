@@ -18,7 +18,7 @@ slot = ""
 
 genres = ["musical"]
 exec_producers = []
-directors = [""]
+directors = []
 playwrights = ["Jonathan Karpinos"]
 musicians = []
 music_directors = []
