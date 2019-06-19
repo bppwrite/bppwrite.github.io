@@ -2,7 +2,7 @@
 
 date = "2019-09-06T19:30:00"
 title = "Rap Guide to Culture"
-subtitle = "Reva Shiner Comedy Award Winner"
+subtitle = ""
 hero_title = ""
 hero_subtitle = ""
 hero_call_to_action = "Get Tickets"
@@ -18,8 +18,8 @@ slot = ""
 
 genres = [""]
 exec_producers = []
-directors = ["Chad Rabinovitz"]
-playwrights = ["Baba Brinkman"]
+directors = []
+playwrights = ["and Starring Baba Brinkman"]
 musicians = []
 music_directors = []
 choreographers = []

@@ -18,7 +18,7 @@ slot = ""
 
 genres = []
 exec_producers = []
-directors = []
+directors = ["Ivey Lowe"]
 playwrights = ["Matt Schatz"]
 musicians = []
 music_directors = []

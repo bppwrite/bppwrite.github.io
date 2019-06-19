@@ -18,12 +18,12 @@ slot = ""
 
 genres = ["musical"]
 exec_producers = []
-directors = []
+directors = ["Bronwyn Steinberg"]
 playwrights = ["Jonathan Karpinos"]
 musicians = []
 music_directors = []
 choreographers = []
-lyricists = ["Creighton Irons"]
+lyricists = ["and Music Creighton Irons"]
 awards = []
 
 youtube_id = ""

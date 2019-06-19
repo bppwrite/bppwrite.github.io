@@ -2,7 +2,7 @@
 
 date = "2019-09-07T19:00:00"
 title = "Rap Guide to Consciousness"
-subtitle = "Reva Shiner Comedy Award Winner"
+subtitle = ""
 hero_title = ""
 hero_subtitle = ""
 hero_call_to_action = "Get Tickets"
@@ -18,8 +18,8 @@ slot = ""
 
 genres = [""]
 exec_producers = []
-directors = ["Chad Rabinovitz"]
-playwrights = ["Baba Brinkman"]
+directors = []
+playwrights = ["and Starring Baba Brinkman"]
 musicians = []
 music_directors = []
 choreographers = []

@@ -19,10 +19,10 @@ slot = ""
 genres = ["musical"]
 exec_producers = []
 directors = []
-playwrights = ["Chris Dimond"]
+playwrights = ["and Lyrics Chris Dimond"]
 musicians = ["Michael Kooman"]
 choreographers = []
-lyricists = ["Chris Dimond"]
+lyricists = []
 awards = []
 
 youtube_id = ""
