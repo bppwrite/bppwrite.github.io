@@ -4,9 +4,9 @@
 
 {{- with .Params.showtimes -}}
     {{/* show starts on the first date in the showtimes array */}}
-    {{- $start := (time (index . 0).time ) -}}
+    {{- $start = (time (index . 0).time ) -}}
     {{/* show ends on the last date in the showtimes array */}}
-    {{- $end := (time (index . (sub (len .) 1) ).time ) -}}
+    {{- $end = (time (index . (sub (len .) 1) ).time ) -}}
 {{- end -}}
 
 
