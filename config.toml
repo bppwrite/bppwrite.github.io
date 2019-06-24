@@ -56,6 +56,7 @@ venue = "venues"
     name = "Tickets"
     url = "/tickets/"
     weight = 200
+    pre = "hero"
 [[menu.main]]
     name = "Education" #(page and link for each of the following)
     url = "/education/"
