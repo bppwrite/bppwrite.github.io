@@ -51,7 +51,8 @@ tickets_run = "http://bctboxoffice.org/event/rap-guide-to-consciousness/"
     tickets = "https://web.ovationtix.com/trs/pe/10427372"
 
 +++
+PLEASE BE AWARE: Rap Guide to Consciousness and Rap Guide to Culture are SOLD SEPERATLY.
 
 “Peer reviewed rapper” Baba Brinkman takes a deep dive into the neuroscience of human experience, from sensations to hallucinations. “Mind-blowingly, awe-inspiringly good”. (Broadway Baby) Baba’s brain consists of tens of billions of neurons, none of which has any idea that he exists. And yet, somehow, those cells come together to produce a steady stream of ill rhymes, laughs, and revelations about the mind we live in.
 
-Box office opens at 6:30pm, house opens at 7pm, shows begin at 7:30pm.
+Performance times for Rap Guide to Consciousness: September 7th @ 7PM; September 12th @ 7:30PM; September 13th @ 9PM; September 14th @ 7PM  

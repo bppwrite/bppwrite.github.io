@@ -51,7 +51,8 @@ tickets_run = "http://bctboxoffice.org/event/rap-guide-to-culture/"
     tickets = "https://web.ovationtix.com/trs/pe/10427162"
 
 +++
+PLEASE BE AWARE: Rap Guide to Consciousness and Rap Guide to Culture are SOLD SEPERATLY.  
 
 Music, poetry, art, science, politics, and relationships are all strange behaviors found in a species of (mostly) hairless primates. How do norms and social systems evolve, and who benefits? The whole planet hangs in the balance as cultures and sub-cultures compete for survival and the reach to become viral. Equal parts rap concert, TED Talk, and stand-up gig, Rap Guide to Culture surprises, delights, and ultimately heals, bringing a wealth of knowledge and razor-sharp observational wit to some of today’s stickiest topics.
 
-Box office opens at 6:30pm, house opens at 7pm, shows begin at 7:30pm.
+Performance times for Rap Guide to Culture: September 6th @ 7:30PM; September 7th @ 9PM; September 13th @ 7PM; September 14th @ 9PM 
