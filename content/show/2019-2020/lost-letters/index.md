@@ -20,10 +20,10 @@ genres = ["musical"]
 exec_producers = []
 directors = ["Bronwyn Steinberg"]
 playwrights = ["Jonathan Karpinos"]
-musicians = []
+musicians = ["Creighton Irons"]
 music_directors = []
 choreographers = []
-lyricists = ["and Music Creighton Irons"]
+lyricists = ["Creighton Irons"]
 awards = []
 
 youtube_id = ""
