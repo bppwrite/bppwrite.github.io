@@ -64,6 +64,6 @@ tickets_run = "http://bctboxoffice.org/event/the-absentee/"
 
 +++
 
-Far out in the Milky Way, “Beacons” serve as lighthouses for warping spaceships around the galaxy. When a U.S. Spaaaaaace Forces ship explodes near Beacon 44.AR.90, its Operator finds herself alone in deep spaaaaaace with only her ship’s AI for companionship. That is, until a persistent canvasser calls, desperate to convince her to vote absentee in the 2088 eating contest.
+Far out in the Milky Way, “Beacons” serve as lighthouses for warping spaceships around the galaxy. When a U.S. Space Forces ship explodes near Beacon 44.AR.90, its Operator finds herself alone in deep space with only her ship’s AI for companionship. That is, until a persistent canvasser calls, desperate to convince her to vote absentee in the 2088 Election.
 
 Box office opens at 6:30pm, house opens at 7pm, shows begin at 7:30pm.
