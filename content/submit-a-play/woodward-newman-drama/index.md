@@ -34,7 +34,7 @@ _The Absentee_ by Julia Doolittle
 
 ## Guidelines for Submissions
 
-BPP is now accepting submissions for the 2019-20 Woodward/Newman Drama Award. Submissions must be postmarked by December 1, 2019. The winner will be announced in May/June 2020.
+BPP is now accepting submissions for the 2020-21 Woodward/Newman Drama Award. Submissions must be postmarked by December 1, 2019. The winner will be announced in May/June 2020.
 
 {{< submission-guidelines >}}
 
