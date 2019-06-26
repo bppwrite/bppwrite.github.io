@@ -36,7 +36,8 @@ Just what are The PlayOffs, you ask? On November 3 and 4, 9 playwrights, 9 direc
 
 Sound cool? Oh, it is.
 
-Encouraging the competitive spirit, the artists are broken up into teams, each containing a "Manager" (playwright), "Coach" (director) and three "Players" (actors). The teams then compete in the World Series PlayOffs (2 full performances) on November 3 and 4 at 7:30pm.
+Encouraging the competitive spirit, the artists are broken up into teams, each containing a "Manager" (playwright), "Coach" (director) and three "Players" (actors). The teams then compete in the World Series PlayOffs (2 full performances) on November 9 and 10 at 7:30pm.
 
 Audience members are invited to vote for their favorite play and actor, and (after the votes have been tallied) the MVP and World Series Champion are crowned after the final Sunday night performance.
+
 But, before the first pitch is thrown, Team Owners and the participating artists have to raise money to get their team on the field and improve their draft ranking. The more money they raise, the better their chances are for winning the World Series or even an MVP award.
