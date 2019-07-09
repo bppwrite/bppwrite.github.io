@@ -16,7 +16,7 @@ It presents the best unpublished full-length drama of the year with a cash prize
 
 ### Winner
 
-Congratulations to our 2018-19 Woodward/Newman Drama Award Winner:
+Congratulations to our 2019-20 Woodward/Newman Drama Award Winner:
 
 _The Absentee_ by Julia Doolittle
 
