@@ -34,3 +34,5 @@ tickets_run = "http://bctboxoffice.org/event/mind-tricks/"
 +++
 
 World-renowned mentalist, Max Major, has given over 2,000 live performances and 100 television appearances. But after he baffled our minds at BPP in 2017 with his latest show, Max took a sudden and unexpected break from performing to focus on his most difficult trick yet: recovering from Lyme disease. Two years later, he’s traveling back to BPP to make his triumphant return to the stage and picking up where he left off, with a new outlook on life and incredible new feats of mind-reading and magic.
+
+OPENING ACT: Calen Morelli, who has designed illusions for David Blaine & David Copperfield!
