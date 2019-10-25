@@ -12,8 +12,7 @@ The highly successful and long-running MiniPlay Contest invites students in 1st-
 
 BPP selects the best plays, based on how well the playwright crafts an original story, characters, and setting based upon the provided theme of EXPLORERS.
 
-## Submissions due March 2nd, 2020
-GUIDELINES FOR SUBMISSIONS
+## Submissions due March 2nd, 2020! Guidelines Below:
 * Include name, age, school, teacher, grade level and email/phone number on the first pages
 * Be 1-10 pages in length
 * Have no more than 6 characters in the play
