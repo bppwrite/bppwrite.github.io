@@ -8,17 +8,25 @@ aliases = [
 ]
 
 +++
+The highly successful and long-running MiniPlay Contest invites students in 1st-8th grades to participate and write a short play on the topic of EXPLORERS. 1st, 2nd, and 3rd place MiniPlay winners will receive public recognition and a staged reading (April 5, 2020) of their winning play by local actors at a special MiniPlay Premiere Party with Ice Cream and Pizza! Plus NEW THIS YEAR, Grand Prize winners in each category will also receive a $50 cash prize!
+
+BPP selects the best plays, based on how well the playwright crafts an original story, characters, and setting based upon the provided theme of EXPLORERS.
+
+## Submissions due March 2nd, 2020
+GUIDELINES FOR SUBMISSIONS
+* Include name, age, school, teacher, grade level and email/phone number on the first pages
+* Be 1-10 pages in length
+* Have no more than 6 characters in the play
+* Use the theme of EXPLORERS in a clear Way
+* Make no use of guns or violence onstage
+
+EMAIL submissions to: education@newplays.org or send via mail/drop off in person, M-F 9-5:
+Bloomington Playwrights Project
+107 W. 9th St.
+Bloomington, IN 47404
 
 
-The highly successful and long-running MiniPlay Contest invites students 13 and younger to submit original, 7 - 10 minute plays inspired by a provided theme. Six winning playwrights receive public recognition and a staged reading of their winning play by local actors at a special MiniPlay Premiere Party! Playwrights also receive an official show poster for their play.
-
-BPP selects the six best plays, based on how well the playwright crafts an original story, characters, and setting based upon the provided theme.
-
-## More Information
-
-For more information, or to participate, please contact <education@newplays.org>.
-
-## Congratulations to our 2019 MiniPlay Contest Winners!
+## Congratulations to Last Year's (2019) MiniPlay Contest Winners!
 
 * Edith Greene Irvin
 * Aili
