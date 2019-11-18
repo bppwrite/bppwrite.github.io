@@ -64,6 +64,6 @@ tickets_run = "https://bctboxoffice.org/event/lost-letters/"
 
 +++
 
-Newly married, newly moved, and with a newborn on the way, Charlie is scrambling to get everything ready for the arrival of his daughter – all the while questioning the choices that brought him to this moment. While clearing out boxes from his soon-to-be nursery, he finds a trove of handwritten letters from his past. The letters come to life and force Charlie to (finally) reply, make peace with the present, and embrace his new reality. Drawn from actual letters from composer/lyricist Creighton Irons’ life, Lost Letters is a love letter to a vanishing art, a celebration of the journey into parenthood, and a meditation on how we simultaneously let go of the past and still carry it with us.
+Newly married, newly moved, and with a newborn on the way, Adam is scrambling to get everything ready for the arrival of his daughter – all the while questioning the choices that brought him to this moment. While clearing out boxes from his soon-to-be nursery, he finds a trove of handwritten letters from his past. The letters come to life and force Adam to (finally) reply, make peace with the present, and embrace his new reality. Drawn from actual letters from composer/lyricist Creighton Irons’ life, Lost Letters is a love letter to a vanishing art, a celebration of the journey into parenthood, and a meditation on how we simultaneously let go of the past and still carry it with us.
 
 Box office opens at 6:30pm, house opens at 7pm, shows begin at 7:30pm.
