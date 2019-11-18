@@ -10,7 +10,7 @@ aliases = [
 
 +++
 
-The Bloomington Playwrights Project (BPP) is the only professional theatre in the entire state of Indiana dedicated solely to new plays. In operation for 39 years, we serve both the Bloomington and national theatre community by working with talented playwrights, actors, and artists to develop high-level productions for our local patrons as well as the many audiences attending subsequent productions of scripts that originated here at the BPP. We are an advocate for playwrights and new plays and believe firmly that they are not only important but absolutely vital to the future of our art form.
+The Bloomington Playwrights Project (BPP) is the only professional theatre in the entire state of Indiana dedicated solely to new plays. In operation for 40 years, we serve both the Bloomington and national theatre community by working with talented playwrights, actors, and artists to develop high-level productions for our local patrons as well as the many audiences attending subsequent productions of scripts that originated here at the BPP. We are an advocate for playwrights and new plays and believe firmly that they are not only important but absolutely vital to the future of our art form.
 
 ## Staff
 
@@ -24,27 +24,25 @@ The Bloomington Playwrights Project (BPP) is the only professional theatre in th
 
 **Associate Artistic Director:** Ben Smith <ben@newplays.org>
 
-**Education Director:** Rachael Himsel <education@newplays.org>
+**Education Director:** Eric Shelley <education@newplays.org>
 
 **Marketing and Development Associate:** Mallory Elver <mallory@newplays.org>
 
-**Box Office Manager:** Maddie Burton <maddie@newplays.org>
+**Box Office Manager:** Amanda Marino <amanda@newplays.org>
 
 **Literary Manager:** Susan Jones <literarymanager@newplays.org>
 
-**Volunteer Development Associate/BPP Historian:** Sonja Johnson <sejohnso2@gmail.com>
+**Volunteer Development Associate/BPP Historian:** Sonja Johnson <sonja@newplays.org>
 
-**Technical Director:** Tien-Yin Sun
+**Technical Director:** Richard I. Landon
 
 **Resident Scenic Designer:** David Wade
 
 **Sound Engineer / Master Electrician:** Thomas Tiggleman
 
-**Resident Costume Designers:** Scott Jones & Chib Gratz
+**Resident Costume Designers:** Kayla Cieslinski
 
-**Resident Stage Manager** Kayla Cieslinski
-
-**Production Manager** Patrick Weigand
+**Production Manager** Patrick Weigand <pat@newplays.org>
 
 ## Board of Directors
 
@@ -55,10 +53,10 @@ The Bloomington Playwrights Project (BPP) is the only professional theatre in th
 * Esther Smail, Co-Secretary
 * Bob Arnove
 * Pat Brantlinger
-* David Chadwick
 * Micheal Engber
 * Sandra Freund
 * Valeri Haughton-Motley
+* Noel Koontz
 * David Martin
 * Rob Shakespeare
 
@@ -110,7 +108,7 @@ For more information please visit [www.artsfair.org](http://www.artsfair.org).
 
 * _Apropos of Nothing_ by Greg Kalleres
 * _The Jedi Handbook_ by Stephen Massicotte
-* _To Quiet the Quiet_ by Christy Hall 
+* _To Quiet the Quiet_ by Christy Hall
 
 ### 2018
 
