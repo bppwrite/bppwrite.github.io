@@ -1,51 +1,54 @@
 // ---- Navigation ----
 
-
 // Default/general header styles
 header {
   a {
     color: $white;
   }
-	.menu {
-	  font-family: $trend;
-	  list-style: none;
-		padding-left: 0;
-		margin: 0;
-	}
-	.menu-item {
-		float: left;
-	}
-	.menu-item + .menu-item {
-		padding-left: 2em;
-	}
-	.menu-icon-open {
-		padding-left: 1em;
-	}
-	.parent {
-	  position: relative;
-	}
-	.parent:after {
-	  color: $white;
-	  content: "\25BC";
-	  font-size: 0.5em;
-	}
-	.child-menu {
-	  position: absolute;
-	  display: none;
-	  list-style: none;
-	}
-	.parent:hover > .child-menu {
-	  display: block;
-	}
-	.toggle-button {
-		font-size: (21 / 18) * 1em;
-		margin-left: 1em;
-        cursor: pointer;
-	}
+  img.brand-title {
+    width: auto;
+    height: 55px;
+  }
+  .menu {
+    font-family: $trend;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  .menu-item {
+    float: left;
+  }
+  .menu-item + .menu-item {
+    padding-left: 2em;
+  }
+  .menu-icon-open {
+    padding-left: 1em;
+  }
+  .parent {
+    position: relative;
+  }
+  .parent:after {
+    color: $white;
+    content: '\25BC';
+    font-size: 0.5em;
+  }
+  .child-menu {
+    position: absolute;
+    display: none;
+    list-style: none;
+  }
+  .parent:hover > .child-menu {
+    display: block;
+  }
+  .toggle-button {
+    font-size: (21 / 18) * 1em;
+    margin-left: 1em;
+    cursor: pointer;
+  }
 }
 
 // Ovewrite on home page
 header.home {
   z-index: 999;
-	background: linear-gradient(to bottom, $black-trans, rgba(35, 31, 32, 0));
+  background: linear-gradient(to bottom, $black-trans, rgba(35, 31, 32, 0));
 }
