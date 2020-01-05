@@ -22,7 +22,7 @@ Through the Ivy Tech-BPP Youth Education Program, sponsored by [IU Credit Union]
 
 All of our classes and camps focus on the art of creating something new; whether it’s a new character, a new story, or a new play. Students learn to collaborate with others and become more confident and comfortable with their bodies and voices, while learning the skills needed to write and create their own new plays.
 
-Contact Education Director [Rachael Himsel](mailto:education@newplays.org) for more information or [Register Now](http://services.bloomington.ivytech.edu/cll_local/cll_registration_form.html). 2018 scholarships available.
+Contact Education Director [Eric Shelley](mailto:education@newplays.org) for more information or [Register Now](http://services.bloomington.ivytech.edu/cll_local/cll_registration_form.html). 2018 scholarships available.
 
 
 ## Ages 5 - 8
@@ -51,4 +51,4 @@ The Bloomington Playwrights Project is looking for 2-3 theatre interns for our s
 
 This internship is unpaid and partial summer internships are available. A full summer internship is May 27 - July 27, but partial summer internships are available for any of the BPP's four camps: Broadway Kids, DramatiKids, Laugh Factory, and Musical Theater Camp. For descriptions of each camp please see below:
 
-Please send your resume and brief cover letter, including which dates you are available, to Rachael Himsel: [education@newplays.org](mailto:education@newplays.org)
+Please send your resume and brief cover letter, including which dates you are available, to Eric Shelley: [education@newplays.org](mailto:education@newplays.org)
