@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Playwrights on Bloomington Playwrights Project</title>
+    <link>http://newplays.org/submit-a-play/</link>
+    <description>Recent content in Playwrights on Bloomington Playwrights Project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 Jul 2016 08:34:12 -0400</lastBuildDate>
+    
+	<atom:link href="http://newplays.org/submit-a-play/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Woodward/Newman Drama Award</title>
+      <link>http://newplays.org/submit-a-play/woodward-newman-drama/</link>
+      <pubDate>Tue, 13 Sep 2016 08:20:27 -0400</pubDate>
+      
+      <guid>http://newplays.org/submit-a-play/woodward-newman-drama/</guid>
+      <description>The Woodward/Newman Drama Award is an exclusive honor offered by Bloomington Playwrights Project, remembering the many great dramas Joanne Woodward and Paul Newman performed in together.
+It presents the best unpublished full-length drama of the year with a cash prize of $3,000 and a full production as part of the BPP&amp;rsquo;s Mainstage season, along with travel reimbursement. Submissions for the 2020-21 competition must be postmarked by Dec 1, 2019.</description>
+    </item>
+    
+    <item>
+      <title>Reva Shiner Comedy Award</title>
+      <link>http://newplays.org/submit-a-play/reva-shiner-comedy/</link>
+      <pubDate>Sun, 11 Sep 2016 13:14:50 -0400</pubDate>
+      
+      <guid>http://newplays.org/submit-a-play/reva-shiner-comedy/</guid>
+      <description>The Reva Shiner Comedy Award presents an unpublished full-length comedy with a cash prize of $1,000, a full production as part of the Bloomington Playwrights Project&amp;rsquo;s Mainstage season, along with travel reimbursement. We are currently accepting submissions for the 2020-21 Season. Scripts must be postmarked by October 31, 2019.
+Previous winners have gone on to enjoy productions around the world and to garner additional honors such as the National Play Award.</description>
+    </item>
+    
+  </channel>
+</rss>

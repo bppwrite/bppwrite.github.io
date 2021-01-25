@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Julia Doolittle on Bloomington Playwrights Project</title>
+    <link>http://newplays.org/playwrights/julia-doolittle/</link>
+    <description>Recent content in Julia Doolittle on Bloomington Playwrights Project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Mar 2020 19:30:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://newplays.org/playwrights/julia-doolittle/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Absentee</title>
+      <link>http://newplays.org/show/2019-2020/the-absentee/</link>
+      <pubDate>Fri, 27 Mar 2020 19:30:00 +0000</pubDate>
+      
+      <guid>http://newplays.org/show/2019-2020/the-absentee/</guid>
+      <description>Far out in the Milky Way, “Beacons” serve as lighthouses for warping spaceships around the galaxy. When a U.S. Space Forces ship explodes near Beacon 44.AR.90, its Operator finds herself alone in deep space with only her ship’s AI for companionship. That is, until a persistent canvasser calls, desperate to convince her to vote absentee in the 2088 election.
+Box office opens at 6:30pm, house opens at 7pm, shows begin at 7:30pm.</description>
+    </item>
+    
+  </channel>
+</rss>

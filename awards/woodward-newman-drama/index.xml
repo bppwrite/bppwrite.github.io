@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Woodward/Newman Drama on Bloomington Playwrights Project</title>
+    <link>http://newplays.org/awards/woodward-newman-drama/</link>
+    <description>Recent content in Woodward/Newman Drama on Bloomington Playwrights Project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 12 May 2017 19:30:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://newplays.org/awards/woodward-newman-drama/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Happily After Ever</title>
+      <link>http://newplays.org/show/2016-2017/happily-after-ever/</link>
+      <pubDate>Fri, 12 May 2017 19:30:00 +0000</pubDate>
+      
+      <guid>http://newplays.org/show/2016-2017/happily-after-ever/</guid>
+      <description>Newlyweds Darren and Janet want nothing more than to build the perfect life together. But when Janet gives birth to a baby with both male and female genitalia, they find themselves in the unlikely position of having to choose a gender for their child - all while competing with the perfect couple next door and dealing with a misunderstood family dog - in this hilarious battle of the sexes.</description>
+    </item>
+    
+    <item>
+      <title>You Remind Me of You</title>
+      <link>http://newplays.org/show/2015-2016/you-remind-me-of-you/</link>
+      <pubDate>Fri, 13 May 2016 19:30:00 -0400</pubDate>
+      
+      <guid>http://newplays.org/show/2015-2016/you-remind-me-of-you/</guid>
+      <description>Adele has abandoned her law school plans and her social life to take care of her addled father – a man who has trouble remembering who she is. A chance encounter with a musician named Vincent might just be the best thing to ever happen to her. The catch: Vincent has a rare neurological condition – he has face blindness. This season’s Woodward/Newman Drama Award winning play explores what it’s like to love without recognition and how two people might just keep each other from disappearing.</description>
+    </item>
+    
+  </channel>
+</rss>

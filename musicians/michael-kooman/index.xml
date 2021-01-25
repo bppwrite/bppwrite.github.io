@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Michael Kooman on Bloomington Playwrights Project</title>
+    <link>http://newplays.org/musicians/michael-kooman/</link>
+    <description>Recent content in Michael Kooman on Bloomington Playwrights Project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 24 Jan 2020 19:30:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://newplays.org/musicians/michael-kooman/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Enlightenment of Percival Von Schmootz</title>
+      <link>http://newplays.org/show/2019-2020/percival-von-schmootz/</link>
+      <pubDate>Fri, 24 Jan 2020 19:30:00 +0000</pubDate>
+      
+      <guid>http://newplays.org/show/2019-2020/percival-von-schmootz/</guid>
+      <description>Fed up with a world filled with plagues, pestilence, and poor personal hygiene, a ridiculously optimistic young man sets out on a quest to end the Dark Ages. As he attempts to bring the light of hope to the world, Percival Von Schmootz meets with hilariously disastrous results at every turn. Yet in this outrageous, Monty Python-esque musical comedy, it is only when things look the darkest that Percival is able to discover what true enlightenment means, as he finds hope (and humor) in impossibly bleak circumstances.</description>
+    </item>
+    
+  </channel>
+</rss>

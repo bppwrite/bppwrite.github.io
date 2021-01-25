@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Musicians on Bloomington Playwrights Project</title>
+    <link>http://newplays.org/musicians/</link>
+    <description>Recent content in Musicians on Bloomington Playwrights Project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Feb 2013 19:30:00 -0400</lastBuildDate>
+    
+	<atom:link href="http://newplays.org/musicians/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Alexander Gemignani</title>
+      <link>http://newplays.org/musicians/alexander-gemignani/</link>
+      <pubDate>Fri, 01 Feb 2013 19:30:00 -0400</pubDate>
+      
+      <guid>http://newplays.org/musicians/alexander-gemignani/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Creighton Irons</title>
+      <link>http://newplays.org/musicians/creighton-irons/</link>
+      <pubDate>Fri, 06 Dec 2019 19:30:00 +0000</pubDate>
+      
+      <guid>http://newplays.org/musicians/creighton-irons/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Derek Gregor</title>
+      <link>http://newplays.org/musicians/derek-gregor/</link>
+      <pubDate>Fri, 29 Jan 2016 19:30:00 -0400</pubDate>
+      
+      <guid>http://newplays.org/musicians/derek-gregor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Drew Gasparini</title>
+      <link>http://newplays.org/musicians/drew-gasparini/</link>
+      <pubDate>Fri, 01 Apr 2016 19:30:00 -0400</pubDate>
+      
+      <guid>http://newplays.org/musicians/drew-gasparini/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jeremy Schonfeld</title>
+      <link>http://newplays.org/musicians/jeremy-schonfeld/</link>
+      <pubDate>Fri, 26 Jan 2018 19:30:00 +0000</pubDate>
+      
+      <guid>http://newplays.org/musicians/jeremy-schonfeld/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Larry Kass</title>
+      <link>http://newplays.org/musicians/larry-kass/</link>
+      <pubDate>Fri, 30 Nov 2018 19:30:00 +0000</pubDate>
+      
+      <guid>http://newplays.org/musicians/larry-kass/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Michael Kooman</title>
+      <link>http://newplays.org/musicians/michael-kooman/</link>
+      <pubDate>Fri, 24 Jan 2020 19:30:00 +0000</pubDate>
+      
+      <guid>http://newplays.org/musicians/michael-kooman/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scott Alan</title>
+      <link>http://newplays.org/musicians/scott-alan/</link>
+      <pubDate>Fri, 02 Dec 2016 19:30:00 +0000</pubDate>
+      
+      <guid>http://newplays.org/musicians/scott-alan/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Larry Kass on Bloomington Playwrights Project</title>
+    <link>http://newplays.org/musicians/larry-kass/</link>
+    <description>Recent content in Larry Kass on Bloomington Playwrights Project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 30 Nov 2018 19:30:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://newplays.org/musicians/larry-kass/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tuning In</title>
+      <link>http://newplays.org/show/2018-2019/tuning-in/</link>
+      <pubDate>Fri, 30 Nov 2018 19:30:00 +0000</pubDate>
+      
+      <guid>http://newplays.org/show/2018-2019/tuning-in/</guid>
+      <description>All is peaceful at the Harmony Hill retirement community – the rooms are comfy, the meals are tasty, and the citizen-run radio station is a hit (even if it only plays hits from the past). But when an executive waltzes in threatening to take over WLK 89.3 and turn it into a contemporary music station, the talented tenants of the senior center band together and hold a radiothon to keep it alive.</description>
+    </item>
+    
+    <item>
+      <title>Front Page Flo</title>
+      <link>http://newplays.org/show/2017-2018/front-page-flo/</link>
+      <pubDate>Fri, 01 Dec 2017 19:30:00 +0000</pubDate>
+      
+      <guid>http://newplays.org/show/2017-2018/front-page-flo/</guid>
+      <description>In post-WWII New York City, the newspaper is king, and rambunctious reporter Flo is hungry for her big break. So when word hits the wires that a Soviet spy has landed in Manhattan, Flo follows the clues to get the scoop — and discovers more than she bargained for. With a golden-era Broadway score, dazzling dance numbers, loves lost (and found again), and non-stop fun, FRONT PAGE FLO is the world premiere musical that feels like seeing a classic for the very first time!</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bekah Brunstetter on Bloomington Playwrights Project</title>
+    <link>http://newplays.org/playwrights/bekah-brunstetter/</link>
+    <description>Recent content in Bekah Brunstetter on Bloomington Playwrights Project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 11 May 2018 19:30:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://newplays.org/playwrights/bekah-brunstetter/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Oregon Trail</title>
+      <link>http://newplays.org/show/2017-2018/the-oregon-trail/</link>
+      <pubDate>Fri, 11 May 2018 19:30:00 +0000</pubDate>
+      
+      <guid>http://newplays.org/show/2017-2018/the-oregon-trail/</guid>
+      <description>13 year-old Jane has always had trouble making choices. Looking for an escape, she seeks refuge in the classic ‘80s video game, “The Oregon Trail” — where the choices are clear, the results are sure, and there’s always another life to live (after everyone dies of dysentery). But as time blurs, the boundaries between game and reality become hazy, until Jane finds herself leaping headfirst into the world of The Oregon Trail, where she’s forced to confront the choices she’s made, connect with her family, keep her oxen safe, and ford the river of life.</description>
+    </item>
+    
+  </channel>
+</rss>

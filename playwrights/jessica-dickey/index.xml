@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jessica Dickey on Bloomington Playwrights Project</title>
+    <link>http://newplays.org/playwrights/jessica-dickey/</link>
+    <description>Recent content in Jessica Dickey on Bloomington Playwrights Project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Jan 2017 19:30:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://newplays.org/playwrights/jessica-dickey/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Row After Row</title>
+      <link>http://newplays.org/show/2016-2017/row-after-row/</link>
+      <pubDate>Fri, 27 Jan 2017 19:30:00 +0000</pubDate>
+      
+      <guid>http://newplays.org/show/2016-2017/row-after-row/</guid>
+      <description>Historical accuracy is paramount to Cal and Tom, two hardcore Civil War re-enactors, fresh off their latest Gettysburg battle. But their accuracy is compromised when they’re joined by a soldier with a less than authentic confederate uniform&amp;hellip; and the wrong gender. Straddling 1863 and today, ROW AFTER ROW is a dark comedy about choosing your cause and finding your courage.</description>
+    </item>
+    
+  </channel>
+</rss>

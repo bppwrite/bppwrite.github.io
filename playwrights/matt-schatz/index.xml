@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Matt Schatz on Bloomington Playwrights Project</title>
+    <link>http://newplays.org/playwrights/matt-schatz/</link>
+    <description>Recent content in Matt Schatz on Bloomington Playwrights Project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 08 May 2020 19:30:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://newplays.org/playwrights/matt-schatz/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Burdens</title>
+      <link>http://newplays.org/show/2019-2020/the-burdens/</link>
+      <pubDate>Fri, 08 May 2020 19:30:00 +0000</pubDate>
+      
+      <guid>http://newplays.org/show/2019-2020/the-burdens/</guid>
+      <description>Siblings Mordy and Jane communicate like proper millennials: primarily through text message and loaded with sarcasm. When their loving mother’s life becomes emotionally and financially taxed by their absolutely awful and 100-year-old grandfather, Zad-Zad, they draw together an elaborate plot to…relieve their mother’s burden. Told almost entirely via text messages, The Burdens is a dark, family comedy about how technology helps keep us close, while still enabling us to keep our distance.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ivey Lowe on Bloomington Playwrights Project</title>
+    <link>http://newplays.org/directors/ivey-lowe/</link>
+    <description>Recent content in Ivey Lowe on Bloomington Playwrights Project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 08 May 2020 19:30:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://newplays.org/directors/ivey-lowe/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Burdens</title>
+      <link>http://newplays.org/show/2019-2020/the-burdens/</link>
+      <pubDate>Fri, 08 May 2020 19:30:00 +0000</pubDate>
+      
+      <guid>http://newplays.org/show/2019-2020/the-burdens/</guid>
+      <description>Siblings Mordy and Jane communicate like proper millennials: primarily through text message and loaded with sarcasm. When their loving mother’s life becomes emotionally and financially taxed by their absolutely awful and 100-year-old grandfather, Zad-Zad, they draw together an elaborate plot to…relieve their mother’s burden. Told almost entirely via text messages, The Burdens is a dark, family comedy about how technology helps keep us close, while still enabling us to keep our distance.</description>
+    </item>
+    
+    <item>
+      <title>Beating A Dead Horse</title>
+      <link>http://newplays.org/show/2017-2018/beating-a-dead-horse/</link>
+      <pubDate>Thu, 28 Sep 2017 19:30:00 +0000</pubDate>
+      
+      <guid>http://newplays.org/show/2017-2018/beating-a-dead-horse/</guid>
+      <description>Brothers Steve and Marty Martin are on the brink of closing their failing pet funeral home, until an eccentric (and rich) new customer comes in with an amazing proposition: plan a funeral for her nearly dead racehorse, and she’ll give the boys a fortune to keep their business afloat. The only problem? The horse won’t die. With everything on the line, the two embark on a hysterical journey to see how far they’ll go to make their dreams come true, in this laugh-a-minute screwball comedy.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Creighton Irons on Bloomington Playwrights Project</title>
+    <link>http://newplays.org/lyricists/creighton-irons/</link>
+    <description>Recent content in Creighton Irons on Bloomington Playwrights Project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 06 Dec 2019 19:30:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://newplays.org/lyricists/creighton-irons/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Lost Letters</title>
+      <link>http://newplays.org/show/2019-2020/lost-letters/</link>
+      <pubDate>Fri, 06 Dec 2019 19:30:00 +0000</pubDate>
+      
+      <guid>http://newplays.org/show/2019-2020/lost-letters/</guid>
+      <description>Newly married, newly moved, and with a newborn on the way, Adam is scrambling to get everything ready for the arrival of his daughter – all the while questioning the choices that brought him to this moment. While clearing out boxes from his soon-to-be nursery, he finds a trove of handwritten letters from his past. The letters come to life and force Adam to (finally) reply, make peace with the present, and embrace his new reality.</description>
+    </item>
+    
+  </channel>
+</rss>

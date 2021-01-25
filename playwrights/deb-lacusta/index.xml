@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Deb Lacusta on Bloomington Playwrights Project</title>
+    <link>http://newplays.org/playwrights/deb-lacusta/</link>
+    <description>Recent content in Deb Lacusta on Bloomington Playwrights Project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 06 Dec 2013 19:30:00 -0400</lastBuildDate>
+    
+	<atom:link href="http://newplays.org/playwrights/deb-lacusta/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Banana Tree</title>
+      <link>http://newplays.org/show/2013-2014/the-banana-tree/</link>
+      <pubDate>Fri, 06 Dec 2013 19:30:00 -0400</pubDate>
+      
+      <guid>http://newplays.org/show/2013-2014/the-banana-tree/</guid>
+      <description>From the minds of The Simpsons stars, Dan Castellaneta (Homer Simpson) and Deb Lacusta (writer), comes a zany comedy about Angela, a convenience store clerk who dreams of being Las Vegas&amp;rsquo; first African American female magician. But after a series of hilarious run-ins and blunders, Angela finds herself in the middle of a robbery, a kidnapping, and at the mercy of a criminal mastermind that also happens to be a telepathic banana tree.</description>
+    </item>
+    
+  </channel>
+</rss>

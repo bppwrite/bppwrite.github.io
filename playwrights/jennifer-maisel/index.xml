@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jennifer Maisel on Bloomington Playwrights Project</title>
+    <link>http://newplays.org/playwrights/jennifer-maisel/</link>
+    <description>Recent content in Jennifer Maisel on Bloomington Playwrights Project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 30 Mar 2018 19:30:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://newplays.org/playwrights/jennifer-maisel/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Out of Orbit</title>
+      <link>http://newplays.org/show/2017-2018/out-of-orbit/</link>
+      <pubDate>Fri, 30 Mar 2018 19:30:00 +0000</pubDate>
+      
+      <guid>http://newplays.org/show/2017-2018/out-of-orbit/</guid>
+      <description>Sara, one of the world’s most brilliant planetary geologists, lives her life on Mars time — her days lasting longer and longer as she monitors mankind’s latest voyage to the Red Planet. But her daughter, Lis, continues to live her life as a teenager on Earth time, showing no interest in her mother’s world out in space—despite Sara’s best efforts. As both of their lives begin to spin out of control, they must grapple with the distance their two time zones create between them… even when they’re standing side by side.</description>
+    </item>
+    
+  </channel>
+</rss>

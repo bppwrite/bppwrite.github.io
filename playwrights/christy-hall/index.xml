@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Christy Hall on Bloomington Playwrights Project</title>
+    <link>http://newplays.org/playwrights/christy-hall/</link>
+    <description>Recent content in Christy Hall on Bloomington Playwrights Project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 10 May 2019 19:30:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://newplays.org/playwrights/christy-hall/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>To Quiet the Quiet</title>
+      <link>http://newplays.org/show/2018-2019/to-quiet-the-quiet/</link>
+      <pubDate>Fri, 10 May 2019 19:30:00 +0000</pubDate>
+      
+      <guid>http://newplays.org/show/2018-2019/to-quiet-the-quiet/</guid>
+      <description>From the writer of the hit musical Home.
+Having suffered great loss and heartbreak, Kathy is a woman on the edge. Haunted by her past and her own personal demons, Kathy seems to be losing the battle against her thoughts, her words, and her fears. And the one man who can help her may prove to be just as powerless against her…
+Contains violence and may not be suitable for all ages.</description>
+    </item>
+    
+    <item>
+      <title>Home</title>
+      <link>http://newplays.org/show/2016-2017/home/</link>
+      <pubDate>Fri, 02 Dec 2016 19:30:00 +0000</pubDate>
+      
+      <guid>http://newplays.org/show/2016-2017/home/</guid>
+      <description>Katherine escaped from her small Texas home and her hypochondriac mother 9 years ago. When she finally steps back into her childhood home, Katherine is immediately overwhelmed by the familiar. Every room seems to have a story. Every corner of the house holds another recollection. Katherine’s memories become so vivid, in fact, they appear to come alive before her eyes. Both humorous and heartbreaking, HOME explores parenting and childhood with unflinching honesty, questioning what it means to grow older, and whether we truly have the capacity to grow up.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kelly Younger on Bloomington Playwrights Project</title>
+    <link>http://newplays.org/playwrights/kelly-younger/</link>
+    <description>Recent content in Kelly Younger on Bloomington Playwrights Project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 26 Sep 2014 19:30:00 -0400</lastBuildDate>
+    
+	<atom:link href="http://newplays.org/playwrights/kelly-younger/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Kalamazoo</title>
+      <link>http://newplays.org/show/2014-2015/kalamazoo/</link>
+      <pubDate>Fri, 26 Sep 2014 19:30:00 -0400</pubDate>
+      
+      <guid>http://newplays.org/show/2014-2015/kalamazoo/</guid>
+      <description>When Peg, a 70-something, Irish Catholic bird lover meets Irving, a 70-something Jewish, metal detector-toting East Coaster on an online dating site, it feels like love at first click. But after their crazy margarita-filled first date, complete with body shots and morning-after tattoos, Peg and Irving find that they still have a little aging to do if they want to forget their past and move forward into a future together.</description>
+    </item>
+    
+  </channel>
+</rss>

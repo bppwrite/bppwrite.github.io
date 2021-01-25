@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Specials on Bloomington Playwrights Project</title>
+    <link>http://newplays.org/special/</link>
+    <description>Recent content in Specials on Bloomington Playwrights Project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 29 Jun 2019 19:08:09 -0400</lastBuildDate>
+    
+	<atom:link href="http://newplays.org/special/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Check out our Summer Camp Offerings</title>
+      <link>http://newplays.org/special/bpp-education-camps/</link>
+      <pubDate>Sat, 29 Jun 2019 19:08:09 -0400</pubDate>
+      
+      <guid>http://newplays.org/special/bpp-education-camps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>*check out* our brand new *season* lineup</title>
+      <link>http://newplays.org/special/new-works/</link>
+      <pubDate>Sat, 01 Jul 2017 16:03:47 -0400</pubDate>
+      
+      <guid>http://newplays.org/special/new-works/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

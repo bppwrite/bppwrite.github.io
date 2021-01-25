@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Genres on Bloomington Playwrights Project</title>
+    <link>http://newplays.org/genres/</link>
+    <description>Recent content in Genres on Bloomington Playwrights Project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Mar 2020 19:30:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://newplays.org/genres/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://newplays.org/genres/</link>
+      <pubDate>Fri, 27 Mar 2020 19:30:00 +0000</pubDate>
+      
+      <guid>http://newplays.org/genres/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>comedy</title>
+      <link>http://newplays.org/genres/comedy/</link>
+      <pubDate>Fri, 11 May 2018 19:30:00 +0000</pubDate>
+      
+      <guid>http://newplays.org/genres/comedy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>drama</title>
+      <link>http://newplays.org/genres/drama/</link>
+      <pubDate>Fri, 30 Mar 2018 19:30:00 +0000</pubDate>
+      
+      <guid>http://newplays.org/genres/drama/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>musical</title>
+      <link>http://newplays.org/genres/musical/</link>
+      <pubDate>Fri, 24 Jan 2020 19:30:00 +0000</pubDate>
+      
+      <guid>http://newplays.org/genres/musical/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

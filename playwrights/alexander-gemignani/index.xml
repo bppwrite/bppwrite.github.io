@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Alexander Gemignani on Bloomington Playwrights Project</title>
+    <link>http://newplays.org/playwrights/alexander-gemignani/</link>
+    <description>Recent content in Alexander Gemignani on Bloomington Playwrights Project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Feb 2013 19:30:00 -0400</lastBuildDate>
+    
+	<atom:link href="http://newplays.org/playwrights/alexander-gemignani/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Truman Show</title>
+      <link>http://newplays.org/show/2012-2013/the-truman-show/</link>
+      <pubDate>Fri, 01 Feb 2013 19:30:00 -0400</pubDate>
+      
+      <guid>http://newplays.org/show/2012-2013/the-truman-show/</guid>
+      <description>Based on the original film by Andrew Niccol
+Based on the beloved 1998 film, this musical follows Truman, an ordinary man unaware he&amp;rsquo;s being watched by millions from all over the world. He lives in a large studio with hidden cameras everywhere. All his friends and townspeople are actors playing their roles in the most popular TV-series in the world: &amp;ldquo;The Truman Show&amp;rdquo;. When an actress falls in love with him, she breaks onto the set to tell him the truth.</description>
+    </item>
+    
+  </channel>
+</rss>

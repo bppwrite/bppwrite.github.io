@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ron Newell on Bloomington Playwrights Project</title>
+    <link>http://newplays.org/playwrights/ron-newell/</link>
+    <description>Recent content in Ron Newell on Bloomington Playwrights Project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 30 Nov 2018 19:30:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://newplays.org/playwrights/ron-newell/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tuning In</title>
+      <link>http://newplays.org/show/2018-2019/tuning-in/</link>
+      <pubDate>Fri, 30 Nov 2018 19:30:00 +0000</pubDate>
+      
+      <guid>http://newplays.org/show/2018-2019/tuning-in/</guid>
+      <description>All is peaceful at the Harmony Hill retirement community – the rooms are comfy, the meals are tasty, and the citizen-run radio station is a hit (even if it only plays hits from the past). But when an executive waltzes in threatening to take over WLK 89.3 and turn it into a contemporary music station, the talented tenants of the senior center band together and hold a radiothon to keep it alive.</description>
+    </item>
+    
+  </channel>
+</rss>

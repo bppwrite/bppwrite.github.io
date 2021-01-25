@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Series on Bloomington Playwrights Project</title>
+    <link>http://newplays.org/series/</link>
+    <description>Recent content in Series on Bloomington Playwrights Project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 17 May 2013 19:30:00 -0400</lastBuildDate>
+    
+	<atom:link href="http://newplays.org/series/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2012-2013</title>
+      <link>http://newplays.org/series/2012-2013/</link>
+      <pubDate>Fri, 17 May 2013 19:30:00 -0400</pubDate>
+      
+      <guid>http://newplays.org/series/2012-2013/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>2013-2014</title>
+      <link>http://newplays.org/series/2013-2014/</link>
+      <pubDate>Fri, 16 May 2014 19:30:00 -0400</pubDate>
+      
+      <guid>http://newplays.org/series/2013-2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>2014-2015</title>
+      <link>http://newplays.org/series/2014-2015/</link>
+      <pubDate>Fri, 15 May 2015 19:30:00 -0400</pubDate>
+      
+      <guid>http://newplays.org/series/2014-2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>2015-2016</title>
+      <link>http://newplays.org/series/2015-2016/</link>
+      <pubDate>Fri, 13 May 2016 19:30:00 -0400</pubDate>
+      
+      <guid>http://newplays.org/series/2015-2016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>2016-2017</title>
+      <link>http://newplays.org/series/2016-2017/</link>
+      <pubDate>Wed, 14 Jun 2017 18:30:00 -0400</pubDate>
+      
+      <guid>http://newplays.org/series/2016-2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>2017-2018</title>
+      <link>http://newplays.org/series/2017-2018/</link>
+      <pubDate>Fri, 15 Jun 2018 18:30:00 -0400</pubDate>
+      
+      <guid>http://newplays.org/series/2017-2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>2018-2019</title>
+      <link>http://newplays.org/series/2018-2019/</link>
+      <pubDate>Thu, 06 Jun 2019 18:30:00 -0400</pubDate>
+      
+      <guid>http://newplays.org/series/2018-2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>2019-2020</title>
+      <link>http://newplays.org/series/2019-2020/</link>
+      <pubDate>Thu, 04 Jun 2020 18:30:00 -0400</pubDate>
+      
+      <guid>http://newplays.org/series/2019-2020/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BPP/IU Collaborative Musical on Bloomington Playwrights Project</title>
+    <link>http://newplays.org/awards/bpp-iu-collaborative-musical/</link>
+    <description>Recent content in BPP/IU Collaborative Musical on Bloomington Playwrights Project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Dec 2017 19:30:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://newplays.org/awards/bpp-iu-collaborative-musical/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Front Page Flo</title>
+      <link>http://newplays.org/show/2017-2018/front-page-flo/</link>
+      <pubDate>Fri, 01 Dec 2017 19:30:00 +0000</pubDate>
+      
+      <guid>http://newplays.org/show/2017-2018/front-page-flo/</guid>
+      <description>In post-WWII New York City, the newspaper is king, and rambunctious reporter Flo is hungry for her big break. So when word hits the wires that a Soviet spy has landed in Manhattan, Flo follows the clues to get the scoop — and discovers more than she bargained for. With a golden-era Broadway score, dazzling dance numbers, loves lost (and found again), and non-stop fun, FRONT PAGE FLO is the world premiere musical that feels like seeing a classic for the very first time!</description>
+    </item>
+    
+  </channel>
+</rss>

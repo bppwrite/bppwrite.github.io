@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Emily Maltby on Bloomington Playwrights Project</title>
+    <link>http://newplays.org/directors/emily-maltby/</link>
+    <description>Recent content in Emily Maltby on Bloomington Playwrights Project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 29 Jan 2016 19:30:00 -0400</lastBuildDate>
+    
+	<atom:link href="http://newplays.org/directors/emily-maltby/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Toast</title>
+      <link>http://newplays.org/show/2015-2016/toast/</link>
+      <pubDate>Fri, 29 Jan 2016 19:30:00 -0400</pubDate>
+      
+      <guid>http://newplays.org/show/2015-2016/toast/</guid>
+      <description>Based on the novella by Rex Rose. When Tania comes back home to New Orleans, she’s got one thing on her mind: finishing the beautiful tattoo across her back. But she finds her favorite nightclub in dire need of repair, her ex-boyfriend is slowly dying, and her rag tag group of bohemian friends is constantly changing. Carner and Gregor, authors of BPP audience favorite ISLAND SONG, return with an electric new musical about love, The Big Easy, and the difference between living a temporary life and a permanent one.</description>
+    </item>
+    
+  </channel>
+</rss>
